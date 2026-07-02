@@ -1,0 +1,6 @@
+S1 rigidity: 274877906944 pairs, fixed=10485760 (expected 10485760), iffViol=0, formViol=0  [PASS] 1.0s
+S2 census: fixed=5477 match=5477 cpu=5477 setEq=1  [PASS] 0.5s
+S3 catalog: periodic=25 escape=8388583 fuelout=0 entries=25  [PASS] 0.0s
+   non-Mersenne universal family: a=5 period=2
+S4 fuzz: 8589934592 trials, viol=0  [PASS] 0.0s
+== UNIVERSAL VERIFICATION: ALL SECTIONS PASS ==

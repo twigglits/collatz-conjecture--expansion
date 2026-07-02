@@ -1,0 +1,10 @@
+V1 PASS  S1: 2.749e+11 pairs, formula+iff exact, fixed=10485760 | S4: 8.590e+09 fuzz trials, 0 violations
+V2 PASS  S2: 1.374e+11 triples scanned; 5477 fixed points == exact divisor-law prediction (set equality + direct recheck)
+V3 PASS  S3: 25 universal families over 1.68e+07 systems; period-1 set == Mersennes 2^k-1, k=1..24; cycle equation exact on all
+V4 PASS  formula + Mersenne rigidity exact at 200-350 digit c (300 trials, a=2^k-1 up to k=499)
+V5 PASS  F_{a,de}(d u) = d F_{a,e}(u) exact at 80-digit scale (300 trials)
+V6 PASS  all 25 catalog families verified at 100-digit c (period exact)
+V7 PASS  181x+c universal two-cycle {27c, 611c} exact at 100-150 digit c
+V8 PASS  one-step law on c=6081075: predictions fixed for a=3..201; brute scan (a=3) complete
+wrote results/universal_summary.md
+== ALL EXACT-ARITHMETIC VERIFICATIONS PASS ==
