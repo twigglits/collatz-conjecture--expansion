@@ -2,7 +2,7 @@
 
 # The Collatz map inside its family: machine-verified structure of $f(x)=ax+c$
 
-### GPU-scale certified dynamics, a universal-cycle theorem for $a=2^k-1$, and the arithmetic $2^H-a^k$ that organizes every cycle
+### GPU-scale certified dynamics, a universal-cycle law characterizing $a=2^k-1$, and the arithmetic $2^H-a^k$ that organizes every cycle
 
 **J. Naude**, with derivations, engines, and analyses produced in human–AI collaboration (Claude, Anthropic; see the repository commit trailers). Computational artifacts, datasets, and machine proofs accompany this paper: the CUDA engine [`collatz.cu`](collatz.cu), the Lean 4 developments [`CollatzTheory.lean`](CollatzTheory.lean) and [`CollatzCerts.lean`](CollatzCerts.lean), the exact-arithmetic cross-checker [`analyze.py`](analyze.py), and the raw sweep data in [`results/`](results/).
 
@@ -16,9 +16,9 @@ For odd $a,c$ we study the generalized Collatz map
 $$
 T_{a,c}(n)=\begin{cases} a\,n+c & n \text{ odd},\\[2pt] n/2 & n \text{ even},\end{cases}
 $$
-the classical conjecture being the case $(a,c)=(3,1)$. We combine a CUDA sweep of $38$ parameter pairs — every odd start below $2^{32}$ for the $3x+c$ family and below $2^{30}$ otherwise, $\approx 3.76\times 10^{10}$ orbits in about $7$ seconds on one RTX 5090 — with a Lean 4 development in which (i) the structural theorems are proved for *all* parameters with kernel-only proofs and no extra axioms, and (ii) the sweep's finite claims are exported as $127$ machine-checked certificates ($89$ cycle certificates, axiom-free by kernel evaluation; $38$ range-classification certificates via `native_decide`).
+the classical conjecture being the case $(a,c)=(3,1)$. We combine a CUDA sweep of $38$ parameter pairs — every odd start below $2^{32}$ for the $3x+c$ family and below $2^{30}$ otherwise, $\approx 3.76\times 10^{10}$ orbits in about $7$ seconds on one RTX 5090 — with a Lean 4 development in which (i) the structural theorems are proved for *all* parameters with kernel-only proofs and no extra axioms, and (ii) the sweep's finite claims are exported as $127$ machine-checked certificates ($89$ cycle certificates, axiom-free by kernel evaluation; $38$ range-classification certificates via `native_decide`). A second engine (`universal.cu`) verifies the sharpened universal-cycle laws of §4.1 on a further $\approx4.1\times10^{11}$ instances with zero violations, and `verify_universal.py` re-derives them in exact arithmetic up to $350$-digit parameters.
 
-The verified structure is: **(1)** if $a$ or $c$ is even, every odd start diverges monotonically, so the family is dynamically interesting only for $a,c$ odd; **(2)** for odd $m$, $T_{a,mc}(mn)=m\,T_{a,c}(n)$, so cycle sets scale, and a common odd prime factor of $a$ and $c$ traps all orbits in $p\mathbb{Z}$ — reducing the classification to $\gcd(a,c)=1$; **(3)** if $a=2^k-1$ then for *every* odd $c$ the point $c$ itself is periodic, $T^{\,k+1}(c)=c$: the famous loop $1\to4\to2\to1$ is the $k=2$ instance of a one-line theorem. Empirically, the halving count after an odd step has mean $2$ (measured $2.0000$–$2.0009$ on escape-dominated ensembles), giving per-odd-step drift $\delta(a)=\ln a-2\ln 2$, which the sweep reproduces to four decimals for every $a\ge5$ together with the implied mean escape times. Consequently the family splits into a contracting regime — all twelve $3x+c$ systems tested converge for $100.0000\%$ of $\approx 2.1\times10^9$ odd starts each — and an expanding regime, where convergence density is $\le 0.36\%$ and often exactly the cycle basins. Every one of the $89$ cycles found satisfies the exact identity $n_0(2^H-a^k)=c\,W$ with $W=\sum_i a^{k-1-i}2^{h_0+\cdots+h_{i-1}}$, and the inventories are organized by the divisors of $D=2^H-a^k$: one-step cycles exist iff $(2^h-a)\mid c$, which simultaneously explains the universal cycles ($D=1$), the isolated fixed points of $(9,7)$, $(11,5)$, $(13,3)$ ($2^4-a=c$), the seven-cycle multiplet of $3x+13$ ($2^8-3^5=13$), and the emptiness of the $(9,1)$, $(11,1)$, $(13,1)$ inventories. We state the two conjectures this evidence supports and record why they — and by Conway-type undecidability, the general family — remain beyond computational and elementary methods.
+The verified structure is: **(1)** if $a$ or $c$ is even, every odd start diverges monotonically, so the family is dynamically interesting only for $a,c$ odd; **(2)** for odd $m$, $T_{a,mc}(mn)=m\,T_{a,c}(n)$, so cycle sets scale, and a common odd prime factor of $a$ and $c$ traps all orbits in $p\mathbb{Z}$ — reducing the classification to $\gcd(a,c)=1$; **(3)** if $a=2^k-1$ then for *every* odd $c$ the point $c$ itself is periodic, $T^{\,k+1}(c)=c$: the famous loop $1\to4\to2\to1$ is the $k=2$ instance of a one-line theorem. Sharpened (§4.1): the accelerated map $F$ satisfies $F_{a,c}(c)=\mathrm{odd}(a{+}1)\cdot c$, so the universal fixed point at $c$ *characterizes* $a=2^k-1$; the fixed points of any $(a,c)$ are exactly $x=c/d$ for divisors $d\mid c$ with $a+d$ a power of two; and the master identity $F_{a,c}(cy)=c\,F_{a,1}(y)$ transports every $ax+1$ cycle into every $ax+c$ — a sweep of all odd $a<2^{24}$ finds exactly $25$ multipliers with a universal cycle through $c$: the $24$ Mersenne numbers (period $1$) and $a=5$ (period $2$, the family $\{c,3c\}$). Empirically, the halving count after an odd step has mean $2$ (measured $2.0000$–$2.0009$ on escape-dominated ensembles), giving per-odd-step drift $\delta(a)=\ln a-2\ln 2$, which the sweep reproduces to four decimals for every $a\ge5$ together with the implied mean escape times. Consequently the family splits into a contracting regime — all twelve $3x+c$ systems tested converge for $100.0000\%$ of $\approx 2.1\times10^9$ odd starts each — and an expanding regime, where convergence density is $\le 0.36\%$ and often exactly the cycle basins. Every one of the $89$ cycles found satisfies the exact identity $n_0(2^H-a^k)=c\,W$ with $W=\sum_i a^{k-1-i}2^{h_0+\cdots+h_{i-1}}$, and the inventories are organized by the divisors of $D=2^H-a^k$: one-step cycles exist iff $(2^h-a)\mid c$, which simultaneously explains the universal cycles ($D=1$), the isolated fixed points of $(9,7)$, $(11,5)$, $(13,3)$ ($2^4-a=c$), the seven-cycle multiplet of $3x+13$ ($2^8-3^5=13$), and the emptiness of the $(9,1)$, $(11,1)$, $(13,1)$ inventories. We state the two conjectures this evidence supports and record why they — and by Conway-type undecidability, the general family — remain beyond computational and elementary methods.
 
 ---
 
@@ -32,7 +32,7 @@ Two classical facts calibrate the ambition. First, the base case is open despite
 
 ### 1.2 Contribution
 
-1. **Machine-verified general theorems** (§4): parity reduction, scaling conjugacy, prime absorption, and a universal-cycle theorem for $a=2^k-1$ — each proved in Lean 4.31 with kernel-only proofs, no Mathlib, no `native_decide`, quantified over all parameters.
+1. **Machine-verified general theorems** (§4): parity reduction, scaling conjugacy, prime absorption, and a universal-cycle theorem for $a=2^k-1$ — sharpened in §4.1 to an iff, with a complete one-step-cycle law and a transport principle for cycles — each proved in Lean 4.31 with kernel-only proofs, no Mathlib, no `native_decide`, quantified over all parameters.
 2. **A certified computational pipeline** (§5): a two-pass CUDA engine (cycle inventory by Brent detection; mass classification of every odd start) whose output is cross-checked in exact big-integer arithmetic and *re-proved* as $127$ Lean certificates (§5.3). The GPU finds; the proof assistant certifies.
 3. **Quantitative laws** (§6–§8): the drift dichotomy $\delta(a)=\ln a-2\ln2$ measured to four decimals; the cycle equation verified exactly on all discovered cycles; the signature/divisor mechanism $D=2^H-a^k$ that predicts which $(a,c)$ have rich, sparse, or empty cycle inventories.
 4. **An honest synthesis** (§9–§10): the two open conjectures the data supports, and a precise account of why this route — any computational route — cannot close them.
@@ -85,6 +85,43 @@ $$
 
 The Collatz loop $\{1,4,2\}$ is the $k=2$, $c=1$ instance; the theorem asserts its analogue in *every* $3x+c$, $7x+c$, $15x+c$ system simultaneously, and the sweep observes it in all $21$ such variants (§6).
 
+### 4.1 The universal cycle, sharpened: formula, converse, classification, transport
+
+Sketching the sweep of Theorem 4 exposed a stronger mechanism, which one identity carries entirely. Write $\mathrm{odd}(n)=n/2^{\nu_2(n)}$ for the odd part, so the accelerated map of §3 is $F_{a,c}(x)=\mathrm{odd}(ax+c)$. For **odd $c$** and *all* $a,y$:
+
+$$
+\boxed{\;F_{a,c}(c\,y)\;=\;c\cdot F_{a,1}(y)\;}
+\qquad\text{in particular}\qquad
+F_{a,c}(c)\;=\;\frac{a+1}{2^{\nu_2(a+1)}}\;c\;=\;\mathrm{odd}(a+1)\cdot c .
+$$
+
+The proof is the observation itself: $a(cy)+c=c\,(ay+1)$, and an odd factor passes through the odd part — the point $c$ *factors out of its own orbit*. Everything below is this identity read three ways, each Lean-proved for all parameters (kernel-only, as in §4).
+
+**Theorem 4b (master formula and Mersenne rigidity).** *For every odd $c$ and every $a$: $F_{a,c}(c)=\mathrm{odd}(a+1)\cdot c$. Consequently*
+$$
+F_{a,c}(c)=c \;\iff\; \mathrm{odd}(a+1)=1 \;\iff\; a=2^k-1 ,
+$$
+*so the sufficient condition of Theorem 4 is also necessary — and already for a single odd $c$, hence simultaneously for all of them. (Lean: `F_formula`, `universal_fixed_iff`, `F_universal_cycle`; T-form `generalized_universal_step`: if $a+1=2^k m$, $m$ odd, then $T^{\,k+1}(c)=mc$.)*
+
+**Theorem 4c (one-step cycle law).** *For odd $c$: $x$ is a fixed point of $F_{a,c}$ iff $d\,x=c$ and $a+d=2^k$ for some divisor $d$ of $c$ — fixed points correspond exactly to the divisors $d\mid c$ with $a+d$ a power of two, via $x=c/d$ — and every such $x$ is a genuine $T$-cycle of length $k+1$. (Lean: `fix_classification`, `F_fix_realizes_T`.)*
+
+The two $k{=}1$ rows of Table 2 are the extreme divisors, now theorems rather than observations: $d=1$ forces $a$ Mersenne and gives the universal fixed point $x=c$; $d=c$ forces $a+c\in2^{\mathbb N}$ and gives the isolated fixed point $x=1$ of $(9,7),(11,5),(13,3)$. The law also *proves* the eight empty inventories of §6 have no one-step cycles: none of those $(a,c)$ admits a divisor $d\mid c$ with $a+d$ a power of two.
+
+**Theorem 4d (orbit transport: universal cycle families).** *For odd $c$ and all $a,y,n$:*
+$$
+F^{\,n}_{a,c}(c\,y)=c\cdot F^{\,n}_{a,1}(y),
+\qquad\text{and}\qquad
+F^{\,n}_{a,c}(cy)=cy \iff F^{\,n}_{a,1}(y)=y .
+$$
+*The $ax+1$ system embeds in every $ax+c$ system, rescaled by $c$, and periodicity transports in both directions. (Lean: `F_scaling` — proved in the general form $F_{a,\,de}(du)=d\,F_{a,e}(u)$ for odd $d$ — `F_orbit_scaling`, `F_periodic_transport`.)*
+
+Theorem 4d reframes Theorem 4: the universal cycle at $c$ is the transported trivial fixed point of $ax+1$, and **every** cycle of $ax+1$ is a *universal cycle family* of the whole column $\{(a,c):c \text{ odd}\}$. Two consequences the original theorem could not see:
+
+- $a=5$ is not Mersenne, yet every $5x+c$ system has the two-cycle $\{c,3c\}$ — the transport of the $5x+1$ cycle $\{1,3\}$ (Lean: `five_universal_two_cycle`);
+- every $181x+c$ system has the two-cycle $\{27c,\,611c\}$ — the transport of the classical $181x+1$ cycle $\{27,611\}$, a cycle *not through* $1$ (Lean: `oneEightyOne_universal_two_cycle`).
+
+It also poses a sharp finite question: *which multipliers have a universal cycle through the seed $c$ itself?* By Theorem 4d that set is exactly $\{a : 1\text{ is periodic under } F_{a,1}\}$, which §6.1 sweeps to $2^{24}$.
+
 ## 5. Computational methodology
 
 ### 5.1 CUDA engine
@@ -93,6 +130,15 @@ The Collatz loop $\{1,4,2\}$ is the $k=2$, $c=1$ instance; the theorem asserts i
 
 - **Pass A — inventory.** Brent cycle detection on the accelerated map $F$ from every odd start $<2^{22}$ (fuel $2^{14}$ accelerated steps, window $\tau$). Detected cycles are canonicalized by their odd minimum; $(k,H)$, the cycle maximum, and members are recomputed on the host.
 - **Pass B — classification.** Every odd start $<N$ ($N=2^{32}$ for the $3x+c$ family, $2^{30}$ otherwise) is iterated (fuel $8192$) until its odd value hits an inventory minimum (basin attribution), exceeds $\tau$ (escape), or fuel exhausts. Aggregates per variant: per-cycle basin counts, escape count, total odd steps, total halvings, maximum excursion; per-thread tallies are reduced through shared memory. Grid total: $38$ variants, $\approx3.76\times10^{10}$ orbits, $\approx7$ s of GPU time.
+
+A second engine, [`universal.cu`](universal.cu), verifies the §4.1 theorems at scale (RTX 5090, run of 2026-07-03; raw output `results/universal.jsonl`):
+
+- **S1 — rigidity grid.** All $2.75\times10^{11}$ odd pairs $(a,c)$, $a,c<2^{20}$: the master formula $F_{a,c}(c)=\mathrm{odd}(a{+}1)\,c$ and the Mersenne iff hold with **zero** violations; the fixed-point count is exactly $20\cdot 2^{19}$ ($20$ Mersenne $a$ below $2^{20}$ times $2^{19}$ odd $c$) — $1.0$ s.
+- **S2 — fixed-point census.** All $1.37\times10^{11}$ triples ($a,c<512$, $x<2^{22}$): brute enumeration finds $5477$ fixed points; the set coincides *exactly* with the divisor-law prediction of Theorem 4c, enumerated independently on the host — $0.5$ s.
+- **S3 — universal-family catalog.** Every odd $a<2^{24}$: is $1$ periodic under $F_{a,1}$? (§6.1.)
+- **S4 — identity fuzz.** $2^{33}$ pseudorandom instances of $F_{a,\,de}(du)=d\,F_{a,e}(u)$ ($d,e$ odd, $a,u$ arbitrary): zero violations.
+
+[`verify_universal.py`](verify_universal.py) then re-derives every S1–S4 claim in exact big-integer arithmetic (V1–V8): set-level equality of the census with the law, exact re-iteration of the whole catalog with the $n_0=1$ cycle equation, and stress instances of the formula, rigidity, transport, and one-step law at $80$–$350$-digit parameters. All pass (`results/universal_verify.log`).
 
 ### 5.2 Exact-arithmetic cross-checks
 
@@ -154,7 +200,21 @@ Table 1 condenses `results/summary.md` (full raw data: `results/raw.jsonl`). "co
 
 **Table 1.** The 38-variant sweep. Drift is per odd step: measured $\ln a - (\text{halvings}/\text{odd steps})\ln2$ vs. predicted $\delta(a)=\ln a-2\ln2$ (§8).
 
-Headlines: **(i)** every $a=3$ variant converged for $100.0000\%$ of its $\approx2.1\times10^{9}$ odd starts (window escapes bignum-verified); **(ii)** every $a\ge5$ variant escapes for essentially all starts, the convergent share being the union of tiny cycle basins; **(iii)** eight variants — $(9,1),(9,3),(9,5),(9,9),(9,11),(11,1),(11,3),(13,1)$ — have *empty* inventories: no positive cycle with minimum below $2^{22}$ (GPU) resp. certified below $10^5$ (Lean) and odd elements below $\tau\approx2^{61}$; even the orbit of $1$ climbs beyond the window; **(iv)** the universal cycle of Theorem 4 appears in all $21$ variants with $a\in\{3,7,15\}$, with signature $k=1$, $H=k_{2}$ where $a+1=2^{k_2}$; **(v)** $\mathrm{Cycles}(3,15)=3\cdot\mathrm{Cycles}(3,5)$ element-by-element with identical signatures — Theorem 2 live in data.
+Headlines: **(i)** every $a=3$ variant converged for $100.0000\%$ of its $\approx2.1\times10^{9}$ odd starts (window escapes bignum-verified); **(ii)** every $a\ge5$ variant escapes for essentially all starts, the convergent share being the union of tiny cycle basins; **(iii)** eight variants — $(9,1),(9,3),(9,5),(9,9),(9,11),(11,1),(11,3),(13,1)$ — have *empty* inventories: no positive cycle with minimum below $2^{22}$ (GPU) resp. certified below $10^5$ (Lean) and odd elements below $\tau\approx2^{61}$; even the orbit of $1$ climbs beyond the window; **(iv)** the universal cycle of Theorem 4 appears in all $21$ variants with $a\in\{3,7,15\}$, with signature $k=1$, $H=k_{2}$ where $a+1=2^{k_2}$ — and the catalog sweep of §6.1 shows the Mersennes and $a=5$ are the *only* multipliers below $2^{24}$ whose universal family passes through the seed $c$ itself; **(v)** $\mathrm{Cycles}(3,15)=3\cdot\mathrm{Cycles}(3,5)$ element-by-element with identical signatures — Theorem 2 live in data.
+
+### 6.1 The universal-cycle catalog
+
+Theorem 4d converts "which multipliers give a cycle through $c$ in *every* $ax+c$?" into a one-parameter question: for which odd $a$ is $1$ periodic under the $ax+1$ accelerated map? Pass S3 answers it for all $8{,}388{,}608$ odd $a<2^{24}$ (fuel $4096$ odd steps, values windowed at $\approx2^{64}/a$; **zero** fuel-outs, so every orbit either returned to $1$ or left the window — no undecided cases):
+
+| verdict for the orbit of $1$ under $F_{a,1}$ | count | members |
+|:---|---:|:---|
+| periodic, period $1$ | $24$ | exactly $a=2^k-1$, $k=1,\dots,24$ — forced by Theorem 4b |
+| periodic, period $2$ | $1$ | $a=5$: $1\to3\to1$, transporting to $\{c,3c\}$ in every $5x+c$ |
+| escaped the $2^{64}/a$ window | $8{,}388{,}583$ | everything else |
+
+**Table 1b.** The universal-cycle catalog for $a<2^{24}$. Every entry was re-iterated in exact big-integer arithmetic, satisfies the $n_0=1$ cycle equation $2^H-a^k=W$ (§7), and was re-verified as a live cycle of $F_{a,c}$ at $100$-digit $c$ (transport in action). Completeness caveat, stated honestly: an escaping orbit could in principle return to $1$ from above the window; the sweep excludes periodicity only within the $2^{64}/a$, $4096$-step bounds (drift $\delta(a)>0$ makes a return implausible, but that is §8 heuristics, not proof.)
+
+The period-$2$ row is itself an arithmetic law. A two-cycle through $1$ must be $\{1,\ \mathrm{odd}(a{+}1)\}$, and it closes iff $a\cdot\mathrm{odd}(a+1)+1$ is a power of two ($a=5$: $5\cdot3+1=16$; Mersenne $a$ degenerate with $\mathrm{odd}(a{+}1)=1$). The sweep says no other $a<2^{24}$ manages this — or any longer return — inside the window. Note the catalog does **not** exhaust universal families: $a=181$'s orbit of $1$ escapes, yet $\{27c,611c\}$ is universal for the $181$-column by transport of the cycle $\{27,611\}$, which avoids $1$. The catalog enumerates families through the seed $c$; families through $c\,y$, $y>1$, correspond to the full cycle inventories of the $ax+1$ systems (e.g. $5x+1$'s $\{13,33,83\}$ and $\{17,43,27\}$ give $\{13c,33c,83c\}$ and $\{17c,43c,27c\}$ in every $5x+c$ — visible in Table 1 as the $c$-multiples populating the $a=5$ rows).
 
 ## 7. The cycle equation organizes every inventory
 
@@ -168,9 +228,9 @@ The identity was verified in exact arithmetic for all $89$ discovered cycles (`a
 
 | mechanism | $D=2^H-a^k$ | consequence (observed) |
 |:---|:---|:---|
-| $k=1$, $2^h-a=1$ ($a=2^h-1$) | $D=1$ | universal cycle at $n=c$, all $21$ variants with $a\in\{3,7,15\}$ (Theorem 4) |
-| $k=1$, $2^h-a=c$ | $D=c$ | fixed point $n=1$: exactly the systems $(9,7)$, $(11,5)$, $(13,3)$ via $2^4-a=c$ — the *only* $a\in\{9,11,13\}$ systems with any cycle |
-| $k=1$, $(2^h-a)\nmid c$ for all $h$ | — | no one-step cycles; combined with sparse higher signatures: the eight **empty** inventories of §6 |
+| $k=1$, $2^h-a=1$ ($a=2^h-1$) | $D=1$ | universal cycle at $n=c$, all $21$ variants with $a\in\{3,7,15\}$ (Theorem 4; an **iff** by Theorem 4b) |
+| $k=1$, $2^h-a=c$ | $D=c$ | fixed point $n=1$: exactly the systems $(9,7)$, $(11,5)$, $(13,3)$ via $2^4-a=c$ — the *only* $a\in\{9,11,13\}$ systems with any cycle (the $d=c$ case of Theorem 4c) |
+| $k=1$, $(2^h-a)\nmid c$ for all $h$ | — | no one-step cycles — a theorem by 4c; combined with sparse higher signatures: the eight **empty** inventories of §6 |
 | $(k,H)=(5,8)$, $a=3$ | $D=2^8-3^5=13$ | $c=13$: a seven-cycle multiplet $211,227,251,259,283,287,319$, all of signature $(5,8)$ |
 | $(k,H)=(3,5)$, $a=3$ | $D=2^5-3^3=5$ | $c=5$: the cycle pair $19,23$ (and, scaled by $3$: $57,69$ in $c=15$) |
 | $(k,H)=(2,4)$, $a=3$ | $D=2^4-3^2=7$ | $c=7$: the cycle $\{5,11\}$ |
@@ -203,6 +263,9 @@ For $a,c$ odd, positive, $\gcd(a,c)=1$ — Theorems 1–3 reduce everything else
 |:---|:---|
 | $a$ or $c$ even $\Rightarrow$ monotone divergence of every odd orbit | **proved** (Thm 1, Lean) |
 | $a=2^k-1$ $\Rightarrow$ cycle through $c$, for every odd $c$ | **proved** (Thm 4, Lean) |
+| $F_{a,c}(c)=\mathrm{odd}(a{+}1)\,c$; fixed point at $c$ **iff** $a=2^k-1$ | **proved** (Thm 4b, Lean); zero violations on $2.75\times10^{11}$ pairs |
+| one-step cycles $\leftrightarrow$ divisors $d\mid c$ with $a+d\in2^{\mathbb N}$ | **proved** (Thm 4c, Lean); census of $1.37\times10^{11}$ triples matches the law set-exactly |
+| $ax+1$ cycles transport to every $ax+c$ (universal families) | **proved** (Thm 4d, Lean); catalog: exactly $25$ families through $c$ for $a<2^{24}$ (24 Mersennes + $a{=}5$) |
 | scaling and absorption reductions | **proved** (Thms 2–3, Lean) |
 | each cycle/inventory-completeness claim of §6 | **machine-certified** (89 `decide` + 38 `native_decide`) |
 | cycle structure $\Leftrightarrow$ arithmetic of $2^H-a^k$ | exact identity, verified on all 89 cycles |
@@ -224,8 +287,12 @@ What survives these walls is exactly what a compute-plus-proof pipeline can deli
 nvcc -O3 -gencode arch=compute_90,code=compute_90 collatz.cu -o collatz_gpu
 ./collatz_gpu > results/raw.jsonl        # ~10 s on an RTX 5090
 python3 analyze.py                       # exact rechecks + asserts + generates CollatzCerts.lean
-lean CollatzTheory.lean                  # general theorems (Lean 4.31.0, no dependencies)
+lean CollatzTheory.lean                  # general theorems incl. §4.1 (Lean 4.31.0, no dependencies)
 lean CollatzCerts.lean                   # 127 certificates (~6 min, native_decide)
+
+nvcc -O3 -gencode arch=compute_90,code=compute_90 universal.cu -o universal_gpu
+./universal_gpu > results/universal.jsonl   # S1-S4 theorem verification, ~2 s
+python3 verify_universal.py                 # exact-arithmetic layer V1-V8 + catalog summary
 ```
 
 Hardware: NVIDIA RTX 5090 (32 GB), driver 595.71.05 (CUDA 13.2), `nvcc` 12.0 via PTX JIT. All raw output, logs, and the generated certificate file are committed alongside this paper.

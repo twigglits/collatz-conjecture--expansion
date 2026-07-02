@@ -205,6 +205,29 @@ close the whole family. What a computation-plus-proof pipeline *can* deliver —
 inventories, verified reductions, and quantitative laws with GPU-scale evidence — is delivered
 here.
 
+## 6b. Addendum (2026-07-03): the universal cycle is an *iff*, and it transports
+
+The Theorem-4 mechanism sharpened into one identity, Lean-proved (`CollatzTheory.lean` §5) and
+machine-verified at scale (`universal.cu` + `verify_universal.py`): for odd c and all a, y
+
+```
+F_{a,c}(c·y) = c · F_{a,1}(y)        (accelerated map; the point c factors out)
+⇒ F_{a,c}(c) = odd(a+1) · c          (master formula)
+⇒ F_{a,c}(c) = c  ⇔  a = 2^k − 1     (converse of Thm 4: Mersenne is necessary)
+⇒ F_{a,c}(x) = x  ⇔  x = c/d for a divisor d | c with a + d a power of 2
+                                      (complete one-step cycle law)
+⇒ every ax+1 cycle is a universal cycle family of ax+c, for EVERY odd c
+```
+
+Verified: rigidity + formula on all 2.75×10^11 odd pairs a,c < 2^20 (0 violations); census of all
+1.37×10^11 (a,c,x) triples (a,c < 512, x < 2^22) finds 5477 fixed points, set-equal to the law's
+predictions; the identity fuzzed on 2^33 random instances (0 violations); everything re-derived
+exactly in Python at up to 350-digit parameters. Catalog sweep of all odd a < 2^24: exactly **25**
+multipliers have a universal cycle through the seed c — the 24 Mersennes (period 1, forced by the
+iff) and **a = 5** (period 2: {c, 3c}, transport of the 5x+1 cycle {1,3}); zero undecided orbits.
+Cycles not through 1 transport too: every 181x+c contains {27c, 611c}. Details: paper §4.1 and
+§6.1; data in `results/universal.jsonl`, `results/universal_summary.md`.
+
 ## 7. Reproduction
 
 ```
@@ -213,6 +236,10 @@ nvcc -O3 -gencode arch=compute_90,code=compute_90 collatz.cu -o collatz_gpu
 python3 analyze.py                       # bignum rechecks + asserts + generates CollatzCerts.lean
 lean CollatzTheory.lean                  # general theorems  (Lean 4.31.0, no deps)
 lean CollatzCerts.lean                   # 127 certificates  (a few minutes, native_decide)
+
+nvcc -O3 -gencode arch=compute_90,code=compute_90 universal.cu -o universal_gpu
+./universal_gpu > results/universal.jsonl   # universal-cycle laws S1-S4, ~2 s
+python3 verify_universal.py                 # exact big-integer layer V1-V8
 ```
 
 Sources: [Barina 2025](https://link.springer.com/article/10.1007/s11227-025-07337-0) ·
