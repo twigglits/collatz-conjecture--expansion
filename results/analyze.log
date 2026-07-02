@@ -1,0 +1,19 @@
+== bignum recheck of sampled escape/fuel-out starts ==
+  a=3 c=-1 n=2672464025: reconverges to cycle(min=1) after u64-window exit
+  a=3 c=-1 n=3563285367: reconverges to cycle(min=1) after u64-window exit
+  a=3 c=-1 n=4008696037: reconverges to cycle(min=1) after u64-window exit
+  a=3 c=3 n=2820247885: reconverges to cycle(min=3) after u64-window exit
+  a=3 c=3 n=3760330513: reconverges to cycle(min=3) after u64-window exit
+  a=3 c=3 n=4230371829: reconverges to cycle(min=3) after u64-window exit
+  a=3 c=11 n=3517853141: reconverges to cycle(min=11) after u64-window exit
+  a=3 c=11 n=4169307417: reconverges to cycle(min=11) after u64-window exit
+  a=3 c=13 n=4157462803: reconverges to cycle(min=13) after u64-window exit
+  a=3 c=15 n=3198048305: reconverges to cycle(min=15) after u64-window exit
+  a=3 c=15 n=3735036913: reconverges to cycle(min=57) after u64-window exit
+  a=3 c=15 n=3790279465: reconverges to cycle(min=15) after u64-window exit
+  a=3 c=15 n=4264064405: reconverges to cycle(min=15) after u64-window exit
+  a=3 c=19 n=4119253797: reconverges to cycle(min=5) after u64-window exit
+== all literature/structure asserts passed ==
+== wrote CollatzCerts.lean: 89 cycle certs + 38 range certs ==
+== wrote results/summary.md ==
+== drift sanity (halvings/odd-step ≈ 2 up to boundary term) passed ==
