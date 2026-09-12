@@ -1,2 +1,4 @@
 collatz_gpu
 universal_gpu
+target/
+__pycache__/

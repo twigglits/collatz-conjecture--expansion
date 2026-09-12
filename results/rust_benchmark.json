@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-09-12T21:40:59.836744+00:00",
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "logical_cpus": 10,
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "python_implementation": "CPython",
+    "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "cargo": "cargo 1.98.1 (797e8a9bc 2026-08-05)"
+  },
+  "repeats": 5,
+  "warmups_per_configuration": 1,
+  "scope": "ordinary-step trajectory search and copied row collection on identical ordered seeds",
+  "excluded_from_search_times": [
+    "imports",
+    "seed generation",
+    "result comparison",
+    "serialization/export",
+    "process startup",
+    "compilation",
+    "Lean verification"
+  ],
+  "measurement_notes": [
+    "Python uses time.perf_counter; Rust CLI uses std::time::Instant around its search.",
+    "Both timers include row collection and replacement of previous results.",
+    "Python copies seed dictionaries; Rust clones owned Seed fields.",
+    "Sequential batches on this machine; no CPU affinity or thermal controls were applied.",
+    "The parallel result includes multiple workers and is reported separately from one-worker Rust.",
+    "Wall-clock measurements are empirical; native_decide does not certify timings or speed ratios."
+  ],
+  "execution_order": [
+    "Python",
+    "Rust single worker",
+    "Rust 8 workers"
+  ],
+  "fuel_ordinary_steps": 300000,
+  "summary": {
+    "cases": 1257,
+    "status_counts": {
+      "reached_one": 1257
+    },
+    "min_start_bits": 72,
+    "max_start_bits": 8198,
+    "certified_trajectory_metrics": {
+      "cases": 1257,
+      "total_steps": 12417483,
+      "max_steps": 111072,
+      "max_peak_bits": 12996,
+      "max_first_descent": 52367
+    },
+    "longest_trajectory": "11*2^8192-1",
+    "latest_first_descent": "11*2^8192-1"
+  },
+  "families": {
+    "power_offsets": {
+      "cases": 312,
+      "status_counts": {
+        "reached_one": 312
+      },
+      "min_start_bits": 72,
+      "max_start_bits": 4097,
+      "certified_trajectory_metrics": {
+        "cases": 312,
+        "total_steps": 3049388,
+        "max_steps": 55263,
+        "max_peak_bits": 6494,
+        "max_first_descent": 24785
+      },
+      "longest_trajectory": "2^4096-1",
+      "latest_first_descent": "2^4096-1"
+    },
+    "all_odd_prefix": {
+      "cases": 57,
+      "status_counts": {
+        "reached_one": 57
+      },
+      "min_start_bits": 74,
+      "max_start_bits": 8198,
+      "certified_trajectory_metrics": {
+        "cases": 57,
+        "total_steps": 1644776,
+        "max_steps": 111072,
+        "max_peak_bits": 12996,
+        "max_first_descent": 52367
+      },
+      "longest_trajectory": "11*2^8192-1",
+      "latest_first_descent": "11*2^8192-1"
+    },
+    "critical_parity_prefix": {
+      "cases": 56,
+      "status_counts": {
+        "reached_one": 56
+      },
+      "min_start_bits": 129,
+      "max_start_bits": 8198,
+      "certified_trajectory_metrics": {
+        "cases": 56,
+        "total_steps": 1149465,
+        "max_steps": 75059,
+        "max_peak_bits": 8203,
+        "max_first_descent": 13396
+      },
+      "longest_trajectory": "critical(8192)+3*2^8192",
+      "latest_first_descent": "critical(8192)+63*2^8192"
+    },
+    "hash_control": {
+      "cases": 832,
+      "status_counts": {
+        "reached_one": 832
+      },
+      "min_start_bits": 72,
+      "max_start_bits": 4096,
+      "certified_trajectory_metrics": {
+        "cases": 832,
+        "total_steps": 6573854,
+        "max_steps": 32453,
+        "max_peak_bits": 4106,
+        "max_first_descent": 122
+      },
+      "longest_trajectory": "shake256(4096,17)",
+      "latest_first_descent": "shake256(384,12)"
+    }
+  },
+  "python": {
+    "warmup_seconds": [
+      2.825262667000061
+    ],
+    "search_seconds": [
+      2.8369471250043716,
+      2.8363269999972545,
+      2.828557374989032,
+      2.828586167001049,
+      2.8386887079977896
+    ],
+    "median_seconds": 2.8363269999972545,
+    "min_seconds": 2.828557374989032,
+    "max_seconds": 2.8386887079977896
+  },
+  "rust_single": {
+    "warmup_seconds": [
+      0.174988584
+    ],
+    "search_seconds": [
+      0.160322083,
+      0.160959375,
+      0.161313042,
+      0.16424525,
+      0.164238667
+    ],
+    "median_seconds": 0.161313042,
+    "min_seconds": 0.160322083,
+    "max_seconds": 0.16424525,
+    "threads": 1,
+    "command": [
+      "/Users/jean/Personal/collatz-conjecture--expansion/target/release/collatz-search",
+      "--bench",
+      "6",
+      "--threads",
+      "1",
+      "--fuel",
+      "300000"
+    ],
+    "seed_generation_seconds_excluded": 0.007444583,
+    "reported_scope": "search and row collection only; excludes seed generation, export, compilation, and Lean"
+  },
+  "rust_parallel": {
+    "warmup_seconds": [
+      0.06994425
+    ],
+    "search_seconds": [
+      0.065724792,
+      0.065586167,
+      0.066897,
+      0.066323458,
+      0.06537075
+    ],
+    "median_seconds": 0.065724792,
+    "min_seconds": 0.06537075,
+    "max_seconds": 0.066897,
+    "threads": 8,
+    "command": [
+      "/Users/jean/Personal/collatz-conjecture--expansion/target/release/collatz-search",
+      "--bench",
+      "6",
+      "--threads",
+      "8",
+      "--fuel",
+      "300000"
+    ],
+    "seed_generation_seconds_excluded": 0.004038375,
+    "reported_scope": "search and row collection only; excludes seed generation, export, compilation, and Lean"
+  },
+  "median_speed_ratios": {
+    "python_over_rust_single": 17.58275068668815,
+    "python_over_rust_parallel": 43.15459834391343,
+    "rust_single_over_rust_parallel": 2.4543712819966017
+  },
+  "verification": {
+    "saved_rust_and_python_rows_identical": true,
+    "generated_python_seeds_match_saved_rows": true,
+    "each_python_warmup_and_measured_row_matches_baseline": true,
+    "rust_timed_batch_summaries_and_families_match_baseline": true,
+    "both_saved_manifests_have_verified_matching_certificate_hashes": true,
+    "sources_and_binary_unchanged_during_measurement": true
+  },
+  "sha256": {
+    "search_counterexample.py": "6116b212f654e92e17d537158cc166414e3853e17c4fe8147a6ecf16260caf61",
+    "Cargo.toml": "32c3fd61d4489427258a48517d7b246343782bf1a04c9a8bc4d9f7a547687a59",
+    "Cargo.lock": "771c6ab3ed9ee0d7a2504f48092e3f928ef7197ddeef33e8fa3ba2bcc2c33f59",
+    "bench/compare.py": "71c21aa7ce807059b17fc30cdc9b615bc496cffd165944d5ba0e682bc8c8b451",
+    "results/counterexample_search.json": "1229025daee5e08627250f97e644d165cffcbfb5752c5a096386d342ffd03448",
+    "results/counterexample_search_rust.json": "b57091476d8c3cb7ae7008eb2f83fa32a33e1c262108f1b8cd037a9673890738",
+    "target/release/collatz-search": "144d6fef8f3b2e68a9a0c2c94b8106adca21dbabe152294d3ab7898a94315e48",
+    "src/certificates.rs": "efb9b12830fbc87dedcfbdb4335e28af04d063ed75c072656770576907dd38cb",
+    "src/lib.rs": "dc55dd367062550d3083fcd58fa80c6fe89dcdce0146861bd2d4065cd92bfc36",
+    "src/main.rs": "7be4a9bc32c2932b0018f229a3aa5b11b32c41d7794346b19075a8aa192d3008",
+    "src/search.rs": "ee0d706256bdd3cefb02a844769251db058ef227c97428fbe85032d018e714f2",
+    "src/seeds.rs": "54deda3321ccaf468e31580a7d34ba08d00ced9ee139447e80aff2a6038275c7",
+    "CollatzSearchCerts.lean": "cb82e1c86a7db09153e02cce0a6126663e4705ded78c09a43d4fcd0a19e309f2",
+    "CollatzSearchCertsRust.lean": "6df740f715a50848ccfbdaf35cba81ef68e4b0f012fdc5e0e94f24b3d5c8b787"
+  }
+}

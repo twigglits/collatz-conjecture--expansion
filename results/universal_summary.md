@@ -5,6 +5,8 @@
 - S3 catalog: odd a < 2^24, fuel 4096 — periodic 25, escape 8388583, fuelout 0  [0.00s GPU]
 - S4 scaling fuzz: 8589934592 trials, 0 violations  [0.03s GPU]
 
+Window escapes remain unresolved for eventual periodicity. Zero fuel-outs does not make this catalog complete: an escaped orbit might return later.
+
 ## Universal cycle families found (1 periodic under F_{a,1}, a < 2^24)
 
 | a | period k | H (halvings) | a+1 power of 2? |

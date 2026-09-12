@@ -145,6 +145,8 @@ with open("results/universal_summary.md", "w") as f:
     f.write(f"- S3 catalog: odd a < 2^24, fuel 4096 — periodic {s3['periodic']}, "
             f"escape {s3['escape']}, fuelout {s3['fuelout']}  [{s3['secs']:.2f}s GPU]\n")
     f.write(f"- S4 scaling fuzz: {s4['trials']} trials, {s4['violations']} violations  [{s4['secs']:.2f}s GPU]\n\n")
+    f.write("Window escapes remain unresolved for eventual periodicity. Zero fuel-outs does not "
+            "make this catalog complete: an escaped orbit might return later.\n\n")
     f.write("## Universal cycle families found (1 periodic under F_{a,1}, a < 2^24)\n\n")
     f.write("| a | period k | H (halvings) | a+1 power of 2? |\n|---:|---:|---:|:---:|\n")
     for a, per, H, mer in sorted(rows):

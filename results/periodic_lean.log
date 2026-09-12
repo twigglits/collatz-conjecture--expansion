@@ -1,0 +1,7 @@
+'CollatzPeriodic.difference_divisibility' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.affine_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.collatz_block_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.block_formula' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.repeated_schedule_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.shared_schedule_unique' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.eventually_periodic_halvings' depends on axioms: [propext, Quot.sound]

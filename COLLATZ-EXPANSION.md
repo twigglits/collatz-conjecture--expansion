@@ -6,7 +6,7 @@
 
 **J. Naude**, with derivations, engines, and analyses produced in human–AI collaboration (Claude, Anthropic; see the repository commit trailers). Computational artifacts, datasets, and machine proofs accompany this paper: the CUDA engine [`collatz.cu`](collatz.cu), the Lean 4 developments [`CollatzTheory.lean`](CollatzTheory.lean) and [`CollatzCerts.lean`](CollatzCerts.lean), the exact-arithmetic cross-checker [`analyze.py`](analyze.py), and the raw sweep data in [`results/`](results/).
 
-*Working paper, revision of 2026-07-03. The Collatz conjecture is **open**; nothing here proves or disproves it, and §10 argues that no route of this kind can. The contribution is a machine-verified structural account of the two-parameter family containing it: every theorem is checked by the Lean 4 kernel, every finite claim is certified, and every empirical law is measured on $\approx 3.76\times10^{10}$ GPU-computed orbits.*
+*Working paper, July 2026 study with September 2026 scope corrections. The Collatz conjecture is **open**; nothing here proves or disproves it. See [ATTEMPT.md](ATTEMPT.md) for the current original-conjecture attempt. The historical PDF does not include these corrections. The contribution is a machine-verified structural account of the two-parameter family containing it: structural theorems are checked by the Lean 4 kernel under their stated natural-number hypotheses, finite claims have CUDA evidence or scoped Lean certificates, and every empirical law is measured on $\approx 3.812\times10^{10}$ GPU-computed orbits.*
 
 ---
 
@@ -16,9 +16,9 @@ For odd $a,c$ we study the generalized Collatz map
 $$
 T_{a,c}(n)=\begin{cases} a\,n+c & n \text{ odd},\\[2pt] n/2 & n \text{ even},\end{cases}
 $$
-the classical conjecture being the case $(a,c)=(3,1)$. We combine a CUDA sweep of $38$ parameter pairs — every odd start below $2^{32}$ for the $3x+c$ family and below $2^{30}$ otherwise, $\approx 3.76\times 10^{10}$ orbits in about $7$ seconds on one RTX 5090 — with a Lean 4 development in which (i) the structural theorems are proved for *all* parameters with kernel-only proofs and no extra axioms, and (ii) the sweep's finite claims are exported as $127$ machine-checked certificates ($89$ cycle certificates, axiom-free by kernel evaluation; $38$ range-classification certificates via `native_decide`). A second engine (`universal.cu`) verifies the sharpened universal-cycle laws of §4.1 on a further $\approx4.1\times10^{11}$ instances with zero violations, and `verify_universal.py` re-derives them in exact arithmetic up to $350$-digit parameters.
+the classical conjecture being the case $(a,c)=(3,1)$. We combine a CUDA sweep of $38$ parameter pairs — every odd start below $2^{32}$ for the $3x+c$ family and below $2^{30}$ otherwise, $\approx 3.812\times 10^{10}$ orbits in about $7$ seconds on one RTX 5090 — with a Lean 4 development in which (i) the structural theorems are proved for *all* parameters with kernel-only proofs and no extra axioms, and (ii) the sweep's finite claims are exported as $127$ machine-checked certificates ($89$ cycle certificates, axiom-free by kernel evaluation; $38$ range-classification certificates via `native_decide`). A second engine (`universal.cu`) verifies the sharpened universal-cycle laws of §4.1 on a further $\approx4.1\times10^{11}$ instances with zero violations, and `verify_universal.py` re-derives them in exact arithmetic up to $350$-digit parameters.
 
-The verified structure is: **(1)** if $a$ or $c$ is even, every odd start diverges monotonically, so the family is dynamically interesting only for $a,c$ odd; **(2)** for odd $m$, $T_{a,mc}(mn)=m\,T_{a,c}(n)$, so cycle sets scale, and a common odd prime factor of $a$ and $c$ traps all orbits in $p\mathbb{Z}$ — reducing the classification to $\gcd(a,c)=1$; **(3)** if $a=2^k-1$ then for *every* odd $c$ the point $c$ itself is periodic, $T^{\,k+1}(c)=c$: the famous loop $1\to4\to2\to1$ is the $k=2$ instance of a one-line theorem. Sharpened (§4.1): the accelerated map $F$ satisfies $F_{a,c}(c)=\mathrm{odd}(a{+}1)\cdot c$, so the universal fixed point at $c$ *characterizes* $a=2^k-1$; the fixed points of any $(a,c)$ are exactly $x=c/d$ for divisors $d\mid c$ with $a+d$ a power of two; and the master identity $F_{a,c}(cy)=c\,F_{a,1}(y)$ transports every $ax+1$ cycle into every $ax+c$ — a sweep of all odd $a<2^{24}$ finds exactly $25$ multipliers with a universal cycle through $c$: the $24$ Mersenne numbers (period $1$) and $a=5$ (period $2$, the family $\{c,3c\}$). Empirically, the halving count after an odd step has mean $2$ (measured $2.0000$–$2.0009$ on escape-dominated ensembles), giving per-odd-step drift $\delta(a)=\ln a-2\ln 2$, which the sweep reproduces to four decimals for every $a\ge5$ together with the implied mean escape times. Consequently the family splits into a contracting regime — all twelve $3x+c$ systems tested converge for $100.0000\%$ of $\approx 2.1\times10^9$ odd starts each — and an expanding regime, where convergence density is $\le 0.36\%$ and often exactly the cycle basins. Every one of the $89$ cycles found satisfies the exact identity $n_0(2^H-a^k)=c\,W$ with $W=\sum_i a^{k-1-i}2^{h_0+\cdots+h_{i-1}}$, and the inventories are organized by the divisors of $D=2^H-a^k$: one-step cycles exist iff $(2^h-a)\mid c$, which simultaneously explains the universal cycles ($D=1$), the isolated fixed points of $(9,7)$, $(11,5)$, $(13,3)$ ($2^4-a=c$), the seven-cycle multiplet of $3x+13$ ($2^8-3^5=13$), and the emptiness of the $(9,1)$, $(11,1)$, $(13,1)$ inventories. We state the two conjectures this evidence supports and record why they — and by Conway-type undecidability, the general family — remain beyond computational and elementary methods.
+The verified structure is: **(1)** if $a$ is odd and $c$ positive even, or $a\ge2$ is even and $c$ odd, every odd start diverges monotonically; the both-even case is not covered; **(2)** for odd $m$, $T_{a,mc}(mn)=m\,T_{a,c}(n)$, so cycle sets scale, and a common odd prime factor of $a$ and $c$ traps all orbits in $p\mathbb{Z}$ — reducing the classification to $\gcd(a,c)=1$; **(3)** if $a=2^k-1$ then for *every* odd $c$ the point $c$ itself is periodic, $T^{\,k+1}(c)=c$: the famous loop $1\to4\to2\to1$ is the $k=2$ instance of a one-line theorem. Sharpened (§4.1): the accelerated map $F$ satisfies $F_{a,c}(c)=\mathrm{odd}(a{+}1)\cdot c$, so the universal fixed point at $c$ *characterizes* $a=2^k-1$; the fixed points of any $(a,c)$ are exactly $x=c/d$ for divisors $d\mid c$ with $a+d$ a power of two; and the master identity $F_{a,c}(cy)=c\,F_{a,1}(y)$ transports every $ax+1$ cycle into every $ax+c$ — a sweep of all odd $a<2^{24}$ finds $25$ multipliers with a universal cycle through $c$ before window escape: the $24$ Mersenne numbers (period $1$) and $a=5$ (period $2$, the family $\{c,3c\}$). Other multipliers remain unresolved by this sweep. Empirically, the halving count after an odd step has mean $2$ (measured $2.0000$–$2.0009$ on escape-dominated ensembles), giving per-odd-step drift $\delta(a)=\ln a-2\ln 2$, which the sweep approximates for $a\ge5$ with maximum absolute drift discrepancy about $0.000614$ together with the implied mean escape times. Consequently the family splits into a contracting regime — all eleven $3x+c$ systems tested converge for $100.0000\%$ of $\approx 2.1\times10^9$ odd starts each — and an expanding regime, where convergence density is $\le 0.36\%$ and often exactly the cycle basins. Every one of the $89$ cycles found satisfies the exact identity $n_0(2^H-a^k)=c\,W$ with $W=\sum_i a^{k-1-i}2^{h_0+\cdots+h_{i-1}}$, and the inventories are organized by the divisors of $D=2^H-a^k$: one-step cycles exist iff $(2^h-a)\mid c$, which simultaneously explains the universal cycles ($D=1$), the isolated fixed points of $(9,7)$, $(11,5)$, $(13,3)$ ($2^4-a=c$), the seven-cycle multiplet of $3x+13$ ($2^8-3^5=13$), and the emptiness of the $(9,1)$, $(11,1)$, $(13,1)$ inventories. We state the two conjectures this evidence supports and record why they remain unresolved by the results here; generalized undecidability does not prove impossibility for this family.
 
 ---
 
@@ -34,12 +34,12 @@ Two classical facts calibrate the ambition. First, the base case is open despite
 
 1. **Machine-verified general theorems** (§4): parity reduction, scaling conjugacy, prime absorption, and a universal-cycle theorem for $a=2^k-1$ — sharpened in §4.1 to an iff, with a complete one-step-cycle law and a transport principle for cycles — each proved in Lean 4.31 with kernel-only proofs, no Mathlib, no `native_decide`, quantified over all parameters.
 2. **A certified computational pipeline** (§5): a two-pass CUDA engine (cycle inventory by Brent detection; mass classification of every odd start) whose output is cross-checked in exact big-integer arithmetic and *re-proved* as $127$ Lean certificates (§5.3). The GPU finds; the proof assistant certifies.
-3. **Quantitative laws** (§6–§8): the drift dichotomy $\delta(a)=\ln a-2\ln2$ measured to four decimals; the cycle equation verified exactly on all discovered cycles; the signature/divisor mechanism $D=2^H-a^k$ that predicts which $(a,c)$ have rich, sparse, or empty cycle inventories.
+3. **Quantitative laws** (§6–§8): the drift model $\delta(a)=\ln a-2\ln2$ compared with measurements; the cycle equation verified exactly on all discovered cycles; the signature/divisor mechanism $D=2^H-a^k$ that predicts which $(a,c)$ have rich, sparse, or empty cycle inventories.
 4. **An honest synthesis** (§9–§10): the two open conjectures the data supports, and a precise account of why this route — any computational route — cannot close them.
 
 ## 2. Related work
 
-Terras (1976) and Everett (1977) proved almost every $n$ has finite stopping time; Korec (1994) lowered the a.e. dip to $n^{\theta}$, $\theta=\ln3/\ln4\approx0.7925$. Tao (2019) proved almost all Collatz orbits attain almost bounded values (logarithmic density). Computational verification reached $2^{68}$ (Barina 2020) and $2^{71}$ (Barina 2025), which also feeds cycle bounds: Steiner (1977) excluded 1-circuits; Simons–de Weger (2005) excluded $m$-cycles for $m\le68$; Hercher (2023) for $m\le91$, so any nontrivial $(3,1)$-cycle has length exceeding $\approx10^{11}$. Lagarias (1985, 2010) surveys the field; Lagarias (1990) identified integer cycles of $3x+d$ with rational cycles of $3x+1$. Belaga–Mignotte (1998, 2000) catalogued the primitive cycles of $3x+d$ for $d<20000$ and conjectured every such orbit is eventually periodic. Crandall (1978) formulated the $qx+1$ problem and conjectured divergent orbits exist for $q\ge5$. Conway (1972; FRACTRAN 1987) and Kurtz–Simon (2007) supply the undecidability ceiling. The cycle identity of §7 is classical (Böhm–Sontacchi 1978). A community effort to formalize the Collatz literature in Lean is underway at ccchallenge.org; the present development is independent but uses the same proof assistant.
+Terras (1976) and Everett (1977) proved almost every $n$ has finite stopping time; Korec (1994) lowered the a.e. dip to $n^{\theta}$, $\theta>\ln3/\ln4\approx0.7925$. Tao (2019) proved almost all Collatz orbits attain almost bounded values (logarithmic density). Computational verification reached $2^{68}$ (Barina 2020) and $2^{71}$ (Barina 2025), which also feeds cycle bounds: Steiner (1977) excluded 1-circuits; Simons–de Weger (2005) excluded $m$-cycles for $m\le68$; Hercher (2023) for $m\le91$, so any nontrivial $(3,1)$-cycle has length exceeding $\approx10^{11}$. Lagarias (1985, 2010) surveys the field; Lagarias (1990) identified integer cycles of $3x+d$ with rational cycles of $3x+1$. Belaga–Mignotte (1998, 2000) tabulated experimentally known primitive cycles of $3x+d$ for $d<20000$ and conjectured every such orbit is eventually periodic. Crandall (1978) formulated the $qx+1$ problem and conjectured divergent orbits exist for $q\ge5$. Conway (1972; FRACTRAN 1987) and Kurtz–Simon (2007) prove undecidability for a broader class of residue-dependent affine maps, not for this two-parameter family or for the original conjecture. The cycle identity of §7 is classical (Böhm–Sontacchi 1978). A community effort to formalize the Collatz literature in Lean is underway at ccchallenge.org; the present development is independent but uses the same proof assistant.
 
 ## 3. Notation
 
@@ -61,7 +61,7 @@ $$
 
 *Proof.* $an$ has the parity of $a\cdot n$; in both hypothesis regimes $an+c$ is odd, and $an+c>n$ since $a\ge1,c>0$ resp. $a\ge2$. The even branch is never taken, so growth iterates. $\square$
 
-Thus the family is dynamically nontrivial **only for $a,c$ both odd**, which fixes the sweep grid.
+The theorem excludes those opposite-parity regimes. It does not exclude both-even systems: $(a,c)=(2,2)$ has the cycle $1\to4\to2\to1$. This study chooses the odd-by-odd sweep grid.
 
 **Theorem 2 (scaling conjugacy).** *For odd $m$ and all $a,c,n,j$:*
 $$
@@ -83,7 +83,7 @@ $$
 
 *Proof.* $c$ odd gives $T(c)=ac+c=(a+1)c=2^kc$; then $k$ even steps halve $2^kc$ back to $c$. $\square$
 
-The Collatz loop $\{1,4,2\}$ is the $k=2$, $c=1$ instance; the theorem asserts its analogue in *every* $3x+c$, $7x+c$, $15x+c$ system simultaneously, and the sweep observes it in all $21$ such variants (§6).
+The Collatz loop $\{1,4,2\}$ is the $k=2$, $c=1$ instance; the theorem asserts its analogue in *every* $3x+c$, $7x+c$, $15x+c$ system simultaneously, and the sweep observes it in all $19$ positive-c such variants (§6).
 
 ### 4.1 The universal cycle, sharpened: formula, converse, classification, transport
 
@@ -129,7 +129,7 @@ It also poses a sharp finite question: *which multipliers have a universal cycle
 `collatz.cu` runs two kernels per variant on an NVIDIA RTX 5090 (Blackwell, `sm_120`, driver CUDA 13.2; compiled as `compute_90` PTX and JIT-compiled by the driver, since the installed `nvcc` 12.0 predates the architecture):
 
 - **Pass A — inventory.** Brent cycle detection on the accelerated map $F$ from every odd start $<2^{22}$ (fuel $2^{14}$ accelerated steps, window $\tau$). Detected cycles are canonicalized by their odd minimum; $(k,H)$, the cycle maximum, and members are recomputed on the host.
-- **Pass B — classification.** Every odd start $<N$ ($N=2^{32}$ for the $3x+c$ family, $2^{30}$ otherwise) is iterated (fuel $8192$) until its odd value hits an inventory minimum (basin attribution), exceeds $\tau$ (escape), or fuel exhausts. Aggregates per variant: per-cycle basin counts, escape count, total odd steps, total halvings, maximum excursion; per-thread tallies are reduced through shared memory. Grid total: $38$ variants, $\approx3.76\times10^{10}$ orbits, $\approx7$ s of GPU time.
+- **Pass B — classification.** Every odd start $<N$ ($N=2^{32}$ for the $3x+c$ family, $2^{30}$ otherwise) is iterated (fuel $8192$) until its odd value hits an inventory minimum (basin attribution), exceeds $\tau$ (escape), or fuel exhausts. Aggregates per variant: per-cycle basin counts, escape count, total odd steps, total halvings, maximum excursion; per-thread tallies are reduced through shared memory. Grid total: $38$ variants, $\approx3.812\times10^{10}$ orbits, $\approx7$ s of GPU time.
 
 A second engine, [`universal.cu`](universal.cu), verifies the §4.1 theorems at scale (RTX 5090, run of 2026-07-03; raw output `results/universal.jsonl`):
 
@@ -149,7 +149,7 @@ A second engine, [`universal.cu`](universal.cu), verifies the §4.1 theorems at 
 `analyze.py` exports the sweep's finite claims to [`CollatzCerts.lean`](CollatzCerts.lean):
 
 - **89 cycle certificates** — for each discovered cycle, `iterN (T a c) len min = min`, proved by kernel `decide`: the Lean kernel itself evaluates the orbit. `#print axioms` reports **no axioms whatsoever** for these.
-- **38 range certificates** — for each variant, *every* $n\in[1,10^5]$ either reaches the certified inventory or exceeds $\tau$ within the fuel bound (`native_decide`, which additionally trusts Lean's compiler via `Lean.ofReduceBool` — the standard trade-off for large finite checks). Corollary: **inventory completeness** below the window — any missed cycle must have minimum $>10^5$ (indeed $>2^{22}$ by Pass A) or an odd element above $\tau$.
+- **38 range certificates** — for each variant, *every* $n\in[1,10^5]$ either reaches the certified inventory or exceeds $\tau$ within the fuel bound (`native_decide`, which additionally trusts Lean's compiler and native runtime — the standard trade-off for large finite checks). Corollary: **inventory completeness** below the window — the Lean certificates exclude missed cycles with minimum at most $10^5$ and **all raw states** at most $\tau$. CUDA Pass A separately covers odd starts below $2^{22}$ with its accelerated-state window. The Lean certificates do not certify the full GPU ranges or aggregate counts.
 
 All $127$ certificates check ($\approx6$ minutes; long cycles need `maxRecDepth` raised, as `decide` unfolds roughly ten elaborator frames per step).
 
@@ -200,11 +200,11 @@ Table 1 condenses `results/summary.md` (full raw data: `results/raw.jsonl`). "co
 
 **Table 1.** The 38-variant sweep. Drift is per odd step: measured $\ln a - (\text{halvings}/\text{odd steps})\ln2$ vs. predicted $\delta(a)=\ln a-2\ln2$ (§8).
 
-Headlines: **(i)** every $a=3$ variant converged for $100.0000\%$ of its $\approx2.1\times10^{9}$ odd starts (window escapes bignum-verified); **(ii)** every $a\ge5$ variant escapes for essentially all starts, the convergent share being the union of tiny cycle basins; **(iii)** eight variants — $(9,1),(9,3),(9,5),(9,9),(9,11),(11,1),(11,3),(13,1)$ — have *empty* inventories: no positive cycle with minimum below $2^{22}$ (GPU) resp. certified below $10^5$ (Lean) and odd elements below $\tau\approx2^{61}$; even the orbit of $1$ climbs beyond the window; **(iv)** the universal cycle of Theorem 4 appears in all $21$ variants with $a\in\{3,7,15\}$, with signature $k=1$, $H=k_{2}$ where $a+1=2^{k_2}$ — and the catalog sweep of §6.1 shows the Mersennes and $a=5$ are the *only* multipliers below $2^{24}$ whose universal family passes through the seed $c$ itself; **(v)** $\mathrm{Cycles}(3,15)=3\cdot\mathrm{Cycles}(3,5)$ element-by-element with identical signatures — Theorem 2 live in data.
+Headlines: **(i)** every $a=3$ variant converged for $100.0000\%$ of its $\approx2.1\times10^{9}$ odd starts (window escapes bignum-verified); **(ii)** every $a\ge5$ variant escapes for essentially all starts, the convergent share being the union of tiny cycle basins; **(iii)** eight variants — $(9,1),(9,3),(9,5),(9,9),(9,11),(11,1),(11,3),(13,1)$ — have *empty* inventories: no positive cycle with minimum below $2^{22}$ (GPU) resp. certified below $10^5$ (Lean) with odd elements below the CUDA window, or all raw states below the Lean window, $\tau\approx2^{61}$ respectively; even the orbit of $1$ climbs beyond the window; **(iv)** the universal cycle of Theorem 4 appears in all $19$ positive-c variants with $a\in\{3,7,15\}$, with signature $k=1$, $H=k_{2}$ where $a+1=2^{k_2}$ — and the catalog sweep of §6.1 shows the Mersennes and $a=5$ are the multipliers below $2^{24}$ found to return to the seed $c$ before window escape; the sweep does not exclude later returns for other multipliers; **(v)** $\mathrm{Cycles}(3,15)=3\cdot\mathrm{Cycles}(3,5)$ element-by-element with identical signatures — Theorem 2 live in data.
 
 ### 6.1 The universal-cycle catalog
 
-Theorem 4d converts "which multipliers give a cycle through $c$ in *every* $ax+c$?" into a one-parameter question: for which odd $a$ is $1$ periodic under the $ax+1$ accelerated map? Pass S3 answers it for all $8{,}388{,}608$ odd $a<2^{24}$ (fuel $4096$ odd steps, values windowed at $\approx2^{64}/a$; **zero** fuel-outs, so every orbit either returned to $1$ or left the window — no undecided cases):
+Theorem 4d converts "which multipliers give a cycle through $c$ in *every* $ax+c$?" into a one-parameter question: for which odd $a$ is $1$ periodic under the $ax+1$ accelerated map? Pass S3 tests $8{,}388{,}608$ odd $a<2^{24}$ (fuel $4096$ odd steps, values windowed at $\approx2^{64}/a$; **zero** fuel-outs, so every orbit either returned to $1$ or left the window — the window escapes remain unresolved for eventual periodicity):
 
 | verdict for the orbit of $1$ under $F_{a,1}$ | count | members |
 |:---|---:|:---|
@@ -228,7 +228,7 @@ The identity was verified in exact arithmetic for all $89$ discovered cycles (`a
 
 | mechanism | $D=2^H-a^k$ | consequence (observed) |
 |:---|:---|:---|
-| $k=1$, $2^h-a=1$ ($a=2^h-1$) | $D=1$ | universal cycle at $n=c$, all $21$ variants with $a\in\{3,7,15\}$ (Theorem 4; an **iff** by Theorem 4b) |
+| $k=1$, $2^h-a=1$ ($a=2^h-1$) | $D=1$ | universal cycle at $n=c$, all $19$ positive-c variants with $a\in\{3,7,15\}$ (Theorem 4; an **iff** by Theorem 4b) |
 | $k=1$, $2^h-a=c$ | $D=c$ | fixed point $n=1$: exactly the systems $(9,7)$, $(11,5)$, $(13,3)$ via $2^4-a=c$ — the *only* $a\in\{9,11,13\}$ systems with any cycle (the $d=c$ case of Theorem 4c) |
 | $k=1$, $(2^h-a)\nmid c$ for all $h$ | — | no one-step cycles — a theorem by 4c; combined with sparse higher signatures: the eight **empty** inventories of §6 |
 | $(k,H)=(5,8)$, $a=3$ | $D=2^8-3^5=13$ | $c=13$: a seven-cycle multiplet $211,227,251,259,283,287,319$, all of signature $(5,8)$ |
@@ -247,10 +247,13 @@ After an odd step, the exponent $h=\nu_2(an+c)$ of a "random" orbit behaves geom
 $$
 \delta(a)\;=\;\ln a-2\ln2:\qquad \delta(1),\delta(3)<0<\delta(5)\le\delta(7)\le\cdots
 $$
-The sweep measures $\text{halvings}/\text{odd steps}\in[1.9948,\,2.0263]$ across all $38$ variants, and exactly $2.0000$–$2.0009$ on escape-dominated ensembles; measured drift matches $\delta(a)$ to *four decimals* for every $a\ge5$ (Table 1). For the convergent $a=3$ family the small deviations are exactly the finite-orbit boundary term
+The sweep measures $\text{halvings}/\text{odd steps}\in[1.9948,\,2.0263]$ across all $38$ variants, with escape-dominated ensembles near $2$. Measured drift approximately matches $\delta(a)$ for $a\ge5$; the maximum absolute discrepancy in the committed grid is about $0.000614$. This is not four-decimal equality. For one positive odd orbit of length $k$, the exact identity is
 $$
-\frac{H_{\mathrm{tot}}}{k_{\mathrm{tot}}}\;=\;\log_2 3\;+\;\frac{\overline{\log_2 n_{\mathrm{start}}}-\overline{\log_2 n_{\mathrm{end}}}}{\bar k}.
+\frac Hk=\log_2 a+\frac{\log_2 n_0-\log_2 n_k}{k}
+ +\frac1k\sum_{i=0}^{k-1}\log_2\left(1+\frac{c}{a n_i}\right),
 $$
+whenever the logarithms exist. The additive correction cannot be omitted in an exact equality. Uniform-residue halving statistics do not establish this mean or independent exponents along every orbit.
+
 The law is also *kinetic*, not merely a sign: mean escape times obey $\bar k\approx(\log_2\tau-\overline{\log_2 n_0})\ln 2/\delta(a)$ — predicted $\approx103$ vs. measured $104.66$ odd steps for $(5,1)$, and $\approx40$ vs. $41.39$ for $(7,1)$.
 
 **Consequence.** $a=3$ is the unique odd multiplier $>1$ with negative drift: the *only* member of the family that is both nontrivial and (heuristically) globally convergent. The family thus splits into a contracting regime $a\le3$ and an expanding regime $a\ge5$, and the data supports the split at $10^9$–$10^{10}$ starts per variant.
@@ -261,25 +264,25 @@ For $a,c$ odd, positive, $\gcd(a,c)=1$ — Theorems 1–3 reduce everything else
 
 | claim | status |
 |:---|:---|
-| $a$ or $c$ even $\Rightarrow$ monotone divergence of every odd orbit | **proved** (Thm 1, Lean) |
+| $a$ odd, $c>0$ even, or $a\ge2$ even, $c$ odd $\Rightarrow$ monotone divergence of every odd orbit | **proved** (Thm 1, Lean) |
 | $a=2^k-1$ $\Rightarrow$ cycle through $c$, for every odd $c$ | **proved** (Thm 4, Lean) |
 | $F_{a,c}(c)=\mathrm{odd}(a{+}1)\,c$; fixed point at $c$ **iff** $a=2^k-1$ | **proved** (Thm 4b, Lean); zero violations on $2.75\times10^{11}$ pairs |
 | one-step cycles $\leftrightarrow$ divisors $d\mid c$ with $a+d\in2^{\mathbb N}$ | **proved** (Thm 4c, Lean); census of $1.37\times10^{11}$ triples matches the law set-exactly |
-| $ax+1$ cycles transport to every $ax+c$ (universal families) | **proved** (Thm 4d, Lean); catalog: exactly $25$ families through $c$ for $a<2^{24}$ (24 Mersennes + $a{=}5$) |
+| $ax+1$ cycles transport to every $ax+c$ (universal families) | **proved** (Thm 4d, Lean); catalog: $25$ families found through $c$, with escaped orbits unresolved, for $a<2^{24}$ (24 Mersennes + $a{=}5$) |
 | scaling and absorption reductions | **proved** (Thms 2–3, Lean) |
 | each cycle/inventory-completeness claim of §6 | **machine-certified** (89 `decide` + 38 `native_decide`) |
 | cycle structure $\Leftrightarrow$ arithmetic of $2^H-a^k$ | exact identity, verified on all 89 cycles |
-| **Conjecture A** (generalized Collatz; Belaga–Mignotte): $a\le3$ $\Rightarrow$ every orbit eventually periodic | **open**; supported at $100.0000\%$ over $\approx2.1\times10^9$ starts $\times$ 12 variants; "almost all" known for $(3,1)$ (Tao) |
+| **Conjecture A** (generalized Collatz; Belaga–Mignotte): $a\le3$ $\Rightarrow$ every orbit eventually periodic | **open**; supported at $100.0000\%$ over $\approx2.1\times10^9$ starts in the eleven $(3,c)$ variants; Tao proves almost-bounded minima, not eventual periodicity |
 | **Conjecture B** (generalized Crandall): $a\ge5$ $\Rightarrow$ divergent orbits exist and convergence density is $0$ | **open**; supported at $\approx100\%$ escape over 26 variants; *no single orbit* (e.g. $n=7$ under $5x+1$) is provably divergent |
-| uniform decision procedure for the family | **impossible** (Conway; Kurtz–Simon, $\Pi^0_2$-complete) |
+| uniform decision procedure for arbitrary residue-dependent affine maps | **impossible** (Conway; Kurtz–Simon, $\Pi^0_2$-complete); this does not classify the narrower $(a,c)$ family |
 
 **Table 3.** What is proved, what is certified, what is open, what is impossible.
 
-## 10. Why this route cannot close the conjecture — and what it did instead
+## 10. What remains unresolved
 
-Three separate walls, in increasing order of finality. **(1) Finite verification proves nothing asymptotic:** our $2^{32}$, like Barina's $2^{71}$, leaves the next integer unconstrained. **(2) The drift argument is probabilistic:** $\delta(3)<0$ says orbits contract *on average over parity vectors*; the conjecture quantifies over *every* orbit, and no ergodic statement excludes a measure-zero parity sequence conspiring forever. The best unconditional result — Tao's "almost all orbits attain almost bounded values" — is precisely the strongest sentence this kind of argument seems able to produce; the gap "almost all $\to$ all" *is* the conjecture. **(3) Undecidability:** by Conway and Kurtz–Simon, no theorem schema can uniformly settle the generalized family; hardness is not an artifact of technique.
+Finite verification leaves untested starts. Negative expected drift averages over parity patterns and does not establish descent for each individual positive integer. Tao's almost-bounded-minimum theorem is not a theorem of eventual periodicity or convergence to 1. Generalized undecidability applies to a broader class of maps and does not prove that the classical problem, this two-parameter family, or elementary proof methods are undecidable or insufficient.
 
-What survives these walls is exactly what a compute-plus-proof pipeline can deliver, and did: the provable general structure of the family (Theorems 1–4), certified at the kernel level; complete certified cycle inventories below explicit bounds for $38$ systems; and two quantitative laws — drift $\delta(a)=\ln a-2\ln2$ and the signature mechanism $D=2^H-a^k$ — that turn the family's phenomenology (why $3x+13$ has ten cycles, why $9x+1$ has none, why $a=3$ alone converges) from folklore into measured, machine-checked fact. The Collatz conjecture, so embedded, stops looking like an isolated curiosity: it is the unique negative-drift member of a family whose cycles are governed by the Diophantine proximity of $2^H$ to $a^k$ — and both of its remaining questions are transcendence-hard.
+The conjecture therefore remains unresolved by this study. The structural theorems and bounded inventories are partial results. A finite-window escape is unresolved, not a divergent orbit; a finite catalog cannot exclude cycles that leave its window and later return. The current [attempt](ATTEMPT.md) states the precise remaining universal descent claim and supplies new formal reductions and large-integer searches without changing the objective.
 
 ## 11. Reproducibility
 

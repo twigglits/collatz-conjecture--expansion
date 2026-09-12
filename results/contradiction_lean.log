@@ -1,0 +1,12 @@
+'OrdinaryCollatz.conjecture_iff_descent' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.least_counterexample_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_orbit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_has_no_smaller_predecessor' does not depend on any axioms
+'OrdinaryCollatz.least_mod48' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.counterexample_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.conjecture_iff_restricted_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.shortcut_iteration_simulation' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.ordinary_reaches_of_shortcut' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.reaches_iff_shortcut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.conjecture_iff_shortcut_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_shortcut_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

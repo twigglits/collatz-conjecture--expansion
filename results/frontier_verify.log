@@ -1,0 +1,8 @@
+F1 PASS  orbit formula exact on 500 random + 20 sixty-digit instances (incl. even a, a=0)
+F2 PASS  cycle equation + 2^H > a^k exact on all 86 committed positive-c cycles
+F3 PASS  repulsion (p|a, p∤c ⇒ orbit leaves pZ forever) on 300 systems x 200 steps
+F4 PASS  coset confinement fuzzed on 200 systems; all committed (7,c) cycle members lie in c*<2> mod 7
+F5a PASS  U-affine identity (500 fuzz) + descent theorem (300 fuzz) exact
+F5b PASS  countGood(8,16,20) == Lean-certified 219/58651/910596 == binomial tails (residue<->parity-vector bijection witnessed)
+wrote results/frontier_summary.md
+== ALL FRONTIER EXACT-ARITHMETIC VERIFICATIONS PASS ==

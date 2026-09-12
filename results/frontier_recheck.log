@@ -1,0 +1,13 @@
+'orbit_formula' depends on axioms: [propext, Quot.sound]
+'cycle_equation' depends on axioms: [propext, Quot.sound]
+'cycle_equation_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'cycle_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'repel_orbit' depends on axioms: [propext, Quot.sound]
+'collatz_avoids_3Z' depends on axioms: [propext, Quot.sound]
+'orbit_coset' depends on axioms: [propext, Quot.sound]
+'sevenX1_iterates_mod7' depends on axioms: [propext, Quot.sound]
+'U_affine' depends on axioms: [propext, Quot.sound]
+'descent' depends on axioms: [propext, Quot.sound]
+'descent_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'countGood_8' does not depend on any axioms
+'countGood_20' depends on axioms: [countGood_20._native.native_decide.ax_1_1]
