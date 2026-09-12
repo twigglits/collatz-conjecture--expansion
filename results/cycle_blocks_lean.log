@@ -1,0 +1,7 @@
+'CollatzCycleBlocks.centered_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleBlocks.centered_iterates' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBlocks.repeated_block_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleBlocks.cancel_power_two' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBlocks.collatz_block_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleBlocks.denominator_bound' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBlocks.zero_obstruction_closes_block' depends on axioms: [propext, Classical.choice, Quot.sound]
