@@ -1,9 +1,9 @@
 /-
   Finite ingredients of the orbit-packing argument in APERIODIC-ATTEMPT.md.
-  Standalone Lean 4.31: no Mathlib, admitted proofs, or native evaluation.
+  Standalone Lean 4: no Mathlib, admitted proofs, or native evaluation.
   U/orbit/wt are the ordinary Collatz shortcut definitions used in CollatzAffine.
   This file does not prove reciprocal summability or the Collatz conjecture.
-  Check: lean +leanprover/lean4:v4.31.0 CollatzPacking.lean
+  Check: lean CollatzPacking.lean
 -/
 namespace CollatzPacking
 

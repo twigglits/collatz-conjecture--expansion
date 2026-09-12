@@ -2,7 +2,8 @@
   Arbitrarily long initial growth for the ordinary Collatz shortcut map.
   This rules out a uniform finite horizon for descent; it does NOT give
   an infinite divergent positive-integer orbit.
-  Check: lean +leanprover/lean4:v4.31.0 CollatzGrowth.lean
+  Check: lean CollatzGrowth.lean
+  Standalone Lean 4.
 -/
 
 namespace CollatzGrowth

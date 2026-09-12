@@ -1,0 +1,280 @@
+{
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "started_utc": "2026-09-12T23:10:48.755273+00:00",
+  "scope": "All top-level standalone structural Lean files, after version-neutral header normalization. Generated *Certs* files excluded. Partial templates under lean/ are exercised through generated certificates separately.",
+  "workers": 2,
+  "native_metadata_method": "mentions_native_decide searches source text; uses_native_decide and native_decide_occurrences search code tokens after stripping nested block comments, line comments, and string literals. Source audit confirms only CollatzFrontier.lean uses the tactic.",
+  "results": [
+    {
+      "file": "CollatzAffine.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzAffine.lean"
+      ],
+      "sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "sha256_after": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.4292022919980809,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzAffine.log"
+    },
+    {
+      "file": "CollatzComplexity.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzComplexity.lean"
+      ],
+      "sha256": "d45cab41e29c901dd983d683f5775c7b23e7bfe9b84f29f318dca39c1db597fa",
+      "sha256_after": "d45cab41e29c901dd983d683f5775c7b23e7bfe9b84f29f318dca39c1db597fa",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.38698725000722334,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzComplexity.log"
+    },
+    {
+      "file": "CollatzContradiction.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzContradiction.lean"
+      ],
+      "sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "sha256_after": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.5045808750001015,
+      "mentions_native_decide": true,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzContradiction.log"
+    },
+    {
+      "file": "CollatzCycleBlocks.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzCycleBlocks.lean"
+      ],
+      "sha256": "b3818f3908762a60d4dcea85ea0500c044517b80615410979d69e2db35e40450",
+      "sha256_after": "b3818f3908762a60d4dcea85ea0500c044517b80615410979d69e2db35e40450",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.2124000000039814,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzCycleBlocks.log"
+    },
+    {
+      "file": "CollatzCycleBudget.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzCycleBudget.lean"
+      ],
+      "sha256": "45d3274cbd45bde8f36752d010aa93954443c3426b665fd799357eda92ab3fd9",
+      "sha256_after": "45d3274cbd45bde8f36752d010aa93954443c3426b665fd799357eda92ab3fd9",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.25958225000067614,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzCycleBudget.log"
+    },
+    {
+      "file": "CollatzCycleCriterion.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzCycleCriterion.lean"
+      ],
+      "sha256": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+      "sha256_after": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.33970645800582133,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzCycleCriterion.log"
+    },
+    {
+      "file": "CollatzCycleExtrema.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzCycleExtrema.lean"
+      ],
+      "sha256": "b56af4dd3128ab872a661165dd9c198f04ee48338cedab1eaaf3bb73ea245337",
+      "sha256_after": "b56af4dd3128ab872a661165dd9c198f04ee48338cedab1eaaf3bb73ea245337",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.20869825000409037,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzCycleExtrema.log"
+    },
+    {
+      "file": "CollatzEscapeBounds.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzEscapeBounds.lean"
+      ],
+      "sha256": "de82756a06007face7fccd437f33c48b36d763cadb043d3ddde9b35bf3c6d6c8",
+      "sha256_after": "de82756a06007face7fccd437f33c48b36d763cadb043d3ddde9b35bf3c6d6c8",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.14713733398821205,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzEscapeBounds.log"
+    },
+    {
+      "file": "CollatzFrontier.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzFrontier.lean"
+      ],
+      "sha256": "4c5d54f3d1e246108ed218f9faeac5a7d76d02add4ce889c9aa8ea5d56de6268",
+      "sha256_after": "4c5d54f3d1e246108ed218f9faeac5a7d76d02add4ce889c9aa8ea5d56de6268",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 6.045216333994176,
+      "mentions_native_decide": true,
+      "uses_native_decide": true,
+      "native_decide_occurrences": 2,
+      "log": "results/lean-4.33.1/CollatzFrontier.log"
+    },
+    {
+      "file": "CollatzGrowth.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzGrowth.lean"
+      ],
+      "sha256": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+      "sha256_after": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.23430574999656528,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzGrowth.log"
+    },
+    {
+      "file": "CollatzPacking.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzPacking.lean"
+      ],
+      "sha256": "809cb622daa98fbd0b8c872ea625665ec636050ff096e380a481d537130b547b",
+      "sha256_after": "809cb622daa98fbd0b8c872ea625665ec636050ff096e380a481d537130b547b",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.31140970799606293,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzPacking.log"
+    },
+    {
+      "file": "CollatzPeriodic.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzPeriodic.lean"
+      ],
+      "sha256": "df0115f2f5fcdb1e511b3146159fd138a9da007a6a6e798cedfd983773dab584",
+      "sha256_after": "df0115f2f5fcdb1e511b3146159fd138a9da007a6a6e798cedfd983773dab584",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.20586266700411215,
+      "mentions_native_decide": true,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzPeriodic.log"
+    },
+    {
+      "file": "CollatzRepetition.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzRepetition.lean"
+      ],
+      "sha256": "3c1148b718b33258b97258ce3d689a36f8ef75271cd96384138ae2a718511737",
+      "sha256_after": "3c1148b718b33258b97258ce3d689a36f8ef75271cd96384138ae2a718511737",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.2525782500015339,
+      "mentions_native_decide": false,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzRepetition.log"
+    },
+    {
+      "file": "CollatzTheory.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzTheory.lean"
+      ],
+      "sha256": "267065d7dfefeadbd776fc17ad0ad04745ad6726fc30e7a1d242fdedcfa1114b",
+      "sha256_after": "267065d7dfefeadbd776fc17ad0ad04745ad6726fc30e7a1d242fdedcfa1114b",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "status": "passed",
+      "warnings": 0,
+      "elapsed_seconds": 0.4077742500085151,
+      "mentions_native_decide": true,
+      "uses_native_decide": false,
+      "native_decide_occurrences": 0,
+      "log": "results/lean-4.33.1/CollatzTheory.log"
+    }
+  ],
+  "status": "passed",
+  "finished_utc": "2026-09-12T23:10:56.040638+00:00",
+  "total_files": 14,
+  "total_warnings": 0
+}

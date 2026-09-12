@@ -7,6 +7,11 @@ pub mod search;
 pub mod seeds;
 pub mod verify_helpers;
 
+/// The repository's Lean toolchain, embedded when this binary is built.
+pub fn pinned_lean_toolchain() -> &'static str {
+    include_str!("../lean-toolchain").trim()
+}
+
 #[derive(Clone, Debug, Serialize)]
 pub struct Seed {
     pub family: &'static str,

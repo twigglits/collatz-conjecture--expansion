@@ -225,6 +225,26 @@ affine elimination, cancellation, and the zero-constant case. The written
 note derives finite-candidate results and excludes additional word families.
 It supplies no bound on the complexity of every possible cycle word.
 
+The cycle analysis now extends to arbitrary positive halving exponents.
+[`CollatzCycleBudget.lean`](CollatzCycleBudget.lean) checks the exact centered
+budget `3^q 2^(2R+E) ≤ 5^q 3^R`, where q counts exponent-1 steps, R counts
+the other steps, and E sums their excess above two. The explicit premises
+are the cycle equations, closure, positive exponents, and states at least
+seven. The written [`GENERAL-CYCLE-DEFECTS.md`](GENERAL-CYCLE-DEFECTS.md)
+establishes that minimum restriction for a nontrivial integer cycle and
+derives `k<3q`, `H<5q`, a bound on every exponent, and a height bound.
+This supersedes the earlier quadratic count estimate with a stronger linear
+one. The parameter q remains unbounded.
+
+[`CYCLE-EXTREMA.md`](CYCLE-EXTREMA.md) solves the ordering optimization for
+fixed `(k,H)` over rational cycles: mechanical words maximize the smallest
+cycle value, with a quantified loss for every other word. Its generic
+prefix-rotation step is checked in
+[`CollatzCycleExtrema.lean`](CollatzCycleExtrema.lean); the weighted extrema
+and equality cases are written proofs. The notes construct primitive,
+nonmechanical positive rational cycles with unbounded minimum. Those satisfy
+the real inequalities and expose why integer divisibility remains essential.
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -239,7 +259,10 @@ The cycle equation is exact. For a positive exponent word, set
 \]
 
 Such a word gives a positive integer cycle precisely when D>0 and D divides W;
-the note above includes the sufficiency proof using rotated words. What remains
+[`CollatzCycleCriterion.lean`](CollatzCycleCriterion.lean) now proves this
+equivalence for every nonempty positive halving word, including intermediate
+integrality, positive odd states, and the exact halving exponent at each step.
+The theorem permits imprimitive repetitions of the known cycle. What remains
 unproved is that every solution gives only the known cycle. Even proving cycle
 uniqueness would leave aperiodic divergence to exclude. Published lower bounds
 already make any nontrivial cycle enormous; these searches do not supersede
@@ -269,9 +292,15 @@ lean CollatzRepetition.lean
 lean CollatzComplexity.lean
 lean CollatzCycleBlocks.lean
 lean CollatzEscapeBounds.lean
+lean CollatzCycleBudget.lean
+lean CollatzCycleExtrema.lean
+lean CollatzCycleCriterion.lean
 ```
 
-The repository pins Lean 4.31.0. The structural files listed above use kernel proofs
+The repository pins Lean 4.33.1. The current proof files and existing generated
+certificates passed this release; [verification records](results/lean-4.33.1/README.md)
+include exact source hashes, compiler version, commands, and logs. Older result
+files retain their original 4.31.0 provenance. The structural files listed above use kernel proofs
 without `sorry`, `native_decide`, or added axioms. Their only printed dependencies
 are the standard logical axioms `propext`, `Quot.sound`, and, where used,
 `Classical.choice`. Runtime benchmarks are measurements, not mathematical proof

@@ -1,7 +1,8 @@
 /-
   Exact ordered obstruction for a repeated affine block followed by a connector.
-  Standalone Lean 4.31. All statements are conditional finite algebra;
+  Standalone Lean 4. All statements are conditional finite algebra;
   no cycle enumeration, real asymptotics, or universal Collatz claim is made.
+  Check: lean CollatzCycleBlocks.lean
 -/
 namespace CollatzCycleBlocks
 

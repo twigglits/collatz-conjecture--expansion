@@ -75,7 +75,11 @@ per start, with 300,000 as the default. An exhausted limit remains unresolved.
 
 The Python baseline is retained for independent comparisons and for the benchmark
 driver. A Rust search can run without Lean installed; `--verify-lean` requires
-the pinned Lean 4.31.0 toolchain.
+the pinned Lean toolchain. The project now pins Lean 4.33.1; the original
+benchmark and verification records retain their historical versions. The Rust
+verifiers embed `lean-toolchain` when built, so rebuilding after a pin change
+updates the selected compiler consistently across executables. See the
+[4.33.1 verification record](results/lean-4.33.1/README.md).
 
 ## Local worker scaling
 

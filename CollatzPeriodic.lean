@@ -1,6 +1,6 @@
 /-
   CollatzPeriodic.lean — exact integrality obstruction to periodic-growth
-  constructions. Self-contained Lean 4.31, no Mathlib or native_decide.
+  constructions. Standalone Lean 4, no Mathlib or native_decide.
 
   Main theorem: an infinite integer sequence satisfying
        Q * x(j+1) = P * x(j) + W,
@@ -13,7 +13,7 @@
   formalized here. BlockRel describes exact step equations over Int, a weaker
   assumption than an actual positive odd Collatz orbit.
 
-  Check: lean +leanprover/lean4:v4.31.0 CollatzPeriodic.lean
+  Check: lean CollatzPeriodic.lean
 -/
 
 namespace CollatzPeriodic

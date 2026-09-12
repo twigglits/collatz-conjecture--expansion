@@ -15,6 +15,12 @@ using this alphabet would need at least four occurrences of 1. This is a
 restricted-family result, not a claim about cycles with larger halving
 exponents, and no novelty claim is made.
 
+**Stronger subsequent bound:** [`GENERAL-CYCLE-DEFECTS.md`](GENERAL-CYCLE-DEFECTS.md)
+proves `R<2q` for every nontrivial integer cycle, allowing arbitrary positive
+halving exponents. Its elementary centered product bound supersedes the
+quadratic estimate here. The fixed-block divisibility argument and the
+explicit family exclusions below remain valid.
+
 The finite centered algebra, cancellation, denominator bound, and
 zero-obstruction conclusion are kernel checked in
 [`CollatzCycleBlocks.lean`](CollatzCycleBlocks.lean). Its hypotheses are
@@ -426,6 +432,11 @@ count pairs satisfy both the positive-slope condition and our necessary
 count bound. This does not claim that any corresponding ordered word passes
 \(D\mid W\). It shows why this reduced inequality cannot by itself
 exclude the remaining families.
+
+The stronger subsequent budget `R<2q` does exclude those particular count
+pairs. Section 5 of [`GENERAL-CYCLE-DEFECTS.md`](GENERAL-CYCLE-DEFECTS.md)
+instead constructs unbounded nonmechanical rational cycles compatible with
+that stronger budget, keeping the remaining integrality gap explicit.
 
 The spacing bound (12) also remains compatible with sufficiently large
 cycle values. No argument here bounds all cycle heights or controls all

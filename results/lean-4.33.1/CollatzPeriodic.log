@@ -1,0 +1,14 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzPeriodic.lean
+Source SHA-256: df0115f2f5fcdb1e511b3146159fd138a9da007a6a6e798cedfd983773dab584
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.205863
+
+'CollatzPeriodic.difference_divisibility' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.affine_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.collatz_block_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.block_formula' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.repeated_schedule_constant' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.shared_schedule_unique' depends on axioms: [propext, Quot.sound]
+'CollatzPeriodic.eventually_periodic_halvings' depends on axioms: [propext, Quot.sound]

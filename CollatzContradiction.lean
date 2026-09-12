@@ -1,7 +1,7 @@
 /-
   Ordinary positive-integer Collatz: exact contradiction reductions.
-  Check: lean +v4.31.0 CollatzContradiction.lean
-  Standalone core Lean; no Mathlib, sorry, native_decide, or added axioms.
+  Check: lean CollatzContradiction.lean
+  Standalone Lean 4; no Mathlib, sorry, native_decide, or added axioms.
   This file does NOT prove the Collatz conjecture.
 -/
 

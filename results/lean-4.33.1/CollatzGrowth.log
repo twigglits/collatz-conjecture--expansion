@@ -1,0 +1,11 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzGrowth.lean
+Source SHA-256: 75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.234306
+
+'CollatzGrowth.growth_formula' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.growth_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.no_uniform_descent_horizon' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.no_natural_all_ones' depends on axioms: [propext, Quot.sound]

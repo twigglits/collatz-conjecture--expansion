@@ -1,0 +1,52 @@
+{
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "scope": "Existing generated certificates checked without regeneration; native_decide retains compiler/runtime trust.",
+  "results": [
+    {
+      "file": "CollatzCerts.lean",
+      "sha256": "4e18f7ac8efd5d7027afc5dd1b292a0c309d1e825717332fb5374b8280db2912",
+      "exit_code": 0,
+      "seconds": 136.2723970419902,
+      "log": "results/lean-4.33.1/CollatzCerts.lean.log",
+      "contains_sorryAx": false,
+      "warnings": []
+    },
+    {
+      "file": "CollatzResidueCerts.lean",
+      "sha256": "211aefc907f4dff6e3607d67dd0a42549968158c796923adf54a36746a56e39a",
+      "exit_code": 0,
+      "seconds": 44.71633795800153,
+      "log": "results/lean-4.33.1/CollatzResidueCerts.lean.log",
+      "contains_sorryAx": false,
+      "warnings": []
+    },
+    {
+      "file": "CollatzSearchCerts.lean",
+      "sha256": "cb82e1c86a7db09153e02cce0a6126663e4705ded78c09a43d4fcd0a19e309f2",
+      "exit_code": 0,
+      "seconds": 38.938714042000356,
+      "log": "results/lean-4.33.1/CollatzSearchCerts.lean.log",
+      "contains_sorryAx": false,
+      "warnings": []
+    },
+    {
+      "file": "CollatzSearchCertsRust.lean",
+      "sha256": "6df740f715a50848ccfbdaf35cba81ef68e4b0f012fdc5e0e94f24b3d5c8b787",
+      "exit_code": 0,
+      "seconds": 39.62644795799861,
+      "log": "results/lean-4.33.1/CollatzSearchCertsRust.lean.log",
+      "contains_sorryAx": false,
+      "warnings": []
+    },
+    {
+      "file": "results/analyze-rust/CollatzCerts.lean",
+      "sha256": "947505d4ad619897179af4ab6470c6a8e42793b638aae93db0d66df325b4a4ed",
+      "exit_code": 0,
+      "seconds": 133.24149983399548,
+      "log": "results/lean-4.33.1/results__analyze-rust__CollatzCerts.lean.log",
+      "contains_sorryAx": false,
+      "warnings": []
+    }
+  ]
+}

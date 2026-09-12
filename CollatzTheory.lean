@@ -3,7 +3,8 @@
   generalized Collatz family   T_{a,c}(n) = a*n + c  (n odd),  n/2  (n even).
 
   Pure kernel proofs: no Mathlib, no native_decide, no extra axioms.
-  Check with:  lean CollatzTheory.lean    (Lean 4.31.0)
+  Check: lean CollatzTheory.lean
+  Standalone Lean 4.
 -/
 
 /-- One step of the generalized Collatz map. -/

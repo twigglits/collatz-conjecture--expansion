@@ -2,6 +2,8 @@
   Exact arithmetic supporting the rational exponent 31/32 in ORBIT-ESCAPE.md
   and the length-11 substitution example in COMPLEXITY-GROWTH.md.
   These checks do not formalize the real-analysis or orbit-counting argument.
+  Standalone Lean 4.
+  Check: lean CollatzEscapeBounds.lean
 -/
 namespace CollatzEscapeBounds
 

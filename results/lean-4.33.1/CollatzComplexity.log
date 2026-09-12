@@ -1,0 +1,14 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzComplexity.lean
+Source SHA-256: d45cab41e29c901dd983d683f5775c7b23e7bfe9b84f29f318dca39c1db597fa
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.386987
+
+'CollatzComplexity.minimum_step' depends on axioms: [propext, Quot.sound]
+'CollatzComplexity.minimum_weight_growth' depends on axioms: [propext, Quot.sound]
+'CollatzComplexity.minimum_weight_growth_of_le' depends on axioms: [propext, Quot.sound]
+'CollatzComplexity.minimum_weight_catalog_forces_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzComplexity.bounded_weight_catalog_forces_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzComplexity.catalog_forces_descent_or_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzComplexity.descent_of_weight_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]

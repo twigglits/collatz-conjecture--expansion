@@ -1,0 +1,14 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzCycleCriterion.lean
+Source SHA-256: 88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.339706
+
+'CollatzCycleCriterion.odd_factor_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.quotient_step' depends on axioms: [propext]
+'CollatzCycleCriterion.cyclic_numerators_realize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.rotation_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_necessity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_cycle_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

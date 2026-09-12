@@ -1,0 +1,3 @@
+'CollatzCycleExtrema.finite_maximum' depends on axioms: [propext, Quot.sound]
+'CollatzCycleExtrema.bounded_rotation' depends on axioms: [propext, Quot.sound]
+'CollatzCycleExtrema.floor_bounded_rotation' depends on axioms: [propext, Quot.sound]

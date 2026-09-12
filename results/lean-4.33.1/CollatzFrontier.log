@@ -1,0 +1,20 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzFrontier.lean
+Source SHA-256: 4c5d54f3d1e246108ed218f9faeac5a7d76d02add4ce889c9aa8ea5d56de6268
+Exit code: 0
+Status: passed
+Elapsed seconds: 6.045216
+
+'orbit_formula' depends on axioms: [propext, Quot.sound]
+'cycle_equation' depends on axioms: [propext, Quot.sound]
+'cycle_equation_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'cycle_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'repel_orbit' depends on axioms: [propext, Quot.sound]
+'collatz_avoids_3Z' depends on axioms: [propext, Quot.sound]
+'orbit_coset' depends on axioms: [propext, Quot.sound]
+'sevenX1_iterates_mod7' depends on axioms: [propext, Quot.sound]
+'U_affine' depends on axioms: [propext, Quot.sound]
+'descent' depends on axioms: [propext, Quot.sound]
+'descent_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'countGood_8' does not depend on any axioms
+'countGood_20' depends on axioms: [countGood_20._native.native_decide.ax_1_1]

@@ -81,7 +81,7 @@ HDR = """/-
     (i)  every discovered cycle is a genuine cycle       (kernel `decide`)
     (ii) for each variant, EVERY n in [1, 100000] either reaches the
          cycle inventory or exceeds the u64 window tau    (`native_decide`)
-  Check with:  lean CollatzCerts.lean    (Lean 4.31.0)
+  Check with:  lean CollatzCerts.lean    (using the repository's pinned toolchain)
 -/
 
 -- long cycles unfold ~10 elaborator frames per step; default depth 512 fails at len ≥ ~40

@@ -1,0 +1,12 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzCycleBudget.lean
+Source SHA-256: 45d3274cbd45bde8f36752d010aa93954443c3426b665fd799357eda92ab3fd9
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.259582
+
+'CollatzCycleBudget.step_budget' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.prefix_budget' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.count_partition' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.total_partition' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.cycle_budget' depends on axioms: [propext, Quot.sound]

@@ -2,7 +2,8 @@
   A rotation with bounded cumulative sums for every periodic integer word.
   This is the finite rotation ingredient of CYCLE-EXTREMA.md. It does not
   formalize the weighted numerator extrema or characterize Collatz cycles.
-  Standalone Lean 4.31, checked without added axioms or native evaluation.
+  Standalone Lean 4, checked without added axioms or native evaluation.
+  Check: lean CollatzCycleExtrema.lean
 -/
 namespace CollatzCycleExtrema
 

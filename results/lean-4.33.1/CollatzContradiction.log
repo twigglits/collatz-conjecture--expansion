@@ -1,0 +1,19 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzContradiction.lean
+Source SHA-256: b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.504581
+
+'OrdinaryCollatz.conjecture_iff_descent' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.least_counterexample_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_orbit_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_has_no_smaller_predecessor' does not depend on any axioms
+'OrdinaryCollatz.least_mod48' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.counterexample_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.conjecture_iff_restricted_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.shortcut_iteration_simulation' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.ordinary_reaches_of_shortcut' depends on axioms: [propext, Quot.sound]
+'OrdinaryCollatz.reaches_iff_shortcut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.conjecture_iff_shortcut_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrdinaryCollatz.least_shortcut_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

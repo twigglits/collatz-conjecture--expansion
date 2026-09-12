@@ -37,7 +37,8 @@
       (Terras 1976 in the limit k → ∞; each finite level is a theorem
       about all n ≥ 8^k at once, not a finite check.)
 
-  Check with:  lean CollatzFrontier.lean    (Lean 4.31.0, no dependencies)
+  Check: lean CollatzFrontier.lean
+  Standalone Lean 4.
 -/
 
 set_option maxRecDepth 100000

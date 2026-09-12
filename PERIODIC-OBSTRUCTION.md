@@ -224,7 +224,7 @@ sufficiency proof above are written mathematical proofs; they are not claimed
 to be Lean-checked in this file. The Lean file was checked with:
 
 ```sh
-lean +leanprover/lean4:v4.31.0 CollatzPeriodic.lean
+lean CollatzPeriodic.lean
 ```
 
 All printed theorem dependencies are `[propext, Quot.sound]`. The file has no

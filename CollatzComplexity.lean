@@ -1,10 +1,10 @@
 /-
   Weight-sensitive finite growth and parity-catalog collision criteria.
-  Standalone Lean 4.31; kernel proofs only, no Mathlib or native evaluation.
+  Standalone Lean 4; kernel proofs only, no Mathlib or native evaluation.
   The finite height/catalog backbone below is reused from CollatzRepetition.
   The new minimum-weight product bound and its descent-or-repeat consequence
   do not assert catalog coverage or suitable weight bounds for all integers.
-  Check: lean +leanprover/lean4:v4.31.0 CollatzComplexity.lean
+  Check: lean CollatzComplexity.lean
 -/
 namespace CollatzComplexity
 

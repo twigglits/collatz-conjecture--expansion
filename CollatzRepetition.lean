@@ -1,6 +1,7 @@
 /-
   Finite parity repetition and exact collision certificates.
-  Standalone Lean 4.31, using kernel proofs only.
+  Standalone Lean 4, using kernel proofs only.
+  Check: lean CollatzRepetition.lean
 -/
 namespace CollatzRepetition
 

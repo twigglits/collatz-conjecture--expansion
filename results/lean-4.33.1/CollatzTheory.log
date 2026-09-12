@@ -1,0 +1,20 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzTheory.lean
+Source SHA-256: 267065d7dfefeadbd776fc17ad0ad04745ad6726fc30e7a1d242fdedcfa1114b
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.407774
+
+'orbit_diverges_evenC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'scaling_orbit' depends on axioms: [propext, Quot.sound]
+'absorb_orbit' depends on axioms: [propext, Quot.sound]
+'universal_cycle' depends on axioms: [propext, Quot.sound]
+'trivial_cycle_3' depends on axioms: [propext, Quot.sound]
+'F_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'universal_fixed_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'fix_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'F_orbit_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'F_periodic_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'five_universal_two_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'oneEightyOne_universal_two_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'generalized_universal_step' depends on axioms: [propext, Quot.sound]

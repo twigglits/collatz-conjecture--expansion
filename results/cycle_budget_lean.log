@@ -1,0 +1,5 @@
+'CollatzCycleBudget.step_budget' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.prefix_budget' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.count_partition' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.total_partition' depends on axioms: [propext, Quot.sound]
+'CollatzCycleBudget.cycle_budget' depends on axioms: [propext, Quot.sound]

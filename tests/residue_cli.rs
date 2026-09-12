@@ -91,7 +91,7 @@ fn exhausted_budget_and_output_collision_do_not_replace_prior_results() {
 }
 
 #[test]
-#[ignore = "requires the pinned Lean 4.31.0 toolchain"]
+#[ignore = "requires the pinned Lean toolchain"]
 fn generated_proofs_compile_for_empty_shallow_and_branched_coverage() {
     let temp = Output::new();
     for depth in ["0", "1", "8"] {
@@ -124,7 +124,7 @@ fn rejected_verification_is_recorded_as_failed() {
     let lean = bin.join("lean");
     fs::write(
         &lean,
-        "#!/bin/sh\necho 'simulated verifier rejection' >&2\nexit 1\n",
+        "#!/bin/sh\nprintf 'Selected toolchain: %s\\n' \"$1\"\necho 'simulated verifier rejection' >&2\nexit 1\n",
     )
     .unwrap();
     fs::set_permissions(&lean, fs::Permissions::from_mode(0o700)).unwrap();
@@ -144,4 +144,8 @@ fn rejected_verification_is_recorded_as_failed() {
     assert_eq!(data["certificate_status"], "failed");
     let log = fs::read_to_string(temp.0.join("out/residue_sieve_rust.log")).unwrap();
     assert!(log.contains("simulated verifier rejection"));
+    let toolchain =
+        fs::read_to_string(PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("lean-toolchain"))
+            .unwrap();
+    assert!(log.contains(&format!("Selected toolchain: +{}\n", toolchain.trim())));
 }

@@ -36,6 +36,9 @@ Performance timings are explicitly identified as empirical measurements.
 | `ORBIT-ESCAPE.md` / `CollatzEscapeBounds.lean` | Written inverse-power summability and running-maximum bounds; kernel-checked integer comparisons for a rational exponent |
 | `CYCLE-ATTEMPT.md` | Written cycle-minimum bounds independent of period, with the remaining ordered-divisibility gap |
 | `CollatzCycleBlocks.lean` / `CYCLE-WORDS.md` | Checked repeated-block divisibility obstruction and written exclusions of ordered cycle-word families |
+| `CollatzCycleCriterion.lean` | Kernel-checked necessary and sufficient ordered cycle test for every nonempty positive halving word |
+| `CollatzCycleBudget.lean` / `GENERAL-CYCLE-DEFECTS.md` | Checked joint budget for arbitrary halving exponents; written period, exponent, and height bounds |
+| `CollatzCycleExtrema.lean` / `CYCLE-EXTREMA.md` | Checked prefix-rotation lemma and written sharp cycle-minimum extrema with explicit rational candidates |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
 | `search_counterexample.py` / `CollatzSearchCerts.lean` | Python reference implementation and baseline certificates retained for independent comparison |
 | `bench/compare.py` | Reproducible output comparison and Python/Rust timing, with raw results in `results/rust_benchmark.json` |
@@ -51,5 +54,10 @@ Performance timings are explicitly identified as empirical measurements.
 | `src/residue.rs` / `src/bin/residue-sieve.rs` | Adaptive whole-class descent search with checked arithmetic, work limits, and independent Lean count verification |
 | `results/` | Raw sweep JSON, summary tables, logs |
 
-The local `lean-toolchain` pins Lean 4.31.0. For current reproduction commands,
+The local `lean-toolchain` pins Lean 4.33.1, the latest stable release checked
+on 13 September 2026. All 14 standalone proof files and five existing generated
+certificate files passed that toolchain; see [the verification record](results/lean-4.33.1/README.md).
+The Rust launchers embed this pin at build time, and the Python reference reads
+the same file when verifying. Rebuild Rust after changing the pin.
+For current reproduction commands,
 see [ATTEMPT.md](ATTEMPT.md); historical CUDA commands are in §7 of [REPORT.md](REPORT.md).

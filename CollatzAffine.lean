@@ -1,7 +1,7 @@
 /-
   Exact affine thresholds for ordinary Collatz shortcut residue classes.
-  Standalone Lean 4.31: no Mathlib, admitted proofs, or native evaluation.
-  Check: lean +v4.31.0 CollatzAffine.lean
+  Standalone Lean 4: no Mathlib, admitted proofs, or native evaluation.
+  Check: lean CollatzAffine.lean
 -/
 namespace CollatzAffine
 

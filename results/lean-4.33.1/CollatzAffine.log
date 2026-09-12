@@ -1,0 +1,23 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzAffine.lean
+Source SHA-256: b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7
+Exit code: 0
+Status: passed
+Elapsed seconds: 0.429202
+
+'CollatzAffine.affine' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.descent_requires_slope_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.orbit_equation' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.residue_start_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.orbit_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.affine_descent_mono' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.checkClass_sound' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.checkWholeClass_sound' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.checkCompleteClass_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.class_descent_iff_finite_exceptions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.example_first_drop' does not depend on any axioms
+'CollatzAffine.one_first_drop_exception' does not depend on any axioms
+'CollatzAffine.slope_only_counterexample' does not depend on any axioms
+'CollatzAffine.example_infinite_class' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.example_complete_class' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,4 +1,4 @@
-use collatz_search::{Row, Seed, certificates, search, seeds};
+use collatz_search::{Row, Seed, certificates, pinned_lean_toolchain, search, seeds};
 use serde_json::{Value, json};
 use sha2::{Digest, Sha256};
 use std::{collections::BTreeMap, env, fs, path::PathBuf, process::Command, time::Instant};
@@ -68,11 +68,12 @@ fn options() -> Result<Option<Options>, String> {
                     [--output-dir DIR] [--certificate FILE] [--bench REPEATS]\n\n\
                     --fuel N          Ordinary steps per start (default 300000; timeout is unresolved)\n\
                     --threads N       Independent workers (default 1)\n\
-                    --verify-lean     Independently verify successful trajectories in Lean 4.31.0\n\
+                    --verify-lean     Independently verify successful trajectories with {}\n\
                     --bench REPEATS   Time search only; emit JSON, do not write artifacts or run Lean\n\
                     Default artifacts: results/counterexample_search_rust.json and\n\
                     CollatzSearchCertsRust.lean in the project directory.\n\
-                    Use a release build for performance: cargo run --release -- --verify-lean"
+                    Use a release build for performance: cargo run --release -- --verify-lean",
+                    pinned_lean_toolchain()
                 );
                 return Ok(None);
             }
@@ -262,21 +263,24 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
     write_json(&output, &data)?;
     data["timings_seconds"]["export"] = json!(export_clock.elapsed().as_secs_f64());
     if opts.verify_lean {
-        eprintln!("Replaying successful trajectories in Lean 4.31.0...");
+        let toolchain = pinned_lean_toolchain();
+        let selector = format!("+{toolchain}");
+        eprintln!("Replaying successful trajectories with {toolchain}...");
         let lean_clock = Instant::now();
         let version = Command::new("lean")
-            .args(["+leanprover/lean4:v4.31.0", "--version"])
+            .arg(&selector)
+            .arg("--version")
             .output()?;
         if !version.status.success() {
             return Err(String::from_utf8_lossy(&version.stderr).into_owned().into());
         }
         let checked = Command::new("lean")
-            .arg("+leanprover/lean4:v4.31.0")
+            .arg(&selector)
             .arg(&opts.certificate)
             .current_dir(ROOT)
             .output()?;
         let log = format!(
-            "Command: lean +leanprover/lean4:v4.31.0 {}\n{}{}{}",
+            "Command: lean {selector} {}\n{}{}{}",
             opts.certificate.display(),
             String::from_utf8_lossy(&version.stdout),
             String::from_utf8_lossy(&checked.stdout),
