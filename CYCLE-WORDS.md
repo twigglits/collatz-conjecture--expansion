@@ -28,6 +28,10 @@ explicit affine recurrences and coprimality conditions. The word
 specializations, analytic estimates, complexity bound, and family exclusions
 in this note are written proofs, **not separately Lean-certified theorems**.
 No exhaustive integer-range search or timing claim is used here.
+The complete ordered integer-cycle test in Section 1 is now independently
+kernel-checked in [`CollatzCycleCriterion.lean`](CollatzCycleCriterion.lean),
+including all intermediate divisibility, positivity, oddness, and exact
+halving exponents. The later word-family applications remain written proofs.
 
 ## 1. The ordered divisibility condition is a complete cycle test
 

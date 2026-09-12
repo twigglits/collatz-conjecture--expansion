@@ -1,0 +1,16 @@
+Command: lean +leanprover/lean4:v4.33.1 /Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/CollatzSearchPort.lean
+Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+'CollatzSearch.scan_value' does not depend on any axioms
+'CollatzSearch.verifyRow_sound' does not depend on any axioms
+'CollatzSearch.cases_verified' depends on axioms: [propext,
+ all_odd_prefix_verified._native.native_decide.ax_1_1,
+ critical_parity_prefix_verified._native.native_decide.ax_1_1,
+ hash_control_verified._native.native_decide.ax_1_1,
+ power_offsets_verified._native.native_decide.ax_1_1]
+'CollatzSearch.certified_cases_converge' depends on axioms: [propext,
+ Quot.sound,
+ all_odd_prefix_verified._native.native_decide.ax_1_1,
+ critical_parity_prefix_verified._native.native_decide.ax_1_1,
+ hash_control_verified._native.native_decide.ax_1_1,
+ power_offsets_verified._native.native_decide.ax_1_1]
+'CollatzSearch.cases_metrics' depends on axioms: [cases_metrics._native.native_decide.ax_1_1]

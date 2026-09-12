@@ -1,0 +1,108 @@
+Command: ['cargo', 'test', '--locked']
+   Compiling collatz-search v0.1.0 (/Users/jean/Personal/collatz-conjecture--expansion)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.61s
+     Running unittests src/lib.rs (target/debug/deps/collatz_search-36a09e4abe66dba3)
+
+running 20 tests
+test certificates::tests::group_order_and_relative_row_order_are_preserved ... ok
+test certificates::tests::certificate_excludes_unresolved_and_cycle_candidates ... ok
+test certificates::tests::multiline_labels_remain_comments ... ok
+test certificates::tests::step_totals_do_not_overflow_machine_integers ... ok
+test certificates::tests::empty_successful_subset_has_zero_metrics_and_all_groups ... ok
+test residue::tests::strict_threshold_handles_equality_and_signed_difference ... ok
+test residue::tests::adaptive_classes_match_direct_descent_at_small_depth ... ok
+test search::tests::zero_and_terminal_starts_do_not_consume_fuel ... ok
+test search::tests::known_27_trajectory_and_exact_fuel_boundary ... ok
+test search::tests::critical_residue_matches_python_fixtures ... ok
+test verify_helpers::tests::valuation_and_odd_part_are_exact_above_machine_word_size ... ok
+test residue::tests::budgets_and_arithmetic_bounds_fail_explicitly ... ok
+test residue::tests::residue_children_match_direct_shortcut_iteration ... ok
+test search::tests::constructed_prefixes_have_no_descent ... ok
+test search::tests::large_power_of_two_uses_exact_arithmetic ... ok
+test residue::tests::depth_twenty_first_drop_exceptions_are_only_zero_and_one ... ok
+test residue::tests::coefficient_compression_matches_affine_tree ... ok
+test verify_helpers::tests::fixed_domain_repeats_samples_and_ranges_are_half_open ... ok
+test seeds::tests::complete_seed_list_matches_python_dataset ... ok
+test search::tests::large_trajectories_match_existing_lean_certified_manifest ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.18s
+
+     Running unittests src/bin/analyze.rs (target/debug/deps/analyze-fc5c3f439d65ada8)
+
+running 5 tests
+test tests::canonicalization_rotates_without_reversing ... ok
+test tests::classifier_preserves_fuel_and_cap_boundary_semantics ... ok
+test tests::exact_json_integers_and_duplicate_inventory_rejection ... ok
+test tests::arbitrary_precision_and_signed_cycle_equation ... ok
+test tests::full_outputs_and_exact_results_match_current_python_reference ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running unittests src/main.rs (target/debug/deps/collatz_search-2da2d68eb3a61960)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/cycle-defects.rs (target/debug/deps/cycle_defects-26364831812fca66)
+
+running 4 tests
+test tests::binary_gcd_agrees_with_independent_euclidean_algorithm ... ok
+test tests::modular_rotation_matches_full_numerators_at_large_bit_width ... ok
+test tests::exact_bitlength_and_mechanical_period ... ok
+test tests::every_mutation_matches_direct_reconstruction_and_euclidean_gcd ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running unittests src/bin/residue-sieve.rs (target/debug/deps/residue_sieve-824fb169f3991ccf)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/verify-frontier.rs (target/debug/deps/verify_frontier-0eb315328ea29e34)
+
+running 3 tests
+test tests::malformed_cycles_stop_at_validated_bounds ... ok
+test tests::committed_positive_cycles_replay_with_all_metrics ... ok
+test tests::direct_counts_match_python_and_lean_at_all_levels ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.52s
+
+     Running unittests src/bin/verify-universal.rs (target/debug/deps/verify_universal-9770dc91afc997ef)
+
+running 5 tests
+test tests::invalid_and_nonminimal_periods_are_rejected ... ok
+test tests::composite_divisor_enumeration_is_complete ... ok
+test tests::duplicate_sections_and_wrong_dimensions_are_rejected ... ok
+test tests::duplicate_census_entries_do_not_hide_in_set_conversion ... ok
+test tests::committed_gpu_census_and_catalog_replay_exactly ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/cli.rs (target/debug/deps/cli-0835948984defe9f)
+
+running 4 tests
+test zero_fuel_stays_unresolved_and_output_collision_preserves_manifest ... ok
+test analysis_verifier_output_collisions_preserve_input ... ok
+test parallel_cli_matches_every_certified_python_row ... ok
+test lean_errors_and_unfinished_proofs_are_recorded_as_failed ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.23s
+
+     Running tests/residue_cli.rs (target/debug/deps/residue_cli-d5b7a129e75d869c)
+
+running 4 tests
+test generated_proofs_compile_for_empty_shallow_and_branched_coverage ... ignored, requires the pinned Lean toolchain
+test exhausted_budget_and_output_collision_do_not_replace_prior_results ... ok
+test exact_partition_is_exported_but_unchecked_results_are_not_certified ... ok
+test rejected_verification_is_recorded_as_failed ... ok
+
+test result: ok. 3 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.14s
+
+   Doc-tests collatz_search
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

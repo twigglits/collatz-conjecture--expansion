@@ -1,0 +1,99 @@
+Command: ['target/release/collatz-search', '--threads', '8', '--verify-lean', '--output-dir', '/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/search', '--certificate', '/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/CollatzSearchPort.lean']
+Replaying successful trajectories with leanprover/lean4:v4.33.1...
+{
+  "certificate_status": "verified",
+  "families": {
+    "all_odd_prefix": {
+      "cases": 57,
+      "certified_trajectory_metrics": {
+        "cases": 57,
+        "max_first_descent": 52367,
+        "max_peak_bits": 12996,
+        "max_steps": 111072,
+        "total_steps": 1644776
+      },
+      "latest_first_descent": "11*2^8192-1",
+      "longest_trajectory": "11*2^8192-1",
+      "max_start_bits": 8198,
+      "min_start_bits": 74,
+      "status_counts": {
+        "reached_one": 57
+      }
+    },
+    "critical_parity_prefix": {
+      "cases": 56,
+      "certified_trajectory_metrics": {
+        "cases": 56,
+        "max_first_descent": 13396,
+        "max_peak_bits": 8203,
+        "max_steps": 75059,
+        "total_steps": 1149465
+      },
+      "latest_first_descent": "critical(8192)+63*2^8192",
+      "longest_trajectory": "critical(8192)+3*2^8192",
+      "max_start_bits": 8198,
+      "min_start_bits": 129,
+      "status_counts": {
+        "reached_one": 56
+      }
+    },
+    "hash_control": {
+      "cases": 832,
+      "certified_trajectory_metrics": {
+        "cases": 832,
+        "max_first_descent": 122,
+        "max_peak_bits": 4106,
+        "max_steps": 32453,
+        "total_steps": 6573854
+      },
+      "latest_first_descent": "shake256(384,12)",
+      "longest_trajectory": "shake256(4096,17)",
+      "max_start_bits": 4096,
+      "min_start_bits": 72,
+      "status_counts": {
+        "reached_one": 832
+      }
+    },
+    "power_offsets": {
+      "cases": 312,
+      "certified_trajectory_metrics": {
+        "cases": 312,
+        "max_first_descent": 24785,
+        "max_peak_bits": 6494,
+        "max_steps": 55263,
+        "total_steps": 3049388
+      },
+      "latest_first_descent": "2^4096-1",
+      "longest_trajectory": "2^4096-1",
+      "max_start_bits": 4097,
+      "min_start_bits": 72,
+      "status_counts": {
+        "reached_one": 312
+      }
+    }
+  },
+  "manifest": "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/search/counterexample_search_rust.json",
+  "summary": {
+    "cases": 1257,
+    "certified_trajectory_metrics": {
+      "cases": 1257,
+      "max_first_descent": 52367,
+      "max_peak_bits": 12996,
+      "max_steps": 111072,
+      "total_steps": 12417483
+    },
+    "latest_first_descent": "11*2^8192-1",
+    "longest_trajectory": "11*2^8192-1",
+    "max_start_bits": 8198,
+    "min_start_bits": 72,
+    "status_counts": {
+      "reached_one": 1257
+    }
+  },
+  "timings_seconds": {
+    "export": 0.005356208,
+    "lean": 35.649193417,
+    "search": 0.076692666,
+    "seed_generation": 0.009205459
+  }
+}

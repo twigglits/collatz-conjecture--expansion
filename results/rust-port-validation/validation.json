@@ -1,0 +1,138 @@
+{
+  "started_utc": "2026-09-12T23:31:40.145628+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "source_and_binary_sha256": {
+    "Cargo.toml": "af0a0be5880280aebf66433947ce380d75e8dcc73740b93a4672c5bad3e6d734",
+    "Cargo.lock": "771c6ab3ed9ee0d7a2504f48092e3f928ef7197ddeef33e8fa3ba2bcc2c33f59",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "src/bin/analyze.rs": "22a5bea3376255fc31d4d7775b57930440f137252442f509e09e8dd2ce76b19e",
+    "src/bin/cycle-defects.rs": "37fdcdf2b6a13103afa4d729bb14136a43fb2413fa617e5e16b89ff1fc3d6092",
+    "src/bin/residue-sieve.rs": "69575990cf749ab415c24d75d2d9fe91bc7ecfd8b9f0e653949c1f91afd94a45",
+    "src/bin/verify-frontier.rs": "0b7742e11b18f46b76350ffc74cd6dfaa65305e11e527caea05a9d780ed24b51",
+    "src/bin/verify-universal.rs": "2ec683d1d9a7134f86f75930b0d48baca10317d6f54a08e18a5445aeda4b2d79",
+    "src/certificates.rs": "efb9b12830fbc87dedcfbdb4335e28af04d063ed75c072656770576907dd38cb",
+    "src/lib.rs": "44c11ed280aef46479b66dcb495a74300bef579c3d011fa636f02a671727bebf",
+    "src/main.rs": "dd57210ace3a9ba768ee9a24ed86d81b65dd58da74508e87202201215cc67df1",
+    "src/residue.rs": "24223c13c6fb7fb3059a6ca6c5c8f0348ce265671fef056200fdfeadc31a8058",
+    "src/search.rs": "ee0d706256bdd3cefb02a844769251db058ef227c97428fbe85032d018e714f2",
+    "src/seeds.rs": "54deda3321ccaf468e31580a7d34ba08d00ced9ee139447e80aff2a6038275c7",
+    "src/verify_helpers.rs": "2c627f2181d318e50e32fb822c85e4d0ce18d647f93230b90633087cb6a012b3",
+    "tests/cli.rs": "6a07f05f257138957b430343d71aeecf084378ff9b7259f86cafe1cc94132778",
+    "tests/residue_cli.rs": "9a3bba420b283ab21b21bde487effe71b46120a8364a8edde6cfc104aacea09a",
+    "search_counterexample.py": "ab453f04c2d82063df96f16bc91d3f09298e3c82d965757f86023579f003c129",
+    "analyze.py": "711fc32ecb918c5d9b52d3b2eeaa2fc9ce56c5cae711280b9952e290bfece693",
+    "verify_universal.py": "584e2beaedb514364e5b21bf50ef8fa046264a5eaa092405c792253bcec0e4fb",
+    "verify_frontier.py": "62b6266f68a398af679573fa6bad651bce0939fa12afd46e4faca6f9821f513f",
+    "results/raw.jsonl": "0d0da7742538f51f140a9b39f8006097db2473c5e412dc1674cd0200f8724bf3",
+    "results/universal.jsonl": "6a9d1c2a0431d999c39ff116751da52767bd46a577214510350de8200e6b3149",
+    "target/release/collatz-search": "54c523793e0f18a83b726b103910df8a17980b67cc755c9934753db37012d134",
+    "target/release/analyze": "6202593007b5be10fea040a20615ea1480751f2e090bb0562f53399c3e0f3930",
+    "target/release/verify-universal": "27d1c3e710f423b0499e6d3ce558801e658dbd7c427c9e314de2b65d64cef901",
+    "target/release/verify-frontier": "8ff88924b70854a0c2bff3130ca55ddefb9e7139888b0f919b77eb39e9518b2d"
+  },
+  "commands": [
+    {
+      "name": "cargo-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "seconds": 11.26614375000645,
+      "log": "results/rust-port-validation/cargo-tests.log"
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "seconds": 0.22656516698771156,
+      "log": "results/rust-port-validation/clippy.log"
+    },
+    {
+      "name": "format",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06690804200479761,
+      "log": "results/rust-port-validation/format.log"
+    },
+    {
+      "name": "python-search-parity",
+      "command": [
+        "python3",
+        "bench/compare.py",
+        "--check-only"
+      ],
+      "exit_code": 0,
+      "seconds": 0.08244083399767987,
+      "log": "results/rust-port-validation/python-search-parity.log"
+    },
+    {
+      "name": "search",
+      "command": [
+        "target/release/collatz-search",
+        "--threads",
+        "8",
+        "--verify-lean",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/search",
+        "--certificate",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/CollatzSearchPort.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 36.31639675000042,
+      "log": "results/rust-port-validation/search.log"
+    },
+    {
+      "name": "analysis",
+      "command": [
+        "target/release/analyze",
+        "--verify-lean",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/analysis"
+      ],
+      "exit_code": 0,
+      "seconds": 126.59272100000817,
+      "log": "results/rust-port-validation/analysis.log"
+    },
+    {
+      "name": "universal",
+      "command": [
+        "target/release/verify-universal",
+        "--output",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/universal_summary_rust.md"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6396904580033151,
+      "log": "results/rust-port-validation/universal.log"
+    },
+    {
+      "name": "frontier",
+      "command": [
+        "target/release/verify-frontier",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/frontier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7818711250001797,
+      "log": "results/rust-port-validation/frontier.log"
+    }
+  ],
+  "scope": "Correctness validation of all four Rust ports; elapsed times are not benchmark comparisons.",
+  "sources_and_binaries_unchanged_during_validation": true,
+  "finished_utc": "2026-09-12T23:34:36.124885+00:00"
+}

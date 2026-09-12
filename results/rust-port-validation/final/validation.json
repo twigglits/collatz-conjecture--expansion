@@ -1,0 +1,159 @@
+{
+  "started_utc": "2026-09-12T23:38:59.581802+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "source_and_binary_sha256": {
+    "Cargo.toml": "af0a0be5880280aebf66433947ce380d75e8dcc73740b93a4672c5bad3e6d734",
+    "Cargo.lock": "771c6ab3ed9ee0d7a2504f48092e3f928ef7197ddeef33e8fa3ba2bcc2c33f59",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "src/bin/analyze.rs": "1776bfe0405a4eee581fb22763ee19523e8efd41997c2154fba03c726ac9195a",
+    "src/bin/cycle-defects.rs": "37fdcdf2b6a13103afa4d729bb14136a43fb2413fa617e5e16b89ff1fc3d6092",
+    "src/bin/residue-sieve.rs": "b97e0703d3532359e33be334c725ddc6b4df10dd42e211605864b1074846156c",
+    "src/bin/verify-frontier.rs": "3876793de671aadf7267cfcb1d91b33f6b96255623fb954c710c5a8854b9c979",
+    "src/bin/verify-universal.rs": "5985958524394d9b4068211ebef1ed17f93db5725c7044d0e66ef3d6a5a0410a",
+    "src/certificates.rs": "efb9b12830fbc87dedcfbdb4335e28af04d063ed75c072656770576907dd38cb",
+    "src/lib.rs": "2cc11b574a0bcf71ea57bd56bf83a08fc02edd5852ebfcb7cf16df022f7beae2",
+    "src/main.rs": "a27728326a7dbdcc603d99ce5ecd42c5814ab11fc8eae8c162bb393b3380f44e",
+    "src/residue.rs": "24223c13c6fb7fb3059a6ca6c5c8f0348ce265671fef056200fdfeadc31a8058",
+    "src/search.rs": "ee0d706256bdd3cefb02a844769251db058ef227c97428fbe85032d018e714f2",
+    "src/seeds.rs": "54deda3321ccaf468e31580a7d34ba08d00ced9ee139447e80aff2a6038275c7",
+    "src/verify_helpers.rs": "2c627f2181d318e50e32fb822c85e4d0ce18d647f93230b90633087cb6a012b3",
+    "tests/cli.rs": "72acab138e469f3959d633d6dd504359f51552fd55d84e71e083ad1cb433bf45",
+    "tests/residue_cli.rs": "9a3bba420b283ab21b21bde487effe71b46120a8364a8edde6cfc104aacea09a",
+    "search_counterexample.py": "ab453f04c2d82063df96f16bc91d3f09298e3c82d965757f86023579f003c129",
+    "analyze.py": "711fc32ecb918c5d9b52d3b2eeaa2fc9ce56c5cae711280b9952e290bfece693",
+    "verify_universal.py": "584e2beaedb514364e5b21bf50ef8fa046264a5eaa092405c792253bcec0e4fb",
+    "verify_frontier.py": "62b6266f68a398af679573fa6bad651bce0939fa12afd46e4faca6f9821f513f",
+    "results/raw.jsonl": "0d0da7742538f51f140a9b39f8006097db2473c5e412dc1674cd0200f8724bf3",
+    "results/universal.jsonl": "6a9d1c2a0431d999c39ff116751da52767bd46a577214510350de8200e6b3149",
+    "target/release/collatz-search": "581956dd11d304456bb38573d8e37e8689f5343f6debe66d4b678e749ee1bcf5",
+    "target/release/analyze": "de4666f41429cdbb7218b205a811e058cfd075813be97bbf77c3849a43d46d85",
+    "target/release/verify-universal": "c626a5d01157b1db852f4ef1cf31dd8cfbcf1acdad526bb011eb3855874c1530",
+    "target/release/verify-frontier": "ee280f7a65a16be0c2877c54d0c073319392e50cac9e547943647967f1fbd268"
+  },
+  "commands": [
+    {
+      "name": "cargo-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--locked"
+      ],
+      "exit_code": 0,
+      "seconds": 15.234146292001242,
+      "log": "results/rust-port-validation/final/cargo-tests.log"
+    },
+    {
+      "name": "clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0,
+      "seconds": 0.37077512498945,
+      "log": "results/rust-port-validation/final/clippy.log"
+    },
+    {
+      "name": "format",
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06120770800043829,
+      "log": "results/rust-port-validation/final/format.log"
+    },
+    {
+      "name": "search",
+      "command": [
+        "target/release/collatz-search",
+        "--threads",
+        "8",
+        "--verify-lean",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/search",
+        "--certificate",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/CollatzSearchPort.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 36.41161295800703,
+      "log": "results/rust-port-validation/final/search.log"
+    },
+    {
+      "name": "analysis",
+      "command": [
+        "target/release/analyze",
+        "--verify-lean",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/analysis"
+      ],
+      "exit_code": 0,
+      "seconds": 129.51659891600139,
+      "log": "results/rust-port-validation/final/analysis.log"
+    },
+    {
+      "name": "universal",
+      "command": [
+        "target/release/verify-universal",
+        "--output",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/universal_summary_rust.md"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8890065410087118,
+      "log": "results/rust-port-validation/final/universal.log"
+    },
+    {
+      "name": "frontier",
+      "command": [
+        "target/release/verify-frontier",
+        "--output-dir",
+        "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/frontier"
+      ],
+      "exit_code": 0,
+      "seconds": 0.7939225000009174,
+      "log": "results/rust-port-validation/final/frontier.log"
+    }
+  ],
+  "scope": "Final correctness validation of all four Rust ports after verification and file-alias fixes; elapsed times are not benchmark comparisons.",
+  "results": {
+    "search_cases": 1257,
+    "search_matches_python_rows_summary_and_families": true,
+    "analysis_variants": 38,
+    "analysis_cycles": 89,
+    "analysis_samples": 14,
+    "both_certificate_statuses_verified_and_hashes_match": true,
+    "frontier_positive_cycles": 86,
+    "frontier_counts": [
+      {
+        "binomial_tail": "219",
+        "good": 219,
+        "level": 8,
+        "max_weight": 5,
+        "total": 256
+      },
+      {
+        "binomial_tail": "58651",
+        "good": 58651,
+        "level": 16,
+        "max_weight": 10,
+        "total": 65536
+      },
+      {
+        "binomial_tail": "910596",
+        "good": 910596,
+        "level": 20,
+        "max_weight": 12,
+        "total": 1048576
+      }
+    ]
+  },
+  "sources_and_binaries_unchanged_during_validation": true,
+  "finished_utc": "2026-09-12T23:42:02.869621+00:00"
+}

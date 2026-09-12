@@ -1,0 +1,28 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzCycleSeparation.lean
+Source SHA256: dca542cfc6c9acf426d990a2e7dbd241419458796b6933c61eca4305d86234ee
+Checked UTC: 2026-09-12T23:28:43.604748+00:00
+Exit code: 0
+Elapsed seconds: 0.426846
+Warnings: 0
+
+'CollatzCycleSeparation.transfer_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.replacement_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.replacement_divides_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.replacement_equal_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.weight_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.replacement_equal_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.divisor_of_monomial' depends on axioms: [propext, Quot.sound]
+'CollatzCycleSeparation.shared_factor_excludes_monomial_perturbation' depends on axioms: [propext, Quot.sound]
+'CollatzCycleSeparation.transfer_left_excluded_by_shared_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzCycleSeparation.transfer_right_excluded_by_shared_factor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CollatzCycleSeparation.transfer_cycle_test_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.repeatWord_shared_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.repeated_block_transfer_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.weight_lt_three_pow_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleSeparation.repeated_block_replacement_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+

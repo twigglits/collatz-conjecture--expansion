@@ -1,0 +1,7 @@
+Command: ['python3', 'bench/compare.py', '--check-only']
+{
+  "verification": "passed",
+  "cases": 1257,
+  "checks": "certificate hashes, all saved rows/metrics, generated seed order",
+  "benchmarks_run": false
+}

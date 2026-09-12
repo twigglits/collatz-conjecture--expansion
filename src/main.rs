@@ -242,7 +242,11 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
     let output = opts.output_dir.join("counterexample_search_rust.json");
     let log_output = opts.output_dir.join("counterexample_search_rust.log");
     let resolved_cert = resolve_output(&opts.certificate)?;
-    if resolved_cert == resolve_output(&output)? || resolved_cert == resolve_output(&log_output)? {
+    if resolved_cert == resolve_output(&output)?
+        || resolved_cert == resolve_output(&log_output)?
+        || collatz_search::same_existing_file(&opts.certificate, &output)?
+        || collatz_search::same_existing_file(&opts.certificate, &log_output)?
+    {
         return Err(
             "--certificate must differ from the JSON manifest and verification log paths".into(),
         );
@@ -287,16 +291,16 @@ fn run() -> Result<(), Box<dyn std::error::Error>> {
             String::from_utf8_lossy(&checked.stderr)
         );
         fs::write(opts.output_dir.join("counterexample_search_rust.log"), &log)?;
-        data["certificate_status"] = json!(if checked.status.success() {
-            "verified"
-        } else {
-            "failed"
-        });
+        let proof_ok = collatz_search::lean_proof_succeeded(&checked);
+        data["certificate_status"] = json!(if proof_ok { "verified" } else { "failed" });
         data["lean_version"] = json!(String::from_utf8_lossy(&version.stdout).trim());
         data["timings_seconds"]["lean"] = json!(lean_clock.elapsed().as_secs_f64());
         write_json(&output, &data)?;
-        if !checked.status.success() {
-            return Err(format!("Lean rejected the certificate:\n{log}").into());
+        if !proof_ok {
+            return Err(format!(
+                "Lean rejected the certificate or reported an unfinished proof:\n{log}"
+            )
+            .into());
         }
     } else {
         write_json(&output, &data)?;

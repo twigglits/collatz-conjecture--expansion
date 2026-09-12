@@ -1,0 +1,99 @@
+{
+  "certificate_status": "verified",
+  "families": {
+    "all_odd_prefix": {
+      "cases": 57,
+      "certified_trajectory_metrics": {
+        "cases": 0,
+        "max_first_descent": 0,
+        "max_peak_bits": 0,
+        "max_steps": 0,
+        "total_steps": 0
+      },
+      "latest_first_descent": null,
+      "longest_trajectory": null,
+      "max_start_bits": 8198,
+      "min_start_bits": 74,
+      "status_counts": {
+        "unresolved_fuel": 57
+      }
+    },
+    "critical_parity_prefix": {
+      "cases": 56,
+      "certified_trajectory_metrics": {
+        "cases": 0,
+        "max_first_descent": 0,
+        "max_peak_bits": 0,
+        "max_steps": 0,
+        "total_steps": 0
+      },
+      "latest_first_descent": null,
+      "longest_trajectory": null,
+      "max_start_bits": 8198,
+      "min_start_bits": 129,
+      "status_counts": {
+        "unresolved_fuel": 56
+      }
+    },
+    "hash_control": {
+      "cases": 832,
+      "certified_trajectory_metrics": {
+        "cases": 33,
+        "max_first_descent": 32,
+        "max_peak_bits": 100,
+        "max_steps": 511,
+        "total_steps": 14512
+      },
+      "latest_first_descent": "shake256(72,12)",
+      "longest_trajectory": "shake256(72,59)",
+      "max_start_bits": 4096,
+      "min_start_bits": 72,
+      "status_counts": {
+        "reached_one": 33,
+        "unresolved_fuel": 799
+      }
+    },
+    "power_offsets": {
+      "cases": 312,
+      "certified_trajectory_metrics": {
+        "cases": 0,
+        "max_first_descent": 0,
+        "max_peak_bits": 0,
+        "max_steps": 0,
+        "total_steps": 0
+      },
+      "latest_first_descent": null,
+      "longest_trajectory": null,
+      "max_start_bits": 4097,
+      "min_start_bits": 72,
+      "status_counts": {
+        "unresolved_fuel": 312
+      }
+    }
+  },
+  "manifest": "/Users/jean/Personal/collatz-conjecture--expansion/results/lean-4.33.1/integration/search/counterexample_search_rust.json",
+  "summary": {
+    "cases": 1257,
+    "certified_trajectory_metrics": {
+      "cases": 33,
+      "max_first_descent": 32,
+      "max_peak_bits": 100,
+      "max_steps": 511,
+      "total_steps": 14512
+    },
+    "latest_first_descent": "shake256(72,12)",
+    "longest_trajectory": "shake256(72,59)",
+    "max_start_bits": 8198,
+    "min_start_bits": 72,
+    "status_counts": {
+      "reached_one": 33,
+      "unresolved_fuel": 1224
+    }
+  },
+  "timings_seconds": {
+    "export": 0.061833459,
+    "lean": 0.194867208,
+    "search": 0.173492375,
+    "seed_generation": 0.080094542
+  }
+}

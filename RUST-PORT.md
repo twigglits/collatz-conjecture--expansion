@@ -53,8 +53,11 @@ not claimed to be certified by Lean.
 ## Run
 
 ```sh
-cargo build --release --locked
+cargo build --release --locked --bins
 target/release/collatz-search --verify-lean
+target/release/analyze --verify-lean
+target/release/verify-universal
+target/release/verify-frontier
 
 # Optional parallel search; preserves the original input/output order.
 target/release/collatz-search --threads 8 --verify-lean
@@ -156,9 +159,9 @@ of the repeated search benchmark above.
 
 ## Correctness and proof checks
 
-- Every generated input, result field, row ordering, and family summary matches
-  the Python baseline. All 1,257 starts reach 1, with identical first-descent,
-  first-arrival, and peak-bit metrics.
+- In the counterexample search, every generated input, result field, row ordering,
+  and family summary matches the Python baseline. All 1,257 starts reach 1, with
+  identical first-descent, first-arrival, and peak-bit metrics.
 - Generated Lean certificate bodies match the Python version, apart from the
   provenance and output filename. Lean accepted all Rust-generated trajectories.
 - The trajectory checker's soundness theorem has no axioms. Finite replay uses
@@ -168,10 +171,24 @@ of the repeated search benchmark above.
 - A parallel zero-fuel run yields 1,257 unresolved cases and an empty successful
   certificate. It does not silently report convergence. Relative certificate
   paths, invalid options, and output-path collision rejection were also checked.
-- The complete suite passes 38 tests. The separate Lean integration test also
+- The complete suite passes 45 tests. The separate Lean integration test also
   passes at depths 0, 1, and 8; it is opt-in because it requires Lean.
   Formatting and Clippy with warnings denied pass. The analysis parity test
   requires Python; the production executables do not.
+- CLI regression checks reject an unsuccessful Lean run and unfinished proofs,
+  including a successful exit that reports `sorryAx` or a `sorry` warning.
+  These checks inspect Lean's output, so certificate filenames do not cause
+  false proof failures. Input/output collision checks cover direct paths and
+  symlinks, plus hard links on Unix, in all three historical-data verifiers.
+
+The [final all-four validation record](results/rust-port-validation/final/validation.json)
+binds these checks to source and release-binary hashes. All four complete CLI runs
+passed: 1,257 search starts, 38 analysis variants with 89 cycle certificates and
+38 range certificates, universal checks V1–V8, and frontier checks F1–F5.
+The search and analysis certificates were independently accepted by Lean 4.33.1.
+The record includes command logs and confirms that the sources and binaries did
+not change during validation. Its elapsed times are validation timings, not
+new Python/Rust benchmarks.
 
 ```sh
 cargo test --locked

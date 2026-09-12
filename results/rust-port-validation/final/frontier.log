@@ -1,0 +1,8 @@
+Command: ['target/release/verify-frontier', '--output-dir', '/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/frontier']
+F1 PASS  500 small + 20 sixty-digit SHAKE cases; 4 explicit zero/even/identity edge cases
+F2 PASS  additive/subtractive equations and expansion for 86 positive-c cycles; finite replay validates every stored metric
+F3 PASS  repulsion on 300 systems x 200 ordinary steps
+F4 PASS  200 systems x 50 accelerated steps; 32 complete committed (7,c) cycle members checked
+F5a PASS  500 affine cases and 234 qualifying descent cases from 300 attempts
+F5b PASS  direct BigUint residue counts 219/58651/910596 match Lean, Python, and independent binomial tails
+== ALL FRONTIER RUST EXACT-ARITHMETIC VERIFICATIONS PASS ==

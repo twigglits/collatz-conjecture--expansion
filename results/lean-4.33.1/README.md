@@ -7,7 +7,7 @@ was checked on 13 September 2026 (Africa/Johannesburg). The compiler reports:
 Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
 ```
 
-All **19 standalone proof and certificate files passed**, with no compiler
+All **19 existing standalone proof and certificate files passed**, with no compiler
 warnings or admitted-proof dependencies reported:
 
 - [structural.json](structural.json): 14 top-level standalone files, with
@@ -40,5 +40,18 @@ lean CollatzCycleCriterion.lean
 cargo test --locked
 cargo test --locked --test residue_cli -- --ignored
 ```
+
+The launchers were then tested with the new pin:
+
+- All 38 active Rust tests passed; [Cargo log](integration/cargo-tests.log).
+- The additional real-Lean integration test passed at residue depths 0, 1,
+  and 8; [integration log](integration/residue-integration.log).
+- A search with a 512-step limit generated and verified 33 trajectories,
+  totaling 14,512 replayed steps. Its 1,224 fuel-limited cases remain
+  unresolved. The [search manifest](integration/search/counterexample_search_rust.json)
+  and [Lean log](integration/search/counterexample_search_rust.log) record the
+  actual 4.33.1 selector and compiler version.
+- Clippy with warnings denied and formatting checks passed for the changed
+  Rust code.
 
 The older 4.31.0 toolchain remains installed for reproducing historical runs.

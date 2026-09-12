@@ -1,0 +1,3 @@
+Command: lean +leanprover/lean4:v4.33.1 /Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/analysis/CollatzCerts.lean
+'range_a3_c1' depends on axioms: [range_a3_c1._native.native_decide.ax_1_1]
+'cyc_a3_c1_m1' does not depend on any axioms

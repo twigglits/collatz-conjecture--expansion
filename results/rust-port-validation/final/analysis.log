@@ -1,0 +1,9 @@
+Command: ['target/release/analyze', '--verify-lean', '--output-dir', '/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/analysis']
+{
+  "certificate_status": "verified",
+  "cycles": 89,
+  "output_dir": "/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/final/analysis",
+  "samples": 14,
+  "structure_checks": "passed",
+  "variants": 38
+}

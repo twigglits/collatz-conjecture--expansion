@@ -252,7 +252,9 @@ entries equal to 1 and satisfying (5), and test
 As proved in [`CYCLE-WORDS.md`](CYCLE-WORDS.md), this is a complete
 integer-cycle test; rotation of the numerator proves that all intermediate
 values are odd integers with the prescribed exact valuations. Primitivity
-is checked separately. The bounds make this a finite procedure for every
+is checked separately. The full test is also kernel-checked as `word_cycle_iff`
+in [`CollatzCycleCriterion.lean`](CollatzCycleCriterion.lean).
+The bounds make this a finite procedure for every
 fixed \(q\), without searching all initial values up to a height bound.
 No such enumeration was run for this note.
 

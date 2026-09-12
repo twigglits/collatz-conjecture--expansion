@@ -1,0 +1,11 @@
+Command: ['target/release/verify-universal', '--output', '/Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/universal_summary_rust.md']
+V1 PASS  S1/S4 flags, dimensions, counts and Mersenne expectations
+V2 PASS  S2 census: 5477 fixed points; exact divisor-law set equality and direct replay
+V3 PASS  S3 catalog: 25 families; exact first returns, cycle equations and 24 Mersennes
+V4 PASS  master formula and Mersenne rigidity; 300 SHAKE trials with c in [10^200,10^350)
+V5 PASS  F(a,d*e,d*u)=d*F(a,e,u); 300 SHAKE trials at 80-digit scale
+V6 PASS  all 25 catalog families transported to c in [10^100,10^101); exact first return
+V7 PASS 181x+c cycle {27c,611c}; 100 SHAKE trials with c in [10^100,10^150)
+V8 PASS  one-step law at c=6081075, odd a=3..201; a=3 brute scan through 2,000,001 complete
+wrote /Users/jean/Personal/collatz-conjecture--expansion/results/rust-port-validation/universal_summary_rust.md
+== ALL EXACT-ARITHMETIC VERIFICATIONS PASS ==

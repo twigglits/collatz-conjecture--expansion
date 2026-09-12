@@ -1,0 +1,28 @@
+{
+  "algorithm": "Exact BigUint powers, floor words, modular rotation, binary gcd; repeated base rotations counted with multiplicity.",
+  "complete": true,
+  "completed_periods": 36,
+  "cyclic_rotations_covered": 202500,
+  "elapsed_seconds": 24.005023792,
+  "gcd_evaluations": 44471,
+  "integer_candidate_positions": 0,
+  "last_attempted_k": 10000,
+  "mathematical_scope": "No Lean/CUDA certificate; these observations are not certified exclusions.",
+  "mutation_positions": {
+    "121_to_112": 49581,
+    "22_to_13": 34446
+  },
+  "next_or_partial_k": null,
+  "output_dir": "results/cycle-defects/selected-1250-10000",
+  "parameters": {
+    "max_k": 10000,
+    "min_k": 1250,
+    "seconds": 90,
+    "stride": 250
+  },
+  "periods_jsonl_sha256": "52fcbec02d9d8d1166bfcf092641b635fd79562bea3e14d6d95c32f19b34d271",
+  "reduced_denominator_hash_encoding": "SHA256 of unsigned big-endian bytes; exact denominator is (2^H-3^k)/gcd.",
+  "source_sha256": "37fdcdf2b6a13103afa4d729bb14136a43fb2413fa617e5e16b89ff1fc3d6092",
+  "status": "unverified_diagnostic",
+  "stop_reason": "requested_range_complete"
+}

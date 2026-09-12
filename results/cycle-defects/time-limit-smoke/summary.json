@@ -1,0 +1,28 @@
+{
+  "algorithm": "Exact BigUint powers, floor words, modular rotation, binary gcd; repeated base rotations counted with multiplicity.",
+  "complete": false,
+  "completed_periods": 0,
+  "cyclic_rotations_covered": 2568,
+  "elapsed_seconds": 1.00046375,
+  "gcd_evaluations": 1066,
+  "integer_candidate_positions": 0,
+  "last_attempted_k": 10007,
+  "mathematical_scope": "No Lean/CUDA certificate; these observations are not certified exclusions.",
+  "mutation_positions": {
+    "121_to_112": 630,
+    "22_to_13": 436
+  },
+  "next_or_partial_k": 10007,
+  "output_dir": "results/cycle-defects/time-limit-smoke",
+  "parameters": {
+    "max_k": 10007,
+    "min_k": 10007,
+    "seconds": 1,
+    "stride": 1
+  },
+  "periods_jsonl_sha256": "04a24d30ed108d6dff90c8fff5e67f4f3614c7b89d754bad11b43bd7c504ac3a",
+  "reduced_denominator_hash_encoding": "SHA256 of unsigned big-endian bytes; exact denominator is (2^H-3^k)/gcd.",
+  "source_sha256": "37fdcdf2b6a13103afa4d729bb14136a43fb2413fa617e5e16b89ff1fc3d6092",
+  "status": "unverified_diagnostic",
+  "stop_reason": "time_limit_partial_range"
+}
