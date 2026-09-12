@@ -8,12 +8,18 @@ The earlier generalized-family study is in [REPORT.md](REPORT.md). The historica
 has not been updated and should not be used for the corrected claims.
 
 The current search is written in **Rust**, with exact big integers and independent
-Lean certificates. It measured **17.58× faster than Python with one worker** on
+Lean certificates. It measured **17.99× faster than Python with one worker** on
 the identical 1,257-input workload. See [RUST-PORT.md](RUST-PORT.md) for benchmark
 scope and reproduction; Lean verification remains a separate cost.
 
 ```sh
 cargo run --release --locked -- --verify-lean
+# Historical Python analysis now has Rust replacements:
+cargo run --release --locked --bin analyze -- --verify-lean
+cargo run --release --locked --bin verify-universal
+cargo run --release --locked --bin verify-frontier
+# Adaptive descent certificates for whole residue classes:
+cargo run --release --locked --bin residue-sieve -- --depth 26 --verify-lean
 ```
 
 Mathematical computational claims are backed by CUDA records or Lean proofs.
@@ -33,9 +39,10 @@ Performance timings are explicitly identified as empirical measurements.
 | `CollatzTheory.lean` | General theorems, kernel-only proofs (parity reduction, scaling conjugacy, gcd absorption, universal cycle for a = 2^k−1 **and its converse**: master formula F(c) = odd(a+1)·c, one-step cycle law, orbit transport) |
 | `CollatzCerts.lean` | Generated certificates: 89 cycle proofs (`decide`) + 38 range-classification proofs (`native_decide`) |
 | `CollatzFrontier.lean` | Frontier theorems, kernel-only: Böhm–Sontacchi cycle equation proved for **all** parameters (was: verified on 89 instances) + the forced drift bound 2^H > a^k for every cycle; repulsion (dual of absorption); coset confinement of orbits in c·⟨2⟩ mod a; finite Terras descent with certified good-residue densities (86.84% of classes mod 2^20) |
-| `analyze.py` | Exact-arithmetic cross-checks of GPU output; generates `CollatzCerts.lean` |
-| `verify_universal.py` | Exact big-integer layer for `universal.cu`: catalog re-iteration, law set-equality, 350-digit stress instances |
-| `verify_frontier.py` | Exact big-integer layer for `CollatzFrontier.lean`: formula/identity fuzz (60-digit params), cycle-equation recheck on all committed cycles, good-residue count recomputation |
+| `src/bin/analyze.rs` / `analyze.py` | Rust GPU-output analysis and retained Python reference; exact signed cycle equations and Lean certificate generation |
+| `src/bin/verify-universal.rs` / `verify_universal.py` | Rust universal-family verifier and Python reference: catalog re-iteration, law set-equality, 350-digit stress instances |
+| `src/bin/verify-frontier.rs` / `verify_frontier.py` | Rust frontier verifier and Python reference: formula fuzz, cycle equations, and direct good-residue counts |
+| `src/residue.rs` / `src/bin/residue-sieve.rs` | Adaptive whole-class descent search with checked arithmetic, work limits, and independent Lean count verification |
 | `results/` | Raw sweep JSON, summary tables, logs |
 
 The local `lean-toolchain` pins Lean 4.31.0. For current reproduction commands,

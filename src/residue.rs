@@ -1,8 +1,9 @@
 //! Adaptive residue classes for the shortcut Collatz map U.
 //!
 //! A node records the exact identity
-//! U^k(2^k*q + r) = a*q + b. A branch stops at its first a < 2^k.
-//! Such a leaf descends for q >= q0, where q0 is the exact strict threshold.
+//! U^k(2^k*q + r) = a*q + b. A node with a < 2^k descends for
+//! q >= q0, where q0 is the exact strict threshold. The tree closes only
+//! classes with no finite exception greater than 1; other nodes keep branching.
 //! Leaves with no exceptional n > 1 cover their whole positive class by
 //! descent or the terminal value 1. Counts here are computational discovery;
 //! an independent Lean checker must certify any mathematical claim made from
@@ -13,6 +14,7 @@ use std::collections::BTreeMap;
 
 const MAX_DEPTH: u32 = 63;
 const EXCEPTION_SAMPLE_LIMIT: usize = 8;
+const THRESHOLD_BUCKET_LIMIT: usize = 1024;
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize)]
 pub struct AffineNode {
@@ -51,8 +53,10 @@ pub struct ResidueSummary {
     pub closed_positive_weight_at_max_depth: u64,
     /// Conservative complement of fully closed positive classes.
     pub unresolved_weight_at_max_depth: u64,
+    /// Leaves of the coefficient-only diagnostic tree (before further splitting).
     pub first_drop_leaves_by_depth: Vec<u64>,
     pub q0_histogram: Vec<ThresholdCount>,
+    /// Finite exceptions at first coefficient drops; descendants may later close.
     pub nontrivial_exception_count: u128,
     /// At most eight examples, regardless of the total number of exceptions.
     pub exception_samples: Vec<FiniteException>,
@@ -139,8 +143,14 @@ impl AffineNode {
         if self.constant < self.residue {
             return Ok(Some(0));
         }
-        let gap = self.modulus - self.coefficient;
-        let difference = self.constant - self.residue;
+        let gap = self
+            .modulus
+            .checked_sub(self.coefficient)
+            .ok_or_else(|| overflow("coefficient gap"))?;
+        let difference = self
+            .constant
+            .checked_sub(self.residue)
+            .ok_or_else(|| overflow("intercept difference"))?;
         Ok(Some(
             (difference / gap)
                 .checked_add(1)
@@ -149,13 +159,14 @@ impl AffineNode {
     }
 }
 
-/// Explore first coefficient-drop classes with O(max_depth) stack storage.
+/// Explore fully closing residue classes with O(max_depth) stack storage.
 ///
 /// The node budget is mandatory. Exceeding it or the checked arithmetic bounds
 /// returns an error, rather than reporting a partial traversal as a complete
 /// count. No orbit is assumed to converge merely because its coefficient drops:
-/// every exceptional start greater than 1 is counted and prevents its leaf
-/// from contributing to `closed_positive_weight_at_max_depth`.
+/// a node closes only when q0=0, or q0=1 with residue<=1. Otherwise it
+/// branches further, even if its coefficient has already dropped. First-drop
+/// diagnostics and final whole-class closure weights are reported separately.
 pub fn explore(max_depth: u32, node_budget: u64) -> Result<ResidueSummary, String> {
     if max_depth > MAX_DEPTH {
         return Err(format!("max_depth must be at most {MAX_DEPTH}"));
@@ -183,8 +194,8 @@ pub fn explore(max_depth: u32, node_budget: u64) -> Result<ResidueSummary, Strin
     };
     let mut histogram = BTreeMap::<u128, u64>::new();
     let mut stack = Vec::with_capacity(max_depth as usize + 1);
-    stack.push(root());
-    while let Some(node) = stack.pop() {
+    stack.push((root(), false));
+    while let Some((node, mut prior_drop)) = stack.pop() {
         if result.visited_nodes >= node_budget {
             return Err(format!(
                 "node budget {node_budget} exhausted before depth {max_depth} traversal completed"
@@ -192,29 +203,31 @@ pub fn explore(max_depth: u32, node_budget: u64) -> Result<ResidueSummary, Strin
         }
         add_count(&mut result.visited_nodes, 1)?;
         if let Some(q0) = node.descent_threshold()? {
-            add_count(
-                &mut result.first_drop_leaves_by_depth[node.depth as usize],
-                1,
-            )?;
-            add_count(histogram.entry(q0).or_default(), 1)?;
             let weight = 1_u64
                 .checked_shl(max_depth - node.depth)
                 .ok_or_else(|| overflow("leaf residue weight"))?;
-            add_count(&mut result.coefficient_drop_weight_at_max_depth, weight)?;
             // A residue is in [0,modulus), and modulus>=2 at a drop. Therefore
             // q=0 is the only possible exceptional start equal to 0 or 1.
             let first_nontrivial_q = u128::from(node.residue <= 1 && q0 > 0);
-            let nontrivial = q0 - first_nontrivial_q;
-            result.nontrivial_exception_count = result
-                .nontrivial_exception_count
-                .checked_add(nontrivial)
-                .ok_or_else(|| overflow("exception count"))?;
-            if nontrivial == 0 {
-                add_count(&mut result.closed_positive_weight_at_max_depth, weight)?;
-                if q0 > 0 {
-                    result.trivial_exception_nodes.push(node);
+            let nontrivial = q0
+                .checked_sub(first_nontrivial_q)
+                .ok_or_else(|| overflow("nontrivial exception count"))?;
+            if !prior_drop {
+                add_count(
+                    &mut result.first_drop_leaves_by_depth[node.depth as usize],
+                    1,
+                )?;
+                if !histogram.contains_key(&q0) && histogram.len() >= THRESHOLD_BUCKET_LIMIT {
+                    return Err(format!(
+                        "q0 histogram exceeded {THRESHOLD_BUCKET_LIMIT} distinct thresholds; no complete result returned"
+                    ));
                 }
-            } else {
+                add_count(histogram.entry(q0).or_default(), 1)?;
+                add_count(&mut result.coefficient_drop_weight_at_max_depth, weight)?;
+                result.nontrivial_exception_count = result
+                    .nontrivial_exception_count
+                    .checked_add(nontrivial)
+                    .ok_or_else(|| overflow("exception count"))?;
                 let mut q = first_nontrivial_q;
                 while q < q0 && result.exception_samples.len() < EXCEPTION_SAMPLE_LIMIT {
                     let start = node
@@ -229,13 +242,24 @@ pub fn explore(max_depth: u32, node_budget: u64) -> Result<ResidueSummary, Strin
                         .checked_add(1)
                         .ok_or_else(|| overflow("exception sample index"))?;
                 }
+                prior_drop = true;
             }
-        } else if node.depth == max_depth {
-            add_count(&mut result.slope_survivors_at_max_depth, 1)?;
+            if nontrivial == 0 {
+                add_count(&mut result.closed_positive_weight_at_max_depth, weight)?;
+                if q0 > 0 {
+                    result.trivial_exception_nodes.push(node);
+                }
+                continue;
+            }
+        }
+        if node.depth == max_depth {
+            if !prior_drop {
+                add_count(&mut result.slope_survivors_at_max_depth, 1)?;
+            }
         } else {
             // LIFO order visits the lower child first and is deterministic.
-            stack.push(node.child(true)?);
-            stack.push(node.child(false)?);
+            stack.push((node.child(true)?, prior_drop));
+            stack.push((node.child(false)?, prior_drop));
         }
     }
     result.q0_histogram = histogram

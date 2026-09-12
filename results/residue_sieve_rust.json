@@ -1,0 +1,92 @@
+{
+  "affine_source_sha256": "f1e194729cd9af96015aefe1b96425246b2edb3f2ac0e8689dbd17c24911e7e9",
+  "arithmetic": "checked u128; maximum depth 63; abort on overflow or budget exhaustion",
+  "certificate_file": "/Users/jean/Personal/collatz-conjecture--expansion/CollatzResidueCerts.lean",
+  "certificate_sha256": "211aefc907f4dff6e3607d67dd0a42549968158c796923adf54a36746a56e39a",
+  "certificate_status": "verified",
+  "certificate_trust": "kernel soundness and exact counting proofs; numeric count uses native_decide (Lean compiler and runtime)",
+  "certified_fields": [
+    "max_depth",
+    "total_residues_at_max_depth",
+    "closed_positive_weight_at_max_depth",
+    "unresolved_weight_at_max_depth"
+  ],
+  "checker_source_sha256": "99503b274b0677700748a550e1b77b3581db4bff4859f9cdfd830a897b3e3181",
+  "coverage": "closed residue classes modulo 2^depth; every member n>1 descends within depth shortcut steps",
+  "diagnostics": "other summary fields are Rust discovery diagnostics, not independently certified",
+  "implementation": "Rust",
+  "map": "shortcut U(n)=(3*n+1)/2 if odd; n/2 if even",
+  "schema": 1,
+  "summary": {
+    "closed_positive_weight_at_max_depth": 66071490,
+    "coefficient_drop_weight_at_max_depth": 66071490,
+    "exception_samples": [],
+    "first_drop_leaves_by_depth": [
+      0,
+      1,
+      1,
+      0,
+      1,
+      2,
+      0,
+      3,
+      7,
+      0,
+      12,
+      0,
+      30,
+      85,
+      0,
+      173,
+      476,
+      0,
+      961,
+      0,
+      2652,
+      8045,
+      0,
+      17637,
+      51033,
+      0,
+      108950
+    ],
+    "max_depth": 26,
+    "node_budget": 5000000,
+    "nontrivial_exception_count": 0,
+    "q0_histogram": [
+      {
+        "leaves": 190067,
+        "q0": 0
+      },
+      {
+        "leaves": 2,
+        "q0": 1
+      }
+    ],
+    "slope_survivors_at_max_depth": 1037374,
+    "total_residues_at_max_depth": 67108864,
+    "trivial_exception_nodes": [
+      {
+        "coefficient": 1,
+        "constant": 0,
+        "depth": 1,
+        "modulus": 2,
+        "residue": 0
+      },
+      {
+        "coefficient": 3,
+        "constant": 1,
+        "depth": 2,
+        "modulus": 4,
+        "residue": 1
+      }
+    ],
+    "unresolved_weight_at_max_depth": 1037374,
+    "visited_nodes": 2454885
+  },
+  "timings_seconds": {
+    "lean": 46.27563475,
+    "search": 0.021944208
+  },
+  "unresolved": "open classes are not counterexamples and need not fail to descend"
+}

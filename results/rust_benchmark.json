@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "recorded_at_utc": "2026-09-12T21:40:59.836744+00:00",
+  "recorded_at_utc": "2026-09-12T22:16:39.852556+00:00",
   "environment": {
     "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
     "machine": "arm64",
@@ -127,33 +127,33 @@
   },
   "python": {
     "warmup_seconds": [
-      2.825262667000061
+      2.8850240419997135
     ],
     "search_seconds": [
-      2.8369471250043716,
-      2.8363269999972545,
-      2.828557374989032,
-      2.828586167001049,
-      2.8386887079977896
+      2.886679124989314,
+      2.895037083013449,
+      2.898828457997297,
+      2.883143833008944,
+      2.921651042008307
     ],
-    "median_seconds": 2.8363269999972545,
-    "min_seconds": 2.828557374989032,
-    "max_seconds": 2.8386887079977896
+    "median_seconds": 2.895037083013449,
+    "min_seconds": 2.883143833008944,
+    "max_seconds": 2.921651042008307
   },
   "rust_single": {
     "warmup_seconds": [
-      0.174988584
+      0.186174542
     ],
     "search_seconds": [
-      0.160322083,
-      0.160959375,
-      0.161313042,
-      0.16424525,
-      0.164238667
+      0.161802042,
+      0.1606235,
+      0.160336583,
+      0.160903791,
+      0.161523083
     ],
-    "median_seconds": 0.161313042,
-    "min_seconds": 0.160322083,
-    "max_seconds": 0.16424525,
+    "median_seconds": 0.160903791,
+    "min_seconds": 0.160336583,
+    "max_seconds": 0.161802042,
     "threads": 1,
     "command": [
       "/Users/jean/Personal/collatz-conjecture--expansion/target/release/collatz-search",
@@ -164,23 +164,23 @@
       "--fuel",
       "300000"
     ],
-    "seed_generation_seconds_excluded": 0.007444583,
+    "seed_generation_seconds_excluded": 0.015621333,
     "reported_scope": "search and row collection only; excludes seed generation, export, compilation, and Lean"
   },
   "rust_parallel": {
     "warmup_seconds": [
-      0.06994425
+      0.07210325
     ],
     "search_seconds": [
-      0.065724792,
-      0.065586167,
-      0.066897,
-      0.066323458,
-      0.06537075
+      0.069927,
+      0.065246916,
+      0.0664315,
+      0.066816958,
+      0.066791792
     ],
-    "median_seconds": 0.065724792,
-    "min_seconds": 0.06537075,
-    "max_seconds": 0.066897,
+    "median_seconds": 0.066791792,
+    "min_seconds": 0.065246916,
+    "max_seconds": 0.069927,
     "threads": 8,
     "command": [
       "/Users/jean/Personal/collatz-conjecture--expansion/target/release/collatz-search",
@@ -191,13 +191,13 @@
       "--fuel",
       "300000"
     ],
-    "seed_generation_seconds_excluded": 0.004038375,
+    "seed_generation_seconds_excluded": 0.004044167,
     "reported_scope": "search and row collection only; excludes seed generation, export, compilation, and Lean"
   },
   "median_speed_ratios": {
-    "python_over_rust_single": 17.58275068668815,
-    "python_over_rust_parallel": 43.15459834391343,
-    "rust_single_over_rust_parallel": 2.4543712819966017
+    "python_over_rust_single": 17.992348502301287,
+    "python_over_rust_parallel": 43.34420437489458,
+    "rust_single_over_rust_parallel": 2.409035394648492
   },
   "verification": {
     "saved_rust_and_python_rows_identical": true,
@@ -209,17 +209,23 @@
   },
   "sha256": {
     "search_counterexample.py": "6116b212f654e92e17d537158cc166414e3853e17c4fe8147a6ecf16260caf61",
-    "Cargo.toml": "32c3fd61d4489427258a48517d7b246343782bf1a04c9a8bc4d9f7a547687a59",
+    "Cargo.toml": "af0a0be5880280aebf66433947ce380d75e8dcc73740b93a4672c5bad3e6d734",
     "Cargo.lock": "771c6ab3ed9ee0d7a2504f48092e3f928ef7197ddeef33e8fa3ba2bcc2c33f59",
     "bench/compare.py": "71c21aa7ce807059b17fc30cdc9b615bc496cffd165944d5ba0e682bc8c8b451",
     "results/counterexample_search.json": "1229025daee5e08627250f97e644d165cffcbfb5752c5a096386d342ffd03448",
     "results/counterexample_search_rust.json": "b57091476d8c3cb7ae7008eb2f83fa32a33e1c262108f1b8cd037a9673890738",
     "target/release/collatz-search": "144d6fef8f3b2e68a9a0c2c94b8106adca21dbabe152294d3ab7898a94315e48",
+    "src/bin/analyze.rs": "1cde17cd1eeb910fde6e0a4d5900eb7a3b95b55890952cac646ce5e0a9c4c283",
+    "src/bin/residue-sieve.rs": "5384941446f09eba249d29283d3b51549260ca7a19c15995a40e9ffb26b594f2",
+    "src/bin/verify-frontier.rs": "cb6fc5ecd5894d1c5f0648f944fff9f2c83ee5ff1f9c609e8a817bcfc6a08476",
+    "src/bin/verify-universal.rs": "2ec683d1d9a7134f86f75930b0d48baca10317d6f54a08e18a5445aeda4b2d79",
     "src/certificates.rs": "efb9b12830fbc87dedcfbdb4335e28af04d063ed75c072656770576907dd38cb",
-    "src/lib.rs": "dc55dd367062550d3083fcd58fa80c6fe89dcdce0146861bd2d4065cd92bfc36",
+    "src/lib.rs": "6765f0ddce3fd6f9d5360a26699b0a456f59b3b7b8733da5aa90eb9e97296896",
     "src/main.rs": "7be4a9bc32c2932b0018f229a3aa5b11b32c41d7794346b19075a8aa192d3008",
+    "src/residue.rs": "24223c13c6fb7fb3059a6ca6c5c8f0348ce265671fef056200fdfeadc31a8058",
     "src/search.rs": "ee0d706256bdd3cefb02a844769251db058ef227c97428fbe85032d018e714f2",
     "src/seeds.rs": "54deda3321ccaf468e31580a7d34ba08d00ced9ee139447e80aff2a6038275c7",
+    "src/verify_helpers.rs": "2c627f2181d318e50e32fb822c85e4d0ce18d647f93230b90633087cb6a012b3",
     "CollatzSearchCerts.lean": "cb82e1c86a7db09153e02cce0a6126663e4705ded78c09a43d4fcd0a19e309f2",
     "CollatzSearchCertsRust.lean": "6df740f715a50848ccfbdaf35cba81ef68e4b0f012fdc5e0e94f24b3d5c8b787"
   }

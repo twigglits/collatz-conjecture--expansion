@@ -2,8 +2,10 @@ use num_bigint::BigUint;
 use serde::{Serialize, Serializer};
 
 pub mod certificates;
+pub mod residue;
 pub mod search;
 pub mod seeds;
+pub mod verify_helpers;
 
 #[derive(Clone, Debug, Serialize)]
 pub struct Seed {

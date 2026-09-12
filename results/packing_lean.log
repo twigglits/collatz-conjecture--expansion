@@ -1,0 +1,9 @@
+Command: lean +leanprover/lean4:v4.31.0 CollatzPacking.lean
+Exit code: 0
+Elapsed seconds: 0.297732
+'CollatzPacking.scaled_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.block_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.residue_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.fixed_iterate_injective' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.finite_image_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fixed_weight_packing' depends on axioms: [propext, Classical.choice, Quot.sound]

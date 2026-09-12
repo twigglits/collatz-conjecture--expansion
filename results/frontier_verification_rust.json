@@ -1,0 +1,51 @@
+{
+  "affine_cases": 500,
+  "committed_mod7_members_checked": 32,
+  "coset_steps": 50,
+  "coset_systems": 200,
+  "counts": [
+    {
+      "binomial_tail": "219",
+      "good": 219,
+      "level": 8,
+      "max_weight": 5,
+      "total": 256
+    },
+    {
+      "binomial_tail": "58651",
+      "good": 58651,
+      "level": 16,
+      "max_weight": 10,
+      "total": 65536
+    },
+    {
+      "binomial_tail": "910596",
+      "good": 910596,
+      "level": 20,
+      "max_weight": 12,
+      "total": 1048576
+    }
+  ],
+  "descent_attempts": 300,
+  "descent_checks": 234,
+  "elapsed_seconds": 0.215548333,
+  "fuzz_domain": "verify-frontier-rust-v1:20260704",
+  "fuzz_relation_to_python": "distinct deterministic SHAKE256 stream; Python uses MT",
+  "implementation": "Rust",
+  "input": "/Users/jean/Personal/collatz-conjecture--expansion/results/raw.jsonl",
+  "input_sha256": "0d0da7742538f51f140a9b39f8006097db2473c5e412dc1674cd0200f8724bf3",
+  "orbit_formula_edge_cases": 4,
+  "orbit_formula_random_cases": 520,
+  "positive_cycles_checked": 86,
+  "python_count_parity": true,
+  "repulsion_steps": 200,
+  "repulsion_systems": 300,
+  "schema": 1,
+  "status": "passed",
+  "validation_limits": {
+    "max_cycle_steps": 100000,
+    "max_input_bytes": 16777216,
+    "max_orbit_bits": 131072,
+    "max_total_halvings": 1000000
+  }
+}

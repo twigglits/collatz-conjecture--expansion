@@ -1,0 +1,29 @@
+Command: lean +leanprover/lean4:v4.31.0 /Users/jean/Personal/collatz-conjecture--expansion/CollatzResidueCerts.lean
+'CollatzAffine.affine' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.descent_requires_slope_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.orbit_equation' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.residue_start_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.orbit_threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.affine_descent_mono' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.threshold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.checkClass_sound' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.checkWholeClass_sound' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.checkCompleteClass_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.class_descent_iff_finite_exceptions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzAffine.example_first_drop' does not depend on any axioms
+'CollatzAffine.one_first_drop_exception' does not depend on any axioms
+'CollatzAffine.slope_only_counterexample' does not depend on any axioms
+'CollatzAffine.example_infinite_class' depends on axioms: [propext, Quot.sound]
+'CollatzAffine.example_complete_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResidue.covered_sound' depends on axioms: [propext, Quot.sound]
+'CollatzResidue.covered_periodic' depends on axioms: [propext, Quot.sound]
+'CollatzResidue.countCovered_eq_countWhere' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResidue.good_sound' depends on axioms: [propext, Quot.sound]
+'CollatzResidue.count_each_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResidue.mass_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzResidue.closed_count' depends on axioms: [closed_count._native.native_decide.ax_1_1]
+'CollatzResidue.count_in_every_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ closed_count._native.native_decide.ax_1_1]
+'CollatzResidue.accepted_starts_descend' depends on axioms: [propext, Quot.sound]

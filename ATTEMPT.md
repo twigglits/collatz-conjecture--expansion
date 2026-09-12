@@ -42,6 +42,32 @@ Barina's project reports all starts below `2075·2^60` verified when checked on
 12 September 2026. Large isolated starts here do not extend that continuous
 bound. [Project status](https://pcbarina.fit.vutbr.cz/)
 
+## Exact descent over infinite residue classes
+
+The Rust [`residue-sieve`](src/bin/residue-sieve.rs) explores exact identities
+`U^k(2^k*q+r) = A*q+b`. When `A < 2^k`, the smallest quotient guaranteeing
+strict descent is zero if `b < r`, and otherwise
+`floor((b-r)/(2^k-A))+1`. The additive term is included. The sieve closes a
+whole class only when all its members greater than 1 descend; it continues
+splitting classes with nontrivial finite exceptions.
+
+At depth 26, **66,071,490 of the 67,108,864 residue classes** are accepted.
+Every member greater than 1 of an accepted class descends within 26 shortcut
+steps. The other **1,037,374 classes remain unresolved** by this certificate.
+This is a statement about infinite classes, not merely the first block of
+starting values, and it proves descent rather than full convergence of each
+accepted start.
+
+[`CollatzResidueCerts.lean`](CollatzResidueCerts.lean) independently recomputes
+the accepted count. It includes the kernel proofs from
+[`CollatzAffine.lean`](CollatzAffine.lean) and
+[`lean/ResidueSieveBody.lean`](lean/ResidueSieveBody.lean): exact affine
+thresholds, whole-class soundness, periodicity of the acceptance predicate,
+and equality of the pruned tree count with the actual residue count in every
+aligned block. Only the numeric count uses `native_decide`. The verified
+manifest is [`results/residue_sieve_rust.json`](results/residue_sieve_rust.json);
+other Rust diagnostics are explicitly marked as uncertified.
+
 ## Attempt by contradiction
 
 [`CollatzContradiction.lean`](CollatzContradiction.lean) proves the exact equivalence
@@ -160,10 +186,12 @@ cargo run --release --locked -- --verify-lean
 cargo run --release --locked -- --bench 5
 # Optional parallel search, reported separately from the single-thread comparison:
 cargo run --release --locked -- --threads 8 --verify-lean
+cargo run --release --locked --bin residue-sieve -- --depth 26 --verify-lean
 
 lean CollatzContradiction.lean
 lean CollatzGrowth.lean
 lean CollatzPeriodic.lean
+lean CollatzAffine.lean
 ```
 
 The repository pins Lean 4.31.0. The three structural files use kernel proofs

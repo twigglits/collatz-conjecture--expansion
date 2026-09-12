@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 description = "Exact large-integer Collatz searches with independent Lean certificates"
 publish = false
+default-run = "collatz-search"
 
 [dependencies]
 num-bigint = "0.4"
