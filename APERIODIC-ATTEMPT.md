@@ -11,6 +11,8 @@ mechanical-halving family left open in Section 5 using a separate
 growth–complexity argument. [`CollatzPacking.lean`](CollatzPacking.lean) now
 checks the sharper finite image bound and fixed-weight packing step; the
 summability and real-limit arguments here remain written proofs.
+[`ORBIT-ESCAPE.md`](ORBIT-ESCAPE.md) optimizes the counting threshold and
+derives inverse-power summability and stronger running-maximum restrictions.
 
 For the accelerated positive odd orbit write
 
@@ -217,10 +219,12 @@ This is stronger than merely requiring \(A_k\) to be unbounded, or excluding
 a uniformly bounded discrepancy band. These are consequences of the packing
 proof supplied above, not assumptions about random parity.
 
-The conclusion permits arbitrarily slow escape of the additive discrepancy;
-it does not produce a contradiction for every aperiodic itinerary. The
-packing estimate gives additional restrictions on running maxima, but no
-argument here excludes all schedules satisfying them.
+The limit statement by itself gives no quantitative escape rate for the
+additive discrepancy. The packing estimate supplies restrictions on running
+maxima and frequency of small values, developed in
+[`ORBIT-ESCAPE.md`](ORBIT-ESCAPE.md). It does not give a matching lower bound
+on every individual iterate, and no argument here excludes all schedules
+satisfying these restrictions.
 
 ## 4. Critical balanced and Sturmian words have no integer realization
 

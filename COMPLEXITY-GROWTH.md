@@ -233,6 +233,10 @@ This includes \(L=11,r=7\), because
  <2^{45}=35{,}184{,}372{,}088{,}832.
 \]
 
+The exact comparison is kernel-checked as `length_eleven_weight_seven` in
+[`CollatzEscapeBounds.lean`](CollatzEscapeBounds.lean). This finite arithmetic
+certificate does not formalize the substitution or limit arguments.
+
 Thus the exclusion covers every length-11 binary substitution with seven
 ones in each image that possesses an infinite fixed point, with no need to
 classify its individual factors. For example one can take
@@ -255,6 +259,13 @@ Packing gives bounded correction and restrictions on the set of visited
 integers. It does not give an upper bound on \(p(m)\). Density converts
 cumulative growth into the denominator in (5); it does not bound the
 complexity of every possible itinerary.
+
+Deterministic computability does not supply the missing bound either.
+For example, concatenating all finite binary words in length-lexicographic
+order is a computable sequence containing all \(2^m\) words of every length
+\(m\). A short program for an itinerary therefore does not imply zero
+factor entropy. This example is a word-complexity counterexample to that
+inference, not a proposed integer Collatz trajectory.
 
 An itinerary could still satisfy (3) by having sufficiently rapid cumulative
 growth, sufficiently large factor complexity, or both. In particular,

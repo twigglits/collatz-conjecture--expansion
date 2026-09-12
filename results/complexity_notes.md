@@ -2,7 +2,7 @@
 
 `CollatzComplexity.lean` is a standalone Lean 4.31 file. Its shortcut map and
 orbit definitions agree exactly with `CollatzRepetition.lean`. The finite
-parity/congruence and list-counting backbone is reused there; the new results
+parity/congruence and list-counting backbone is reused here; the new results
 derive height bounds from cumulative odd counts and a lower bound on earlier
 states. All proofs use the kernel, with no `native_decide`, admitted proofs,
 or custom axioms. The compiler output is in `results/complexity_lean.log`.

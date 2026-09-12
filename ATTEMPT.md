@@ -164,6 +164,17 @@ the sharp residue-image bound `U^k(r) < 3^wt(k,r)` and a corresponding
 fixed-weight packing theorem. The summability and limit arguments remain
 written proofs.
 
+[`ORBIT-ESCAPE.md`](ORBIT-ESCAPE.md) strengthens the counting estimate to
+`#(O ∩ [a,a+X)) ≤ 10 X^θ`, where θ is defined by an entropy equation and is
+approximately 0.96538. It follows that `Σ A_k^(-s)` converges for every
+`s>θ`, and the running maximum of `A_k=3^k/2^H_k` is at least a constant
+times `k^(1/θ)`. Hence any orbit with `A_k=O(k^β)`, `β<1/θ`, eventually
+repeats. This is an aggregate growth restriction, not a bound on every
+individual iterate. Exponential growth remains compatible. A rational
+exponent 31/32 suffices for a weaker version; its two integer comparisons
+are kernel-checked in [`CollatzEscapeBounds.lean`](CollatzEscapeBounds.lean),
+while the full counting and analytic proof remains written.
+
 A separate finite obstruction is checked in
 [`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
 k parity steps differ by a multiple of `2^k`. If the difference is smaller
@@ -171,6 +182,19 @@ than `2^k`, the starts are identical. The file also proves that P+1 small
 orbit states covered by a catalog of P parity words force an actual repeat.
 This is a conditional theorem; it does not supply the required catalog or
 height bound for every orbit.
+
+[`CollatzComplexity.lean`](CollatzComplexity.lean) adds a checked bound using
+the actual number `w_t` of odd steps. If preceding states are at least M,
+then `2^t M^w_t U^t(n) ≤ n(3M+1)^w_t`. Combined with a parity catalog, it
+gives a sufficient finite condition for descent below the seed or repetition.
+The catalog coverage and weight bounds remain explicit premises.
+
+The written [`COMPLEXITY-GROWTH.md`](COMPLEXITY-GROWTH.md) derives a stronger
+complexity requirement from the upper odd density. At critical odd density,
+the number `p(m)` of distinct parity factors must satisfy `p(m)/m → ∞`.
+More generally, a divergent orbit cannot combine polynomial upper growth
+with a zero-entropy parity word. This excludes further joint classes without
+assuming all itineraries have low complexity.
 
 The written [`STURMIAN-ATTEMPT.md`](STURMIAN-ATTEMPT.md) excludes every
 irrational mechanical halving schedule and every mechanical halving slope
@@ -192,6 +216,14 @@ infinitely many integer pairs (H,k) remain compatible with the scalar
 inequalities. The ordered divisibility conditions are still missing.
 This cycle bound is a written proof and is not claimed as a competitive
 numerical exclusion record.
+
+[`CYCLE-WORDS.md`](CYCLE-WORDS.md) attacks the ordered condition directly.
+For a cycle word consisting of r repeats of a fixed block followed by a fixed
+connector, its denominator must divide a constant determined by those two
+blocks. [`CollatzCycleBlocks.lean`](CollatzCycleBlocks.lean) checks the finite
+affine elimination, cancellation, and the zero-constant case. The written
+note derives finite-candidate results and excludes additional word families.
+It supplies no bound on the complexity of every possible cycle word.
 
 ## The two unresolved possibilities
 
@@ -234,6 +266,9 @@ lean CollatzPeriodic.lean
 lean CollatzAffine.lean
 lean CollatzPacking.lean
 lean CollatzRepetition.lean
+lean CollatzComplexity.lean
+lean CollatzCycleBlocks.lean
+lean CollatzEscapeBounds.lean
 ```
 
 The repository pins Lean 4.31.0. The structural files listed above use kernel proofs
