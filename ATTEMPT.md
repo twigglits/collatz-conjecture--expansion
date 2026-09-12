@@ -153,6 +153,46 @@ explicit derivation, application to proposed counterexamples, and formal
 checking, without a claim of mathematical novelty.
 [Bernstein–Lagarias](https://websites.umich.edu/~lagarias/doc/bernstein.pdf)
 
+## Nonperiodic patterns: growth and word complexity
+
+The written [`APERIODIC-ATTEMPT.md`](APERIODIC-ATTEMPT.md) proves a power
+bound on how many values a nonrepeating orbit can occupy in an interval.
+It yields a finite sum of reciprocals and a bounded multiplicative correction:
+for an accelerated divergent orbit, `3^k / 2^H_k` must tend to infinity.
+[`CollatzPacking.lean`](CollatzPacking.lean) now checks the finite ingredients:
+the sharp residue-image bound `U^k(r) < 3^wt(k,r)` and a corresponding
+fixed-weight packing theorem. The summability and limit arguments remain
+written proofs.
+
+A separate finite obstruction is checked in
+[`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
+k parity steps differ by a multiple of `2^k`. If the difference is smaller
+than `2^k`, the starts are identical. The file also proves that P+1 small
+orbit states covered by a catalog of P parity words force an actual repeat.
+This is a conditional theorem; it does not supply the required catalog or
+height bound for every orbit.
+
+The written [`STURMIAN-ATTEMPT.md`](STURMIAN-ATTEMPT.md) excludes every
+irrational mechanical halving schedule and every mechanical halving slope
+at most `log_2(3)`. It also excludes the substitution `1→110, 0→011`.
+Mechanical words have at most k+1 factors of length k. For the substitution, the factor count is
+less than 12k, while aligned three-step growth is at most 9/8; the exact
+inequality `(9/8)^4 < 2` closes the collision argument. These exclusions
+also hold after finite initial segments. The rational extension, factor
+counts, and asymptotic steps are written proofs, not locally compiled Lean
+claims. The complexity method is classical; see
+[Dubickas, Theorem 5 and its proof](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/C40C0C07FEC20797475BB2899C436C9A/S0017089508004655a.pdf/on_integer_sequences_generated_by_linear_maps.pdf).
+
+For positive cycles, [`CYCLE-ATTEMPT.md`](CYCLE-ATTEMPT.md) applies the
+packing idea to the distinct members of one primitive cycle. It obtains
+`0 < H log 2 - k log 3 < C m^(-δ)`, where m is the cycle minimum, C is
+explicit, and `δ=log_32(3456/3125)>0`, independently of the period k.
+The note also shows exactly why this fails to prove cycle uniqueness:
+infinitely many integer pairs (H,k) remain compatible with the scalar
+inequalities. The ordered divisibility conditions are still missing.
+This cycle bound is a written proof and is not claimed as a competitive
+numerical exclusion record.
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -192,9 +232,11 @@ lean CollatzContradiction.lean
 lean CollatzGrowth.lean
 lean CollatzPeriodic.lean
 lean CollatzAffine.lean
+lean CollatzPacking.lean
+lean CollatzRepetition.lean
 ```
 
-The repository pins Lean 4.31.0. The three structural files use kernel proofs
+The repository pins Lean 4.31.0. The structural files listed above use kernel proofs
 without `sorry`, `native_decide`, or added axioms. Their only printed dependencies
 are the standard logical axioms `propext`, `Quot.sound`, and, where used,
 `Classical.choice`. Runtime benchmarks are measurements, not mathematical proof

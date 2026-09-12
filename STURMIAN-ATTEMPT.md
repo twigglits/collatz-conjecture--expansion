@@ -3,8 +3,11 @@
 This note closes the mechanical-halving family left open at the end of
 `APERIODIC-ATTEMPT.md`. It also excludes a specific aperiodic substitution
 word. It does **not** settle Collatz: general itineraries need not belong to
-either family, and no coverage theorem is supplied. These are written proofs,
-not new locally compiled Lean certificates. No novelty claim is made.
+either family, and no coverage theorem is supplied. The family exclusions are
+written proofs. Their finite positive-integer collision criterion is now
+kernel-checked in [`CollatzRepetition.lean`](CollatzRepetition.lean); the
+word-complexity, rational-extension, and asymptotic arguments remain written
+proofs. No novelty claim is made.
 
 ## 1. An exact finite collision criterion
 
@@ -45,6 +48,14 @@ cancel, giving, for their common number \(j\) of odd letters,
 
 Thus \(2^m\mid X_t-X_s\). By (2) its absolute value is smaller than
 \(2^m\), so it is zero. Determinism gives an eventually periodic orbit.
+
+For positive integers, `parity_gap_divisible`, `collision_of_small_gap`,
+and `parity_collision_periodic` in the Lean file check these exact steps.
+`factor_catalog_forces_repeat` additionally proves the finite pigeonhole
+argument: a catalog of P parity words and P+1 starting states below `2^m`
+force a repeated state among those positions. It assumes both the catalog
+coverage and the height bounds explicitly; it does not assert they hold
+for every Collatz orbit.
 
 Consequently, if \(|X_t|\le Cg^t\), \(g>1\), and along arbitrarily large
 \(m\)

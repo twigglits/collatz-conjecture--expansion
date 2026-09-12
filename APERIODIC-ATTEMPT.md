@@ -6,6 +6,12 @@ divergent orbit. It does **not** rule out all aperiodic schedules or nontrivial
 cycles, and therefore does not settle Collatz. The arguments below are written
 proofs, not Lean certificates. No claim of novelty is made.
 
+**Follow-up:** [`STURMIAN-ATTEMPT.md`](STURMIAN-ATTEMPT.md) excludes the
+mechanical-halving family left open in Section 5 using a separate
+growth–complexity argument. [`CollatzPacking.lean`](CollatzPacking.lean) now
+checks the sharper finite image bound and fixed-weight packing step; the
+summability and real-limit arguments here remain written proofs.
+
 For the accelerated positive odd orbit write
 
 \[
@@ -172,7 +178,7 @@ collision criterion for dense subsets of intervals; they apply it to prove
 zero Banach density for Collatz orbits. The argument above is a direct
 specialization to the standard shortcut map, with explicit convenient
 constants rather than an optimized exponent. See [Garcia–Tal, *A note on the
-generalized 3n+1 problem*, Acta Arithmetica 90 (1999), Lemma 3 and Corollary 1](https://repositorio.usp.br/bitstreams/a02b7ba9-c8be-42d8-bbae-4d836520ec13).
+generalized 3n+1 problem*, Acta Arithmetica 90 (1999), Lemma 3 and Corollary 1](https://matwbn.icm.edu.pl/ksiazki/aa/aa90/aa9033.pdf).
 
 ## 3. Summability forces escape below the critical line
 

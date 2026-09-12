@@ -77,6 +77,44 @@ The Python baseline is retained for independent comparisons and for the benchmar
 driver. A Rust search can run without Lean installed; `--verify-lean` requires
 the pinned Lean 4.31.0 toolchain.
 
+## Local worker scaling
+
+The local hardware reports an Apple M5 with 10 physical/logical CPU cores:
+four fast cores named `Super` by `sysctl`, six `Efficiency` cores, and 24 GiB RAM.
+Eight workers is not a program limit. The CLI caps actual workers at the number
+of inputs and currently assigns contiguous chunks of approximately equal input
+count, although trajectories require very different amounts of work.
+
+Eight timed repetitions per configuration after a discarded warmup, on the
+same 1,257-input search:
+
+| Requested workers | Actual workers | Median search time |
+|---:|---:|---:|
+| 8 | 8 | 0.0696 s |
+| 10 | 10 | 0.0701 s |
+| 16 | 16 | 0.0496 s |
+| 32 | 32 | 0.0396 s |
+| 64 | 63 | 0.0433 s |
+| 128 | 126 | 0.0453 s |
+| 256 | 252 | 0.0314 s |
+| 512 | 419 | **0.0279 s** |
+| 1,257 | 1,257 | 0.0315 s |
+
+The 512 setting was fastest among those tested, about 2.5 times faster than
+eight in this comparison. It does not mean 419 cores are available: splitting
+the uneven workload into smaller chunks improves load balance, while additional
+thread creation eventually costs more. A queue shared by a smaller fixed worker
+pool is a candidate for improving this tradeoff; it has not been implemented or
+benchmarked. These measurements apply to this batch and exclude Lean.
+
+Raw samples, a confirmation run at 32 workers, hardware fields, correctness
+comparisons, and source hashes are in
+[`results/rust_worker_scaling.json`](results/rust_worker_scaling.json).
+
+```sh
+target/release/collatz-search --threads 512 --bench 5
+```
+
 ## Other Rust executables
 
 ```sh

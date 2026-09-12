@@ -26,7 +26,9 @@
     64,
     128,
     256,
-    32
+    32,
+    512,
+    1257
   ],
   "measurement_notes": [
     "Configurations run sequentially; no other agent builds or heavy verification jobs.",
@@ -253,6 +255,40 @@
       "median_seconds": 0.031372208,
       "min_seconds": 0.030284,
       "max_seconds": 0.03496875
+    },
+    "512": {
+      "actual_workers": 419,
+      "warmup_seconds": 0.027378666,
+      "samples_seconds": [
+        0.027709458,
+        0.031849,
+        0.027556333,
+        0.028032291,
+        0.0274665,
+        0.030463875,
+        0.02941975,
+        0.027184833
+      ],
+      "median_seconds": 0.0278708745,
+      "min_seconds": 0.027184833,
+      "max_seconds": 0.031849
+    },
+    "1257": {
+      "actual_workers": 1257,
+      "warmup_seconds": 0.031741625,
+      "samples_seconds": [
+        0.029932625,
+        0.0309335,
+        0.031501667,
+        0.031597667,
+        0.031723041,
+        0.031872834,
+        0.031505833,
+        0.031080959
+      ],
+      "median_seconds": 0.03150375,
+      "min_seconds": 0.029932625,
+      "max_seconds": 0.031872834
     }
   },
   "confirmation_runs": {
