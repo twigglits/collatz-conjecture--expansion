@@ -158,6 +158,45 @@ theorem factor_catalog_forces_repeat (k n : Nat) (catalog : List Nat)
   simp only [List.length_map, List.length_range] at hlen
   omega
 
+theorem catalog_length_of_distinct_range (m N n lo hi : Nat) (catalog : List Nat)
+    (hdist : ∀ i, i < N → ∀ j, j < N → orbit i n = orbit j n → i = j)
+    (hb : ∀ i, i < N → lo ≤ orbit i n ∧ orbit i n ≤ hi)
+    (hwidth : hi - lo < 2 ^ m)
+    (hc : ∀ i, i < N → parityCode m (orbit i n) ∈ catalog) :
+    N ≤ catalog.length := by
+  classical
+  let f := fun t => parityCode m (orbit t n)
+  have hinj : ∀ i, i < N → ∀ j, j < N → f i = f j → i = j := by
+    intro i hi' j hj he
+    have hpar := code_implies_same_parity m (orbit i n) (orbit j n) he
+    have hiBound := hb i hi'
+    have hjBound := hb j hj
+    have heq := collision_of_small_gap hpar (by omega)
+    exact hdist i hi' j hj heq
+  have hnodup : ((List.range N).map f).Nodup := by
+    apply List.pairwise_map.mpr
+    exact List.Pairwise.imp_of_mem (fun hx hy hne he =>
+      hne (hinj _ (List.mem_range.mp hx) _ (List.mem_range.mp hy) he))
+      (List.nodup_range)
+  have hsub : ∀ x ∈ (List.range N).map f, x ∈ catalog := by
+    intro x hx
+    obtain ⟨t, ht, rfl⟩ := List.mem_map.mp hx
+    exact hc t (List.mem_range.mp ht)
+  have hlen := distinct_subset_length hnodup hsub
+  simpa only [List.length_map, List.length_range] using hlen
+
+theorem range_lower_bound_of_short_catalog (m N n lo hi : Nat) (catalog : List Nat)
+    (hdist : ∀ i, i < N → ∀ j, j < N → orbit i n = orbit j n → i = j)
+    (hb : ∀ i, i < N → lo ≤ orbit i n ∧ orbit i n ≤ hi)
+    (hc : ∀ i, i < N → parityCode m (orbit i n) ∈ catalog)
+    (hshort : catalog.length < N) : 2 ^ m ≤ hi - lo := by
+  by_cases h : hi - lo < 2 ^ m
+  · have hlen := catalog_length_of_distinct_range m N n lo hi catalog hdist hb h hc
+    omega
+  · omega
+
+#print axioms catalog_length_of_distinct_range
+#print axioms range_lower_bound_of_short_catalog
 #print axioms parity_gap_divisible
 #print axioms collision_of_small_gap
 #print axioms parity_collision_periodic

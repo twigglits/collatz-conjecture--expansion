@@ -1,0 +1,8 @@
+'MechanicalLogBracket.extended_comparisons' depends on axioms: [extended_comparisons._native.native_decide.ax_1_1]
+'MechanicalLogBracket.extended_farey_arithmetic' does not depend on any axioms
+'MechanicalLogBracket.rationalCheck_sound' does not depend on any axioms
+'MechanicalLogBracket.rationalCheck_verified' depends on axioms: [rationalCheck_verified._native.native_decide.ax_1_1]
+'MechanicalLogBracket.exact_comparisons' depends on axioms: [rationalCheck_verified._native.native_decide.ax_1_1]
+'MechanicalLogBracket.large_farey_arithmetic' does not depend on any axioms
+'MechanicalLogBracket.tiny_farey_arithmetic' does not depend on any axioms
+'MechanicalLogBracket.matveev_numeric_inputs' does not depend on any axioms

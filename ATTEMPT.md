@@ -245,6 +245,36 @@ and equality cases are written proofs. The notes construct primitive,
 nonmechanical positive rational cycles with unbounded minimum. Those satisfy
 the real inequalities and expose why integer divisibility remains essential.
 
+The constructed one-swap families are now excluded as integer cycles in
+[MECHANICAL-SWAP-EXCLUSION.md](docs/MECHANICAL-SWAP-EXCLUSION.md), at every
+length. A mechanical binary word with one adjacent unequal-bit swap has few
+distinct parity factors, forcing any integer cycle to have an exponentially
+large diameter. Its rational height bound then forces exponentially close
+powers of two and three. Matveev's published bound, exact rational separation,
+and finite certificates close this family. The complete argument is written;
+the generic range lemmas and identified arithmetic are checked in Lean.
+
+The same note obtains a necessary condition for every primitive cycle:
+if its parity word differs from a same-count mechanical word at 2h positions,
+then its period is effectively bounded for each fixed h. In any hypothetical
+family with periods N tending to infinity,
+liminf h/√N ≥ √(log 2/(2 log 3)). This argument supplies no uniform bound on h.
+
+[MECHANICAL-DISTANCE-EXCLUSION.md](docs/MECHANICAL-DISTANCE-EXCLUSION.md)
+now excludes h≤31 at every period: every nontrivial primitive cycle must
+differ from every same-count cyclic mechanical word of slope p/N in at least 64 positions.
+Matveev and exact rational separation reduce this family to N<12288. Lean
+checks that each remaining count pair either contradicts the diameter bound
+or forces an odd state below one million. A new direct Lean certificate
+proves convergence for every start 1 through 1,000,000, with no escape-window
+alternative, and kernel soundness then excludes the cycle. The all-period
+argument is written; its finite arithmetic and reachability components are
+formalized. It gives no upper bound on h and does not address divergence.
+
+The separate [local separation proofs](results/cycle_separation_notes.md)
+exclude single transfers in repeated blocks and single-copy replacements
+when at least three copies were present.
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -295,16 +325,28 @@ lean CollatzEscapeBounds.lean
 lean CollatzCycleBudget.lean
 lean CollatzCycleExtrema.lean
 lean CollatzCycleCriterion.lean
+lean CollatzCycleSeparation.lean
+# Finite word exclusions and exact rational comparisons:
+lean lean/MechanicalDefectFinite.lean
+lean lean/MechanicalLogBracket.lean
+lean lean/MechanicalDistanceFinite.lean
+lean lean/BoundedStandardCycle.lean
 ```
 
 The repository pins Lean 4.33.1. The current proof files and existing generated
 certificates passed this release; [verification records](results/lean-4.33.1/README.md)
 include exact source hashes, compiler version, commands, and logs. Older result
-files retain their original 4.31.0 provenance. The structural files listed above use kernel proofs
+files retain their original 4.31.0 provenance. The top-level structural files listed above use kernel proofs
 without `sorry`, `native_decide`, or added axioms. Their only printed dependencies
 are the standard logical axioms `propext`, `Quot.sound`, and, where used,
 `Classical.choice`. Runtime benchmarks are measurements, not mathematical proof
 certificates. See [RUST-PORT.md](RUST-PORT.md) for the port and performance results.
+The first range lemmas and two finite files have a historical
+[separate verification record](results/mechanical-one-swap/verification.json).
+Those two finite files explicitly use native_decide; their analytic and
+combinatorial applications are written proofs, not complete local formalizations.
+The stronger distance exclusion, expanded rational bracket, and direct
+one-million convergence check have a [current verification record](results/mechanical-distance/verification.json).
 
 ## Corrections to the earlier study
 

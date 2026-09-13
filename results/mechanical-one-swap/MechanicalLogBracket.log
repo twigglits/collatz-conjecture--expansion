@@ -1,0 +1,14 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 lean/MechanicalLogBracket.lean
+Source SHA256: d58c99b1b73c841ff67bfa0bbe8146716587a3222eba362726c58d333111a282
+Source unchanged: True
+Exit code: 0
+Elapsed seconds: 0.172098
+Warnings: 0
+
+'MechanicalLogBracket.rationalCheck_sound' does not depend on any axioms
+'MechanicalLogBracket.rationalCheck_verified' depends on axioms: [rationalCheck_verified._native.native_decide.ax_1_1]
+'MechanicalLogBracket.exact_comparisons' depends on axioms: [rationalCheck_verified._native.native_decide.ax_1_1]
+'MechanicalLogBracket.large_farey_arithmetic' does not depend on any axioms
+'MechanicalLogBracket.tiny_farey_arithmetic' does not depend on any axioms
+'MechanicalLogBracket.matveev_numeric_inputs' does not depend on any axioms

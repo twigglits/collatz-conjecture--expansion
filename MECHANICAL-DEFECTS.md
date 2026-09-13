@@ -3,8 +3,11 @@
 A single adjacent parity swap in a repeated mechanical word cannot produce
 an integer cycle. For primitive mechanical words, the full ordered numerator
 can be replaced by an exact three-term divisibility test. The test also
-restricts where an integral defect could occur. It does not exclude every
-primitive length.
+restricts where an integral defect could occur. These local tests alone do
+not exclude every primitive length. The subsequent
+[complexity and logarithm argument](docs/MECHANICAL-SWAP-EXCLUSION.md)
+excludes the entire one-swap family, using written proofs and explicitly
+identified Lean arithmetic certificates.
 
 The two families considered here are the `22 → 13` halving modification in
 [`CYCLE-EXTREMA.md`](CYCLE-EXTREMA.md) and the `121 → 112` modification in
@@ -320,7 +323,10 @@ positive lower bound on it has been assumed. Even when that ratio is bounded
 below and (15) leaves only finitely many positions per length, the lengths
 and the corresponding exponential divisibility equations remain unbounded.
 
-The result therefore removes the repeated-count family and most positions
+The local result therefore removes the repeated-count family and most positions
 whenever the normalized denominator is bounded below, while giving an exact
 three-term description of what remains. It does not establish cycle
-uniqueness or solve the Collatz conjecture.
+uniqueness or solve the Collatz conjecture. The remaining primitive cases
+of this particular family are now excluded by
+[MECHANICAL-SWAP-EXCLUSION.md](docs/MECHANICAL-SWAP-EXCLUSION.md); arbitrary
+cycle words remain outside that family theorem.

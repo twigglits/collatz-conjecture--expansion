@@ -261,6 +261,11 @@ passes \(D\mid W\). It proves that rational positivity, primitive order,
 and an arbitrarily large lower bound on the cycle minimum do not themselves
 contradict the cycle equations.
 
+The subsequent [one-swap exclusion](docs/MECHANICAL-SWAP-EXCLUSION.md)
+proves that this entire rational family fails the integer-cycle condition.
+It uses parity-factor complexity, Matveev's logarithm bound, and finite
+Lean arithmetic certificates. The rational extremal result above is unchanged.
+
 ## 7. Remaining task
 
 The extremal optimization is complete for the rational relaxation: (2) is

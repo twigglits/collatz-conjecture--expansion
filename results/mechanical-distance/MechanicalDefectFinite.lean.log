@@ -1,0 +1,12 @@
+'MechanicalDefectFinite.swapsCheck_sound' depends on axioms: [propext, Quot.sound]
+'MechanicalDefectFinite.checkedRange_sound' depends on axioms: [propext, Quot.sound]
+'MechanicalDefectFinite.scalar_32_255' depends on axioms: [scalar_32_255._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.swaps_3_31' depends on axioms: [propext, swaps_3_31._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.arithmetic_exclusion_3_255' depends on axioms: [propext,
+ Quot.sound,
+ scalar_32_255._native.native_decide.ax_1_1,
+ swaps_3_31._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.scalar_or_no_integral_swap' depends on axioms: [propext,
+ Quot.sound,
+ scalar_32_255._native.native_decide.ax_1_1,
+ swaps_3_31._native.native_decide.ax_1_1]

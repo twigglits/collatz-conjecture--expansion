@@ -1,0 +1,54 @@
+{
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "checked_utc": "2026-09-12T23:55:19.866927+00:00",
+  "status": "passed",
+  "scope": "Two generic kernel range lemmas in CollatzRepetition; finite arithmetic scalar/swap predicates and exact rational brackets in two standalone Lean files. No analytic or Collatz connection of finite certificate predicates is asserted checked.",
+  "results": [
+    {
+      "file": "CollatzRepetition.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "CollatzRepetition.lean"
+      ],
+      "sha256": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.2954977909976151,
+      "warnings": 0,
+      "uses_native_decide": false,
+      "log": "results/mechanical-one-swap/CollatzRepetition.log"
+    },
+    {
+      "file": "lean/MechanicalDefectFinite.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "lean/MechanicalDefectFinite.lean"
+      ],
+      "sha256": "928b548f385e083aa57ff3fa0002bb8de92e46b75319fbffab0c44bd86c18dbd",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.2852215000020806,
+      "warnings": 0,
+      "uses_native_decide": true,
+      "log": "results/mechanical-one-swap/MechanicalDefectFinite.log"
+    },
+    {
+      "file": "lean/MechanicalLogBracket.lean",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "lean/MechanicalLogBracket.lean"
+      ],
+      "sha256": "d58c99b1b73c841ff67bfa0bbe8146716587a3222eba362726c58d333111a282",
+      "source_unchanged": true,
+      "exit_code": 0,
+      "elapsed_seconds": 0.17209754200302996,
+      "warnings": 0,
+      "uses_native_decide": true,
+      "log": "results/mechanical-one-swap/MechanicalLogBracket.log"
+    }
+  ]
+}

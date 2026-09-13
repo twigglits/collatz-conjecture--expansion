@@ -1,0 +1,31 @@
+'CollatzBoundedCycle.hitsOne_sound' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.checkOneFrom_at' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.small_start_hits_one_unconditionally' depends on axioms: [propext,
+ Quot.sound,
+ direct_range_1000000._native.native_decide.ax_1_1]
+'CollatzBoundedCycle.shortcut_cycle_small_start_is_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ direct_range_1000000._native.native_decide.ax_1_1]
+'CollatzBoundedCycle.trivial_cycle_invariant' does not depend on any axioms
+'CollatzBoundedCycle.shortcut_cycle_hit_one_is_trivial' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.shortcut_cycle_with_small_start_is_trivial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ range_a3_c1._native.native_decide.ax_1_1]
+'CollatzBoundedCycle.ordinary_bound_from_shortcut' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.ordinary_hit_implies_shortcut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzBoundedCycle.shortcut_cycle_with_small_start_hits_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ range_a3_c1._native.native_decide.ax_1_1]
+'CollatzBoundedCycle.shortcut_cycle_hits_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ range_a3_c1._native.native_decide.ax_1_1]
+'CollatzBoundedCycle.checkFrom_at' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.orbHits_sound' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.cycle_reduce' depends on axioms: [propext, Quot.sound]
+'CollatzBoundedCycle.ordinary_cycle_hits_one' depends on axioms: [propext,
+ Quot.sound,
+ range_a3_c1._native.native_decide.ax_1_1]

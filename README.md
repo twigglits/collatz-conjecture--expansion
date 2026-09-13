@@ -39,6 +39,10 @@ Performance timings are explicitly identified as empirical measurements.
 | `CollatzCycleCriterion.lean` | Kernel-checked necessary and sufficient ordered cycle test for every nonempty positive halving word |
 | `CollatzCycleBudget.lean` / `GENERAL-CYCLE-DEFECTS.md` | Checked joint budget for arbitrary halving exponents; written period, exponent, and height bounds |
 | `CollatzCycleExtrema.lean` / `CYCLE-EXTREMA.md` | Checked prefix-rotation lemma and written sharp cycle-minimum extrema with explicit rational candidates |
+| `docs/MECHANICAL-SWAP-EXCLUSION.md` / `lean/MechanicalDefectFinite.lean` / `lean/MechanicalLogBracket.lean` | Written exclusion of every single adjacent swap of a mechanical cycle word, supported by checked finite word and rational arithmetic; necessary distance bounds for arbitrary primitive cycles |
+| `docs/MECHANICAL-DISTANCE-EXCLUSION.md` / `lean/MechanicalDistanceFinite.lean` | Written exclusion through half-Hamming distance 31 from every same-count cyclic mechanical word of slope p/N, supported by exact count-pair certificates |
+| `lean/BoundedStandardCycle.lean` | Direct convergence certificate through one million, kernel checker soundness, and triviality of any cycle with a checked small state |
+| `CollatzCycleSeparation.lean` | Kernel-checked local replacement cancellation, numerator injectivity, and repeated-block edit exclusions |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
 | `search_counterexample.py` / `CollatzSearchCerts.lean` | Python reference implementation and baseline certificates retained for independent comparison |
 | `bench/compare.py` | Reproducible output comparison and Python/Rust timing, with raw results in `results/rust_benchmark.json` |
@@ -55,8 +59,13 @@ Performance timings are explicitly identified as empirical measurements.
 | `results/` | Raw sweep JSON, summary tables, logs |
 
 The local `lean-toolchain` pins Lean 4.33.1, the latest stable release checked
-on 13 September 2026. All 14 standalone proof files and five existing generated
-certificate files passed that toolchain; see [the verification record](results/lean-4.33.1/README.md).
+on 13 September 2026. The initial migration checked 14 standalone proof files
+and five generated certificate files; see [the migration record](results/lean-4.33.1/README.md).
+Later range lemmas and finite mechanical-word certificates have
+[their own verification record](results/mechanical-one-swap/verification.json).
+The stronger distance result and direct convergence check have
+[a newer verification record](results/mechanical-distance/verification.json),
+including the expanded rational-bracket file.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

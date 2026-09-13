@@ -1,0 +1,20 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 lean/MechanicalDefectFinite.lean
+Source SHA256: 928b548f385e083aa57ff3fa0002bb8de92e46b75319fbffab0c44bd86c18dbd
+Source unchanged: True
+Exit code: 0
+Elapsed seconds: 0.285222
+Warnings: 0
+
+'MechanicalDefectFinite.swapsCheck_sound' depends on axioms: [propext, Quot.sound]
+'MechanicalDefectFinite.checkedRange_sound' depends on axioms: [propext, Quot.sound]
+'MechanicalDefectFinite.scalar_32_255' depends on axioms: [scalar_32_255._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.swaps_3_31' depends on axioms: [propext, swaps_3_31._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.arithmetic_exclusion_3_255' depends on axioms: [propext,
+ Quot.sound,
+ scalar_32_255._native.native_decide.ax_1_1,
+ swaps_3_31._native.native_decide.ax_1_1]
+'MechanicalDefectFinite.scalar_or_no_integral_swap' depends on axioms: [propext,
+ Quot.sound,
+ scalar_32_255._native.native_decide.ax_1_1,
+ swaps_3_31._native.native_decide.ax_1_1]

@@ -362,6 +362,12 @@ satisfy all the count restrictions, and they avoid the exact mechanical
 family already excluded elsewhere. The remaining integer condition is
 precisely the ordered divisibility test (12).
 
+The subsequent [one-swap exclusion](docs/MECHANICAL-SWAP-EXCLUSION.md)
+settles that condition for this constructed family: none of these rational
+cycles is an integer cycle. The proof combines a written complexity and
+logarithm argument with finite Lean arithmetic certificates. It does not
+exclude arbitrary ordered words satisfying the budget.
+
 Thus fixing \(q\) does give effective bounds on period, every exponent,
 and height. Allowing \(q\) to grow still leaves unbounded ordered families.
 Neither the centered budget nor the sharp cyclic minimum estimate supplies

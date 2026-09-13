@@ -1,0 +1,14 @@
+Version: Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Command: lean +leanprover/lean4:v4.33.1 CollatzRepetition.lean
+Source SHA256: 410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f
+Source unchanged: True
+Exit code: 0
+Elapsed seconds: 0.295498
+Warnings: 0
+
+'CollatzRepetition.catalog_length_of_distinct_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRepetition.range_lower_bound_of_short_catalog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRepetition.parity_gap_divisible' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.collision_of_small_gap' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.parity_collision_periodic' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.factor_catalog_forces_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]

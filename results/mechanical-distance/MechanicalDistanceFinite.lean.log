@@ -1,0 +1,13 @@
+'MechanicalDistanceFinite.finite_31' depends on axioms: [propext,
+ Quot.sound,
+ checked_31_1000000_12288._native.native_decide.ax_1_1]
+'MechanicalDistanceFinite.cutoff_31_arithmetic' does not depend on any axioms
+'MechanicalDistanceFinite.boundary_32' depends on axioms: [boundary_32._native.native_decide.ax_1_1]
+'MechanicalDistanceFinite.excluded_downward' depends on axioms: [propext]
+'MechanicalDistanceFinite.eligible_le_witness' depends on axioms: [propext, Quot.sound]
+'MechanicalDistanceFinite.checked_sound' depends on axioms: [propext, Quot.sound]
+'MechanicalDistanceFinite.finite_16' depends on axioms: [propext,
+ Quot.sound,
+ checked_16_100000_5120._native.native_decide.ax_1_1]
+'MechanicalDistanceFinite.cutoff_16_arithmetic' does not depend on any axioms
+'MechanicalDistanceFinite.boundary_17' depends on axioms: [boundary_17._native.native_decide.ax_1_1]

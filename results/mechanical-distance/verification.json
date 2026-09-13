@@ -1,0 +1,94 @@
+{
+  "started_utc": "2026-09-13T00:27:39.697051+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256_before": {
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/MechanicalDefectFinite.lean": "928b548f385e083aa57ff3fa0002bb8de92e46b75319fbffab0c44bd86c18dbd",
+    "lean/MechanicalLogBracket.lean": "ad84d8c7e9a68e33c6af8546a2ba0816e8c925c0f5c50459f11a4520b03b5ca0",
+    "lean/MechanicalDistanceFinite.lean": "aa272e39e6ccb3678ed626594c99e8f87cd9995d3c4825b2b8d4f2a74d115e97",
+    "lean/BoundedStandardCycle.lean": "51e6ddaea155a5d05306e45ff055cab73d95855e58ab1edfcb88e62402177ca8",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "CollatzRepetition.lean"
+      ],
+      "source": "CollatzRepetition.lean",
+      "exit_code": 0,
+      "seconds": 0.2636843750078697,
+      "warnings": 0,
+      "admitted_proof_reported": false,
+      "log": "results/mechanical-distance/CollatzRepetition.lean.log"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MechanicalDefectFinite.lean"
+      ],
+      "source": "lean/MechanicalDefectFinite.lean",
+      "exit_code": 0,
+      "seconds": 0.2655052079935558,
+      "warnings": 0,
+      "admitted_proof_reported": false,
+      "log": "results/mechanical-distance/MechanicalDefectFinite.lean.log"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MechanicalLogBracket.lean"
+      ],
+      "source": "lean/MechanicalLogBracket.lean",
+      "exit_code": 0,
+      "seconds": 0.17012220800097566,
+      "warnings": 0,
+      "admitted_proof_reported": false,
+      "log": "results/mechanical-distance/MechanicalLogBracket.lean.log"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MechanicalDistanceFinite.lean"
+      ],
+      "source": "lean/MechanicalDistanceFinite.lean",
+      "exit_code": 0,
+      "seconds": 0.2606975000089733,
+      "warnings": 0,
+      "admitted_proof_reported": false,
+      "log": "results/mechanical-distance/MechanicalDistanceFinite.lean.log"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/BoundedStandardCycle.lean"
+      ],
+      "source": "lean/BoundedStandardCycle.lean",
+      "exit_code": 0,
+      "seconds": 29.44721104099881,
+      "warnings": 0,
+      "admitted_proof_reported": false,
+      "log": "results/mechanical-distance/BoundedStandardCycle.lean.log"
+    }
+  ],
+  "scope": "Written all-period exclusion of half-Hamming distance at most31 from a same-count mechanical word. Lean checks the explicit finite count disjunction, rational comparisons, one-million direct reachability, and generic soundness/cycle lemmas; the full analytic/combinatorial argument is not formalized.",
+  "native_computation_trust": "Finite computations use native_decide and trust the Lean compiler/native runtime in addition to kernel proof checking.",
+  "source_sha256_after": {
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/MechanicalDefectFinite.lean": "928b548f385e083aa57ff3fa0002bb8de92e46b75319fbffab0c44bd86c18dbd",
+    "lean/MechanicalLogBracket.lean": "ad84d8c7e9a68e33c6af8546a2ba0816e8c925c0f5c50459f11a4520b03b5ca0",
+    "lean/MechanicalDistanceFinite.lean": "aa272e39e6ccb3678ed626594c99e8f87cd9995d3c4825b2b8d4f2a74d115e97",
+    "lean/BoundedStandardCycle.lean": "51e6ddaea155a5d05306e45ff055cab73d95855e58ab1edfcb88e62402177ca8",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "sources_unchanged_during_validation": true,
+  "all_passed": true,
+  "finished_utc": "2026-09-13T00:28:10.134524+00:00",
+  "written_argument": {
+    "path": "docs/MECHANICAL-DISTANCE-EXCLUSION.md",
+    "sha256_during_computational_validation": "e5946f0d8474409ef53884dd745ac1a8e9008bf9e92bd119e158aeeb0c69dbc6",
+    "sha256_at_final_review": "8766b0a9c10fde746ca566fb51770c1886908af5bc1082cf60996d5076e87424",
+    "reviewed_utc": "2026-09-13T00:28:45.425393+00:00",
+    "review_note": "After the computational checks, independent mathematical review prompted an opening clarification: comparators are cyclic rational mechanical words of slope p/N, exactly as defined in Section1. Computational sources did not change. The written argument is not claimed to be a Lean theorem."
+  }
+}
