@@ -52,6 +52,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `docs/MECHANICAL-DISTANCE-EXCLUSION.md` / `lean/MechanicalDistanceFinite.lean` | Written exclusion through half-Hamming distance 31 from every same-count cyclic mechanical word of slope p/N, supported by exact count-pair certificates |
 | `docs/MECHANICAL-MASKS.md` / `lean/MechanicalMaskWitness.lean` | Written rational families showing limits of bounded discrepancy; checked distance-35 witness with 289 length-32 factors and failed integer divisibility |
 | `docs/MASK-CYCLE-OBSTRUCTIONS.md` / `lean/MechanicalMaskArithmetic.lean` / `lean/MaskCatalogBounds.lean` | Kernel-checked mask divisibility normal form; written exclusions for two independently edited families, now covering every period through the later explicit logarithm argument |
+| `docs/MASK-RANK-ARITHMETIC.md` / `lean/MaskRankArithmetic.lean` | Kernel-checked geometric coefficient arithmetic and normalized binary mask equation; written mechanical reindexing, exact gcd corollary, and limitation of fixed small-divisor tests |
 | `lean/MaskSubsetDecoder.lean` / `lean/MaskSubsetFinite.lean` | Kernel-checked complete subset decoder; native finite certificates exclude all \(2^{80}\) and \(2^{1231}\) masks at two specified count pairs |
 | `docs/MASK-TRANSITIONS.md` / `lean/MaskTransitionBounds.lean` | Written lower bound on adjacent halving-1 occurrences in surviving long masks; kernel-checked local repairs and supporting arithmetic |
 | `docs/MASK-DENSITY.md` / `lean/MaskDensityBounds.lean` | Written empirical-entropy bound and positive densities of both good and bad blocks in surviving masks; checked finite distributions and power comparisons |
@@ -118,6 +119,9 @@ nonintegral rational examples.
 The local-lift theorem has [a separate verification record](results/cycle-local-lifts/verification.json).
 Its arbitrary-word construction, precision loss during division, exact
 valuations, and complementary height lemma are all kernel checked.
+The mask rank arithmetic has [its own verification record](results/mask-rank-arithmetic/verification.json).
+Its modular algebra and exponent bridge use kernel proofs; the full mechanical
+reindexing and fixed-modulus coverage argument remain written proofs.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

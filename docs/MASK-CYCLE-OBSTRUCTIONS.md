@@ -337,6 +337,14 @@ exponents, is kernel checked. Congruence consistency alone therefore
 does not reduce the mask choices. A test must retain a fixed integer
 lift, a sufficient height bound, or information at primes in \(D\).
 
+The [rank arithmetic](MASK-RANK-ARITHMETIC.md) further rewrites the coprime
+mechanical case as \((1-z)\sum_{j<s}\varepsilon_jz^j\equiv1\bmod D\),
+with consecutive-power coefficients and \(\gcd(C,D)=1\).
+Its modular algebra is kernel checked; the complete mechanical reindexing
+is written. It also explains why divisibility tests with a fixed bounded
+combined modulus allow some mask once the family is sufficiently large.
+The exact full-denominator equation remains unresolved.
+
 The logarithm theorem, factor catalog estimates, height bounds, and eventual
 exclusions remain written proofs. The subset decoder and the two finite
 all-mask exclusions have the formal scope stated above.

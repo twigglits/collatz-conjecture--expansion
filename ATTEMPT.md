@@ -475,6 +475,18 @@ when a fixed integer height bound makes the congruence an equality.
 Thus larger residue-consistency graphs alone do not exclude the masks;
 global integer information must remain in the test.
 
+The [rank arithmetic](docs/MASK-RANK-ARITHMETIC.md) now gives a simpler
+form of the mask equation at coprime counts. With `s=2k-N` and an explicit
+unit `z` modulo `D`, the edit coefficients in mechanical rank order are
+`c_j = 2^(N-2) z^j` modulo `D`. Their total satisfies `gcd(C,D)=1`, and
+integer realizability is equivalent to
+`(1-z) sum_j epsilon_j z^j = 1` modulo `D`.
+The modular algebra and phase-exponent identity are kernel checked; the
+mechanical reindexing is a written bridge. This is an equivalent condition,
+not an all-mask exclusion. A separate written subset-sum argument shows
+that divisibility tests with a fixed bounded combined modulus eventually
+allow some mask, so those tests alone cannot settle the unbounded family.
+
 Negative expected drift and density-one results do not close the universal gap.
 Tao proves almost-bounded orbit minima in logarithmic density, which is not a
 theorem that almost every orbit reaches 1 or becomes periodic.
@@ -535,6 +547,12 @@ mkdir -p /tmp/collatz-explicit-log
 lean -o /tmp/collatz-explicit-log/MaskResonance.olean lean/MaskResonance.lean
 LEAN_PATH=/tmp/collatz-explicit-log lean lean/MaskResonanceExtended.lean
 python3 verify_explicit_log_gap.py --cover
+# The rank arithmetic imports the local-lift Bezout proof:
+mkdir -p /tmp/collatz-mask-rank
+lean -o /tmp/collatz-mask-rank/CollatzCycleCriterion.olean CollatzCycleCriterion.lean
+LEAN_PATH=/tmp/collatz-mask-rank lean -o /tmp/collatz-mask-rank/CycleLocalLifts.olean lean/CycleLocalLifts.lean
+LEAN_PATH=/tmp/collatz-mask-rank lean lean/MaskRankArithmetic.lean
+python3 verify_mask_rank_arithmetic.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean
@@ -605,6 +623,13 @@ The arbitrary-word local-lift theorem has
 [a kernel verification record](results/cycle-local-lifts/verification.json).
 It also records independent exact checks of 2,883 small words, four larger
 masks, and an explicit nontrivial residue walk that is not an integer cycle.
+
+The mask rank arithmetic has
+[a separate kernel verification record](results/mask-rank-arithmetic/verification.json).
+Its independent replay checks 42,158 rank coefficients and rejects 30,436
+exhaustively enumerated masks in the recorded small critical count pairs.
+The complete mechanical reindexing, repeated-word gcd consequence, and
+fixed-modulus coverage theorem are identified as written arguments.
 
 ## Corrections to the earlier study
 

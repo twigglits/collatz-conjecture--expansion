@@ -1,0 +1,270 @@
+{
+  "completed_utc": "2026-09-13T18:21:16.359799+00:00",
+  "base_git_head": "4438f6ca5c9f6abd1788cfcaa4df7e69ebfe046b",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "host": {
+    "system": "Linux",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/CycleLocalLifts.lean": "c6191b9a3098b1fe3813d987cd60a3f09519582dd91476b17bc8339451e0605f",
+    "lean/MaskRankArithmetic.lean": "6e7964ce35876fc2630ecc9542de245b76bb745aca4d35d0240bd338f72a91c1",
+    "verify_mask_rank_arithmetic.py": "869eaa652bbedf0ebe108b4ed6823ad7af75f3933d252ec7b19a6f67d5d92b82"
+  },
+  "written_document_sha256": {
+    "docs/MASK-RANK-ARITHMETIC.md": "0ab91af4792b4ad08b3e49a296aaf6a3bdecb057fc639c99b22a3bed0a1fd451",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "acffa64f9faafe131ef59656999f76838b921c1563cad6618e39e1a849d22a90",
+    "ATTEMPT.md": "ec41ad71c0e59cab43e8082fd092dd95b3b02b8529af4cbc9ee6fe929f393eed",
+    "README.md": "cc547dbbd414b40763faa146aa7e8b8c629610e3b5d9f602da60b251e4bb2f24"
+  },
+  "build_directory": "/tmp/collatz-mask-rank-zrl0r1_x",
+  "LEAN_PATH": "/tmp/collatz-mask-rank-zrl0r1_x",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7575951820035698,
+      "log": "results/mask-rank-arithmetic/CollatzCycleCriterion.log",
+      "log_sha256": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/CycleLocalLifts.olean",
+        "lean/CycleLocalLifts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3487033900019014,
+      "log": "results/mask-rank-arithmetic/CycleLocalLifts.log",
+      "log_sha256": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/MaskRankArithmetic.olean",
+        "lean/MaskRankArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.481437606998952,
+      "log": "results/mask-rank-arithmetic/MaskRankArithmetic.log",
+      "log_sha256": "1a96568bc1690264a085e5191adf9d1fc32ff07cbd834c94e39056149fea5a16",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_mask_rank_arithmetic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.503676717999042,
+      "log": "results/mask-rank-arithmetic/python-replay.json",
+      "log_sha256": "fc201af9ad24cecdcd24290a5bea2d8a077b2837b38a1af3d06ee70e0225f2e5",
+      "all_exact_checks_passed": true
+    }
+  ],
+  "build_artifact_sha256": {
+    "/tmp/collatz-mask-rank-zrl0r1_x/CollatzCycleCriterion.olean": "24fd6ce056bf9f1f5760b822cc816f2f157896cb5b07255a77a6215d7a5f8225",
+    "/tmp/collatz-mask-rank-zrl0r1_x/CycleLocalLifts.olean": "d91ef56184cdf9c4145731227ae00791f51ef444e1515920606ce5fcf965bc33",
+    "/tmp/collatz-mask-rank-zrl0r1_x/MaskRankArithmetic.olean": "3b30edd261c263cb0e24ef12de886a685173094378925a9eb4626550dc6917c2"
+  },
+  "evidence_file_sha256": {
+    "results/mask-rank-arithmetic/CollatzCycleCriterion.log": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+    "results/mask-rank-arithmetic/CycleLocalLifts.log": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+    "results/mask-rank-arithmetic/MaskRankArithmetic.log": "1a96568bc1690264a085e5191adf9d1fc32ff07cbd834c94e39056149fea5a16",
+    "results/mask-rank-arithmetic/commands.json": "c0bcd0ada8cc6fe224e0a6748e2159a8ccbf6c50d9bd4584ae1f0772b380b122",
+    "results/mask-rank-arithmetic/python-replay.json": "fc201af9ad24cecdcd24290a5bea2d8a077b2837b38a1af3d06ee70e0225f2e5"
+  },
+  "independent_python_replay": {
+    "all_exact_checks_passed": true,
+    "noncritical_and_critical_count_pairs_k_through_80": 816,
+    "critical_count_pairs_k_through_512": 312,
+    "individual_rank_coefficients_checked_in_those_ranges": 42158,
+    "exhaustive_critical_pairs_k_through_36": [
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        11,
+        18
+      ],
+      [
+        13,
+        21
+      ],
+      [
+        14,
+        23
+      ],
+      [
+        17,
+        27
+      ],
+      [
+        18,
+        29
+      ],
+      [
+        19,
+        31
+      ],
+      [
+        21,
+        34
+      ],
+      [
+        22,
+        35
+      ],
+      [
+        23,
+        37
+      ],
+      [
+        27,
+        43
+      ],
+      [
+        28,
+        45
+      ],
+      [
+        29,
+        46
+      ],
+      [
+        31,
+        50
+      ],
+      [
+        32,
+        51
+      ],
+      [
+        33,
+        53
+      ]
+    ],
+    "exhaustive_masks_rejected": 30436,
+    "additional_selected_masks_rejected": 3272,
+    "mechanical_gcd_checks_k_through_200": 199,
+    "larger_counts": [
+      {
+        "k": 193,
+        "N": 306,
+        "s": 80,
+        "selected_masks_checked": 4
+      },
+      {
+        "k": 2966,
+        "N": 4701,
+        "s": 1231,
+        "selected_masks_checked": 4
+      }
+    ],
+    "small_prime_limitation": {
+      "k": 11,
+      "N": 18,
+      "D": 84997,
+      "modulus": 11,
+      "z_mod_11": 6,
+      "order_mod_11": 10,
+      "rank_selection": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "word": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "W": 817751,
+      "W_mod_11": 0,
+      "W_mod_D": 52778,
+      "digit_polynomial_at_6": 814,
+      "polynomial_degree": 3
+    },
+    "bounded_modulus_coverage": {
+      "moduli": [
+        2,
+        80
+      ],
+      "unit_sequences": 237,
+      "growth_stages": 9480
+    },
+    "seconds": 1.4575006480008597,
+    "scope": "Finite exact corroboration. The modular implications and exponent bridge are kernel checked separately. Full mechanical reindexing, the repeated-word gcd corollary, and bounded-modulus coverage are written arguments. No unrestricted all-period mask exclusion follows."
+  },
+  "kernel_conclusions": [
+    "Elementary signed congruence arithmetic, modular units, cancellation, and conversion of a unit to natural gcd one.",
+    "The two count roots 2*z^k=1 and 3*z^N=1 modulo D follow from the exact count congruence, unit hypotheses, and determinant q*N=k*t+1.",
+    "Monomial rank congruences and the coefficient 2^(N-2)*z^j follow from explicit nonnegative exponent and phase identities.",
+    "N+s=2*k implies 4*z^s=3 modulo D; the geometric sum has the explicit inverse 4*(1-z).",
+    "A total coefficient congruent to a unit times that geometric sum is a unit modulo D.",
+    "Given the explicit total and selected coefficient reindexing congruences, the previous 4*C-X divisibility test is equivalent to (1-z)*E(z)=1 modulo D.",
+    "A concrete degree-three polynomial with coefficients 3 and 4 vanishes modulo 11 at an element whose multiplicative order is 10."
+  ],
+  "scope": {
+    "native_evaluation": false,
+    "standard_axioms_only": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "external_theorems_used_in_new_arguments": [],
+    "written_bridges_and_consequences": [
+      "Mechanical floor phases, complete permutation of eligible ranks, and extraction of the reindexed coefficient sums.",
+      "Existence of the count inverse q and specialization of the unit hypotheses to D=2^N-3^k.",
+      "The exact gcd formula for repeated mechanical words and recovery of their positive integer cycle exclusion.",
+      "Every residue modulo M is a subset sum of M-1 arbitrary unit coefficients; the resulting limitation on fixed combined-divisor mask tests."
+    ],
+    "finite_replay_only": "The Python counts, selected masks, exhaustive small masks, gcd instances, and unit-translation sequences are finite corroboration, not universal proofs.",
+    "unresolved": [
+      "Whether the normalized binary polynomial equation can hold at surviving unbounded mask counts.",
+      "Arbitrary nontrivial integer cycles outside the established exclusions.",
+      "Aperiodic divergence and the full positive-integer Collatz conjecture."
+    ]
+  },
+  "all_checks_passed": true
+}
