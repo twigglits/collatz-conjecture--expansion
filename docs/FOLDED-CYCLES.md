@@ -19,6 +19,12 @@ rotation covering all ranks are kernel checked in
 The normalization, sorting argument, and complete assembly of (1) remain
 written proofs. No novelty claim or complete Collatz proof is made.
 
+The [forward-closure extension](FOLDED-CYCLE-INVERSIONS.md) now improves
+the coprimality condition to \(M<9m+2\). Below spread sixteen it also
+classifies every order inversion and bounds their number in terms of
+\(\gcd(k,H)\). The new local and closure lemmas are kernel checked; the
+sorting and permutation assembly remains written.
+
 ## 1. Normalize the odd states into one factor-of-two interval
 
 Write the cycle in orbit order as \(x_0=m,x_1,\ldots,x_{k-1}\), with
@@ -173,3 +179,6 @@ Thus local inversions occur at spread \(8+1/m\), arbitrarily close above
 eight. These are two valid steps, not a cycle. They show that a larger
 spread theorem would require additional global information, rather than
 the same pointwise monotonicity argument.
+The later extension uses precisely such information: the next successor
+of \(6m+1\) is \(9m+2\), so a forward-invariant cycle cannot keep that
+pair inside the smaller interval.

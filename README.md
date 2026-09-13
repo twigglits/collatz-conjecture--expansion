@@ -35,6 +35,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `docs/ORBIT-PACKING-LOG.md` | Written uniform square-root-logarithm refinement and exclusion of the endpoint cumulative growth bound |
 | `docs/NO-DESCENT-BALLOT.md` | Written sharper interval count and critical-power summability for starts that never descend, using a published ballot theorem |
 | `docs/FOLDED-CYCLES.md` / `lean/FoldedCycleBounds.lean` | Written coprime-count restriction for integer cycles of odd spread below eight; kernel-checked finite order and rotation lemmas |
+| `docs/FOLDED-CYCLE-INVERSIONS.md` / `lean/FoldedCycleNine.lean` | Written coprimality extension to odd maximum \(M<9m+2\), with inversion-count restrictions below spread sixteen; kernel-checked inversion classification and forward-closure lemmas |
 | `CollatzRepetition.lean` / `STURMIAN-ATTEMPT.md` | Checked finite parity-collision criterion and written exclusions of mechanical and substitution-generated itineraries |
 | `lean/PrefixRepetition.lean` / `docs/PREFIX-REPETITION.md` | Kernel-checked growth and repeated-prefix return criterion; written exclusion of unbounded prefix squares in nonrepeating trajectories |
 | `CollatzComplexity.lean` / `COMPLEXITY-GROWTH.md` | Checked growth bound using cumulative odd counts, finite descent-or-repeat criteria, and written density/complexity restrictions |
@@ -88,6 +89,9 @@ their analytic applications and the no-descent ballot bound are written proofs.
 The later density and folded-order lemmas have
 [their own record](results/folded-density/verification.json), with the full
 cycle-order, entropy, and boundary-count arguments marked as written.
+The forward-closure extension and inversion classification have
+[a Linux verification record](results/folded-inversions/verification.json);
+their full cycle-order and permutation arguments remain written.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

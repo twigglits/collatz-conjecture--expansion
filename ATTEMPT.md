@@ -270,6 +270,15 @@ words. The finite arithmetic, rotation-coprimality implication, and a local
 order reversal just above spread eight are kernel checked. The full cycle
 assembly and its remaining divisibility test are written.
 
+The [forward-closure extension](docs/FOLDED-CYCLE-INVERSIONS.md) strengthens
+the coprimality conclusion to \(M<9m+2\). For \(M<16m\), if \(t\) counts
+pairs \(x,8x+1\) in the odd cycle and \(g=\gcd(k,H)\), it proves the
+necessary conditions \(t\ge g-1\) and \(t\equiv g-1\pmod2\). Exact local
+inversion classification and forced successor paths are kernel checked in
+[FoldedCycleNine.lean](lean/FoldedCycleNine.lean); sorting, permutation
+cycle counting, and the full cycle conclusions remain written proofs.
+The narrow coprime mechanical-mask families still survive these conditions.
+
 [`CollatzComplexity.lean`](CollatzComplexity.lean) adds a checked bound using
 the actual number `w_t` of odd steps. If preceding states are at least M,
 then `2^t M^w_t U^t(n) ≤ n(3M+1)^w_t`. Combined with a parity catalog, it
@@ -433,6 +442,9 @@ lean -o /tmp/collatz-folded-density/MaskTransitionBounds.olean lean/MaskTransiti
 LEAN_PATH=/tmp/collatz-folded-density lean lean/MaskDensityBounds.lean
 lean -o /tmp/collatz-folded-density/CollatzCycleCriterion.olean CollatzCycleCriterion.lean
 LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleBounds.lean
+# Forward closure extends the folded-order result:
+LEAN_PATH=/tmp/collatz-folded-density lean -o /tmp/collatz-folded-density/FoldedCycleBounds.olean lean/FoldedCycleBounds.lean
+LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleNine.lean
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean
@@ -473,6 +485,10 @@ external dependencies; it does not treat their full analytic proofs as Lean chec
 The later density comparisons and folded-order lemmas have a
 [separate kernel record](results/folded-density/verification.json), which also
 identifies the written entropy, cycle-order, and boundary-count arguments.
+The later forward-closure and inversion lemmas have a
+[fresh kernel verification record](results/folded-inversions/verification.json)
+on Linux with the same pinned Lean release. Its cycle-order and permutation
+applications are explicitly recorded as written deductions.
 
 ## Corrections to the earlier study
 
