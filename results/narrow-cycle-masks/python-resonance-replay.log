@@ -1,0 +1,18 @@
+{
+  "all_exact_checks_passed": true,
+  "denominator_interval": {
+    "first": "2^21",
+    "last_inclusive": "10^1000"
+  },
+  "dyadic_bits": 8192,
+  "series_terms_per_logarithm": 4096,
+  "common_continued_fraction_terms": 2411,
+  "candidate_terms_consumed": 1942,
+  "accepted_cover_rows": 1927,
+  "skipped_initial_brackets": 14,
+  "first_window": 48,
+  "last_window": 12589,
+  "minimum_gap_margin_floor": 13,
+  "seconds": 7.6435653470034595,
+  "scope": "Independent finite integer replay; real logarithm bounds and the application to all masks are written proofs."
+}

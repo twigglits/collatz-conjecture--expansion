@@ -1,0 +1,252 @@
+{
+  "started_utc": "2026-09-13T15:29:12.051067+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154",
+    "lean/MaskFoldedOrder.lean": "c151e40361b5e12305cac4372782f9374af3aa7da1f4d9a6faf5a2bc0ddd87d1",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/MechanicalMaskArithmetic.lean": "951ef497de7d8e55516429199f29b13094ee66d483f8c1e42759169b59b43aef",
+    "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9",
+    "lean/MaskDensityBounds.lean": "6c06b77cb28afda066cb23a9a5dc374f59b1849cc479c0db1f3205c9c80b7e1c",
+    "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+    "verify_mask_resonance.py": "a601ff00bb70d3c03af1c3c06d24588a17a88322fde5a7121f6c3712d74b4700"
+  },
+  "written_document_sha256": {
+    "docs/NARROW-CYCLE-MASKS.md": "01f65c953556ed5f5336cbb72978a9cf15b43ad5eb30fbb7cb6d2809739bd696",
+    "docs/MASK-FOLDED-ORDER.md": "59cbf29a4d01b1cf6cb34f9a51c2dcdc1d9b75ec6f65c02848bc51a22417b43e",
+    "docs/FOLDED-CYCLES.md": "1eedd36a20a9a3e66ad2e2d70da6c82385ac3b2cc2cef8b8217da073452235fd",
+    "docs/MASK-RESONANCE.md": "8400096839d622389b72a6e0877fd1934aa806616127d0e33084f2bdcd431b0e",
+    "docs/MASK-TRANSITIONS.md": "14c65f2431ecc600a5574d8d808ffd84a8e1478047ae9a8cc6abc6d9afe189d6",
+    "docs/MASK-DENSITY.md": "a4b2ff9185ea1415913f33845ab610430346048a9262cddd076d6185e46571ff",
+    "ATTEMPT.md": "86d835b26d40d446af661f26856e699163e46576037ff8fb2e9574852625dee2",
+    "README.md": "a7d75cf276a4a1b4551cff702aec44845c5ffb624c19a5bf56b1a58673dcd78d"
+  },
+  "build_directory": "/tmp/collatz-narrow-cycle-7yippw7l",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/NarrowCycleMasks.olean",
+        "lean/NarrowCycleMasks.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.9096167550014798,
+      "log": "results/narrow-cycle-masks/NarrowCycleMasks.log",
+      "log_sha256": "ca0f5dcccfd3faca348168039a7ebeb065d49902c11cc65089f94e0c92ac0a88",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/MaskFoldedOrder.olean",
+        "lean/MaskFoldedOrder.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7396633620010107,
+      "log": "results/narrow-cycle-masks/MaskFoldedOrder.log",
+      "log_sha256": "056612536dbdf0eeceb9f7351a9f7af99940443cc2df35a977edc33f0f4b1a0a",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8895957869972335,
+      "log": "results/narrow-cycle-masks/CollatzCycleCriterion.log",
+      "log_sha256": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/FoldedCycleBounds.olean",
+        "lean/FoldedCycleBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3238569210006972,
+      "log": "results/narrow-cycle-masks/FoldedCycleBounds.log",
+      "log_sha256": "8d066c75bff02c750b7beab40b9484fad78cbb0bfe2cef1e530f8544bba7f8db",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/CollatzRepetition.olean",
+        "CollatzRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7127039900005911,
+      "log": "results/narrow-cycle-masks/CollatzRepetition.log",
+      "log_sha256": "b8040f5431a851ade00f47f6116717bad8db19ac4c053c8d3bcc2fd94ec515b6",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/MechanicalMaskArithmetic.olean",
+        "lean/MechanicalMaskArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.089540635999583,
+      "log": "results/narrow-cycle-masks/MechanicalMaskArithmetic.log",
+      "log_sha256": "bd1624d1ee78b2cebaa7b5e3e8ce8cb583619d69f89e418c6f482e3269c1b125",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/MaskTransitionBounds.olean",
+        "lean/MaskTransitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1081318810029188,
+      "log": "results/narrow-cycle-masks/MaskTransitionBounds.log",
+      "log_sha256": "44c75f10de6f9a33c223adad4a1ca3302ade4348d0430ad4713709b17c5eb9fd",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/MaskDensityBounds.olean",
+        "lean/MaskDensityBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0701879909975105,
+      "log": "results/narrow-cycle-masks/MaskDensityBounds.log",
+      "log_sha256": "b992865192af8c187bab89f6902bdafcdf7be5b06fb5bda8b96192723cf40f06",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-narrow-cycle-7yippw7l/MaskResonance.olean",
+        "lean/MaskResonance.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2521911839940003,
+      "log": "results/narrow-cycle-masks/MaskResonance.log",
+      "log_sha256": "248280a0de1c9a6c02da407c5b7b903c5fb726a04ff8e5ad85c8f0605b205b07",
+      "no_warnings_or_admitted_proofs": true,
+      "native_evaluation_detected": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_mask_resonance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.693022287996428,
+      "log": "results/narrow-cycle-masks/python-resonance-replay.log",
+      "log_sha256": "20eafb227292de48f691aecc72a9c48ea694f72f88b5c5f0cefda1bf1bce6947"
+    }
+  ],
+  "LEAN_PATH": "/tmp/collatz-narrow-cycle-7yippw7l",
+  "independent_replay": {
+    "all_exact_checks_passed": true,
+    "denominator_interval": {
+      "first": "2^21",
+      "last_inclusive": "10^1000"
+    },
+    "dyadic_bits": 8192,
+    "series_terms_per_logarithm": 4096,
+    "common_continued_fraction_terms": 2411,
+    "candidate_terms_consumed": 1942,
+    "accepted_cover_rows": 1927,
+    "skipped_initial_brackets": 14,
+    "first_window": 48,
+    "last_window": 12589,
+    "minimum_gap_margin_floor": 13,
+    "seconds": 7.6435653470034595,
+    "scope": "Independent finite integer replay; real logarithm bounds and the application to all masks are written proofs."
+  },
+  "build_artifact_sha256": {
+    "/tmp/collatz-narrow-cycle-7yippw7l/NarrowCycleMasks.olean": "965014facb4947f479d5a11975028156344ab0b3f9bdfb811b280ff576213e3b",
+    "/tmp/collatz-narrow-cycle-7yippw7l/MaskFoldedOrder.olean": "5ec8d60302eece9697e193f9f65200a09838762e752672aed4dd2d3d070b66c2",
+    "/tmp/collatz-narrow-cycle-7yippw7l/CollatzCycleCriterion.olean": "24fd6ce056bf9f1f5760b822cc816f2f157896cb5b07255a77a6215d7a5f8225",
+    "/tmp/collatz-narrow-cycle-7yippw7l/FoldedCycleBounds.olean": "9a44fa889eb471c5066e93f2b197744cbe6cc6621eedf2c57cc0533b05f2e8a7",
+    "/tmp/collatz-narrow-cycle-7yippw7l/CollatzRepetition.olean": "75bff2d2ec3961c669c1c83cda676ee6cb380435fe71efb98c5b801a6a7e6796",
+    "/tmp/collatz-narrow-cycle-7yippw7l/MechanicalMaskArithmetic.olean": "fdcb10956b834826c1a52c6b19f99ef9c128f43f691c31b5e0c2d9b747663bb5",
+    "/tmp/collatz-narrow-cycle-7yippw7l/MaskTransitionBounds.olean": "509c26dce923d469abc1514358e10e0af084c809778ecabd9a9e881c526e55d0",
+    "/tmp/collatz-narrow-cycle-7yippw7l/MaskDensityBounds.olean": "43ac1da2b40a18e0a4b422133eb0b98158f26711c8edc52b64004f36a6260d07",
+    "/tmp/collatz-narrow-cycle-7yippw7l/MaskResonance.olean": "ab673ea101d8a7985ca6b222401a99f2f418ce1bb18bae3e52b99627928ba00d"
+  },
+  "sources_and_documents_unchanged_during_verification": true,
+  "reused_decoder_evidence": {
+    "record": "results/mask-decoder/verification.json",
+    "record_sha256": "f7cba28352ab18e41196d647654dde7b42af6cd6c7ef0293417786af2febcceb",
+    "current_source_hashes_match": {
+      "lean-toolchain": true,
+      "lean/MechanicalMaskArithmetic.lean": true,
+      "lean/MaskSubsetDecoder.lean": true,
+      "lean/MaskSubsetFinite.lean": true
+    },
+    "rerun_in_this_record": false,
+    "used_for": "Only the older folded-order note example at (k,N)=(2966,4701), not the new general cycle classification or interval exclusion."
+  },
+  "scope": {
+    "new_kernel_theorems": [
+      "For every exact positive finite affine cycle with odd count k no larger than its minimum m, 3^k < 2^H < 2*3^k.",
+      "Distinct sorted odd states of span M<3m have k<=m.",
+      "If 3M+1<8m, every halving exponent is 1 or 2; folded states lie in one doubled interval and are distinct.",
+      "Folded numerators preserve integer order and have spread below two; the folded edge equation and isolated high-layer entry/exit rules are exact.",
+      "A double halving-one rise gives 9m+5<=4M; q distinct such starts give 9m+18q<=4M+13."
+    ],
+    "preceding_theorem_freshly_recorded": "MaskFoldedOrder: arbitrary positive forcing has automatic rank order under its exact Bezout and power conditions; two-layer spread and concrete counts are kernel proved.",
+    "written_not_fully_formalized": [
+      "Sorting and permutation assembly show that every primitive nontrivial integer cycle with 3M+1<8m is a critical independent 21-to-12 mask.",
+      "Applying the earlier catalog/logarithm argument and exact resonance cover excludes all such cycles for 2^21<=N<=10^1000.",
+      "The same exclusion for all N<=10^1000 uses the explicitly stated external Eliahou small-period input.",
+      "The earlier mask-transition theorem implies 4M>=9m+5 for every nontrivial cycle with N>=max(H0,2^2048). H0 remains nonnumerical.",
+      "Applications of MaskFoldedOrder to rational masks and their infinite continued-fraction families remain written."
+    ],
+    "rechecked_native_finite_arithmetic": "Only MaskResonance uses native evaluation in these builds. Its exact rational cover and dyadic arithmetic are rechecked, with an independent Python replay; its generic checker soundness is kernel proved.",
+    "external_not_replayed": "Eliahou Theorem 1.1 and the convergence computation through 2^40 cited there, exactly as described in results/mask-resonance/verification.json.",
+    "trust": "No admitted proofs. New NarrowCycleMasks and MaskFoldedOrder depend only on standard logical axioms. Generated native-evaluation axioms occur explicitly in the reused resonance certificate.",
+    "unresolved": [
+      "No proof or disproof of Collatz for every positive integer.",
+      "Narrow integer cycles with N>10^1000 are not excluded.",
+      "The numerical relation between H0 and 10^1000 is unknown; the finite and eventual ranges cannot be silently joined.",
+      "Wider cycles and aperiodic divergence remain unresolved."
+    ]
+  },
+  "all_checks_passed": true,
+  "finished_utc": "2026-09-13T15:29:36.979764+00:00"
+}

@@ -221,7 +221,7 @@ Reproduce the new kernel checks from the repository root:
 
     lean lean/MaskFoldedOrder.lean
 
-The [verification record](../results/mask-folded-order/verification.json)
+The [verification record](../results/narrow-cycle-masks/verification.json)
 identifies the compiler, source hashes, and exact scope.
 
 The remaining task is to exclude integral ordered numerators in the

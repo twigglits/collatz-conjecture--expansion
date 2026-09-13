@@ -25,6 +25,11 @@ classifies every order inversion and bounds their number in terms of
 \(\gcd(k,H)\). The new local and closure lemmas are kernel checked; the
 sorting and permutation assembly remains written.
 
+The [narrow-cycle reduction](NARROW-CYCLE-MASKS.md) gives a stronger
+classification when \(3M+1<8m\): the actual word must be a critical
+independent \(21\to12\) mask. The existing arithmetic exclusions therefore
+apply to every integer cycle in that geometric range.
+
 ## 1. Normalize the odd states into one factor-of-two interval
 
 Write the cycle in orbit order as \(x_0=m,x_1,\ldots,x_{k-1}\), with
@@ -162,6 +167,12 @@ verifies the chosen layers.
 Conversely every such cycle supplies these data.
 The third step is essential; arbitrary layer assignments need not preserve
 the required order. The reduction does not show that every candidate fails.
+
+At sufficiently close coprime counts, the
+[automatic-order theorem](MASK-FOLDED-ORDER.md) proves the rank comparisons
+from the positive forcing equations themselves. Its mask application
+shows that adding these comparisons does not exclude the surviving
+unbounded mask range.
 
 ## 4. Why the elementary ordering threshold cannot exceed eight
 

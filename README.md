@@ -36,6 +36,8 @@ Performance timings are explicitly identified as empirical measurements.
 | `docs/NO-DESCENT-BALLOT.md` | Written sharper interval count and critical-power summability for starts that never descend, using a published ballot theorem |
 | `docs/FOLDED-CYCLES.md` / `lean/FoldedCycleBounds.lean` | Written coprime-count restriction for integer cycles of odd spread below eight; kernel-checked finite order and rotation lemmas |
 | `docs/FOLDED-CYCLE-INVERSIONS.md` / `lean/FoldedCycleNine.lean` | Written coprimality extension to odd maximum \(M<9m+2\), with inversion-count restrictions below spread sixteen; kernel-checked inversion classification and forward-closure lemmas |
+| `docs/NARROW-CYCLE-MASKS.md` / `lean/NarrowCycleMasks.lean` | Written reduction of every nontrivial integer cycle with \(3M+1<8m\) to the critical mask family, extending its period exclusions to arbitrary narrow cycles; kernel-checked count, power, and local layer arguments |
+| `docs/MASK-FOLDED-ORDER.md` / `lean/MaskFoldedOrder.lean` | Kernel-checked automatic rank order for arbitrary positive forcing at close coprime counts; written application showing that ordering does not reject the surviving mask range |
 | `CollatzRepetition.lean` / `STURMIAN-ATTEMPT.md` | Checked finite parity-collision criterion and written exclusions of mechanical and substitution-generated itineraries |
 | `lean/PrefixRepetition.lean` / `docs/PREFIX-REPETITION.md` | Kernel-checked growth and repeated-prefix return criterion; written exclusion of unbounded prefix squares in nonrepeating trajectories |
 | `CollatzComplexity.lean` / `COMPLEXITY-GROWTH.md` | Checked growth bound using cumulative odd counts, finite descent-or-repeat criteria, and written density/complexity restrictions |
@@ -98,6 +100,10 @@ The unrestricted-mask resonance result has
 including the complete rational cover and an independent Python replay.
 Its real logarithm and cycle arguments, and the external small-period input,
 are distinguished from the local Lean checks.
+The narrow-cycle reduction and the preceding automatic-order theorem have
+[a further verification record](results/narrow-cycle-masks/verification.json).
+Their new finite algebra is kernel checked; the global cycle sorting and
+applications of earlier analytic results remain written arguments.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

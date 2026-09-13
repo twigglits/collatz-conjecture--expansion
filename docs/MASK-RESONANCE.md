@@ -247,6 +247,14 @@ unverified modern improvement to the published lower bound.
 
 ## 6. Remaining scope and reproduction
 
+The [narrow-cycle classification](NARROW-CYCLE-MASKS.md) now transfers this
+result to arbitrary primitive integer cycles with \(3M+1<8m\): every such
+cycle has the required critical mask form. Consequently every nontrivial
+cycle with \(N\le10^{1000}\) satisfies \(3M+1\ge8m\), with the same external
+small-period input as Section 5.
+The [automatic-order theorem](MASK-FOLDED-ORDER.md) shows why folded rank
+tests do not remove the remaining unbounded mask periods.
+
 The family still has infinitely many possible periods beyond the finite
 endpoint. The resonance condition (2) alone does not eliminate them, and
 the available irrationality bound used in the earlier notes is too weak to

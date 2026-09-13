@@ -294,6 +294,24 @@ inversion classification and forced successor paths are kernel checked in
 cycle counting, and the full cycle conclusions remain written proofs.
 The narrow coprime mechanical-mask families still survive these conditions.
 
+The [narrow-cycle reduction](docs/NARROW-CYCLE-MASKS.md) now proves that
+every nontrivial primitive integer cycle satisfying \(3M+1<8m\) belongs
+to the full critical \(21\to12\) mask family. Odd spacing forces \(k\le m\),
+an integer power bound forces the critical total count, and every state
+at least \(2m\) selects an isolated edit of the folded mechanical word.
+Thus for \(2^{21}\le N\le10^{1000}\), every nontrivial cycle satisfies
+\(3M+1\ge8m\). The same bound covers smaller periods with the external
+Eliahou input already identified above. A separate unbounded consequence
+is \(4M\ge9m+5\) for \(N\ge\max(H_0,2^{2048})\); its threshold is still
+nonnumerical. Sorting and global cycle assembly remain written proofs,
+with the new local arithmetic and power bounds checked in Lean.
+
+The [automatic-order theorem](docs/MASK-FOLDED-ORDER.md) also makes a
+limitation precise. At the close counts required of any surviving integer
+mask, positive forcing already gives the prescribed folded rank order
+for every edit choice. Those masks have odd spread below four, but this
+does not settle their integer divisibility.
+
 [`CollatzComplexity.lean`](CollatzComplexity.lean) adds a checked bound using
 the actual number `w_t` of odd steps. If preceding states are at least M,
 then `2^t M^w_t U^t(n) ≤ n(3M+1)^w_t`. Combined with a parity catalog, it
@@ -460,6 +478,9 @@ LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleBounds.lean
 # Forward closure extends the folded-order result:
 LEAN_PATH=/tmp/collatz-folded-density lean -o /tmp/collatz-folded-density/FoldedCycleBounds.olean lean/FoldedCycleBounds.lean
 LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleNine.lean
+# Narrow-cycle arithmetic and automatic rank order are standalone:
+lean lean/NarrowCycleMasks.lean
+lean lean/MaskFoldedOrder.lean
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean
@@ -510,6 +531,10 @@ Its rational-cover checker and integer inequalities are kernel proved;
 finite arithmetic uses native evaluation. The full catalog, logarithm,
 and cycle deductions are written, and Eliahou's small-period bound retains
 its external computational dependency.
+The narrow-cycle arithmetic and automatic rank-order theorem have
+[a newer verification record](results/narrow-cycle-masks/verification.json).
+It checks the new algebra without native evaluation and distinguishes it
+from the written cycle classification and the reused analytic deductions.
 
 ## Corrections to the earlier study
 
