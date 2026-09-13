@@ -1,0 +1,100 @@
+{
+  "started_utc": "2026-09-13T14:10:45.823669+00:00",
+  "finished_utc": "2026-09-13T14:10:54.064714+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+    "lean/FoldedCycleNine.lean": "23e0d992f1b0a75d887cbbd979b6998a2a72c76c33a17fa602db16d522b397c6"
+  },
+  "written_document_sha256": {
+    "docs/FOLDED-CYCLE-INVERSIONS.md": "0c904c5392102d8d959c6e61029c847196d17805787dafc8dd1a92d4cb233a49",
+    "docs/FOLDED-CYCLES.md": "69247d4b2d95d8f5a0d807b6d46e0a0de3b9f557466c9c567ef2a45305644166",
+    "ATTEMPT.md": "63734d3dc2b24b2975939d0e727facc937695ab752e48690d51f171818e36be5",
+    "README.md": "68c969b4825a7da5e56f56cfb072e0395ff964930975832e950d1c3fd2c54d1c"
+  },
+  "build_directory": "/tmp/collatz-folded-inversions-wp34xjju",
+  "LEAN_PATH": "/tmp/collatz-folded-inversions-wp34xjju",
+  "build_artifact_sha256": {
+    "/tmp/collatz-folded-inversions-wp34xjju/CollatzCycleCriterion.olean": "24fd6ce056bf9f1f5760b822cc816f2f157896cb5b07255a77a6215d7a5f8225",
+    "/tmp/collatz-folded-inversions-wp34xjju/FoldedCycleBounds.olean": "9a44fa889eb471c5066e93f2b197744cbe6cc6621eedf2c57cc0533b05f2e8a7",
+    "/tmp/collatz-folded-inversions-wp34xjju/FoldedCycleNine.olean": "0e657e02e2c20ecc73074f04af0cf8e29e74b3bb9968817db9c65e51dffc3e2b"
+  },
+  "commands": [
+    {
+      "name": "cycle-criterion-dependency",
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-folded-inversions-wp34xjju/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.2528708560021187,
+      "log": "results/folded-inversions/cycle-criterion-dependency.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "folded-cycle-dependency",
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-folded-inversions-wp34xjju/FoldedCycleBounds.olean",
+        "lean/FoldedCycleBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6708575779994135,
+      "log": "results/folded-inversions/folded-cycle-dependency.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "folded-cycle-nine",
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-folded-inversions-wp34xjju/FoldedCycleNine.olean",
+        "lean/FoldedCycleNine.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.1550630159981665,
+      "log": "results/folded-inversions/folded-cycle-nine.log",
+      "no_warnings_or_admitted_proofs": true
+    }
+  ],
+  "sources_and_documents_unchanged_during_verification": true,
+  "scope": {
+    "kernel_checked": [
+      "Exact inversion classification for distinct ordered folded integers with odd sources and scales 1, 2, 4, 8.",
+      "Equality of folded numerators implies equality of accelerated successors; excluding the inversion pair gives strict order.",
+      "Exact first two odd successors of 8*x+1 for odd x: 6*x+1 and 9*x+2.",
+      "Forward closure forces maximum at least 9*x+2; closed sets with injective successor maps preserve folded order under M<9*m+2.",
+      "Four-layer folded numerator range and factor-of-two span bounds.",
+      "Exact third successor for x=1 modulo 4 and fourth successor for x=5 modulo 8; the latter exceeds 16*x.",
+      "Imported covering-rotation coprimality lemma from FoldedCycleBounds."
+    ],
+    "written_not_fully_formalized": [
+      "Normalization and sorted-rank assembly proving gcd(k,H)=1 for primitive positive odd integer cycles with M<9*m+2.",
+      "For M<16*m, the change in order is t disjoint adjacent transpositions, one per pair x and 8*x+1 in the cycle.",
+      "The primitive successor permutation is R_r composed with those swaps, H=k+r, and its single cycle forces t>=gcd(k,H)-1 with the same parity.",
+      "Odd integer spacing then gives M>=9*m+18*gcd(k,H)-34 when gcd(k,H)>=2 and M<16*m."
+    ],
+    "unresolved": [
+      "No proof or disproof of convergence for every positive integer.",
+      "The coprime-count narrow-spread mechanical-mask families remain possible.",
+      "The four-scale inversion classification does not apply at spread at least sixteen.",
+      "The permutation proof does not exclude divergent trajectories.",
+      "Exploratory longer orbit paths did not establish a universal spread threshold higher than M<9*m+2."
+    ],
+    "trust": "All three modules were recompiled with the pinned Lean compiler on this Linux machine. Printed axiom dependencies contain only standard propext, Classical.choice, and Quot.sound. The new module uses no native evaluation or admitted proofs. The complete cycle permutation assembly is a written proof, not a fully formal Lean theorem."
+  }
+}

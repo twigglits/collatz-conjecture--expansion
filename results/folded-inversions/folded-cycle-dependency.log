@@ -1,0 +1,7 @@
+'FoldedCycleBounds.oddPart_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldedCycleBounds.folded_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldedCycleBounds.folded_numerators_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldedCycleBounds.folded_numerator_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldedCycleBounds.folded_numerator_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FoldedCycleBounds.full_rotation_coprime' depends on axioms: [propext, Quot.sound]
+'FoldedCycleBounds.local_order_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
