@@ -188,6 +188,12 @@ families, including edits at alternating \(21\) positions. The unrestricted
 family remains unresolved, and the eventual exclusions still have an
 unverified finite range.
 
+The [resonance analysis](MASK-RESONANCE.md) now excludes the entire critical
+family for \(2^{21}\le N\le10^{1000}\), using a finite exact rational cover
+and no unknown \(H_0\). With Eliahou's published general cycle bound and
+its external convergence computation, a nontrivial primitive integer
+realization would have to have \(N>10^{1000}\).
+
 ## 6. A concrete checked witness beyond distance 31
 
 [MechanicalMaskWitness.lean](../lean/MechanicalMaskWitness.lean) constructs

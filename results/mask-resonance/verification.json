@@ -1,0 +1,129 @@
+{
+  "started_utc": "2026-09-13T14:40:47.061464+00:00",
+  "finished_utc": "2026-09-13T14:40:57.735822+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "verify_mask_resonance.py": "a601ff00bb70d3c03af1c3c06d24588a17a88322fde5a7121f6c3712d74b4700"
+  },
+  "written_document_sha256": {
+    "docs/MASK-RESONANCE.md": "2a64a89d7097b3f060d82c526c96fb73e4b6fe52a722e2f5a1a56aed3f07c054",
+    "docs/MECHANICAL-MASKS.md": "e2ed6ad7a901d0372eef8748ee551812888b427a66673d609618372bf97b5ec6",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "2ba377e12d3b6e4fe831a937fc3e78496da288b47f3ef3193b4f4a7e1005f9d3",
+    "ATTEMPT.md": "51ed8f48577615a83c6e9eab72ec7682874b4c0d6155962ab881eee5b492b7ed",
+    "README.md": "a1cec9f4cf5cba1c136e9b2a5491372b010537d5c71ca34f619786d01143ba6d"
+  },
+  "build_directory": "/tmp/collatz-mask-resonance-w7y1f8_2",
+  "LEAN_PATH": "/tmp/collatz-mask-resonance-w7y1f8_2",
+  "build_artifact_sha256": {
+    "/tmp/collatz-mask-resonance-w7y1f8_2/CollatzRepetition.olean": "75bff2d2ec3961c669c1c83cda676ee6cb380435fe71efb98c5b801a6a7e6796",
+    "/tmp/collatz-mask-resonance-w7y1f8_2/MaskResonance.olean": "ab673ea101d8a7985ca6b222401a99f2f418ce1bb18bae3e52b99627928ba00d"
+  },
+  "commands": [
+    {
+      "name": "parity-collision-reference",
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-resonance-w7y1f8_2/CollatzRepetition.olean",
+        "CollatzRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.6364747029983846,
+      "log": "results/mask-resonance/parity-collision-reference.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "mask-resonance",
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-resonance-w7y1f8_2/MaskResonance.olean",
+        "lean/MaskResonance.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2265957689996867,
+      "log": "results/mask-resonance/mask-resonance.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "independent-integer-replay",
+      "command": [
+        "/home/jeannaude/.pyenv/versions/3.11.9/bin/python3",
+        "verify_mask_resonance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 6.677289936000307,
+      "log": "results/mask-resonance/python-replay.log"
+    }
+  ],
+  "sources_and_documents_unchanged_during_verification": true,
+  "independent_replay": {
+    "all_exact_checks_passed": true,
+    "denominator_interval": {
+      "first": "2^21",
+      "last_inclusive": "10^1000"
+    },
+    "dyadic_bits": 8192,
+    "series_terms_per_logarithm": 4096,
+    "common_continued_fraction_terms": 2411,
+    "candidate_terms_consumed": 1942,
+    "accepted_cover_rows": 1927,
+    "skipped_initial_brackets": 14,
+    "first_window": 48,
+    "last_window": 12589,
+    "minimum_gap_margin_floor": 13,
+    "seconds": 6.613853511000343,
+    "scope": "Independent finite integer replay; real logarithm bounds and the application to all masks are written proofs."
+  },
+  "scope": {
+    "kernel_checked_without_native_evaluation": [
+      "Farey denominator bound, including unreduced fractions, and its one-sided separation corollary.",
+      "Soundness of the complete denominator cover: every denominator in an accepted interval has a checked bracket and an admissible catalog window; generator correctness is not assumed.",
+      "Exact catalog slope comparison 3^101>2^160, cubic-bound base case, and the integer induction for [32(3t+7)]^80<2^(17t) for every t>=64.",
+      "Existing parity congruence and diameter-from-short-catalog lemmas in CollatzRepetition."
+    ],
+    "native_finite_certificate": [
+      "8192-bit dyadic floor sums with 4096 terms for each logarithm, positivity, fraction order, and scaled analytic-tail arithmetic.",
+      "Exact accepted bracket cover of all integer N in 2^21 <= N <= 10^1000; every row checks determinant, logarithm enclosure comparisons, catalog size, gap, and interval endpoint."
+    ],
+    "written_not_fully_formalized": [
+      "The all-mask catalog P_w(m) <= (m+4)*2^(floor(21(m+1)/80)+3), valid for every independent critical 21-to-12 mask.",
+      "Real-series proof that the dyadic fractions enclose log(2)/log(3).",
+      "Catalog, integrality, diameter, and height imply 0<log(2)/log(3)-k/N<4/2^m whenever the catalog is smaller than N.",
+      "Consequent exclusion of all primitive positive integer mask cycles throughout 2^21 <= N <= 10^1000.",
+      "All-period cubic resonance requirement for N>=2^64, and the stronger asymptotic irrationality-exponent obstruction for an unbounded sequence of mask cycles.",
+      "With the explicitly identified external Eliahou bound and its computational input, every nontrivial primitive cycle in this full critical mask family would have N>10^1000."
+    ],
+    "external_not_replayed": [
+      "Eliahou Theorem 1.1: nontrivial shortcut cycles with minimum greater than 2^40 have length at least 17087915.",
+      "The published convergence computation through 2^40 cited by Eliahou, used only to close N<2^21 in the external corollary."
+    ],
+    "unresolved": [
+      "No proof or disproof of convergence for every positive integer.",
+      "Infinitely many critical mask periods above 10^1000 remain possible.",
+      "Arbitrary halving words need not belong to the mask family.",
+      "Aperiodic divergence is not addressed.",
+      "The available irrationality-measure estimate does not contradict the new asymptotic necessary condition."
+    ],
+    "trust": "Generic arithmetic and checker soundness use only standard logical axioms. The two finite certificate theorems explicitly use native_decide and print generated native-evaluation axiom dependencies. No admitted proofs occur. Python is an independent finite arithmetic replay, not the proof of the real logarithm or cycle application."
+  },
+  "primary_external_dependency": {
+    "title": "Shalom Eliahou, The 3x+1 problem: new lower bounds on nontrivial cycle lengths, Discrete Mathematics 118 (1993), Theorem 1.1",
+    "url": "https://doi.org/10.1016/0012-365X(93)90052-U",
+    "inspected_pdf_mirror": "https://raw.githubusercontent.com/tangentstorm/eliahou-collatz-bounds/main/eliahou-collatz.pdf",
+    "inspected_pdf_sha256": "077292bebdf53a6e06d92fb475ce395ee1c8af4cc3e9f5c2e4620b2e35134689",
+    "inspected_pages": "Journal pages 45-48: shortcut-map definition, stated theorem, minimum hypothesis, and cited convergence input.",
+    "used_for": "Only the corollary closing periods below the local certificate start, not the local interval exclusion."
+  }
+}

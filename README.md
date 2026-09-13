@@ -52,6 +52,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `lean/MaskSubsetDecoder.lean` / `lean/MaskSubsetFinite.lean` | Kernel-checked complete subset decoder; native finite certificates exclude all \(2^{80}\) and \(2^{1231}\) masks at two specified count pairs |
 | `docs/MASK-TRANSITIONS.md` / `lean/MaskTransitionBounds.lean` | Written lower bound on adjacent halving-1 occurrences in surviving long masks; kernel-checked local repairs and supporting arithmetic |
 | `docs/MASK-DENSITY.md` / `lean/MaskDensityBounds.lean` | Written empirical-entropy bound and positive densities of both good and bad blocks in surviving masks; checked finite distributions and power comparisons |
+| `docs/MASK-RESONANCE.md` / `lean/MaskResonance.lean` | Written exclusion of every independent critical 21-to-12 mask for \(2^{21}\le N\le10^{1000}\), with an exact native rational cover and kernel checker soundness; the published Eliahou bound closes the smaller range using external computation |
 | `lean/BoundedStandardCycle.lean` | Direct convergence certificate through one million, kernel checker soundness, and triviality of any cycle with a checked small state |
 | `CollatzCycleSeparation.lean` | Kernel-checked local replacement cancellation, numerator injectivity, and repeated-block edit exclusions |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
@@ -92,6 +93,11 @@ cycle-order, entropy, and boundary-count arguments marked as written.
 The forward-closure extension and inversion classification have
 [a Linux verification record](results/folded-inversions/verification.json);
 their full cycle-order and permutation arguments remain written.
+The unrestricted-mask resonance result has
+[an exact arithmetic verification record](results/mask-resonance/verification.json),
+including the complete rational cover and an independent Python replay.
+Its real logarithm and cycle arguments, and the external small-period input,
+are distinguished from the local Lean checks.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

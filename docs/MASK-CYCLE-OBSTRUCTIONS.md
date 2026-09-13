@@ -19,6 +19,13 @@ targets. The decoder is now kernel checked, and finite certificates reject
 every mask at two specified count pairs. The unrestricted all-period
 problem remains unresolved.
 
+The later [resonance certificate](MASK-RESONANCE.md) excludes the full
+critical \(21\to12\) family at every period \(2^{21}\le N\le10^{1000}\).
+It combines an unrestricted factor catalog with exact rational separation,
+without an unknown logarithm-theorem cutoff. Eliahou's published general
+cycle bound closes the smaller range using external computational input.
+The infinite range beyond \(10^{1000}\) remains open.
+
 The later [transition argument](MASK-TRANSITIONS.md) also excludes every
 sufficiently long mask without adjacent halving ones. More generally it
 forces more than \(N/(24\log_2N)\) such adjacencies in any surviving integer

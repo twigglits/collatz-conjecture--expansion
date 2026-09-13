@@ -247,6 +247,21 @@ independent masks respectively. The larger certificate checks 315555 quotient
 targets and rejects them all. These fixed-count exclusions do not depend on
 the unknown \(H_0\); their finite computations explicitly use native_decide.
 
+The [resonance argument](docs/MASK-RESONANCE.md) now excludes every
+primitive positive integer cycle in the full critical \(21\to12\) mask
+family throughout \(2^{21}\le N\le10^{1000}\). A uniform parity-factor
+catalog and the integer collision lemma force a rational approximation
+too close to \(\log2/\log3\); an exact dyadic logarithm enclosure and checked
+Farey brackets reject it for every denominator in the interval. The local
+certificate uses no unknown \(H_0\). Its finite cover uses native evaluation,
+its checker soundness and Farey arithmetic are kernel proved, and the
+catalog, real logarithm bounds, and cycle assembly are written.
+Eliahou's published lower cycle-length bound, with its cited external
+convergence computation, closes the range below \(2^{21}\). With that
+external input, any nontrivial primitive cycle in this full mask family
+would have \(N>10^{1000}\). Infinitely many larger periods, arbitrary other
+halving words, and divergent trajectories remain unresolved.
+
 A separate finite obstruction is checked in
 [`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
 k parity steps differ by a multiple of `2^k`. If the difference is smaller
@@ -489,6 +504,12 @@ The later forward-closure and inversion lemmas have a
 [fresh kernel verification record](results/folded-inversions/verification.json)
 on Linux with the same pinned Lean release. Its cycle-order and permutation
 applications are explicitly recorded as written deductions.
+The unrestricted-mask resonance result has
+[a separate verification record](results/mask-resonance/verification.json).
+Its rational-cover checker and integer inequalities are kernel proved;
+finite arithmetic uses native evaluation. The full catalog, logarithm,
+and cycle deductions are written, and Eliahou's small-period bound retains
+its external computational dependency.
 
 ## Corrections to the earlier study
 
