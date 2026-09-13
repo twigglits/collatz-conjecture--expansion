@@ -1,0 +1,119 @@
+{
+  "started_utc": "2026-09-13T01:36:52.345440+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa",
+  "environment": {
+    "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa"
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/MechanicalMaskArithmetic.lean": "951ef497de7d8e55516429199f29b13094ee66d483f8c1e42759169b59b43aef",
+    "lean/MaskSubsetDecoder.lean": "3c653a17acb2b4c4825ca75ac170fefc995f939004997ef82be93574a2c5c176",
+    "lean/MaskSubsetFinite.lean": "bf3008f9e9b97b50a8de713d9f48694e6eaf15580e4a838fda58e058f43ac6a3"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa/MechanicalMaskArithmetic.olean",
+        "lean/MechanicalMaskArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3456187499978114,
+      "log": "results/mask-decoder/MechanicalMaskArithmetic.log",
+      "log_sha256": "bd1624d1ee78b2cebaa7b5e3e8ce8cb583619d69f89e418c6f482e3269c1b125",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": false,
+      "native_evaluation_expected": false
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa/MaskSubsetDecoder.olean",
+        "lean/MaskSubsetDecoder.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3102710419916548,
+      "log": "results/mask-decoder/MaskSubsetDecoder.log",
+      "log_sha256": "eeaf5fc3ee02a24a47a688388494776ad3b2d6cf1c013fe8a4b8b7701bf37da4",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": false,
+      "native_evaluation_expected": false
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MaskSubsetFinite.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2851258339942433,
+      "log": "results/mask-decoder/MaskSubsetFinite.log",
+      "log_sha256": "af33d596e4c4ee784de09ff9b13d721517c748779c8bdf1d8e57425f83f8df2f",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": true,
+      "native_evaluation_expected": true
+    }
+  ],
+  "scope": {
+    "lean/MechanicalMaskArithmetic.lean": "Imported kernel proof of token coefficient sums, all-edited rotation, exact normal form, and divisibility equivalence. Built freshly from the recorded source.",
+    "lean/MaskSubsetDecoder.lean": "Kernel proof of decoder acceptance iff an exact subset representation exists, disjoint pair residue tests, and successful quotient scan implies nondivisibility for every mask with the specified skeleton. No native evaluation in generic theorems.",
+    "lean/MaskSubsetFinite.lean": "Native finite checks of the two explicit mechanical skeletons, exact reconstruction/counts/quotient ranges/positive denominators and all-target rejection. Separate native checks of neighboring critical powers and coprimality. Kernel extraction gives all-mask nondivisibility.",
+    "docs/ORBIT-PACKING-LOG.md": "Reviewed written theorem: uniform count at most 32768 L^sigma/sqrt(1+log L), its endpoint growth/weighted summability/cycle span consequences, and limitation of this proof method. Finite image transfers reuse prior Lean proofs; Robbins factorial inequalities, real analysis, entropy estimates, and induction assembly are not formally checked in Lean.",
+    "remaining_goal": "No positive-integer counterexample or complete Collatz proof. The finite certificates cover only the two stated skeletons. The all-period mask problem, numerical Wu-Wang H0, and faster divergent behavior remain unresolved."
+  },
+  "finite_results": [
+    {
+      "k": 193,
+      "N": 306,
+      "editable_pairs": 80,
+      "mask_count": "2^80",
+      "quotient_first": 737,
+      "quotient_last": 983,
+      "targets_checked": 247,
+      "all_masks_nonintegral": true
+    },
+    {
+      "k": 2966,
+      "N": 4701,
+      "editable_pairs": 1231,
+      "mask_count": "2^1231",
+      "quotient_first": 946661,
+      "quotient_last": 1262215,
+      "targets_checked": 315555,
+      "all_masks_nonintegral": true
+    }
+  ],
+  "external_analytic_input": {
+    "title": "Herbert Robbins, A remark on Stirling\u2019s formula, American Mathematical Monthly 62 (1955), 26\u201329",
+    "url": "https://dornsife.usc.edu/sergey-lototsky/wp-content/uploads/sites/211/2024/02/Stirling-Robbins.pdf",
+    "used_statement": "Factorial remainder satisfies 0<r_n<1/(12n); used only to obtain a uniform binomial upper bound.",
+    "scope": "External written mathematical input, not a Lean axiom."
+  },
+  "independent_review": "A read-only mathematical agent audited the full written logarithmic refinement and all constants; root independently audited decoder completeness and exclusion soundness.",
+  "build_artifact_sha256": {
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa/MaskSubsetDecoder.olean": "1ac3899eb301f13fc35a3e4e0166f5d7c1b38b7f1c6eeee894f74018aa5f2b78",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-mask-decoder-srrk60sa/MechanicalMaskArithmetic.olean": "fdcb10956b834826c1a52c6b19f99ef9c128f43f691c31b5e0c2d9b747663bb5"
+  },
+  "sources_unchanged_during_validation": true,
+  "written_arguments_sha256": {
+    "docs/ORBIT-PACKING-LOG.md": "86ec50c6c9ef8ca29c4cb85b9137c9e77b4d6b1869b64e229e67f4df6db402f0",
+    "docs/ORBIT-PACKING-BOOTSTRAP.md": "e315ded5e59f7d0cca0d74644144dbec9de4044986b95352c84666f5e83fde7a",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "4fe3646cee0dd8a3ec958f25071d3fd7c7edd5a9217562f6eface8d430805caa",
+    "ATTEMPT.md": "cb5d2967e281f9f7b83f0030c99d23b153152c32faed538dcd89b9342c38d3ae",
+    "README.md": "03654cae9191a4235aa8ee1b9dcc54941f3ba5c439246b9f3799cf9a6cf4c7d5"
+  },
+  "reused_packing_source": {
+    "source": "CollatzPacking.lean",
+    "sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "previous_record": "results/packing-bootstrap/verification.json",
+    "matches_previously_checked_source": true
+  },
+  "all_checks_passed": true,
+  "finished_utc": "2026-09-13T01:36:54.315099+00:00"
+}

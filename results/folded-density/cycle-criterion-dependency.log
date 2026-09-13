@@ -1,0 +1,7 @@
+'CollatzCycleCriterion.odd_factor_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.quotient_step' depends on axioms: [propext]
+'CollatzCycleCriterion.cyclic_numerators_realize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.rotation_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_necessity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzCycleCriterion.word_cycle_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

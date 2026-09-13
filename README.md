@@ -32,7 +32,11 @@ Performance timings are explicitly identified as empirical measurements.
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
 | `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |
+| `docs/ORBIT-PACKING-LOG.md` | Written uniform square-root-logarithm refinement and exclusion of the endpoint cumulative growth bound |
+| `docs/NO-DESCENT-BALLOT.md` | Written sharper interval count and critical-power summability for starts that never descend, using a published ballot theorem |
+| `docs/FOLDED-CYCLES.md` / `lean/FoldedCycleBounds.lean` | Written coprime-count restriction for integer cycles of odd spread below eight; kernel-checked finite order and rotation lemmas |
 | `CollatzRepetition.lean` / `STURMIAN-ATTEMPT.md` | Checked finite parity-collision criterion and written exclusions of mechanical and substitution-generated itineraries |
+| `lean/PrefixRepetition.lean` / `docs/PREFIX-REPETITION.md` | Kernel-checked growth and repeated-prefix return criterion; written exclusion of unbounded prefix squares in nonrepeating trajectories |
 | `CollatzComplexity.lean` / `COMPLEXITY-GROWTH.md` | Checked growth bound using cumulative odd counts, finite descent-or-repeat criteria, and written density/complexity restrictions |
 | `ORBIT-ESCAPE.md` / `CollatzEscapeBounds.lean` | Written inverse-power summability and running-maximum bounds; kernel-checked integer comparisons for a rational exponent |
 | `CYCLE-ATTEMPT.md` | Written cycle-minimum bounds independent of period, with the remaining ordered-divisibility gap |
@@ -44,6 +48,9 @@ Performance timings are explicitly identified as empirical measurements.
 | `docs/MECHANICAL-DISTANCE-EXCLUSION.md` / `lean/MechanicalDistanceFinite.lean` | Written exclusion through half-Hamming distance 31 from every same-count cyclic mechanical word of slope p/N, supported by exact count-pair certificates |
 | `docs/MECHANICAL-MASKS.md` / `lean/MechanicalMaskWitness.lean` | Written rational families showing limits of bounded discrepancy; checked distance-35 witness with 289 length-32 factors and failed integer divisibility |
 | `docs/MASK-CYCLE-OBSTRUCTIONS.md` / `lean/MechanicalMaskArithmetic.lean` / `lean/MaskCatalogBounds.lean` | Kernel-checked mask divisibility normal form; written eventual exclusions for two families with independently chosen edits, with an unresolved finite cutoff |
+| `lean/MaskSubsetDecoder.lean` / `lean/MaskSubsetFinite.lean` | Kernel-checked complete subset decoder; native finite certificates exclude all \(2^{80}\) and \(2^{1231}\) masks at two specified count pairs |
+| `docs/MASK-TRANSITIONS.md` / `lean/MaskTransitionBounds.lean` | Written lower bound on adjacent halving-1 occurrences in surviving long masks; kernel-checked local repairs and supporting arithmetic |
+| `docs/MASK-DENSITY.md` / `lean/MaskDensityBounds.lean` | Written empirical-entropy bound and positive densities of both good and bad blocks in surviving masks; checked finite distributions and power comparisons |
 | `lean/BoundedStandardCycle.lean` | Direct convergence certificate through one million, kernel checker soundness, and triviality of any cycle with a checked small state |
 | `CollatzCycleSeparation.lean` | Kernel-checked local replacement cancellation, numerator injectivity, and repeated-block edit exclusions |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
@@ -73,6 +80,14 @@ The later kernel packing-transfer lemmas, entropy comparisons, and native-checke
 [a separate verification record](results/packing-bootstrap/verification.json).
 The subsequent exact mask arithmetic and catalog-cutoff comparisons have
 [their own kernel verification record](results/mask-obstructions/verification.json).
+The complete subset decoder and its two all-mask certificates have
+[a later verification record](results/mask-decoder/verification.json).
+The prefix-repetition criterion and mask-transition arithmetic have
+[a kernel verification record](results/structural-restrictions/verification.json);
+their analytic applications and the no-descent ballot bound are written proofs.
+The later density and folded-order lemmas have
+[their own record](results/folded-density/verification.json), with the full
+cycle-order, entropy, and boundary-count arguments marked as written.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

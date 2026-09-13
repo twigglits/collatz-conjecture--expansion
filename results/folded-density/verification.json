@@ -1,0 +1,125 @@
+{
+  "started_utc": "2026-09-13T02:21:43.770849+00:00",
+  "finished_utc": "2026-09-13T02:21:44.733837+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9",
+    "lean/MaskDensityBounds.lean": "6c06b77cb28afda066cb23a9a5dc374f59b1849cc479c0db1f3205c9c80b7e1c",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df"
+  },
+  "written_document_sha256": {
+    "docs/MASK-DENSITY.md": "a4b2ff9185ea1415913f33845ab610430346048a9262cddd076d6185e46571ff",
+    "docs/FOLDED-CYCLES.md": "cc5e325c9da45ee303d891acd3de611dde28faaef2d8f297b233c7b2ecb55573",
+    "docs/NO-DESCENT-BALLOT.md": "4143d260c97512a898ebb3194d544c6d3be9531edec43b508aee98954a3154f7",
+    "docs/MASK-TRANSITIONS.md": "14c65f2431ecc600a5574d8d808ffd84a8e1478047ae9a8cc6abc6d9afe189d6",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "2378a92ba46f2c573b351434b0169e36dc60585076346b0b7166ddfbbf3f7160",
+    "docs/MECHANICAL-MASKS.md": "e077c908234c2ad51b0d43f5efc0ab8db587551ebf8af1a6a223dc21c759f603",
+    "docs/ORBIT-PACKING-BOOTSTRAP.md": "10b2b5871d07875296eeb8582165469406a356a71f93b298887634b8b4118365",
+    "ATTEMPT.md": "964be4f87fccc4217247533a765a99a80742a9423ad310e7381f5d3515aed9e2",
+    "README.md": "5b3a474955c1b80674b0af5d5fc7b04d9085ea8fad828ea922349bc827c13e3a"
+  },
+  "reference_source_sha256": {
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f"
+  },
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x",
+  "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x",
+  "build_artifact_sha256": {
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/CollatzCycleCriterion.olean": "24fd6ce056bf9f1f5760b822cc816f2f157896cb5b07255a77a6215d7a5f8225",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/FoldedCycleBounds.olean": "9a44fa889eb471c5066e93f2b197744cbe6cc6621eedf2c57cc0533b05f2e8a7",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/MaskDensityBounds.olean": "43ac1da2b40a18e0a4b422133eb0b98158f26711c8edc52b64004f36a6260d07",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/MaskTransitionBounds.olean": "509c26dce923d469abc1514358e10e0af084c809778ecabd9a9e881c526e55d0"
+  },
+  "commands": [
+    {
+      "name": "mask-transition-dependency",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/MaskTransitionBounds.olean",
+        "lean/MaskTransitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.20973587500338908,
+      "log": "results/folded-density/mask-transition-dependency.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "mask-density",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/MaskDensityBounds.olean",
+        "lean/MaskDensityBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1836603749979986,
+      "log": "results/folded-density/mask-density.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "cycle-criterion-dependency",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3097664579981938,
+      "log": "results/folded-density/cycle-criterion-dependency.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "folded-cycle-bounds",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-folded-density-l1x77m8x/FoldedCycleBounds.olean",
+        "lean/FoldedCycleBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2321619589929469,
+      "log": "results/folded-density/folded-cycle-bounds.log",
+      "no_warnings_or_admitted_proofs": true
+    }
+  ],
+  "sources_and_documents_unchanged_during_verification": true,
+  "scope": {
+    "kernel_checked": [
+      "Two- and three-pair good/bad distributions; integer power comparison used in generating-function estimate; exact density and cutoff arithmetic.",
+      "Invariance of odd part under scales 1,2,4; strict folded-numerator order under explicit distinct-successor hypothesis; folded range and span bounds.",
+      "Coprimality of a rank rotation that covers all ranks.",
+      "Parametric local order reversal above spread eight with exact accelerated successors and local range bounds."
+    ],
+    "written_not_fully_formalized": [
+      "All-mask empirical entropy bound and two-sided density condition N/8192<q<(2N-3k)-N/8192 for N>=max(H0,2^16384).",
+      "Normalization and sorted-rank assembly proving gcd(k,H)=1 for primitive integer odd cycles with maximum<8minimum; mechanical layer normal form and complete fixed-count test.",
+      "Near-boundary count for S_m, escape and total-visit bounds, and numerical countermodel showing limitations of the minimum inequalities."
+    ],
+    "unresolved": [
+      "No counterexample or proof of convergence for every positive integer.",
+      "Masks with sufficient empirical diversity and intermediate transition density remain possible.",
+      "Wu-Wang threshold H0 is still not numerical.",
+      "Coprime-count cycles below spread eight and arbitrary larger-spread cycles remain unresolved.",
+      "Crossing a height threshold does not establish a permanent new lower bound on an orbit."
+    ],
+    "trust": "No new module uses native_decide, admitted proofs, or custom axioms. Printed dependencies are standard propext, Quot.sound, and Classical.choice. Empirical compiler durations are not mathematical certificates."
+  },
+  "primary_dependencies": [
+    {
+      "title": "Wu and Wang, On the irrationality measure of log 3, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007"
+    },
+    {
+      "title": "Addario-Berry and Reed, Ballot theorems for random walks with finite variance, Theorem 1 upper bound",
+      "url": "https://problab.ca/louigi/papers/ballot.pdf"
+    }
+  ]
+}

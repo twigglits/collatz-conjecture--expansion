@@ -1,0 +1,11 @@
+'MaskSubsetFinite.checked_193' depends on axioms: [propext, checked_193._native.native_decide.ax_1_1]
+'MaskSubsetFinite.critical_counts' depends on axioms: [critical_counts._native.native_decide.ax_1_1]
+'MaskSubsetFinite.all_193_masks_nonintegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ checked_193._native.native_decide.ax_1_1]
+'MaskSubsetFinite.checked_2966' depends on axioms: [propext, checked_2966._native.native_decide.ax_1_1]
+'MaskSubsetFinite.all_2966_masks_nonintegral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ checked_2966._native.native_decide.ax_1_1]

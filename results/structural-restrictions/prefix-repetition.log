@@ -1,0 +1,5 @@
+'CollatzRepetition.shortcut_growth_bound' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.prefix_repetition_forces_return' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.prefix_square_forces_return' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.repeated_prefix_periodic' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.nonreturn_prefix_size' depends on axioms: [propext, Quot.sound]

@@ -187,6 +187,26 @@ The same note also proves, using the mechanical-word exclusion, that every
 nontrivial integer cycle has odd maximum greater than twice its odd minimum.
 Neither result provides a universal upper bound on growth or cycle spread.
 
+The [logarithmic refinement](docs/ORBIT-PACKING-LOG.md) retains the
+square-root binomial factor and proves the additional uniform bound
+\(32768L^\sigma/\sqrt{1+\log L}\). Its running-maximum lower bound gains
+\((\log N)^{1/(2\sigma)}\), so even \(A_k=O(k^{1/\sigma})\) forces repetition.
+This closes the endpoint left by the earlier power-only estimate.
+The full refinement is a reviewed written proof using the existing finite
+Lean transfer lemmas and Robbins's factorial inequalities.
+
+The [no-descent ballot argument](docs/NO-DESCENT-BALLOT.md) separately gives
+\(\#(E\cap[a,a+L))\le C L^\sigma/(1+\log L)^{3/2}\) for starts that never
+fall below themselves. It uses a published ballot theorem and implies
+\(\sum_{n\in E}n^{-\sigma}<\infty\). Future-tail minima of a divergent orbit
+obey the resulting count bound, but their frequency in time is unknown.
+The set E is not forward invariant, so this does not strengthen the
+all-state running-maximum bound by itself. This is a reviewed written proof.
+The same note now bounds all visits of a nonrepeating orbit to \([m,2m)\)
+when its entire tail stays above m. It forces a first crossing of 2m within
+\(O(m^\sigma/(1+\log m)^{3/2})\) steps, but crossing does not establish a
+new permanent lower floor.
+
 The [mechanical-mask construction](docs/MECHANICAL-MASKS.md) identifies a
 limitation of bounded-discrepancy arguments: exponentially many primitive
 rational cycle words have prefix error at most one and odd-state spread
@@ -207,6 +227,26 @@ These permit linearly many edits. The exclusions begin at
 threshold `H₀` has not been made numerical here, so neither is a complete
 all-length exclusion. The unrestricted `21→12` family remains open.
 
+A [further transition bound](docs/MASK-TRANSITIONS.md) proves that an integer
+primitive cycle in this unrestricted family, at
+\(N\ge\max(H_0,2^{2048})\), must contain more than \(N/(24\log_2N)\)
+cyclic halving-11 occurrences. This excludes the entire no-11 subclass and
+any family with \(o(N/\log N)\) such occurrences. Its elementary comparisons
+and local repairs are kernel checked; the uniform catalog argument is written.
+The [empirical-diversity refinement](docs/MASK-DENSITY.md) strengthens this
+to \(N/8192<q<(2N-3k)-N/8192\) for
+\(N\ge\max(H_0,2^{16384})\). It counts many windows with few marked blocks,
+and gives a finite conditional-entropy bound without an independence
+assumption. Frequent good and bad blocks remain possible.
+
+The exact subset decoder is now kernel checked in
+[MaskSubsetDecoder.lean](lean/MaskSubsetDecoder.lean). Its completeness theorem
+supports [finite all-mask certificates](lean/MaskSubsetFinite.lean) at
+\((k,N)=(193,306)\) and \((2966,4701)\), covering \(2^{80}\) and \(2^{1231}\)
+independent masks respectively. The larger certificate checks 315555 quotient
+targets and rejects them all. These fixed-count exclusions do not depend on
+the unknown \(H_0\); their finite computations explicitly use native_decide.
+
 A separate finite obstruction is checked in
 [`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
 k parity steps differ by a multiple of `2^k`. If the difference is smaller
@@ -214,6 +254,21 @@ than `2^k`, the starts are identical. The file also proves that P+1 small
 orbit states covered by a catalog of P parity words force an actual repeat.
 This is a conditional theorem; it does not supply the required catalog or
 height bound for every orbit.
+
+[PrefixRepetition.lean](lean/PrefixRepetition.lean) now combines that
+congruence with universal shortcut growth: agreement for m parity bits
+between n and \(U^\ell(n)\), together with \(3^\ell(n+1)\le2^{m+\ell}\),
+forces \(U^\ell(n)=n\). The [written consequences](docs/PREFIX-REPETITION.md)
+exclude aperiodic itineraries with arbitrarily large prefix squares, including
+an explicit word with full factor complexity. Arbitrary itineraries need not
+have those repetitions.
+
+The [folded-cycle argument](docs/FOLDED-CYCLES.md) shows that odd spread
+\(M/m<8\) forces \(\gcd(k,H)=1\). Its normalized successor ranks rotate
+mechanically, but three possible scale layers leave many actual halving
+words. The finite arithmetic, rotation-coprimality implication, and a local
+order reversal just above spread eight are kernel checked. The full cycle
+assembly and its remaining divisibility test are written.
 
 [`CollatzComplexity.lean`](CollatzComplexity.lean) adds a checked bound using
 the actual number `w_t` of odd steps. If preceding states are at least M,
@@ -367,6 +422,22 @@ lean lean/PackingExponent.lean
 lean lean/MechanicalMaskWitness.lean
 lean lean/MechanicalMaskArithmetic.lean
 lean lean/MaskCatalogBounds.lean
+lean lean/MaskTransitionBounds.lean
+# The finite prefix theorem imports the parity-collision module:
+mkdir -p /tmp/collatz-prefix-lean
+lean -o /tmp/collatz-prefix-lean/CollatzRepetition.olean CollatzRepetition.lean
+LEAN_PATH=/tmp/collatz-prefix-lean lean lean/PrefixRepetition.lean
+# Later density and folded-order modules have explicit imports:
+mkdir -p /tmp/collatz-folded-density
+lean -o /tmp/collatz-folded-density/MaskTransitionBounds.olean lean/MaskTransitionBounds.lean
+LEAN_PATH=/tmp/collatz-folded-density lean lean/MaskDensityBounds.lean
+lean -o /tmp/collatz-folded-density/CollatzCycleCriterion.olean CollatzCycleCriterion.lean
+LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleBounds.lean
+# The subset decoder imports the exact mask-arithmetic module:
+mkdir -p /tmp/collatz-mask-lean
+lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean
+LEAN_PATH=/tmp/collatz-mask-lean lean -o /tmp/collatz-mask-lean/MaskSubsetDecoder.olean lean/MaskSubsetDecoder.lean
+LEAN_PATH=/tmp/collatz-mask-lean lean lean/MaskSubsetFinite.lean
 ```
 
 The repository pins Lean 4.33.1. The current proof files and existing generated
@@ -391,6 +462,17 @@ The later exact mask arithmetic and elementary catalog-cutoff comparisons
 have a [separate kernel verification record](results/mask-obstructions/verification.json).
 The published logarithm input and its analytic/combinatorial applications
 remain written mathematical dependencies.
+The complete subset decoder and its two finite all-mask checks have
+[a fresh verification record](results/mask-decoder/verification.json), including
+the imported source and build hashes. It also records the written logarithmic
+packing refinement without claiming that its analytic proof was Lean checked.
+The prefix-repetition theorem, local mask repairs, and transition-cutoff
+arithmetic have a [new kernel verification record](results/structural-restrictions/verification.json).
+That record also identifies the three reviewed written deductions and their
+external dependencies; it does not treat their full analytic proofs as Lean checked.
+The later density comparisons and folded-order lemmas have a
+[separate kernel record](results/folded-density/verification.json), which also
+identifies the written entropy, cycle-order, and boundary-count arguments.
 
 ## Corrections to the earlier study
 

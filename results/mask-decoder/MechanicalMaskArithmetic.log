@@ -1,0 +1,5 @@
+'MechanicalMaskArithmetic.flipped_is_rotation' depends on axioms: [propext]
+'MechanicalMaskArithmetic.base_mask_balance' depends on axioms: [propext, Quot.sound]
+'MechanicalMaskArithmetic.base_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MechanicalMaskArithmetic.mask_divisibility_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MechanicalMaskArithmetic.selected_pair_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]

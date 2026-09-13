@@ -17,6 +17,11 @@ The proof uses the exact entropy expression. It strengthens the exponent
 \(\theta\approx0.96538\) in [ORBIT-ESCAPE.md](../ORBIT-ESCAPE.md), with a
 larger explicit constant.
 
+A [subsequent refinement](ORBIT-PACKING-LOG.md) retains the square-root
+binomial factor and proves the additional bound
+\(32768L^\sigma/\sqrt{1+\log L}\). Its stronger running-maximum consequence
+excludes the endpoint \(A_k=O(k^{1/\sigma})\). That analytic proof remains written.
+
 For a divergent orbit, (1) strengthens inverse-power summability and the
 necessary growth of its running maximum. These are necessary restrictions;
 they do not exclude exponential growth or prove convergence.
@@ -293,6 +298,11 @@ impossible because both extrema are odd, proving (15).
 This corollary is a written consequence of the mechanical exclusion; the
 rank-order argument has not been formalized locally. It supplies a lower
 spread bound, while excluding every cycle would require additional control.
+
+The later [folded-order theorem](FOLDED-CYCLES.md) extends the rank analysis:
+every primitive integer cycle with odd spread below eight has
+\(\gcd(k,H)=1\). It derives a three-layer mechanical normal form, while
+leaving the coprime-count divisibility problem open.
 
 ## 7. The remaining gap and verification scope
 

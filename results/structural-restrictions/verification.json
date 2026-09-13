@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-09-13T02:01:35.242050+00:00",
+  "finished_utc": "2026-09-13T02:01:35.932284+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/PrefixRepetition.lean": "dce85f3181b7ad2aac83149a7fbdc25da1a88ee4754ac7f8930ac1205b5cb238",
+    "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9"
+  },
+  "written_document_sha256": {
+    "docs/PREFIX-REPETITION.md": "d73bc32740ca17da2727f917ea491bbc6f832e255f720026f117b28fe5a6b1e2",
+    "docs/NO-DESCENT-BALLOT.md": "d4ef821861063585fc5e5e9622e524fdb72ded4aaa99cd4ad6fab29c9378f699",
+    "docs/MASK-TRANSITIONS.md": "208d005dcf39411aacab470b2022b5020fac8521e220029b3c385c37ef984eb4",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "2378a92ba46f2c573b351434b0169e36dc60585076346b0b7166ddfbbf3f7160",
+    "docs/MECHANICAL-MASKS.md": "e077c908234c2ad51b0d43f5efc0ab8db587551ebf8af1a6a223dc21c759f603",
+    "ATTEMPT.md": "fb94cec250ed6b260c92873cd7963d98cb456e4655eb67a0036e173f6d1a331f",
+    "README.md": "a03e6e9f4934a96194b6de204b9e647806aa4ae54e49370ba797316277686921"
+  },
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s",
+  "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s",
+  "build_artifact_sha256": {
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/CollatzRepetition.olean": "75bff2d2ec3961c669c1c83cda676ee6cb380435fe71efb98c5b801a6a7e6796",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/MaskTransitionBounds.olean": "509c26dce923d469abc1514358e10e0af084c809778ecabd9a9e881c526e55d0",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/PrefixRepetition.olean": "8a8249133e8d231c18ad73495bc08fa27655fa0072c1296e8a55e4fb309d0f55"
+  },
+  "commands": [
+    {
+      "name": "parity-dependency",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/CollatzRepetition.olean",
+        "CollatzRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2805157499969937,
+      "log": "results/structural-restrictions/parity-dependency.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "prefix-repetition",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/PrefixRepetition.olean",
+        "lean/PrefixRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.18289441699744202,
+      "log": "results/structural-restrictions/prefix-repetition.log",
+      "no_warnings_or_admitted_proofs": true
+    },
+    {
+      "name": "mask-transitions",
+      "command": [
+        "lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-structural-rj76zd8s/MaskTransitionBounds.olean",
+        "lean/MaskTransitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.20174262500950135,
+      "log": "results/structural-restrictions/mask-transitions.log",
+      "no_warnings_or_admitted_proofs": true
+    }
+  ],
+  "source_and_document_hashes_unchanged_during_check": true,
+  "scope": {
+    "kernel_checked": [
+      "Existing finite parity-congruence and collision lemmas, rebuilt as the imported dependency.",
+      "Universal shortcut growth inequality; finite prefix-repetition return criterion and exact nonreturn inequality; return implies periodicity.",
+      "Elementary slope, entropy and cutoff integer comparisons; all two- and three-pair local repairs with exact encoded Hamming distance."
+    ],
+    "written_not_fully_formalized": [
+      "Unbounded prefix-square and fractional-repetition exclusions; full-complexity symbolic example and morphic sufficient condition.",
+      "Uniform no-descent count C L^sigma/(1+log L)^(3/2), critical-power summability, and future-minimum count consequences, using Addario-Berry and Reed Theorem 1.",
+      "Mechanical block decomposition, uniform no-halving-11 mask catalog, global repair/collision argument, and q>N/(24 log2 N) for N>=max(H0,2^2048), using the prior Wu-Wang height bound."
+    ],
+    "unresolved": [
+      "No counterexample or proof for all positive integers.",
+      "No universal repetition property or quantitative frequency of future minima.",
+      "Wu-Wang threshold H0 remains nonnumerical; unrestricted masks with many transitions and other cycle words are not excluded."
+    ],
+    "trust": "New modules contain no native_decide or admitted proof. Printed dependencies are at most propext and Quot.sound; existing dependency catalog lemmas also use Classical.choice. Timings are empirical build durations."
+  },
+  "primary_sources": [
+    {
+      "title": "Addario-Berry and Reed, Ballot theorems for random walks with finite variance, Theorem 1 upper bound",
+      "url": "https://problab.ca/louigi/papers/ballot.pdf"
+    },
+    {
+      "title": "Wu and Wang, On the irrationality measure of log 3, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007"
+    }
+  ]
+}

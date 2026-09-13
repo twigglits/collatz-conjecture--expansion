@@ -15,7 +15,14 @@ complete all-length exclusions or a proof of the Collatz conjecture.
 A separate exact normal form for the unrestricted \(21\to12\) family is now
 kernel checked in [MechanicalMaskArithmetic.lean](../lean/MechanicalMaskArithmetic.lean).
 It reduces divisibility to a bounded list of uniquely decodable subset-sum
-targets. It does not show that every target fails.
+targets. The decoder is now kernel checked, and finite certificates reject
+every mask at two specified count pairs. The unrestricted all-period
+problem remains unresolved.
+
+The later [transition argument](MASK-TRANSITIONS.md) also excludes every
+sufficiently long mask without adjacent halving ones. More generally it
+forces more than \(N/(24\log_2N)\) such adjacencies in any surviving integer
+primitive mask cycle, for \(N\ge\max(H_0,2^{2048})\).
 
 ## 1. A logarithm bound and the resulting height limit
 
@@ -280,19 +287,55 @@ Each target has at most one representing mask:
 If a representation exists, this procedure recovers it by induction.
 Conversely, a zero final residual exhibits that representation. The argument
 uses ordinary integer subset sums, not an unsupported assertion of uniqueness
-modulo \(D\). It is a written exhaustive reduction; no all-mask target sweep or
-Lean proof of this decoding algorithm is claimed here.
+modulo \(D\).
+
+[MaskSubsetDecoder.lean](../lean/MaskSubsetDecoder.lean) now proves completeness
+of a token-based implementation. At a single 2 token, the target must be four
+times the remaining target. At a pair token, it must be either eight times
+the remainder or \(2\cdot3^{\text{tail length}}\) plus eight times it.
+The two pair residues are disjoint modulo eight. Positivity and divisibility
+checks prevent truncated subtraction from accepting an invalid target.
+The theorem decode_iff proves acceptance exactly when a mask with that
+skeleton represents the target; excludes_sound turns a complete target scan
+into nondivisibility for every such mask.
+
+[MaskSubsetFinite.lean](../lean/MaskSubsetFinite.lean) supplies two certificates:
+
+| Odd count \(k\) | Shortcut count \(N\) | Independent pair choices | Masks covered | Scanned \(t\) interval | Targets checked |
+|---:|---:|---:|---:|---:|---:|
+| 193 | 306 | 80 | \(2^{80}\) | 737–983 | 247 |
+| 2966 | 4701 | 1231 | \(2^{1231}\) | 946661–1262215 | 315555 |
+
+Each scan includes one harmless extra target from rounding the lower endpoint
+down. Lean checks the exact mechanical word reconstruction, the counts, both
+neighboring powers bracketing \(3^k\), coprimality, the positive denominator,
+and rejection of every target. The resulting theorems quantify every token
+mask with the specified skeleton. Finite replay uses native_decide; decoder
+completeness and the implication to all masks are kernel proved.
+These finite exclusions use no logarithm theorem or unknown \(H_0\).
+They do not assert convergence of every integer in the scanned numerical
+intervals, or exclude masks at other count pairs.
 
 For a mechanical base rotation, \(W_0/D<2k/(3\lambda)\). Hence
 \(C/D<k/(6\lambda)\), and after \(H_0\) the number of targets is
 \(O(N^{26/5})\). This is polynomial in the period, but can still be enormous.
 Neither the reduction nor the bound proves that every target fails.
 
-The logarithm theorem, factor catalog estimates, height bounds, decoding
-argument, and eventual exclusions remain written proofs.
+The logarithm theorem, factor catalog estimates, height bounds, and eventual
+exclusions remain written proofs. The subset decoder and the two finite
+all-mask exclusions have the formal scope stated above.
 [MaskCatalogBounds.lean](../lean/MaskCatalogBounds.lean) checks only their
 elementary supporting integer comparisons. The source theorem's effective
 \(H_0\) must still be made numerical before (9) or (13) can be combined with
-a complete finite verification.
-[Verification logs and hashes](../results/mask-obstructions/verification.json)
-distinguish these scopes.
+a complete finite verification. The indexed primary proof uses asymptotic
+integral and least-common-multiple estimates; quantitative remainder bounds
+and a numerical starting index have not been extracted here.
+
+The [earlier verification record](../results/mask-obstructions/verification.json)
+covers the normal form and cutoff arithmetic. The
+[decoder verification record](../results/mask-decoder/verification.json)
+covers the generic completeness proof, both finite families, and their exact
+source and build inputs.
+
+The further no-adjacent-ones catalog, local repairs, and resulting necessary
+transition count are detailed in [MASK-TRANSITIONS.md](MASK-TRANSITIONS.md).

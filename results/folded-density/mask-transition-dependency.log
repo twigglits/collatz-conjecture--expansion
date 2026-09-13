@@ -1,0 +1,4 @@
+'MaskTransitionBounds.slope_and_entropy_inputs' does not depend on any axioms
+'MaskTransitionBounds.large_period_cutoff' does not depend on any axioms
+'MaskTransitionBounds.two_pair_repair' depends on axioms: [propext]
+'MaskTransitionBounds.three_pair_repair' depends on axioms: [propext]
