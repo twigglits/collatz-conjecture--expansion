@@ -1,8 +1,11 @@
 /-
-  Finite ingredients of the orbit-packing argument in APERIODIC-ATTEMPT.md.
+  Finite orbit packing and transfer of uniform ambient-set bounds.
   Standalone Lean 4: no Mathlib, admitted proofs, or native evaluation.
   U/orbit/wt are the ordinary Collatz shortcut definitions used in CollatzAffine.
-  This file does not prove reciprocal summability or the Collatz conjecture.
+  Fixed-weight images inherit any established uniform packing bound. The
+  general transfer also applies to forward-invariant sets on which U is
+  injective; no infinitude assumption is needed. Analytic exponent estimates,
+  reciprocal summability, and the Collatz conjecture are not proved here.
   Check: lean CollatzPacking.lean
 -/
 namespace CollatzPacking
@@ -208,5 +211,143 @@ theorem fixed_weight_packing (n k q j : Nat) (times : List Nat)
 #print axioms fixed_iterate_injective
 #print axioms finite_image_packing
 #print axioms fixed_weight_packing
+
+/-- An ambient set has at most F(X) distinct members in every half-open
+    integer interval of length X. Quantifying over finite lists avoids any
+    assumption that the full ambient set is finite or decidable. -/
+def UniformPacking (O : Nat → Prop) (F : Nat → Nat) : Prop :=
+  ∀ a X (xs : List Nat), xs.Nodup →
+    (∀ x ∈ xs, O x ∧ a ≤ x ∧ x < a + X) → xs.length ≤ F X
+
+/-- A finite injective image inherits any valid ambient packing bound. -/
+theorem image_packing_transfer (O : Nat → Prop) (F : Nat → Nat)
+    (xs : List Nat) (f : Nat → Nat) (a X : Nat)
+    (hpack : UniformPacking O F) (hd : xs.Nodup)
+    (hi : ∀ x ∈ xs, ∀ y ∈ xs, f x = f y → x = y)
+    (hb : ∀ x ∈ xs, O (f x) ∧ a ≤ f x ∧ f x < a + X) :
+    xs.length ≤ F X := by
+  have hmap : (xs.map f).Nodup := by
+    apply List.pairwise_map.mpr
+    exact List.Pairwise.imp_of_mem (fun hx hy hne he => hne (hi _ hx _ hy he)) hd
+  have hsub : ∀ y ∈ xs.map f, O y ∧ a ≤ y ∧ y < a + X := by
+    intro y hy
+    obtain ⟨x, hx, rfl⟩ := List.mem_map.mp hy
+    exact hb x hx
+  simpa only [List.length_map] using hpack a X (xs.map f) hmap hsub
+
+/-- The image interval has length exactly 3^j. Natural subtraction only
+    extracts the nonnegative offset within the given aligned source block. -/
+theorem fixed_weight_image_interval (k q j x : Nat)
+    (hblock : 2 ^ k * q ≤ x ∧ x < 2 ^ k * q + 2 ^ k)
+    (hweight : wt k (x - 2 ^ k * q) = j) :
+    3 ^ j * q ≤ orbit k x ∧ orbit k x < 3 ^ j * q + 3 ^ j := by
+  have he : x = 2 ^ k * q + (x - 2 ^ k * q) := by omega
+  have htranslate : orbit k x = 3 ^ j * q + orbit k (x - 2 ^ k * q) := by
+    calc
+      orbit k x = orbit k (2 ^ k * q + (x - 2 ^ k * q)) := congrArg (orbit k) he
+      _ = 3 ^ j * q + orbit k (x - 2 ^ k * q) := by rw [affine, hweight]
+  have hr : x - 2 ^ k * q < 2 ^ k := by omega
+  have hb := residue_image_bound k (x - 2 ^ k * q) hr
+  rw [hweight] at hb
+  omega
+
+/-- Fixed-weight subsets inherit F(3^j) from their ambient image set,
+    replacing the earlier trivial bound 3^j by any established packing bound. -/
+theorem fixed_weight_ambient_packing (O : Nat → Prop) (F : Nat → Nat)
+    (k q j : Nat) (xs : List Nat)
+    (hpack : UniformPacking O F) (hd : xs.Nodup)
+    (hi : ∀ x ∈ xs, ∀ y ∈ xs, orbit k x = orbit k y → x = y)
+    (himage : ∀ x ∈ xs, O (orbit k x))
+    (hblock : ∀ x ∈ xs, 2 ^ k * q ≤ x ∧ x < 2 ^ k * q + 2 ^ k)
+    (hweight : ∀ x ∈ xs, wt k (x - 2 ^ k * q) = j) :
+    xs.length ≤ F (3 ^ j) := by
+  apply image_packing_transfer O F xs (orbit k) (3 ^ j * q) (3 ^ j) hpack hd hi
+  intro x hx
+  exact ⟨himage x hx, fixed_weight_image_interval k q j x (hblock x hx) (hweight x hx)⟩
+
+/-- Local version for strong induction on interval length: only the packing
+    bound at the shorter image length 3^j is assumed, not a bound at all sizes. -/
+theorem fixed_weight_local_packing (O : Nat → Prop) (k q j M : Nat) (xs : List Nat)
+    (hpack : ∀ a (ys : List Nat), ys.Nodup →
+      (∀ y ∈ ys, O y ∧ a ≤ y ∧ y < a + 3 ^ j) → ys.length ≤ M)
+    (hd : xs.Nodup)
+    (hi : ∀ x ∈ xs, ∀ y ∈ xs, orbit k x = orbit k y → x = y)
+    (himage : ∀ x ∈ xs, O (orbit k x))
+    (hblock : ∀ x ∈ xs, 2 ^ k * q ≤ x ∧ x < 2 ^ k * q + 2 ^ k)
+    (hweight : ∀ x ∈ xs, wt k (x - 2 ^ k * q) = j) : xs.length ≤ M := by
+  have hmap : (xs.map (orbit k)).Nodup := by
+    apply List.pairwise_map.mpr
+    exact List.Pairwise.imp_of_mem (fun hx hy hne he => hne (hi _ hx _ hy he)) hd
+  have hs : ∀ y ∈ xs.map (orbit k),
+      O y ∧ 3 ^ j * q ≤ y ∧ y < 3 ^ j * q + 3 ^ j := by
+    intro y hy
+    obtain ⟨x, hx, rfl⟩ := List.mem_map.mp hy
+    exact ⟨himage x hx, fixed_weight_image_interval k q j x (hblock x hx) (hweight x hx)⟩
+  simpa only [List.length_map] using hpack (3 ^ j * q) (xs.map (orbit k)) hmap hs
+
+/-- On a nonrepeating orbit, forward invariance and injectivity are automatic.
+    The only new hypothesis is its already-established uniform packing bound. -/
+theorem fixed_weight_orbit_packing_transfer (n k q j : Nat) (times : List Nat)
+    (F : Nat → Nat)
+    (hinj : Function.Injective (fun t => orbit t n))
+    (hpack : UniformPacking (fun x => ∃ t, x = orbit t n) F)
+    (hd : times.Nodup)
+    (hblock : ∀ t ∈ times,
+      2 ^ k * q ≤ orbit t n ∧ orbit t n < 2 ^ k * q + 2 ^ k)
+    (hweight : ∀ t ∈ times, wt k (orbit t n - 2 ^ k * q) = j) :
+    times.length ≤ F (3 ^ j) := by
+  apply image_packing_transfer (fun x => ∃ t, x = orbit t n) F times
+    (fun t => orbit k (orbit t n)) (3 ^ j * q) (3 ^ j) hpack hd
+  · intro s _ t _ he
+    exact fixed_iterate_injective n k hinj he
+  · intro t ht
+    refine ⟨⟨k + t, (orbit_add k t n).symm⟩, ?_⟩
+    exact fixed_weight_image_interval k q j (orbit t n) (hblock t ht) (hweight t ht)
+
+#print axioms image_packing_transfer
+#print axioms fixed_weight_image_interval
+#print axioms fixed_weight_ambient_packing
+#print axioms fixed_weight_local_packing
+#print axioms fixed_weight_orbit_packing_transfer
+
+/-- Forward closure under one shortcut step extends to every fixed iterate. -/
+theorem orbit_mem_of_forward_closed (S : Nat → Prop)
+    (hclosed : ∀ x, S x → S (U x)) :
+    ∀ k x, S x → S (orbit k x)
+  | 0, _, hx => hx
+  | k + 1, x, hx =>
+    orbit_mem_of_forward_closed S hclosed k (U x) (hclosed x hx)
+
+/-- Injectivity on a forward-invariant ambient set extends to all iterates. -/
+theorem orbit_injective_on_forward_closed (S : Nat → Prop)
+    (hclosed : ∀ x, S x → S (U x))
+    (hinj : ∀ x y, S x → S y → U x = U y → x = y) :
+    ∀ k x y, S x → S y → orbit k x = orbit k y → x = y
+  | 0, _, _, _, _, he => he
+  | k + 1, x, y, hx, hy, he =>
+    hinj x y hx hy (orbit_injective_on_forward_closed S hclosed hinj
+      k (U x) (U y) (hclosed x hx) (hclosed y hy) he)
+
+/-- The transfer applies to any forward-invariant ambient set on which U is
+    injective, including cycles as well as a nonrepeating orbit. No infinitude
+    assumption on S is needed. The analytic choice of F remains separate. -/
+theorem fixed_weight_forward_invariant_packing (S : Nat → Prop) (F : Nat → Nat)
+    (k q j : Nat) (xs : List Nat)
+    (hclosed : ∀ x, S x → S (U x))
+    (hinj : ∀ x y, S x → S y → U x = U y → x = y)
+    (hpack : UniformPacking S F) (hd : xs.Nodup)
+    (hsource : ∀ x ∈ xs, S x)
+    (hblock : ∀ x ∈ xs, 2 ^ k * q ≤ x ∧ x < 2 ^ k * q + 2 ^ k)
+    (hweight : ∀ x ∈ xs, wt k (x - 2 ^ k * q) = j) :
+    xs.length ≤ F (3 ^ j) := by
+  exact fixed_weight_ambient_packing S F k q j xs hpack hd
+    (fun x hx y hy he => orbit_injective_on_forward_closed S hclosed hinj
+      k x y (hsource x hx) (hsource y hy) he)
+    (fun x hx => orbit_mem_of_forward_closed S hclosed k x (hsource x hx))
+    hblock hweight
+
+#print axioms orbit_mem_of_forward_closed
+#print axioms orbit_injective_on_forward_closed
+#print axioms fixed_weight_forward_invariant_packing
 
 end CollatzPacking

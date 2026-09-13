@@ -1,0 +1,67 @@
+{
+  "started_utc": "2026-09-13T01:02:53.894857+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/PackingExponent.lean": "0a5bed7dfc38cc8403a7834d0a1be8e1f30827f5ccd1e6c8c37f1a26a9a89d25",
+    "lean/MechanicalMaskWitness.lean": "90a6151cc517efb6aa7db9cd8932455930d6f3b89f59068f97b582f357bbc1fb"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "CollatzPacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3289033329929225,
+      "log": "results/packing-bootstrap/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "warnings": 0,
+      "admitted_proof_detected": false
+    },
+    {
+      "command": [
+        "lean",
+        "lean/PackingExponent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14054579100047704,
+      "log": "results/packing-bootstrap/PackingExponent.log",
+      "log_sha256": "8ab39f7dc38b2afbb68d385076d8baa49deae05edcc85e7c730b9e1b05271410",
+      "warnings": 0,
+      "admitted_proof_detected": false
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MechanicalMaskWitness.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2442624590039486,
+      "log": "results/packing-bootstrap/MechanicalMaskWitness.log",
+      "log_sha256": "400e207c9515f1a454b159a3cddb2f6be7f09a3bba09958f78ba948bd2953edc",
+      "warnings": 0,
+      "admitted_proof_detected": false
+    }
+  ],
+  "scope": {
+    "CollatzPacking.lean": "Kernel proofs of finite residue image bounds and transfer of interval packing for forward-invariant sets with injective shortcut map. No native_decide.",
+    "lean/PackingExponent.lean": "Kernel evaluation of exact integer inequalities supporting the written entropy estimates. No formal real logarithms or entropy.",
+    "lean/MechanicalMaskWitness.lean": "Native finite checks of the explicit 193-odd-step, 306-bit rational candidate, its distance, factor catalog, prefix band, and nondivisibility. Kernel extraction and two elementary family inequalities.",
+    "written_arguments": "The endpoint exponent, strong-induction assembly, real analysis, odd-cycle spread argument, general mask families, counting estimates, and modular reduction remain written proofs, not complete Lean formalizations. No counterexample or complete Collatz proof is claimed."
+  },
+  "sources_unchanged_during_validation": true,
+  "written_arguments_sha256": {
+    "docs/ORBIT-PACKING-BOOTSTRAP.md": "af40041bf9c03f42ead3f01d3d579010b244d18ca91abd81756377b03fe8af4d",
+    "docs/MECHANICAL-MASKS.md": "f1692916f9ab5ac270dddb7dca09d380bc31d34144af357728d2c3735aab3dc7",
+    "ATTEMPT.md": "ec5d04add1445a318634e8e40871ef5a7efcfb7b3adf3b793f41dd5434f8ca6a",
+    "README.md": "1710a7749beded9c7ae1e111b18a95aa0b738206ba5c70b10dc3853f2869b79c",
+    "ORBIT-ESCAPE.md": "52a78d9a1e168793239c602de329358f4c3aa517537ab5ec9437617b260b8338",
+    "APERIODIC-ATTEMPT.md": "b62418520b6d3722547b4452d6fd03b1cf7bfcc77c3f7baaf65407dd99f646b5",
+    "CYCLE-ATTEMPT.md": "a15c99bca4ab8a344d28ebe42a359accff0d2b9133a9783d3676392f475c1c25"
+  },
+  "all_checks_passed": true,
+  "finished_utc": "2026-09-13T01:02:54.634487+00:00"
+}

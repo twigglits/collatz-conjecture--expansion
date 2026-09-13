@@ -31,6 +31,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `CollatzGrowth.lean` | Kernel-checked arbitrarily long initial growth and obstruction to a uniform finite descent horizon |
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
+| `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |
 | `CollatzRepetition.lean` / `STURMIAN-ATTEMPT.md` | Checked finite parity-collision criterion and written exclusions of mechanical and substitution-generated itineraries |
 | `CollatzComplexity.lean` / `COMPLEXITY-GROWTH.md` | Checked growth bound using cumulative odd counts, finite descent-or-repeat criteria, and written density/complexity restrictions |
 | `ORBIT-ESCAPE.md` / `CollatzEscapeBounds.lean` | Written inverse-power summability and running-maximum bounds; kernel-checked integer comparisons for a rational exponent |
@@ -41,6 +42,8 @@ Performance timings are explicitly identified as empirical measurements.
 | `CollatzCycleExtrema.lean` / `CYCLE-EXTREMA.md` | Checked prefix-rotation lemma and written sharp cycle-minimum extrema with explicit rational candidates |
 | `docs/MECHANICAL-SWAP-EXCLUSION.md` / `lean/MechanicalDefectFinite.lean` / `lean/MechanicalLogBracket.lean` | Written exclusion of every single adjacent swap of a mechanical cycle word, supported by checked finite word and rational arithmetic; necessary distance bounds for arbitrary primitive cycles |
 | `docs/MECHANICAL-DISTANCE-EXCLUSION.md` / `lean/MechanicalDistanceFinite.lean` | Written exclusion through half-Hamming distance 31 from every same-count cyclic mechanical word of slope p/N, supported by exact count-pair certificates |
+| `docs/MECHANICAL-MASKS.md` / `lean/MechanicalMaskWitness.lean` | Written rational families showing limits of bounded discrepancy; checked distance-35 witness with 289 length-32 factors and failed integer divisibility |
+| `docs/MASK-CYCLE-OBSTRUCTIONS.md` / `lean/MechanicalMaskArithmetic.lean` / `lean/MaskCatalogBounds.lean` | Kernel-checked mask divisibility normal form; written eventual exclusions for two families with independently chosen edits, with an unresolved finite cutoff |
 | `lean/BoundedStandardCycle.lean` | Direct convergence certificate through one million, kernel checker soundness, and triviality of any cycle with a checked small state |
 | `CollatzCycleSeparation.lean` | Kernel-checked local replacement cancellation, numerator injectivity, and repeated-block edit exclusions |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
@@ -66,6 +69,10 @@ Later range lemmas and finite mechanical-word certificates have
 The stronger distance result and direct convergence check have
 [a newer verification record](results/mechanical-distance/verification.json),
 including the expanded rational-bracket file.
+The later kernel packing-transfer lemmas, entropy comparisons, and native-checked mechanical-mask witness have
+[a separate verification record](results/packing-bootstrap/verification.json).
+The subsequent exact mask arithmetic and catalog-cutoff comparisons have
+[their own kernel verification record](results/mask-obstructions/verification.json).
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

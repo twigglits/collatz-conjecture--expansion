@@ -1,0 +1,76 @@
+{
+  "started_utc": "2026-09-13T01:20:14.400528+00:00",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "compiler_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/MechanicalMaskArithmetic.lean": "951ef497de7d8e55516429199f29b13094ee66d483f8c1e42759169b59b43aef",
+    "lean/MaskCatalogBounds.lean": "cbe5661062e88d7b90931bdc0fdf368765153a46ba0024bcf854efe21c23f537",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "lean/MechanicalMaskArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.32628270899294876,
+      "log": "results/mask-obstructions/MechanicalMaskArithmetic.log",
+      "log_sha256": "bd1624d1ee78b2cebaa7b5e3e8ce8cb583619d69f89e418c6f482e3269c1b125",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": false
+    },
+    {
+      "command": [
+        "lean",
+        "lean/MaskCatalogBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14520958300272468,
+      "log": "results/mask-obstructions/MaskCatalogBounds.log",
+      "log_sha256": "91cafcb4c2ac2d46e42d845f10a3b04eaef28e4c9ed04ea905b5ec427842eda8",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": false
+    },
+    {
+      "command": [
+        "lean",
+        "CollatzRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2638765000010608,
+      "log": "results/mask-obstructions/CollatzRepetition.log",
+      "log_sha256": "b8040f5431a851ade00f47f6116717bad8db19ac4c053c8d3bcc2fd94ec515b6",
+      "warnings": 0,
+      "admitted_proof_detected": false,
+      "native_axiom_detected": false
+    }
+  ],
+  "scope": {
+    "lean/MechanicalMaskArithmetic.lean": "Kernel proofs for arbitrary single-2 and 21-pair token words: all-edited rotation, coefficient sums, bounds, and exact mask divisibility normal form. No mechanical classification, logarithms, or cycle-realization bridge asserted.",
+    "lean/MaskCatalogBounds.lean": "Kernel evaluation of supporting integer power and rational comparisons only.",
+    "CollatzRepetition.lean": "Unchanged kernel parity-congruence/collision and finite catalog-cardinality lemmas reused by the written argument.",
+    "written_arguments": "The external logarithm theorem, uniform catalog estimates, height estimates, target-decoding completeness, and eventual family exclusions remain written proofs. The two eventual exclusions apply only after max(H0,2^40) and max(H0,2^192), respectively. H0 is effective in the source but has not been made numerical here; the finite range and unrestricted 21-to-12 family remain unresolved."
+  },
+  "external_input": {
+    "title": "Wu and Wang, On the irrationality measure of log 3, J. Number Theory 142 (2014), Theorem 1",
+    "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+    "checked_content": "Publisher-indexed introduction and Theorem 1: effective lower bound for the full linear form p + q1 log 2 + q2 log 3, exponent 4.1163051 + epsilon.",
+    "epsilon": "0.0836949",
+    "resulting_exponent": "21/5",
+    "numerical_H0_obtained": false
+  },
+  "independent_review": "Two read-only mathematical agents audited the written bounds, endpoints, primitive-period assumption, normal form, and decoding argument; no unresolved correctness issue was found. This review is not a formal proof.",
+  "sources_unchanged_during_validation": true,
+  "written_arguments_sha256": {
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "d4a6bcdd212729b771812a7be7e9d754f8ea36365aee1ebd695ed1584113cec8",
+    "docs/MECHANICAL-MASKS.md": "e077c908234c2ad51b0d43f5efc0ab8db587551ebf8af1a6a223dc21c759f603",
+    "ATTEMPT.md": "a45a5e8d687d8eaa3b4e54922af5248e11a6bc12ad34433f16406e1fd64b8bd8",
+    "README.md": "e526753bf2973bd8105a3eeb6d157d164e987687c1eb7151808d83e4cdb96fed"
+  },
+  "all_checks_passed": true,
+  "finished_utc": "2026-09-13T01:20:15.162204+00:00"
+}

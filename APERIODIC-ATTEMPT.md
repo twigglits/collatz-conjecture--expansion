@@ -13,6 +13,9 @@ checks the sharper finite image bound and fixed-weight packing step; the
 summability and real-limit arguments here remain written proofs.
 [`ORBIT-ESCAPE.md`](ORBIT-ESCAPE.md) optimizes the counting threshold and
 derives inverse-power summability and stronger running-maximum restrictions.
+The later [recursive packing argument](docs/ORBIT-PACKING-BOOTSTRAP.md)
+sharpens the exponent further for arbitrary nonrepeating orbits; its finite
+image-transfer lemmas are kernel checked in CollatzPacking.lean.
 
 For the accelerated positive odd orbit write
 

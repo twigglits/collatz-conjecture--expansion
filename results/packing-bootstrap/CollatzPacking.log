@@ -1,0 +1,14 @@
+'CollatzPacking.scaled_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.block_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.residue_image_bound' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.fixed_iterate_injective' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.finite_image_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fixed_weight_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.image_packing_transfer' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.fixed_weight_image_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fixed_weight_ambient_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fixed_weight_local_packing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fixed_weight_orbit_packing_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.orbit_mem_of_forward_closed' does not depend on any axioms
+'CollatzPacking.orbit_injective_on_forward_closed' does not depend on any axioms
+'CollatzPacking.fixed_weight_forward_invariant_packing' depends on axioms: [propext, Classical.choice, Quot.sound]

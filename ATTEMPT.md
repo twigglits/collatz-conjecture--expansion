@@ -175,6 +175,38 @@ exponent 31/32 suffices for a weaker version; its two integer comparisons
 are kernel-checked in [`CollatzEscapeBounds.lean`](CollatzEscapeBounds.lean),
 while the full counting and analytic proof remains written.
 
+The [recursive packing proof](docs/ORBIT-PACKING-BOOTSTRAP.md) now improves
+this to `#(S ∩ [a,a+L)) ≤ 128 L^σ` for integer intervals, with
+`σ=H₂(log₃2)≈0.94996`. It applies to arbitrary forward-invariant sets where
+the shortcut map is injective, including every nonrepeating orbit and every
+cycle. Its running-maximum exponent is `1/σ≈1.05268`; in particular,
+`A_k=O(k^(20/19))` forces eventual repetition. The new finite image-transfer
+lemmas and rational-exponent comparisons are kernel checked. Entropy,
+strong-induction assembly, and the limit consequences remain written.
+The same note also proves, using the mechanical-word exclusion, that every
+nontrivial integer cycle has odd maximum greater than twice its odd minimum.
+Neither result provides a universal upper bound on growth or cycle spread.
+
+The [mechanical-mask construction](docs/MECHANICAL-MASKS.md) identifies a
+limitation of bounded-discrepancy arguments: exponentially many primitive
+rational cycle words have prefix error at most one and odd-state spread
+below eight, while some have linear distance from every mechanical word
+and large factor catalogs. A concrete Lean witness has nearest half-Hamming
+distance 35 and 289 distinct length-32 factors. Its numerator is not divisible
+by its denominator, so it is not an integer counterexample. The general
+family leaves an explicit modular subset-sum condition unresolved.
+
+The [mask obstruction analysis](docs/MASK-CYCLE-OBSTRUCTIONS.md) now proves
+the exact normal form `D | (4C-X)` in Lean, including the coefficient
+construction and all-edited rotation identity. A written combination of
+Wu–Wang's effective logarithm theorem and parity catalogs excludes every
+sufficiently long primitive cycle in the independent `22→13` mask family
+and in the family allowing `21→12` edits at alternating eligible positions.
+These permit linearly many edits. The exclusions begin at
+`max(H₀, 2^40)` and `max(H₀, 2^192)` respectively; the source's effective
+threshold `H₀` has not been made numerical here, so neither is a complete
+all-length exclusion. The unrestricted `21→12` family remains open.
+
 A separate finite obstruction is checked in
 [`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
 k parity steps differ by a multiple of `2^k`. If the difference is smaller
@@ -331,6 +363,10 @@ lean lean/MechanicalDefectFinite.lean
 lean lean/MechanicalLogBracket.lean
 lean lean/MechanicalDistanceFinite.lean
 lean lean/BoundedStandardCycle.lean
+lean lean/PackingExponent.lean
+lean lean/MechanicalMaskWitness.lean
+lean lean/MechanicalMaskArithmetic.lean
+lean lean/MaskCatalogBounds.lean
 ```
 
 The repository pins Lean 4.33.1. The current proof files and existing generated
@@ -347,6 +383,14 @@ Those two finite files explicitly use native_decide; their analytic and
 combinatorial applications are written proofs, not complete local formalizations.
 The stronger distance exclusion, expanded rational bracket, and direct
 one-million convergence check have a [current verification record](results/mechanical-distance/verification.json).
+The later packing-transfer lemmas and entropy comparisons have
+[their own record](results/packing-bootstrap/verification.json); these use
+kernel proofs without native evaluation. The same record includes the
+concrete mechanical-mask witness, whose finite computations use native_decide.
+The later exact mask arithmetic and elementary catalog-cutoff comparisons
+have a [separate kernel verification record](results/mask-obstructions/verification.json).
+The published logarithm input and its analytic/combinatorial applications
+remain written mathematical dependencies.
 
 ## Corrections to the earlier study
 

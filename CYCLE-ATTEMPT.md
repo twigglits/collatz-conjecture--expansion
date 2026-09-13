@@ -1,5 +1,11 @@
 # Cycle minima and reciprocal packing
 
+**Follow-up:** the [recursive packing argument](docs/ORBIT-PACKING-BOOTSTRAP.md)
+improves the exponent of the minimum bound below to H₂(log₃2)−1 and gives
+a diameter bound for cycles of arbitrary parity complexity. Its separate
+rank-order argument also forces the odd maximum of a nontrivial integer
+cycle to exceed twice its odd minimum. These remain necessary restrictions.
+
 Every positive primitive Collatz cycle obeys a reciprocal bound depending only
 on its minimum, independently of its period. Combining that bound with the
 cycle product identity gives the restriction (12) below. This strengthens the

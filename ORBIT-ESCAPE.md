@@ -1,5 +1,11 @@
 # Quantitative escape required of a divergent orbit
 
+**Follow-up:** [ORBIT-PACKING-BOOTSTRAP.md](docs/ORBIT-PACKING-BOOTSTRAP.md)
+reuses the interval bound on the image set and proves the stronger exponent
+H₂(log₃2), approximately 0.94996, with constant 128 for integer intervals.
+It strengthens the summability and running-maximum conclusions below without
+assuming a simple parity pattern. The real-analysis assembly remains written.
+
 This note strengthens the running-maximum and summability restrictions in
 [`APERIODIC-ATTEMPT.md`](APERIODIC-ATTEMPT.md). It does not exclude every
 divergent trajectory or establish cycle uniqueness. The general counting,

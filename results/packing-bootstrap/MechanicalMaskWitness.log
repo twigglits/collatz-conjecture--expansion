@@ -1,0 +1,17 @@
+'MechanicalMaskWitness.critical_counts' depends on axioms: [critical_counts._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.mask_family_arithmetic' does not depend on any axioms
+'MechanicalMaskWitness.selected_valid' depends on axioms: [selected_valid._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.word_counts' depends on axioms: [word_counts._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.every_phase_matches' depends on axioms: [propext,
+ Quot.sound,
+ matching_phase_check._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.every_phase_far' depends on axioms: [propext,
+ Quot.sound,
+ all_phase_check._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.attaining_rotation' depends on axioms: [attaining_rotation._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.factor_count_32' depends on axioms: [factor_count_32._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.prefix_band' depends on axioms: [propext, Quot.sound, band_check._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.band_is_exact' depends on axioms: [band_is_exact._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.denominator_positive' depends on axioms: [denominator_positive._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.numerator_positive' depends on axioms: [numerator_positive._native.native_decide.ax_1_1]
+'MechanicalMaskWitness.not_integral' depends on axioms: [propext, numerator_remainder._native.native_decide.ax_1_1]
