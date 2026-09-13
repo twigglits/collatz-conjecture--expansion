@@ -330,6 +330,13 @@ For a mechanical base rotation, \(W_0/D<2k/(3\lambda)\). Hence
 \(O(N^{26/5})\). This is polynomial in the period, but can still be enormous.
 Neither the reduction nor the bound proves that every target fails.
 
+The later [local-lift theorem](CYCLE-LOCAL-LIFTS.md) shows that every one
+of these positive-denominator words has exact residue-cycle witnesses
+modulo every \(2^a3^b\). That statement, including the actual halving
+exponents, is kernel checked. Congruence consistency alone therefore
+does not reduce the mask choices. A test must retain a fixed integer
+lift, a sufficient height bound, or information at primes in \(D\).
+
 The logarithm theorem, factor catalog estimates, height bounds, and eventual
 exclusions remain written proofs. The subset decoder and the two finite
 all-mask exclusions have the formal scope stated above.

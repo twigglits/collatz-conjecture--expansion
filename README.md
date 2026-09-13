@@ -45,6 +45,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `CYCLE-ATTEMPT.md` | Written cycle-minimum bounds independent of period, with the remaining ordered-divisibility gap |
 | `CollatzCycleBlocks.lean` / `CYCLE-WORDS.md` | Checked repeated-block divisibility obstruction and written exclusions of ordered cycle-word families |
 | `CollatzCycleCriterion.lean` | Kernel-checked necessary and sufficient ordered cycle test for every nonempty positive halving word |
+| `docs/CYCLE-LOCAL-LIFTS.md` / `lean/CycleLocalLifts.lean` | Kernel-checked exact residue-cycle witnesses for every positive-denominator word modulo every \(2^a3^b\), showing the limitation of congruence consistency alone; a fixed-height lemma recovers integer divisibility |
 | `CollatzCycleBudget.lean` / `GENERAL-CYCLE-DEFECTS.md` | Checked joint budget for arbitrary halving exponents; written period, exponent, and height bounds |
 | `CollatzCycleExtrema.lean` / `CYCLE-EXTREMA.md` | Checked prefix-rotation lemma and written sharp cycle-minimum extrema with explicit rational candidates |
 | `docs/MECHANICAL-SWAP-EXCLUSION.md` / `lean/MechanicalDefectFinite.lean` / `lean/MechanicalLogBracket.lean` | Written exclusion of every single adjacent swap of a mechanical cycle word, supported by checked finite word and rational arithmetic; necessary distance bounds for arbitrary primitive cycles |
@@ -114,6 +115,9 @@ The stronger span bound has [its own verification record](results/mask-span/veri
 Its new arithmetic is kernel checked; the real rotation and complete cycle
 arguments remain written, with finite Python checks of boundary cases and
 nonintegral rational examples.
+The local-lift theorem has [a separate verification record](results/cycle-local-lifts/verification.json).
+Its arbitrary-word construction, precision loss during division, exact
+valuations, and complementary height lemma are all kernel checked.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

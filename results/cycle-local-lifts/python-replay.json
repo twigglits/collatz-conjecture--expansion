@@ -1,0 +1,113 @@
+{
+  "all_exact_checks_passed": true,
+  "small_word_alphabet": [
+    1,
+    2,
+    3
+  ],
+  "small_word_lengths": [
+    1,
+    7
+  ],
+  "positive_denominator_words": 2883,
+  "nonintegral_words": 2876,
+  "precision_pairs": [
+    [
+      1,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      64,
+      16
+    ]
+  ],
+  "small_lift_systems_checked": 11532,
+  "small_actual_edges_checked": 75016,
+  "larger_mask_checks": [
+    {
+      "odd_count": 193,
+      "halving_sum": 306,
+      "two_precision": 128,
+      "three_precision": 32,
+      "integral_rational_value": false,
+      "integer_edges_close": false,
+      "selection_mode": 0
+    },
+    {
+      "odd_count": 193,
+      "halving_sum": 306,
+      "two_precision": 128,
+      "three_precision": 32,
+      "integral_rational_value": false,
+      "integer_edges_close": false,
+      "selection_mode": 1
+    },
+    {
+      "odd_count": 2966,
+      "halving_sum": 4701,
+      "two_precision": 128,
+      "three_precision": 32,
+      "integral_rational_value": false,
+      "integer_edges_close": false,
+      "selection_mode": 0
+    },
+    {
+      "odd_count": 2966,
+      "halving_sum": 4701,
+      "two_precision": 128,
+      "three_precision": 32,
+      "integral_rational_value": false,
+      "integer_edges_close": false,
+      "selection_mode": 1
+    }
+  ],
+  "graph_mod64": [
+    {
+      "integer_witness": 107,
+      "source_residue": 43,
+      "actual_successor": 161,
+      "target_residue": 33,
+      "exact_halving": 1
+    },
+    {
+      "integer_witness": 161,
+      "source_residue": 33,
+      "actual_successor": 121,
+      "target_residue": 57,
+      "exact_halving": 2
+    },
+    {
+      "integer_witness": 57,
+      "source_residue": 57,
+      "actual_successor": 43,
+      "target_residue": 43,
+      "exact_halving": 2
+    }
+  ],
+  "external_size_counterexample": {
+    "word": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2
+    ],
+    "W": 23413,
+    "D": 9823,
+    "W_minus_D": 13590,
+    "is_collatz_counterexample": false
+  },
+  "seconds": 1.6684185230042203,
+  "scope": "Finite exact corroboration. The generic local-lift and bounded-lift theorems are kernel checked separately. Residue walks are not asserted to be integer Collatz cycles."
+}

@@ -465,6 +465,16 @@ uniqueness would leave aperiodic divergence to exclude. Published lower bounds
 already make any nontrivial cycle enormous; these searches do not supersede
 those bounds. [Hercher](https://arxiv.org/abs/2201.00406)
 
+The [local-lift theorem](docs/CYCLE-LOCAL-LIFTS.md) rules out one proposed
+way to close the divisibility gap: every positive-denominator word admits
+exact residue-cycle witnesses modulo every \(2^a3^b\). The new Lean proof
+checks actual integer edge witnesses, their exact halving exponents, and
+the precision lost during division. These witnesses close only modulo
+the chosen modulus. A complementary kernel lemma recovers \(D\mid W\)
+when a fixed integer height bound makes the congruence an equality.
+Thus larger residue-consistency graphs alone do not exclude the masks;
+global integer information must remain in the test.
+
 Negative expected drift and density-one results do not close the universal gap.
 Tao proves almost-bounded orbit minima in logarithmic density, which is not a
 theorem that almost every orbit reaches 1 or becomes periodic.
@@ -590,6 +600,11 @@ Its new Lean arithmetic uses kernel proofs only. The independent Python
 checks include circle-boundary cases and nonintegral rational mask cycles
 below span 2.45; these finite examples are distinguished from the written
 all-period integer-cycle theorem.
+
+The arbitrary-word local-lift theorem has
+[a kernel verification record](results/cycle-local-lifts/verification.json).
+It also records independent exact checks of 2,883 small words, four larger
+masks, and an explicit nontrivial residue walk that is not an integer cycle.
 
 ## Corrections to the earlier study
 

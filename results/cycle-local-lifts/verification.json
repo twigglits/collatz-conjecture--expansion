@@ -1,0 +1,244 @@
+{
+  "completed_utc": "2026-09-13T17:22:57.860463+00:00",
+  "base_git_head": "afdf0a8ddca31886fda4109bba857aedb1c1b44e",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "host": {
+    "system": "Linux",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/CycleLocalLifts.lean": "c6191b9a3098b1fe3813d987cd60a3f09519582dd91476b17bc8339451e0605f",
+    "verify_cycle_local_lifts.py": "eb67e94026948646d0170930acfc74965318d2a8ee6997eb62c0dc0ed083afa7"
+  },
+  "written_document_sha256": {
+    "docs/CYCLE-LOCAL-LIFTS.md": "a143234a848154c07981347050565a84c852d8892d73fcd07376b77674c58833",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "ecff6bf08555180ba58fbea9ef6c91c8d30b2c01115b60491cd6845ff3aa1a97",
+    "ATTEMPT.md": "a5238a0a365d314407853633576b6e6ea99a83c8ae858e80dd1c5841bc885532",
+    "README.md": "d8ad195774089cbf642ead12eaef07f1128e0a40a2066bb532e389f54c0d8356"
+  },
+  "build_directory": "/tmp/collatz-local-lifts-1e91wj79",
+  "LEAN_PATH": "/tmp/collatz-local-lifts-1e91wj79",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-local-lifts-1e91wj79/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.5713887130041257,
+      "log": "results/cycle-local-lifts/CollatzCycleCriterion.log",
+      "log_sha256": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-local-lifts-1e91wj79/CycleLocalLifts.olean",
+        "lean/CycleLocalLifts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2503163229994243,
+      "log": "results/cycle-local-lifts/CycleLocalLifts.log",
+      "log_sha256": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_cycle_local_lifts.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.758117678000417,
+      "log": "results/cycle-local-lifts/python-replay.json",
+      "log_sha256": "d21124fa2e33d7971c421abb84c60ca95539da308bd83352834fa72902e36cca",
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ],
+  "build_artifact_sha256": {
+    "/tmp/collatz-local-lifts-1e91wj79/CollatzCycleCriterion.olean": "24fd6ce056bf9f1f5760b822cc816f2f157896cb5b07255a77a6215d7a5f8225",
+    "/tmp/collatz-local-lifts-1e91wj79/CycleLocalLifts.olean": "d91ef56184cdf9c4145731227ae00791f51ef444e1515920606ce5fcf965bc33"
+  },
+  "evidence_file_sha256": {
+    "results/cycle-local-lifts/commands.json": "d8f6a9a5ace35c3cce9bcac13794249e2a0b9802420cb89785385add734c1acd",
+    "results/cycle-local-lifts/CollatzCycleCriterion.log": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+    "results/cycle-local-lifts/CycleLocalLifts.log": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+    "results/cycle-local-lifts/python-replay.json": "d21124fa2e33d7971c421abb84c60ca95539da308bd83352834fa72902e36cca"
+  },
+  "independent_python_replay": {
+    "all_exact_checks_passed": true,
+    "small_word_alphabet": [
+      1,
+      2,
+      3
+    ],
+    "small_word_lengths": [
+      1,
+      7
+    ],
+    "positive_denominator_words": 2883,
+    "nonintegral_words": 2876,
+    "precision_pairs": [
+      [
+        1,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        64,
+        16
+      ]
+    ],
+    "small_lift_systems_checked": 11532,
+    "small_actual_edges_checked": 75016,
+    "larger_mask_checks": [
+      {
+        "odd_count": 193,
+        "halving_sum": 306,
+        "two_precision": 128,
+        "three_precision": 32,
+        "integral_rational_value": false,
+        "integer_edges_close": false,
+        "selection_mode": 0
+      },
+      {
+        "odd_count": 193,
+        "halving_sum": 306,
+        "two_precision": 128,
+        "three_precision": 32,
+        "integral_rational_value": false,
+        "integer_edges_close": false,
+        "selection_mode": 1
+      },
+      {
+        "odd_count": 2966,
+        "halving_sum": 4701,
+        "two_precision": 128,
+        "three_precision": 32,
+        "integral_rational_value": false,
+        "integer_edges_close": false,
+        "selection_mode": 0
+      },
+      {
+        "odd_count": 2966,
+        "halving_sum": 4701,
+        "two_precision": 128,
+        "three_precision": 32,
+        "integral_rational_value": false,
+        "integer_edges_close": false,
+        "selection_mode": 1
+      }
+    ],
+    "graph_mod64": [
+      {
+        "integer_witness": 107,
+        "source_residue": 43,
+        "actual_successor": 161,
+        "target_residue": 33,
+        "exact_halving": 1
+      },
+      {
+        "integer_witness": 161,
+        "source_residue": 33,
+        "actual_successor": 121,
+        "target_residue": 57,
+        "exact_halving": 2
+      },
+      {
+        "integer_witness": 57,
+        "source_residue": 57,
+        "actual_successor": 43,
+        "target_residue": 43,
+        "exact_halving": 2
+      }
+    ],
+    "external_size_counterexample": {
+      "word": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "W": 23413,
+      "D": 9823,
+      "W_minus_D": 13590,
+      "is_collatz_counterexample": false
+    },
+    "seconds": 1.6684185230042203,
+    "scope": "Finite exact corroboration. The generic local-lift and bounded-lift theorems are kernel checked separately. Residue walks are not asserted to be integer Collatz cycles."
+  },
+  "kernel_conclusions": [
+    "Signed Bezout identity by the Euclidean algorithm and coprimality with powers of two and three.",
+    "Least nonnegative rational lifts, their oddness and affine congruences at the full precision.",
+    "Division by 2^h preserves the desired successor residue when the starting precision is a multiple of 2^h*M; the actual exponent is exactly h.",
+    "Every nonempty positive halving word with D>0 has positive odd edge witnesses forming a closed residue walk modulo every 2^a*3^b with a>0,b>=0. All hypotheses about the word and its cyclic numerators are discharged.",
+    "The more general cyclic numerator theorem works at any sufficiently fine even precision coprime to D.",
+    "A size-bounded lift below a modulus larger than both D*B and W forces D to divide W.",
+    "Concrete nonintegral rational cycle [1,2,2], residue graph witness modulo 64, and an exact counterexample to the external size inequality."
+  ],
+  "scope": {
+    "native_evaluation": false,
+    "external_theorems_used_in_kernel_results": [],
+    "standard_axioms_only": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "formal_finite_theorem": "Arbitrary words and arbitrary finite smooth precisions, not only the sampled words.",
+    "graph_scope": "Closed walks of residue classes with actual positive odd integer witnesses per edge. Successive chosen witnesses need not be actual successors as integers.",
+    "written_interpretations": [
+      "Implication for sound residue graph exclusion of mask words.",
+      "The distinction between compatible local residues and one bounded positive integer lift."
+    ],
+    "unresolved": [
+      "The full positive-integer Collatz conjecture.",
+      "Integral ordered numerators for surviving masks at unbounded periods.",
+      "Arbitrary wider integer cycles and aperiodic divergence."
+    ]
+  },
+  "external_claim_audited": {
+    "author": "Nikola Chachev",
+    "title": "Algebraic Obstructions and Perturbation Identities for Collatz Cycle Uniqueness",
+    "version_date": "2026-04-01",
+    "url": "https://vixra.org/pdf/2604.0007v1.pdf",
+    "location": "Section 6.1, Theorem 6.2, PDF page 9",
+    "audited_claim": "For the stated binary-word hypotheses and alpha=2^H/3^k>=2, Sigma=W-D<D.",
+    "exact_counterexample": {
+      "word": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "k": 8,
+      "H": 14,
+      "W": 23413,
+      "D": 9823,
+      "Sigma": 13590
+    },
+    "status": "The stated size inequality fails. The claimed binary-cycle exclusion is not used as an external result."
+  },
+  "all_checks_passed": true
+}

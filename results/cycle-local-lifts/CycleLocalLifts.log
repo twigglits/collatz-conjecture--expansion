@@ -1,0 +1,12 @@
+'CycleLocalLifts.bezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.smooth_coprime' depends on axioms: [propext, Quot.sound]
+'CycleLocalLifts.lift_denominator_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.lift_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.lift_edge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.branch_of_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.cyclic_local_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.every_word_has_smooth_local_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.bounded_lift_forces_divisibility' depends on axioms: [propext]
+'CycleLocalLifts.concrete_rational_cycle' depends on axioms: [propext]
+'CycleLocalLifts.graph_mod64_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CycleLocalLifts.external_size_claim_counterexample' does not depend on any axioms

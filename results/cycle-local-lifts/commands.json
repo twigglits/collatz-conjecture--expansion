@@ -1,0 +1,45 @@
+{
+  "build_directory": "/tmp/collatz-local-lifts-1e91wj79",
+  "LEAN_PATH": "/tmp/collatz-local-lifts-1e91wj79",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-local-lifts-1e91wj79/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.5713887130041257,
+      "log": "results/cycle-local-lifts/CollatzCycleCriterion.log",
+      "log_sha256": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-local-lifts-1e91wj79/CycleLocalLifts.olean",
+        "lean/CycleLocalLifts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2503163229994243,
+      "log": "results/cycle-local-lifts/CycleLocalLifts.log",
+      "log_sha256": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_cycle_local_lifts.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.758117678000417,
+      "log": "results/cycle-local-lifts/python-replay.json",
+      "log_sha256": "d21124fa2e33d7971c421abb84c60ca95539da308bd83352834fa72902e36cca",
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ]
+}
