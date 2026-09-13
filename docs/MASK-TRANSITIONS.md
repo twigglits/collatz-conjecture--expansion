@@ -17,6 +17,11 @@ threshold used in the preceding note. In particular, all masks with no
 cyclic halving-\(11\) are eventually excluded. More generally a sequence of
 such integer cycles with \(q=o(N/\log N)\) is impossible.
 
+The later [explicit logarithm argument](EXPLICIT-LOG-GAP.md) removes this
+dependence on \(H_0\): the same transition bound holds for \(N\ge10^{4000}\).
+Its extended finite cover and the published small-period input exclude the
+no-halving-11 subclass at every period.
+
 The later [empirical-diversity argument](MASK-DENSITY.md) strengthens this:
 for \(N\ge\max(H_0,2^{16384})\), both the good and bad block counts exceed
 \(N/8192\). It also supplies a finite entropy restriction on every mask.
@@ -179,7 +184,7 @@ Finally, (6) and \(N\le P_w(m)\) imply
 which proves (1). The lower bound concerns halving-\(11\) occurrences, not
 binary-\(11\) occurrences or simply the total number of edits.
 
-The small entropy gap is why the displayed cutoff is large. Its supporting
-comparisons are checked exactly, but \(H_0\) remains nonnumerical. Neither
-that unresolved threshold nor the masks with more transitions are bypassed
-by this argument.
+The small entropy gap is why the original cutoff is large. The subsequent
+explicit integral bound supplies the same height estimate for
+\(N\ge10^{4000}\), so all remaining steps above apply with that numerical
+cutoff. Masks with more transitions still survive this necessary condition.

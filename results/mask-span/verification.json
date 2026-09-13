@@ -1,0 +1,278 @@
+{
+  "completed_utc": "2026-09-13T16:55:44.021049+00:00",
+  "base_git_head": "3ae208676a09701451a39e85cee5f77642c2e2c5",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "host": {
+    "system": "Linux",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/MaskSpanBounds.lean": "80aa6b9c6e8e15dee1cba481287d11f4618ae8bf4255b89d9510cf5c9a20c356",
+    "verify_mask_span.py": "166495c0f6ab91d74fac82c6f986cc1635711b305d000318825f1ddd94a97b0e",
+    "lean/MaskFoldedOrder.lean": "c151e40361b5e12305cac4372782f9374af3aa7da1f4d9a6faf5a2bc0ddd87d1",
+    "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+    "lean/MaskResonanceExtended.lean": "b3ceb5bd5e8fdc9dffe6cc71e2a8710187e59ca0c0cc06d5300e633a386286ec",
+    "lean/ExplicitLogConstants.lean": "49fca8929cf7957b3089abf818f349023e5c02e9b4f3146b7de0d91b4d1fdb49"
+  },
+  "written_document_sha256": {
+    "docs/MASK-SPAN-BOUND.md": "c7e6b190c4b04c950bcb2a8b957c6cf73b3edeaa07dc8bf0b3105e0127bff2bb",
+    "docs/NARROW-CYCLE-MASKS.md": "6bda902a6e287a2b862b345862e5a26e729ae7fa1d3c20d8713f4f691ea4aa24",
+    "docs/MASK-FOLDED-ORDER.md": "c0b172c6b378e52794fac810703c8784deca9f1bd1a5d76ee1c0b8aa54fa5fbe",
+    "docs/MASK-RESONANCE.md": "1499485dc11a61052b80da257628ef9158f143c2cd4b3ecfe957094159834f41",
+    "docs/EXPLICIT-LOG-GAP.md": "5b070706d3432743cc537f603c7e6bfbf15916bf48b343aa1f96da71bea2fac6",
+    "docs/MECHANICAL-MASKS.md": "99582055f2a24700b560749dbf64d1258b70dd2a1bb2a40c0ff8638a82cdb5a9",
+    "ATTEMPT.md": "ccb294f2a7b3c9b08ce598ed8130df8eb33822a270b40e3eacdb671e7833241a",
+    "README.md": "21723b0086b7c30d0c705945c4a69c8b8c1217f248a4e55d2c38709489a35f45"
+  },
+  "build_directory": "/tmp/collatz-mask-span-1btiae4b",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-span-1btiae4b/MaskSpanBounds.olean",
+        "lean/MaskSpanBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.9927660469984403,
+      "log": "results/mask-span/MaskSpanBounds.log",
+      "log_sha256": "7acff24d8b935b04944409e17d481e5d7093e6e94077734063721bb1d153002c",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_mask_span.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.70084637599939,
+      "log": "results/mask-span/python-replay.json",
+      "log_sha256": "894b2a9538218780627ba5b6b178ece96afa5e3a4ddc53693d418e9176f04a29",
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ],
+  "build_artifact_sha256": {
+    "/tmp/collatz-mask-span-1btiae4b/MaskSpanBounds.olean": "967cf467ba212d034b156373854aa0a6a63484c75265bf3866ec1d08c85c573e"
+  },
+  "evidence_file_sha256": {
+    "results/mask-span/commands.json": "e18d5f21f82d740e2a25e24b59490cef10930ba1f45aab59e4bfbee70dc78505",
+    "results/mask-span/MaskSpanBounds.log": "7acff24d8b935b04944409e17d481e5d7093e6e94077734063721bb1d153002c",
+    "results/mask-span/python-replay.json": "894b2a9538218780627ba5b6b178ece96afa5e3a4ddc53693d418e9176f04a29"
+  },
+  "reused_verification": [
+    {
+      "record": "results/narrow-cycle-masks/verification.json",
+      "record_sha256": "c1e02e5c501bfe46e24959bc55e539d724e7e46e9588a7398403b1bd2b591c34",
+      "unchanged_source_sha256": {
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154",
+        "lean/MaskFoldedOrder.lean": "c151e40361b5e12305cac4372782f9374af3aa7da1f4d9a6faf5a2bc0ddd87d1",
+        "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+        "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+        "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+        "lean/MechanicalMaskArithmetic.lean": "951ef497de7d8e55516429199f29b13094ee66d483f8c1e42759169b59b43aef",
+        "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9",
+        "lean/MaskDensityBounds.lean": "6c06b77cb28afda066cb23a9a5dc374f59b1849cc479c0db1f3205c9c80b7e1c",
+        "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+        "verify_mask_resonance.py": "a601ff00bb70d3c03af1c3c06d24588a17a88322fde5a7121f6c3712d74b4700"
+      },
+      "verified_log_sha256": {
+        "results/narrow-cycle-masks/NarrowCycleMasks.log": "ca0f5dcccfd3faca348168039a7ebeb065d49902c11cc65089f94e0c92ac0a88",
+        "results/narrow-cycle-masks/MaskFoldedOrder.log": "056612536dbdf0eeceb9f7351a9f7af99940443cc2df35a977edc33f0f4b1a0a",
+        "results/narrow-cycle-masks/CollatzCycleCriterion.log": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+        "results/narrow-cycle-masks/FoldedCycleBounds.log": "8d066c75bff02c750b7beab40b9484fad78cbb0bfe2cef1e530f8544bba7f8db",
+        "results/narrow-cycle-masks/CollatzRepetition.log": "b8040f5431a851ade00f47f6116717bad8db19ac4c053c8d3bcc2fd94ec515b6",
+        "results/narrow-cycle-masks/MechanicalMaskArithmetic.log": "bd1624d1ee78b2cebaa7b5e3e8ce8cb583619d69f89e418c6f482e3269c1b125",
+        "results/narrow-cycle-masks/MaskTransitionBounds.log": "44c75f10de6f9a33c223adad4a1ca3302ade4348d0430ad4713709b17c5eb9fd",
+        "results/narrow-cycle-masks/MaskDensityBounds.log": "b992865192af8c187bab89f6902bdafcdf7be5b06fb5bda8b96192723cf40f06",
+        "results/narrow-cycle-masks/MaskResonance.log": "248280a0de1c9a6c02da407c5b7b903c5fb726a04ff8e5ad85c8f0605b205b07",
+        "results/narrow-cycle-masks/python-resonance-replay.log": "20eafb227292de48f691aecc72a9c48ea694f72f88b5c5f0cefda1bf1bce6947"
+      },
+      "rerun_this_turn": false
+    },
+    {
+      "record": "results/explicit-log-gap/verification.json",
+      "record_sha256": "6c27a1c7dafdeae1414bc275ec12f7e4f9b43947a643006f4b6ca7114b64fff4",
+      "unchanged_source_sha256": {
+        "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+        "lean/ExplicitLogConstants.lean": "49fca8929cf7957b3089abf818f349023e5c02e9b4f3146b7de0d91b4d1fdb49",
+        "lean/MaskResonanceExtended.lean": "b3ceb5bd5e8fdc9dffe6cc71e2a8710187e59ca0c0cc06d5300e633a386286ec",
+        "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+        "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9",
+        "lean/MaskDensityBounds.lean": "6c06b77cb28afda066cb23a9a5dc374f59b1849cc479c0db1f3205c9c80b7e1c",
+        "lean/MaskCatalogBounds.lean": "cbe5661062e88d7b90931bdc0fdf368765153a46ba0024bcf854efe21c23f537",
+        "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+        "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+        "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+        "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154",
+        "verify_explicit_log_gap.py": "440aab5984405902ed9f1cb5238616fccacd2f4892e5a7e227f70f19fb04908e",
+        "verify_mask_resonance.py": "a601ff00bb70d3c03af1c3c06d24588a17a88322fde5a7121f6c3712d74b4700"
+      },
+      "verified_log_sha256": {
+        "results/explicit-log-gap/MaskResonance.log": "248280a0de1c9a6c02da407c5b7b903c5fb726a04ff8e5ad85c8f0605b205b07",
+        "results/explicit-log-gap/MaskResonanceExtended.log": "41496ca3859f371efcbf976e21c7e0402e026af5da80cec9f01571d1290164aa",
+        "results/explicit-log-gap/MaskTransitionBounds.log": "44c75f10de6f9a33c223adad4a1ca3302ade4348d0430ad4713709b17c5eb9fd",
+        "results/explicit-log-gap/MaskDensityBounds.log": "b992865192af8c187bab89f6902bdafcdf7be5b06fb5bda8b96192723cf40f06",
+        "results/explicit-log-gap/MaskCatalogBounds.log": "91cafcb4c2ac2d46e42d845f10a3b04eaef28e4c9ed04ea905b5ec427842eda8",
+        "results/explicit-log-gap/ExplicitLogConstants.log": "ffdeb17f9ebf13f0afb65e7f60aa6316cb8095b37754ef10d01a2ab58f08b173",
+        "results/explicit-log-gap/python-replay.log": "9e2328213fb9bfd6fb669b2c18d646bdf1502ba95af85231d5a11374b8f18750"
+      },
+      "rerun_this_turn": false
+    }
+  ],
+  "prerequisite_source_and_log_hash_checks": 41,
+  "independent_python_replay": {
+    "all_exact_checks_passed": true,
+    "grid_length": 1054,
+    "allowed_centers_per_grid_block": 196,
+    "enlarged_arc_times_grid": "488033093/2500000",
+    "finite_slope_examples": 7,
+    "all_phase_maxima_at_these_slopes": [
+      195,
+      196,
+      196,
+      196,
+      196,
+      196,
+      196
+    ],
+    "pattern_window_lengths": [
+      1,
+      2,
+      3,
+      17,
+      65
+    ],
+    "all_boundary_and_cell_pattern_counts": [
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ],
+      [
+        2,
+        3,
+        4,
+        34,
+        130
+      ]
+    ],
+    "rational_examples": [
+      {
+        "odd_count": 306,
+        "shortcut_count": 485,
+        "omitted_indices_divisible_by_three": false,
+        "selected_edits": 87,
+        "span_times_million_floor": 2435665,
+        "nonintegral": true
+      },
+      {
+        "odd_count": 306,
+        "shortcut_count": 485,
+        "omitted_indices_divisible_by_three": true,
+        "selected_edits": 58,
+        "span_times_million_floor": 2430152,
+        "nonintegral": true
+      },
+      {
+        "odd_count": 2966,
+        "shortcut_count": 4701,
+        "omitted_indices_divisible_by_three": false,
+        "selected_edits": 846,
+        "span_times_million_floor": 2437213,
+        "nonintegral": true
+      },
+      {
+        "odd_count": 2966,
+        "shortcut_count": 4701,
+        "omitted_indices_divisible_by_three": true,
+        "selected_edits": 563,
+        "span_times_million_floor": 2436643,
+        "nonintegral": true
+      }
+    ],
+    "seconds": 3.5704703659939696,
+    "scope": "Exact constants and finite sanity checks. The uniform circle argument, factor catalog, and all-period integer-cycle span theorem remain written proofs. Rational examples are nonintegral."
+  },
+  "written_conclusion": "Every nontrivial positive integer Collatz cycle has odd minimum m and maximum M satisfying 20*M > 49*m.",
+  "scope": {
+    "new_kernel_proofs": [
+      "The assumed span implies the earlier narrow-cycle condition.",
+      "Complementary residue identity at a base binary odd-step boundary.",
+      "Integer grid spacing and count, whole-block and partial-block counts for arbitrary Boolean sequences.",
+      "Exact power, rational grid, exponent, and cutoff comparisons."
+    ],
+    "new_native_finite_checks": [],
+    "reused_kernel_proofs": [
+      "Narrow-cycle local arithmetic and critical-count bracket.",
+      "Positive-forcing iterates.",
+      "Finite parity collisions and rational-cover checker soundness."
+    ],
+    "reused_native_finite_checks": [
+      "Explicit-logarithm finite constants.",
+      "Full-mask rational separation cover through 10^4000."
+    ],
+    "written_not_fully_formalized": [
+      "Real logarithmic localization of selected mask centers.",
+      "Perturbed circle-grid packing for every allowed slope and phase.",
+      "Factor catalog and its comparison with the polynomial height bound.",
+      "Complete cycle sorting, mask classification, and all-period span deduction.",
+      "The preceding all-index integral and denominator-clearance proof."
+    ],
+    "finite_python_sanity": [
+      "Seven exact slopes, with all-phase 1054-point arc maxima at each slope.",
+      "All boundary and cell patterns at five lengths for those slopes.",
+      "Four nonintegral rational masks below span 2.45, with exact edges, ranks, phases, and closure."
+    ],
+    "unresolved": [
+      "No proof or disproof of the full Collatz conjecture.",
+      "Unrestricted full-mask divisibility at unbounded periods.",
+      "Arbitrary wider cycles and aperiodic divergence."
+    ]
+  },
+  "external_inputs_inherited_from": "results/explicit-log-gap/verification.json",
+  "external_dependency_note": "The written logarithm proof uses published prime estimates; the small-period range uses the recorded Eliahou theorem and its external convergence computation. These inputs were not rerun, and no new external theorem is introduced.",
+  "all_new_checks_passed": true
+}

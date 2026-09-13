@@ -160,7 +160,8 @@ because \(k/N<2/3\). Since \(q<k<N\),
 The last comparison uses only \(N\ge2^{64}\) and \(\log2>2/3\).
 Thus all such hypothetical integer masks satisfy (1), and (7) applies.
 
-In particular, the range \(N>10^{1000}\) left by the preceding result
+In particular, the range \(N>10^{4000}\) left by the later
+[extended resonance cover](EXPLICIT-LOG-GAP.md)
 cannot be removed by adding the folded-order tests. Under the count
 conditions forced on an integer realization, the tests accept every mask
 choice even before divisibility is checked.

@@ -1,0 +1,16 @@
+'ExplicitLogConstants.integral_interval_constants' depends on axioms: [propext]
+'ExplicitLogConstants.integrand_polynomial_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExplicitLogConstants.bernstein_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExplicitLogConstants.cubic_substitution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExplicitLogConstants.numerator_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExplicitLogConstants.centered_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExplicitLogConstants.seed_divisibilities' depends on axioms: [propext]
+'ExplicitLogConstants.coefficient_and_prime_constants' does not depend on any axioms
+'ExplicitLogConstants.coefficient_rational_identity' does not depend on any axioms
+'ExplicitLogConstants.logarithm_constants' depends on axioms: [propext,
+ Quot.sound,
+ logarithm_constants._native.native_decide.ax_1_1]
+'ExplicitLogConstants.cutoff_constants' does not depend on any axioms
+'ExplicitLogConstants.covered_denominator_le_product' depends on axioms: [propext, Quot.sound]
+'ExplicitLogConstants.covered_window_large' depends on axioms: [propext, Quot.sound]
+'ExplicitLogConstants.sparse_catalog_exponent' depends on axioms: [propext, Quot.sound]

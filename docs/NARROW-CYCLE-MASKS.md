@@ -36,6 +36,16 @@ Equivalently, throughout that range the odd maximum is at least
 \((8m-1)/3\). This extends the finite mask exclusion to a geometric class
 of arbitrary cycles. It does not exclude larger periods or all cycles.
 
+The later [explicit logarithm bound](EXPLICIT-LOG-GAP.md) extends this
+finite range through \(10^{4000}\) and proves \(4M\ge9m+5\) at every
+period. It removes the nonnumerical dependency in Section 5 using a new
+integral estimate and extended finite certificate, with the identified
+external prime and small-period inputs.
+
+The subsequent [edit-position argument](MASK-SPAN-BOUND.md) strengthens
+the all-period span restriction to \(20M>49m\), using this classification
+and a catalog that also accounts for the assumed odd maximum.
+
 ## 1. Odd spacing makes the halving count critical
 
 First, any primitive odd cycle with \(M<3m\) has \(k\le m\).
@@ -215,9 +225,11 @@ The two-step identity and the spacing implication (8) are kernel proved.
 For sufficiently long narrow cycles, the existing transition and density
 theorems supply further lower bounds on \(q\).
 
-The threshold in (7) has not been made numerical. The finite-range result
-and the eventual result must not be silently joined into an all-period
-claim: the numerical relationship between \(H_0\) and \(10^{1000}\) is unknown.
+This original proof leaves a nonnumerical threshold in (7), so its two
+ranges alone cannot be joined. The subsequent [explicit logarithm
+argument](EXPLICIT-LOG-GAP.md) closes that gap and proves (7)'s span
+conclusion at every period. It does not establish an all-period \(8/3\)
+span bound.
 
 ## 6. Verification and scope
 

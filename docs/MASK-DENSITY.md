@@ -23,6 +23,11 @@ Thus both good and bad blocks must occur at positive linear density. Here
 \(H_0\) is the prior effective Wu–Wang threshold, still not numerical.
 This is a necessary condition; many masks satisfy it.
 
+The later [explicit logarithm bound](EXPLICIT-LOG-GAP.md) supplies the same
+height estimate for \(N\ge10^{4000}<2^{16384}\). Thus (1) now holds for
+every \(N\ge2^{16384}\), with a completely numerical cutoff. The proof below
+records its original dependence on \(H_0\); only that height input is replaced.
+
 The proof also gives a finite empirical-entropy restriction, with limiting
 lower bound \(5/26\), without assuming independence or randomness of an
 actual itinerary. The full arguments below are written proofs.

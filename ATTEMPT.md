@@ -222,22 +222,37 @@ construction and all-edited rotation identity. A written combination of
 Wu–Wang's effective logarithm theorem and parity catalogs excludes every
 sufficiently long primitive cycle in the independent `22→13` mask family
 and in the family allowing `21→12` edits at alternating eligible positions.
-These permit linearly many edits. The exclusions begin at
+These permit linearly many edits. That argument gives exclusions beginning at
 `max(H₀, 2^40)` and `max(H₀, 2^192)` respectively; the source's effective
-threshold `H₀` has not been made numerical here, so neither is a complete
-all-length exclusion. The unrestricted `21→12` family remains open.
+threshold `H₀` has not been made numerical here. The later argument below
+closes these two gaps. The unrestricted `21→12` family remains open.
+
+The later [explicit logarithm argument](docs/EXPLICIT-LOG-GAP.md) now closes
+both family exclusions at every period. It proves
+\(\lambda>N^{-21/5}\) for the required critical counts once
+\(N\ge10^{4000}\), independently of the unknown general Wu–Wang threshold.
+An extended exact resonance cover closes the finite range; its catalog also
+dominates the independent \(22\to13\) family. The small-period conclusion
+retains the published Eliahou input described below. The full integral,
+all-index denominator, and family arguments are written proofs with checked
+finite arithmetic.
 
 A [further transition bound](docs/MASK-TRANSITIONS.md) proves that an integer
 primitive cycle in this unrestricted family, at
-\(N\ge\max(H_0,2^{2048})\), must contain more than \(N/(24\log_2N)\)
+\(N\ge10^{4000}\), must contain more than \(N/(24\log_2N)\)
 cyclic halving-11 occurrences. This excludes the entire no-11 subclass and
 any family with \(o(N/\log N)\) such occurrences. Its elementary comparisons
 and local repairs are kernel checked; the uniform catalog argument is written.
 The [empirical-diversity refinement](docs/MASK-DENSITY.md) strengthens this
 to \(N/8192<q<(2N-3k)-N/8192\) for
-\(N\ge\max(H_0,2^{16384})\). It counts many windows with few marked blocks,
+\(N\ge2^{16384}\). It counts many windows with few marked blocks,
 and gives a finite conditional-entropy bound without an independence
 assumption. Frequent good and bad blocks remain possible.
+
+These numerical cutoffs use the new explicit logarithm bound in the earlier
+transition and density proofs. Together with the finite cover, the argument
+excludes the no-halving-11 mask subclass at every period. The displayed
+statements no longer depend on an unspecified \(H_0\).
 
 The exact subset decoder is now kernel checked in
 [MaskSubsetDecoder.lean](lean/MaskSubsetDecoder.lean). Its completeness theorem
@@ -249,7 +264,8 @@ the unknown \(H_0\); their finite computations explicitly use native_decide.
 
 The [resonance argument](docs/MASK-RESONANCE.md) now excludes every
 primitive positive integer cycle in the full critical \(21\to12\) mask
-family throughout \(2^{21}\le N\le10^{1000}\). A uniform parity-factor
+family throughout \(2^{21}\le N\le10^{4000}\), using the
+[extended cover](lean/MaskResonanceExtended.lean). A uniform parity-factor
 catalog and the integer collision lemma force a rational approximation
 too close to \(\log2/\log3\); an exact dyadic logarithm enclosure and checked
 Farey brackets reject it for every denominator in the interval. The local
@@ -259,8 +275,11 @@ catalog, real logarithm bounds, and cycle assembly are written.
 Eliahou's published lower cycle-length bound, with its cited external
 convergence computation, closes the range below \(2^{21}\). With that
 external input, any nontrivial primitive cycle in this full mask family
-would have \(N>10^{1000}\). Infinitely many larger periods, arbitrary other
+would have \(N>10^{4000}\). Infinitely many larger periods, arbitrary other
 halving words, and divergent trajectories remain unresolved.
+
+The extension uses 32,768-bit dyadic arithmetic and the same kernel cover checker.
+The original \(10^{1000}\) certificate is retained for provenance.
 
 A separate finite obstruction is checked in
 [`CollatzRepetition.lean`](CollatzRepetition.lean). Two starts agreeing for
@@ -299,12 +318,31 @@ every nontrivial primitive integer cycle satisfying \(3M+1<8m\) belongs
 to the full critical \(21\to12\) mask family. Odd spacing forces \(k\le m\),
 an integer power bound forces the critical total count, and every state
 at least \(2m\) selects an isolated edit of the folded mechanical word.
-Thus for \(2^{21}\le N\le10^{1000}\), every nontrivial cycle satisfies
+Thus for \(2^{21}\le N\le10^{4000}\), every nontrivial cycle satisfies
 \(3M+1\ge8m\). The same bound covers smaller periods with the external
-Eliahou input already identified above. A separate unbounded consequence
-is \(4M\ge9m+5\) for \(N\ge\max(H_0,2^{2048})\); its threshold is still
-nonnumerical. Sorting and global cycle assembly remain written proofs,
+Eliahou input already identified above. Sorting and global cycle assembly remain written proofs,
 with the new local arithmetic and power bounds checked in Lean.
+
+The explicit logarithm argument also removes the earlier span bound's dependency on \(H_0\):
+every nontrivial positive integer cycle satisfies
+\[
+ \boxed{4M\ge9m+5.}
+\]
+The all-period conclusion combines the narrow-cycle classification, the
+complete no-halving-11 mask exclusion, and the two-rise identity.
+It retains the identified published prime estimates and external small-period
+input, and its full analytic and cycle assembly remains a written proof.
+The stronger finite-range bound \(3M+1\ge8m\) now holds through \(10^{4000}\);
+an all-period \(8/3\) span bound is not proved.
+
+The later [restriction on edit positions](docs/MASK-SPAN-BOUND.md) now proves
+\(20M>49m\), or \(M/m>2.45\), at every period. Under the contrary maximum
+bound, selected edits must lie in a short rotation interval. Every 1054
+consecutive positions then admit at most 196 possible edit centers, giving
+a factor catalog too small for the existing height bound. The extended
+finite exclusion covers the initial range. The new integer arithmetic is
+kernel checked; the circle counting, logarithms, and complete cycle
+deduction remain written proofs with the same external inputs.
 
 The [automatic-order theorem](docs/MASK-FOLDED-ORDER.md) also makes a
 limitation precise. At the close counts required of any surviving integer
@@ -481,6 +519,12 @@ LEAN_PATH=/tmp/collatz-folded-density lean lean/FoldedCycleNine.lean
 # Narrow-cycle arithmetic and automatic rank order are standalone:
 lean lean/NarrowCycleMasks.lean
 lean lean/MaskFoldedOrder.lean
+# Explicit logarithm constants and the extended rational cover:
+lean lean/ExplicitLogConstants.lean
+mkdir -p /tmp/collatz-explicit-log
+lean -o /tmp/collatz-explicit-log/MaskResonance.olean lean/MaskResonance.lean
+LEAN_PATH=/tmp/collatz-explicit-log lean lean/MaskResonanceExtended.lean
+python3 verify_explicit_log_gap.py --cover
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean
@@ -535,6 +579,17 @@ The narrow-cycle arithmetic and automatic rank-order theorem have
 [a newer verification record](results/narrow-cycle-masks/verification.json).
 It checks the new algebra without native evaluation and distinguishes it
 from the written cycle classification and the reused analytic deductions.
+The explicit logarithm argument and extended cover have
+[a further record](results/explicit-log-gap/verification.json), including an
+independent exact Python replay. The all-index integral and denominator proof,
+the published prime estimates, and the all-period family and span deductions
+are explicitly distinguished from the finite Lean checks.
+
+The stronger span bound has [its own verification record](results/mask-span/verification.json).
+Its new Lean arithmetic uses kernel proofs only. The independent Python
+checks include circle-boundary cases and nonintegral rational mask cycles
+below span 2.45; these finite examples are distinguished from the written
+all-period integer-cycle theorem.
 
 ## Corrections to the earlier study
 

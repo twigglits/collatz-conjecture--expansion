@@ -6,11 +6,12 @@ produce primitive positive integer cycles of sufficiently large period:
 - Independent \(22\to13\) edits of the mechanical halving word.
 - Independent \(21\to12\) edits restricted to alternating eligible positions.
 
-The argument combines a published effective logarithm bound with a short
-parity-factor catalog. It leaves a finite range unresolved: the published
-theorem supplies an effectively computable threshold \(H_0\), but its numerical
-value has not been obtained here. These are **eventual exclusions**, not
-complete all-length exclusions or a proof of the Collatz conjecture.
+The original argument below combines a published effective logarithm bound
+with a short parity-factor catalog. Its unspecified threshold \(H_0\) gave
+only eventual exclusions. The later [explicit logarithm bound and extended
+resonance cover](EXPLICIT-LOG-GAP.md) now close both families at every period,
+with the documented external small-period input. The all-index integral and
+complete family arguments remain written proofs. The full conjecture is unresolved.
 
 A separate exact normal form for the unrestricted \(21\to12\) family is now
 kernel checked in [MechanicalMaskArithmetic.lean](../lean/MechanicalMaskArithmetic.lean).
@@ -24,7 +25,8 @@ critical \(21\to12\) family at every period \(2^{21}\le N\le10^{1000}\).
 It combines an unrestricted factor catalog with exact rational separation,
 without an unknown logarithm-theorem cutoff. Eliahou's published general
 cycle bound closes the smaller range using external computational input.
-The infinite range beyond \(10^{1000}\) remains open.
+The later extension raises this endpoint to \(10^{4000}\). The unrestricted
+family beyond the new endpoint remains open.
 
 The later [transition argument](MASK-TRANSITIONS.md) also excludes every
 sufficiently long mask without adjacent halving ones. More generally it
@@ -332,11 +334,12 @@ The logarithm theorem, factor catalog estimates, height bounds, and eventual
 exclusions remain written proofs. The subset decoder and the two finite
 all-mask exclusions have the formal scope stated above.
 [MaskCatalogBounds.lean](../lean/MaskCatalogBounds.lean) checks only their
-elementary supporting integer comparisons. The source theorem's effective
-\(H_0\) must still be made numerical before (9) or (13) can be combined with
-a complete finite verification. The indexed primary proof uses asymptotic
-integral and least-common-multiple estimates; quantitative remainder bounds
-and a numerical starting index have not been extracted here.
+elementary supporting integer comparisons. The source theorem's general
+\(H_0\) is still not numerical here. The later [explicit integral
+argument](EXPLICIT-LOG-GAP.md) independently supplies the needed two-logarithm
+bound for \(N\ge10^{4000}\), and a checked finite cover completes the two
+exclusions. It does not claim a numerical cutoff for every linear form in
+the published general theorem.
 
 The [earlier verification record](../results/mask-obstructions/verification.json)
 covers the normal form and cutoff arithmetic. The

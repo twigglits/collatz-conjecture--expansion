@@ -1,0 +1,11 @@
+'MaskSpanBounds.span_implies_narrow' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.boundary_phase' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.integer_grid_spacing' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.integer_grid_count' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.count_add' depends on axioms: [propext]
+'MaskSpanBounds.whole_blocks' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.partial_blocks' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.logarithm_power_inputs' does not depend on any axioms
+'MaskSpanBounds.grid_and_density_constants' does not depend on any axioms
+'MaskSpanBounds.block_exponent' depends on axioms: [propext, Quot.sound]
+'MaskSpanBounds.cutoff_constants' does not depend on any axioms

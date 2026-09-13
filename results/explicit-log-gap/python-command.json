@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "verify_explicit_log_gap.py",
+    "--cover"
+  ],
+  "exit_code": 0,
+  "seconds": 89.3779170400012,
+  "log": "results/explicit-log-gap/python-replay.log"
+}

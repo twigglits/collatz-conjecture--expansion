@@ -20,7 +20,10 @@ The all-period argument also gives the necessary condition
  \boxed{N\ge2^{64}\quad\Longrightarrow\quad
   0<\frac{\log2}{\log3}-\frac{k}{N}<\frac4{N^3}.}        \tag{2}
 \]
-The unbounded range beyond \(10^{1000}\) remains unresolved.
+The later [explicit logarithm argument and extended cover](EXPLICIT-LOG-GAP.md)
+raise the finite endpoint to \(10^{4000}\) and close three restricted
+mask families at every period. The unrestricted family beyond \(10^{4000}\)
+remains unresolved. This note retains the original certificate and its constants.
 
 [MaskResonance.lean](../lean/MaskResonance.lean) proves the Farey denominator
 lemma, extraction of a checked bracket for every denominator in the
@@ -255,8 +258,8 @@ small-period input as Section 5.
 The [automatic-order theorem](MASK-FOLDED-ORDER.md) shows why folded rank
 tests do not remove the remaining unbounded mask periods.
 
-The family still has infinitely many possible periods beyond the finite
-endpoint. The resonance condition (2) alone does not eliminate them, and
+The family still has infinitely many possible periods beyond the newer
+\(10^{4000}\) endpoint. The resonance condition (2) alone does not eliminate them, and
 the available irrationality bound used in the earlier notes is too weak to
 contradict it. Arbitrary halving words need not belong to this mask family.
 Aperiodic divergent trajectories are not addressed.

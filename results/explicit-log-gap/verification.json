@@ -1,0 +1,250 @@
+{
+  "completed_utc": "2026-09-13T16:31:48.125971+00:00",
+  "base_git_head": "3ae208676a09701451a39e85cee5f77642c2e2c5",
+  "compiler_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "host": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "compilers_run_concurrently": 1
+  },
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/ExplicitLogConstants.lean": "49fca8929cf7957b3089abf818f349023e5c02e9b4f3146b7de0d91b4d1fdb49",
+    "lean/MaskResonanceExtended.lean": "b3ceb5bd5e8fdc9dffe6cc71e2a8710187e59ca0c0cc06d5300e633a386286ec",
+    "lean/MaskResonance.lean": "2276fe4f10328876f41bbf1343d0b12e5d5691b2e62959e10092d019438bd382",
+    "lean/MaskTransitionBounds.lean": "b90a2865694921ad3a3de84cf3b6916054e3092b8aa4cb946baf357b3ea70eb9",
+    "lean/MaskDensityBounds.lean": "6c06b77cb28afda066cb23a9a5dc374f59b1849cc479c0db1f3205c9c80b7e1c",
+    "lean/MaskCatalogBounds.lean": "cbe5661062e88d7b90931bdc0fdf368765153a46ba0024bcf854efe21c23f537",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+    "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+    "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154",
+    "verify_explicit_log_gap.py": "440aab5984405902ed9f1cb5238616fccacd2f4892e5a7e227f70f19fb04908e",
+    "verify_mask_resonance.py": "a601ff00bb70d3c03af1c3c06d24588a17a88322fde5a7121f6c3712d74b4700"
+  },
+  "written_document_sha256": {
+    "docs/EXPLICIT-LOG-GAP.md": "5b070706d3432743cc537f603c7e6bfbf15916bf48b343aa1f96da71bea2fac6",
+    "docs/MASK-CYCLE-OBSTRUCTIONS.md": "956c7d273d678bf51e62c656dfe054898a3c1869a0c8a717144b7ad4208fcec0",
+    "docs/MASK-TRANSITIONS.md": "c8861189a84de24893472f393927f8c405caff34e859db9c018b8345cc7b372a",
+    "docs/MASK-DENSITY.md": "ddf626c585b13f2fcd815c6737cc156be5a42033ede029032be349ddcd898998",
+    "docs/NARROW-CYCLE-MASKS.md": "8f5deb43f6d24b8ad2f7844316586fe0e15a68bf55aee98340d54445fe75a681",
+    "docs/MASK-RESONANCE.md": "1499485dc11a61052b80da257628ef9158f143c2cd4b3ecfe957094159834f41",
+    "docs/MASK-FOLDED-ORDER.md": "c0b172c6b378e52794fac810703c8784deca9f1bd1a5d76ee1c0b8aa54fa5fbe",
+    "docs/MECHANICAL-MASKS.md": "e2ed6ad7a901d0372eef8748ee551812888b427a66673d609618372bf97b5ec6",
+    "docs/FOLDED-CYCLES.md": "1eedd36a20a9a3e66ad2e2d70da6c82385ac3b2cc2cef8b8217da073452235fd",
+    "ATTEMPT.md": "3404c9a5533090e222a97491819ad30ba2037a112b14e338b5118a794649167a",
+    "README.md": "f1447bd3e4e8fc4cb448ef77e846c7f776d6368b9d0fa62c52fa6168f8695907"
+  },
+  "build_directory": "/tmp/collatz-explicit-log-vaqk1e84",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskResonance.olean",
+        "lean/MaskResonance.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.9801409220017376,
+      "log": "results/explicit-log-gap/MaskResonance.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "248280a0de1c9a6c02da407c5b7b903c5fb726a04ff8e5ad85c8f0605b205b07",
+      "native_evaluation_detected": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskResonanceExtended.olean",
+        "lean/MaskResonanceExtended.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.820969931999571,
+      "log": "results/explicit-log-gap/MaskResonanceExtended.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "41496ca3859f371efcbf976e21c7e0402e026af5da80cec9f01571d1290164aa",
+      "native_evaluation_detected": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskTransitionBounds.olean",
+        "lean/MaskTransitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8737122000020463,
+      "log": "results/explicit-log-gap/MaskTransitionBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "44c75f10de6f9a33c223adad4a1ca3302ade4348d0430ad4713709b17c5eb9fd",
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskDensityBounds.olean",
+        "lean/MaskDensityBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.306738844999927,
+      "log": "results/explicit-log-gap/MaskDensityBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "b992865192af8c187bab89f6902bdafcdf7be5b06fb5bda8b96192723cf40f06",
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskCatalogBounds.olean",
+        "lean/MaskCatalogBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9347820360053447,
+      "log": "results/explicit-log-gap/MaskCatalogBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "91cafcb4c2ac2d46e42d845f10a3b04eaef28e4c9ed04ea905b5ec427842eda8",
+      "native_evaluation_detected": false
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/ExplicitLogConstants.olean",
+        "lean/ExplicitLogConstants.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.173867570003495,
+      "log": "results/explicit-log-gap/ExplicitLogConstants.log",
+      "passed_without_warnings_or_admitted_proofs": true,
+      "log_sha256": "ffdeb17f9ebf13f0afb65e7f60aa6316cb8095b37754ef10d01a2ab58f08b173",
+      "native_evaluation_detected": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_explicit_log_gap.py",
+        "--cover"
+      ],
+      "exit_code": 0,
+      "seconds": 89.3779170400012,
+      "log": "results/explicit-log-gap/python-replay.log",
+      "log_sha256": "9e2328213fb9bfd6fb669b2c18d646bdf1502ba95af85231d5a11374b8f18750",
+      "native_evaluation_detected": false,
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ],
+  "evidence_file_sha256": {
+    "results/explicit-log-gap/commands.json": "131fd338259e41192235aaf00df334e3f2e04bd5a4e2450118db8807024250d3",
+    "results/explicit-log-gap/python-command.json": "6d9711df428bede6349bf5689fb0fffa23b89ba5e566792e4a1cc2e7790151cd",
+    "results/explicit-log-gap/python-replay.json": "9e2328213fb9bfd6fb669b2c18d646bdf1502ba95af85231d5a11374b8f18750"
+  },
+  "reused_kernel_verification": {
+    "record": "results/narrow-cycle-masks/verification.json",
+    "record_sha256": "c1e02e5c501bfe46e24959bc55e539d724e7e46e9588a7398403b1bd2b591c34",
+    "unchanged_sources": {
+      "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+      "CollatzCycleCriterion.lean": "88f9f7ef4177107e560d859524fa28c40c8289aa7b5cff39c1b647dbbe3351e6",
+      "lean/FoldedCycleBounds.lean": "a4306eddce55604ee98b1fca585afd9465bf2fafe15d8a374033fc47ebde79df",
+      "lean/NarrowCycleMasks.lean": "edccac0a52febe53ba6afbe47107061e9aa2640f38dea5cbd7093013f2244154"
+    },
+    "scope": "Existing parity-collision, exact cycle criterion, folded rank, and narrow-cycle arithmetic; no claim that the complete written classification is formalized."
+  },
+  "independent_python_replay": {
+    "constants": {
+      "bernstein_intervals": 13,
+      "logarithm_bits": 128,
+      "logarithm_terms": 64,
+      "seed_divisibilities": 6,
+      "coefficient_bound": "73122192/9025 < 8103"
+    },
+    "small_index_sanity": {
+      "first_index": 1,
+      "last_index": 16,
+      "scope": "Finite sanity checks; not the all-index integrality proof."
+    },
+    "extended_cover": {
+      "first": "2^21",
+      "last_inclusive": "10^4000",
+      "dyadic_bits": 32768,
+      "series_terms": 16384,
+      "common_cf_terms": 9591,
+      "terms_consumed": 7741,
+      "accepted_rows": 7726,
+      "skipped": 14,
+      "first_window": 48,
+      "last_window": 50543,
+      "minimum_gap_margin_floor": 13
+    },
+    "all_exact_checks_passed": true,
+    "seconds": 89.2440360670007,
+    "scope": "Finite exact arithmetic; the all-index integral and cycle arguments are written."
+  },
+  "new_written_conclusions": [
+    "For positive integer counts with 11*k<=7*N, N<2*k, and lambda=N*log(2)-k*log(3)>0, N>=10^4000 implies lambda>N^(-21/5).",
+    "No nontrivial primitive positive integer cycle in the full critical independent 21-to-12 mask family for 2^21<=N<=10^4000; the external Eliahou input closes smaller periods.",
+    "With the identified external inputs, all-period exclusions of independent 22-to-13 masks, alternating-position 21-to-12 masks, and 21-to-12 masks with no cyclic halving-11.",
+    "Every surviving full critical integer mask has N>10^4000 and q>N/(24*log_2(N)); for N>=2^16384, N/8192<q<(2*N-3*k)-N/8192.",
+    "Every nontrivial positive integer Collatz cycle has odd extrema satisfying 4*M>=9*m+5."
+  ],
+  "scope": {
+    "kernel_checked": [
+      "Cubic polynomial identities and substitution, Bernstein coefficient arithmetic on thirteen contiguous intervals.",
+      "Six seed polynomial divisibilities, integral-ratio comparison, coefficient estimate arithmetic, prime-bound and cutoff comparisons.",
+      "Generic covered-denominator product bound, minimum window length, and sparse-catalog exponent comparison.",
+      "Existing exact Farey cover checker and supporting transition, density, and sparse-family arithmetic."
+    ],
+    "native_finite_certificates": [
+      "Four 128-bit dyadic logarithm sums with 64 terms and explicit scaled-tail checks.",
+      "32768-bit logarithm sums with 16384 terms and complete denominator cover through 10^4000."
+    ],
+    "written_not_fully_formalized": [
+      "All-index partial fractions, zero residue, denominator clearance, positive coefficient growth, integrals, and two-index nonvanishing.",
+      "Real-series interpretation of the logarithm enclosures and the explicit logarithm theorem.",
+      "Catalog comparisons, extension of the finite cover to 22-to-13 masks, and all-period family exclusions.",
+      "Narrow-cycle sorting and transfer to the arbitrary-cycle span bound; entropy and counting in the density application."
+    ],
+    "python_scope": "Finite exact arithmetic, complete independent denominator cover, and sanity checks at indices 1 through 16; the all-index denominator proof is written, not inferred from these examples.",
+    "unresolved": [
+      "No proof or disproof of convergence for every positive integer.",
+      "Full independent 21-to-12 masks at unbounded periods, with sufficient transitions, still survive these restrictions.",
+      "Arbitrary wider cycles and aperiodic divergent trajectories remain unresolved.",
+      "No all-period 8/3 odd-span bound is claimed."
+    ],
+    "review": "The written proof was checked locally against its explicit identities, inequalities, hypotheses, and primary external inputs. No independent peer review or complete Lean formalization of the analytic proof is claimed."
+  },
+  "external_inputs": [
+    {
+      "title": "Rosser and Schoenfeld, Approximate formulas for some functions of prime numbers, Illinois J. Math. 6 (1962), 64-94",
+      "url": "https://doi.org/10.1215/ijm/1255631807",
+      "inspected_pdf_mirror": "https://denisevellachemla.eu/Rosser-Schoenfeld-1962.pdf",
+      "inspected_pdf_sha256": "8e37b06f82e09421bceb2502578c47b61469141f0287e6acedb70e01765ab556",
+      "inspected_claims": "Theorems 9, 13, and 18 on journal pages 71-72; used to derive psi(x)<(509/500)*x for x>=6400.",
+      "scope": "Published theorem and its original computational inputs, not rerun or formally proved here."
+    },
+    {
+      "title": "Wu and Wang, On the irrationality measure of log 3 (2014)",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "used_for": "Identification of the Salikhov integral construction in the introduction. The general asymptotic theorem is not an input to the new explicit lower bound."
+    },
+    {
+      "reused_published_small_period_input": {
+        "title": "Shalom Eliahou, The 3x+1 problem: new lower bounds on nontrivial cycle lengths, Discrete Mathematics 118 (1993), Theorem 1.1",
+        "url": "https://doi.org/10.1016/0012-365X(93)90052-U",
+        "inspected_pdf_mirror": "https://raw.githubusercontent.com/tangentstorm/eliahou-collatz-bounds/main/eliahou-collatz.pdf",
+        "inspected_pdf_sha256": "077292bebdf53a6e06d92fb475ce395ee1c8af4cc3e9f5c2e4620b2e35134689",
+        "inspected_pages": "Journal pages 45-48: shortcut-map definition, stated theorem, minimum hypothesis, and cited convergence input.",
+        "used_for": "Only the corollary closing periods below the local certificate start, not the local interval exclusion."
+      },
+      "scope": "Only the external small-period closure; the original convergence computation through 2^40 was not rerun."
+    }
+  ]
+}

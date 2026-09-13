@@ -1,0 +1,110 @@
+{
+  "all_exact_checks_passed": true,
+  "grid_length": 1054,
+  "allowed_centers_per_grid_block": 196,
+  "enlarged_arc_times_grid": "488033093/2500000",
+  "finite_slope_examples": 7,
+  "all_phase_maxima_at_these_slopes": [
+    195,
+    196,
+    196,
+    196,
+    196,
+    196,
+    196
+  ],
+  "pattern_window_lengths": [
+    1,
+    2,
+    3,
+    17,
+    65
+  ],
+  "all_boundary_and_cell_pattern_counts": [
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ],
+    [
+      2,
+      3,
+      4,
+      34,
+      130
+    ]
+  ],
+  "rational_examples": [
+    {
+      "odd_count": 306,
+      "shortcut_count": 485,
+      "omitted_indices_divisible_by_three": false,
+      "selected_edits": 87,
+      "span_times_million_floor": 2435665,
+      "nonintegral": true
+    },
+    {
+      "odd_count": 306,
+      "shortcut_count": 485,
+      "omitted_indices_divisible_by_three": true,
+      "selected_edits": 58,
+      "span_times_million_floor": 2430152,
+      "nonintegral": true
+    },
+    {
+      "odd_count": 2966,
+      "shortcut_count": 4701,
+      "omitted_indices_divisible_by_three": false,
+      "selected_edits": 846,
+      "span_times_million_floor": 2437213,
+      "nonintegral": true
+    },
+    {
+      "odd_count": 2966,
+      "shortcut_count": 4701,
+      "omitted_indices_divisible_by_three": true,
+      "selected_edits": 563,
+      "span_times_million_floor": 2436643,
+      "nonintegral": true
+    }
+  ],
+  "seconds": 3.5704703659939696,
+  "scope": "Exact constants and finite sanity checks. The uniform circle argument, factor catalog, and all-period integer-cycle span theorem remain written proofs. Rational examples are nonintegral."
+}

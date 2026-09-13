@@ -1,0 +1,30 @@
+{
+  "constants": {
+    "bernstein_intervals": 13,
+    "logarithm_bits": 128,
+    "logarithm_terms": 64,
+    "seed_divisibilities": 6,
+    "coefficient_bound": "73122192/9025 < 8103"
+  },
+  "small_index_sanity": {
+    "first_index": 1,
+    "last_index": 16,
+    "scope": "Finite sanity checks; not the all-index integrality proof."
+  },
+  "extended_cover": {
+    "first": "2^21",
+    "last_inclusive": "10^4000",
+    "dyadic_bits": 32768,
+    "series_terms": 16384,
+    "common_cf_terms": 9591,
+    "terms_consumed": 7741,
+    "accepted_rows": 7726,
+    "skipped": 14,
+    "first_window": 48,
+    "last_window": 50543,
+    "minimum_gap_margin_floor": 13
+  },
+  "all_exact_checks_passed": true,
+  "seconds": 89.2440360670007,
+  "scope": "Finite exact arithmetic; the all-index integral and cycle arguments are written."
+}

@@ -1,0 +1,83 @@
+{
+  "build_directory": "/tmp/collatz-explicit-log-vaqk1e84",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskResonance.olean",
+        "lean/MaskResonance.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.9801409220017376,
+      "log": "results/explicit-log-gap/MaskResonance.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskResonanceExtended.olean",
+        "lean/MaskResonanceExtended.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 7.820969931999571,
+      "log": "results/explicit-log-gap/MaskResonanceExtended.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskTransitionBounds.olean",
+        "lean/MaskTransitionBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8737122000020463,
+      "log": "results/explicit-log-gap/MaskTransitionBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskDensityBounds.olean",
+        "lean/MaskDensityBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.306738844999927,
+      "log": "results/explicit-log-gap/MaskDensityBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/MaskCatalogBounds.olean",
+        "lean/MaskCatalogBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9347820360053447,
+      "log": "results/explicit-log-gap/MaskCatalogBounds.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-explicit-log-vaqk1e84/ExplicitLogConstants.olean",
+        "lean/ExplicitLogConstants.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.173867570003495,
+      "log": "results/explicit-log-gap/ExplicitLogConstants.log",
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ]
+}

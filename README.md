@@ -50,11 +50,13 @@ Performance timings are explicitly identified as empirical measurements.
 | `docs/MECHANICAL-SWAP-EXCLUSION.md` / `lean/MechanicalDefectFinite.lean` / `lean/MechanicalLogBracket.lean` | Written exclusion of every single adjacent swap of a mechanical cycle word, supported by checked finite word and rational arithmetic; necessary distance bounds for arbitrary primitive cycles |
 | `docs/MECHANICAL-DISTANCE-EXCLUSION.md` / `lean/MechanicalDistanceFinite.lean` | Written exclusion through half-Hamming distance 31 from every same-count cyclic mechanical word of slope p/N, supported by exact count-pair certificates |
 | `docs/MECHANICAL-MASKS.md` / `lean/MechanicalMaskWitness.lean` | Written rational families showing limits of bounded discrepancy; checked distance-35 witness with 289 length-32 factors and failed integer divisibility |
-| `docs/MASK-CYCLE-OBSTRUCTIONS.md` / `lean/MechanicalMaskArithmetic.lean` / `lean/MaskCatalogBounds.lean` | Kernel-checked mask divisibility normal form; written eventual exclusions for two families with independently chosen edits, with an unresolved finite cutoff |
+| `docs/MASK-CYCLE-OBSTRUCTIONS.md` / `lean/MechanicalMaskArithmetic.lean` / `lean/MaskCatalogBounds.lean` | Kernel-checked mask divisibility normal form; written exclusions for two independently edited families, now covering every period through the later explicit logarithm argument |
 | `lean/MaskSubsetDecoder.lean` / `lean/MaskSubsetFinite.lean` | Kernel-checked complete subset decoder; native finite certificates exclude all \(2^{80}\) and \(2^{1231}\) masks at two specified count pairs |
 | `docs/MASK-TRANSITIONS.md` / `lean/MaskTransitionBounds.lean` | Written lower bound on adjacent halving-1 occurrences in surviving long masks; kernel-checked local repairs and supporting arithmetic |
 | `docs/MASK-DENSITY.md` / `lean/MaskDensityBounds.lean` | Written empirical-entropy bound and positive densities of both good and bad blocks in surviving masks; checked finite distributions and power comparisons |
 | `docs/MASK-RESONANCE.md` / `lean/MaskResonance.lean` | Written exclusion of every independent critical 21-to-12 mask for \(2^{21}\le N\le10^{1000}\), with an exact native rational cover and kernel checker soundness; the published Eliahou bound closes the smaller range using external computation |
+| `docs/EXPLICIT-LOG-GAP.md` / `lean/ExplicitLogConstants.lean` / `lean/MaskResonanceExtended.lean` | Written explicit logarithm bound and exact cover through \(10^{4000}\); all-period exclusions of three mask subclasses, numerical transition and density cutoffs, and the arbitrary-cycle bound \(4M\ge9m+5\); finite arithmetic checked in Lean, with external prime and small-period inputs |
+| `docs/MASK-SPAN-BOUND.md` / `lean/MaskSpanBounds.lean` | Written stronger all-period odd-span bound \(20M>49m\), from a geometric restriction on edit positions; kernel-checked phase, grid, block-count, and exact cutoff arithmetic, with the existing external inputs |
 | `lean/BoundedStandardCycle.lean` | Direct convergence certificate through one million, kernel checker soundness, and triviality of any cycle with a checked small state |
 | `CollatzCycleSeparation.lean` | Kernel-checked local replacement cancellation, numerator injectivity, and repeated-block edit exclusions |
 | `src/` / `CollatzSearchCertsRust.lean` | Rust structured large-integer search, parallel workers, and independent Lean replay |
@@ -104,6 +106,14 @@ The narrow-cycle reduction and the preceding automatic-order theorem have
 [a further verification record](results/narrow-cycle-masks/verification.json).
 Their new finite algebra is kernel checked; the global cycle sorting and
 applications of earlier analytic results remain written arguments.
+The explicit logarithm bound and extended cover have
+[a subsequent verification record](results/explicit-log-gap/verification.json).
+It separates the finite kernel and native checks from the written all-index
+integral and denominator arguments and the published external inputs.
+The stronger span bound has [its own verification record](results/mask-span/verification.json).
+Its new arithmetic is kernel checked; the real rotation and complete cycle
+arguments remain written, with finite Python checks of boundary cases and
+nonintegral rational examples.
 The Rust launchers embed this pin at build time, and the Python reference reads
 the same file when verifying. Rebuild Rust after changing the pin.
 For current reproduction commands,

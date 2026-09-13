@@ -1,0 +1,30 @@
+{
+  "build_directory": "/tmp/collatz-mask-span-1btiae4b",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-span-1btiae4b/MaskSpanBounds.olean",
+        "lean/MaskSpanBounds.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.9927660469984403,
+      "log": "results/mask-span/MaskSpanBounds.log",
+      "log_sha256": "7acff24d8b935b04944409e17d481e5d7093e6e94077734063721bb1d153002c",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_mask_span.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.70084637599939,
+      "log": "results/mask-span/python-replay.json",
+      "log_sha256": "894b2a9538218780627ba5b6b178ece96afa5e3a4ddc53693d418e9176f04a29",
+      "passed_without_warnings_or_admitted_proofs": true
+    }
+  ]
+}
