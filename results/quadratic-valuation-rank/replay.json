@@ -1,0 +1,9 @@
+{
+  "all_checks_passed": true,
+  "exhaustive_certificates": 162,
+  "universal_progression_patterns": 6,
+  "lifted_edge_checks": 80,
+  "finite_properness_family_cases": 1855,
+  "maximum_certificate_weight": 36,
+  "scope": "Finite exact arithmetic; properness, polynomial restrictions, and real interpretation are written bridges. Not a Collatz proof."
+}

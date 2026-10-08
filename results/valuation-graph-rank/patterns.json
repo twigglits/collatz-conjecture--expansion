@@ -1,0 +1,205 @@
+[
+  {
+    "seed": 131,
+    "modulus": 432,
+    "source": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "neighbors": [
+      {
+        "kind": "odd",
+        "seed": 197,
+        "slope": 648,
+        "features": [
+          0,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "double",
+        "seed": 262,
+        "slope": 864,
+        "features": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "inverse",
+        "seed": 87,
+        "slope": 288,
+        "features": [
+          0,
+          3,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 134,
+    "modulus": 1296,
+    "source": [
+      1,
+      0,
+      0,
+      3
+    ],
+    "neighbors": [
+      {
+        "kind": "even",
+        "seed": 67,
+        "slope": 648,
+        "features": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "double",
+        "seed": 268,
+        "slope": 2592,
+        "features": [
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "inverse",
+        "seed": 89,
+        "slope": 864,
+        "features": [
+          0,
+          1,
+          0,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 137,
+    "modulus": 216,
+    "source": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "neighbors": [
+      {
+        "kind": "odd",
+        "seed": 206,
+        "slope": 324,
+        "features": [
+          1,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "double",
+        "seed": 274,
+        "slope": 432,
+        "features": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "inverse",
+        "seed": 91,
+        "slope": 144,
+        "features": [
+          0,
+          2,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 142,
+    "modulus": 864,
+    "source": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "neighbors": [
+      {
+        "kind": "even",
+        "seed": 71,
+        "slope": 432,
+        "features": [
+          0,
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "double",
+        "seed": 284,
+        "slope": 1728,
+        "features": [
+          2,
+          0,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "seed": 147,
+    "modulus": 72,
+    "source": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "neighbors": [
+      {
+        "kind": "odd",
+        "seed": 221,
+        "slope": 108,
+        "features": [
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "double",
+        "seed": 294,
+        "slope": 144,
+        "features": [
+          1,
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  }
+]

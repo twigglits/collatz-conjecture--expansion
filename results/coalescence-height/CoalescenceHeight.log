@@ -1,0 +1,6 @@
+'CoalescenceHeight.bounded_size_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoalescenceHeight.logarithmic_horizon_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoalescenceHeight.region27_orbit' depends on axioms: [propext, Quot.sound]
+'CoalescenceHeight.no_early_meeting27' depends on axioms: [propext, Quot.sound]
+'CoalescenceHeight.meeting27_at59' does not depend on any axioms
+'CoalescenceHeight.first_slope_drop27' does not depend on any axioms

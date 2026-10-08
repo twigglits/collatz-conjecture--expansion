@@ -1,0 +1,121 @@
+{
+  "verified_at_utc": "2026-10-08T13:01:32.228235+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "A well-founded relation has no two-cycle, for any type",
+    "For any function, forward-closed region, and well-founded decrease relation, local adjacent progress outside the region forces forward decrease there",
+    "Natural-valued Collatz rank specialization with a region containing the exceptional base",
+    "Contradiction for natural graph ranks monotone on the matching four-valuation/residue endpoints, with a bounded forward-closed base"
+  ],
+  "written_bridges": [
+    "Finite sublevel sets make a real rank relation well founded",
+    "A finite base whose starts converge has finite forward closure",
+    "Modular conditions encode exact four-valuation equality",
+    "Extension using section 8 growing paths for arbitrary finite polynomial valuation features",
+    "Full size-monotone well-founded graph-rank obstruction for verified finite bases"
+  ],
+  "required_hypotheses": [
+    "Well-founded strict decrease, not merely a bounded-below real rank",
+    "Forward-closed region containing every exceptional start",
+    "Boundedness of that region for the growing-witness rank obstruction",
+    "Nondecreasing rank with increasing size at fixed features"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "Convergence or bounded forward closure of arbitrary unverified finite bases",
+    "Exclusion of all ranks or all nonlinear magnitude dependence",
+    "Full Lean formalization of the all-polynomial valuation construction"
+  ],
+  "independent_replay": {
+    "witness_count": 42,
+    "base_limits": [
+      1,
+      2,
+      26,
+      100,
+      1000,
+      32768
+    ],
+    "region_bounds": [
+      2,
+      2,
+      80,
+      4616,
+      125252,
+      60506432
+    ],
+    "all_checks_passed": true
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/graph-rank-orientation/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3/CollatzPeriodic.olean",
+        "CollatzPeriodic.lean"
+      ],
+      "returncode": 0,
+      "log": "results/graph-rank-orientation/CollatzPeriodic.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3/GraphRankNecessity.olean",
+        "lean/GraphRankNecessity.lean"
+      ],
+      "returncode": 0,
+      "log": "results/graph-rank-orientation/GraphRankNecessity.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3/BuchiArithmetic.olean",
+        "lean/BuchiArithmetic.lean"
+      ],
+      "returncode": 0,
+      "log": "results/graph-rank-orientation/BuchiArithmetic.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3/GraphRankOrientation.olean",
+        "lean/GraphRankOrientation.lean"
+      ],
+      "returncode": 0,
+      "log": "results/graph-rank-orientation/GraphRankOrientation.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-rank-orientation-t7wjz4q3",
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPeriodic.lean": "df0115f2f5fcdb1e511b3146159fd138a9da007a6a6e798cedfd983773dab584",
+    "lean/GraphRankNecessity.lean": "4a834206b2b1ef7142364bd6996a32ed1f9eb8c15e15a5e453c839d8e537732f",
+    "lean/BuchiArithmetic.lean": "4fe1b2446ec58419720556f71279b63bb3f40a2b93b5d6ec6f799db25c114390",
+    "lean/GraphRankOrientation.lean": "3335fd8b8feeda10dbb57a7b2b550cd7846fe2ad3d5b01a5aeb814c6aa052595",
+    "verify_graph_rank_orientation.py": "c6351febb8cd6cacd42556dfdb4adeca9fc6ec86d54a365a7bfb1174eb47ec06",
+    "results/graph-rank-orientation/replay.json": "34448977d7316b8fdd46593f2957540e5a393156ffddbab23d645c3abe0c43ea",
+    "APERIODIC-ATTEMPT.md": "fa53a858d67887e2d89b95d296d42da23f76b1b22584021a164f1568994620c5",
+    "ATTEMPT.md": "29941f9ec4864e786f8f3e0237df1d659f3de0ba60a17cd41b554b6c32dddf56",
+    "README.md": "230d1268e795967ca14911c9a27d864db14c6b80b832b3d3ee51636411a51c85",
+    "MEMORY.md": "becee15ec513ca6547945decd80a8d3acaf46500a86c25bce3ec69ccf9869d9b",
+    "results/graph-rank-orientation/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/graph-rank-orientation/CollatzPeriodic.log": "93eb81a8d4154ce7078007a149489f4ce7e223ba90c3ea05d5fdcd53cd545c57",
+    "results/graph-rank-orientation/GraphRankNecessity.log": "df41dddac90427f6ce9990212a594a3a33bff605abfe3f11e1b1b63762339f94",
+    "results/graph-rank-orientation/BuchiArithmetic.log": "7aaf83ff4c08b0ca120822bc6e716308973623693f0ffc5872b7e0fa6ee39e1c",
+    "results/graph-rank-orientation/GraphRankOrientation.log": "0804aa66e9a5520785a4b5cea9287773e60a50341398aa647c9b3aa479d223ec"
+  }
+}

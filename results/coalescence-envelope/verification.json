@@ -1,0 +1,170 @@
+{
+  "checked_utc": "2026-10-08T12:13:20.078569+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "environment": {
+    "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p",
+    "PYTHONPATH": "/tmp/collatz-rank-solver"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.9156247089849785,
+      "log": "results/coalescence-envelope/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0253625839832239,
+      "log": "results/coalescence-envelope/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.40107762499246746,
+      "log": "results/coalescence-envelope/CollatzGrowth.log",
+      "log_sha256": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p/CoalescenceDescent.olean",
+        "lean/CoalescenceDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2780146249569952,
+      "log": "results/coalescence-envelope/CoalescenceDescent.log",
+      "log_sha256": "4051d1afe7cb472f05a44e57eaa994bb6e98d577cce9a135a44068ecce0c6b71"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-envelope-final-egy_2t8p/CoalescenceEnvelope.olean",
+        "lean/CoalescenceEnvelope.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.42351354099810123,
+      "log": "results/coalescence-envelope/CoalescenceEnvelope.log",
+      "log_sha256": "916a42f72fc7161bbe0dd8717a91c55ac9f63058dc367b180d59aca3f79bfd2a"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_coalescence_envelope.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.221552082977723,
+      "log": "results/coalescence-envelope/replay.json",
+      "log_sha256": "20bc4ad4a1f27e4da43c5dc6c70f7d65da86308e07b0687d773e165d7cf86725"
+    },
+    {
+      "command": [
+        "python3",
+        "search_graph_ranks.py"
+      ],
+      "exit_code": 0,
+      "seconds": 24.56423270801315,
+      "log": "results/coalescence-envelope/rank-search.json",
+      "log_sha256": "8e2e5f865e40deefcc9cde9f0d3957e48f6d39f117fb6b22f2d8e20136e5b976",
+      "stderr_log": "results/coalescence-envelope/rank-search.json.stderr.log",
+      "stderr_sha256": "9b211b973495e851bcc62c88d2a47d083a722455ed24cfca0d0d2651b9d0a850"
+    }
+  ],
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/CoalescenceDescent.lean": "661eaa09f67e61ed65bb9ee3593b8d5a6a9c8b829e6c9efd809f19d892b2cbe7",
+    "lean/CoalescenceEnvelope.lean": "352fc48428f7c5d499d76870cf53bb62bdf2a61a5bf577ef2bce24894cc3280a",
+    "verify_coalescence_envelope.py": "d083023db0f2267040662d10af3e963c0d5b9cea5a023a56914e4381dfe60bbc",
+    "search_graph_ranks.py": "fca0174a8a9d9a495ccc7c0d171b81416b68b9ddf336c993b0b6739e41713894",
+    "APERIODIC-ATTEMPT.md": "5eaaf3c832b50071911c6bffa21af52c39dc405b9b428ad997f1e861da6f0f3c",
+    "ATTEMPT.md": "1cdacb0d4b0b904ff629674193dc137d6f321ccceae24025cb81fdb70f5cf6d9",
+    "README.md": "30a7f6fd1bbf5f28f158ff16204d38869d3a7f7d7e64fd2307721cf0ec18c33d",
+    "MEMORY.md": "551ef03361c25c2952ebda1e1a9d2f2e2f21fd0a8800c66ae8a6c4adc909e05d"
+  },
+  "kernel_scope": [
+    "Odd-step weights add under concatenation.",
+    "Paired affine inequalities for both orders of the two meeting times.",
+    "On the stated CRT class, every bounded coalescing start has affine slope q>=1 and intercept 0<=c<=q-1 (formalized by integer cross-products).",
+    "Positive powers of two cannot equal powers of three.",
+    "Convergence transfers across either direction of a valid Collatz edge.",
+    "A natural-valued graph rank decreasing outside a finite verified base is sufficient for the full Collatz conjecture."
+  ],
+  "kernel_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "admitted_proofs": false,
+  "native_evaluation": false,
+  "written_scope": [
+    "No selection from finitely many positive-slope real affine formulas can give a decreasing adjacent edge at every sufficiently large positive integer.",
+    "The selection need not be a residue rule or computable; the proof uses finite leading ratios, the kernel envelope, and the one-change-of-direction structure of a strictly decreasing path.",
+    "The full finite-family obstruction is written, not a Lean theorem."
+  ],
+  "finite_scope": {
+    "exact_envelope_checks": 716286,
+    "inverse_horizons": [
+      1,
+      24
+    ],
+    "solver": "Z3",
+    "solver_version": "5.1.0",
+    "solver_package": "z3-solver==5.1.0.0",
+    "moduli": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      12,
+      16,
+      18,
+      24,
+      27,
+      32,
+      36,
+      48,
+      54,
+      64,
+      72,
+      96,
+      108,
+      128,
+      144
+    ],
+    "all_tested_templates_unsat": true,
+    "solver_result_scope": "Exact SMT checks, including neutral slopes and arbitrary finite exceptional ranges. Not kernel-checked unsatisfiability certificates.",
+    "solver_api_reference": "https://microsoft.github.io/z3guide/programming/Z3%20Python/Introduction/"
+  },
+  "limitations": [
+    "No rank satisfying the sufficient criterion was found.",
+    "Nonlinear ranks and infinitely many affine formulas are not excluded.",
+    "The affine-family obstruction does not imply existence of a Collatz counterexample.",
+    "Neither all nontrivial positive cycles nor arbitrary divergent orbits have been excluded."
+  ],
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; full objective remains active."
+}

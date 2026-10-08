@@ -1,0 +1,70 @@
+{
+  "verified_at_utc": "2026-10-08T12:36:57.423777+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Exact source and neighbor valuations for all natural progression indices in five patterns",
+    "Shortcut edge identities and source residues modulo three for all progression indices",
+    "Two exact power inequalities underlying the logarithm bounds",
+    "108 finite nonnegative-weight certificate identities and exhaustive selection coverage"
+  ],
+  "written_bridges": [
+    "Interpreting modular exact valuations as the standard p-adic valuations",
+    "Bounded-below rank implies C+a >= 0 along 3*2^k",
+    "Power inequalities imply 7C < 12L and 5L < 3C for L=C*log2(3/2)",
+    "Asymptotic neighbor rank differences with strict forward and weak inverse limits",
+    "Nonnegative weighted sum contradiction over the real numbers",
+    "Complete obstruction to the stated bounded-below four-feature rank template outside every finite base"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "Exclusion of arbitrary nonlinear valuation ranks",
+    "Termination from boundedness below of a real-valued rank alone"
+  ],
+  "discovery": "Z3 supplied candidate weights; the saved arithmetic certificates require no SMT trust.",
+  "independent_replay": {
+    "all_checks_passed": true,
+    "exhaustive_certificates": 108,
+    "universal_progression_patterns": 5,
+    "lifted_edge_checks": 65,
+    "maximum_certificate_weight": 84,
+    "scope": "Exact arithmetic inputs; full real rank obstruction is a written deduction, not a Collatz proof."
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-valuation-rank-no1oy7ra/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/valuation-graph-rank/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-valuation-rank-no1oy7ra/ValuationGraphRank.olean",
+        "lean/ValuationGraphRank.lean"
+      ],
+      "returncode": 0,
+      "log": "results/valuation-graph-rank/ValuationGraphRank.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-valuation-rank-no1oy7ra",
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/ValuationGraphRank.lean": "5946eaa0ecfb36c62f424f45b80d6b7fe0468cca0b7976e66af825e3e05c772d",
+    "verify_valuation_graph_rank.py": "fb6aaee9edbbb1eb35163286287add0e942c2ccb197d4859a0bae08a1f3d7768",
+    "results/valuation-graph-rank/certificates.json": "8d946f688a211ed3cdd10c6c5db22cb8ef3153de0461310d2e6b26de7c6e84d4",
+    "results/valuation-graph-rank/patterns.json": "4fc02687879ac56a63f4102f33d996effcca3b72d2b9711aec4cfaa6a1e31d19",
+    "results/valuation-graph-rank/replay.json": "f2794f11e5ef7562b6ab7901b7ab9f9a4a40db642c604dce05ccdebd20e95fca",
+    "results/valuation-graph-rank/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/valuation-graph-rank/ValuationGraphRank.log": "3b2fbc2c363ccef21a26b5453cbe35ea8c9c32506ac419958b3d1ddacda0b471",
+    "APERIODIC-ATTEMPT.md": "d436c4b5058aff4f8739d9a8ad62896a5c7c99d9e8af8e902e097422e0dfd9b0",
+    "ATTEMPT.md": "1077f509d6d27214d42b12c02f99bb459f977fe65e62ec2de12b079b1a21af83",
+    "README.md": "3be9e3b2cc7ac43dfb7d334c561b7cea9bf88609cb46f697df16b666e2f3c034",
+    "MEMORY.md": "66404921ade4ed694043ee8b1cc6735f80fd86a3cc2e434d0082464aad3a116c"
+  }
+}

@@ -1,0 +1,3 @@
+'GraphRankNecessity.predecessor_of_three_divides' depends on axioms: [propext, Quot.sound]
+'GraphRankNecessity.doubling_increases' depends on axioms: [propext, Quot.sound]
+'GraphRankNecessity.forward_descent_on_multiples_of_three' depends on axioms: [propext, Quot.sound]

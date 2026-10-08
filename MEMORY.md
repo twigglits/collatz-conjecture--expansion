@@ -1,7 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the coalescence induction and universal
-finite-horizon obstruction were kernel checked.
+Last updated: 2026-10-08, after the inverse-basin and orbit-packing audit.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -285,3 +284,296 @@ induction tool, but a fixed bound on both orbit lengths cannot close it.
 Further work must give a genuinely start-dependent argument or another
 global constraint. Do not mistake the 16 remaining residue labels for
 a finite set of unresolved integers.
+
+## 2026-10-08 follow-up: horizon versus input size
+
+[CoalescenceHeight.lean](lean/CoalescenceHeight.lean) imports the preceding
+module and proves that its witnesses can be chosen with
+`3^K <= n < 6^K` for every K≥1. Reduce the constructive large witness
+modulo `2^K*3^K`; the two divisibilities survive, and the residue is
+nonzero. This gives a universal logarithmic lower bound on the necessary
+meeting horizon along an unbounded sequence. It does not disprove a
+logarithmic upper bound, which remains unproved.
+
+The same module proves an exact example with no cap on the smaller orbit:
+for 0<m<27, a<59, and every b≥0, `U^a(27) != U^b(m)`.
+All smaller starts lie in the 34-element invariant set
+`{1,...,26,29,32,35,38,40,44,53,80}`, disjoint from the first 59 states
+of the orbit of 27. At time 59 it reaches 23. The first coefficient
+drop is also 59. These are kernel proofs without admitted terms or
+native evaluation.
+
+[verify_coalescence_height.py](verify_coalescence_height.py) independently
+checks the invariant set and CRT representatives for horizons 1–256.
+It also computes exact minimum values of max(a,b) for smaller-start
+meetings for n=2,...,32768, searching through 192 steps. Every start
+finds a meeting, making the minimum exact within this finite range.
+The largest observed ratio to ceil(log2(n)) is 59/5 at 27. This supplies
+no universal upper bound. The verification manifest is
+[results/coalescence-height/verification.json](results/coalescence-height/verification.json).
+
+The attempted bridge from first multiplier drop to smaller coalescence
+remains unproved. The direct-descent version is the coefficient stopping
+time conjecture already recorded in CollatzAffine.lean; the new work must
+not silently assume it. A universal finite first-drop theorem is also
+missing. Section 10 of APERIODIC-ATTEMPT.md records these gaps and the
+primary literature reference. The objective remains the full conjecture.
+
+## 2026-10-08 follow-up: bidirectional ranks
+
+The next attempt allowed a rank to decrease along either a forward or
+inverse Collatz edge. Strong induction on a natural-valued rank, plus a
+finite verified base, would prove the full conjecture. This sufficient
+criterion is kernel proved in
+[CoalescenceEnvelope.lean](lean/CoalescenceEnvelope.lean).
+
+The same module strengthens the CRT-class obstruction to exact inequalities:
+if `U^a(n)=U^b(m)`, a,b≤K, `2^K | n+1`, and `3^K | n`, set
+`A=2^a*3^wt(b,m)` and `B=2^b*3^a`. Then `B*n <= A*m` and
+`A*(m+1) <= B*(n+1)`. Thus `m=q*n+c` with `q=B/A >=1` and
+`0<=c<=q-1`. Both time orderings are kernel checked. Independent Python
+replay checks 716,286 inverse nodes.
+
+[search_graph_ranks.py](search_graph_ranks.py) uses exact Z3 linear-real
+constraints for `R(n)=a_r*n+b_r`, r modulo M, with positive slopes.
+It allows neutral leading slopes with strictly negative constant change,
+and arbitrary finite exceptional ranges. All 22 tested moduli through
+the recorded maximum 144 returned unsat. These are SMT results, not Lean
+certificates. The user approved downloading z3-solver into
+`/tmp/collatz-rank-solver`; version 5.1.0.0 was installed with uv. No
+repository environment or dependency file was changed. Use PYTHONPATH
+pointing there, or install that package in a chosen environment for replay.
+
+Section 11 of APERIODIC-ATTEMPT.md gives a broader written obstruction:
+no rank selected from a finite set of positive-slope affine formulas can
+offer a decreasing adjacent edge at every sufficiently large integer.
+The assignment of formulas need not be periodic. This complete theorem
+is written, not fully Lean checked. Its proof uses the kernel envelope:
+a strictly decreasing path is forward then backward (no reversal after
+the first inverse edge), and its normalized leading rank stays between
+the smallest and largest palette slopes. Strict leading drops have a
+fixed multiplicative gap; neutral oriented runs cannot revisit a formula,
+since that would require `2^length=3^odd_count` with positive length.
+These give a fixed path-length bound contradicted by a sufficiently
+deep, sufficiently large CRT start.
+
+[results/coalescence-envelope/verification.json](results/coalescence-envelope/verification.json)
+records all scopes, hashes, builds, independent replay, and SMT outcomes.
+The full conjecture remains unresolved. The finite-affine bidirectional
+rank template is exhausted by the written obstruction; repeating that
+search at larger moduli is not a useful next step. Nonlinear ranks or
+unbounded arithmetic features are not excluded by this theorem.
+
+## 2026-10-08 follow-up: four-feature valuation ranks
+
+APERIODIC-ATTEMPT section 12 gives a written exclusion of every bounded-below
+rank `C log₂n+a ν₂(n)+b ν₂(n+1)+c ν₃(n)+d ν₃(n+1)`, `C>0`,
+that supplies a decreasing shortcut-graph neighbor at all sufficiently
+large integers. Along `3·2^k`, boundedness below forces `C+a≥0`.
+Use a single shared `L=C log₂(3/2)`, with `7C<12L` and `5L<3C`.
+Treating forward and inverse logarithms as independent bounds can create
+false feasibility; the shared variable is essential.
+
+Five stable progression patterns, with seeds 131,134,137,142,147 and
+moduli 432,1296,216,864,72, give exhaustive neighbor alternatives.
+Their odd forward limit conditions are strict; odd inverse conditions
+are weak because the true ratio tends to 2/3 from below. All 108 ways
+to select an alternative contradict the common background inequalities.
+Each contradiction has nonnegative integer weights with identically zero
+coefficient sum and a positive weight on a strict inequality.
+
+[ValuationGraphRank.lean](lean/ValuationGraphRank.lean) kernel-checks the
+five universal feature/edge progression lemmas, the two logarithm-bound
+power comparisons, and all 108 finite certificate identities and selection
+coverage. The all-real weighted-sum interpretation and logarithmic limit
+argument are written bridges. No full real-valued rank theorem is claimed
+as kernel formalized. The independent
+[verifier](verify_valuation_graph_rank.py) reconstructs the constraint rows
+and checks the integer certificates without Z3. Files and hashes are in
+[the verification record](results/valuation-graph-rank/verification.json).
+
+Boundedness below alone does not ensure termination of a decreasing
+real-valued rank; finite sublevel sets would be a sufficient extra condition.
+Here even the local decreasing-edge property fails under the weaker
+bounded-below assumption. This does not exclude arbitrary nonlinear
+functions of valuations or additional features. Exploratory larger-feature
+SMT results were not promoted to verified universal theorems. The full
+Collatz objective remains unresolved and active.
+
+## 2026-10-08 follow-up: proper nonlinear and quadratic ranks
+
+An unrestricted nonlinear bounded-below rank is not enough:
+`R(n)=log₂n-ν₂(n)+2^(-ν₂(n))` is positive and decreases on every doubling
+edge. Along powers of two it tends to zero. A useful real rank needs a
+well-founded decrease condition; finite sublevel sets (properness) suffice.
+
+[GraphRankNecessity.lean](lean/GraphRankNecessity.lean) proves that any
+natural-valued graph rank with local descent beyond N has
+`R(2n)>R(n)` and `R(U(n))<R(n)` for every `n>N` divisible by three.
+Such n have no odd predecessor. If doubling failed to increase rank,
+local descent on the degree-two doubling ray would force an infinite
+strict rank descent. The Lean proof uses strong induction on the rank.
+The written extension to proper real ranks takes a rank minimum on the
+ray, whose sublevel sets are finite.
+
+APERIODIC-ATTEMPT section 13 uses this graph restriction to exclude every
+proper `C log₂n+P(ν₂(n),ν₂(n+1),ν₃(n),ν₃(n+1))`, C>0, with P of total
+degree at most two. Let the variables be x,y,z,w. Terms xy and zw vanish
+identically. Properness plus the graph restriction forces coefficients
+of x² and y² to vanish. For linear coefficients A of x and B of y and
+cross coefficients G_yw,G_xw, necessary inequalities are
+`C+A≥0`, `B≤0`, `G_yw≥0`, `A+G_xw≤0`. The written proof also derives
+G_yz=0, but the finite contradiction does not need that constraint.
+These restrictions use explicit unbounded valuation families, not a
+finite sample inference. A finite quadratic fit otherwise evades every
+sample by placing its eventual turning point beyond the tested range.
+
+Six stable patterns at seeds 151,153,155,170,230,233, plus those inequalities
+and `12L>7C` for L=C log₂(3/2), contradict all 162 possible edge selections.
+At seed 153 the forced forward condition replaces bidirectional choice.
+Nonnegative integer certificate weights have maximum 36. No numerical
+logarithms or trusted SMT answers enter the final replay.
+
+[QuadraticValuationRank.lean](lean/QuadraticValuationRank.lean) proves all
+six universal feature/edge progressions and checks all finite certificate
+identities and their exhaustive selections. The independent
+[Python verifier](verify_quadratic_valuation_rank.py) reconstructs the
+quadratic differences and checks all 162 certificates. The universal
+properness/coefficient/logarithm argument and weighted-sum interpretation
+over reals remain written bridges; this is not a full Lean real-rank theorem.
+The [manifest](results/quadratic-valuation-rank/verification.json) records
+fresh builds, logs, hashes, and exact scope.
+
+Do not repeat the quadratic synthesis search without a new feature or
+changed hypothesis: this whole proper template is excluded by the written
+argument. General nonlinear functions, additional features, and unrelated
+global proof strategies remain open. No full proof or counterexample has
+been found; the original Collatz goal stays active.
+
+## 2026-10-08 follow-up: graph orientation and the broader rank obstruction
+
+[GraphRankOrientation.lean](lean/GraphRankOrientation.lean) proves a generic
+functional-graph theorem: if S is forward closed and a well-founded relation
+offers a decreasing adjacent neighbor outside S, then the forward successor
+itself decreases outside S. Well-founded induction: a smaller predecessor
+outside S must decrease back to the original vertex, a forbidden two-cycle.
+The generic theorem and its asymmetry lemma have no axioms.
+
+For a Collatz proof with a **verified convergent finite base** 1..N,
+enlarge the base to its entire forward closure plus zero. This is finite,
+closed, and bounded by some B. Any natural graph rank, or proper real graph
+rank, therefore decreases forward at every integer above B. Bounded-below
+real ranks alone do not suffice. Existence/boundedness of this closed base
+must not be assumed for an unverified arbitrary N.
+
+Combining with section 8's exact growing path
+`192s-5 → 288s-7 → 432s-10 → 216s-5` gives a kernel obstruction for
+natural ranks monotone between matching four-valuation/residue features.
+Take s a sufficiently large multiple of the modulus so the whole path
+lies above B. The endpoints have valuations (0,2,0,0), equal residues,
+and increasing size, contradicting forced forward rank decrease.
+
+APERIODIC-ATTEMPT section 14 combines the generic orientation theorem with
+section 8's written all-polynomial valuation construction. The written
+corollary excludes **any** size-monotone well-founded graph rank built from
+a fixed finite set of polynomial valuations at finitely many primes and
+fixed-modulus residues, with a bounded closed base. In particular, proper
+`C log₂n+G(features)` ranks are excluded for arbitrary nonlinear G, C>0.
+This closes the larger proof strategy rather than only quadratic formulas.
+Unlike the earlier quadratic exclusion, this argument explicitly uses
+bounded forward closure of the exceptional base; keep that hypothesis.
+
+The proper-real well-foundedness bridge, constructing the finite closure
+from verified base convergence, and the full polynomial-feature corollary
+are written. The general well-founded graph theorem and natural-rank
+four-feature obstruction are kernel proved. The independent replay checks
+six closed finite bases through 32768 and 42 growing witnesses above their
+maxima. [Manifest](results/graph-rank-orientation/verification.json).
+
+Do not continue enlarging polynomial degree or adding finitely many
+polynomial valuation features to this size-monotone graph-rank template.
+For this proof strategy these changes are excluded by the written corollary.
+Other magnitude dependence, different information, or a non-ranking global
+argument remains open. The actual Collatz objective remains unresolved.
+
+## 2026-10-08 follow-up: separated binary blocks
+
+The next attempt used binary digit counts, outside the preceding finite
+polynomial-valuation theorem. Weighted counts of zero-padded windows
+failed exact SMT synthesis at widths 1–9. The final proof does not trust
+SMT: four families supply an all-width positive-weight cancellation.
+
+For a window width w, pad the usual binary word on both ends by w-1 zeros.
+A score `R(n)=β+α bitlength(n)+Σ λ_v count_v(n)` satisfies
+`R(2n)=R(n)+z`, z=α+λ_zero, and for a,b>0 with k-bitlength(b)≥w-1,
+`R(a·2^k+b)=R(a)+R(b)+(k-bitlength(b))z-c`,
+c=β+(w-1)λ_zero. The written counting proof separates windows meeting
+the two blocks; only the extra all-zero windows remain.
+
+For q=2^k and sufficiently large k, the edges and rank differences are:
+`2q+2 → q+1`: -z;
+`2q+21 → 3q+32`: R(3)-R(21)+3z;
+`6q+9 → 9q+14`: R(7)-R(3);
+`14q+1 → 21q+2`: R(21)-R(7)-z.
+The first requires z>0; the other three sum to 2z. Their weighted sum
+with weights (2,1,1,1) is zero, so strict decrease on all four is impossible.
+All sources grow without bound. No finite exception range fixes this.
+
+[DigitBlockRank.lean](lean/DigitBlockRank.lean) kernel-proves the four
+edges and no eventual forward descent for any integer score satisfying
+the two structural laws, at any fixed gap threshold. The window-count
+interpretation for all widths and extension to real scores are written
+bridges in APERIODIC-ATTEMPT section 15. The independent replay checks
+widths 1–64, minimum and larger gaps, and the exact feature-vector
+cancellation up to exponent 4096. [Manifest](results/digit-block-rank/verification.json).
+
+This also excludes well-founded graph ranks of this form with a bounded
+forward-closed verified base, by section 14. Do not overgeneralize:
+independent prefix/suffix corrections, nonlinear counts, distant-block
+interactions, and varying return times are not covered. The particular
+zero-padding/additivity hypotheses matter. No Collatz proof or positive
+counterexample has been found; the full goal remains active.
+
+## 2026-10-08 follow-up: inverse basins versus orbit packing
+
+Do not compare an inverse-basin lower bound directly with the project's
+orbit-packing upper bound. The latter requires a forward-closed set with
+injective U. A branching inverse basin does not satisfy that hypothesis.
+
+[InverseBasinAudit.lean](lean/InverseBasinAudit.lean) proves:
+for 3|a, B(a) is exactly {2^k a}; for 3∤a, explicit distinct positive
+basin points have the same immediate image and reach a within two steps.
+Every forward-closed injective subset of B(a) is a chain under forward
+iteration, by cancellation of equal iterates. In B(1), such a subset
+contains only 1 and 2; the last theorem has no axioms. This shows why
+even large basin cardinality does not provide the injective orbit count
+needed for a contradiction. No universal nonconvergent-basin upper bound
+or sufficient injective-chain lower bound has been established.
+
+The chain conclusion is also proved for forward-closed injective subsets
+of the full coalescence component C(a)={n: some iterate of n equals some
+iterate of a}. For a nonperiodic a, B(a) contains no nonempty forward-closed
+subset at all: closure would include U(a), whose return to a would make a
+periodic. This additional closure issue is kernel checked. Switching to
+C(a) restores forward closure but not injectivity or branching counts.
+
+The literature check used the original Krasikov–Lagarias paper
+https://arxiv.org/pdf/math/0205002 only for scope: its x^0.84 count is an
+inverse-basin count for roots coprime to three, not a single-orbit count.
+No claim about the current best exponent is made.
+
+Search metadata for arXiv:2512.13760 still showed v1's claimed x^0.946
+improvement, but the current v2 (17 December 2025) reports x^0.3227.
+The audit kernel-checks a counterexample to v1 Lemma 2.2: u=(3,1) allows
+v1=5 or 6 and v2=1 or 2, none satisfying its congruence modulo nine.
+It also checks failure of uniqueness as stated in v2 Lemma 3.1: at level
+one and u1=2, exponents 8 and 10 both meet the displayed conditions and
+yield 85 and 341. This does NOT refute the weaker final density bound
+or every possible repaired argument. Neither version is a dependency.
+Use versioned primary links in APERIODIC-ATTEMPT section 16, not stale
+search snippets, for these claims.
+
+The independent Python replay checks 21,846 small-root collisions, six
+large roots, 325 dyadic basin examples, and the congruence examples. The universal structure results
+are kernel checked separately. [Manifest](results/inverse-basin-audit/verification.json).
+The full Collatz conjecture remains unresolved and the goal remains active.

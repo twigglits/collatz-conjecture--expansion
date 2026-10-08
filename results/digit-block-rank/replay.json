@@ -1,0 +1,1358 @@
+{
+  "all_checks_passed": true,
+  "block_law_checks": 960,
+  "family_vector_checks": 192,
+  "certificate_weights": [
+    2,
+    1,
+    1,
+    1
+  ],
+  "cases": [
+    {
+      "width": 1,
+      "exponent": 6,
+      "minimum_start_bits": 8,
+      "maximum_endpoint_bits": 11,
+      "integers_sha256": "b364d329ff8e53665ad4afb4092cc5e1a63406ca8a3d4a4b67594d153fce79d7"
+    },
+    {
+      "width": 1,
+      "exponent": 24,
+      "minimum_start_bits": 26,
+      "maximum_endpoint_bits": 29,
+      "integers_sha256": "fd3a61ce634574737bca864295db3ceb949c08c4e060ebf3c8309d2c28684c8f"
+    },
+    {
+      "width": 1,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 2,
+      "exponent": 7,
+      "minimum_start_bits": 9,
+      "maximum_endpoint_bits": 12,
+      "integers_sha256": "20c5f6e30758327880fb9378ed76686e2a3aeafee4f9be1dc6263605a06058e7"
+    },
+    {
+      "width": 2,
+      "exponent": 25,
+      "minimum_start_bits": 27,
+      "maximum_endpoint_bits": 30,
+      "integers_sha256": "98c19079dd6e62216587119709efe02b370f3f558d821372da4b8343bd82144a"
+    },
+    {
+      "width": 2,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 3,
+      "exponent": 8,
+      "minimum_start_bits": 10,
+      "maximum_endpoint_bits": 13,
+      "integers_sha256": "f8d8386605fe021a5f1078dd9cd01d524e8232d721a24bbe42161add1e345057"
+    },
+    {
+      "width": 3,
+      "exponent": 26,
+      "minimum_start_bits": 28,
+      "maximum_endpoint_bits": 31,
+      "integers_sha256": "b5970cb1f1a7d12687f228d34e5d38b20ab179dd43658f3918c56a0eb8d9704b"
+    },
+    {
+      "width": 3,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 4,
+      "exponent": 9,
+      "minimum_start_bits": 11,
+      "maximum_endpoint_bits": 14,
+      "integers_sha256": "f24f180bda33ab3e044c503be6ceb3e1185c77accee15e07784f7e27b1b5e6a9"
+    },
+    {
+      "width": 4,
+      "exponent": 27,
+      "minimum_start_bits": 29,
+      "maximum_endpoint_bits": 32,
+      "integers_sha256": "bcbae468fc9ebc391a2586bb79d0cc1de7b8ade741b9ff4461305f5d29d68025"
+    },
+    {
+      "width": 4,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 5,
+      "exponent": 10,
+      "minimum_start_bits": 12,
+      "maximum_endpoint_bits": 15,
+      "integers_sha256": "8466a3bb48d99d394d9576e8fb2e520752c4edb23427b752928f887a86f513a4"
+    },
+    {
+      "width": 5,
+      "exponent": 28,
+      "minimum_start_bits": 30,
+      "maximum_endpoint_bits": 33,
+      "integers_sha256": "14c6d75cb8f557e8f3ccc0f213f8354b20d33b5ce19210345374ed5cbc6dc537"
+    },
+    {
+      "width": 5,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 6,
+      "exponent": 11,
+      "minimum_start_bits": 13,
+      "maximum_endpoint_bits": 16,
+      "integers_sha256": "36e4d8e7f77795bfeb6d164550145b568b02f1972483170979f14b98f1630227"
+    },
+    {
+      "width": 6,
+      "exponent": 29,
+      "minimum_start_bits": 31,
+      "maximum_endpoint_bits": 34,
+      "integers_sha256": "4945ca8b8af57043538363177fbda72b865ea6ec001a8ecc2b3a960bf761e6b8"
+    },
+    {
+      "width": 6,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 7,
+      "exponent": 12,
+      "minimum_start_bits": 14,
+      "maximum_endpoint_bits": 17,
+      "integers_sha256": "b1e7c94b1ec13f5ba9b9ce782aa00075e21b6360d5e18ae23769118c02160c3b"
+    },
+    {
+      "width": 7,
+      "exponent": 30,
+      "minimum_start_bits": 32,
+      "maximum_endpoint_bits": 35,
+      "integers_sha256": "eb9610057fcb1bf529e926e7f03ed7dcf8bd7682f233488cdfcca9d28c53f021"
+    },
+    {
+      "width": 7,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 8,
+      "exponent": 13,
+      "minimum_start_bits": 15,
+      "maximum_endpoint_bits": 18,
+      "integers_sha256": "25055ee3b87474861a044ab91e68a8080b45e90fb1220a5583da6df3b6da3977"
+    },
+    {
+      "width": 8,
+      "exponent": 31,
+      "minimum_start_bits": 33,
+      "maximum_endpoint_bits": 36,
+      "integers_sha256": "7fd98b1519bdf8c3af8581669bded78b62ca8e9ccb7d736a61848a6f60931197"
+    },
+    {
+      "width": 8,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 9,
+      "exponent": 14,
+      "minimum_start_bits": 16,
+      "maximum_endpoint_bits": 19,
+      "integers_sha256": "8b9365e86f6c6769f7a53a26c0b754a388f43a9c75ec6c4f932f9fa426aa92d7"
+    },
+    {
+      "width": 9,
+      "exponent": 32,
+      "minimum_start_bits": 34,
+      "maximum_endpoint_bits": 37,
+      "integers_sha256": "82bdf8d64f7624244fc5a65bfabcf0e11042b31eff7e63527be6fb2aba61511c"
+    },
+    {
+      "width": 9,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 10,
+      "exponent": 15,
+      "minimum_start_bits": 17,
+      "maximum_endpoint_bits": 20,
+      "integers_sha256": "a168e5fc2eb9968dcce15c1b9a7aa68270e913dc5729de5d3f8bba295db0f5df"
+    },
+    {
+      "width": 10,
+      "exponent": 33,
+      "minimum_start_bits": 35,
+      "maximum_endpoint_bits": 38,
+      "integers_sha256": "fe7a28a9f26f5d9ef71fc3664384910f9d7d61905e974ae5abc301cd37ea0242"
+    },
+    {
+      "width": 10,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 11,
+      "exponent": 16,
+      "minimum_start_bits": 18,
+      "maximum_endpoint_bits": 21,
+      "integers_sha256": "6c410e0ee0b2b292d24e53b3c43aa46bb4e9924643b560863b665ba0657052a4"
+    },
+    {
+      "width": 11,
+      "exponent": 34,
+      "minimum_start_bits": 36,
+      "maximum_endpoint_bits": 39,
+      "integers_sha256": "427a224e732c83269b74bcba47f227f5a3d95cbfb9eb2323972a145d0e1125d2"
+    },
+    {
+      "width": 11,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 12,
+      "exponent": 17,
+      "minimum_start_bits": 19,
+      "maximum_endpoint_bits": 22,
+      "integers_sha256": "4d30206be4f215478829302bd44e90e528311f45682b67472408f0812305981f"
+    },
+    {
+      "width": 12,
+      "exponent": 35,
+      "minimum_start_bits": 37,
+      "maximum_endpoint_bits": 40,
+      "integers_sha256": "8389b54a32973598f51305ba8f18e4522d40070bf82ffba8fad8d030227b86c0"
+    },
+    {
+      "width": 12,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 13,
+      "exponent": 18,
+      "minimum_start_bits": 20,
+      "maximum_endpoint_bits": 23,
+      "integers_sha256": "02bf7a50d8cd1f9554bc979be109587910150a07b483739e9fa26540485059d7"
+    },
+    {
+      "width": 13,
+      "exponent": 36,
+      "minimum_start_bits": 38,
+      "maximum_endpoint_bits": 41,
+      "integers_sha256": "dca7653f82f2ec9fe05f1c101de07e1784ed42ca183c79155ec62bf7b909c5b9"
+    },
+    {
+      "width": 13,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 14,
+      "exponent": 19,
+      "minimum_start_bits": 21,
+      "maximum_endpoint_bits": 24,
+      "integers_sha256": "7420685f4402a11ee4a5ea0d3859063dc7d208535b9c6f34b5a9ca6c168fddb2"
+    },
+    {
+      "width": 14,
+      "exponent": 37,
+      "minimum_start_bits": 39,
+      "maximum_endpoint_bits": 42,
+      "integers_sha256": "3609fb8c33bc941409654c7864c0eaa0238ba9ca8ffd3bf3c9bfbf634926f9be"
+    },
+    {
+      "width": 14,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 15,
+      "exponent": 20,
+      "minimum_start_bits": 22,
+      "maximum_endpoint_bits": 25,
+      "integers_sha256": "5709918d834c0645512369c3162ce6e5e8d127ecdffa29cc04e60b62e9a4ef75"
+    },
+    {
+      "width": 15,
+      "exponent": 38,
+      "minimum_start_bits": 40,
+      "maximum_endpoint_bits": 43,
+      "integers_sha256": "c1f862bd28fc825f32a43f2cac3ba2c08636aed1cbc84891d238bc90f7acc55a"
+    },
+    {
+      "width": 15,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 16,
+      "exponent": 21,
+      "minimum_start_bits": 23,
+      "maximum_endpoint_bits": 26,
+      "integers_sha256": "0214ce2fe15f69fdb07708c07ca31ba10b25fa30d56ac895f240ffcc815ea9fd"
+    },
+    {
+      "width": 16,
+      "exponent": 39,
+      "minimum_start_bits": 41,
+      "maximum_endpoint_bits": 44,
+      "integers_sha256": "5ad87aa702f55f3672b1020fd6a98a534e842fcf1879d35103f9827e5931a4c6"
+    },
+    {
+      "width": 16,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 17,
+      "exponent": 22,
+      "minimum_start_bits": 24,
+      "maximum_endpoint_bits": 27,
+      "integers_sha256": "21f85b54072de1746219952673da098393761cdf2a7e73c67159ab14d6c55d02"
+    },
+    {
+      "width": 17,
+      "exponent": 40,
+      "minimum_start_bits": 42,
+      "maximum_endpoint_bits": 45,
+      "integers_sha256": "47f917f1ef3d21850b86778c2f34d69407070803a8298de82c2d05cd32d6664f"
+    },
+    {
+      "width": 17,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 18,
+      "exponent": 23,
+      "minimum_start_bits": 25,
+      "maximum_endpoint_bits": 28,
+      "integers_sha256": "3fef8c6f25157b5c776cf933805e5ddeb86a4209909df0c84178053f5dad41f2"
+    },
+    {
+      "width": 18,
+      "exponent": 41,
+      "minimum_start_bits": 43,
+      "maximum_endpoint_bits": 46,
+      "integers_sha256": "d284973ebec061c835367976a0ce7777cdaf7d762ff7e3c5de8fd9b81ef955bc"
+    },
+    {
+      "width": 18,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 19,
+      "exponent": 24,
+      "minimum_start_bits": 26,
+      "maximum_endpoint_bits": 29,
+      "integers_sha256": "fd3a61ce634574737bca864295db3ceb949c08c4e060ebf3c8309d2c28684c8f"
+    },
+    {
+      "width": 19,
+      "exponent": 42,
+      "minimum_start_bits": 44,
+      "maximum_endpoint_bits": 47,
+      "integers_sha256": "e27021bd9a68ec71ea67e3e05c145b3198601d76113f015e0afa0252018c6cbd"
+    },
+    {
+      "width": 19,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 20,
+      "exponent": 25,
+      "minimum_start_bits": 27,
+      "maximum_endpoint_bits": 30,
+      "integers_sha256": "98c19079dd6e62216587119709efe02b370f3f558d821372da4b8343bd82144a"
+    },
+    {
+      "width": 20,
+      "exponent": 43,
+      "minimum_start_bits": 45,
+      "maximum_endpoint_bits": 48,
+      "integers_sha256": "83086f1f16da7523a907f3b254c40ecc76fbecfca7381d9d0dd4b1ae512e70ce"
+    },
+    {
+      "width": 20,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 21,
+      "exponent": 26,
+      "minimum_start_bits": 28,
+      "maximum_endpoint_bits": 31,
+      "integers_sha256": "b5970cb1f1a7d12687f228d34e5d38b20ab179dd43658f3918c56a0eb8d9704b"
+    },
+    {
+      "width": 21,
+      "exponent": 44,
+      "minimum_start_bits": 46,
+      "maximum_endpoint_bits": 49,
+      "integers_sha256": "6036b99ebca5e831a6b449ab17ac13757df505602c15c7a3d4a9b4e5ec5c8abb"
+    },
+    {
+      "width": 21,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 22,
+      "exponent": 27,
+      "minimum_start_bits": 29,
+      "maximum_endpoint_bits": 32,
+      "integers_sha256": "bcbae468fc9ebc391a2586bb79d0cc1de7b8ade741b9ff4461305f5d29d68025"
+    },
+    {
+      "width": 22,
+      "exponent": 45,
+      "minimum_start_bits": 47,
+      "maximum_endpoint_bits": 50,
+      "integers_sha256": "55acc2339244b1486d426af3c8eca7bf813d0afde9a3c23aecde8ff65530f347"
+    },
+    {
+      "width": 22,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 23,
+      "exponent": 28,
+      "minimum_start_bits": 30,
+      "maximum_endpoint_bits": 33,
+      "integers_sha256": "14c6d75cb8f557e8f3ccc0f213f8354b20d33b5ce19210345374ed5cbc6dc537"
+    },
+    {
+      "width": 23,
+      "exponent": 46,
+      "minimum_start_bits": 48,
+      "maximum_endpoint_bits": 51,
+      "integers_sha256": "ddb762b2a44641e597c5b7c26c3e83e5b154c85831b57f365130e374708641b3"
+    },
+    {
+      "width": 23,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 24,
+      "exponent": 29,
+      "minimum_start_bits": 31,
+      "maximum_endpoint_bits": 34,
+      "integers_sha256": "4945ca8b8af57043538363177fbda72b865ea6ec001a8ecc2b3a960bf761e6b8"
+    },
+    {
+      "width": 24,
+      "exponent": 47,
+      "minimum_start_bits": 49,
+      "maximum_endpoint_bits": 52,
+      "integers_sha256": "6f0f8abf996d7f01b1bca1de2c0171aa92e672c83edbc82132fffef9cb3d5685"
+    },
+    {
+      "width": 24,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 25,
+      "exponent": 30,
+      "minimum_start_bits": 32,
+      "maximum_endpoint_bits": 35,
+      "integers_sha256": "eb9610057fcb1bf529e926e7f03ed7dcf8bd7682f233488cdfcca9d28c53f021"
+    },
+    {
+      "width": 25,
+      "exponent": 48,
+      "minimum_start_bits": 50,
+      "maximum_endpoint_bits": 53,
+      "integers_sha256": "18330ab765e8dbd8e97a25a5e461654de642a12b462ba7a477f317bb64e1e33f"
+    },
+    {
+      "width": 25,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 26,
+      "exponent": 31,
+      "minimum_start_bits": 33,
+      "maximum_endpoint_bits": 36,
+      "integers_sha256": "7fd98b1519bdf8c3af8581669bded78b62ca8e9ccb7d736a61848a6f60931197"
+    },
+    {
+      "width": 26,
+      "exponent": 49,
+      "minimum_start_bits": 51,
+      "maximum_endpoint_bits": 54,
+      "integers_sha256": "23cdb7004bcf76afa2184aa7401e7b9ec88d0181456d1fb136580985ce4d2158"
+    },
+    {
+      "width": 26,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 27,
+      "exponent": 32,
+      "minimum_start_bits": 34,
+      "maximum_endpoint_bits": 37,
+      "integers_sha256": "82bdf8d64f7624244fc5a65bfabcf0e11042b31eff7e63527be6fb2aba61511c"
+    },
+    {
+      "width": 27,
+      "exponent": 50,
+      "minimum_start_bits": 52,
+      "maximum_endpoint_bits": 55,
+      "integers_sha256": "bc6f7c4408340364da5565d9930fe2cbd42e6d70f61aee6516b57852ee95466f"
+    },
+    {
+      "width": 27,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 28,
+      "exponent": 33,
+      "minimum_start_bits": 35,
+      "maximum_endpoint_bits": 38,
+      "integers_sha256": "fe7a28a9f26f5d9ef71fc3664384910f9d7d61905e974ae5abc301cd37ea0242"
+    },
+    {
+      "width": 28,
+      "exponent": 51,
+      "minimum_start_bits": 53,
+      "maximum_endpoint_bits": 56,
+      "integers_sha256": "8944604f90c42f3f33190bd443c5385322fc9d891a14f5310bae419ca92fd4d7"
+    },
+    {
+      "width": 28,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 29,
+      "exponent": 34,
+      "minimum_start_bits": 36,
+      "maximum_endpoint_bits": 39,
+      "integers_sha256": "427a224e732c83269b74bcba47f227f5a3d95cbfb9eb2323972a145d0e1125d2"
+    },
+    {
+      "width": 29,
+      "exponent": 52,
+      "minimum_start_bits": 54,
+      "maximum_endpoint_bits": 57,
+      "integers_sha256": "a4ad7b130ff50c2acb10f12a4282121c35f799e97a0ffde8256bf8fade8877bd"
+    },
+    {
+      "width": 29,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 30,
+      "exponent": 35,
+      "minimum_start_bits": 37,
+      "maximum_endpoint_bits": 40,
+      "integers_sha256": "8389b54a32973598f51305ba8f18e4522d40070bf82ffba8fad8d030227b86c0"
+    },
+    {
+      "width": 30,
+      "exponent": 53,
+      "minimum_start_bits": 55,
+      "maximum_endpoint_bits": 58,
+      "integers_sha256": "edc8fe4c70e0d139eec0290a27cd89be571d089ddb3b0701d34feecbba41efcf"
+    },
+    {
+      "width": 30,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 31,
+      "exponent": 36,
+      "minimum_start_bits": 38,
+      "maximum_endpoint_bits": 41,
+      "integers_sha256": "dca7653f82f2ec9fe05f1c101de07e1784ed42ca183c79155ec62bf7b909c5b9"
+    },
+    {
+      "width": 31,
+      "exponent": 54,
+      "minimum_start_bits": 56,
+      "maximum_endpoint_bits": 59,
+      "integers_sha256": "b23ea918482d1821be6a6404656c617447e9fe33e0118c95616054f748329a29"
+    },
+    {
+      "width": 31,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 32,
+      "exponent": 37,
+      "minimum_start_bits": 39,
+      "maximum_endpoint_bits": 42,
+      "integers_sha256": "3609fb8c33bc941409654c7864c0eaa0238ba9ca8ffd3bf3c9bfbf634926f9be"
+    },
+    {
+      "width": 32,
+      "exponent": 55,
+      "minimum_start_bits": 57,
+      "maximum_endpoint_bits": 60,
+      "integers_sha256": "b1c4b542a68479dcaafb43e31aacbda0da7c0abc72288ddbab4e67e21cafbd81"
+    },
+    {
+      "width": 32,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 33,
+      "exponent": 38,
+      "minimum_start_bits": 40,
+      "maximum_endpoint_bits": 43,
+      "integers_sha256": "c1f862bd28fc825f32a43f2cac3ba2c08636aed1cbc84891d238bc90f7acc55a"
+    },
+    {
+      "width": 33,
+      "exponent": 56,
+      "minimum_start_bits": 58,
+      "maximum_endpoint_bits": 61,
+      "integers_sha256": "53186a1ecc785dba0fa9e4414005553aa25923c66387ec47636c55014a45fa0d"
+    },
+    {
+      "width": 33,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 34,
+      "exponent": 39,
+      "minimum_start_bits": 41,
+      "maximum_endpoint_bits": 44,
+      "integers_sha256": "5ad87aa702f55f3672b1020fd6a98a534e842fcf1879d35103f9827e5931a4c6"
+    },
+    {
+      "width": 34,
+      "exponent": 57,
+      "minimum_start_bits": 59,
+      "maximum_endpoint_bits": 62,
+      "integers_sha256": "87533ab3d406650fb04455de000a5e53806a0e85937302e0551ca79e7de7f4b5"
+    },
+    {
+      "width": 34,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 35,
+      "exponent": 40,
+      "minimum_start_bits": 42,
+      "maximum_endpoint_bits": 45,
+      "integers_sha256": "47f917f1ef3d21850b86778c2f34d69407070803a8298de82c2d05cd32d6664f"
+    },
+    {
+      "width": 35,
+      "exponent": 58,
+      "minimum_start_bits": 60,
+      "maximum_endpoint_bits": 63,
+      "integers_sha256": "d369dd171c81dc0a1dcd571869f61c5d9fd347d520577f10997b5a9ef69c3406"
+    },
+    {
+      "width": 35,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 36,
+      "exponent": 41,
+      "minimum_start_bits": 43,
+      "maximum_endpoint_bits": 46,
+      "integers_sha256": "d284973ebec061c835367976a0ce7777cdaf7d762ff7e3c5de8fd9b81ef955bc"
+    },
+    {
+      "width": 36,
+      "exponent": 59,
+      "minimum_start_bits": 61,
+      "maximum_endpoint_bits": 64,
+      "integers_sha256": "b7e5b82e8753117b7854c3f8869ffd5b4ab35350fdcc3dff0f32b60c4029a1ef"
+    },
+    {
+      "width": 36,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 37,
+      "exponent": 42,
+      "minimum_start_bits": 44,
+      "maximum_endpoint_bits": 47,
+      "integers_sha256": "e27021bd9a68ec71ea67e3e05c145b3198601d76113f015e0afa0252018c6cbd"
+    },
+    {
+      "width": 37,
+      "exponent": 60,
+      "minimum_start_bits": 62,
+      "maximum_endpoint_bits": 65,
+      "integers_sha256": "c13755c0397dfb50c0ccb62c4259670760fe4377a95fe2131a95bb5cafe4c97f"
+    },
+    {
+      "width": 37,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 38,
+      "exponent": 43,
+      "minimum_start_bits": 45,
+      "maximum_endpoint_bits": 48,
+      "integers_sha256": "83086f1f16da7523a907f3b254c40ecc76fbecfca7381d9d0dd4b1ae512e70ce"
+    },
+    {
+      "width": 38,
+      "exponent": 61,
+      "minimum_start_bits": 63,
+      "maximum_endpoint_bits": 66,
+      "integers_sha256": "1229a1caa4531c1bdd42ca0bf1abd71cb2b81929bb714d1122f5f4efa80880e8"
+    },
+    {
+      "width": 38,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 39,
+      "exponent": 44,
+      "minimum_start_bits": 46,
+      "maximum_endpoint_bits": 49,
+      "integers_sha256": "6036b99ebca5e831a6b449ab17ac13757df505602c15c7a3d4a9b4e5ec5c8abb"
+    },
+    {
+      "width": 39,
+      "exponent": 62,
+      "minimum_start_bits": 64,
+      "maximum_endpoint_bits": 67,
+      "integers_sha256": "f04adf834370ad5751b6d35ab89d430ab1bde7d745d15d78d4731909f7937a90"
+    },
+    {
+      "width": 39,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 40,
+      "exponent": 45,
+      "minimum_start_bits": 47,
+      "maximum_endpoint_bits": 50,
+      "integers_sha256": "55acc2339244b1486d426af3c8eca7bf813d0afde9a3c23aecde8ff65530f347"
+    },
+    {
+      "width": 40,
+      "exponent": 63,
+      "minimum_start_bits": 65,
+      "maximum_endpoint_bits": 68,
+      "integers_sha256": "d9b714fdab2bdf7899f9af2f307d525782130251e9b553eca8463b30b89f840e"
+    },
+    {
+      "width": 40,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 41,
+      "exponent": 46,
+      "minimum_start_bits": 48,
+      "maximum_endpoint_bits": 51,
+      "integers_sha256": "ddb762b2a44641e597c5b7c26c3e83e5b154c85831b57f365130e374708641b3"
+    },
+    {
+      "width": 41,
+      "exponent": 64,
+      "minimum_start_bits": 66,
+      "maximum_endpoint_bits": 69,
+      "integers_sha256": "0d5b2031b44b861207280e7ae9e80f4754f5df55f28d9324c521aa24a0ea437b"
+    },
+    {
+      "width": 41,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 42,
+      "exponent": 47,
+      "minimum_start_bits": 49,
+      "maximum_endpoint_bits": 52,
+      "integers_sha256": "6f0f8abf996d7f01b1bca1de2c0171aa92e672c83edbc82132fffef9cb3d5685"
+    },
+    {
+      "width": 42,
+      "exponent": 65,
+      "minimum_start_bits": 67,
+      "maximum_endpoint_bits": 70,
+      "integers_sha256": "a67a35cc6a66dbf882883744c17efd730525d810f2acabfef0b1be575aa18063"
+    },
+    {
+      "width": 42,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 43,
+      "exponent": 48,
+      "minimum_start_bits": 50,
+      "maximum_endpoint_bits": 53,
+      "integers_sha256": "18330ab765e8dbd8e97a25a5e461654de642a12b462ba7a477f317bb64e1e33f"
+    },
+    {
+      "width": 43,
+      "exponent": 66,
+      "minimum_start_bits": 68,
+      "maximum_endpoint_bits": 71,
+      "integers_sha256": "4225e22d32475f52b8da685ba791041dba3413225ffc343da61097d6d1280177"
+    },
+    {
+      "width": 43,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 44,
+      "exponent": 49,
+      "minimum_start_bits": 51,
+      "maximum_endpoint_bits": 54,
+      "integers_sha256": "23cdb7004bcf76afa2184aa7401e7b9ec88d0181456d1fb136580985ce4d2158"
+    },
+    {
+      "width": 44,
+      "exponent": 67,
+      "minimum_start_bits": 69,
+      "maximum_endpoint_bits": 72,
+      "integers_sha256": "3d9290a01654a53abffb6b4f02173b0dc618873e5bf2ed1f9752aed139a8b44b"
+    },
+    {
+      "width": 44,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 45,
+      "exponent": 50,
+      "minimum_start_bits": 52,
+      "maximum_endpoint_bits": 55,
+      "integers_sha256": "bc6f7c4408340364da5565d9930fe2cbd42e6d70f61aee6516b57852ee95466f"
+    },
+    {
+      "width": 45,
+      "exponent": 68,
+      "minimum_start_bits": 70,
+      "maximum_endpoint_bits": 73,
+      "integers_sha256": "939eb5b29bae60899ec3b1f355d9f40637a3b36e1ded922e19190e9123905719"
+    },
+    {
+      "width": 45,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 46,
+      "exponent": 51,
+      "minimum_start_bits": 53,
+      "maximum_endpoint_bits": 56,
+      "integers_sha256": "8944604f90c42f3f33190bd443c5385322fc9d891a14f5310bae419ca92fd4d7"
+    },
+    {
+      "width": 46,
+      "exponent": 69,
+      "minimum_start_bits": 71,
+      "maximum_endpoint_bits": 74,
+      "integers_sha256": "ac0b6060c82fb66d98b2f4254b52ec9fa846f15fbaf0d85481927de196c44f90"
+    },
+    {
+      "width": 46,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 47,
+      "exponent": 52,
+      "minimum_start_bits": 54,
+      "maximum_endpoint_bits": 57,
+      "integers_sha256": "a4ad7b130ff50c2acb10f12a4282121c35f799e97a0ffde8256bf8fade8877bd"
+    },
+    {
+      "width": 47,
+      "exponent": 70,
+      "minimum_start_bits": 72,
+      "maximum_endpoint_bits": 75,
+      "integers_sha256": "582f30e3f82df08fa10d1cea94aaca62164b213b61919adc83463451b2a7e575"
+    },
+    {
+      "width": 47,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 48,
+      "exponent": 53,
+      "minimum_start_bits": 55,
+      "maximum_endpoint_bits": 58,
+      "integers_sha256": "edc8fe4c70e0d139eec0290a27cd89be571d089ddb3b0701d34feecbba41efcf"
+    },
+    {
+      "width": 48,
+      "exponent": 71,
+      "minimum_start_bits": 73,
+      "maximum_endpoint_bits": 76,
+      "integers_sha256": "3fc12b6d260d8b914eb261168ef80d8befa023f13231b0e460e6c822db53d27a"
+    },
+    {
+      "width": 48,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 49,
+      "exponent": 54,
+      "minimum_start_bits": 56,
+      "maximum_endpoint_bits": 59,
+      "integers_sha256": "b23ea918482d1821be6a6404656c617447e9fe33e0118c95616054f748329a29"
+    },
+    {
+      "width": 49,
+      "exponent": 72,
+      "minimum_start_bits": 74,
+      "maximum_endpoint_bits": 77,
+      "integers_sha256": "9a735615616618d8efac346f18ba9a9a0bc2f2f7d4fed0bbdca29b6ba1a096b6"
+    },
+    {
+      "width": 49,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 50,
+      "exponent": 55,
+      "minimum_start_bits": 57,
+      "maximum_endpoint_bits": 60,
+      "integers_sha256": "b1c4b542a68479dcaafb43e31aacbda0da7c0abc72288ddbab4e67e21cafbd81"
+    },
+    {
+      "width": 50,
+      "exponent": 73,
+      "minimum_start_bits": 75,
+      "maximum_endpoint_bits": 78,
+      "integers_sha256": "7a244bbd369154c2f0a7d84dfb55f1fd3d4efed73557548d0fc8e406e712ded2"
+    },
+    {
+      "width": 50,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 51,
+      "exponent": 56,
+      "minimum_start_bits": 58,
+      "maximum_endpoint_bits": 61,
+      "integers_sha256": "53186a1ecc785dba0fa9e4414005553aa25923c66387ec47636c55014a45fa0d"
+    },
+    {
+      "width": 51,
+      "exponent": 74,
+      "minimum_start_bits": 76,
+      "maximum_endpoint_bits": 79,
+      "integers_sha256": "d1902d5145a8e753b6c8b25dfa928d9ae8ef20e8d2c0cef591092590c17106ca"
+    },
+    {
+      "width": 51,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 52,
+      "exponent": 57,
+      "minimum_start_bits": 59,
+      "maximum_endpoint_bits": 62,
+      "integers_sha256": "87533ab3d406650fb04455de000a5e53806a0e85937302e0551ca79e7de7f4b5"
+    },
+    {
+      "width": 52,
+      "exponent": 75,
+      "minimum_start_bits": 77,
+      "maximum_endpoint_bits": 80,
+      "integers_sha256": "7de55b42cab1263b6fb20eb0eee5f1494b3b7bb78757d2ba93123d896ed9f2cb"
+    },
+    {
+      "width": 52,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 53,
+      "exponent": 58,
+      "minimum_start_bits": 60,
+      "maximum_endpoint_bits": 63,
+      "integers_sha256": "d369dd171c81dc0a1dcd571869f61c5d9fd347d520577f10997b5a9ef69c3406"
+    },
+    {
+      "width": 53,
+      "exponent": 76,
+      "minimum_start_bits": 78,
+      "maximum_endpoint_bits": 81,
+      "integers_sha256": "e6e52f5ba45aef4473ecb9a5cf83fb2204616f9762c22cedb191014d00818d8b"
+    },
+    {
+      "width": 53,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 54,
+      "exponent": 59,
+      "minimum_start_bits": 61,
+      "maximum_endpoint_bits": 64,
+      "integers_sha256": "b7e5b82e8753117b7854c3f8869ffd5b4ab35350fdcc3dff0f32b60c4029a1ef"
+    },
+    {
+      "width": 54,
+      "exponent": 77,
+      "minimum_start_bits": 79,
+      "maximum_endpoint_bits": 82,
+      "integers_sha256": "d433bc7c581ad3517aad3ab4c34e1a67895f43e160556cc900daf2780681c241"
+    },
+    {
+      "width": 54,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 55,
+      "exponent": 60,
+      "minimum_start_bits": 62,
+      "maximum_endpoint_bits": 65,
+      "integers_sha256": "c13755c0397dfb50c0ccb62c4259670760fe4377a95fe2131a95bb5cafe4c97f"
+    },
+    {
+      "width": 55,
+      "exponent": 78,
+      "minimum_start_bits": 80,
+      "maximum_endpoint_bits": 83,
+      "integers_sha256": "e7e5b912119a0b3e9edd2de6f3fb8309bdff816fb1b789b4f71cb2bd168252d5"
+    },
+    {
+      "width": 55,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 56,
+      "exponent": 61,
+      "minimum_start_bits": 63,
+      "maximum_endpoint_bits": 66,
+      "integers_sha256": "1229a1caa4531c1bdd42ca0bf1abd71cb2b81929bb714d1122f5f4efa80880e8"
+    },
+    {
+      "width": 56,
+      "exponent": 79,
+      "minimum_start_bits": 81,
+      "maximum_endpoint_bits": 84,
+      "integers_sha256": "bbfb568f65b465c311fdba1b861c15f19e079c503f6771a711a5f8e063f691bd"
+    },
+    {
+      "width": 56,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 57,
+      "exponent": 62,
+      "minimum_start_bits": 64,
+      "maximum_endpoint_bits": 67,
+      "integers_sha256": "f04adf834370ad5751b6d35ab89d430ab1bde7d745d15d78d4731909f7937a90"
+    },
+    {
+      "width": 57,
+      "exponent": 80,
+      "minimum_start_bits": 82,
+      "maximum_endpoint_bits": 85,
+      "integers_sha256": "2cdab4df9e6f0a278a57a2f3005db49e8fc5ed361b0bd08f4156b364732fff45"
+    },
+    {
+      "width": 57,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 58,
+      "exponent": 63,
+      "minimum_start_bits": 65,
+      "maximum_endpoint_bits": 68,
+      "integers_sha256": "d9b714fdab2bdf7899f9af2f307d525782130251e9b553eca8463b30b89f840e"
+    },
+    {
+      "width": 58,
+      "exponent": 81,
+      "minimum_start_bits": 83,
+      "maximum_endpoint_bits": 86,
+      "integers_sha256": "e15745e0d3c5e133603666b464244e210da1a408bb700a396294e2260431cdcd"
+    },
+    {
+      "width": 58,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 59,
+      "exponent": 64,
+      "minimum_start_bits": 66,
+      "maximum_endpoint_bits": 69,
+      "integers_sha256": "0d5b2031b44b861207280e7ae9e80f4754f5df55f28d9324c521aa24a0ea437b"
+    },
+    {
+      "width": 59,
+      "exponent": 82,
+      "minimum_start_bits": 84,
+      "maximum_endpoint_bits": 87,
+      "integers_sha256": "47b561981f47b5a8d641b925592587850246265b049798a4f7c1df96f016bcaf"
+    },
+    {
+      "width": 59,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 60,
+      "exponent": 65,
+      "minimum_start_bits": 67,
+      "maximum_endpoint_bits": 70,
+      "integers_sha256": "a67a35cc6a66dbf882883744c17efd730525d810f2acabfef0b1be575aa18063"
+    },
+    {
+      "width": 60,
+      "exponent": 83,
+      "minimum_start_bits": 85,
+      "maximum_endpoint_bits": 88,
+      "integers_sha256": "a0d46c26f21a7bf625e782f5bb9f6e85e3787057322a69ea85b9a2ca7b118cdd"
+    },
+    {
+      "width": 60,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 61,
+      "exponent": 66,
+      "minimum_start_bits": 68,
+      "maximum_endpoint_bits": 71,
+      "integers_sha256": "4225e22d32475f52b8da685ba791041dba3413225ffc343da61097d6d1280177"
+    },
+    {
+      "width": 61,
+      "exponent": 84,
+      "minimum_start_bits": 86,
+      "maximum_endpoint_bits": 89,
+      "integers_sha256": "16ec43c8a94aca791573c10f9fad0e3c9efd2d241c9086e6cd9ae13bb03ec1d5"
+    },
+    {
+      "width": 61,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 62,
+      "exponent": 67,
+      "minimum_start_bits": 69,
+      "maximum_endpoint_bits": 72,
+      "integers_sha256": "3d9290a01654a53abffb6b4f02173b0dc618873e5bf2ed1f9752aed139a8b44b"
+    },
+    {
+      "width": 62,
+      "exponent": 85,
+      "minimum_start_bits": 87,
+      "maximum_endpoint_bits": 90,
+      "integers_sha256": "b7033b717aee309e3187ed3369a7d884436ee1be88b9dac9b1f3ae2a87709743"
+    },
+    {
+      "width": 62,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 63,
+      "exponent": 68,
+      "minimum_start_bits": 70,
+      "maximum_endpoint_bits": 73,
+      "integers_sha256": "939eb5b29bae60899ec3b1f355d9f40637a3b36e1ded922e19190e9123905719"
+    },
+    {
+      "width": 63,
+      "exponent": 86,
+      "minimum_start_bits": 88,
+      "maximum_endpoint_bits": 91,
+      "integers_sha256": "f4c4732c1e00c5d74ac0066e81c1bfc2fefed4bb33261c860851603372dbfd4f"
+    },
+    {
+      "width": 63,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    },
+    {
+      "width": 64,
+      "exponent": 69,
+      "minimum_start_bits": 71,
+      "maximum_endpoint_bits": 74,
+      "integers_sha256": "ac0b6060c82fb66d98b2f4254b52ec9fa846f15fbaf0d85481927de196c44f90"
+    },
+    {
+      "width": 64,
+      "exponent": 87,
+      "minimum_start_bits": 89,
+      "maximum_endpoint_bits": 92,
+      "integers_sha256": "895a13b51b457b9d1b93343ac32e40ec5fc766af71977874cfad0b88f376ea06"
+    },
+    {
+      "width": 64,
+      "exponent": 4096,
+      "minimum_start_bits": 4098,
+      "maximum_endpoint_bits": 4101,
+      "integers_sha256": "fcc777b17b9f5c90c66516dae7dba01d91bdad796e085a6418871ccb075e351b"
+    }
+  ],
+  "scope": "Finite exact window-count replay; the universal block-score contradiction is kernel proved, and its all-window real-score interpretation is written. Not a Collatz proof."
+}

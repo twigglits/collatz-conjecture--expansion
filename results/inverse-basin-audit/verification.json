@@ -1,0 +1,82 @@
+{
+  "verified_at_utc": "2026-10-08T13:29:38.250642+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "The basin of a root divisible by three is precisely its doubling ray",
+    "Distinct positive colliding basin members for every root not divisible by three, within two steps of the root",
+    "Injective forward-closed subsets of a single basin or coalescence component are chains",
+    "An injective forward-closed region contains no point reaching one except the shortcut cycle states 1 and 2",
+    "A nonempty forward-closed subset of B(a) forces a to be periodic",
+    "No solution to the displayed v1 congruence constraints at u=(3,1)",
+    "Two distinct solutions to the displayed v2 level-one uniqueness constraints at u1=2"
+  ],
+  "interpretation": [
+    "Orbit packing requires injectivity on a forward-closed set; inverse-basin lower counts cannot be substituted into that hypothesis",
+    "External-paper counterexamples concern the displayed statements and do not refute final density bounds or all possible repairs"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "A sparsity upper bound for every nonconvergent basin or branching component",
+    "A sufficiently large injective subset extracted from inverse-basin counts",
+    "A general density contradiction",
+    "Independent verification of external inverse-counting theorems"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/math/0205002",
+      "use": "Scope only: fixed-root inverse-basin lower bound; not a proof dependency"
+    },
+    {
+      "url": "https://arxiv.org/html/2512.13760v1",
+      "use": "Version 1 Lemma 2.2 comparison; obsolete 0.946 abstract claim"
+    },
+    {
+      "url": "https://arxiv.org/html/2512.13760v2",
+      "use": "Version 2 Lemma 3.1 comparison; current abstract reports 0.3227, not 0.946"
+    }
+  ],
+  "independent_replay": {
+    "small_root_collisions": 21846,
+    "large_root_collisions": 6,
+    "dyadic_basin_checks": 325,
+    "v1_cases": 4,
+    "v2_cases": 2,
+    "all_checks_passed": true
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-inverse-basin-oljljmet/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/inverse-basin-audit/CollatzPacking.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-inverse-basin-oljljmet/InverseBasinAudit.olean",
+        "lean/InverseBasinAudit.lean"
+      ],
+      "returncode": 0,
+      "log": "results/inverse-basin-audit/InverseBasinAudit.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-inverse-basin-oljljmet",
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/InverseBasinAudit.lean": "a5d7fb3ed7db82223e1ffa21e7f946bb2ad96e3a8d7ae411004467e8784160a1",
+    "verify_inverse_basin_audit.py": "a397c79035f72dd35e57302f7281741656e0ee4de5aa5003181da6a941e94106",
+    "results/inverse-basin-audit/replay.json": "41fcccff4cd0668417e8dd27f922dec7aea0d72d31e2ab1f369fc08c464216b5",
+    "APERIODIC-ATTEMPT.md": "1af1f1979eda1a2128332b067035e16425828d83e02bdc4b3e2ce95095ccdce1",
+    "ATTEMPT.md": "fa109d3986f50a817500bfb73532b76ffd1b7975a8d78a258e5073b682b6fa14",
+    "README.md": "013bbb88b55070f03d2919c96c0fd0def9689c79e0ad76adb20356e09a0f76f7",
+    "MEMORY.md": "8043fb443eb293d08434bb523f659afb5d361ca78742101264acefe781eec025",
+    "results/inverse-basin-audit/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/inverse-basin-audit/InverseBasinAudit.log": "34a6c7a1ec915f3799ab9d89a978729d6d73234a7d1e3557350f71537e5649d3"
+  }
+}

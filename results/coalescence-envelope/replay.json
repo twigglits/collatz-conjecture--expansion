@@ -1,0 +1,199 @@
+{
+  "cases": [
+    {
+      "horizon": 1,
+      "start": 3,
+      "checks": 5,
+      "positive_offset_checks": 2,
+      "zero_offset_checks": 3,
+      "upper_boundary_checks": 3
+    },
+    {
+      "horizon": 2,
+      "start": 27,
+      "checks": 14,
+      "positive_offset_checks": 8,
+      "zero_offset_checks": 6,
+      "upper_boundary_checks": 6
+    },
+    {
+      "horizon": 3,
+      "start": 135,
+      "checks": 33,
+      "positive_offset_checks": 23,
+      "zero_offset_checks": 10,
+      "upper_boundary_checks": 10
+    },
+    {
+      "horizon": 4,
+      "start": 1215,
+      "checks": 66,
+      "positive_offset_checks": 51,
+      "zero_offset_checks": 15,
+      "upper_boundary_checks": 15
+    },
+    {
+      "horizon": 5,
+      "start": 1215,
+      "checks": 123,
+      "positive_offset_checks": 102,
+      "zero_offset_checks": 21,
+      "upper_boundary_checks": 21
+    },
+    {
+      "horizon": 6,
+      "start": 16767,
+      "checks": 211,
+      "positive_offset_checks": 183,
+      "zero_offset_checks": 28,
+      "upper_boundary_checks": 28
+    },
+    {
+      "horizon": 7,
+      "start": 203391,
+      "checks": 351,
+      "positive_offset_checks": 315,
+      "zero_offset_checks": 36,
+      "upper_boundary_checks": 36
+    },
+    {
+      "horizon": 8,
+      "start": 1043199,
+      "checks": 563,
+      "positive_offset_checks": 518,
+      "zero_offset_checks": 45,
+      "upper_boundary_checks": 45
+    },
+    {
+      "horizon": 9,
+      "start": 6082047,
+      "checks": 881,
+      "positive_offset_checks": 826,
+      "zero_offset_checks": 55,
+      "upper_boundary_checks": 55
+    },
+    {
+      "horizon": 10,
+      "start": 36315135,
+      "checks": 1344,
+      "positive_offset_checks": 1278,
+      "zero_offset_checks": 66,
+      "upper_boundary_checks": 66
+    },
+    {
+      "horizon": 11,
+      "start": 36315135,
+      "checks": 2022,
+      "positive_offset_checks": 1944,
+      "zero_offset_checks": 78,
+      "upper_boundary_checks": 78
+    },
+    {
+      "horizon": 12,
+      "start": 1487503359,
+      "checks": 2998,
+      "positive_offset_checks": 2907,
+      "zero_offset_checks": 91,
+      "upper_boundary_checks": 91
+    },
+    {
+      "horizon": 13,
+      "start": 1487503359,
+      "checks": 4407,
+      "positive_offset_checks": 4302,
+      "zero_offset_checks": 105,
+      "upper_boundary_checks": 105
+    },
+    {
+      "horizon": 14,
+      "start": 1487503359,
+      "checks": 6431,
+      "positive_offset_checks": 6311,
+      "zero_offset_checks": 120,
+      "upper_boundary_checks": 120
+    },
+    {
+      "horizon": 15,
+      "start": 314944159743,
+      "checks": 9318,
+      "positive_offset_checks": 9182,
+      "zero_offset_checks": 136,
+      "upper_boundary_checks": 136
+    },
+    {
+      "horizon": 16,
+      "start": 785129144319,
+      "checks": 13375,
+      "positive_offset_checks": 13222,
+      "zero_offset_checks": 153,
+      "upper_boundary_checks": 153
+    },
+    {
+      "horizon": 17,
+      "start": 12069568774143,
+      "checks": 19054,
+      "positive_offset_checks": 18883,
+      "zero_offset_checks": 171,
+      "upper_boundary_checks": 171
+    },
+    {
+      "horizon": 18,
+      "start": 45922887663615,
+      "checks": 26986,
+      "positive_offset_checks": 26796,
+      "zero_offset_checks": 190,
+      "upper_boundary_checks": 190
+    },
+    {
+      "horizon": 19,
+      "start": 452162714337279,
+      "checks": 38106,
+      "positive_offset_checks": 37896,
+      "zero_offset_checks": 210,
+      "upper_boundary_checks": 210
+    },
+    {
+      "horizon": 20,
+      "start": 2280241934368767,
+      "checks": 53707,
+      "positive_offset_checks": 53476,
+      "zero_offset_checks": 231,
+      "upper_boundary_checks": 231
+    },
+    {
+      "horizon": 21,
+      "start": 2280241934368767,
+      "checks": 75553,
+      "positive_offset_checks": 75300,
+      "zero_offset_checks": 253,
+      "upper_boundary_checks": 253
+    },
+    {
+      "horizon": 22,
+      "start": 2280241934368767,
+      "checks": 105975,
+      "positive_offset_checks": 105699,
+      "zero_offset_checks": 276,
+      "upper_boundary_checks": 276
+    },
+    {
+      "horizon": 23,
+      "start": 2280241934368767,
+      "checks": 148172,
+      "positive_offset_checks": 147872,
+      "zero_offset_checks": 300,
+      "upper_boundary_checks": 300
+    },
+    {
+      "horizon": 24,
+      "start": 3950931357202382847,
+      "checks": 206591,
+      "positive_offset_checks": 206266,
+      "zero_offset_checks": 325,
+      "upper_boundary_checks": 325
+    }
+  ],
+  "total_checks": 716286,
+  "all_checks_passed": true,
+  "scope": "Finite exact arithmetic replay; universal claims are in the Lean module."
+}

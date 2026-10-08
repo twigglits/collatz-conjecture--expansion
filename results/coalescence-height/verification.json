@@ -1,0 +1,189 @@
+{
+  "checked_utc": "2026-10-08T11:36:26.546766+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "environment": {
+    "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.25569695798913,
+      "log": "results/coalescence-height/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.213770582980942,
+      "log": "results/coalescence-height/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6224335829610936,
+      "log": "results/coalescence-height/CollatzGrowth.log",
+      "log_sha256": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw/CoalescenceDescent.olean",
+        "lean/CoalescenceDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.172526000009384,
+      "log": "results/coalescence-height/CoalescenceDescent.log",
+      "log_sha256": "4051d1afe7cb472f05a44e57eaa994bb6e98d577cce9a135a44068ecce0c6b71"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-height-final-rrgsr8pw/CoalescenceHeight.olean",
+        "lean/CoalescenceHeight.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.954526707995683,
+      "log": "results/coalescence-height/CoalescenceHeight.log",
+      "log_sha256": "b4ae1113f6bfc1a14fa27ea99bbd843f7db8f6a27b62e8e4927f127e078ec576"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_coalescence_height.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8650920420186594,
+      "log": "results/coalescence-height/replay.json",
+      "log_sha256": "fd973d715035139aeb47807898e82482d76f472623b5df9d86fc9a6228705ec0"
+    }
+  ],
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/CoalescenceDescent.lean": "661eaa09f67e61ed65bb9ee3593b8d5a6a9c8b829e6c9efd809f19d892b2cbe7",
+    "lean/CoalescenceHeight.lean": "61d1bd0cd83c9847305db785ccba9dbb04e3d355cd9f811595af180974d5f3c3",
+    "verify_coalescence_height.py": "3cfe14a522b24460a4c075519783894d9c184ff5d3aef0b9f8cc36844857f3e2",
+    "APERIODIC-ATTEMPT.md": "001e439ffd946c629a5c88ef8dfad069fe89a738b3379529aabf39979fdadbce",
+    "ATTEMPT.md": "f5a8c473d17433b676f77225a77b6e785ccb20da151710a715cb4a08a62e2344",
+    "README.md": "ba69c76547f720cedbb4aa6874df0d0618c4797c3549982556e6992e0368c7dc",
+    "MEMORY.md": "cb0bf1686fe4f1dc3a41e81d250770e3fbfe68a5fbbcdeb602d316c4af1d4d3f"
+  },
+  "kernel_scope": [
+    "For every positive K, a start in [3^K,6^K) has the prescribed 2-adic and 3-adic divisibilities.",
+    "Such a start has no smaller-start meeting with both times at most K.",
+    "All starts 1 through 26 stay in an explicit 34-element invariant set.",
+    "The first 59 states of 27, at times 0 through 58, avoid that set.",
+    "For 0<m<27 and a<59, U^a(27) differs from U^b(m) for every b, without a cap on b.",
+    "U^59(27)=23 and its first coefficient stopping time is 59."
+  ],
+  "written_scope": [
+    "The power inequalities imply a logarithmic lower bound along an unbounded sequence and rule out uniform o(log n) meeting horizons.",
+    "Neither a logarithmic upper bound nor a first-coefficient-drop-to-coalescence implication has been proved."
+  ],
+  "kernel_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "admitted_proofs": false,
+  "native_evaluation": false,
+  "finite_scope": {
+    "invariant_region_size": 34,
+    "exact_crt_witnesses": 256,
+    "crt_horizons": [
+      1,
+      256
+    ],
+    "meeting_search": {
+      "limit": 32768,
+      "search_horizon": 192,
+      "exact_meeting_horizon_records": [
+        {
+          "start": 2,
+          "minimum_horizon": 1,
+          "a": 0,
+          "b": 1,
+          "smaller_start": 1,
+          "common_value": 2,
+          "ceil_log2_start": 1,
+          "ratio_numerator": 1,
+          "ratio_denominator": 1
+        },
+        {
+          "start": 3,
+          "minimum_horizon": 4,
+          "a": 4,
+          "b": 0,
+          "smaller_start": 2,
+          "common_value": 2,
+          "ceil_log2_start": 2,
+          "ratio_numerator": 2,
+          "ratio_denominator": 1
+        },
+        {
+          "start": 7,
+          "minimum_horizon": 7,
+          "a": 7,
+          "b": 0,
+          "smaller_start": 5,
+          "common_value": 5,
+          "ceil_log2_start": 3,
+          "ratio_numerator": 7,
+          "ratio_denominator": 3
+        },
+        {
+          "start": 27,
+          "minimum_horizon": 59,
+          "a": 59,
+          "b": 0,
+          "smaller_start": 23,
+          "common_value": 23,
+          "ceil_log2_start": 5,
+          "ratio_numerator": 59,
+          "ratio_denominator": 5
+        }
+      ],
+      "starts_with_earlier_meeting_than_descent": 7551,
+      "unresolved": [],
+      "diagnostic_node_count": 52179,
+      "scope": "Exact minima of max(a,b) for these finite starts only; no universal upper bound."
+    },
+    "note": "The meeting search is independent exact Python enumeration for a finite interval, not a universal upper-bound proof."
+  },
+  "external_context": [
+    {
+      "url": "https://arxiv.org/html/2502.00948v3",
+      "use": "Terras coefficient stopping-time conjecture and distinction from unconditional universal stopping.",
+      "dependency_of_kernel_proofs": false
+    }
+  ],
+  "limitations": [
+    "The chosen obstructing start depends on the horizon.",
+    "The lower bound does not disprove a C log n upper bound.",
+    "No claim of convergence for all positive integers.",
+    "No nontrivial positive cycle or divergent orbit has been excluded by these results alone."
+  ],
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; full objective remains active."
+}

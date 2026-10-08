@@ -1,0 +1,3 @@
+'DigitBlockRank.four_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DigitBlockRank.cancellation' depends on axioms: [propext, Quot.sound]
+'DigitBlockRank.no_eventual_separated_rank' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,98 @@
+{
+  "verified_at_utc": "2026-10-08T12:53:06.861182+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Natural graph ranks with local descent must strictly increase under doubling on multiples of three above the base",
+    "Natural graph ranks with local descent must decrease forward on multiples of three above the base",
+    "Six universal source and neighbor feature/edge progression identities",
+    "162 finite nonnegative-weight coefficient identities and exhaustive selection coverage",
+    "Imported exact power inequality 3^12 > 2^19"
+  ],
+  "written_bridges": [
+    "Extension of the graph restriction to proper real ranks using a minimum on the doubling ray",
+    "Universal unbounded valuation families in section 13",
+    "Necessary polynomial coefficient restrictions from properness and forced forward descent",
+    "Reduction of all quadratic polynomials by xy=zw=0 and vanishing x^2,y^2 coefficients",
+    "Real logarithm inequality and limiting neighbor differences",
+    "Interpreting nonnegative integer certificate weights as a real linear contradiction",
+    "Complete exclusion of the stated proper quadratic rank template"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "Exclusion of arbitrary nonlinear functions of valuations",
+    "Existence of a useful global rank",
+    "Properness from boundedness below alone"
+  ],
+  "discovery": "Z3 supplied weights; all final certificate arithmetic is checked without SMT trust.",
+  "independent_replay": {
+    "all_checks_passed": true,
+    "exhaustive_certificates": 162,
+    "universal_progression_patterns": 6,
+    "lifted_edge_checks": 80,
+    "finite_properness_family_cases": 1855,
+    "maximum_certificate_weight": 36,
+    "scope": "Finite exact arithmetic; properness, polynomial restrictions, and real interpretation are written bridges. Not a Collatz proof."
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-quadratic-rank-fxowew0l/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/quadratic-valuation-rank/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-quadratic-rank-fxowew0l/ValuationGraphRank.olean",
+        "lean/ValuationGraphRank.lean"
+      ],
+      "returncode": 0,
+      "log": "results/quadratic-valuation-rank/ValuationGraphRank.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-quadratic-rank-fxowew0l/GraphRankNecessity.olean",
+        "lean/GraphRankNecessity.lean"
+      ],
+      "returncode": 0,
+      "log": "results/quadratic-valuation-rank/GraphRankNecessity.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-quadratic-rank-fxowew0l/QuadraticValuationRank.olean",
+        "lean/QuadraticValuationRank.lean"
+      ],
+      "returncode": 0,
+      "log": "results/quadratic-valuation-rank/QuadraticValuationRank.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-quadratic-rank-fxowew0l",
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/ValuationGraphRank.lean": "5946eaa0ecfb36c62f424f45b80d6b7fe0468cca0b7976e66af825e3e05c772d",
+    "lean/GraphRankNecessity.lean": "4a834206b2b1ef7142364bd6996a32ed1f9eb8c15e15a5e453c839d8e537732f",
+    "lean/QuadraticValuationRank.lean": "c27f6561b107c236e9199ffcc9011e3c173499d31f1218f53810752b41a66f94",
+    "verify_valuation_graph_rank.py": "fb6aaee9edbbb1eb35163286287add0e942c2ccb197d4859a0bae08a1f3d7768",
+    "verify_quadratic_valuation_rank.py": "99f0852a3dd3be343d7230c15db3388674ff80022ccdfd85b4f7a0940cdb5638",
+    "results/quadratic-valuation-rank/certificates.json": "9eca245e2474af8637269c91595807323b803092b2d4541f9f08b47678057c12",
+    "results/quadratic-valuation-rank/replay.json": "728a7cadd3887e85df27f8434987fb7e42eac23a5c2376637cc9de792b6d5ce1",
+    "APERIODIC-ATTEMPT.md": "e04f1cd5fb755f8a8dbfba0c74e5d2c47b12b8796cfd0a486414534d79b705d4",
+    "ATTEMPT.md": "5c9f6bfec797d1373ae492fb3e595c79a272e4d3929edf419c1d8f8b5d6f15d5",
+    "README.md": "2d44c7bc9d87c8458e0c34aaf001c5833d8d6b6b4c597f1ea7e0f13a55fba043",
+    "MEMORY.md": "5f9bdc5e8e92318784bbd85164e91dff94da7b8366300bc55aeea73a2337cf3e",
+    "results/quadratic-valuation-rank/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/quadratic-valuation-rank/ValuationGraphRank.log": "3b2fbc2c363ccef21a26b5453cbe35ea8c9c32506ac419958b3d1ddacda0b471",
+    "results/quadratic-valuation-rank/GraphRankNecessity.log": "df41dddac90427f6ce9990212a594a3a33bff605abfe3f11e1b1b63762339f94",
+    "results/quadratic-valuation-rank/QuadraticValuationRank.log": "a943dc422582483de14a7add3ab41896bb88085aeb37c5b55dee7ec0831816cd"
+  }
+}

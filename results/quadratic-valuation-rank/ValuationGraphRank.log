@@ -1,0 +1,14 @@
+'ValuationGraphRank.features_131' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.features_134' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.features_137' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.features_142' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.features_147' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.neighbors_131' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.neighbors_134' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.neighbors_137' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.neighbors_142' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.neighbors_147' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ValuationGraphRank.log_power_bounds' does not depend on any axioms
+'ValuationGraphRank.certificates_checked' depends on axioms: [propext]
+'ValuationGraphRank.selections_exhausted' does not depend on any axioms
+'ValuationGraphRank.certificate_count' does not depend on any axioms

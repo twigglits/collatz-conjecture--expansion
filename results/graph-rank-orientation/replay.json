@@ -1,0 +1,763 @@
+{
+  "all_checks_passed": true,
+  "cases": [
+    {
+      "base_limit": 1,
+      "region_size": 3,
+      "region_bound": 2,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 3,
+          "path": [
+            571,
+            857,
+            1286,
+            643
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 6,
+          "path": [
+            1147,
+            1721,
+            2582,
+            1291
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 9,
+          "path": [
+            1723,
+            2585,
+            3878,
+            1939
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 15,
+          "path": [
+            2875,
+            4313,
+            6470,
+            3235
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 48,
+          "path": [
+            9211,
+            13817,
+            20726,
+            10363
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 81,
+          "path": [
+            15547,
+            23321,
+            34982,
+            17491
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 291,
+          "path": [
+            55867,
+            83801,
+            125702,
+            62851
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "base_limit": 2,
+      "region_size": 3,
+      "region_bound": 2,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 3,
+          "path": [
+            571,
+            857,
+            1286,
+            643
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 6,
+          "path": [
+            1147,
+            1721,
+            2582,
+            1291
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 9,
+          "path": [
+            1723,
+            2585,
+            3878,
+            1939
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 15,
+          "path": [
+            2875,
+            4313,
+            6470,
+            3235
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 48,
+          "path": [
+            9211,
+            13817,
+            20726,
+            10363
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 81,
+          "path": [
+            15547,
+            23321,
+            34982,
+            17491
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 291,
+          "path": [
+            55867,
+            83801,
+            125702,
+            62851
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "base_limit": 26,
+      "region_size": 35,
+      "region_bound": 80,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 81,
+          "path": [
+            15547,
+            23321,
+            34982,
+            17491
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 162,
+          "path": [
+            31099,
+            46649,
+            69974,
+            34987
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 243,
+          "path": [
+            46651,
+            69977,
+            104966,
+            52483
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 405,
+          "path": [
+            77755,
+            116633,
+            174950,
+            87475
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 1296,
+          "path": [
+            248827,
+            373241,
+            559862,
+            279931
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 2187,
+          "path": [
+            419899,
+            629849,
+            944774,
+            472387
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 7857,
+          "path": [
+            1508539,
+            2262809,
+            3394214,
+            1697107
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "base_limit": 100,
+      "region_size": 181,
+      "region_bound": 4616,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 4617,
+          "path": [
+            886459,
+            1329689,
+            1994534,
+            997267
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 9234,
+          "path": [
+            1772923,
+            2659385,
+            3989078,
+            1994539
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 13851,
+          "path": [
+            2659387,
+            3989081,
+            5983622,
+            2991811
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 23085,
+          "path": [
+            4432315,
+            6648473,
+            9972710,
+            4986355
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 73872,
+          "path": [
+            14183419,
+            21275129,
+            31912694,
+            15956347
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 124659,
+          "path": [
+            23934523,
+            35901785,
+            53852678,
+            26926339
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 447849,
+          "path": [
+            85987003,
+            128980505,
+            193470758,
+            96735379
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "base_limit": 1000,
+      "region_size": 1626,
+      "region_bound": 125252,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 125253,
+          "path": [
+            24048571,
+            36072857,
+            54109286,
+            27054643
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 250506,
+          "path": [
+            48097147,
+            72145721,
+            108218582,
+            54109291
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 375759,
+          "path": [
+            72145723,
+            108218585,
+            162327878,
+            81163939
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 626265,
+          "path": [
+            120242875,
+            180364313,
+            270546470,
+            135273235
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 2004048,
+          "path": [
+            384777211,
+            577165817,
+            865748726,
+            432874363
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 3381831,
+          "path": [
+            649311547,
+            973967321,
+            1460950982,
+            730475491
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 12149541,
+          "path": [
+            2332711867,
+            3499067801,
+            5248601702,
+            2624300851
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    },
+    {
+      "base_limit": 32768,
+      "region_size": 52180,
+      "region_bound": 60506432,
+      "witnesses": [
+        {
+          "modulus": 1,
+          "parameter": 60506433,
+          "path": [
+            11617235131,
+            17425852697,
+            26138779046,
+            13069389523
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 2,
+          "parameter": 121012866,
+          "path": [
+            23234470267,
+            34851705401,
+            52277558102,
+            26138779051
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 3,
+          "parameter": 181519299,
+          "path": [
+            34851705403,
+            52277558105,
+            78416337158,
+            39208168579
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "modulus": 5,
+          "parameter": 302532165,
+          "path": [
+            58086175675,
+            87129263513,
+            130693895270,
+            65346947635
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "parameter": 968102928,
+          "path": [
+            185875762171,
+            278813643257,
+            418220464886,
+            209110232443
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            11
+          ]
+        },
+        {
+          "modulus": 27,
+          "parameter": 1633673691,
+          "path": [
+            313665348667,
+            470498023001,
+            705747034502,
+            352873517251
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            22
+          ]
+        },
+        {
+          "modulus": 97,
+          "parameter": 5869124001,
+          "path": [
+            1126871808187,
+            1690307712281,
+            2535461568422,
+            1267730784211
+          ],
+          "endpoint_features": [
+            0,
+            2,
+            0,
+            0,
+            92
+          ]
+        }
+      ]
+    }
+  ],
+  "witness_count": 42,
+  "scope": "Finite closed-base and exact path replay; the general graph orientation theorem is kernel proved separately. No Collatz proof."
+}

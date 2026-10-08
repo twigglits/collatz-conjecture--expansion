@@ -1,0 +1,8 @@
+{
+  "all_checks_passed": true,
+  "exhaustive_certificates": 108,
+  "universal_progression_patterns": 5,
+  "lifted_edge_checks": 65,
+  "maximum_certificate_weight": 84,
+  "scope": "Exact arithmetic inputs; full real rank obstruction is a written deduction, not a Collatz proof."
+}

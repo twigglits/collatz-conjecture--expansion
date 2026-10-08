@@ -1,0 +1,4 @@
+'GraphRankOrientation.wellFounded_asymmetric' does not depend on any axioms
+'GraphRankOrientation.forward_required' does not depend on any axioms
+'GraphRankOrientation.forward_outside_region' depends on axioms: [propext, Quot.sound]
+'GraphRankOrientation.no_feature_monotone_graph_rank' depends on axioms: [propext, Classical.choice, Quot.sound]

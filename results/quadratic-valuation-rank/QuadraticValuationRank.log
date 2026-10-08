@@ -1,0 +1,15 @@
+'QuadraticValuationRank.features_151' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_151' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.features_153' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_153' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.features_155' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_155' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.features_170' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_170' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.features_230' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_230' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.features_233' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.neighbors_233' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticValuationRank.certificates_checked' depends on axioms: [propext]
+'QuadraticValuationRank.selections_exhausted' does not depend on any axioms
+'QuadraticValuationRank.certificate_count' does not depend on any axioms

@@ -1,0 +1,73 @@
+{
+  "verified_at_utc": "2026-10-08T13:16:41.754595+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Four exact shortcut edge families for all natural q",
+    "Integer cancellation of the three odd-edge differences with positive zero cost",
+    "No eventually strictly forward-decreasing integer score can satisfy constant doubling increment and the separated-block formula beyond a fixed gap threshold"
+  ],
+  "written_bridges": [
+    "Binary length and zero-padded sliding-window counts satisfy the shift and separated-block laws for every width",
+    "The four rank differences and their positive-weight cancellation over real coefficients",
+    "Application to well-founded graph ranks with a bounded closed verified base using section 14"
+  ],
+  "required_hypotheses": [
+    "For the formal obstruction: integer-valued score and the explicit two structural laws",
+    "For the digital interpretation: zero-padding by width-1 on both ends, bit-length term, linear weighted window counts, fixed width",
+    "For the graph-rank corollary: well-founded rank decrease and bounded forward closure of the exceptional base"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "Exclusion of arbitrary digital ranks",
+    "Exclusion of independent boundary corrections or nonlinear window-count functions",
+    "Full Lean formalization of universal word-count identities or real-valued scores"
+  ],
+  "independent_replay": {
+    "all_checks_passed": true,
+    "block_law_checks": 960,
+    "family_vector_checks": 192,
+    "certificate_weights": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "scope": "Finite exact window-count replay; the universal block-score contradiction is kernel proved, and its all-window real-score interpretation is written. Not a Collatz proof."
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-digit-block-rank-vu56jam5/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/digit-block-rank/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-digit-block-rank-vu56jam5/DigitBlockRank.olean",
+        "lean/DigitBlockRank.lean"
+      ],
+      "returncode": 0,
+      "log": "results/digit-block-rank/DigitBlockRank.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-digit-block-rank-vu56jam5",
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/DigitBlockRank.lean": "b9c50bef94b552222e929eb9436afaabd623d857a70b3d9de9f898220b096771",
+    "verify_digit_block_rank.py": "0dddbaefca8415dfbf1d69621d27c9356c4c5c78cf764e9232e3a524728a87dc",
+    "results/digit-block-rank/replay.json": "73801be5bbf31aa615599802406a18a83147e7cf42c1d033fc74ea6a3bf1857e",
+    "APERIODIC-ATTEMPT.md": "3b1ad27773ee292ab67854c9c3eb58eed4d13aead8e0e3b77deedf4ec126ea80",
+    "ATTEMPT.md": "6045561c81e03d12842b601df96e40a7811084951a88a6772b4f0d45eaa55021",
+    "README.md": "764a1243868d03fd43d98b102ddb0de270f0d576b3040f0f0000d7ca163f1535",
+    "MEMORY.md": "233ba32981d23635f14699707a08af9e8968c1730c37aa53d6ffda8ef00c243d",
+    "results/digit-block-rank/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/digit-block-rank/DigitBlockRank.log": "bebf0e76c3cddc7594b2ede04a0f52b522abf2a3a53c62311253531dafac4a18"
+  }
+}

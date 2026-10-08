@@ -1,0 +1,10 @@
+'InverseBasinAudit.basin_collision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InverseBasinAudit.basin_of_multiple_three' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.basin_not_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InverseBasinAudit.cancel_meeting' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.basin_subset_is_chain' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.convergent_point_in_injective_region' does not depend on any axioms
+'InverseBasinAudit.closed_basin_forces_periodic_root' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.component_subset_is_chain' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.v1_free_tuple_counterexample' depends on axioms: [propext, Quot.sound]
+'InverseBasinAudit.v2_nonunique_pair' does not depend on any axioms

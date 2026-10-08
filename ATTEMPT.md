@@ -618,6 +618,80 @@ Python checks at larger depths. A universal coalescence proof still needs
 an unbounded, start-dependent argument; expanding a fixed table cannot
 settle the conjecture by itself.
 
+[CoalescenceHeight.lean](lean/CoalescenceHeight.lean) sharpens this limitation:
+for every K≥1 there is a start between `3^K` and `6^K` that cannot meet
+any smaller start within K steps on either side. Thus a uniform search
+bound growing more slowly than the logarithm of the start is impossible.
+The module also proves that 27 has no smaller-start meeting before its
+own step 59, allowing arbitrarily long time on the smaller orbit.
+These are kernel results; the [separate verification record](results/coalescence-height/verification.json)
+distinguishes them from finite tests of possible logarithmic upper bounds.
+No universal upper bound or first-multiplier-drop-to-coalescence theorem
+has been established.
+
+The subsequent [bidirectional rank search](APERIODIC-ATTEMPT.md#11-bidirectional-ranking-search-and-a-finite-affine-obstruction)
+tested global ranks that may decrease along either direction of a Collatz
+edge. [CoalescenceEnvelope.lean](lean/CoalescenceEnvelope.lean) proves the
+sufficient rank criterion and a two-sided affine envelope on the growing
+CRT classes. Exact SMT searches rejected all 22 tested residue moduli.
+A written argument using the envelope excludes every finite family of
+positive-slope affine rank formulas, even with arbitrary assignments to
+integers and finite exceptional ranges. The full finite-family argument
+is not Lean formalized; [the verification record](results/coalescence-envelope/verification.json)
+separates it from the kernel lemmas and SMT checks. Nonlinear or infinitely
+parameterized ranks remain possible; none has yet proved convergence.
+
+The [four-feature valuation follow-up](APERIODIC-ATTEMPT.md#12-a-four-feature-valuation-rank-obstruction)
+also excludes bounded-below ranks of the form
+`C log₂n + a ν₂(n) + b ν₂(n+1) + c ν₃(n) + d ν₃(n+1)`, `C>0`,
+from supplying a decreasing adjacent edge outside any finite base.
+Five infinite progression patterns lead to 108 exhaustive linear
+contradictions. Their finite certificates and progression identities are
+kernel checked; the full real/logarithmic deduction is written. The
+[verification record](results/valuation-graph-rank/verification.json)
+keeps these scopes separate. General nonlinear valuation ranks remain open.
+
+The [quadratic follow-up](APERIODIC-ATTEMPT.md#13-proper-nonlinear-ranks-and-a-quadratic-obstruction)
+extends the written exclusion to every quadratic polynomial of the same
+four valuations plus `C log₂n`, `C>0`, when the rank has finite sublevel
+sets. This condition prevents infinite descending paths, which boundedness
+below alone does not do for real ranks. A new kernel graph lemma forces
+natural-valued ranks to decrease forward on multiples of three; its
+written proper-real extension supplies necessary coefficient restrictions.
+Six progression patterns and 162 kernel-checked arithmetic certificates
+then contradict local progress. The [verification scope](results/quadratic-valuation-rank/verification.json)
+separates the formal inputs from the written real and polynomial arguments.
+
+The subsequent [graph orientation theorem](APERIODIC-ATTEMPT.md#14-graph-ranks-must-follow-the-forward-map-outside-the-base-closure)
+is stronger for proofs with a verified finite base: well-founded local
+graph descent necessarily follows the forward map outside the base's
+forward closure. Combining its kernel proof with the earlier growing
+feature-matched paths excludes arbitrary nonlinear corrections from any
+fixed finite list of polynomial valuations and residues, when the rank
+is nondecreasing in size at fixed features. The broad corollary is written;
+the natural-rank four-valuation case is kernel checked. This requires
+bounded forward closure of the base and does not prove Collatz or exclude
+all possible ranks. [Verification scope](results/graph-rank-orientation/verification.json).
+
+The [binary-digit follow-up](APERIODIC-ATTEMPT.md#15-separated-binary-blocks-and-weighted-digit-pattern-ranks)
+tests information outside the polynomial-valuation class. Four infinite
+families rule out weighted bit length plus zero-padded binary-window
+counts, for every fixed window width and arbitrary real coefficients.
+Their rank changes cancel with positive weights `(2,1,1,1)`.
+The separated-block integer-rank theorem is kernel checked; the universal
+window-count and real-score interpretation is written. [Verification](results/digit-block-rank/verification.json).
+General boundary-dependent and non-additive digital ranks remain open.
+
+The [inverse-basin audit](APERIODIC-ATTEMPT.md#16-inverse-basin-counts-do-not-supply-an-injective-orbit-packing-contradiction)
+checks a different proposed route: combining inverse-tree lower bounds
+with the project's orbit-packing upper bound. Kernel results show why
+the injectivity hypothesis prevents that direct comparison: roots not
+divisible by three have basin collisions, while forward-closed injective
+subsets of a single basin must be chains. In the basin of one, such
+subsets contain only the two shortcut cycle states. A new branching-set
+estimate or an injective-chain lower bound is still missing; no density
+contradiction follows. [Verification](results/inverse-basin-audit/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
