@@ -1538,3 +1538,84 @@ version-specific congruence examples. The [verification record](results/inverse-
 distinguishes those finite checks from the universal basin theorems.
 The full Collatz conjecture, including exclusion of nontrivial cycles
 and divergent orbits, remains unresolved.
+
+## 17. The inverse-fibre multiplicity loss is exponentially large
+
+The failure of injectivity from section 16 is quantitative, not just a
+single exceptional collision. For a depth k, odd-step count j, and endpoint
+y, define
+\[
+ F_{k,j,y}=\{0\le r<2^k:\operatorname{wt}(k,r)=j,\ U^k(r)=y\},
+ \qquad D_k=\max_{j,y}|F_{k,j,y}|.
+\]
+The index j is part of the fibre definition: these are collisions at the
+**same time and the same parity weight**, precisely the partition used
+by the orbit-packing argument.
+
+**Written lower bound.** For every `k≥0`,
+\[
+ D_k\ge\max_{0\le j\le k}\left\lceil\frac{\binom{k}{j}}{3^j}\right\rceil
+ \ge \left\lceil\frac{4^k}{(k+1)3^k}\right\rceil. \tag{17.1}
+\]
+To prove this, the first k parity bits bijectively label the residues
+modulo `2^k`. One inductive justification is that r and `r+2^k` have the
+same first k parity bits, while their k-th iterates differ by the odd
+number `3^wt(k,r)`. Thus their next parity bits are opposite, providing
+exactly the two extensions of each word. There are therefore `binom(k,j)`
+residues of weight j. The sharp residue-image bound gives `0≤U^k(r)<3^j`.
+Pigeonhole counting gives the first inequality in (17.1).
+
+For the second, each weight group satisfies `binom(k,j)≤D_k 3^j`.
+Multiply by `3^(k-j)` and sum over j. The binomial theorem gives
+\[
+ 4^k=\sum_{j=0}^k\binom{k}{j}3^{k-j}
+      \le (k+1)D_k3^k.
+\]
+Consequently the required worst-case multiplicity correction cannot be
+bounded, polynomial in k, or even subexponential in k: its exponential
+growth rate is at least `4/3`. This is a lower bound, not a claim that
+`4/3` is the exact maximum-fibre growth rate.
+
+### These collisions persist arbitrarily far from the origin
+
+The exact affine identities are
+\[
+ \operatorname{wt}(k,2^kq+r)=\operatorname{wt}(k,r),\qquad
+ U^k(2^kq+r)=3^jq+U^k(r)\quad\text{when wt}(k,r)=j.
+\]
+Hence every aligned block `[2^kq,2^k(q+1))` has exactly the same
+same-weight fibre partition, translated in its image. Taking q positive
+avoids zero and taking q arbitrarily large moves all witnesses beyond
+any finite exception range. The weight periodicity and the equivalence
+of fibre equalities between aligned blocks are kernel proved in
+[InverseFibreGrowth.lean](lean/InverseFibreGrowth.lean).
+
+As a concrete universal certificate, the module checks 48 distinct
+positive residues r below `2^16`, all with weight four and `U^16(r)=2`.
+For every `q≥0`, their shifts `65536q+r` are distinct positive members
+of the q-th block, all with weight four and common endpoint `81q+2`.
+The complete residue list is in
+[certificate.json](results/inverse-fibre-growth/certificate.json).
+This is not merely a collision near the known cycle: the same identity
+holds for arbitrarily large q. It says nothing about convergence of
+those arbitrary shifted targets.
+
+The [independent replay](verify_inverse_fibre_growth.py) enumerates every
+residue at depths 1–20, checking parity-weight histograms, image bounds,
+the exact weighted binomial identity, and fibre maxima. At depth 16 the
+maximum is 48; at depth 20 it is 140, attained by a weight-five fibre
+ending at 47. These **maximality** claims are finite Python results;
+the Lean certificate proves the 48-member family and its universal
+shifts, not an exhaustive maximum at depth 16 or 20.
+
+The all-depth parity enumeration, pigeonhole assembly, and exponential
+interpretation of (17.1) remain written arguments, supported by the
+kernel affine and image bounds. [Verification scope](results/inverse-fibre-growth/verification.json).
+
+This closes the proposed repair that would charge only a constant,
+polynomial, or subexponential worst-case loss for collisions in arbitrary
+components. It does **not** rule out bounds specific to a hypothetical
+nonconvergent component, weights that account for branching differently,
+or a different proof strategy. The large fibres exhibited here need not
+belong to any exceptional component. No new upper bound on such a
+component has been proved, and Collatz remains unresolved.

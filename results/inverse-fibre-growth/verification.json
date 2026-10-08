@@ -1,0 +1,154 @@
+{
+  "verified_at_utc": "2026-10-08T13:43:47.988851+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "The first k parity weights are periodic modulo 2^k",
+    "At fixed weight, equality of k-step endpoints is equivalent in every aligned block",
+    "48 positive distinct residues below 2^16 have weight four and endpoint two",
+    "All affine shifts of the certificate preserve distinctness, weight, and the common endpoint 81q+2"
+  ],
+  "written_bridges": [
+    "Parity-word bijection and binomial weight counts at every depth",
+    "Pigeonhole lower bound D_k >= max_j ceil(binom(k,j)/3^j)",
+    "Weighted binomial sum gives 4^k <= (k+1)3^k D_k",
+    "Consequent exponential lower rate of at least 4/3 for the generic worst-case multiplicity"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "An upper bound for generic or exceptional-component multiplicities",
+    "An exact asymptotic growth rate for the maximum fibre",
+    "Existence of these fibres within a nonconvergent component",
+    "Kernel maximality of the finite 48-member certificate",
+    "Full Lean formalization of the all-depth counting argument"
+  ],
+  "independent_replay": {
+    "all_checks_passed": true,
+    "certificate_members": 48,
+    "shifted_member_checks": 288,
+    "enumerated_depths": [
+      1,
+      20
+    ],
+    "residue_inputs": 2097150,
+    "scope": "Exact finite enumeration through depth 20. Universal 48-member shifts are kernel proved; the all-depth exponential lower bound is written. Not a Collatz proof."
+  },
+  "finite_maxima": [
+    {
+      "depth": 1,
+      "maximum": 1
+    },
+    {
+      "depth": 2,
+      "maximum": 1
+    },
+    {
+      "depth": 3,
+      "maximum": 2
+    },
+    {
+      "depth": 4,
+      "maximum": 2
+    },
+    {
+      "depth": 5,
+      "maximum": 3
+    },
+    {
+      "depth": 6,
+      "maximum": 4
+    },
+    {
+      "depth": 7,
+      "maximum": 5
+    },
+    {
+      "depth": 8,
+      "maximum": 6
+    },
+    {
+      "depth": 9,
+      "maximum": 8
+    },
+    {
+      "depth": 10,
+      "maximum": 10
+    },
+    {
+      "depth": 11,
+      "maximum": 14
+    },
+    {
+      "depth": 12,
+      "maximum": 18
+    },
+    {
+      "depth": 13,
+      "maximum": 22
+    },
+    {
+      "depth": 14,
+      "maximum": 29
+    },
+    {
+      "depth": 15,
+      "maximum": 37
+    },
+    {
+      "depth": 16,
+      "maximum": 48
+    },
+    {
+      "depth": 17,
+      "maximum": 63
+    },
+    {
+      "depth": 18,
+      "maximum": 83
+    },
+    {
+      "depth": 19,
+      "maximum": 109
+    },
+    {
+      "depth": 20,
+      "maximum": 140
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-growth-4ug5pl7a/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/inverse-fibre-growth/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-growth-4ug5pl7a/InverseFibreGrowth.olean",
+        "lean/InverseFibreGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/inverse-fibre-growth/InverseFibreGrowth.log"
+    }
+  ],
+  "build_directory": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-growth-4ug5pl7a",
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/InverseFibreGrowth.lean": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+    "verify_inverse_fibre_growth.py": "c3504acb94daee225e55bc5ea09aa5b5dd6da36e17aeba166de639142687a17d",
+    "results/inverse-fibre-growth/certificate.json": "9c0cbcf0f84a5f57585596250b43fd08d277b182bacf411dac1e0b84586d7071",
+    "results/inverse-fibre-growth/replay.json": "e7fac107e83bfddea21b37019f7456b0880eb25f57393c8db9adbd2bb8dc1c1b",
+    "APERIODIC-ATTEMPT.md": "9a4d80b62d7805cd4f27e460d6d5cd7bc64826cbd7faf645935408d9701757bd",
+    "ATTEMPT.md": "9323092584ed233813558f692357660eed636cb0dfbd2bc6f3a66fc79388059f",
+    "README.md": "03a6b90155095019741dcf93e397ceff6d61a02925cf85641040d380fd22a63e",
+    "MEMORY.md": "1abbbcf84d720cfb09118d436c98ff4fb2346ba731c0d638e04ed81b8bf7b2ca",
+    "results/inverse-fibre-growth/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/inverse-fibre-growth/InverseFibreGrowth.log": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560"
+  }
+}

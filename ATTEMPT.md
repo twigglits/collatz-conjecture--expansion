@@ -692,6 +692,15 @@ subsets contain only the two shortcut cycle states. A new branching-set
 estimate or an injective-chain lower bound is still missing; no density
 contradiction follows. [Verification](results/inverse-basin-audit/verification.json).
 
+The [quantitative follow-up](APERIODIC-ATTEMPT.md#17-the-inverse-fibre-multiplicity-loss-is-exponentially-large)
+shows that the worst same-time, same-weight fibre at depth k has at least
+`ceil(4^k/((k+1)3^k))` members. The written pigeonhole proof uses parity-word
+counts and the exact residue-image bound. Kernel lemmas show that fibre
+partitions repeat in every aligned block, and certify 48 colliding starts
+per block at depth 16. Thus a uniformly small collision correction cannot
+repair the basin-packing comparison. Exceptional-component-specific bounds
+remain open. [Verification](results/inverse-fibre-growth/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an

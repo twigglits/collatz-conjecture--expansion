@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the inverse-basin and orbit-packing audit.
+Last updated: 2026-10-08, after the inverse-fibre multiplicity lower bound.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -577,3 +577,36 @@ The independent Python replay checks 21,846 small-root collisions, six
 large roots, 325 dyadic basin examples, and the congruence examples. The universal structure results
 are kernel checked separately. [Manifest](results/inverse-basin-audit/verification.json).
 The full Collatz conjecture remains unresolved and the goal remains active.
+
+## 2026-10-08 follow-up: quantitative fibre multiplicity
+
+The largest fibre of U^k among residues below 2^k **at a fixed parity
+weight** has size D_k at least
+`max_j ceil(binom(k,j)/3^j) ≥ ceil(4^k/((k+1)3^k))`.
+There are binom(k,j) weight-j parity residues and only 3^j possible images.
+For the second bound multiply binom(k,j)≤D_k 3^j by 3^(k-j), sum, and
+use the binomial theorem. This all-depth proof is written, not fully Lean.
+It excludes any constant, polynomial, or subexponential universal bound
+on this multiplicity; it does not give an upper bound or the exact rate.
+
+[InverseFibreGrowth.lean](lean/InverseFibreGrowth.lean) proves weight
+periodicity under shifts by 2^k, and equivalence of same-weight fibre
+equalities between all aligned blocks. It certifies 48 distinct positive
+residues r below 65536 with wt(16,r)=4 and U^16(r)=2. For every q≥0,
+65536q+r therefore share weight four and endpoint 81q+2. No convergence
+claim about arbitrary shifted endpoints is made.
+
+The Python replay enumerates all 2,097,150 residue inputs at depths 1–20,
+checks binomial histograms and exact weighted identities, and determines
+the finite maxima: 48 at depth 16; 140 at depth 20 (weight 5, endpoint 47).
+Maximality is Python evidence; the Lean certificate only proves the
+48-member family and its universal lifts. It also replays 288 shifted
+certificate members, including large quotients.
+[Manifest](results/inverse-fibre-growth/verification.json), APERIODIC-ATTEMPT section 17.
+
+This rules out fixing the previous inverse-basin packing mismatch with
+a uniformly small collision multiplier. It does not show that any of
+these large fibres lie in a nonconvergent component. A bound using special
+properties of an exceptional component, or a different global argument,
+is still missing. Do not equate generic fibre growth with Collatz failure.
+The full objective remains unresolved and active.
