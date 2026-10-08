@@ -1,0 +1,2986 @@
+{
+  "all_checks_passed": true,
+  "cylinders": 124,
+  "odd_roots": 343,
+  "ancestor_checks": 42532,
+  "sharp_witness_checks": 248,
+  "maximum_period": 486,
+  "profiles": [
+    {
+      "A": 0,
+      "B": 0,
+      "residue": 0,
+      "representative": 1,
+      "prefix_steps": 1,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 2,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 5
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 68
+        }
+      ]
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "residue": 0,
+      "representative": 3,
+      "prefix_steps": 2,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 19,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 25
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 86
+        }
+      ]
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 1,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 6,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 11
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 73
+        }
+      ]
+    },
+    {
+      "A": 0,
+      "B": 1,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 7,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "residue": 0,
+      "representative": 2,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 3,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 6
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 69
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 0,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 1,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 2,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 5
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 68
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 0,
+      "representative": 6,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 1,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 6,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 11
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 73
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 7,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 2,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 19,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 25
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 86
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 1,
+      "B": 1,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 0,
+      "residue": 0,
+      "representative": 4,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 4,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 7
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 70
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 0,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 2,
+      "uniform_exponent_bound": 2,
+      "sharp_slope_numerator_power_of_two": 3,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 2,
+      "sharp_witnesses": [
+        {
+          "root": "17",
+          "ancestor_bits": 6
+        },
+        {
+          "root": "110680464442257309707",
+          "ancestor_bits": 69
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 0,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 3,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 6
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 69
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 0,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 2,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 6,
+      "uniform_exponent_bound": 9,
+      "sharp_slope_numerator_power_of_two": 7,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 9,
+      "sharp_witnesses": [
+        {
+          "root": "169",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929239",
+          "ancestor_bits": 73
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 0,
+      "representative": 12,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 6,
+      "uniform_exponent_bound": 6,
+      "sharp_slope_numerator_power_of_two": 7,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 6,
+      "sharp_witnesses": [
+        {
+          "root": "47",
+          "ancestor_bits": 11
+        },
+        {
+          "root": "332041393326771929117",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 2,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 7,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 2,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 19,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 25
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 86
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 6,
+      "representative": 6,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 7,
+      "representative": 7,
+      "prefix_steps": 3,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 56,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 123
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 8,
+      "representative": 8,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 9,
+      "representative": 9,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 10,
+      "representative": 10,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 2,
+      "B": 1,
+      "residue": 11,
+      "representative": 11,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 0,
+      "representative": 8,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 5,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 8
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 71
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 11
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 2,
+      "uniform_exponent_bound": 2,
+      "sharp_slope_numerator_power_of_two": 4,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 2,
+      "sharp_witnesses": [
+        {
+          "root": "17",
+          "ancestor_bits": 7
+        },
+        {
+          "root": "110680464442257309707",
+          "ancestor_bits": 70
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 4,
+      "period": 6,
+      "uniform_exponent_bound": 8,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 8,
+      "sharp_witnesses": [
+        {
+          "root": "107",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929177",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 4,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 7
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 70
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 4,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 7
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 70
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 6,
+      "representative": 6,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 6,
+      "uniform_exponent_bound": 9,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 9,
+      "sharp_witnesses": [
+        {
+          "root": "169",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929239",
+          "ancestor_bits": 74
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 0,
+      "residue": 7,
+      "representative": 7,
+      "prefix_steps": 3,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 18,
+      "uniform_exponent_bound": 22,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 19,
+      "sharp_witnesses": [
+        {
+          "root": "1483",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315788693",
+          "ancestor_bits": 86
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 0,
+      "representative": 24,
+      "prefix_steps": 5,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 22,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 28
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 89
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 18,
+      "uniform_exponent_bound": 19,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 19,
+      "sharp_witnesses": [
+        {
+          "root": "193",
+          "ancestor_bits": 25
+        },
+        {
+          "root": "996124179980315787403",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 6,
+      "uniform_exponent_bound": 6,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 6,
+      "sharp_witnesses": [
+        {
+          "root": "47",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929117",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 4,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 20,
+      "sharp_witnesses": [
+        {
+          "root": "305",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787515",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 3,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 8,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 6,
+      "representative": 6,
+      "prefix_steps": 3,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 20,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 7,
+      "representative": 7,
+      "prefix_steps": 3,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 56,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 123
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 8,
+      "representative": 8,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 9,
+      "representative": 9,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 10,
+      "representative": 10,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 11,
+      "representative": 11,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 12,
+      "representative": 12,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 13,
+      "representative": 13,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 14,
+      "representative": 14,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 15,
+      "representative": 15,
+      "prefix_steps": 4,
+      "prefix_weight": 4,
+      "endpoint": 80,
+      "period": 162,
+      "uniform_exponent_bound": 168,
+      "sharp_slope_numerator_power_of_two": 165,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 166,
+      "sharp_witnesses": [
+        {
+          "root": "39769",
+          "ancestor_bits": 174
+        },
+        {
+          "root": "8965117619822842124659",
+          "ancestor_bits": 232
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 16,
+      "representative": 16,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 17,
+      "representative": 17,
+      "prefix_steps": 5,
+      "prefix_weight": 2,
+      "endpoint": 5,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 22,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "361",
+          "ancestor_bits": 28
+        },
+        {
+          "root": "996124179980315787571",
+          "ancestor_bits": 89
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 18,
+      "representative": 18,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 19,
+      "representative": 19,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 20,
+      "representative": 20,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 21,
+      "representative": 21,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 22,
+      "representative": 22,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 3,
+      "B": 1,
+      "residue": 23,
+      "representative": 23,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 0,
+      "representative": 16,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 6,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 9
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 72
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 1,
+      "period": 6,
+      "uniform_exponent_bound": 6,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 6,
+      "sharp_witnesses": [
+        {
+          "root": "47",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929117",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 12
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 2,
+      "uniform_exponent_bound": 2,
+      "sharp_slope_numerator_power_of_two": 5,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 2,
+      "sharp_witnesses": [
+        {
+          "root": "17",
+          "ancestor_bits": 8
+        },
+        {
+          "root": "110680464442257309707",
+          "ancestor_bits": 71
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 2,
+      "uniform_exponent_bound": 2,
+      "sharp_slope_numerator_power_of_two": 5,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 2,
+      "sharp_witnesses": [
+        {
+          "root": "17",
+          "ancestor_bits": 8
+        },
+        {
+          "root": "110680464442257309707",
+          "ancestor_bits": 71
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 6,
+      "representative": 6,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 4,
+      "period": 6,
+      "uniform_exponent_bound": 8,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 8,
+      "sharp_witnesses": [
+        {
+          "root": "107",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929177",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 7,
+      "representative": 7,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 13,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "809",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315788019",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 8,
+      "representative": 8,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 5,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 8
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 71
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 9,
+      "representative": 9,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 18,
+      "uniform_exponent_bound": 22,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "979",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315788189",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 10,
+      "representative": 10,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 2,
+      "uniform_exponent_bound": 3,
+      "sharp_slope_numerator_power_of_two": 5,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 3,
+      "sharp_witnesses": [
+        {
+          "root": "19",
+          "ancestor_bits": 8
+        },
+        {
+          "root": "110680464442257309709",
+          "ancestor_bits": 71
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 11,
+      "representative": 11,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 18,
+      "uniform_exponent_bound": 22,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 20,
+      "sharp_witnesses": [
+        {
+          "root": "1147",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315788357",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 12,
+      "representative": 12,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 6,
+      "uniform_exponent_bound": 9,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 9,
+      "sharp_witnesses": [
+        {
+          "root": "169",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929239",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 13,
+      "representative": 13,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 6,
+      "uniform_exponent_bound": 9,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 9,
+      "sharp_witnesses": [
+        {
+          "root": "169",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929239",
+          "ancestor_bits": 75
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 14,
+      "representative": 14,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 18,
+      "uniform_exponent_bound": 22,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 19,
+      "sharp_witnesses": [
+        {
+          "root": "1483",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315788693",
+          "ancestor_bits": 87
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 0,
+      "residue": 15,
+      "representative": 15,
+      "prefix_steps": 4,
+      "prefix_weight": 4,
+      "endpoint": 80,
+      "period": 54,
+      "uniform_exponent_bound": 60,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 58,
+      "sharp_witnesses": [
+        {
+          "root": "13201",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947374831",
+          "ancestor_bits": 123
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 0,
+      "representative": 48,
+      "prefix_steps": 6,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 23,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 29
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 90
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 1,
+      "representative": 1,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 1,
+      "period": 18,
+      "uniform_exponent_bound": 18,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "137",
+          "ancestor_bits": 25
+        },
+        {
+          "root": "996124179980315787347",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 2,
+      "representative": 2,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 18,
+      "uniform_exponent_bound": 19,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 19,
+      "sharp_witnesses": [
+        {
+          "root": "193",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787403",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 3,
+      "representative": 3,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 2,
+      "period": 18,
+      "uniform_exponent_bound": 19,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 19,
+      "sharp_witnesses": [
+        {
+          "root": "193",
+          "ancestor_bits": 26
+        },
+        {
+          "root": "996124179980315787403",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 4,
+      "representative": 4,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 6,
+      "uniform_exponent_bound": 6,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 6,
+      "sharp_witnesses": [
+        {
+          "root": "47",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929117",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 5,
+      "representative": 5,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 1,
+      "period": 6,
+      "uniform_exponent_bound": 6,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 6,
+      "sharp_witnesses": [
+        {
+          "root": "47",
+          "ancestor_bits": 13
+        },
+        {
+          "root": "332041393326771929117",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 6,
+      "representative": 6,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 4,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 20,
+      "sharp_witnesses": [
+        {
+          "root": "305",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787515",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 7,
+      "representative": 7,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 13,
+      "period": 54,
+      "uniform_exponent_bound": 57,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "2375",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947364005",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 8,
+      "representative": 8,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 9,
+      "representative": 9,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 64
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 10,
+      "representative": 10,
+      "prefix_steps": 4,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 9,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 14
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 76
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 11,
+      "representative": 11,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 12,
+      "representative": 12,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 13,
+      "representative": 13,
+      "prefix_steps": 4,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 21,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 27
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 88
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 14,
+      "representative": 14,
+      "prefix_steps": 4,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 57,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 124
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 15,
+      "representative": 15,
+      "prefix_steps": 4,
+      "prefix_weight": 4,
+      "endpoint": 80,
+      "period": 162,
+      "uniform_exponent_bound": 168,
+      "sharp_slope_numerator_power_of_two": 165,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 166,
+      "sharp_witnesses": [
+        {
+          "root": "39769",
+          "ancestor_bits": 174
+        },
+        {
+          "root": "8965117619822842124659",
+          "ancestor_bits": 232
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 16,
+      "representative": 16,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 17,
+      "representative": 17,
+      "prefix_steps": 5,
+      "prefix_weight": 2,
+      "endpoint": 5,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 22,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "361",
+          "ancestor_bits": 28
+        },
+        {
+          "root": "996124179980315787571",
+          "ancestor_bits": 89
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 18,
+      "representative": 18,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 19,
+      "representative": 19,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 65
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 20,
+      "representative": 20,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 21,
+      "representative": 21,
+      "prefix_steps": 5,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 10,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 15
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 77
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 22,
+      "representative": 22,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 23,
+      "representative": 23,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 24,
+      "representative": 24,
+      "prefix_steps": 5,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 22,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 28
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 89
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 25,
+      "representative": 25,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 22,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "3851",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947365481",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 26,
+      "representative": 26,
+      "prefix_steps": 5,
+      "prefix_weight": 2,
+      "endpoint": 8,
+      "period": 18,
+      "uniform_exponent_bound": 21,
+      "sharp_slope_numerator_power_of_two": 22,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 21,
+      "sharp_witnesses": [
+        {
+          "root": "529",
+          "ancestor_bits": 28
+        },
+        {
+          "root": "996124179980315787739",
+          "ancestor_bits": 89
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 27,
+      "representative": 27,
+      "prefix_steps": 5,
+      "prefix_weight": 4,
+      "endpoint": 71,
+      "period": 162,
+      "uniform_exponent_bound": 168,
+      "sharp_slope_numerator_power_of_two": 166,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 162,
+      "sharp_witnesses": [
+        {
+          "root": "35377",
+          "ancestor_bits": 175
+        },
+        {
+          "root": "8965117619822842120267",
+          "ancestor_bits": 233
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 28,
+      "representative": 28,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 29,
+      "representative": 29,
+      "prefix_steps": 5,
+      "prefix_weight": 3,
+      "endpoint": 26,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 58,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 55,
+      "sharp_witnesses": [
+        {
+          "root": "4507",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947366137",
+          "ancestor_bits": 125
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 30,
+      "representative": 30,
+      "prefix_steps": 5,
+      "prefix_weight": 4,
+      "endpoint": 80,
+      "period": 162,
+      "uniform_exponent_bound": 168,
+      "sharp_slope_numerator_power_of_two": 166,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 166,
+      "sharp_witnesses": [
+        {
+          "root": "39769",
+          "ancestor_bits": 175
+        },
+        {
+          "root": "8965117619822842124659",
+          "ancestor_bits": 233
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 31,
+      "representative": 31,
+      "prefix_steps": 5,
+      "prefix_weight": 5,
+      "endpoint": 242,
+      "period": 486,
+      "uniform_exponent_bound": 493,
+      "sharp_slope_numerator_power_of_two": 490,
+      "sharp_slope_denominator": 243,
+      "maximum_sample_exponent": 487,
+      "sharp_witnesses": [
+        {
+          "root": "355507",
+          "ancestor_bits": 501
+        },
+        {
+          "root": "26895352859468526610177",
+          "ancestor_bits": 557
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 32,
+      "representative": 32,
+      "prefix_steps": 6,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 11,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 16
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 78
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 33,
+      "representative": 33,
+      "prefix_steps": 6,
+      "prefix_weight": 4,
+      "endpoint": 44,
+      "period": 162,
+      "uniform_exponent_bound": 167,
+      "sharp_slope_numerator_power_of_two": 167,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 164,
+      "sharp_witnesses": [
+        {
+          "root": "22201",
+          "ancestor_bits": 176
+        },
+        {
+          "root": "8965117619822842107091",
+          "ancestor_bits": 234
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 34,
+      "representative": 34,
+      "prefix_steps": 6,
+      "prefix_weight": 2,
+      "endpoint": 5,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 23,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "361",
+          "ancestor_bits": 29
+        },
+        {
+          "root": "996124179980315787571",
+          "ancestor_bits": 90
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 35,
+      "representative": 35,
+      "prefix_steps": 6,
+      "prefix_weight": 2,
+      "endpoint": 5,
+      "period": 18,
+      "uniform_exponent_bound": 20,
+      "sharp_slope_numerator_power_of_two": 23,
+      "sharp_slope_denominator": 9,
+      "maximum_sample_exponent": 18,
+      "sharp_witnesses": [
+        {
+          "root": "361",
+          "ancestor_bits": 29
+        },
+        {
+          "root": "996124179980315787571",
+          "ancestor_bits": 90
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 36,
+      "representative": 36,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 37,
+      "representative": 37,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 38,
+      "representative": 38,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 17,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 54,
+      "sharp_witnesses": [
+        {
+          "root": "3031",
+          "ancestor_bits": 66
+        },
+        {
+          "root": "2988372539940947364661",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 39,
+      "representative": 39,
+      "prefix_steps": 6,
+      "prefix_weight": 5,
+      "endpoint": 152,
+      "period": 486,
+      "uniform_exponent_bound": 493,
+      "sharp_slope_numerator_power_of_two": 491,
+      "sharp_slope_denominator": 243,
+      "maximum_sample_exponent": 489,
+      "sharp_witnesses": [
+        {
+          "root": "224107",
+          "ancestor_bits": 501
+        },
+        {
+          "root": "26895352859468526478777",
+          "ancestor_bits": 558
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 40,
+      "representative": 40,
+      "prefix_steps": 6,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 11,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 16
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 78
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 41,
+      "representative": 41,
+      "prefix_steps": 6,
+      "prefix_weight": 5,
+      "endpoint": 161,
+      "period": 486,
+      "uniform_exponent_bound": 493,
+      "sharp_slope_numerator_power_of_two": 491,
+      "sharp_slope_denominator": 243,
+      "maximum_sample_exponent": 486,
+      "sharp_witnesses": [
+        {
+          "root": "237247",
+          "ancestor_bits": 501
+        },
+        {
+          "root": "26895352859468526491917",
+          "ancestor_bits": 558
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 42,
+      "representative": 42,
+      "prefix_steps": 6,
+      "prefix_weight": 1,
+      "endpoint": 2,
+      "period": 6,
+      "uniform_exponent_bound": 7,
+      "sharp_slope_numerator_power_of_two": 11,
+      "sharp_slope_denominator": 3,
+      "maximum_sample_exponent": 7,
+      "sharp_witnesses": [
+        {
+          "root": "67",
+          "ancestor_bits": 16
+        },
+        {
+          "root": "332041393326771929137",
+          "ancestor_bits": 78
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 43,
+      "representative": 43,
+      "prefix_steps": 6,
+      "prefix_weight": 4,
+      "endpoint": 56,
+      "period": 162,
+      "uniform_exponent_bound": 167,
+      "sharp_slope_numerator_power_of_two": 167,
+      "sharp_slope_denominator": 81,
+      "maximum_sample_exponent": 165,
+      "sharp_witnesses": [
+        {
+          "root": "28057",
+          "ancestor_bits": 176
+        },
+        {
+          "root": "8965117619822842112947",
+          "ancestor_bits": 234
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 44,
+      "representative": 44,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 67
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 45,
+      "representative": 45,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 67
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 46,
+      "representative": 46,
+      "prefix_steps": 6,
+      "prefix_weight": 3,
+      "endpoint": 20,
+      "period": 54,
+      "uniform_exponent_bound": 58,
+      "sharp_slope_numerator_power_of_two": 59,
+      "sharp_slope_denominator": 27,
+      "maximum_sample_exponent": 56,
+      "sharp_witnesses": [
+        {
+          "root": "3523",
+          "ancestor_bits": 67
+        },
+        {
+          "root": "2988372539940947365153",
+          "ancestor_bits": 126
+        }
+      ]
+    },
+    {
+      "A": 4,
+      "B": 1,
+      "residue": 47,
+      "representative": 47,
+      "prefix_steps": 6,
+      "prefix_weight": 5,
+      "endpoint": 182,
+      "period": 486,
+      "uniform_exponent_bound": 493,
+      "sharp_slope_numerator_power_of_two": 491,
+      "sharp_slope_denominator": 243,
+      "maximum_sample_exponent": 487,
+      "sharp_witnesses": [
+        {
+          "root": "267907",
+          "ancestor_bits": 502
+        },
+        {
+          "root": "26895352859468526522577",
+          "ancestor_bits": 558
+        }
+      ]
+    }
+  ]
+}

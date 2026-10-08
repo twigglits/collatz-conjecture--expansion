@@ -1,0 +1,5899 @@
+{
+  "all_checks_passed": true,
+  "inverse_depth_range": [
+    1,
+    20
+  ],
+  "inverse_root_checks": 80,
+  "transported_ancestor_checks": 30188,
+  "meeting_depth_range": [
+    1,
+    18
+  ],
+  "two_sided_roots": 72,
+  "complete_meeting_nodes": 397752,
+  "inverse_records": [
+    {
+      "K": 1,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 1,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 2,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 2,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 2,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 2,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 3,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 3,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 4,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 4,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 4,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 4,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 4,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 5,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 5,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 5,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 5,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 6,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 6,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 6,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 6,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 7,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 7,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 7,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 7,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 8,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 8,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 8,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 8,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 9,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 9,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 9,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 9,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 10,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 10,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 10,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 10,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 11,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 11,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 11,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 11,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 12,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 12,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 12,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 12,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 13,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 13,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 13,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 13,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 14,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 14,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 14,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 14,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 15,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 15,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 15,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 15,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 16,
+      "quotient": "1",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 16,
+      "quotient": "2",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 16,
+      "quotient": "17",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 16,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 17,
+      "quotient": "1",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 17,
+      "quotient": "2",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 17,
+      "quotient": "17",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 17,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 18,
+      "quotient": "1",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 18,
+      "quotient": "2",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 18,
+      "quotient": "17",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 18,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 19,
+      "quotient": "1",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 19,
+      "quotient": "2",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 19,
+      "quotient": "17",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 19,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 20,
+      "quotient": "1",
+      "depth": 20,
+      "ancestors": 488
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 20,
+      "quotient": "2",
+      "depth": 20,
+      "ancestors": 488
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 20,
+      "quotient": "17",
+      "depth": 20,
+      "ancestors": 488
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 0,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 1,
+      "ancestors": 1
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 2,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 3,
+      "ancestors": 2
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 4,
+      "ancestors": 4
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 5,
+      "ancestors": 5
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 6,
+      "ancestors": 8
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 7,
+      "ancestors": 10
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 8,
+      "ancestors": 14
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 9,
+      "ancestors": 18
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 10,
+      "ancestors": 26
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 11,
+      "ancestors": 36
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 12,
+      "ancestors": 50
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 13,
+      "ancestors": 67
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 14,
+      "ancestors": 89
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 15,
+      "ancestors": 117
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 16,
+      "ancestors": 157
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 17,
+      "ancestors": 208
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 18,
+      "ancestors": 277
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 19,
+      "ancestors": 367
+    },
+    {
+      "K": 20,
+      "quotient": "340282366920938463463374607431768211458",
+      "depth": 20,
+      "ancestors": 488
+    }
+  ],
+  "two_sided_witnesses": [
+    {
+      "K": 1,
+      "start": "7",
+      "complete_inverse_nodes": 5
+    },
+    {
+      "K": 1,
+      "start": "13",
+      "complete_inverse_nodes": 5
+    },
+    {
+      "K": 1,
+      "start": "25",
+      "complete_inverse_nodes": 5
+    },
+    {
+      "K": 1,
+      "start": "110680464442257309703",
+      "complete_inverse_nodes": 5
+    },
+    {
+      "K": 2,
+      "start": "19",
+      "complete_inverse_nodes": 15
+    },
+    {
+      "K": 2,
+      "start": "55",
+      "complete_inverse_nodes": 15
+    },
+    {
+      "K": 2,
+      "start": "127",
+      "complete_inverse_nodes": 15
+    },
+    {
+      "K": 2,
+      "start": "664082786653543858195",
+      "complete_inverse_nodes": 15
+    },
+    {
+      "K": 3,
+      "start": "55",
+      "complete_inverse_nodes": 36
+    },
+    {
+      "K": 3,
+      "start": "271",
+      "complete_inverse_nodes": 36
+    },
+    {
+      "K": 3,
+      "start": "703",
+      "complete_inverse_nodes": 36
+    },
+    {
+      "K": 3,
+      "start": "3984496719921263149111",
+      "complete_inverse_nodes": 36
+    },
+    {
+      "K": 4,
+      "start": "1135",
+      "complete_inverse_nodes": 75
+    },
+    {
+      "K": 4,
+      "start": "2431",
+      "complete_inverse_nodes": 75
+    },
+    {
+      "K": 4,
+      "start": "5023",
+      "complete_inverse_nodes": 75
+    },
+    {
+      "K": 4,
+      "start": "23906980319527578895471",
+      "complete_inverse_nodes": 75
+    },
+    {
+      "K": 5,
+      "start": "2431",
+      "complete_inverse_nodes": 142
+    },
+    {
+      "K": 5,
+      "start": "10207",
+      "complete_inverse_nodes": 142
+    },
+    {
+      "K": 5,
+      "start": "25759",
+      "complete_inverse_nodes": 142
+    },
+    {
+      "K": 5,
+      "start": "143441881917165473368447",
+      "complete_inverse_nodes": 142
+    },
+    {
+      "K": 6,
+      "start": "33535",
+      "complete_inverse_nodes": 247
+    },
+    {
+      "K": 6,
+      "start": "80191",
+      "complete_inverse_nodes": 247
+    },
+    {
+      "K": 6,
+      "start": "173503",
+      "complete_inverse_nodes": 247
+    },
+    {
+      "K": 6,
+      "start": "860651291502992840229631",
+      "complete_inverse_nodes": 247
+    },
+    {
+      "K": 7,
+      "start": "126847",
+      "complete_inverse_nodes": 411
+    },
+    {
+      "K": 7,
+      "start": "406783",
+      "complete_inverse_nodes": 411
+    },
+    {
+      "K": 7,
+      "start": "966655",
+      "complete_inverse_nodes": 411
+    },
+    {
+      "K": 7,
+      "start": "5163907749017957041303423",
+      "complete_inverse_nodes": 411
+    },
+    {
+      "K": 8,
+      "start": "406783",
+      "complete_inverse_nodes": 657
+    },
+    {
+      "K": 8,
+      "start": "2086399",
+      "complete_inverse_nodes": 657
+    },
+    {
+      "K": 8,
+      "start": "5445631",
+      "complete_inverse_nodes": 657
+    },
+    {
+      "K": 8,
+      "start": "30983446494107742247466239",
+      "complete_inverse_nodes": 657
+    },
+    {
+      "K": 9,
+      "start": "2086399",
+      "complete_inverse_nodes": 1022
+    },
+    {
+      "K": 9,
+      "start": "12164095",
+      "complete_inverse_nodes": 1022
+    },
+    {
+      "K": 9,
+      "start": "32319487",
+      "complete_inverse_nodes": 1022
+    },
+    {
+      "K": 9,
+      "start": "185900678964646453484443135",
+      "complete_inverse_nodes": 1022
+    },
+    {
+      "K": 10,
+      "start": "12164095",
+      "complete_inverse_nodes": 1555
+    },
+    {
+      "K": 10,
+      "start": "72630271",
+      "complete_inverse_nodes": 1555
+    },
+    {
+      "K": 10,
+      "start": "193562623",
+      "complete_inverse_nodes": 1555
+    },
+    {
+      "K": 10,
+      "start": "1115404073787878720906304511",
+      "complete_inverse_nodes": 1555
+    },
+    {
+      "K": 11,
+      "start": "72630271",
+      "complete_inverse_nodes": 2332
+    },
+    {
+      "K": 11,
+      "start": "435427327",
+      "complete_inverse_nodes": 2332
+    },
+    {
+      "K": 11,
+      "start": "1161021439",
+      "complete_inverse_nodes": 2332
+    },
+    {
+      "K": 11,
+      "start": "6692424442727272325437472767",
+      "complete_inverse_nodes": 2332
+    },
+    {
+      "K": 12,
+      "start": "798224383",
+      "complete_inverse_nodes": 3447
+    },
+    {
+      "K": 12,
+      "start": "2975006719",
+      "complete_inverse_nodes": 3447
+    },
+    {
+      "K": 12,
+      "start": "7328571391",
+      "complete_inverse_nodes": 3447
+    },
+    {
+      "K": 12,
+      "start": "40154546656363633952987279359",
+      "complete_inverse_nodes": 3447
+    },
+    {
+      "K": 13,
+      "start": "2975006719",
+      "complete_inverse_nodes": 5045
+    },
+    {
+      "K": 13,
+      "start": "16035700735",
+      "complete_inverse_nodes": 5045
+    },
+    {
+      "K": 13,
+      "start": "42157088767",
+      "complete_inverse_nodes": 5045
+    },
+    {
+      "K": 13,
+      "start": "240927279938181803716109336575",
+      "complete_inverse_nodes": 5045
+    },
+    {
+      "K": 14,
+      "start": "2975006719",
+      "complete_inverse_nodes": 7321
+    },
+    {
+      "K": 14,
+      "start": "81339170815",
+      "complete_inverse_nodes": 7321
+    },
+    {
+      "K": 14,
+      "start": "238067499007",
+      "complete_inverse_nodes": 7321
+    },
+    {
+      "K": 14,
+      "start": "1445563679629090822281780985855",
+      "complete_inverse_nodes": 7321
+    },
+    {
+      "K": 15,
+      "start": "159703334911",
+      "complete_inverse_nodes": 10547
+    },
+    {
+      "K": 15,
+      "start": "629888319487",
+      "complete_inverse_nodes": 10547
+    },
+    {
+      "K": 15,
+      "start": "1570258288639",
+      "complete_inverse_nodes": 10547
+    },
+    {
+      "K": 15,
+      "start": "8673382077774544933832539209727",
+      "complete_inverse_nodes": 10547
+    },
+    {
+      "K": 16,
+      "start": "1570258288639",
+      "complete_inverse_nodes": 15066
+    },
+    {
+      "K": 16,
+      "start": "4391368196095",
+      "complete_inverse_nodes": 15066
+    },
+    {
+      "K": 16,
+      "start": "10033588011007",
+      "complete_inverse_nodes": 15066
+    },
+    {
+      "K": 16,
+      "start": "52040292466647269603607273537535",
+      "complete_inverse_nodes": 15066
+    },
+    {
+      "K": 17,
+      "start": "7212478103551",
+      "complete_inverse_nodes": 21369
+    },
+    {
+      "K": 17,
+      "start": "24139137548287",
+      "complete_inverse_nodes": 21369
+    },
+    {
+      "K": 17,
+      "start": "57992456437759",
+      "complete_inverse_nodes": 21369
+    },
+    {
+      "K": 17,
+      "start": "312241754799883617619434569596927",
+      "complete_inverse_nodes": 21369
+    },
+    {
+      "K": 18,
+      "start": "91845775327231",
+      "complete_inverse_nodes": 30146
+    },
+    {
+      "K": 18,
+      "start": "193405731995647",
+      "complete_inverse_nodes": 30146
+    },
+    {
+      "K": 18,
+      "start": "396525645332479",
+      "complete_inverse_nodes": 30146
+    },
+    {
+      "K": 18,
+      "start": "1873450528799301705765178324287487",
+      "complete_inverse_nodes": 30146
+    }
+  ]
+}

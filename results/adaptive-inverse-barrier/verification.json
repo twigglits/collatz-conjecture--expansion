@@ -1,0 +1,102 @@
+{
+  "verified_at_utc": "2026-10-08T14:40:45.342127+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "All depth-k ancestors of 3^K*q+1, k<=K, are affine lifts of depth-k ancestors of one",
+    "The converse lift is valid at every such depth",
+    "No positive ancestor within K steps is smaller than 3^K*q+1"
+  ],
+  "written_scope": [
+    "For q>0 every positive-depth ancestor in this range is strictly larger",
+    "If n=1 modulo 3^K and n=-1 modulo 2^K, no smaller-start meeting has both times at most K",
+    "These unit-root witnesses are unbounded and admit logarithmic lower bounds on meeting time"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "An obstruction to all unbounded adaptive path rules",
+    "Kernel proof of the unit-root two-sided meeting obstruction",
+    "Any uniform upper bound on a successful meeting horizon"
+  ],
+  "replay_summary": {
+    "all_checks_passed": true,
+    "inverse_depth_range": [
+      1,
+      20
+    ],
+    "inverse_root_checks": 80,
+    "transported_ancestor_checks": 30188,
+    "meeting_depth_range": [
+      1,
+      18
+    ],
+    "two_sided_roots": 72,
+    "complete_meeting_nodes": 397752
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-adaptive-inverse-wgix3q4u/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/adaptive-inverse-barrier/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-adaptive-inverse-wgix3q4u/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/adaptive-inverse-barrier/CollatzPacking.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-adaptive-inverse-wgix3q4u/InverseFibreGrowth.olean",
+        "lean/InverseFibreGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/adaptive-inverse-barrier/InverseFibreGrowth.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-adaptive-inverse-wgix3q4u/BasinResidueShadow.olean",
+        "lean/BasinResidueShadow.lean"
+      ],
+      "returncode": 0,
+      "log": "results/adaptive-inverse-barrier/BasinResidueShadow.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-adaptive-inverse-wgix3q4u/AdaptiveInverseBarrier.olean",
+        "lean/AdaptiveInverseBarrier.lean"
+      ],
+      "returncode": 0,
+      "log": "results/adaptive-inverse-barrier/AdaptiveInverseBarrier.log"
+    }
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/InverseFibreGrowth.lean": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+    "lean/BasinResidueShadow.lean": "828f6505b38cfd3dde3b0263fc1d95290f23b8b04dcb8a6cb43e7cbab6fb297f",
+    "lean/AdaptiveInverseBarrier.lean": "51e4335b12dbf01b24af87f11e208d1b006c1ffa654d288d09a983a30148473f",
+    "verify_adaptive_inverse_barrier.py": "12027b22b8eb495fc0fd41e09560c4defabffc9687a5d3be50d5724dc1907be7",
+    "results/adaptive-inverse-barrier/replay.json": "2b2f1f82239e0bf6f209e48d3fc5655f65f80271555aa2ba6718878367adba79",
+    "results/adaptive-inverse-barrier/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/adaptive-inverse-barrier/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/adaptive-inverse-barrier/InverseFibreGrowth.log": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560",
+    "results/adaptive-inverse-barrier/BasinResidueShadow.log": "dc03786fbbfad0e527ea057ec735463bdd48a751e2075e37847d7a0876731a79",
+    "results/adaptive-inverse-barrier/AdaptiveInverseBarrier.log": "27cb8542315f4ed83ec02e7479aa540319d34ace7c2d79a2887e878521b65a90"
+  }
+}

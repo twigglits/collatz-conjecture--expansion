@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the mixed-residue inverse-basin construction.
+Last updated: 2026-10-08, after the complete bounded inverse-path audit.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -694,3 +694,80 @@ Next research still requires an actual size-sensitive progress estimate
 for variable return times. Repeating the density argument or merely
 restating a descent equivalence would not supply that estimate. Both
 nontrivial cycles and divergent orbits remain unresolved; goal active.
+
+## 2026-10-08: quantitative residue transport and fixed-prefix cost
+
+Previous goal turn classified as progress: the mixed-residue construction
+and conditional transport were checked. This turn quantified its size
+and tested whether it could produce smaller values for induction.
+
+APERIODIC section 21: fix positive representative n<2^k, j=wt(k,n)>0,
+y=U^k(n), J=j+B, T=2*3^(J-1), 2^L>y, E=L+T-1. The minimal
+admissible power exponent e satisfies e≤E for every unit root a. The
+constructed ancestor F(a) reaches a by time k+E and obeys
+3^j F(a)+D=2^(k+e)a, D=2^k y-3^j n>0; hence F(a)≤C a with
+C=2^(k+E)/3^j fixed for the cylinder. On odd roots the map is injective,
+because 2^e a=2^f c forces a=c. This transfers counts from the odd unit
+part of any predecessor-closed set to every cylinder without changing
+the count exponent. It does not apply directly to a single forward orbit.
+
+For the FIXED prefix followed only by halvings, the sharp worst
+asymptotic multiplier is C*=2^(k+T-1)/3^j>1. Infinitely many odd roots
+in a fixed class modulo3^J force e=T-1. Every prefix intermediate has
+slope at least (4/3)^j>1 as a function of these roots; the halving tail
+stays at least a. For sufficiently large roots in that class, the whole
+constructed path contains no value below a. This excludes using the
+same construction alone as a universal descent certificate. It does not
+exclude other inverse paths or prefixes chosen adaptively for each root.
+
+`lean/ResidueShadowCost.lean` kernel-proves conditional size bounds,
+odd dyadic uniqueness, shadow injectivity and that the prescribed prefix
+ends at least as high as its root. Universal modular existence, counting
+transfer, sharp asymptotics and intermediate-slope argument are WRITTEN.
+`python3 verify_residue_shadow_cost.py` checks 42,532 ancestors, 343
+odd roots across 124 cylinders, and 248 sharp witnesses with complete
+path checks. Four fresh Lean builds pass; standard propext/Quot.sound
+only in printed dependencies. Manifest: `results/residue-shadow-cost/verification.json`.
+
+Next work must supply a genuine progress estimate, potentially through
+root-dependent path selection. A fixed-cylinder linear upper cost is
+not a contraction, and count transfer alone does not defeat the basin
+versus injective-orbit obstruction. Full objective unresolved and active.
+
+## 2026-10-08: adaptive inverse paths on unit roots
+
+Previous turn was progress: the fixed-prefix cost was quantified and
+checked. This turn permitted every inverse path within a chosen depth.
+`lean/AdaptiveInverseBarrier.lean` kernel-proves the exact positive
+inverse level at a=3^K*q+1 for k≤K:
+m=r+2^k*3^(K-j)*q, with 0<r≤2^k, U^k(r)=1, j=wt(k,r)=wt(k,m).
+Use the unique positive remainder r modulo 2^k, whose image is in
+[1,3^j]; the image's congruence to 1 modulo 3^j forces it to equal 1.
+The converse affine lift is proved too, and 3^j*r≤2^k gives m≥a.
+Strict m>a for q>0,k>0 is a written corollary. Hence even the odd
+unit roots 2*3^K+1 have no smaller ancestor within K inverse steps.
+
+APERIODIC section 22 additionally proves in writing: if n>1 is 1 modulo
+3^K and −1 modulo 2^K, no m<n has U^a(n)=U^b(m) with a,b≤K.
+For b≥a, c=b−a, z=U^c(m), i=wt(c,m), h=wt(a,z), P=3^i,
+d=3^(a−h), the old intercept bounds give d*n≤z≤d*(n+1)−1.
+If P≤d, scaled-image bounds give m≥n. Otherwise P≥3d; positive
+residue reduction of m modulo 2^c gives s=U^c(r) in [d,2d−1] and
+the exact quotient Q=d*3^(K−i)q where n=3^Kq+1. If 2^c*d<P,
+the coefficient bound forces r=1. Its cycle {1,2} forces d=s=1,
+contradicting P>2^c*d. Thus 2^c*d≥P, yielding m≥n. This extends
+the earlier nonunit CRT obstruction to unit roots. For K≥2 the least
+CRT witness lies between 3^K and 6^K, giving logarithmic lower bounds.
+
+The inverse-level statement is KERNEL checked; the unit-root two-sided
+extension and logarithmic consequence are WRITTEN. Do not merge their
+verification scopes. `python3 verify_adaptive_inverse_barrier.py`
+checks 30,188 inverse ancestors for 80 roots through depth 20, then all
+397,752 inverse nodes for 72 two-sided witnesses through K=18. Five
+fresh Lean builds pass. Manifest:
+`results/adaptive-inverse-barrier/verification.json`.
+
+The obstruction concerns bounded depth, even with adaptive branch
+selection. It does not exclude unbounded rules whose depth grows with
+input size. No such universally successful rule or other complete proof
+has been found. The Collatz objective remains unresolved and active.

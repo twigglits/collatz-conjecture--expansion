@@ -1,0 +1,5 @@
+'ResidueShadowCost.size_bound' depends on axioms: [propext, Quot.sound]
+'ResidueShadowCost.bounded_exponent_size' depends on axioms: [propext, Quot.sound]
+'ResidueShadowCost.odd_dyadic_unique' depends on axioms: [propext, Quot.sound]
+'ResidueShadowCost.shadow_injective' depends on axioms: [propext, Quot.sound]
+'ResidueShadowCost.prefix_not_below_root' depends on axioms: [propext, Quot.sound]

@@ -725,6 +725,25 @@ conditional arithmetic transport; the universal modular lifting is
 written. This gives no sufficiently small predecessor or trapping bound.
 [Verification](results/basin-residue-shadow/verification.json).
 
+The [quantitative refinement](APERIODIC-ATTEMPT.md#21-linear-cost-residue-embeddings-and-their-sharp-fixed-prefix-limitation)
+gives bounded time and a linear size cost for each fixed cylinder, with
+an injective construction on odd unit roots. It can transfer counts of
+bad roots into any cylinder with only a constant size rescaling. The
+sharp worst multiplier of the fixed-prefix/pure-halving scheme exceeds
+one, and infinitely many roots admit no smaller value anywhere on its
+constructed path. Other paths are not excluded. Size and injectivity
+lemmas are kernel checked; the existence and sharpness arguments are
+written. [Verification](results/residue-shadow-cost/verification.json).
+
+The [adaptive inverse audit](APERIODIC-ATTEMPT.md#22-all-bounded-inverse-paths-and-a-unit-root-meeting-obstruction)
+checks all inverse branches: every ancestor of `3^K*q+1` within K
+steps is an explicit lift of an ancestor of one, and is at least its
+root. This is kernel proved. A written extension excludes every
+smaller-start meeting with both times at most K when additionally
+`2^K` divides `n+1`. These witnesses are coprime to three, unlike
+the earlier CRT witnesses divisible by three. No unbounded adaptive return
+rule is excluded. [Verification](results/adaptive-inverse-barrier/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an

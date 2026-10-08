@@ -40,6 +40,8 @@ Performance timings are explicitly identified as empirical measurements.
 | `lean/InverseFibreGrowth.lean` | Kernel same-weight fibre translation and 48 colliding residues in every aligned block; written exponential multiplicity lower bound and [verification](results/inverse-fibre-growth/verification.json) |
 | `lean/UniformInverseBranching.lean` | Kernel binary inverse trees for every root coprime to three: 2^h distinct leaves with time 6h, weight h and explicit height bound; [verification](results/uniform-inverse-branching/verification.json) |
 | `lean/BasinResidueShadow.lean` | Kernel conditional arithmetic transport into mixed residue cylinders; written inverse-basin density and one-class convergence criterion; [verification](results/basin-residue-shadow/verification.json) |
+| `lean/ResidueShadowCost.lean` | Kernel conditional size bounds and odd-root injectivity; written bounded-time linear-cost embeddings and sharp fixed-prefix limitation; [verification](results/residue-shadow-cost/verification.json) |
+| `lean/AdaptiveInverseBarrier.lean` | Kernel complete inverse-level transport at roots 1 modulo 3^K and exclusion of smaller ancestors through depth K; written unit-root two-sided extension; [verification](results/adaptive-inverse-barrier/verification.json) |
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
 | `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |

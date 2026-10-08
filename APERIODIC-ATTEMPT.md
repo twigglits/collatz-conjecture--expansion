@@ -1903,3 +1903,247 @@ targets enters these checks. Three fresh Lean builds pass.
 [Verification scope and hashes](results/basin-residue-shadow/verification.json).
 The universal density and one-class equivalence remain written results.
 Collatz itself and a quantitative trapping certificate remain unresolved.
+
+## 21. Linear-cost residue embeddings and their sharp fixed-prefix limitation
+
+Section 20's ancestors can be enormous, but their size can be bounded
+**linearly in the root when the cylinder is fixed**. The distinction
+between fixed-cylinder constants and constants uniform in resolution is
+essential. The results below do not supply a decreasing rank.
+
+Fix A,B,r, choose a positive representative n, and fix k≥A with n<2^k.
+Write
+\[
+ j=\operatorname{wt}(k,n)>0,\quad y=U^k(n),\quad
+ J=j+B,\quad T=2\cdot3^{J-1}.
+\]
+Choose L with `2^L>y`, and put E=L+T−1. For every positive unit root a,
+the lifting proof gives a unique e_0∈[0,T) satisfying
+`a*2^e_0≡y (mod 3^J)`. Let e be the smallest nonnegative exponent in
+this progression for which `a*2^e>y`. Some member of the progression
+lies in [L,L+T), so e≤E for every a. Define
+\[
+ Q=(a2^e-y)/3^J,\qquad F(a)=2^k3^BQ+n.
+\]
+Then F(a) lies in the prescribed cylinder, reaches a within k+E steps,
+and satisfies the exact identity and bound
+\[
+ 3^jF(a)+D=2^{k+e}a,\qquad
+ D=2^ky-3^jn>0,\qquad
+ F(a)\le C a,\quad C=2^{k+E}/3^j.                 \tag{21.1}
+\]
+The additive numerator D is positive because the prefix contains an
+odd step. Positivity also follows directly by composing the affine
+steps: every intercept is nonnegative and an odd step contributes
+a strictly positive intercept. The inequality without strictness only
+requires the existing coefficient lower bound.
+
+Thus each fixed cylinder admits a bounded-time inverse embedding with
+a constant linear size cost. The constant can be extremely large and
+depends on the entire chosen cylinder and prefix. Taking n above a
+fixed height H yields the same conclusion with every image above H,
+with constants now also depending on H.
+
+### Injectivity on odd roots and transfer of counts
+
+If a and c are odd and F(a)=F(c), their k-step images give
+`2^e*a=2^f*c`. Uniqueness of the odd factor in a dyadic factorization
+implies e=f and a=c. Therefore F is injective on positive odd unit roots.
+It need not be injective when even roots are allowed.
+
+For any set S closed under taking predecessors, this gives the
+written counting inequality
+\[
+ |\{m\in S:m\le Cx,\ m\equiv r\pmod{2^A3^B}\}|
+ \ \ge\ |\{a\in S:a\le x,\ a\text{ odd},\ 3\nmid a\}|. \tag{21.2}
+\]
+The bad-start set, if nonempty, is predecessor-closed. So are a fixed
+inverse basin and a full coalescence component. No exponent is lost in
+this transfer, only a fixed rescaling of x. It does **not** establish
+positive natural density or an initial lower count for the odd unit
+roots. A single forward orbit generally is not predecessor-closed,
+so (21.2) cannot be combined directly with its packing bound.
+
+[ResidueShadowCost.lean](lean/ResidueShadowCost.lean) kernel-proves
+the conditional size bound, its bounded-exponent consequence, uniqueness
+of odd dyadic factorizations, and injectivity for arbitrary two valid
+shadows with the same prefix. The modular existence, uniform selection
+of e, and counting assembly above remain written arguments. Printed
+dependencies are only `propext` and `Quot.sound`.
+
+### The large multiplier is sharp for this construction
+
+This subsection fixes the prefix and the congruence modulo `3^B`, and
+allows only a pure-halving tail after that prefix. It does not optimize
+over arbitrary inverse paths or prefixes depending on the target.
+
+For a>y, the least admissible exponent is already e_0. As a varies over
+unit classes modulo `3^J`, e_0 runs through every value 0,...,T−1.
+In particular, the class
+\[
+ a\equiv y\,2^{-(T-1)}\pmod{3^J}
+\]
+contains arbitrarily large odd positive roots with e_0=T−1. Larger
+admissible exponents increase the ancestor, so on this class even the
+smallest ancestor allowed by the construction satisfies
+\[
+ \frac{F(a)}a=\frac{2^{k+T-1}}{3^j}-\frac{D}{3^ja}
+ \longrightarrow C_*:=\frac{2^{k+T-1}}{3^j}.       \tag{21.3}
+\]
+All sufficiently large roots have e_0≤T−1, so C_* is the sharp worst
+asymptotic factor for this scheme. Since k≥j and T−1≥j for j≥1,
+`C_*≥(4/3)^j>1`. Merely choosing a better exponent cannot make this
+a uniform smaller-ancestor construction, even outside a finite base.
+
+The obstruction also covers all intermediate values on the constructed
+path, rather than just its starting value. At time i≤k write
+`w_i=wt(i,n)` and `z_i=U^i(n)`. Then
+\[
+ U^i(F(a))=\lambda_i a+\mu_i,\qquad
+ \lambda_i=\frac{2^{k-i+e}}{3^{j-w_i}},\qquad
+ \mu_i=z_i-\frac{2^{k-i}y}{3^{j-w_i}}.
+\]
+Here `k-i≥j-w_i` and `0≤j-w_i≤j`. For e=T−1≥j,
+\[
+ \lambda_i\ge2^e(2/3)^{j-w_i}
+               \ge2^j(2/3)^j=(4/3)^j>1.
+\]
+The finitely many offsets are fixed. Hence for sufficiently large a
+in the displayed root class, every value through time k exceeds a.
+The subsequent pure-halving tail is `2^e a,...,2a,a`, all at least a.
+Thus infinitely many odd roots have no smaller value anywhere along
+this particular ancestor-to-root path. This does not assert anything
+about the later forward orbit from a, or other paths leading to a.
+
+The [independent replay](verify_residue_shadow_cost.py) checks 42,532
+ancestor constructions for 343 odd unit roots in 124 cylinders, verifies
+injectivity within each cylinder, and checks 248 witnesses in the
+worst-exponent classes including their entire paths. Four fresh Lean
+builds pass. [Manifest](results/residue-shadow-cost/verification.json).
+The largest tested exponent period is 486. Universal sharpness and
+the intermediate-slope argument remain written, not kernel proofs.
+
+The useful advance is quantitative transport of counts. A descent
+argument still requires a different path selection or a size-sensitive
+progress estimate; neither is supplied by fixed-prefix residue density.
+The full Collatz conjecture remains unresolved.
+
+## 22. All bounded inverse paths and a unit-root meeting obstruction
+
+Section 21 fixed one prefix. Allowing the inverse search to choose any
+branch gives a stronger question. The following kernel result describes
+**every** inverse branch within the chosen depth for a family of roots
+coprime to three.
+
+Fix K≥1, q≥0 and a=3^Kq+1. For 0≤k≤K, the positive solutions of
+`U^k(m)=a` are exactly
+\[
+ m=r+2^k3^{K-j}q,\qquad
+ U^k(r)=1,\quad 0<r\le2^k,\quad j=\operatorname{wt}(k,r). \tag{22.1}
+\]
+The lifted point has the same weight j. Thus the complete inverse
+level is obtained from the level above 1 by explicit affine lifts,
+not by searching a special subset of branches.
+
+For completeness of (22.1), write a positive m uniquely as `2^k p+r`
+with 1≤r≤2^k. Its image is `3^j p+b`, where `b=U^k(r)` satisfies
+1≤b≤3^j. Since j≤k≤K and the image is 1 modulo `3^j`, the positive
+remainder b must equal 1; this includes j=0. Cancelling then gives
+`p=3^(K-j)q`. The converse follows from the affine identity.
+The bound on b uses the strict residue-image bound when r<2^k;
+the boundary r=2^k reaches 1 by pure halving.
+
+The coefficient inequality at r gives `3^j r≤2^k`, hence `3^j≤2^k`.
+Consequently every m in (22.1) satisfies m≥a. This completeness,
+converse, and no-smaller-ancestor conclusion are kernel proved in
+[AdaptiveInverseBarrier.lean](lean/AdaptiveInverseBarrier.lean).
+For q>0 and k>0 one even has m>a: `3^j<2^k`, since an odd power
+of three cannot equal a positive power of two. This strictness is a
+written consequence; the module states the non-strict inequality.
+
+In particular, the odd unit roots `a_K=2*3^K+1` admit no smaller
+positive ancestor within K steps. Adaptive choice among all inverse
+branches does not remove the depth obstruction. Their input size is
+O(K) bits; the bound is logarithmic in the root size. It does not
+exclude a rule allowing arbitrarily large inverse depths, and says
+nothing by itself about the forward trajectory from a_K.
+
+### A written extension to bounded forward and inverse exploration
+
+For every K≥1 and every n>1 satisfying
+\[
+ n\equiv1\pmod{3^K},\qquad n\equiv-1\pmod{2^K},             \tag{22.2}
+\]
+there is no meeting
+\[
+ U^a(n)=U^b(m),\qquad 0<m<n,\quad 0\le a,b\le K.           \tag{22.3}
+\]
+Unlike section 9's witnesses divisible by `3^K`, these roots are units
+modulo three. The following proof is written, not yet kernel formalized.
+
+The first a steps from n are odd, so
+`2^a(U^a(n)+1)=3^a(n+1)`. If b<a, the universal bound
+`U^b(m)+1≤(3/2)^b(m+1)` is strictly smaller than
+`(3/2)^a(n+1)`, ruling out a meeting. Otherwise put
+\[
+ c=b-a,\quad z=U^c(m),\quad i=\operatorname{wt}(c,m),\quad
+ h=\operatorname{wt}(a,z),\quad P=3^i,\quad d=3^{a-h}.
+\]
+The two intercept inequalities (26)–(27) from section 9 imply
+\[
+ d n\le z\le d(n+1)-1.                                  \tag{22.4}
+\]
+If P≤d, then P divides d because both are powers of three. The
+scaled image bound (25), by contraposition, gives
+`m≥2^c(d/P)n≥n`, as required.
+
+Suppose instead P>d, so P≥3d. Write `n=3^Kq+1` and define
+`Q_0=d*3^(K-i)q`; the exponent is nonnegative because i≤c≤K.
+Then (22.4) becomes
+\[
+ P Q_0+d\le z\le P Q_0+2d-1.                            \tag{22.5}
+\]
+Independently write m=`2^c Q+r` with 1≤r≤2^c. Weight periodicity
+and the affine formula give `z=P Q+s`, where `s=U^c(r)` satisfies
+1≤s≤P and `wt(c,r)=i`. Since 1≤d≤2d−1<P, uniqueness of the
+positive remainder representation in (22.5) forces
+\[
+ Q=Q_0,\qquad d\le s\le2d-1.                            \tag{22.6}
+\]
+
+We claim `2^c d≥P`. If not, the coefficient inequality
+`P r≤2^c s` and s<2d give `P r<2P`, so r=1. Its forward orbit
+contains only 1 and 2, hence s∈{1,2}. But d≤s and d is a power
+of three, so d=1; then (22.6) forces s=1. The same coefficient
+inequality now gives `P≤2^c`, contradicting `2^c d<P`.
+Therefore `2^c d≥P`, and finally
+\[
+ m=2^c d\,3^{K-i}q+r
+   \ge P\,3^{K-i}q+1=3^Kq+1=n.
+\]
+This proves (22.3) in the remaining case.
+
+The ordinary Chinese remainder construction supplies arbitrarily large
+witnesses to (22.2). For K≥2 its least positive representative is
+strictly between `3^K` and `6^K`: the quotient q is nonzero, since
+n=1 fails the congruence modulo four. Thus these unit witnesses are
+unbounded and need a meeting horizon larger than `log_6(n)`. This is
+a lower bound, not an upper bound or a claim of divergence. The input
+changes with K; no single positive n can be 1 modulo `3^K` for every
+K while remaining greater than 1.
+
+The [independent replay](verify_adaptive_inverse_barrier.py) compares
+complete inverse levels through depth 20 for 80 roots, checking 30,188
+transported ancestors against (22.1). It also exhausts both sides of
+the proposed meeting through K=18 for 72 unit CRT roots, checking
+397,752 inverse nodes without a smaller meeting. The forward depth
+and every inverse depth 0..K are included; no heuristic pruning is
+used. Five fresh Lean builds pass.
+[Verification scope](results/adaptive-inverse-barrier/verification.json).
+
+Kernel verification covers the universal inverse-level theorem;
+the two-sided unit-root extension and its logarithmic interpretation
+are written results with finite replay support. These results rule
+out fixed depth as a universal remedy. They do not settle whether a
+size-dependent unbounded search always succeeds. Both nontrivial
+positive cycles and divergent orbits remain unresolved.
