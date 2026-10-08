@@ -1,0 +1,976 @@
+{
+  "all_checks_passed": true,
+  "words": 510,
+  "max_word_length": 8,
+  "positive_endpoints_per_word": 128,
+  "max_repetitions": 5,
+  "direction_checks": 783360,
+  "odd_prefix_pumping_checks": 2048,
+  "positive_fixed_points_seen": [
+    1,
+    2
+  ],
+  "expanding_feature_family_checks": 36,
+  "polynomial_feature_witnesses": [
+    {
+      "primes": [
+        2,
+        3
+      ],
+      "modulus": 1,
+      "polynomials_low_degree_first": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "odd_steps": 3,
+      "final_even_steps": 1,
+      "fixed_point": "-19/11",
+      "progression_hex": "0xd800",
+      "precision": {
+        "2": 7,
+        "3": 3
+      },
+      "witnesses": [
+        {
+          "lift": 1,
+          "start_hex": "0x112e7",
+          "end_hex": "0x1cfe7",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 2,
+          "start_hex": "0x1eae7",
+          "end_hex": "0x33c67",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 1099511627776,
+          "start_hex": "0xd8000000003ae7",
+          "end_hex": "0x16c800000006367",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "primes": [
+        2,
+        3
+      ],
+      "modulus": 72,
+      "polynomials_low_degree_first": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "odd_steps": 3,
+      "final_even_steps": 1,
+      "fixed_point": "-19/11",
+      "progression_hex": "0xd800",
+      "precision": {
+        "2": 7,
+        "3": 3
+      },
+      "witnesses": [
+        {
+          "lift": 1,
+          "start_hex": "0x112e7",
+          "end_hex": "0x1cfe7",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 2,
+          "start_hex": "0x1eae7",
+          "end_hex": "0x33c67",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 1099511627776,
+          "start_hex": "0xd8000000003ae7",
+          "end_hex": "0x16c800000006367",
+          "valuations": [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "modulus": 2880,
+      "polynomials_low_degree_first": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "odd_steps": 12,
+      "final_even_steps": 1,
+      "fixed_point": "-527345/523249",
+      "progression_hex": "0xa17fc000000000",
+      "precision": {
+        "2": 25,
+        "3": 3,
+        "5": 3,
+        "7": 2
+      },
+      "witnesses": [
+        {
+          "lift": 1,
+          "start_hex": "0xe6c1fda6aeefff",
+          "end_hex": "0x3a79fcfcaeaeefff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1
+            ],
+            [
+              24,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 2,
+          "start_hex": "0x18841bda6aeefff",
+          "end_hex": "0x6366f110ccaeefff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1
+            ],
+            [
+              24,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 1099511627776,
+          "start_hex": "0xa17fc0000045423da6aeefff",
+          "end_hex": "0x28ecf4141e118d08e890aeefff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              12,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1
+            ],
+            [
+              24,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "modulus": 720720,
+      "polynomials_low_degree_first": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "odd_steps": 60,
+      "final_even_steps": 1,
+      "fixed_point": "-42391158274063282009687586225/42391158272910360505080739249",
+      "progression_hex": "0x32645d87c000000000000000000000000000000000000000000000",
+      "precision": {
+        "2": 121,
+        "3": 3,
+        "5": 3,
+        "7": 2,
+        "11": 2,
+        "13": 2
+      },
+      "witnesses": [
+        {
+          "lift": 1,
+          "start_hex": "0x3fbc109ecaaf1441e0bf6e8a3f4c07333c0ccaefffffffffffffff",
+          "end_hex": "0x110cf7f9366937be7d99c16f0fbbe64623f4c07333c0ccaefffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              60,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              120,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 2,
+          "start_hex": "0x72206e268aaf1441e0bf6e8a3f4c07333c0ccaefffffffffffffff",
+          "end_hex": "0x1e8826435186e2f871f12adc9217911403f4c07333c0ccaefffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              60,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              120,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 1099511627776,
+          "start_hex": "0x32645d87c00d57b3170aaf1441e0bf6e8a3f4c07333c0ccaefffffffffffffff",
+          "end_hex": "0xd7b2e4a1b213d03a372b4fa06e4ed25e18d603b7843f4c07333c0ccaefffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              60,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              120,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "primes": [
+        2,
+        3,
+        17,
+        19
+      ],
+      "modulus": 27433893888,
+      "polynomials_low_degree_first": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "odd_steps": 144,
+      "final_even_steps": 1,
+      "fixed_point": "-507528786056415600719754137440951158378119108655945614615265936134465/507528786056415600719754115140205959847495967120227341966904430154049",
+      "progression_hex": "0x203c964000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "precision": {
+        "2": 289,
+        "3": 4,
+        "17": 2,
+        "19": 2
+      },
+      "witnesses": [
+        {
+          "lift": 1,
+          "start_hex": "0x3c99df45d409a74d452d05d7041393e8c4538666fb371494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "end_hex": "0x23a6a9024835f559364c856b513f163cdd5e4bf80b789e25d4dc6af3a9a8533b71494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              144,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              288,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 2,
+          "start_hex": "0x5cd67585d409a74d452d05d7041393e8c4538666fb371494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "end_hex": "0x369d93acbe67d390b3d308d4f296a4f0711d1c1be254e68275fcef6eaebeb66d71494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              144,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              288,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "lift": 1099511627776,
+          "start_hex": "0x203c9640001c5d4905d409a74d452d05d7041393e8c4538666fb371494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "end_hex": "0x12f6eaaa76428df5d5588780c31054b5956eb7ab6025e7d8755520d0ce4a1f1878a491f00971494883cead8e116685f6cf06273896413effffffffffffffffffffffffffffffffffff",
+          "valuations": [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              144,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              288,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Finite exact checks of both directions of the block divisibility criterion. Not an all-input convergence certificate or a formal automaton proof."
+}

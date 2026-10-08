@@ -1,0 +1,3 @@
+'TowerDepositObstruction.power_three_odd_quotient' depends on axioms: [propext, Quot.sound]
+'TowerDepositObstruction.post_tower_deposit' depends on axioms: [propext, Quot.sound]
+'TowerDepositObstruction.exact_deposit' depends on axioms: [propext, Quot.sound]

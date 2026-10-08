@@ -1,0 +1,43 @@
+{
+  "all_four_candidates_reached_one": true,
+  "arithmetic": "Exact Python integers; direct iteration, not a Lean certificate.",
+  "scope": "Four finite positive representatives only; no conclusion about the infinite 2-adic limit.",
+  "candidates": [
+    {
+      "prescribed_prefix": 64,
+      "start_hex": "0x4030e6c240b0be9",
+      "start_bits": 59,
+      "shortcut_steps_to_one": 464,
+      "first_descent": 2,
+      "peak_bits": 83
+    },
+    {
+      "prescribed_prefix": 128,
+      "start_hex": "0x51d4a00057fac04904030e6c240b0be9",
+      "start_bits": 127,
+      "shortcut_steps_to_one": 1160,
+      "first_descent": 2,
+      "peak_bits": 175
+    },
+    {
+      "prescribed_prefix": 512,
+      "start_hex": "0xdf3606a96db5939c4a44fd6a6727dfd9e54403695b1da987f50052c104fb2bea91dfcba1dab0d47cbc6884639f13e76f51d4a00057fac04904030e6c240b0be9",
+      "start_bits": 512,
+      "shortcut_steps_to_one": 3861,
+      "first_descent": 2,
+      "peak_bits": 703
+    },
+    {
+      "prescribed_prefix": 2000,
+      "start_hex": "0xc50905ade8cf21ba58ef1eafeb38843ca34afaf5ba546757ccb386b6c3383149f35db85b94c1902c6fc743475e1fba83fbed173dc83c90305a335e37d918288b2973abf3651cf856213b49259d8e392c9e6d4d600c5a87b388d06373a261d529e9568cd504a3b8d11af2112d1ae7bda60b6f53a7ad10282f2a42168d34c29c1c063ed48010e8542a3e28348b043c5acc640abe2bd416f05fbeb841ef5d771657fe6acddc3621f26ce93f6823fc6c45450ee1c0c3d9d3e3a76d24df3606a96db5939c4a44fd6a6727dfd9e54403695b1da987f50052c104fb2bea91dfcba1dab0d47cbc6884639f13e76f51d4a00057fac04904030e6c240b0be9",
+      "start_bits": 2000,
+      "shortcut_steps_to_one": 14792,
+      "first_descent": 2,
+      "peak_bits": 2753
+    }
+  ],
+  "checked_utc": "2026-10-08T10:10:41.472040+00:00",
+  "input_file": "results/real-shadow/replay.json",
+  "input_sha256": "15923897a5edd6bad2a369dcbe11bd116394039c5879aad51b0a388b52127938",
+  "reproduction": "For each hex residue in the input samples, repeatedly use (3*x+1)//2 for odd x and x//2 for even x, stopping at 1 or 100000 steps; record the first x<start and the maximum bit length. Every run stopped at 1."
+}

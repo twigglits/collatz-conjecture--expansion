@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-10-08T09:55:30.353147+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/RealShadowObstruction.lean": "6e095ef4a446cd4ed26f5cdc965af1d63d755caf09a79ffa37c7f7a8801a8717",
+    "verify_real_shadow.py": "8e3c0fa799ce0688d1f99411600490388a6a5fdad9e06abfb6f76e8e28fda93a",
+    "APERIODIC-ATTEMPT.md": "bfdf5a2ba1379c91489a9bc20028cbf62996da28f0f851c3648c98b07c048a5a",
+    "ATTEMPT.md": "c661bbbe39e43151f91721d46a9feeffebb015e68c7b6e0801b6178891c3be66"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "lean/RealShadowObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.897297624964267,
+      "log": "results/real-shadow/lean.log",
+      "log_sha256": "cc3207983dbfec8214a858c9ab99898d241195b6d0030bb0af431a389c98ca97"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_real_shadow.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.05797341599827632,
+      "log": "results/real-shadow/replay.json",
+      "log_sha256": "15923897a5edd6bad2a369dcbe11bd116394039c5879aad51b0a388b52127938"
+    }
+  ],
+  "kernel_scope": [
+    "The shadow numerator stays odd and in the dyadic bounds for every index.",
+    "5^J*a <= 2*13^J and therefore 5^J*2^t <= 2*13^J.",
+    "No shadow state after time zero has an odd denominator."
+  ],
+  "written_scope": [
+    "Real Collatz-series sum is -2 with error at most 2*(13/15)^J.",
+    "The symbolic word is not eventually periodic and has lower one-density at least log(2)/log(13/5).",
+    "The 2-adic sum is odd, distinct from the rational real sum.",
+    "The periodic word 01^infinity has the same real sum -2 but a different 2-adic sum, so the real sum does not determine compatible residues."
+  ],
+  "finite_scope": "2000 exact recurrence steps; independent Fraction replay through 128 steps; parity reconstruction at lengths 64, 128, 512, 2000.",
+  "source_audit": {
+    "url": "https://arxiv.org/html/2101.12747",
+    "locations": [
+      "Section 2, equations (15)-(16) and surrounding discussion",
+      "Section 6, rational real sums and the proof of Theorem 1"
+    ],
+    "conclusion": "Counterexample to identification of real and 2-adic limits and the intermediate real-irrationality inference; not a disproof of Theorem 1 itself."
+  },
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; this is a symbolic pseudo-trajectory, not a positive-integer counterexample."
+}

@@ -1,0 +1,6 @@
+'CollatzRepetition.catalog_length_of_distinct_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRepetition.range_lower_bound_of_short_catalog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzRepetition.parity_gap_divisible' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.collision_of_small_gap' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.parity_collision_periodic' depends on axioms: [propext, Quot.sound]
+'CollatzRepetition.factor_catalog_forces_repeat' depends on axioms: [propext, Classical.choice, Quot.sound]

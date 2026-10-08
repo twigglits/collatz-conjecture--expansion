@@ -1,0 +1,4 @@
+'RealShadowObstruction.invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealShadowObstruction.numerator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealShadowObstruction.density_constraint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealShadowObstruction.no_odd_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]

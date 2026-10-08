@@ -1,0 +1,117 @@
+{
+  "checked_utc": "2026-10-08T10:47:00.228921+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzPeriodic.lean": "df0115f2f5fcdb1e511b3146159fd138a9da007a6a6e798cedfd983773dab584",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "CollatzRepetition.lean": "410c3b11551eb67cabfd4220cb24d4562427b626d791c01df82ed46b1ecc5a2f",
+    "lean/BuchiArithmetic.lean": "4fe1b2446ec58419720556f71279b63bb3f40a2b93b5d6ec6f799db25c114390",
+    "verify_buchi_arithmetic.py": "4b54b4668a531c3e5967539124ea8b8cc89e400551589b4302bb649f1dab8ff2",
+    "APERIODIC-ATTEMPT.md": "f807634ba4abed2606bc23cfda908fa841ff19dcb5a2b77b2226eff3122a958a",
+    "ATTEMPT.md": "a3b2763eafd363740c2ea020840c2f8b06938325dd468337137defe7527b50a7"
+  },
+  "environment": {
+    "LEAN_PATH": "/tmp/collatz-buchi"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/tmp/collatz-buchi/CollatzPeriodic.olean",
+        "CollatzPeriodic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2361825829721056,
+      "log": "results/buchi-arithmetic/periodic.log",
+      "log_sha256": "93eb81a8d4154ce7078007a149489f4ce7e223ba90c3ea05d5fdcd53cd545c57"
+    },
+    {
+      "command": [
+        "lean",
+        "CollatzGrowth.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.2320274169906043,
+      "log": "results/buchi-arithmetic/growth.log",
+      "log_sha256": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498"
+    },
+    {
+      "command": [
+        "lean",
+        "CollatzRepetition.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.418080999981612,
+      "log": "results/buchi-arithmetic/repetition.log",
+      "log_sha256": "b8040f5431a851ade00f47f6116717bad8db19ac4c053c8d3bcc2fd94ec515b6"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/BuchiArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.9813199999625795,
+      "log": "results/buchi-arithmetic/buchi-arithmetic.log",
+      "log_sha256": "7aaf83ff4c08b0ca120822bc6e716308973623693f0ffc5872b7e0fa6ee39e1c"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_buchi_arithmetic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14183404197683558,
+      "log": "results/buchi-arithmetic/replay.json",
+      "log_sha256": "045b5680db822e9fae1ea305249aa99bd934ec7c9c718065628f7ab609ab7469"
+    }
+  ],
+  "kernel_scope": [
+    "Finite affine-defect transport through integer prehistories.",
+    "Necessary backward numerator-power and forward denominator-power divisibility.",
+    "Finite cutoff and fixed-point rigidity from arbitrarily long, not necessarily consistent, prehistories.",
+    "Impossibility of adding odd predecessors beyond the initial 2^k-1 prefix.",
+    "Exact positive family proving unbounded resets of the counter on changing from the even block to the odd block.",
+    "Positive expanding 110 family with coincident endpoint residues encoding the four valuations.",
+    "Endpoint agreement modulo any fixed modulus when it divides the family parameter.",
+    "Failure of strict three-step integer rank descent when the larger endpoint has no smaller rank."
+  ],
+  "written_scope": [
+    "Sufficiency of both divisibility criteria for actual positive Collatz blocks.",
+    "Non-omega-regularity of the complete positive-integer parity language.",
+    "Every finite Buchi language contained in the positive-integer parity language consists of eventually cyclic trajectories.",
+    "Valuation interpretation of the finite certificates and the reset family.",
+    "Obstruction to size-monotone rankings with arbitrary corrections from finitely many polynomial valuations and residue classes.",
+    "Construction using rational fixed points, finite root avoidance, and prime-adic congruences; not formalized in Lean."
+  ],
+  "finite_scope": {
+    "all_checks_passed": true,
+    "words": 510,
+    "max_word_length": 8,
+    "positive_endpoints_per_word": 128,
+    "max_repetitions": 5,
+    "direction_checks": 783360,
+    "odd_prefix_pumping_checks": 2048,
+    "positive_fixed_points_seen": [
+      1,
+      2
+    ],
+    "expanding_feature_family_checks": 36,
+    "scope": "Finite exact checks of both directions of the block divisibility criterion. Not an all-input convergence certificate or a formal automaton proof.",
+    "polynomial_witness_cases": 5,
+    "polynomial_witness_paths": 15,
+    "polynomials_per_case": 7,
+    "max_block_length": 145,
+    "full_witnesses": "results/buchi-arithmetic/replay.json"
+  },
+  "limitations": [
+    "No automaton formalization or general termination certificate.",
+    "No bound sufficient to control changing-block resets.",
+    "Neither arbitrary divergence nor nontrivial cycles excluded.",
+    "Ranking obstruction concerns strict stepwise decrease and monotonicity in magnitude at fixed finite local features; it does not exclude general ranking functions."
+  ],
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; goal remains active."
+}

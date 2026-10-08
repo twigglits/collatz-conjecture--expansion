@@ -1,0 +1,110 @@
+{
+  "all_checks_passed": true,
+  "cases": [
+    {
+      "s": 1,
+      "k": 5,
+      "seed_bits": 4,
+      "first_return_odd_steps": 3,
+      "second_return_odd_steps": 1,
+      "next_deposit": 3
+    },
+    {
+      "s": 2,
+      "k": 9,
+      "seed_bits": 8,
+      "first_return_odd_steps": 7,
+      "second_return_odd_steps": 1,
+      "next_deposit": 4
+    },
+    {
+      "s": 3,
+      "k": 17,
+      "seed_bits": 16,
+      "first_return_odd_steps": 15,
+      "second_return_odd_steps": 1,
+      "next_deposit": 5
+    },
+    {
+      "s": 4,
+      "k": 33,
+      "seed_bits": 32,
+      "first_return_odd_steps": 31,
+      "second_return_odd_steps": 1,
+      "next_deposit": 6
+    },
+    {
+      "s": 5,
+      "k": 65,
+      "seed_bits": 64,
+      "first_return_odd_steps": 63,
+      "second_return_odd_steps": 1,
+      "next_deposit": 7
+    },
+    {
+      "s": 6,
+      "k": 129,
+      "seed_bits": 128,
+      "first_return_odd_steps": 127,
+      "second_return_odd_steps": 1,
+      "next_deposit": 8
+    },
+    {
+      "s": 7,
+      "k": 257,
+      "seed_bits": 256,
+      "first_return_odd_steps": 255,
+      "second_return_odd_steps": 1,
+      "next_deposit": 9
+    },
+    {
+      "s": 8,
+      "k": 513,
+      "seed_bits": 512,
+      "first_return_odd_steps": 511,
+      "second_return_odd_steps": 1,
+      "next_deposit": 10
+    },
+    {
+      "s": 9,
+      "k": 1025,
+      "seed_bits": 1024,
+      "first_return_odd_steps": 1023,
+      "second_return_odd_steps": 1,
+      "next_deposit": 11
+    },
+    {
+      "s": 10,
+      "k": 2049,
+      "seed_bits": 2048,
+      "first_return_odd_steps": 2047,
+      "second_return_odd_steps": 1,
+      "next_deposit": 12
+    },
+    {
+      "s": 11,
+      "k": 4097,
+      "seed_bits": 4096,
+      "first_return_odd_steps": 4095,
+      "second_return_odd_steps": 1,
+      "next_deposit": 13
+    },
+    {
+      "s": 12,
+      "k": 8193,
+      "seed_bits": 8192,
+      "first_return_odd_steps": 8191,
+      "second_return_odd_steps": 1,
+      "next_deposit": 14
+    },
+    {
+      "s": 13,
+      "k": 16385,
+      "seed_bits": 16384,
+      "first_return_odd_steps": 16383,
+      "second_return_odd_steps": 1,
+      "next_deposit": 15
+    }
+  ],
+  "scope": "Finite exact orbit replay; not a proof of convergence or divergence."
+}

@@ -442,6 +442,158 @@ The separate [local separation proofs](results/cycle_separation_notes.md)
 exclude single transfers in repeated blocks and single-copy replacements
 when at least three copies were present.
 
+## Audit of a proposed non-divergence route (2026-10-08)
+
+The search result for Eltgroth's [v1.2 manuscript](https://zenodo.org/records/19054281)
+claims non-divergence for every positive integer. Its
+[v1.3 replacement](https://zenodo.org/records/19058317) explicitly retreats to
+a density statement and acknowledges the missing pointwise implication.
+Neither version supplies an accepted dependency for this repository.
+
+There is also an independently checked obstruction to the finite-modulus
+argument used in its tower re-entry analysis. Distinguish the odd map
+\(F(n)=\operatorname{odd}(3n+1)\) from its first-return map \(R\) to
+\(1\bmod4\). Put \(\rho(k)=(2^k-5)/3\), for odd \(k\ge5\).
+Direct iteration gives
+\[
+ R(\rho(k))=2\cdot3^{k-3}-1,\qquad
+ R^2(\rho(k))=(3^{k-2}-1)/2.
+\]
+For completeness, the first odd step from \(\rho(k)\) removes two
+factors of two and lands at \(2^{k-2}-1\). The next \(r\) odd steps
+give \(2^{k-2-r}3^r-1\), for \(0\le r\le k-3\).
+All values before the last are 3 modulo 4; the last is 1 modulo 4.
+Thus the first return uses \(k-2\) odd steps with deposits
+\((2,1,\ldots,1)\). Its output is 1 modulo 8, and one more odd step
+with deposit 2 gives the displayed second return, which is 1 modulo 4.
+
+Now choose \(k=2^{s+1}+1\), \(s\ge1\), and write
+\(x_s=R^2(\rho(k))\). Then
+\[
+ \boxed{\nu_2(3x_s+1)=s+2.}
+\]
+An elementary induction proves
+\(3^{2^{s+1}}=1+2^{s+3}q_s\) with \(q_s\) odd:
+\(q_0=1\) and \(q_{s+1}=q_s+2^{s+2}q_s^2\).
+Also \(3x_s+1=(3^{2^{s+1}}-1)/2\), proving the box.
+[TowerDepositObstruction.lean](lean/TowerDepositObstruction.lean) kernel
+checks this induction, the equation for the explicitly defined \(x_s\),
+and divisibility by \(2^{s+2}\) but not by \(2^{s+3}\), for every \(s\).
+The identification with the two first returns is the written argument above.
+
+Consequently no finite modulus in \(k\) can fix even the **first deposit
+of the third contracting return** on every residue class: a finite table
+would have bounded entries, whereas these deposits are unbounded. The first
+contracting return itself already has an unbounded number of odd steps.
+Pointwise finite dependence on binary digits therefore does not provide
+the uniform finite partition needed for the manuscript's fixed-coefficient
+argument. A fixed number of odd steps and a fixed number of contracting
+returns cannot be interchanged. This identifies a gap in that proposed
+proof; it does not disprove tower re-entry finiteness by another method.
+
+The independent [Python replay](verify_tower_deposits.py) checks the actual
+first-return stopping rule for \(s=1,\ldots,13\), including a 16,384-bit
+seed. All checks passed. The [verification record](results/tower-deposits/verification.json)
+separates the universal kernel arithmetic from the written orbit argument
+and these finite examples. Reproduce with `lean lean/TowerDepositObstruction.lean`
+and `python3 verify_tower_deposits.py`.
+
+The audit rules out importing this proposed shortcut to non-divergence.
+It neither produces a divergent orbit nor removes either unresolved
+possibility below. A repaired re-entry argument would have to handle
+unbounded deposit patterns, and a density estimate would still need a
+separate pointwise argument.
+
+## Real-series density argument: a necessary source correction
+
+An explicit symbolic construction now demonstrates the real/2-adic gap
+described earlier in [APERIODIC-ATTEMPT.md, Section 6](APERIODIC-ATTEMPT.md#6-an-explicit-counterexample-to-identifying-real-and-2-adic-series-limits).
+It has an aperiodic word of lower one-density strictly above \(\log_3 2\),
+yet its real Collatz-series sum is exactly \(-2\). The same series has an
+odd 2-adic limit, so the two limits cannot be identified.
+
+This contradicts an intermediate real-irrationality inference and the
+limit-identification argument in the [López–Stoll 2021 preprint](https://arxiv.org/html/2101.12747),
+Sections 2 and 6. It does not disprove that preprint's stated theorem about
+rational Collatz trajectories. That theorem is not imported here to claim
+exact critical lower density or to exclude all automatic itineraries.
+The independently proved restrictions in this repository remain valid.
+
+[RealShadowObstruction.lean](lean/RealShadowObstruction.lean) checks the
+all-index integer invariants and density inequality. Real convergence,
+aperiodicity, and the two-metric conclusion remain written deductions;
+2,000-step exact replay and four parity-prefix reconstructions passed.
+The [verification record](results/real-shadow/verification.json) separates
+these scopes. This construction is not a positive-integer orbit and is
+not a counterexample to Collatz.
+
+## First-passage refinement of the orbit bound
+
+The [first-passage argument](docs/ORBIT-PACKING-LOG.md#6-first-passage-refinement-2026-10-08)
+strengthens the uniform interval count for every nonrepeating orbit and
+every cycle. With \(\sigma=H_2(\log_3 2)\), it proves the written bound
+\[
+ \#(S\cap[a,a+L))\le C\,
+ \frac{L^\sigma[1+\log(1+\log L)]}{(1+\log L)^\beta},
+ \qquad
+ \beta=\frac32-
+ \frac{\log(\log_3 2/(1-\log_3 2))}{\sigma\log3}
+ \approx0.9862105455.
+\]
+In particular the earlier square-root logarithmic denominator can be
+replaced by exponent \(9/10\), with an unspecified absolute constant.
+The proof groups states by their first coefficient crossing below a chosen
+threshold, rather than only by the weight at the final observation time.
+Each group maps into a shorter interval; a uniform ballot estimate counts
+the remaining parity words.
+
+[FirstPassagePacking.lean](lean/FirstPassagePacking.lean) kernel checks the
+new exact transport, crossing-weight uniqueness, and power comparisons.
+The external probability estimate and the complete analytic induction
+remain written dependencies. The [verification record](results/first-passage/verification.json)
+records 454,632 finite image checks and 135 independent partition checks.
+This gives stronger necessary growth and summability restrictions, but no
+upper bound contradicting all divergent orbits and no full cycle exclusion.
+
+## Büchi models and arithmetic repetition certificates
+
+The [automata investigation](APERIODIC-ATTEMPT.md#7-büchi-automata-and-exact-arithmetic-for-repeated-blocks)
+proves in writing that the complete positive-integer parity language is
+not omega-regular. It also proves that every Büchi language consisting
+entirely of genuine positive-integer parity streams contains only
+eventually cyclic orbits. These statements restrict exact recognizers
+and sound sublanguages; they do not exclude useful overapproximations
+or automata with additional arithmetic state.
+
+For a block \(F(x)=(Ax+B)/D\), its defect
+\(\Delta(x)=(D-A)x-B\) gives finite certificates:
+an integer prehistory of \(r\) copies ending at \(m\) requires
+\(A^r\mid\Delta(m)\), and a forward history starting at \(n\) requires
+\(D^r\mid\Delta(n)\). [BuchiArithmetic.lean](lean/BuchiArithmetic.lean)
+checks these necessities, the finite cutoff, and fixed-point rigidity
+under arbitrarily long inverse pumping. The sufficiency of the tests
+for actual parity blocks and the automata arguments remain written.
+The [verification record](results/buchi-arithmetic/verification.json)
+includes 783,360 directional checks and 2,048 forbidden odd-prefix
+extensions. A changing block changes the defect, so these individual
+counters do not yet give a ranking function for an arbitrary orbit.
+The kernel-checked family \(2(2^k-1)\to2^k-1\) shows that switching
+from the even-block counter to the odd-block counter can raise it
+from 1 to \(k\) in one step. A uniform bound on such resets is therefore
+unavailable; an additional size-dependent argument is needed.
+
+The [subsequent size-ranking test](APERIODIC-ATTEMPT.md#8-why-finitely-many-valuation-corrections-do-not-repair-a-size-ranking)
+rules out a specific proposed repair. The genuine path
+\(192s-5\to288s-7\to432s-10\to216s-5\) grows overall while preserving
+the endpoint valuations of \(n,n+1\) at 2 and 3; taking \(s\) divisible
+by a chosen modulus also preserves that residue. Its finite arithmetic
+is kernel checked. A written extension constructs such growing paths
+for any fixed finite collection of polynomial valuations and residues.
+Consequently no rank nondecreasing in size when these features are
+held fixed can strictly decrease at every step outside a finite set.
+This eliminates that class of ranking attempts, without excluding
+more general ranks or proving convergence.
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an

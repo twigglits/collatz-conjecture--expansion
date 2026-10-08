@@ -1,0 +1,37 @@
+{
+  "all_checks_passed": true,
+  "steps": 2000,
+  "ones": 1737,
+  "prefix": "1011110111110111111111111110111111011110111111111110111101111111101111011111111110111111110111110111",
+  "samples": [
+    {
+      "length": 64,
+      "ones": 56,
+      "residue_hex": "0x4030e6c240b0be9",
+      "real_error_numerator_bits": 65,
+      "real_error_denominator_bits": 89
+    },
+    {
+      "length": 128,
+      "ones": 111,
+      "residue_hex": "0x51d4a00057fac04904030e6c240b0be9",
+      "real_error_numerator_bits": 129,
+      "real_error_denominator_bits": 176
+    },
+    {
+      "length": 512,
+      "ones": 443,
+      "residue_hex": "0xdf3606a96db5939c4a44fd6a6727dfd9e54403695b1da987f50052c104fb2bea91dfcba1dab0d47cbc6884639f13e76f51d4a00057fac04904030e6c240b0be9",
+      "real_error_numerator_bits": 513,
+      "real_error_denominator_bits": 703
+    },
+    {
+      "length": 2000,
+      "ones": 1737,
+      "residue_hex": "0xc50905ade8cf21ba58ef1eafeb38843ca34afaf5ba546757ccb386b6c3383149f35db85b94c1902c6fc743475e1fba83fbed173dc83c90305a335e37d918288b2973abf3651cf856213b49259d8e392c9e6d4d600c5a87b388d06373a261d529e9568cd504a3b8d11af2112d1ae7bda60b6f53a7ad10282f2a42168d34c29c1c063ed48010e8542a3e28348b043c5acc640abe2bd416f05fbeb841ef5d771657fe6acddc3621f26ce93f6823fc6c45450ee1c0c3d9d3e3a76d24df3606a96db5939c4a44fd6a6727dfd9e54403695b1da987f50052c104fb2bea91dfcba1dab0d47cbc6884639f13e76f51d4a00057fac04904030e6c240b0be9",
+      "real_error_numerator_bits": 2001,
+      "real_error_denominator_bits": 2754
+    }
+  ],
+  "scope": "Exact finite shadow and parity-prefix checks; not an integer counterexample to Collatz."
+}

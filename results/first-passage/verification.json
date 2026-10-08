@@ -1,0 +1,86 @@
+{
+  "checked_utc": "2026-10-08T10:08:32.363594+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "verify_first_passage.py": "7271df18cb0bd0ce69e7bc1a96a3293233978709db66a4a5924d5ed6be8b6366",
+    "docs/ORBIT-PACKING-LOG.md": "d40890dcb14d214e565e1a0e6440c0ac2655fa27690b742fe4b24bd412aa77c0",
+    "ATTEMPT.md": "3f7c5c165da88e919bbe29af8932bc7fec21cb3f25f2a2761eb75b121efa0e73"
+  },
+  "environment": {
+    "LEAN_PATH": "/tmp/collatz-first-passage"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/tmp/collatz-first-passage/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.435705500014592,
+      "log": "results/first-passage/packing.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192"
+    },
+    {
+      "command": [
+        "lean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3210159169975668,
+      "log": "results/first-passage/first-passage.log",
+      "log_sha256": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_first_passage.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2551052499911748,
+      "log": "results/first-passage/replay.json",
+      "log_sha256": "97a22b4498313df3874af553ff596b8011764efda8f618b0c34c2651ad014112"
+    }
+  ],
+  "kernel_scope": [
+    "Lower block-image inequality with actual prefix weight.",
+    "Exact image interval at any shorter observation horizon.",
+    "At most one weight at a fixed first-crossing time.",
+    "An odd branch cannot be a first downward coefficient crossing.",
+    "The image interval is strictly shorter than 2^(ell-b).",
+    "Exact supporting integer comparisons for the written margin beta>15/16."
+  ],
+  "written_scope": [
+    "Uniform moving-barrier ballot word count.",
+    "First-crossing partition, strong induction for all interval lengths and all forward-invariant injective sets.",
+    "Real-function estimates and summability/growth consequences."
+  ],
+  "external_dependency": {
+    "authors": "Elie Aidekon and Zhan Shi",
+    "title": "The Seneta-Heyde scaling for the branching random walk",
+    "publication": "Annals of Probability 42 (2014), 959-993",
+    "url": "https://arxiv.org/pdf/1102.0217",
+    "location": "Section 2, Lemma 2.2; random-walk assumptions immediately before equation (2.3).",
+    "use": "Uniform lower-barrier and endpoint-bin probability upper bound for centered Bernoulli increments.",
+    "formalized_here": false
+  },
+  "finite_scope": {
+    "image_checks": 454632,
+    "partition_checks": 135,
+    "max_survivor_word_length": 1024,
+    "note": "No fitted or numerically specified universal constant."
+  },
+  "orientation_only_floating_point": {
+    "sigma": 0.9499555271883307,
+    "beta": 0.9862105455205069,
+    "weighted_summability_threshold": 0.01378945447949309,
+    "growth_log_exponent_threshold": 1.0381649638267632
+  },
+  "written_conclusion": "Uniform bound C*L^sigma*(1+log(1+log L))/(1+log L)^beta. In particular C_gamma*L^sigma/(1+log L)^gamma for every fixed gamma<beta, including gamma=9/10.",
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved. Faster divergence and sufficiently wide cycles remain possible under these restrictions."
+}

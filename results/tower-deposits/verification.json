@@ -1,0 +1,50 @@
+{
+  "checked_utc": "2026-10-08T09:46:43.676369+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lean/TowerDepositObstruction.lean": "09144c08eee96c8f2d283afa5e6eed53ed14446d3f13f8fee35de8fd4b861516",
+    "verify_tower_deposits.py": "5b137e87d27151b90013e361bec91d97fa1e9e9b7dcd804d9e3c314fcc72a919",
+    "ATTEMPT.md": "390be8bc4f7c4b6188ea3166b684d315407411fdb380bab2a8309c26e24f562a"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "lean/TowerDepositObstruction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7483152499771677,
+      "log": "results/tower-deposits/lean.log",
+      "log_sha256": "c317418573dfb494112c605a708834813015c99712c73d18f864360a14e52723"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_tower_deposits.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.17955149995395914,
+      "log": "results/tower-deposits/replay.json",
+      "log_sha256": "faf6278b1db8a140fc436705b419881e5d803653f191a7508254dc613097780e"
+    }
+  ],
+  "kernel_scope": [
+    "Odd quotient identity for 3^(2^(s+1))-1 at every natural s.",
+    "Exact power-of-two divisibility of 3*postTower(s)+1 at every natural s."
+  ],
+  "written_scope": [
+    "Identification of postTower(s) with the second contracting return from rho(2^(s+1)+1) for s>=1.",
+    "Unbounded deposits contradict a finite residue table for the first deposit of the third contracting return."
+  ],
+  "finite_scope": "13 actual first-return replays for s=1 through 13; no asymptotic inference from these samples.",
+  "source_review": {
+    "old": "https://zenodo.org/records/19054281",
+    "replacement": "https://zenodo.org/records/19058317",
+    "tex": "https://zenodo.org/records/19058317/files/nondiv%20proof%20zenodo10.tex?download=1",
+    "premise": "Finite modulus for deposit sequences and its use in fixed-t contracting-return normal forms.",
+    "assessment": "Pointwise finite bit dependence does not imply uniform finite precision; the required contracting-return deposit table is impossible."
+  },
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; no counterexample or complete proof."
+}
