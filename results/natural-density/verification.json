@@ -1,0 +1,136 @@
+{
+  "verified_at_utc": "2026-10-08T15:57:06.138367+00:00",
+  "conjecture_status": "unresolved",
+  "written_scope": [
+    "Lemma 2.1, Corollary 2.2, Proposition 2.3 (joint fine-scale mixing)",
+    "Lemma 3.1 (renewal lemma)",
+    "Proposition 4.1 and Theorem ND (natural density)"
+  ],
+  "external_inputs": [
+    "Tao, arXiv:1909.03562 (Forum Math. Pi 2022): Props 1.9, 5.2, 7.3, Lemma 2.2, Section 3",
+    "local limit theorem with rate (Petrov VII.3)",
+    "Erdos-Turan-Koksma inequality",
+    "a finite irrationality exponent for log_2 3 (e.g. Rhin 1987)"
+  ],
+  "not_proved": [
+    "Collatz convergence or divergence",
+    "explicit constants; positive-density Collatz via numerical verification",
+    "universal analytic statements by these finite numerical checks"
+  ],
+  "numerical_scope": {
+    "arithmetic": "Python float/complex; no certified roundoff bounds",
+    "tilt_truncation": 70,
+    "tilts": [
+      0.0,
+      0.1,
+      0.25,
+      0.37,
+      0.5,
+      0.81
+    ],
+    "tilt_omitted_mass_upper_by_n": {
+      "2": 1.6940658945086007e-21,
+      "3": 2.541098841762901e-21,
+      "4": 3.3881317890172014e-21,
+      "5": 4.235164736271502e-21
+    },
+    "product_omitted_mass_upper_by_n": {
+      "2": 6.013933925505532e-20,
+      "3": 6.013933925505532e-20,
+      "4": 1.2027867851011065e-19,
+      "5": 1.2027867851011065e-19
+    },
+    "renewal_window": "40 sqrt(kstar) on either side; no certified tail or roundoff bound",
+    "mc_bins": "(min(floor(log2(x/n)/0.5), 11), n mod 9)",
+    "mc_interpretation": "TV of coarsened empirical histograms only; heuristic noise comparison",
+    "log_sampler": "odd-only proposal and integer rejection; ideal accepted mass proportional to 1/n",
+    "passage_fuel": 10000
+  },
+  "replay_summary": {
+    "tilted_over_bound_7_5_max_by_n": {
+      "2": 0.9129210757764067,
+      "3": 0.4826673483379859,
+      "4": 0.6057646123159821,
+      "5": 0.34254590565445264
+    },
+    "renewal_values": {
+      "300.9": 3.4761865624364026,
+      "1000.37": 3.4760241910899663,
+      "3000.11": 3.475661969673412,
+      "10000.5": 3.4761101035106208
+    },
+    "renewal_target_1_over_ln_4_3": 3.476059496782208,
+    "mc_samples_per_law": 60000,
+    "mc_coarse_same_law_tv": 0.01571666666666667,
+    "mc_coarse_pairwise_tv": {
+      "unif60|unif80": 0.01748333333333333,
+      "unif60|log60_80": 0.014666666666666668,
+      "unif80|log60_80": 0.016950000000000007
+    },
+    "mc_diagnostics": {
+      "unif60": {
+        "kind": "unif60",
+        "seed": 1,
+        "count": 60000,
+        "fuel_exhausted": 0,
+        "max_syracuse_steps": 228
+      },
+      "unif80": {
+        "kind": "unif80",
+        "seed": 2,
+        "count": 60000,
+        "fuel_exhausted": 0,
+        "max_syracuse_steps": 322
+      },
+      "log60_80": {
+        "kind": "log60_80",
+        "seed": 3,
+        "count": 60000,
+        "fuel_exhausted": 0,
+        "max_syracuse_steps": 294
+      },
+      "unif60_repeat": {
+        "kind": "unif60",
+        "seed": 99,
+        "count": 60000,
+        "fuel_exhausted": 0,
+        "max_syracuse_steps": 227
+      }
+    },
+    "fuel_exhausted": 0,
+    "mc_noise_diagnostic_passed": true,
+    "x": "2^40"
+  },
+  "commands": [
+    "python3 verify_natural_density.py"
+  ],
+  "sha256": {
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "verify_natural_density.py": "020af002ba5dd5d346160b3ffeb3fd0121c0f1894909b2e5842f5b23a34f4ff1"
+  },
+  "numerical_run_sha256": {
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "99e3fd23c14035bbfec1074902f866e208e625b2517113db2931596a108d9acd",
+    "verify_natural_density.py": "020af002ba5dd5d346160b3ffeb3fd0121c0f1894909b2e5842f5b23a34f4ff1"
+  },
+  "written_review": {
+    "reviewed_at_utc": "2026-10-08T16:05:08.694930+00:00",
+    "primary_source": "https://arxiv.org/html/1909.03562v7",
+    "added_details": [
+      "joint-mixing block reversal and conditioning",
+      "uniform renewal bound for all real shifts and Gaussian mass integral",
+      "support bound for uniform-start weights",
+      "uniform harmonic count using geometric weights and an exponential-moment tail",
+      "strict corollary and final dyadic block",
+      "stabilisation uniform over the entire power interval",
+      "existence of natural densities d_B and a limiting distribution of orbit minima",
+      "iteration base split giving uniform bounds in both x and N_0"
+    ],
+    "scope": "Written mathematical argument; no Lean proof or independent peer review",
+    "provenance": "Only the mathematical note changed after the numerical run. Its current hash is refreshed above; the Python source is unchanged and the run hashes are preserved.",
+    "does_not_establish": [
+      "positive density for convergence to 1",
+      "density one convergence",
+      "convergence of every positive integer"
+    ]
+  }
+}

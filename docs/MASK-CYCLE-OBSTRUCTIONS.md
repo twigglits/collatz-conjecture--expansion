@@ -6,9 +6,8 @@ produce primitive positive integer cycles of sufficiently large period:
 - Independent \(22\to13\) edits of the mechanical halving word.
 - Independent \(21\to12\) edits restricted to alternating eligible positions.
 
-The original argument below combines a logarithm bound, originally
-misattributed to Wu–Wang (see the correction in Section 1), with a short
-parity-factor catalog. Its unspecified threshold \(H_0\) gave
+The original argument below combines Wu–Wang's effective logarithm
+bound with a short parity-factor catalog. Its unspecified threshold \(H_0\) gave
 only eventual exclusions. The later [explicit logarithm bound and extended
 resonance cover](EXPLICIT-LOG-GAP.md) now close both families at every period,
 with the documented external small-period input. The all-index integral and
@@ -52,17 +51,27 @@ give \(3/2<N/k<8/5\). The halving word uses 1 and 2, has no cyclic
 \(11\), and has no cyclic \(222\). Its binary shortcut word therefore has
 neither \(00\) nor \(111\).
 
-**Correction (2026-10-08).** An earlier version quoted [Wu–Wang, *On the
-irrationality measure of log 3*, J. Number Theory 142 (2014), Theorem
-1](https://doi.org/10.1016/j.jnt.2014.03.007) as bounding the three-term
-form \(|p+q_1\log2+q_2\log3|\) by \(H^{-4.1163051-\varepsilon}\).
-That paper proves \(\mu(\log3)\le5.1163051\) for \(\log3\) alone; it does
-not contain the quoted linear-form theorem. The only input used below is
+**Source recheck (2026-10-08).** The publisher's displayed Theorem 1 in
+[Wu–Wang, *On the irrationality measure of log 3*, J. Number Theory
+142 (2014)](https://doi.org/10.1016/j.jnt.2014.03.007) does state
+\[
+ |p+q_1\log2+q_2\log3|\ge H^{-4.1163051-\varepsilon},\qquad
+ H=\max(|q_1|,|q_2|)\ge H_0(\varepsilon),
+\]
+for integer coefficients and every positive \(\varepsilon\), with an
+effectively computable threshold. Its bound on \(\mu(\log3)\) is a
+corollary. A recent local edit incorrectly denied the linear-form
+theorem; that edit is superseded by this primary-source check. This
+checks the published statement, not an independent formalization of
+its proof.
+
+Taking \(p=0,q_1=N,q_2=-k\) and \(\varepsilon=0.0836949\)
+supplies the eventual estimate used below:
 \[
  \lambda\ge N^{-21/5},\qquad
  \delta=1-e^{-\lambda}>\lambda/2\ge\tfrac12N^{-21/5},       \tag{1}
 \]
-and [EXPLICIT-LOG-GAP.md](EXPLICIT-LOG-GAP.md) proves the first inequality
+Separately, [EXPLICIT-LOG-GAP.md](EXPLICIT-LOG-GAP.md) proves the first inequality
 for \(N\ge10^{4000}\) in the cone \(11k\le7N\), \(N<2k\), which contains
 every count pair considered here. Read \(H_0\) below as \(10^{4000}\).
 The second inequality uses \(e^\lambda>1+\lambda\) and \(\lambda<1\).
@@ -347,7 +356,8 @@ all-mask exclusions have the formal scope stated above.
 elementary supporting integer comparisons. The later [explicit integral
 argument](EXPLICIT-LOG-GAP.md) supplies the needed two-logarithm bound for
 \(N\ge10^{4000}\), and a checked finite cover completes the two exclusions.
-No three-term linear-form theorem is used.
+The numerical-cutoff argument does not require a numerical value for
+Wu–Wang's general threshold.
 
 The [earlier verification record](../results/mask-obstructions/verification.json)
 covers the normal form and cutoff arithmetic. The

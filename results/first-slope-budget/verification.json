@@ -1,0 +1,132 @@
+{
+  "verified_at_utc": "2026-10-08T15:32:32.405914+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Prefix bound 3*2^k*U^k(n)<=3^w*(3*n+w) before a first drop below one",
+    "Actual descent when 3^w*w<3*n*(2^k-3^w)",
+    "A rational power-gap hypothesis and polynomial size budget imply actual descent",
+    "The (p,q)=(21,5) specialization uses k^26<=(3*n)^5",
+    "Kernel examples at 7, 27, and an explicit 65-step multiplier above one half"
+  ],
+  "written_scope": [
+    "Wu-Wang Theorem 1 supplies an effective asymptotic logarithm gap",
+    "The prior explicit logarithm argument supplies the 21/5 gap for k>=10^4000 at a first drop",
+    "The real logarithm-to-integer-power conversion is a written proof"
+  ],
+  "not_proved": [
+    "A first coefficient drop for every positive starting value",
+    "A universal upper bound on the first-drop time",
+    "The unrestricted coefficient stopping-time claim",
+    "Full Collatz conjecture"
+  ],
+  "replay_summary": {
+    "all_arithmetic_checks_passed": true,
+    "universal_crossing_existence_proved": false,
+    "interval": [
+      1,
+      32768
+    ],
+    "interval_summary": {
+      "cases": 32768,
+      "crossings": 32768,
+      "gap_budget_passes": 32764,
+      "power_certificates": 13184,
+      "power_gap_failures": 16384,
+      "first_drop_non_descent_starts": [
+        "1"
+      ],
+      "unresolved": []
+    },
+    "family_max_time": 512,
+    "family_summary": {
+      "cases": 969,
+      "crossings": 969,
+      "gap_budget_passes": 968,
+      "power_certificates": 933,
+      "power_gap_failures": 0,
+      "first_drop_non_descent_starts": [
+        "1"
+      ],
+      "unresolved": []
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/CollatzContradiction.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/CollatzGrowth.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/CoalescenceDescent.olean",
+        "lean/CoalescenceDescent.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/CoalescenceDescent.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/CoalescenceEnvelope.olean",
+        "lean/CoalescenceEnvelope.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/CoalescenceEnvelope.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-first-slope-budget-161qfzqg/FirstSlopeBudget.olean",
+        "lean/FirstSlopeBudget.lean"
+      ],
+      "returncode": 0,
+      "log": "results/first-slope-budget/FirstSlopeBudget.log"
+    }
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/CoalescenceDescent.lean": "661eaa09f67e61ed65bb9ee3593b8d5a6a9c8b829e6c9efd809f19d892b2cbe7",
+    "lean/CoalescenceEnvelope.lean": "352fc48428f7c5d499d76870cf53bb62bdf2a61a5bf577ef2bce24894cc3280a",
+    "lean/FirstSlopeBudget.lean": "823ffb8a74202728aea1e2372688843bae555c8ddbcefc3a6901250e7906733b",
+    "verify_first_slope_budget.py": "4fc579b6b0862ae46441699431d73c97142875c55a34c27431de5006d8c15fc2",
+    "results/first-slope-budget/replay.json": "fe39474a08b94f9c9e494a5bf09a65c654ff021e5e6b9a15344b4d0ea262ebca",
+    "results/first-slope-budget/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/first-slope-budget/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/first-slope-budget/CollatzGrowth.log": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498",
+    "results/first-slope-budget/CoalescenceDescent.log": "4051d1afe7cb472f05a44e57eaa994bb6e98d577cce9a135a44068ecce0c6b71",
+    "results/first-slope-budget/CoalescenceEnvelope.log": "916a42f72fc7161bbe0dd8717a91c55ac9f63058dc367b180d59aca3f79bfd2a",
+    "results/first-slope-budget/FirstSlopeBudget.log": "b7bc14047bdd867748c842230fc8f293ce29bfdc088bf8b1d1b47cd0c54e39ec"
+  }
+}

@@ -1,0 +1,8 @@
+'FirstSlopeBudget.prefix_bound' depends on axioms: [propext, Quot.sound]
+'FirstSlopeBudget.descent_of_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstSlopeBudget.descent_of_power_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstSlopeBudget.descent_of_21_5_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FirstSlopeBudget.gap_certificate7' does not depend on any axioms
+'FirstSlopeBudget.gap_budget_not_necessary27' does not depend on any axioms
+'FirstSlopeBudget.certificate65' does not depend on any axioms
+'FirstSlopeBudget.descent65_via_power_gap' depends on axioms: [propext, Classical.choice, Quot.sound]

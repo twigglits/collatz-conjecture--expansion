@@ -219,8 +219,7 @@ family leaves an explicit modular subset-sum condition unresolved.
 The [mask obstruction analysis](docs/MASK-CYCLE-OBSTRUCTIONS.md) now proves
 the exact normal form `D | (4C-X)` in Lean, including the coefficient
 construction and all-edited rotation identity. A written combination of
-a logarithm bound (originally misattributed to Wu–Wang; corrected in that
-note) and parity catalogs excludes every
+Wu–Wang's effective logarithm bound and parity catalogs excludes every
 sufficiently long primitive cycle in the independent `22→13` mask family
 and in the family allowing `21→12` edits at alternating eligible positions.
 These permit linearly many edits. That argument gives exclusions beginning at
@@ -757,6 +756,18 @@ remains unproved. Exact Python checks cover starts 1..32768 and 3,072
 CRT-family instances; they do not supply the universal premise.
 [Verification](results/half-slope-descent/verification.json).
 
+The [first-drop budget](APERIODIC-ATTEMPT.md#24-a-size-budget-for-a-first-multiplier-drop-below-one)
+also permits smaller coefficient margins. With `A=3^wt(k,n)`,
+`D=2^k`, and k a first drop below one, Lean proves
+`3*D*U^k(n)≤A*(3*n+wt(k,n))` and descent when
+`A*wt(k,n)<3*n*(D-A)`. A kernel power-budget theorem and the written
+logarithm estimate give the sufficient size condition
+`k^26≤(3*n)^5` for first drops with `k≥10^4000`.
+The exact integer gap can also be checked directly at smaller times.
+Neither a universal first-drop time nor the unrestricted coefficient
+stopping-time claim is proved.
+[Verification](results/first-slope-budget/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -806,6 +817,21 @@ Negative expected drift and density-one results do not close the universal gap.
 Tao proves almost-bounded orbit minima in logarithmic density, which is not a
 theorem that almost every orbit reaches 1 or becomes periodic.
 [Tao's theorem](https://arxiv.org/abs/1909.03562)
+
+A [written natural-density version](docs/NATURAL-DENSITY-ALMOST-BOUNDED.md)
+now gives `#{N≤X: Col_min(N)>N₀} ≪ X(log N₀)^(-c)`, so almost bounded
+minima hold outside a set of natural density zero. The proof follows
+Tao's Remark 1.16. His Fourier bound survives a tilt by `e(θ|a|)`, which
+gives fine-scale mixing jointly with the total valuation. A renewal lemma
+for `{k log₂3}` then recovers his first-passage constant `2/ln(4/3)`.
+Tao's propositions and an irrationality exponent for `log₂3` are external
+inputs. The [numerical checks](results/natural-density/verification.json)
+are floating-point and Monte Carlo sanity checks only. The audit supplies
+the uniform harmonic counting bound and renewal tail estimate explicitly.
+Stabilisation throughout the interval of scales also gives a written
+proof that each set `Col_min(N)≤B` has a natural density, and that these
+densities tend to one as B grows. This does not establish positive density
+for the basin of 1. The exceptional set still need not be empty.
 
 ## Reproduction
 

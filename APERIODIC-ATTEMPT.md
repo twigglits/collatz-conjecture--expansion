@@ -2236,3 +2236,121 @@ CRT surveys are Python checks. [Manifest](results/half-slope-descent/verificatio
 The missing global work is to prove that every start outside a
 convergent base admits a sufficiently early crossing, or to find a
 different universal progress estimate. Collatz remains unresolved.
+
+## 24. A size budget for a first multiplier drop below one
+
+Section 23 used a fixed half-multiplier margin. A complementary criterion
+can use the first drop below one, provided the actual gap and starting
+size are controlled. This does not prove that a first drop occurs for
+every start, or assert Terras' unrestricted first-drop claim.
+
+Let k be a first coefficient-drop time, and write
+\[
+ w=\operatorname{wt}(k,n),\qquad A=3^w,\quad D=2^k,
+ \quad G=D-A>0.
+\]
+Before time k the multiplier is at least one. Each odd step therefore
+adds at most `1/3` to the normalized orbit value `x_t/A_t`, in the
+notation of section 23. Equivalently,
+\[
+ \boxed{3D\,U^k(n)\le A(3n+w).}                         \tag{24.1}
+\]
+Consequently,
+\[
+ \boxed{Aw<3nG\quad\Longrightarrow\quad U^k(n)<n.}       \tag{24.2}
+\]
+Both inequalities are kernel proved in
+[FirstSlopeBudget.lean](lean/FirstSlopeBudget.lean). The first-drop
+hypothesis is essential to this bound on the accumulated additive terms.
+An arbitrary later time with multiplier below one cannot be substituted.
+
+The same file proves a general exact power-budget criterion. For natural
+p,q with q>0, suppose
+\[
+ A^q<k^pG^q,\qquad k^{p+q}\le(3n)^q.                   \tag{24.3}
+\]
+Since w≤k and k>0,
+\[
+ (Aw)^q\le A^qk^q<k^{p+q}G^q\le(3nG)^q.
+\]
+Thus (24.2) applies. This kernel argument assumes the integer gap
+inequality in (24.3); it does not import a theorem about logarithms.
+
+### Applying a logarithm estimate
+
+Set `lambda=log(D/A)=k log2-w log3>0`. If
+\[
+ \lambda\ge k^{-21/5},
+\]
+then `G/A=exp(lambda)-1>lambda` gives `A^5<k^21 G^5`.
+The `(p,q)=(21,5)` specialization of (24.3) yields
+\[
+ \boxed{k^{26}\le(3n)^5\quad\Longrightarrow\quad U^k(n)<n.} \tag{24.4}
+\]
+This is conditional on the displayed logarithm estimate and on k being
+the first drop. The real exponential inequality and conversion to the
+integer gap are written mathematics; the resulting integer implication
+is kernel checked.
+
+The [source recheck](docs/MASK-CYCLE-OBSTRUCTIONS.md#1-a-logarithm-bound-and-the-resulting-height-limit)
+restores the correct scope of Wu–Wang's Theorem 1: it supplies this
+logarithm estimate beyond an effective threshold. Its asymptotic
+exponent is stronger than 21/5, but that threshold is not evaluated here.
+The separate [explicit argument](docs/EXPLICIT-LOG-GAP.md) supplies
+the bound for every first drop with `k≥10^4000`.
+
+For the last application its count cone must be checked, rather than
+assumed. First, `3^w<2^k` and `2^11<3^7` give `11w<7k`.
+Second, for k≥5 the previous prefix and monotonicity of the odd count
+give `2^(k-1)≤3^w`. If `2w≤k` and w≥3, the elementary inequality
+`2*3^w<4^w` contradicts this, since `4^w≤2^k`.
+If w≤2, then `3^w≤9<16≤2^(k-1)`, also a contradiction.
+Hence `k<2w`. These verify both hypotheses of the explicit estimate.
+The cone argument is written, with exact finite replay checks; no
+unproved analytic premise is silently added to the Lean module.
+
+The point is quantitative: a first drop at time k is sound when
+`n≥k^(26/5)/3` in the stated range. A universal logarithmic first-drop
+bound would eventually meet this size requirement, but no such time
+bound is proved. The criterion complements section 23; it does not
+dominate that criterion or make either one necessary.
+
+### Exact examples and verification
+
+For
+\[
+ n=30913060423816076283,
+\]
+the first drop occurs at k=65 with w=41, and
+\[
+ \frac AD=\frac{36472996377170786403}{36893488147419103232}
+ \approx0.989,\qquad U^{65}(n)=30560730293104027237<n.
+\]
+The exact gap and power budget are kernel checked with `decide`, and
+the descent theorem is applied to them. This verifies descent before
+any half crossing. In contrast, n=27 really descends at k=59 but
+fails (24.2)'s sufficient budget; that example is also kernel checked.
+
+[The independent replay](verify_first_slope_budget.py) checks the prefix
+inequality at every tested time for starts 1..32768 and for 969 prescribed
+first-drop instances through k=512. The latter use prefix counts
+`ceil(t log_3 2)` followed by a final even crossing, construct the unique
+binary residue exactly, and test three affine lifts. No floating-point
+logarithm determines a parity bit. All searches find their first drop
+within the supplied fuel; none is reported unresolved.
+
+In the interval, the exact gap budget passes for 32,764 starts; its four
+failures are `1,27,47,63`. Only 1 fails actual descent at its first
+drop. Of the prescribed family, 968 pass the gap budget, again with
+only 1 as an exception. The more restrictive integer power certificate
+passes for 13,184 interval starts and 933 family instances. Its gap
+hypothesis deliberately does not cover the one-step even case; those
+starts descend directly. None of these finite counts proves a universal
+stopping claim or a complete convergence result.
+
+Six fresh Lean builds pass, with no `sorryAx` or native evaluator axiom
+in the printed dependencies. [Verification manifest](results/first-slope-budget/verification.json).
+The source attribution correction changes no previously checked Lean
+arithmetic. The remaining global task is still to prove suitably early
+progress for every positive start, or otherwise exclude both nontrivial
+cycles and divergence.

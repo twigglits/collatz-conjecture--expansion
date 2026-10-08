@@ -13,6 +13,11 @@ one has
 \]
 This is a bound for the displayed two-logarithm form in this cone of
 coefficients, not a linear-independence measure for \(1,\log2,\log3\).
+Wu–Wang's published Theorem 1 also supplies a stronger asymptotic
+linear-form exponent, with an effective threshold not evaluated here;
+see the [primary-source recheck](MASK-CYCLE-OBSTRUCTIONS.md#1-a-logarithm-bound-and-the-resulting-height-limit).
+The point of (1) is its explicit cutoff in the displayed cone, not a
+new record irrationality measure.
 The integrals and the argument for all indices are written proofs.
 The identified finite arithmetic is checked in
 [ExplicitLogConstants.lean](../lean/ExplicitLogConstants.lean).
@@ -457,13 +462,17 @@ like \(2^{hm}\), with
  h=2(7-11\rho)+3(8\rho-5)\to0.26186\qquad(\rho\to\log_32).
 \]
 A height bound \(\lambda\ge N^{-c}\) gives \(m\approx(1+c)\log_2N\), so the
-distinct-factor argument can exclude the whole family only if
+distinct-factor upper bound closes an exclusion only if
 \((1+c)h<1\), that is \(c<2.8188\). Equivalently it needs an effective
 irrationality exponent \(\mu(\log_23)<3.8188\). Bound (1) has \(c=21/5\)
-and excludes only empirical entropy below \(5/26\approx0.1923\). No known
-effective estimate for \(\log_23\) comes close to \(c<2.82\), so closing the
-family this way needs a substantially new Diophantine input, not tighter
-constants.
+and excludes only empirical entropy below \(5/26\approx0.1923\). No
+input checked here achieves \(c<2.82\): Wu–Wang gives
+\(c=4.1163051+\varepsilon\), and (1) gives the explicit \(c=4.2\).
+Thus merely adjusting constants in either bound does not close this
+catalog-based argument. A sharper catalog or a substantially stronger
+Diophantine estimate would be needed. This is a limitation of these
+upper bounds, not a lower bound on the actual number of distinct factors
+or a proof that another counting argument cannot succeed.
 
 ## 9. Transfer to arbitrary cycles
 

@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the complete bounded inverse-path audit.
+Last updated: 2026-10-08, after the natural-density argument audit.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -780,18 +780,19 @@ Its μ(π)=2 method was adapted on 2026-10-08 to μ(log α)=2 for rational α
 ratios such as log₂3 are out of reach (Baker regime), so it gives no input
 for cycles.
 
-Corrected the Wu–Wang misattribution: that paper proves μ(log 3) ≤
-5.1163051 only. MASK-CYCLE-OBSTRUCTIONS §1, MASK-TRANSITIONS, MASK-DENSITY,
-EXPLICIT-LOG-GAP and ATTEMPT.md now point to EXPLICIT-LOG-GAP for the bound
-actually used. Conclusions are unchanged. The `checked_content` text in
-`results/{mask-obstructions,structural-restrictions,folded-density}/verification.json`
-still has the old wording; those historical records were not edited.
+**Superseded source assessment:** this review incorrectly concluded that
+Wu–Wang proves only μ(log 3) ≤5.1163051 and removed the three-term
+theorem attribution. A subsequent primary-source check, recorded below,
+confirms that Theorem 1 is precisely the three-term bound. The original
+attribution and the historical verification records were correct on that
+point. EXPLICIT-LOG-GAP still supplies the explicit cutoff used later.
 
 An independent exact replay (even n=2..14) confirmed EXPLICIT-LOG-GAP's
 partial fractions, zero residue at −1, Q_n·B_n integrality, A_n bounds
 and A_n log z + B_n(z) = 70J_n, 70(J_n+K_n). The bound implies
-μ(log₂3) ≲ 5.2; no better published bound was found (Rhin's 8.616 is the
-usual citation), so a specialist should check novelty.
+μ(log₂3) ≲ 5.2. The claim that no stronger published bound was found is
+superseded: Wu–Wang's Theorem 1 implies μ(log₂3) ≤5.1163051. Do not
+suggest that the local 5.2 consequence is a new irrationality record.
 
 Barrier, now in EXPLICIT-LOG-GAP §8: the unrestricted 21→12 family has
 selection entropy h → 0.26186, so the distinct-factor route needs c < 2.8188,
@@ -834,3 +835,135 @@ Local merge audit: no unmerged index entries, no MERGE_HEAD, no source
 conflict markers, and `git diff --check` clean before these additions.
 Existing logarithm-note corrections and untracked local files were
 preserved. No staging, commits or other Git writes were performed.
+
+## 2026-10-08: source recheck and a first-drop polynomial budget
+
+Previous goal turn was progress: the half-margin theorem, builds and
+replay were completed. This turn examined the missing crossing argument.
+The current packing and first-passage estimates still permit exponential
+escape; no new contradiction from those estimates was established.
+
+A primary-source recheck corrected the intervening literature edit.
+Wu–Wang, JNT142 (2014), DOI10.1016/j.jnt.2014.03.007, Theorem1,
+DOES bound |p+q1 log2+q2 log3| by H^(-4.1163051-epsilon) beyond an
+effective threshold. The publisher's indexed theorem statement was read;
+the full proof was not independently formalized. Its log3 irrationality
+measure is a corollary, not the paper's entire scope. The earlier
+"misattribution" correction was incorrect. MASK-CYCLE-OBSTRUCTIONS,
+MASK-TRANSITIONS, MASK-DENSITY, EXPLICIT-LOG-GAP and ATTEMPT now reflect
+this, and the superseded memory entry is marked. In particular, the
+local 5.2 consequence is not a new irrationality-measure record.
+The catalog limitation in EXPLICIT-LOG-GAP is also explicitly phrased
+as a limitation of those upper bounds, not of every counting method.
+
+New `lean/FirstSlopeBudget.lean` kernel-proves, for a first coefficient
+drop k, w=wt(k,n), A=3^w,D=2^k,G=D-A>0:
+`3*D*U^k(n)≤A*(3*n+w)` and descent if `A*w<3*n*G`.
+More generally, `A^q<k^p*G^q` and `k^(p+q)≤(3*n)^q` imply descent.
+The (p,q)=(21,5) specialization uses `k^26≤(3*n)^5`.
+No logarithm theorem is imported as a Lean axiom or proved there.
+
+Written bridge in APERIODIC§24: lambda=log(D/A)≥k^(-21/5) implies
+G/A=exp(lambda)-1>lambda and therefore the integer power gap above.
+Wu–Wang gives this eventually. EXPLICIT-LOG-GAP supplies the explicit
+cutoff k≥10^4000; every first drop k≥5 satisfies its cone
+11w≤7k and k<2w (full elementary argument in§24). Thus
+n≥k^(26/5)/3 guarantees descent at such a first drop. No existence or
+upper-time bound for every start has been proved. This complements the
+half-margin criterion; neither is asserted necessary or uniformly stronger.
+
+Kernel example n30913060423816076283,k65,w41 has multiplier about.989,
+endpoint30560730293104027237, and passes the exact power criterion.
+n27,k59 descends but fails the simpler sufficient gap budget.
+`python3 verify_first_slope_budget.py` passes six fresh Lean builds,
+all starts1..32768 and969 prescribed near-critical first-drop/lift cases
+throughk512. No fuel exhaustion. Gap-budget passes32764 interval starts
+(failures1,27,47,63) and968 family cases (failure1). Power certificates
+pass13184 and933 respectively. These are finite Python counts, not
+universal stopping proofs. Manifest: results/first-slope-budget/verification.json.
+All printed kernel dependencies are standard logical axioms; no sorryAx
+or native evaluator axiom. The Collatz goal remains unresolved and active.
+
+Concurrent work added the natural-density note recorded below. This
+first-drop turn read it but did not independently validate its transfer
+of Tao's joint mixing, uniform-start stabilization, or final iteration.
+Those analytic steps are a useful next audit target; its finite numerical
+checks cannot certify the universal density theorem. Preserve that work
+and distinguish its written claim from the kernel results above.
+
+## 2026-10-08: natural-density almost bounded orbits (written)
+
+Jean asked for "project 3": upgrade Tao's log-density theorem to natural
+density. docs/NATURAL-DENSITY-ALMOST-BOUNDED.md gives a written proof of
+`#{N≤X: Col_min(N)>N₀} ≪ X(log N₀)^(-c)`, hence almost bounded minima
+outside a natural-density-zero set. There are two new ingredients:
+
+1. Tao's (74) takes absolute values after conditioning on b_j, so the
+   tilt e(θ|a|) drops out (Lemma 2.1). This gives fine-scale mixing
+   jointly with |a| (Proposition 2.3), which is his Remark 1.16 route.
+2. A renewal lemma for {kβ}, β=log₂3, with weights P(S_k=⌈kβ+τ⌉). It
+   uses the local CLT, Erdős–Turán–Koksma, and any finite irrationality
+   exponent for β. The constant 1/ln(4/3) matches Tao's log formula.
+
+Uniform starts U_y on [y,2y) replace log-uniform ones, and Tao's Section 3
+iteration then runs verbatim.
+
+The original `python3 verify_natural_density.py` run checked three things.
+Tilted / product bound ≤ 0.913 for n=2..5. R(τ) was within 4e-4 of
+1/ln(4/3) at four tested values above 300, not uniformly for τ≥300.
+At x=2^40, the reported TVs compared coarsened Monte Carlo histograms,
+not the full passage laws. The later audit below corrects the sampler
+and numerical labels. These are sanity checks only; there is no Lean.
+Unrefereed 2026 claims of the same upgrade exist, so novelty is not
+asserted. Collatz itself remains unresolved, because the zero-density
+exceptional set need not be empty. Goal active.
+
+The earlier Wu–Wang "misquote" claim (review II above) is superseded by
+the primary-source recheck. Astra's wording in the mask notes stands.
+
+## 2026-10-08: natural-density audit and limiting minima
+
+The previous goal turn was progress: the first-drop certificate and
+source correction passed their checks. This turn audited the concurrent
+natural-density note against Tao's v7 HTML, especially Sections 3, 5,
+6 and 7. The paired conditioning removes the unit-modulus total-sum
+tilt; the unnormalised sum slices then pass through the collision bound
+and telescoping. No failure of this joint-mixing step was found.
+
+The written note now supplies details needed for uniform-start transfer:
+support of c_(n,s) implies 2^s/y≪x^(-.8); the renewal sum is bounded for
+every real shift, including negative atypical shifts; and its Gaussian
+mass is computed by an integral. The reduced-modulus harmonic bound is
+proved with weights 2^(-A)(a_m+1), whose sum is 3. For A>H=.5 log₂x,
+the extra term is bounded by 3^(2m)P(S_m>H)≤18^m(3/4)^H=o(1).
+This avoids using the nonuniform coarse sum (sqrt(2)+1)^m. The strict
+f(N) corollary now uses f/2, and the dyadic cover includes the final
+partial block. Formula numbers and a reversed-word notation were fixed.
+
+Proposition 4.1 holds uniformly for every y in [x^α,x^(α²)], not just
+the endpoints: all size and renewal-centre estimates are uniform there.
+New Section 6 deduces a further WRITTEN result. For fixed B, let
+h_B(y)=P(Syr_min(U_y)≤B). For Y≥B^α and Y≤Z≤Y^α,
+|h_B(Z)-h_B(Y)|≪(log Y)^(-c). Telescoping along Y^(α^j) makes h_B
+Cauchy as y→∞. Dyadic summation and the even-part decomposition give
+a natural density d_B for {Col_min≤B}. ND implies d_B→1, so the
+differences p_m=d_m-d_(m-1) form a limiting distribution of minima.
+This does not establish d_1>0 or d_1=1, and even d_1=1 would not prove
+Collatz for every integer. No novelty or kernel verification is claimed.
+
+The verifier now labels floating-point truncation and uncertified
+roundoff, and the Monte Carlo TV applies only to the 108 defined bins.
+Logarithmic samples are odd from the proposal stage and accepted by
+integer rejection; under ideal uniform randomness this is exactly the
+1/n law. The earlier sample-then-round-to-odd procedure was not exact.
+Every trajectory has 10,000 Syracuse steps of fuel; exhaustion is
+recorded as unresolved and fails the check. The rerun passed: 240,000
+trajectories, none exhausted, maximum 322 steps; coarse pairwise TVs
+0.014667–0.017483 versus same-law 0.015717. Tilt ratios and four renewal
+values are unchanged. The numerical tests do not certify the theorem.
+
+Git audit found no unmerged index entries, MERGE_HEAD, or source
+conflict markers. Existing changes and the index were preserved; no Git
+writes were performed. The OpenAI collection remains methodological
+inspiration (APERIODIC§18), not an imported Collatz proof. The full
+objective is unresolved and remains active.

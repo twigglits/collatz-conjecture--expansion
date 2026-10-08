@@ -20,9 +20,9 @@ one such occurrence.
  \qquad\text{if }N\ge\max(H_0,2^{16384}).                    \tag{1}
 \]
 Thus both good and bad blocks must occur at positive linear density. Here
-\(H_0\) is the threshold of the logarithm bound in
-[MASK-CYCLE-OBSTRUCTIONS.md](MASK-CYCLE-OBSTRUCTIONS.md), which was
-misattributed to Wu–Wang (see the correction there).
+\(H_0\) is the effective Wu–Wang threshold in
+[MASK-CYCLE-OBSTRUCTIONS.md](MASK-CYCLE-OBSTRUCTIONS.md), whose numerical
+value was not supplied in that argument.
 This is a necessary condition; many masks satisfy it.
 
 The later [explicit logarithm bound](EXPLICIT-LOG-GAP.md) supplies the same
