@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the inverse-fibre multiplicity lower bound.
+Last updated: 2026-10-08, after the OpenAI math review and uniform inverse branching.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -610,3 +610,46 @@ these large fibres lie in a nonconvergent component. A bound using special
 properties of an exceptional component, or a different global argument,
 is still missing. Do not equate generic fibre growth with Collatz failure.
 The full objective remains unresolved and active.
+
+## 2026-10-08: external method review and fixed-root branching
+
+The user suggested https://github.com/openai/math as methodological inspiration.
+APERIODIC-ATTEMPT section 18 records the targeted review and source links.
+The main leads are: explicitly account for information lost by collisions;
+investigate scale-dependent trapping with variable return times; and audit
+conditioning and quantifiers rather than replacing every-start claims with
+almost-everywhere statements. No external theorem from the collection is
+adopted as a premise. Its mass-action scope covers initial-state-dependent
+bounds, not necessarily the stronger later common absorbing-set statement.
+Comparator challenge `sorry` placeholders are statement specifications;
+separate solution modules are selected by their JSON configurations. We
+did not build those external solutions or validate all manuscript proofs.
+
+The previous suggestion that exceptional components might avoid large
+collisions is now excluded for unrestricted fixed-root fibres.
+`lean/UniformInverseBranching.lean` proves that for every a%3≠0, its binary
+inverse tree has 2^h distinct positive unit leaves n with time 6h, weight h,
+endpoint a, and 3^h*n≤64^h*a. Children are 192*(a/9)+d with pairs
+r1:(16,20), r2:(32,40), r4:(80,85), r5:(104,106), r7:(148,149),
+r8:(160,170). They arise by synchronizing the two valid inverse exponents
+in 1..6; every child is greater than its parent and reaches it in six steps.
+
+Written corollaries: if a<3^h all leaves are below 2^(6h); a bad root
+would make every leaf bad; a uniform leaf distribution loses exactly h
+bits when mapped to its common endpoint. Every hypothetical counterexample
+eventually has a unit iterate, so this applies to every hypothetical bad
+component. Do not confuse this with an upper bound, with entropy of whole
+affine maps, or with a count along one orbit. Basin1 has these trees too.
+
+`python3 verify_uniform_inverse_branching.py` passed 6,679 root checks,
+36,846 leaf checks, and three fresh Lean builds. The manifest is
+`results/uniform-inverse-branching/verification.json`; APERIODIC section19.
+Lean's printed dependencies have no sorryAx or native evaluator axioms.
+The all-depth counting, distinctness, weight, endpoint and height bound
+are kernel checked; the entropy and exceptional-component interpretations
+are written. Full Collatz remains unresolved; the goal stays active.
+
+Local merge audit at this point: HEAD7590f75, tracked tree initially clean,
+no unmerged index entries, no MERGE_HEAD, and no conflict markers found
+in the source/document scan. `.DS_Store` and `CLAUDE.md` were untracked
+and were preserved. No staging, commits, pull or other Git mutations.

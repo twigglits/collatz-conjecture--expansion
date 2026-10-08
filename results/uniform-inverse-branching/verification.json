@@ -1,0 +1,71 @@
+{
+  "verified_at_utc": "2026-10-08T13:55:29.005861+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Two distinct positive unit children at every root a not divisible by three",
+    "Each child reaches a in six shortcut steps with exactly one odd step",
+    "At depth h the leaf list has exactly 2^h distinct positive unit members",
+    "Every leaf has endpoint a at time 6h, weight h, and 3^h*n <= 64^h*a"
+  ],
+  "written_corollaries": [
+    "If a < 3^h, every depth-h leaf lies below 2^(6h)",
+    "For a hypothetical nonconvergent unit root, all leaves are nonconvergent",
+    "No subexponential time-dependent bound for all fixed-root fibre sizes",
+    "Uniform binary leaf distribution has h bits of conditional entropy given its endpoint"
+  ],
+  "not_proved": [
+    "Collatz convergence or divergence",
+    "A lower bound on a single forward orbit from inverse-tree counts",
+    "Any imported OpenAI math manuscript theorem or its applicability to Collatz"
+  ],
+  "replay_summary": {
+    "all_checks_passed": true,
+    "single_root_checks": 6679,
+    "tree_roots": 18,
+    "max_tree_depth": 10,
+    "leaf_checks": 36846
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-uniform-branch-h_bw3eje/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/uniform-inverse-branching/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-uniform-branch-h_bw3eje/InverseFibreGrowth.olean",
+        "lean/InverseFibreGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/uniform-inverse-branching/InverseFibreGrowth.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-uniform-branch-h_bw3eje/UniformInverseBranching.olean",
+        "lean/UniformInverseBranching.lean"
+      ],
+      "returncode": 0,
+      "log": "results/uniform-inverse-branching/UniformInverseBranching.log"
+    }
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/InverseFibreGrowth.lean": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+    "lean/UniformInverseBranching.lean": "1bd69fd72bce0adc5e0b270d5088ddef7386d4c02f3d3dc761237e1ea37077b3",
+    "verify_uniform_inverse_branching.py": "72914868dc862f40d57865747b79ef0eea4c3fa7896d8f8203f01fc1bd7944e6",
+    "results/uniform-inverse-branching/replay.json": "6c409bb34069d7b82ae675a56b0691159a21fc56db6ae12c06ef49a6214a63a0",
+    "results/uniform-inverse-branching/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/uniform-inverse-branching/InverseFibreGrowth.log": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560",
+    "results/uniform-inverse-branching/UniformInverseBranching.log": "39f2f31f1c8be1a4f3e1e43db50cdd804e4150031ca2350a752891bb4a2c1663"
+  }
+}

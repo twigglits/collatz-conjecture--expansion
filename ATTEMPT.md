@@ -698,8 +698,22 @@ shows that the worst same-time, same-weight fibre at depth k has at least
 counts and the exact residue-image bound. Kernel lemmas show that fibre
 partitions repeat in every aligned block, and certify 48 colliding starts
 per block at depth 16. Thus a uniformly small collision correction cannot
-repair the basin-packing comparison. Exceptional-component-specific bounds
-remain open. [Verification](results/inverse-fibre-growth/verification.json).
+repair the basin-packing comparison.
+[Verification](results/inverse-fibre-growth/verification.json).
+
+The [uniform branching result](APERIODIC-ATTEMPT.md#19-uniform-inverse-branching-within-every-unit-root-basin)
+strengthens this obstruction inside each fixed unit-root basin. Lean proves
+that every a not divisible by three has 2^h distinct positive unit ancestors
+at time 6h and weight h, with `3^h*n≤64^h*a`. Thus even a hypothetical
+exceptional component cannot have subexponential unrestricted fibre sizes.
+These trees also exist in the known basin of one; they do not give a
+lower bound on one forward orbit or prove convergence.
+[Fresh builds and replay](results/uniform-inverse-branching/verification.json).
+
+A [targeted review of openai/math](APERIODIC-ATTEMPT.md#18-methods-reviewed-from-the-openai-mathematics-collection)
+identifies collision-aware entropy accounting and scale-dependent trapping
+as methodological leads, and records their missing Collatz hypotheses.
+No theorem from that external collection is used as a proof dependency.
 
 ## The two unresolved possibilities
 

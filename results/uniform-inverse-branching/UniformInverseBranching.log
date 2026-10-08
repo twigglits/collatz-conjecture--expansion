@@ -1,0 +1,6 @@
+'UniformInverseBranching.child_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniformInverseBranching.children_distinct' depends on axioms: [propext, Quot.sound]
+'UniformInverseBranching.leaf_count' depends on axioms: [propext]
+'UniformInverseBranching.leaf_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniformInverseBranching.leaves_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UniformInverseBranching.leaf_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

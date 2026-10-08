@@ -1619,3 +1619,163 @@ nonconvergent component, weights that account for branching differently,
 or a different proof strategy. The large fibres exhibited here need not
 belong to any exceptional component. No new upper bound on such a
 component has been proved, and Collatz remains unresolved.
+
+## 18. Methods reviewed from the OpenAI mathematics collection
+
+On 8 October 2026 the user suggested [openai/math](https://github.com/openai/math).
+This is a targeted review, not an audit of the whole collection. Its README
+distinguishes verification stages. We inspected the catalogue, selected
+reasoning summaries, the entropy paper's introduction and strategy, the
+permanence paper's strategy, and associated formalization scope statements.
+No external theorem from this collection is a dependency of our proofs.
+
+**Account for collisions before counting growth.** The
+[self-similar entropy manuscript](https://github.com/openai/math/blob/main/preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/main.pdf),
+sections 1.1–1.2, groups word probabilities by their complete affine maps.
+It conditions blocks on symbol counts to fix contractions, and arranges
+disjoint scale windows so information gains can be added without reuse.
+These are methodological leads. Its hypotheses include contracting real
+similarities and an independent coding law; neither is supplied by ordinary
+Collatz iteration. Equality of maps is also different from equality of
+endpoints at different starting integers. Simply substituting a Collatz
+branch count into its dimension formula is unjustified.
+
+For our problem, the elementary identity
+`H(X)=H(U^k(X))+H(X | U^k(X))` for a finite random starting value X
+identifies the missing quantity exactly: the conditional information lost
+under iteration. Section 19 shows this loss can be linear in time inside
+the basin of **any** fixed unit root. An entropy approach must control this
+loss for its particular distribution and relate the remaining information
+to the **same set** used by the orbit-packing bound. Changing measures,
+conditioning on nonconvergence, or ignoring merged histories requires proof.
+
+**Seek scale-dependent trapping, with finite entry.** The
+[permanence manuscript](https://github.com/openai/math/blob/main/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/permanence.pdf),
+section 1.3, uses scale-dependent minima of affine functions, compact
+plateaux, strict progress outside a plateau, and passage between scales.
+The strictness relies on reaction-network structure and cannot be imported
+into Collatz. Its value here is the separation of three obligations:
+construct a trapping region, prove finite entry, then identify the possible
+limiting dynamics. For Collatz, boundedness alone still permits other cycles.
+
+Our potential analogue would use a height-dependent state description and
+variable return times. A useful certificate must exhibit a genuinely
+well-founded quantity and prove that every trajectory outside a verified
+base makes strict progress at a finite return time. Merely renaming the
+existing descent equivalence does not establish any of these estimates.
+Sections 8–15 already exclude several fixed local rank templates, while
+the coalescence-height result excludes a uniform sublogarithmic horizon.
+Those obstructions should be tested against each proposed construction
+before a large search.
+
+**Preserve the difficult estimate through every reduction.** The
+[two-point correlation summary](https://github.com/openai/math/blob/main/reasoning_traces/ordinary-two-point-correlations.pdf)
+repeatedly checks dependence introduced by conditioning, finite-interval
+versus independent-residue calculations, and the distinction between
+almost-all scales and every scale. These are directly relevant to our
+parity models: uniform finite residue statistics do not make one fixed
+infinite integer orbit a sequence of independent coin tosses. They also
+do not eliminate a sparse exceptional set.
+
+The [Vlasov–Maxwell summary](https://github.com/openai/math/blob/main/reasoning_traces/relativistic-vlasov-maxwell.pdf)
+uses proposed impulse and occupation estimates to force divergent total
+time for successive momentum doublings. The estimates, not just the
+continuation criterion, carry the substantive burden. For Collatz an
+analogue preventing infinitely many doublings in finite time would be
+insufficient: each finite iterate is already finite. We need to prevent
+unbounded growth over infinitely many discrete steps, or prove eventual
+entry into the known basin. The separate Navier–Stokes Millennium problem
+is still listed as [active by Clay](https://www.claymath.org/millennium/navier-stokes-equation/).
+
+**Verification scope.** The repository's
+[entropy scope](https://github.com/openai/math/blob/main/lean/docs/148.md)
+states coverage of its dimension theorem. The
+[mass-action scope](https://github.com/openai/math/blob/main/lean/docs/149.md)
+states an initial-state-dependent boundedness and persistence result;
+this is weaker than the common classwise absorbing set in the later
+permanence paper. Their comparator challenge files contain placeholder
+proofs by design; the accompanying JSON configurations point to separate
+solution modules. We inspected the statements and configurations but did
+not build those solution modules or independently validate the papers.
+Neither a scope label nor an unbuilt comparator configuration is a local
+kernel verification. The Kaplansky summary was also sampled for its
+assumption audits; no group-ring argument was adopted.
+
+## 19. Uniform inverse branching within every unit-root basin
+
+The collision issue from sections 16–17 persists even when the endpoint
+is fixed in advance, including a hypothetical nonconvergent endpoint.
+Here a **unit root** means a positive integer a with `3∤a`.
+
+For each such a choose the two exponents e in `{1,...,6}` satisfying
+`2^e*a ≡ 1 (mod 3)` and `2^e*a ≠ 1 (mod 9)`, and set
+\[
+ m_e=2^{6-e}\frac{2^e a-1}{3}=\frac{64a-2^{6-e}}3.
+\]
+Among the three exponents of the required parity exactly one is excluded
+modulo nine, since two has order six modulo nine. The integer
+`(2^e*a-1)/3` is positive and odd. Starting with `m_e`, the first `6-e`
+steps halve it; the next odd step reaches `2^(e-1)*a`; the remaining
+`e-1` steps halve to a. Thus `U^6(m_e)=a` with exactly one odd step.
+The two children are distinct, positive, not divisible by three, greater
+than a, and satisfy `3*m_e<64*a`.
+
+For `a=9q+r` the explicit children are `192q+d`:
+
+| r | first d | second d |
+|---|---|---|
+| 1 | 16 | 20 |
+| 2 | 32 | 40 |
+| 4 | 80 | 85 |
+| 5 | 104 | 106 |
+| 7 | 148 | 149 |
+| 8 | 160 | 170 |
+
+[UniformInverseBranching.lean](lean/UniformInverseBranching.lean) checks
+this table and lifts it to every quotient with the affine and weight
+identities. It recursively constructs a list L_h(a) with kernel proofs of
+\[
+ |L_h(a)|=2^h,\qquad L_h(a)\text{ has no duplicates},
+\]
+\[
+ n\in L_h(a)\Longrightarrow
+ n>0,\quad3\nmid n,\quad U^{6h}(n)=a,\quad
+ \operatorname{wt}(6h,n)=h,\quad3^h n\le64^h a.
+\]
+Distinct subtrees cannot overlap: applying `U^(6h)` to a shared leaf
+would identify their distinct parent roots. This is kernel proved along
+with the length, endpoint, weight and size statements. No `native_decide`
+or admitted proof is used. Printed dependencies are only the standard
+`propext`, `Classical.choice`, and `Quot.sound` axioms.
+
+**Written consequences.** For `a<3^h` all these leaves lie below
+`64^h=2^(6h)`, so the same conclusion eventually holds inside the zero
+aligned residue block for every fixed unit root. Its same-time,
+same-weight inverse-fibre size therefore grows at least as `2^h` along
+times `6h`. No bound subexponential in time, even with a root-dependent
+constant, can bound all these fibres. This is a lower bound, not an exact
+growth rate or a stronger claim than known inverse-basin density bounds.
+
+If a is nonconvergent, every leaf is nonconvergent as well: convergence
+of a leaf would imply convergence of its later iterate a. Any hypothetical
+positive counterexample eventually has an iterate not divisible by three:
+remove its finite initial halving run, and if the resulting odd value is
+divisible by three its next shortcut iterate is not. Hence restricting
+attention to exceptional components does not restore uniformly small
+fibre multiplicities. This supplements, rather than replaces, section 17's
+stronger generic worst-case exponential rate.
+
+Uniformly sampling L_h(a) gives `H(X)=h` bits, while `U^(6h)(X)=a` is
+constant. Thus `H(X | U^(6h)(X))=h` exactly. This elementary entropy
+corollary is written, not formalized. It concerns endpoint collisions,
+not the self-similar paper's equality of complete maps. The construction
+also works in the known basin of 1, so large inverse trees alone cannot
+give a contradiction or supply a lower bound for one forward orbit.
+
+The [independent replay](verify_uniform_inverse_branching.py) derives
+children from exponents rather than copying the table, checks 6,679
+roots, and checks 36,846 leaves across 18 trees at depths 0–10,
+including roots with more than 1,024 bits. Running the script also builds
+all three Lean modules from source into a fresh temporary directory.
+[Manifest and scope](results/uniform-inverse-branching/verification.json).
+Both nontrivial cycles and divergence remain unresolved.
