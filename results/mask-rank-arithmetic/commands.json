@@ -1,0 +1,59 @@
+{
+  "build_directory": "/tmp/collatz-mask-rank-zrl0r1_x",
+  "LEAN_PATH": "/tmp/collatz-mask-rank-zrl0r1_x",
+  "commands": [
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/CollatzCycleCriterion.olean",
+        "CollatzCycleCriterion.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.7575951820035698,
+      "log": "results/mask-rank-arithmetic/CollatzCycleCriterion.log",
+      "log_sha256": "88bbade2faeb94f73d3e50b2104d2db23b694f3135224279d17faa723fd7b484",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/CycleLocalLifts.olean",
+        "lean/CycleLocalLifts.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.3487033900019014,
+      "log": "results/mask-rank-arithmetic/CycleLocalLifts.log",
+      "log_sha256": "0683228247a99a1e57430cd4d4131c6403cc547416c4e8ee394b38e807dbb51f",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "/home/jeannaude/.elan/bin/lean",
+        "+leanprover/lean4:v4.33.1",
+        "-o",
+        "/tmp/collatz-mask-rank-zrl0r1_x/MaskRankArithmetic.olean",
+        "lean/MaskRankArithmetic.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.481437606998952,
+      "log": "results/mask-rank-arithmetic/MaskRankArithmetic.log",
+      "log_sha256": "1a96568bc1690264a085e5191adf9d1fc32ff07cbd834c94e39056149fea5a16",
+      "passed_without_warnings_or_admitted_proofs": true
+    },
+    {
+      "command": [
+        "python3",
+        "verify_mask_rank_arithmetic.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.503676717999042,
+      "log": "results/mask-rank-arithmetic/python-replay.json",
+      "log_sha256": "fc201af9ad24cecdcd24290a5bea2d8a077b2837b38a1af3d06ee70e0225f2e5",
+      "all_exact_checks_passed": true
+    }
+  ]
+}

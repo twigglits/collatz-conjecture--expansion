@@ -1,0 +1,147 @@
+{
+  "all_exact_checks_passed": true,
+  "noncritical_and_critical_count_pairs_k_through_80": 816,
+  "critical_count_pairs_k_through_512": 312,
+  "individual_rank_coefficients_checked_in_those_ranges": 42158,
+  "exhaustive_critical_pairs_k_through_36": [
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      7,
+      12
+    ],
+    [
+      8,
+      13
+    ],
+    [
+      11,
+      18
+    ],
+    [
+      13,
+      21
+    ],
+    [
+      14,
+      23
+    ],
+    [
+      17,
+      27
+    ],
+    [
+      18,
+      29
+    ],
+    [
+      19,
+      31
+    ],
+    [
+      21,
+      34
+    ],
+    [
+      22,
+      35
+    ],
+    [
+      23,
+      37
+    ],
+    [
+      27,
+      43
+    ],
+    [
+      28,
+      45
+    ],
+    [
+      29,
+      46
+    ],
+    [
+      31,
+      50
+    ],
+    [
+      32,
+      51
+    ],
+    [
+      33,
+      53
+    ]
+  ],
+  "exhaustive_masks_rejected": 30436,
+  "additional_selected_masks_rejected": 3272,
+  "mechanical_gcd_checks_k_through_200": 199,
+  "larger_counts": [
+    {
+      "k": 193,
+      "N": 306,
+      "s": 80,
+      "selected_masks_checked": 4
+    },
+    {
+      "k": 2966,
+      "N": 4701,
+      "s": 1231,
+      "selected_masks_checked": 4
+    }
+  ],
+  "small_prime_limitation": {
+    "k": 11,
+    "N": 18,
+    "D": 84997,
+    "modulus": 11,
+    "z_mod_11": 6,
+    "order_mod_11": 10,
+    "rank_selection": [
+      false,
+      true,
+      false,
+      true
+    ],
+    "word": [
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1
+    ],
+    "W": 817751,
+    "W_mod_11": 0,
+    "W_mod_D": 52778,
+    "digit_polynomial_at_6": 814,
+    "polynomial_degree": 3
+  },
+  "bounded_modulus_coverage": {
+    "moduli": [
+      2,
+      80
+    ],
+    "unit_sequences": 237,
+    "growth_stages": 9480
+  },
+  "seconds": 1.4575006480008597,
+  "scope": "Finite exact corroboration. The modular implications and exponent bridge are kernel checked separately. Full mechanical reindexing, the repeated-word gcd corollary, and bounded-modulus coverage are written arguments. No unrestricted all-period mask exclusion follows."
+}
