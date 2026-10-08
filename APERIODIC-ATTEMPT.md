@@ -706,3 +706,128 @@ It does not exclude a rank with different dependence on magnitude,
 unboundedly many features, orbit history, or a more general return rule.
 The rational fixed points in (22) generate finite positive growing
 segments, not positive cycles or infinite counterexamples.
+
+## 9. Coalescence induction and its finite-horizon limit
+
+For the shortcut map, define
+\[
+ W(n)\iff \exists\,0<m<n,\ a,b\ge0:\ U^a(n)=U^b(m).
+\]
+The Collatz conjecture is equivalent to \(W(n)\) for every \(n>1\).
+For the forward implication take \(m=1\). For the reverse implication,
+strong induction makes the smaller start converge, and the common point
+transfers convergence to the original start. The common point can exceed
+both starts. [CoalescenceDescent.lean](lean/CoalescenceDescent.lean) kernel
+checks the equivalence, including transfer between shortcut and ordinary
+iteration; it does not establish the universal premise.
+
+For a fixed binary modulus \(2^k\), equal-time images of two residues
+with the same odd-step count have the same affine slope. If
+\(0<s<r<2^k\), \(t\le k\), and
+\[
+ w_t(r)=w_t(s),\qquad U^t(r)=U^t(s),
+\]
+then every pair \(2^kq+r,2^kq+s\), \(q\ge0\), coalesces at time \(t\).
+The Lean checker combines this test with exact direct descent, including
+the additive term and the exceptional starts 0 and 1.
+
+At depth eight the combined test covers 240 of 256 infinite residue
+classes; direct descent alone covers 237. The additional classes are
+63, 207, and 223 modulo 256. For example,
+\[
+ U^8(256q+63)=U^8(256q+62)=729q+182.
+\]
+The kernel checks the complete finite table and proves that a least
+counterexample must have residue in
+\[
+ \{27,31,47,71,91,103,111,127,155,159,167,191,231,239,251,255\}
+ \pmod{256}.
+\]
+It also proves equivalence to establishing \(W(n)\) on those remaining
+infinite classes. This is a reduction, not their resolution. Independent
+Python enumeration at depths 12, 16, and 18 adds respectively 44, 394,
+and 1,391 classes beyond direct descent at the **same** depth. These
+larger counts are not kernel checked and do not supersede the existing
+depth-26 direct-descent certificate.
+
+### No fixed bound on either meeting time can suffice
+
+There is a stronger obstruction than the previously proved absence of
+a uniform direct-descent time. For every \(K\ge1\), choose a positive
+integer \(n\) with
+\[
+ n\equiv-1\pmod{2^K},\qquad n\equiv0\pmod{3^K}.       \tag{23}
+\]
+The Chinese remainder theorem supplies arbitrarily large such starts.
+Then
+\[
+ U^a(n)\ne U^b(m)
+ \quad(0<m<n,\ 0\le a,b\le K).                       \tag{24}
+\]
+Here is an all-horizon proof. Write \(w_t(x)\) for the odd-step count.
+Three elementary orbit inequalities are useful:
+\[
+\begin{aligned}
+ x<2^t Q&\ \Longrightarrow\ U^t(x)<3^{w_t(x)}Q,        &&\tag{25}\\
+ 3^{w_t(x)}(x+1)&\le2^t(U^t(x)+1),                    &&\tag{26}\\
+ 2^t(U^t(x)+1)&\le3^{w_t(x)}x+3^t.                   &&\tag{27}
+\end{aligned}
+\]
+For (25), induct on \(t\): an even first step replaces the bound by
+\(2^{t-1}Q\), an odd first step by \(2^{t-1}(3Q)\).
+For (26), each odd step satisfies \(2(U(x)+1)=3(x+1)\),
+and each even step satisfies \(2(U(x)+1)\ge x+1\).
+For (27), the additive numerator of any length-\(t\) branch word is
+at most \(3^t-2^t\), attained by the all-odd word. Induction proves
+this using \(w_t(x)\le t\).
+
+The first \(K\) steps from (23) are odd, so
+\[
+ 2^a(U^a(n)+1)=3^a(n+1).                              \tag{28}
+\]
+Suppose \(U^b(m)=U^a(n)\). If \(b<a\), (27) implies
+\(U^b(m)+1\le(3/2)^b(m+1)<(3/2)^a(n+1)\), a contradiction.
+Otherwise write \(b=c+a\), set
+\[
+ z=U^c(m),\quad i=w_c(m),\quad h=w_a(z),\quad
+ n=3^i q,\quad T=3^{a-h}q.
+\]
+Here \(i\le c\le K\), so the integer \(q\) exists by (23), and
+\(h\le a\). Combining (27) on the suffix with (28) yields
+\[
+ 3^h z\ge3^a n,\qquad z\ge3^iT.
+\]
+The contrapositive of (25) on the prefix gives \(m\ge2^cT\).
+Put \(A=3^{i+h}\) and \(B=2^c3^a\). Since \(A2^cT=Bn\),
+we have \(Am\ge Bn\). Applying (26) successively to the prefix
+and suffix also gives \(A(m+1)\le B(n+1)\). Subtraction yields
+\(A\le B\). Therefore
+\[
+ Am\ge Bn\ge An,
+\]
+and \(m\ge n\), again a contradiction. This proves (24).
+
+All three inequalities and the complete no-uniform-coalescence-horizon
+theorem are kernel checked in the Lean module. Its existence proof avoids
+an external CRT dependency: start with \(n_0=3\) and set
+\(n_{j+1}=(n_j+1)^3-1=n_j(n_j^2+3n_j+3)\).
+Induction gives \(2^{j+1}\mid n_j+1\) and \(3^{j+1}\mid n_j\),
+with \(n_j>1\). These witnesses suffice for every horizon; the replay
+uses smaller CRT representatives for efficiency. The kernel proofs use
+no admitted claims, native evaluation, or new axioms.
+
+The proof addresses arbitrary smaller positive starts and unequal meeting
+times, not only the equal-weight residue pairing used by the finite checker.
+It does not assert that the chosen starts never merge or converge.
+The horizon increases along with the chosen start; exchanging these
+quantifiers would be invalid. A universal coalescence proof therefore
+requires an unbounded, start-dependent search or a different global argument.
+
+[verify_coalescence.py](verify_coalescence.py) independently enumerates
+every inverse branch through depth 24 at every permitted forward image
+of one CRT start for each horizon 1 through 24. It checks 716,286 inverse
+nodes and finds no smaller meeting start. It also checks 571,137 exact
+shifted-start identities. These computations are finite support for the
+implementation; the all-horizon conclusion has the universal kernel proof.
+The [verification record](results/coalescence/verification.json) records
+source hashes, build commands, logs, and the distinct verification scopes.

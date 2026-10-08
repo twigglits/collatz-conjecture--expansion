@@ -1,0 +1,176 @@
+{
+  "checked_utc": "2026-10-08T11:22:09.311470+00:00",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": {
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/CoalescenceDescent.lean": "661eaa09f67e61ed65bb9ee3593b8d5a6a9c8b829e6c9efd809f19d892b2cbe7",
+    "verify_coalescence.py": "f00c23ae92b5957e26645f76511942b89ed3bf6bf34a62493377fb653c2d220a",
+    "APERIODIC-ATTEMPT.md": "0a8e489f9d16719fff26994f98578d1c9d6f0c0d0569175e7145843f35e53e42",
+    "ATTEMPT.md": "68dd418e9bac7b7ee065a7f261a6f602d7dea46561d7bd5f281231a1e0d7ad85",
+    "MEMORY.md": "6500668f34bd2fd773c547967e3264767fceda0ae5c0b37ac612e212afe390a1",
+    "README.md": "7a700ec6b5c2b6947a5488b9dff54248a2ca5b74cf44642b902d4b862a2dff2a"
+  },
+  "environment": {
+    "LEAN_PATH": "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-final-v55buef3"
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-final-v55buef3/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.5263099169824272,
+      "log": "results/coalescence/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-final-v55buef3/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1014719999511726,
+      "log": "results/coalescence/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-final-v55buef3/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5102205830044113,
+      "log": "results/coalescence/CollatzGrowth.log",
+      "log_sha256": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-final-v55buef3/CoalescenceDescent.olean",
+        "lean/CoalescenceDescent.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.397871416993439,
+      "log": "results/coalescence/CoalescenceDescent.log",
+      "log_sha256": "4051d1afe7cb472f05a44e57eaa994bb6e98d577cce9a135a44068ecce0c6b71"
+    },
+    {
+      "command": [
+        "python3",
+        "verify_coalescence.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.031312416947912,
+      "log": "results/coalescence/replay.json",
+      "log_sha256": "0c0c0bee3b35634be66dc9a2766d2527450b27801196b9b7731634e68dba318e"
+    }
+  ],
+  "kernel_scope": [
+    "Equivalence of the positive Collatz conjecture and coalescence with a smaller positive start.",
+    "Transfer of convergence between coalescing orbits, including unequal meeting times.",
+    "Sound affine residue certificates for direct descent and equal-time equal-weight merging.",
+    "Complete depth-eight table, soundness outside its 16 residual classes, and equivalent residual universal claim.",
+    "Discrete orbit bound and upper and lower affine additive bounds.",
+    "Universal exclusion of smaller coalescing starts at bounded times on the stated 2-adic and 3-adic classes.",
+    "Constructive existence of starts with the needed divisibilities for every horizon.",
+    "No uniform finite bound on both meeting times, allowing arbitrary smaller natural starts and unequal times."
+  ],
+  "kernel_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "admitted_proofs": false,
+  "native_evaluation": false,
+  "finite_scope": {
+    "depth_eight_exact_lift_checks": 1198,
+    "coverage": [
+      {
+        "depth": 8,
+        "total": 256,
+        "direct": 237,
+        "merging": 129,
+        "covered": 240,
+        "additional": 3,
+        "remaining": 16,
+        "residuals": [
+          27,
+          31,
+          47,
+          71,
+          91,
+          103,
+          111,
+          127,
+          155,
+          159,
+          167,
+          191,
+          231,
+          239,
+          251,
+          255
+        ],
+        "additional_residues": [
+          63,
+          207,
+          223
+        ],
+        "exact_lift_checks": 1198
+      },
+      {
+        "depth": 12,
+        "total": 4096,
+        "direct": 3870,
+        "merging": 2561,
+        "covered": 3914,
+        "additional": 44,
+        "remaining": 182
+      },
+      {
+        "depth": 16,
+        "total": 65536,
+        "direct": 63422,
+        "merging": 46261,
+        "covered": 63816,
+        "additional": 394,
+        "remaining": 1720
+      },
+      {
+        "depth": 18,
+        "total": 262144,
+        "direct": 254649,
+        "merging": 193309,
+        "covered": 256040,
+        "additional": 1391,
+        "remaining": 6104
+      }
+    ],
+    "inverse_horizons": [
+      1,
+      24
+    ],
+    "inverse_nodes": 716286,
+    "shifted_start_checks": 571137,
+    "note": "Depth-eight coverage is also kernel checked. Coverage at depths 12,16,18 and inverse-tree replays are independent Python checks."
+  },
+  "limitations": [
+    "No proof of the residual universal coalescence premise.",
+    "The no-uniform-horizon witnesses depend on the horizon; no single nonconvergent orbit follows.",
+    "A finite table cannot establish this induction principle for all positive starts.",
+    "Neither nontrivial positive cycles nor arbitrary divergent orbits have been excluded."
+  ],
+  "all_checks_passed": true,
+  "conjecture_status": "Unresolved; full objective remains active."
+}

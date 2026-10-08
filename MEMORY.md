@@ -1,7 +1,7 @@
 # Collatz project memory
 
-Last updated: 2026-09-13, after the mask rank arithmetic verification and the
-user's request to preserve project context.
+Last updated: 2026-10-08, after the coalescence induction and universal
+finite-horizon obstruction were kernel checked.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -230,3 +230,58 @@ Repository-level AGENTS.md discovery is documented in
 [the official OpenAI instructions guide](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 This is explicit file-based project memory, not a claim that a separate
 account-level memory service was updated.
+
+## 2026-10-08 update: current workspace and coalescence
+
+The September environment and latest-result descriptions above are historical.
+The current workspace is `/Users/jean/Personal/collatz-conjecture--expansion`,
+macOS with zsh and the same Lean 4.33.1 pin. The user pulled remote research;
+merge commit `23e746a` integrated it. The requested conflict check found no
+unmerged index entries or conflict markers. Preserve untracked `.DS_Store`
+and `CLAUDE.md`; the latter prohibits Git writes without explicit consent.
+No staging or committing was performed during this work.
+
+[CoalescenceDescent.lean](lean/CoalescenceDescent.lean) now kernel proves:
+
+- Convergence is equivalent to every `n>1` meeting an orbit from some
+  `0<m<n`, with potentially different meeting times. Strong induction
+  transfers convergence from the smaller start.
+- Exact affine certificate soundness, combining direct descent and
+  equal-time/equal-weight merging of residue classes.
+- The complete depth-eight table covers 240/256 classes, compared with
+  237 for direct descent alone. New residues are 63, 207, and 223.
+  A least counterexample must belong to the remaining 16 residue classes
+  listed in Section 9 of APERIODIC-ATTEMPT.md.
+- For every fixed horizon K there is a start above one that cannot meet
+  any smaller natural start within K steps on either orbit. The theorem
+  allows unequal times and is a universal kernel proof, not an inference
+  from finite testing. It does not provide one orbit that never merges.
+
+The key obstruction uses `2^K | n+1` and `3^K | n`. For a hypothetical
+meeting `U^(c+a)(m)=U^a(n)`, split the smaller orbit into a prefix with
+odd weight i and a suffix with odd weight h. The suffix's maximal additive
+bound and exact all-odd growth force its start to be at least
+`3^(a-h)*n`. Divisibility by `3^i` and the discrete orbit bound then pull
+this back to `m >= 2^c*T`. The lower additive bound yields `A <= B`, where
+`A=3^(i+h)` and `B=2^c*3^a`, and therefore `m>=n`.
+The formal existence proof recursively cubes `n+1`, starting at n=3,
+to increase both divisibilities. No CRT library or outside theorem is needed.
+
+[verify_coalescence.py](verify_coalescence.py) independently checks 1,198
+large and small lifts of the depth-eight certificates. At depths 12, 16,
+and 18, coalescence adds 44, 394, and 1,391 classes respectively beyond
+direct descent at the same depth. These larger counts are Python-only.
+An exhaustive inverse-tree replay for horizons 1 through 24 checks 716,286
+nodes and 571,137 shifted-start identities. All passed.
+
+Reproduction and hashes are in
+[results/coalescence/verification.json](results/coalescence/verification.json).
+Build CollatzAffine, CollatzContradiction, and CollatzGrowth into LEAN_PATH
+before building the new module. No admitted proofs or native evaluation
+are used in this module. The universal Collatz claim is still unresolved.
+
+The immediate research implication is that coalescence is a sound broader
+induction tool, but a fixed bound on both orbit lengths cannot close it.
+Further work must give a genuinely start-dependent argument or another
+global constraint. Do not mistake the 16 remaining residue labels for
+a finite set of unresolved integers.

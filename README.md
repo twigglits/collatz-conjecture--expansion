@@ -29,6 +29,7 @@ Performance timings are explicitly identified as empirical measurements.
 |---|---|
 | `CollatzContradiction.lean` | Kernel-checked equivalence of universal descent and convergence, least-counterexample restrictions modulo 48, and ordinary/shortcut correspondence |
 | `CollatzGrowth.lean` | Kernel-checked arbitrarily long initial growth and obstruction to a uniform finite descent horizon |
+| `lean/CoalescenceDescent.lean` | Kernel coalescence induction, depth-eight residue certificates, and impossibility of a uniform bound on both meeting times; [verification](results/coalescence/verification.json) |
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
 | `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |

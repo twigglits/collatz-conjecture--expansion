@@ -594,6 +594,30 @@ held fixed can strictly decrease at every step outside a finite set.
 This eliminates that class of ranking attempts, without excluding
 more general ranks or proving convergence.
 
+## Coalescence induction and an unbounded horizon
+
+[CoalescenceDescent.lean](lean/CoalescenceDescent.lean) proves that Collatz
+is equivalent to every start above 1 sharing an iterate with a smaller
+positive start, allowing different times on the two orbits. This extends
+the available induction certificates beyond direct descent. At depth eight,
+the kernel verifies 240 of 256 residue classes, including three additional
+classes obtained by coalescence. Sixteen infinite classes remain; the
+reduction does not prove convergence for them.
+
+The same module proves a universal limitation: **for every fixed horizon,
+some positive start cannot meet any smaller start within that many steps
+on either orbit.** This includes unequal meeting times and arbitrary
+smaller positive starts. The proof uses starts that are -1 modulo a large
+power of 2 and 0 modulo a corresponding power of 3. It does not construct
+an orbit that fails to converge; the chosen start depends on the horizon.
+
+The [argument and remaining classes](APERIODIC-ATTEMPT.md#9-coalescence-induction-and-its-finite-horizon-limit)
+and [verification record](results/coalescence/verification.json) separate
+the universal kernel theorems, the kernel depth-eight table, and independent
+Python checks at larger depths. A universal coalescence proof still needs
+an unbounded, start-dependent argument; expanding a fixed table cannot
+settle the conjecture by itself.
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
