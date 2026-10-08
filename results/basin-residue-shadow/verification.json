@@ -1,0 +1,81 @@
+{
+  "verified_at_utc": "2026-10-08T14:10:42.213697+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "A prefix containing an odd step ends at a root coprime to three",
+    "Exact power equality transports a residue-cylinder member to its prescribed root",
+    "The construction preserves residue modulo 2^k*3^b and prefix weight",
+    "A forward-closed set containing the cylinder captures each root with such a power equality"
+  ],
+  "written_scope": [
+    "Elementary induction proves powers of two run through all units modulo every power of three",
+    "Every unit-root inverse basin meets every residue class modulo 2^A*3^B infinitely often",
+    "An entire positive residue class converges if and only if all positive integers converge",
+    "If a counterexample exists, both convergent and nonconvergent starts meet every such class"
+  ],
+  "not_proved": [
+    "Full Collatz conjecture",
+    "Kernel formalization of the universal modular lifting/existence theorem",
+    "A quantitative small-ancestor bound adequate for descent",
+    "A scale-dependent trapping certificate"
+  ],
+  "replay_summary": {
+    "all_checks_passed": true,
+    "ancestor_checks": 3276,
+    "modular_lift_checks": 2184,
+    "roots": 4,
+    "A_range": [
+      0,
+      5
+    ],
+    "B_range": [
+      0,
+      2
+    ],
+    "max_ancestor_bits": 39098,
+    "max_halving_tail": 39100
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-residue-shadow-4g9eokw9/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/basin-residue-shadow/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-residue-shadow-4g9eokw9/InverseFibreGrowth.olean",
+        "lean/InverseFibreGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/basin-residue-shadow/InverseFibreGrowth.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-residue-shadow-4g9eokw9/BasinResidueShadow.olean",
+        "lean/BasinResidueShadow.lean"
+      ],
+      "returncode": 0,
+      "log": "results/basin-residue-shadow/BasinResidueShadow.log"
+    }
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/InverseFibreGrowth.lean": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+    "lean/BasinResidueShadow.lean": "828f6505b38cfd3dde3b0263fc1d95290f23b8b04dcb8a6cb43e7cbab6fb297f",
+    "verify_basin_residue_shadow.py": "67384df66c625abefdbda7dca59bd3af61ac83c2f6cfa102c9e7511635512a4d",
+    "results/basin-residue-shadow/replay.json": "6c47e6fb9876c819d6ff6ded7a7f011114be931effa74b87dda2d97cef318a08",
+    "results/basin-residue-shadow/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/basin-residue-shadow/InverseFibreGrowth.log": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560",
+    "results/basin-residue-shadow/BasinResidueShadow.log": "dc03786fbbfad0e527ea057ec735463bdd48a751e2075e37847d7a0876731a79"
+  }
+}

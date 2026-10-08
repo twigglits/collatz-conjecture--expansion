@@ -1779,3 +1779,127 @@ including roots with more than 1,024 bits. Running the script also builds
 all three Lean modules from source into a fresh temporary directory.
 [Manifest and scope](results/uniform-inverse-branching/verification.json).
 Both nontrivial cycles and divergence remain unresolved.
+
+## 20. Every unit-root basin meets every mixed residue cylinder
+
+Before searching for a scale-dependent trapping certificate, we checked
+what fixed residue information can distinguish. The following is a
+**written theorem**, with its arithmetic transport lemmas kernel checked
+separately. No novelty claim is made.
+
+**Theorem.** Fix a positive integer a with `3∤a`. For every A,B≥0,
+every residue r modulo `M=2^A*3^B`, and every height H, there is an
+integer N>H such that
+\[
+ N\equiv r\pmod M,\qquad U^t(N)=a\quad\text{for some }t\ge0.
+\]
+Thus each such inverse basin has infinitely many members in every mixed
+residue class. This is topological density in the congruence sense, not
+positive natural density or an interval-count estimate.
+
+### Elementary power lifting
+
+For every J≥1 the powers of two run through all units modulo `3^J`.
+Here is an explicit proof, so no unverified external input is needed.
+Inductively,
+\[
+ 4^{3^s}=1+3^{s+1}c_s,\qquad c_s\equiv1\pmod3.
+\]
+The base has c_0=1. Cubing gives
+\[
+ c_{s+1}=c_s+3^{s+1}c_s^2+3^{2s+1}c_s^3,
+\]
+which preserves the congruence. Put `T_J=2*3^(J-1)`. Then
+\[
+ 2^{T_J}\equiv1+3^J c_{J-1}\pmod{3^{J+1}}.
+\]
+Suppose `a*2^e≡y (mod 3^J)` with a,y units. The three candidates
+`e+d*T_J`, d=0,1,2, give all three lifts of this residue modulo
+`3^(J+1)`, since their difference coefficients
+`a*2^e*c_(J-1)` are units modulo three. Start with e=0 or 1 modulo
+three, and choose the unique lift at each stage. This proves that some
+`0≤e<T_J` satisfies `a*2^e≡y (mod 3^J)`.
+Also `2^T_J≡1 (mod 3^J)`, so adding arbitrary multiples of T_J to e
+preserves the congruence while making `a*2^e` arbitrarily large.
+
+### Constructing the ancestor
+
+Choose any positive representative n of r modulo M, and choose k≥A
+with `n<2^k`. Let `j=wt(k,n)` and `y=U^k(n)`.
+There must be an odd step among these k steps: otherwise `2^k` would
+divide the positive integer n<2^k. Thus j≥1. An odd shortcut step
+ends at a unit modulo three, and all subsequent steps preserve that
+property, so `3∤y`.
+
+Apply power lifting at J=j+B and choose e sufficiently large that
+\[
+ Q=\frac{a2^e-y}{3^{j+B}}
+\]
+is a positive integer. Define
+\[
+ N=2^k3^B Q+n.
+\]
+Then N≡r modulo M, and the affine identity gives
+\[
+ U^k(N)=3^j(3^BQ)+y=a2^e,\qquad U^{k+e}(N)=a.
+\]
+Taking larger exponents in the same progression makes N arbitrarily
+large, proving the theorem. In fact N has exactly the same first k
+parity bits as n, since N≡n modulo `2^k`. The construction can preserve
+any prescribed finite parity prefix while directing the later orbit to
+any prescribed positive unit root.
+
+[BasinResidueShadow.lean](lean/BasinResidueShadow.lean) kernel-proves
+unit preservation, the unit endpoint after a positive-weight prefix,
+the displayed endpoint and residue identities **given the power
+equality**, preservation of the prefix weight, and transport into a
+forward-closed set containing the cylinder. It does not formalize the
+universal power-lifting existence argument above; no such assertion is
+hidden in an axiom or admitted proof. Its printed dependencies are only
+`propext` and `Quot.sound`.
+
+### A one-class convergence criterion, and its limitation
+
+Fix any A,B,r and any H. The assertion
+\[
+ \text{every }N>H\text{ with }N\equiv r\pmod{2^A3^B}
+ \text{ eventually reaches 1}
+\]
+is equivalent to the full positive-integer Collatz conjecture.
+The forward implication follows by constructing, for each positive
+unit root a, such an N with a later iterate equal to a. A later iterate
+of a convergent orbit also converges: if it occurs after the first visit
+to 1 it is already in the shortcut cycle `{1,2}`. Every positive start
+has a unit iterate, since its finite initial halving run reaches an odd
+integer and the next odd step, if needed, reaches a unit. Therefore all
+positive starts converge. The converse is immediate.
+
+Equivalently, if even one positive counterexample exists, it has a unit
+iterate a. The theorem supplies nonconvergent ancestors of a in every
+mixed residue class and above every height. Taking a=1 supplies
+convergent starts there as well. Fixed congruence information alone
+cannot separate these two possible outcomes, even after finitely many
+exceptions are removed. This does not prohibit residue-based **descent**
+certificates: those establish progress to a smaller positive integer,
+not unconditional convergence of an entire class.
+
+This gives a potential sufficient target—a whole tail of one favorable
+residue class—but does not establish it. In particular, topological
+density cannot replace the missing quantitative estimate. The lifted
+exponent can be comparable to `3^(j+B)`, and the resulting ancestor
+can be far larger than the root. It need not contradict a least
+counterexample or meet an absorbing region. A useful scale-dependent
+certificate must supply size control or strict progress in addition to
+residue compatibility; the construction does not rule out such a
+certificate.
+
+The [independent replay](verify_basin_residue_shadow.py) constructs
+3,276 ancestors across all classes with 0≤A≤5 and 0≤B≤2, for four
+unit roots including `2^128+1`. It checks exact parity prefixes, residues,
+and the endpoint before the pure-halving tail. It also checks 2,184
+power lifts exhaustively through modulus `3^6`. The largest constructed
+ancestor has 39,098 bits. No assumption about convergence of the chosen
+targets enters these checks. Three fresh Lean builds pass.
+[Verification scope and hashes](results/basin-residue-shadow/verification.json).
+The universal density and one-class equivalence remain written results.
+Collatz itself and a quantitative trapping certificate remain unresolved.

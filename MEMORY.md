@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-08, after the OpenAI math review and uniform inverse branching.
+Last updated: 2026-10-08, after the mixed-residue inverse-basin construction.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -653,3 +653,44 @@ Local merge audit at this point: HEAD7590f75, tracked tree initially clean,
 no unmerged index entries, no MERGE_HEAD, and no conflict markers found
 in the source/document scan. `.DS_Store` and `CLAUDE.md` were untracked
 and were preserved. No staging, commits, pull or other Git mutations.
+
+## 2026-10-08: residue shadows and the scale-dependent certificate gap
+
+The previous goal turn was progress: universal binary inverse trees were
+kernel verified. This turn examined what finite residue information can
+contribute to the proposed variable-return trapping approach.
+
+APERIODIC section 20 proves in writing that every positive unit root a
+has arbitrarily large ancestors in every residue class modulo `2^A*3^B`.
+Choose positive n in the class and k≥A with n<2^k. Then j=wt(k,n)>0
+and y=U^k(n) is coprime to three. Solve a2^e≡y mod3^(j+B), increase e by
+period `2*3^(j+B−1)` until Q=(a2^e−y)/3^(j+B)>0, and put
+N=2^k3^B Q+n. The affine identity gives U^k(N)=a2^e, hence
+U^(k+e)(N)=a; increasing e gives arbitrarily large N. A full elementary
+modular-lifting proof is included via `4^(3^s)=1+3^(s+1)c_s`, with `c_s≡1 (mod 3)`.
+
+Consequently, convergence of all sufficiently large members of ANY one
+fixed mixed residue class would imply full Collatz. If a counterexample
+exists, both convergent and nonconvergent starts occur arbitrarily high
+in every class. This is congruence/topological density, not positive
+natural density. It does not refute whole-class descent certificates or
+scale-dependent arithmetic certificates. The ancestors can be enormous;
+no smaller predecessor or quantitative trapping estimate follows.
+
+`lean/BasinResidueShadow.lean` proves unit preservation and the exact
+transport identities conditional on the displayed power equality, plus
+capture by a forward-closed set containing that cylinder. Universal power
+lifting, density and the one-class equivalence are WRITTEN, not kernel
+proved. No admitted theorem/extra axiom supplies existence.
+
+`python3 verify_basin_residue_shadow.py` passed 3,276 ancestor checks,
+2,184 modular lifts and three fresh Lean builds. Four unit roots include
+2^128+1; all residue classes with A=0..5 and B=0..2 are checked. Largest constructed
+ancestor: 39,098 bits. Pure-halving tails use the separately kernel-proved
+identity rather than enumerating every halving. Manifest:
+`results/basin-residue-shadow/verification.json`.
+
+Next research still requires an actual size-sensitive progress estimate
+for variable return times. Repeating the density argument or merely
+restating a descent equivalence would not supply that estimate. Both
+nontrivial cycles and divergent orbits remain unresolved; goal active.

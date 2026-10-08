@@ -715,6 +715,16 @@ identifies collision-aware entropy accounting and scale-dependent trapping
 as methodological leads, and records their missing Collatz hypotheses.
 No theorem from that external collection is used as a proof dependency.
 
+The subsequent [mixed-residue construction](APERIODIC-ATTEMPT.md#20-every-unit-root-basin-meets-every-mixed-residue-cylinder)
+shows, in a written proof, that the inverse basin of every root coprime
+to three has arbitrarily large members in every residue class modulo
+`2^A*3^B`. Hence convergence of an entire tail of even one such class
+would imply the full conjecture. If a counterexample exists, every class
+instead has both convergent and nonconvergent starts. Lean verifies the
+conditional arithmetic transport; the universal modular lifting is
+written. This gives no sufficiently small predecessor or trapping bound.
+[Verification](results/basin-residue-shadow/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an

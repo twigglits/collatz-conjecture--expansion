@@ -39,6 +39,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `lean/InverseBasinAudit.lean` | Kernel basin classification at multiples of three, collisions at other roots, and chain restriction for injective forward-closed basin subsets; [verification and literature-audit scope](results/inverse-basin-audit/verification.json) |
 | `lean/InverseFibreGrowth.lean` | Kernel same-weight fibre translation and 48 colliding residues in every aligned block; written exponential multiplicity lower bound and [verification](results/inverse-fibre-growth/verification.json) |
 | `lean/UniformInverseBranching.lean` | Kernel binary inverse trees for every root coprime to three: 2^h distinct leaves with time 6h, weight h and explicit height bound; [verification](results/uniform-inverse-branching/verification.json) |
+| `lean/BasinResidueShadow.lean` | Kernel conditional arithmetic transport into mixed residue cylinders; written inverse-basin density and one-class convergence criterion; [verification](results/basin-residue-shadow/verification.json) |
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
 | `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |

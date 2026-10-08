@@ -1,0 +1,3 @@
+'BasinResidueShadow.positive_weight_unit' depends on axioms: [propext, Quot.sound]
+'BasinResidueShadow.shadow' depends on axioms: [propext, Quot.sound]
+'BasinResidueShadow.class_captures_root' depends on axioms: [propext, Quot.sound]
