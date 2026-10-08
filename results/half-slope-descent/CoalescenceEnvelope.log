@@ -1,0 +1,8 @@
+'CoalescenceEnvelope.weight_add' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.longer_envelope' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.shorter_envelope' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.crt_envelope' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.slope_ge_one' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.two_pow_ne_three_pow' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.adjacent_transfer' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnvelope.conjecture_of_graph_rank' depends on axioms: [propext, Quot.sound]

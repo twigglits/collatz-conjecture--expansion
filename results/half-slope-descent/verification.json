@@ -1,0 +1,127 @@
+{
+  "verified_at_utc": "2026-10-08T14:59:58.566662+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_scope": [
+    "Prefix bound 3*2^k*U^k(n) <= 3^w*(3*n+2*w) before the first half crossing",
+    "A first half crossing with 2*w<3*n gives actual descent",
+    "Any half crossing by time n gives descent no later than the supplied crossing time",
+    "A global crossing certificate beyond a convergent finite base would imply Collatz",
+    "Exact 27 certificate at time 65 and necessity of a budget illustrated by the cycle of one"
+  ],
+  "not_proved": [
+    "Existence of a suitably early crossing for every positive start",
+    "A universal logarithmic return-time bound",
+    "Terras first-coefficient-stopping-time conjecture",
+    "Full Collatz conjecture"
+  ],
+  "replay_summary": {
+    "all_arithmetic_checks_passed": true,
+    "universal_crossing_proved": false,
+    "interval": [
+      1,
+      32768
+    ],
+    "interval_crossings": 32768,
+    "family_depth_range": [
+      1,
+      512
+    ],
+    "family_cases": 3072,
+    "family_crossings": 3072,
+    "unresolved": [],
+    "interval_budget_failure_starts": [
+      "1"
+    ],
+    "interval_linear_time_failure_starts": [
+      "1",
+      "3",
+      "7",
+      "27",
+      "31",
+      "41",
+      "47",
+      "55"
+    ],
+    "family_budget_failure_count": 0,
+    "family_linear_time_failure_count": 5
+  },
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/CollatzAffine.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/CollatzContradiction.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/CollatzGrowth.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/CoalescenceDescent.olean",
+        "lean/CoalescenceDescent.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/CoalescenceDescent.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/CoalescenceEnvelope.olean",
+        "lean/CoalescenceEnvelope.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/CoalescenceEnvelope.log"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-half-slope-yw3esxp4/HalfSlopeDescent.olean",
+        "lean/HalfSlopeDescent.lean"
+      ],
+      "returncode": 0,
+      "log": "results/half-slope-descent/HalfSlopeDescent.log"
+    }
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/CoalescenceDescent.lean": "661eaa09f67e61ed65bb9ee3593b8d5a6a9c8b829e6c9efd809f19d892b2cbe7",
+    "lean/CoalescenceEnvelope.lean": "352fc48428f7c5d499d76870cf53bb62bdf2a61a5bf577ef2bce24894cc3280a",
+    "lean/HalfSlopeDescent.lean": "0776a92825cf45ea2fb9b263e8f03ab2f62ecf53755db386f3b4eb3699008154",
+    "verify_half_slope_descent.py": "34f003f1f16c30c4d11da8ed93ccf84fdbef446cb65c7f0b83bd3f418cc40dbb",
+    "results/half-slope-descent/replay.json": "f5ff37055d44b1c23cbe48b9c8a6b92520dbdf997b44185cde167eed532d0d9d",
+    "results/half-slope-descent/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/half-slope-descent/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/half-slope-descent/CollatzGrowth.log": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498",
+    "results/half-slope-descent/CoalescenceDescent.log": "4051d1afe7cb472f05a44e57eaa994bb6e98d577cce9a135a44068ecce0c6b71",
+    "results/half-slope-descent/CoalescenceEnvelope.log": "916a42f72fc7161bbe0dd8717a91c55ac9f63058dc367b180d59aca3f79bfd2a",
+    "results/half-slope-descent/HalfSlopeDescent.log": "01346d3d324a83026a5c999fb0596d486ed7fa19b0f191df25e724799d5385c9"
+  }
+}

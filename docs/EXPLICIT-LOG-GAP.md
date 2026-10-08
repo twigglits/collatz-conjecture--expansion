@@ -12,7 +12,7 @@ one has
  \boxed{\lambda>N^{-21/5}.}                               \tag{1}
 \]
 This is a bound for the displayed two-logarithm form in this cone of
-coefficients, not a replacement for the general Wu–Wang theorem.
+coefficients, not a linear-independence measure for \(1,\log2,\log3\).
 The integrals and the argument for all indices are written proofs.
 The identified finite arithmetic is checked in
 [ExplicitLogConstants.lean](../lean/ExplicitLogConstants.lean).
@@ -447,6 +447,23 @@ With the same external small-period input, neither independent-edit
 family can realize a nontrivial primitive positive integer cycle at
 any period. These are full family exclusions, not bounds on the number
 of selected edits. The unrestricted \(21\to12\) family remains unresolved.
+
+**Why this counting route stops here (2026-10-08).** The unrestricted
+family chooses 2 selection bits in each of the \(a=7N-11k\) short blocks
+and 3 in each of the \(b=8k-5N\) long blocks of
+[MASK-DENSITY.md](MASK-DENSITY.md). Its factor catalog can therefore grow
+like \(2^{hm}\), with
+\[
+ h=2(7-11\rho)+3(8\rho-5)\to0.26186\qquad(\rho\to\log_32).
+\]
+A height bound \(\lambda\ge N^{-c}\) gives \(m\approx(1+c)\log_2N\), so the
+distinct-factor argument can exclude the whole family only if
+\((1+c)h<1\), that is \(c<2.8188\). Equivalently it needs an effective
+irrationality exponent \(\mu(\log_23)<3.8188\). Bound (1) has \(c=21/5\)
+and excludes only empirical entropy below \(5/26\approx0.1923\). No known
+effective estimate for \(\log_23\) comes close to \(c<2.82\), so closing the
+family this way needs a substantially new Diophantine input, not tighter
+constants.
 
 ## 9. Transfer to arbitrary cycles
 

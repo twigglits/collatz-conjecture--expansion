@@ -12,9 +12,10 @@ integer cycle, then
  \boxed{N\ge\max(H_0,2^{2048})
  \quad\Longrightarrow\quad q>\frac{N}{24\log_2N}.}            \tag{1}
 \]
-The constant \(H_0\) is the same effective, not yet numerical, Wu–Wang
-threshold used in the preceding note. In particular, all masks with no
-cyclic halving-\(11\) are eventually excluded. More generally a sequence of
+The constant \(H_0\) is the threshold of the logarithm bound in the
+preceding note, which was misattributed to Wu–Wang (see the correction
+there). In particular, all masks with no cyclic halving-\(11\) are
+eventually excluded. More generally a sequence of
 such integer cycles with \(q=o(N/\log N)\) is impossible.
 
 The later [explicit logarithm argument](EXPLICIT-LOG-GAP.md) removes this

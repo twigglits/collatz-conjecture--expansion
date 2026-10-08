@@ -2147,3 +2147,92 @@ are written results with finite replay support. These results rule
 out fixed depth as a universal remedy. They do not settle whether a
 size-dependent unbounded search always succeeds. Both nontrivial
 positive cycles and divergent orbits remain unresolved.
+
+## 23. A half-multiplier margin that guarantees actual descent
+
+The scale-dependent trapping suggestion in section 18 needs a quantitative
+progress estimate. The following estimate supplies a sufficient descent
+certificate, while leaving its universal existence unproved. It includes
+the additive terms in the shortcut map; no coefficient stopping-time
+conjecture is assumed.
+
+Write `x_t=U^t(n)`, `w_t=wt(t,n)` and `A_t=3^(w_t)/2^t`. Suppose
+
+\[
+ A_t\ge\tfrac12\quad(0\le t<k).
+\]
+
+An even step preserves `x_t/A_t`. An odd step increases it by
+`1/(3A_t)`, which is at most `2/3` under the displayed hypothesis.
+Summing the `w_k` odd contributions gives
+
+\[
+ x_k\le A_k\left(n+\frac{2w_k}{3}\right),\qquad
+ 3\,2^k x_k\le3^{w_k}(3n+2w_k).                         \tag{23.1}
+\]
+
+[HalfSlopeDescent.lean](lean/HalfSlopeDescent.lean) kernel-proves the
+integer inequality by induction, avoiding any rounding or real-number
+approximation. It assumes neither previous descent nor convergence.
+
+At a first crossing `A_k≤1/2`, (23.1) gives
+
+\[
+ x_k\le\frac n2+\frac{w_k}{3}<n
+ \quad\text{provided}\quad 2w_k<3n.                    \tag{23.2}
+\]
+
+Thus a fixed margin below one converts a suitable odd-step budget into
+strict descent. The budget is part of the hypothesis, not a conclusion
+from eventual coefficient contraction alone. For example, the shortcut
+cycle of one first reaches a half multiplier at `k=6`, with `w_k=3`
+and `x_k=1`; its budget fails. Both this example and the certificate
+`k=65,w_k=40,x_k=10` for `n=27` are checked with kernel `decide`.
+For 27 the sufficient inequality is the close comparison `80<81`.
+
+There is also a simpler sufficient condition that need not identify the
+first crossing. If a positive n has **any** time K satisfying
+
+\[
+ K\le n,\qquad 2\,3^{w_K}\le2^K,                       \tag{23.3}
+\]
+
+choose the first crossing k≤K. Then `w_k≤k≤n`, so
+`2w_k≤2n<3n`, and (23.2) proves descent by time K. The theorem
+`descent_by_linear_time` formalizes this selection as well as the
+descent. As a consequence, the following two premises imply full
+positive-integer Collatz:
+
+1. Every positive n≤N reaches one.
+2. Every n>N has a time K satisfying (23.3).
+
+`conjecture_of_half_certificate` is a kernel proof of this implication.
+The second premise is **unproved**. This is a sufficient certificate
+format, not a claimed necessary condition, a universal time bound, or
+a proof that a parity process behaves randomly. A logarithmic upper
+bound on these crossing times would eventually imply `K≤n`, but no
+such bound has been established here.
+
+The [independent replay](verify_half_slope_descent.py) uses exact
+integers to check (23.1) at every tested prefix and (23.2) at the first
+half crossing. It checks all starts 1..32768, plus 3,072 CRT-family
+instances through K=512: the least representative greater than one of
+each pair `n≡−1 (mod 2^K)`, `n≡0 or 1 (mod 3^K)`, and its lifts by
+`6^K` and `3*6^K`. Every tested start reaches a half crossing within
+the recorded search budget; none is reported unresolved.
+
+The odd-step budget fails only at n=1 in the interval and succeeds for
+every tested CRT instance. The stricter `k≤n` condition fails at
+`1,3,7,27,31,41,47,55` in the interval and at five CRT instances.
+These finite observations neither prove a tail bound nor classify all
+possible exceptions. The replay stops at the first half crossing;
+it is not a new full-convergence verification of these inputs.
+
+Six modules build in a fresh temporary Lean environment. Printed proof
+dependencies contain only standard logical axioms, with no `sorryAx`
+or native evaluation axioms. All universal inequalities and the
+conditional implication above are kernel verified; the interval and
+CRT surveys are Python checks. [Manifest](results/half-slope-descent/verification.json).
+The missing global work is to prove that every start outside a
+convergent base admits a sufficiently early crossing, or to find a
+different universal progress estimate. Collatz remains unresolved.

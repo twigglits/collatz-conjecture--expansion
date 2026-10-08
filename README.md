@@ -42,6 +42,7 @@ Performance timings are explicitly identified as empirical measurements.
 | `lean/BasinResidueShadow.lean` | Kernel conditional arithmetic transport into mixed residue cylinders; written inverse-basin density and one-class convergence criterion; [verification](results/basin-residue-shadow/verification.json) |
 | `lean/ResidueShadowCost.lean` | Kernel conditional size bounds and odd-root injectivity; written bounded-time linear-cost embeddings and sharp fixed-prefix limitation; [verification](results/residue-shadow-cost/verification.json) |
 | `lean/AdaptiveInverseBarrier.lean` | Kernel complete inverse-level transport at roots 1 modulo 3^K and exclusion of smaller ancestors through depth K; written unit-root two-sided extension; [verification](results/adaptive-inverse-barrier/verification.json) |
+| `lean/HalfSlopeDescent.lean` | Kernel additive-error bound: a first half-multiplier crossing with 2w<3n, or any half crossing by time n, guarantees descent; universal crossing existence remains unproved; [verification](results/half-slope-descent/verification.json) |
 | `CollatzPeriodic.lean` | Kernel-checked integrality obstruction: an endlessly repeated halving block forces a cycle |
 | `CollatzPacking.lean` / `APERIODIC-ATTEMPT.md` | Checked finite packing lemmas and written summability restrictions on divergent orbits |
 | `docs/ORBIT-PACKING-BOOTSTRAP.md` / `lean/PackingExponent.lean` | Written recursive interval bound with exponent H₂(log₃2), stronger universal escape restrictions, and checked exact supporting inequalities |

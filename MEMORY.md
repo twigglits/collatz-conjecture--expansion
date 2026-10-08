@@ -771,3 +771,66 @@ The obstruction concerns bounded depth, even with adaptive branch
 selection. It does not exclude unbounded rules whose depth grows with
 input size. No such universally successful rule or other complete proof
 has been found. The Collatz objective remains unresolved and active.
+
+## 2026-10-08: openai/math review II, citation correction, mask barrier
+
+A review of openai/math in update order found no manuscript on Collatz.
+Its μ(π)=2 method was adapted on 2026-10-08 to μ(log α)=2 for rational α
+(github.com/jdb19937/log-irrationality-measure). That paper explains why
+ratios such as log₂3 are out of reach (Baker regime), so it gives no input
+for cycles.
+
+Corrected the Wu–Wang misattribution: that paper proves μ(log 3) ≤
+5.1163051 only. MASK-CYCLE-OBSTRUCTIONS §1, MASK-TRANSITIONS, MASK-DENSITY,
+EXPLICIT-LOG-GAP and ATTEMPT.md now point to EXPLICIT-LOG-GAP for the bound
+actually used. Conclusions are unchanged. The `checked_content` text in
+`results/{mask-obstructions,structural-restrictions,folded-density}/verification.json`
+still has the old wording; those historical records were not edited.
+
+An independent exact replay (even n=2..14) confirmed EXPLICIT-LOG-GAP's
+partial fractions, zero residue at −1, Q_n·B_n integrality, A_n bounds
+and A_n log z + B_n(z) = 70J_n, 70(J_n+K_n). The bound implies
+μ(log₂3) ≲ 5.2; no better published bound was found (Rhin's 8.616 is the
+usual citation), so a specialist should check novelty.
+
+Barrier, now in EXPLICIT-LOG-GAP §8: the unrestricted 21→12 family has
+selection entropy h → 0.26186, so the distinct-factor route needs c < 2.8188,
+an effective μ(log₂3) < 3.8188. Do not spend effort shaving c below 4.2.
+Neither cycles nor divergence is resolved; the objective remains active.
+
+## 2026-10-08: half-multiplier descent certificate
+
+The previous bounded-depth obstruction led to a positive sufficient
+estimate, now kernel checked in `lean/HalfSlopeDescent.lean`.
+Let A_t=3^wt(t,n)/2^t. If A_t≥1/2 for t<k, then
+`3*2^k*U^k(n)≤3^wt(k,n)*(3*n+2*wt(k,n))`. Each odd step adds
+1/(3A_t)≤2/3 to U^t(n)/A_t. At a first half crossing this gives
+`U^k(n)≤n/2+wt(k,n)/3`, hence descent if `2*wt(k,n)<3*n`.
+The additive terms are included and no first-coefficient-drop claim
+is used. Any half crossing K≤n for n>0 implies some descent by K,
+by selecting the first crossing and using weight≤K≤n.
+
+`conjecture_of_half_certificate` proves that a convergent base through
+N plus such crossings for every n>N would imply full Collatz. Its
+universal crossing premise is NOT proved, nor claimed necessary.
+Kernel certificates include n=27,k=65,w=40,endpoint10,budget80<81,
+and n=1,k=6,w=3,endpoint1, which demonstrates the need for the budget.
+
+`python3 verify_half_slope_descent.py` passes six fresh Lean builds,
+all starts 1..32768 and 3,072 CRT-family cases through depth512.
+No search exhausts its fuel. Only n=1 fails the odd-step budget in
+the interval; none of the family cases fail it. The stronger k≤n
+fails at interval starts1,3,7,27,31,41,47,55 and five family cases.
+These are exact finite Python checks; they stop at the half crossing,
+not necessarily at one. Universal statements and two example
+certificates are kernel checked without native evaluation or sorryAx.
+Manifest: `results/half-slope-descent/verification.json`; explanation:
+APERIODIC section23. No mathematical novelty is asserted.
+
+The universal early-crossing estimate remains the substantive gap.
+A universal logarithmic bound would suffice eventually, but is not
+known here. Both cycles and divergence remain unresolved; goal active.
+Local merge audit: no unmerged index entries, no MERGE_HEAD, no source
+conflict markers, and `git diff --check` clean before these additions.
+Existing logarithm-note corrections and untracked local files were
+preserved. No staging, commits or other Git writes were performed.

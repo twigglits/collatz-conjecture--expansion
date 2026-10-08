@@ -6,8 +6,9 @@ produce primitive positive integer cycles of sufficiently large period:
 - Independent \(22\to13\) edits of the mechanical halving word.
 - Independent \(21\to12\) edits restricted to alternating eligible positions.
 
-The original argument below combines a published effective logarithm bound
-with a short parity-factor catalog. Its unspecified threshold \(H_0\) gave
+The original argument below combines a logarithm bound, originally
+misattributed to Wu–Wang (see the correction in Section 1), with a short
+parity-factor catalog. Its unspecified threshold \(H_0\) gave
 only eventual exclusions. The later [explicit logarithm bound and extended
 resonance cover](EXPLICIT-LOG-GAP.md) now close both families at every period,
 with the documented external small-period input. The all-index integral and
@@ -51,26 +52,20 @@ give \(3/2<N/k<8/5\). The halving word uses 1 and 2, has no cyclic
 \(11\), and has no cyclic \(222\). Its binary shortcut word therefore has
 neither \(00\) nor \(111\).
 
-Wu and Wang's Theorem 1 states that, for each \(\varepsilon>0\), an effective
-\(H_0(\varepsilon)\) exists such that
-\[
- |p+q_1\log2+q_2\log3|
- \ge H^{-4.1163051-\varepsilon},
- \qquad H=\max(|q_1|,|q_2|)\ge H_0(\varepsilon).
-\]
-Here \(p,q_1,q_2\) are integers. This is the stated linear-independence
-theorem, not an inference from an irrationality measure for \(\log3\) alone.
-See [Wu–Wang, *On the irrationality measure of log 3*, J. Number Theory
-142 (2014), Theorem 1](https://doi.org/10.1016/j.jnt.2014.03.007).
-
-Choose \(\varepsilon=0.0836949\), and write \(H_0\) for its threshold.
-Taking \(p=0,q_1=N,q_2=-k\), for \(N\ge H_0\) we get
+**Correction (2026-10-08).** An earlier version quoted [Wu–Wang, *On the
+irrationality measure of log 3*, J. Number Theory 142 (2014), Theorem
+1](https://doi.org/10.1016/j.jnt.2014.03.007) as bounding the three-term
+form \(|p+q_1\log2+q_2\log3|\) by \(H^{-4.1163051-\varepsilon}\).
+That paper proves \(\mu(\log3)\le5.1163051\) for \(\log3\) alone; it does
+not contain the quoted linear-form theorem. The only input used below is
 \[
  \lambda\ge N^{-21/5},\qquad
- \delta=1-e^{-\lambda}>\lambda/2\ge\tfrac12N^{-21/5}.       \tag{1}
+ \delta=1-e^{-\lambda}>\lambda/2\ge\tfrac12N^{-21/5},       \tag{1}
 \]
+and [EXPLICIT-LOG-GAP.md](EXPLICIT-LOG-GAP.md) proves the first inequality
+for \(N\ge10^{4000}\) in the cone \(11k\le7N\), \(N<2k\), which contains
+every count pair considered here. Read \(H_0\) below as \(10^{4000}\).
 The second inequality uses \(e^\lambda>1+\lambda\) and \(\lambda<1\).
-No numerical value of \(H_0\) is asserted.
 
 Each edit in either family moves one binary 1 one place left across a 0.
 The moved pairs are disjoint. At a cut outside the pairs, the change in a
@@ -349,12 +344,10 @@ The logarithm theorem, factor catalog estimates, height bounds, and eventual
 exclusions remain written proofs. The subset decoder and the two finite
 all-mask exclusions have the formal scope stated above.
 [MaskCatalogBounds.lean](../lean/MaskCatalogBounds.lean) checks only their
-elementary supporting integer comparisons. The source theorem's general
-\(H_0\) is still not numerical here. The later [explicit integral
-argument](EXPLICIT-LOG-GAP.md) independently supplies the needed two-logarithm
-bound for \(N\ge10^{4000}\), and a checked finite cover completes the two
-exclusions. It does not claim a numerical cutoff for every linear form in
-the published general theorem.
+elementary supporting integer comparisons. The later [explicit integral
+argument](EXPLICIT-LOG-GAP.md) supplies the needed two-logarithm bound for
+\(N\ge10^{4000}\), and a checked finite cover completes the two exclusions.
+No three-term linear-form theorem is used.
 
 The [earlier verification record](../results/mask-obstructions/verification.json)
 covers the normal form and cutoff arithmetic. The

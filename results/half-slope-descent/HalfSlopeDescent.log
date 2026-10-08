@@ -1,0 +1,7 @@
+'HalfSlopeDescent.prefix_bound' depends on axioms: [propext, Quot.sound]
+'HalfSlopeDescent.descent_at_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfSlopeDescent.descent_by_linear_time' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfSlopeDescent.conjecture_of_half_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfSlopeDescent.certificate27' does not depend on any axioms
+'HalfSlopeDescent.descent27_via_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HalfSlopeDescent.cycle_one_budget_failure' does not depend on any axioms

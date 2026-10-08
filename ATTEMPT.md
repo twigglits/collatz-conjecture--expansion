@@ -219,18 +219,19 @@ family leaves an explicit modular subset-sum condition unresolved.
 The [mask obstruction analysis](docs/MASK-CYCLE-OBSTRUCTIONS.md) now proves
 the exact normal form `D | (4C-X)` in Lean, including the coefficient
 construction and all-edited rotation identity. A written combination of
-Wu–Wang's effective logarithm theorem and parity catalogs excludes every
+a logarithm bound (originally misattributed to Wu–Wang; corrected in that
+note) and parity catalogs excludes every
 sufficiently long primitive cycle in the independent `22→13` mask family
 and in the family allowing `21→12` edits at alternating eligible positions.
 These permit linearly many edits. That argument gives exclusions beginning at
-`max(H₀, 2^40)` and `max(H₀, 2^192)` respectively; the source's effective
-threshold `H₀` has not been made numerical here. The later argument below
+`max(H₀, 2^40)` and `max(H₀, 2^192)` respectively, where `H₀` is the
+threshold of that logarithm bound. The later argument below
 closes these two gaps. The unrestricted `21→12` family remains open.
 
 The later [explicit logarithm argument](docs/EXPLICIT-LOG-GAP.md) now closes
 both family exclusions at every period. It proves
 \(\lambda>N^{-21/5}\) for the required critical counts once
-\(N\ge10^{4000}\), independently of the unknown general Wu–Wang threshold.
+\(N\ge10^{4000}\); this is the bound the earlier argument actually needs.
 An extended exact resonance cover closes the finite range; its catalog also
 dominates the independent \(22\to13\) family. The small-period conclusion
 retains the published Eliahou input described below. The full integral,
@@ -743,6 +744,18 @@ smaller-start meeting with both times at most K when additionally
 `2^K` divides `n+1`. These witnesses are coprime to three, unlike
 the earlier CRT witnesses divisible by three. No unbounded adaptive return
 rule is excluded. [Verification](results/adaptive-inverse-barrier/verification.json).
+
+The [half-multiplier criterion](APERIODIC-ATTEMPT.md#23-a-half-multiplier-margin-that-guarantees-actual-descent)
+supplies a positive sufficient estimate. At the first time k with
+`3^wt(k,n)/2^k≤1/2`, Lean proves
+`3*2^k*U^k(n)≤3^wt(k,n)*(3*n+2*wt(k,n))`. At that crossing,
+`2*wt(k,n)<3*n` guarantees actual descent. In particular, any half
+crossing by time n guarantees descent by that time. A kernel theorem
+combines this with a convergent finite base to give a sufficient global
+certificate. Existence of these crossings within the required budget
+remains unproved. Exact Python checks cover starts 1..32768 and 3,072
+CRT-family instances; they do not supply the universal premise.
+[Verification](results/half-slope-descent/verification.json).
 
 ## The two unresolved possibilities
 
