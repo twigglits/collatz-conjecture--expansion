@@ -1,0 +1,13 @@
+Erdos1135/Tao/Fourier/Section7PairExpansion.lean:306:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Erdos1135/Tao/Fourier/Section7PairExpansion.lean:339:62: warning: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  simp [taoSection7PairExpansionFrom, taoTupleWeight,̵ ̵h̵j̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Erdos1135/Tao/Fourier/Section7PairExpansion.lean:434:24: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

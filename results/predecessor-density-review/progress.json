@@ -401,6 +401,1428 @@
       "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.PascalPrime.log",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "olean_sha256": "a3372f61e3aa52522bf6e58b9e57a32c3823fcebd6a3de6e46963d6fd3bbe0b6"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7WhiteHitSplit",
+      "source_sha256": "6c8c1b6ac844775628c919924bd17439e31e71909cc4c1f1f24ecaac759b4577",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7WhiteHitSplit.olean",
+        "Erdos1135/Tao/Fourier/Section7WhiteHitSplit.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.208,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7WhiteHitSplit.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a2fbc4831f1cf9a572b34ea89fb46cf86e2ada4cbcd28ce50c9cca21c58cb4fc"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.HoldPoint",
+      "source_sha256": "08b29ea9bad25058e37d150363b2ff291b78e0c8b6cccfd224974370123a8d48",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/HoldPoint.olean",
+        "Erdos1135/Tao/Renewal/HoldPoint.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.432,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.HoldPoint.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "8fa4079de6b5ba680f2aa3329964edbb652a2b9843130585b6e415dd4dc8230b"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QFinite",
+      "source_sha256": "4591673f2948f7a1c50204914d296fbb5085cb498ba9d6a793aa957ccb407d26",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QFinite.olean",
+        "Erdos1135/Tao/Renewal/QFinite.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.4,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QFinite.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "bf0c49afba0d551958ee65ac53d712e77700358db2c7cc41be8cd4e30163a7fd"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.SourceListBridge",
+      "source_sha256": "2daf549d4ea267f99a493c101813ed02521149f6736215531f3e9d8bd62cdb93",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/SourceListBridge.olean",
+        "Erdos1135/Tao/Renewal/SourceListBridge.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.425,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.SourceListBridge.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "922cf1975b69aa00e4a6c9713041ba29e5a31fec75bb8f367dac92452ae73be9"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SourceFThreeQFinite",
+      "source_sha256": "7090e9aea01592fd2b1438fa34354b1aff5fc61a1546ca351f5d3fe42c18ed72",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SourceFThreeQFinite.olean",
+        "Erdos1135/Tao/Fourier/Section7SourceFThreeQFinite.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.472,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SourceFThreeQFinite.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "144f408b4cf54c853008a2b5665cb29c0e2bb0ee86ba806d3839b4ea4d3d7548"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SourceLaw",
+      "source_sha256": "6bbaf1838889a0ca6ceaeb317c1a189f783bf24f1232d2dc42ddf44254325820",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SourceLaw.olean",
+        "Erdos1135/Tao/Fourier/Section7SourceLaw.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.577,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SourceLaw.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "12389c575b9e4fce12848fcaa895d78a1d012d3b0e85cdcd5b73c1697fa97886"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SourcePairing",
+      "source_sha256": "c4759b0330eb09183b490ea8b0dc5beb50b960bb83dc987663ca084ed6042397",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SourcePairing.olean",
+        "Erdos1135/Tao/Fourier/Section7SourcePairing.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.464,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SourcePairing.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "78dd6e0cc2b4014359ee1def140b62705016c19e5661ab497598c7dd17e8e584"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7PairFiber",
+      "source_sha256": "bc0832e9a592cae9fdec22be147d55fb73eda02a4bf678a32a72fd25cb4b5c79",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7PairFiber.olean",
+        "Erdos1135/Tao/Fourier/Section7PairFiber.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.655,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7PairFiber.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "94f5c1582ce8b871f6e1479b5edaaee29e91312eac51759ae96b2688694f93bf"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7PairExpansion",
+      "source_sha256": "613dd7a0c2dda6a063ab45a6994268f80f37daeeea5f97b2678c0aaaf72599ff",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7PairExpansion.olean",
+        "Erdos1135/Tao/Fourier/Section7PairExpansion.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.03,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7PairExpansion.log",
+      "log_sha256": "da145b6b5dc3ac222cb26162ed0ec210d3719e4a3baa54c8f0f2ccb77f25eb03",
+      "olean_sha256": "2c7ea0b2ad85b80ce35fe11bdee6657e3ff04bc911ded090a836329a9fbb7cad"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7PairExpectation",
+      "source_sha256": "95a649544e393f0779307aa0d41395b25f0359d309a8215fdb90b23e2dfa70d9",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7PairExpectation.olean",
+        "Erdos1135/Tao/Fourier/Section7PairExpectation.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.92,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7PairExpectation.log",
+      "log_sha256": "e2ca902940e37d2b024bd1b9d4a56942c2650227d4fba8c5b5a189f1c1783a7e",
+      "olean_sha256": "3c8a10762e94d69d77cd41e40620d33e4f94cb6fdc8da4b04b7a48468594e118"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7Geometry",
+      "source_sha256": "beb8cdc6d825635c08f6c6814664d0ad3afdcd335a3618fbc7eb731ab1a031b4",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7Geometry.olean",
+        "Erdos1135/Tao/Fourier/Section7Geometry.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 8.53,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7Geometry.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "0ddac641091b4aaab10c14a9348ecfbbedc2ede6f8f3cab8a1eba4cb69c164df"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SourcePredicates",
+      "source_sha256": "ae2a90072d503f4d8c4499f42e97c4908972c018484201568b01a44a2d58f766",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SourcePredicates.olean",
+        "Erdos1135/Tao/Fourier/Section7SourcePredicates.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.35,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SourcePredicates.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "de8fac2dea22c55769262aa145728cb0480810b2ffeeecb9cb584b4c346f7bf9"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SourceDomain",
+      "source_sha256": "dec962e6906d7b182ca1d25375f5a00ed401b266d90c6b3a71fd64f01389f4a4",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SourceDomain.olean",
+        "Erdos1135/Tao/Fourier/Section7SourceDomain.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.419,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SourceDomain.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "718de0c9801ecc57f83d450207d9428c5793cff8eccd6abd07613654673c7031"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.PascalPrimeList",
+      "source_sha256": "9ae54da24243a88910c03b1bc04f4a88619592c76d97fd7ee7b65913e615f35d",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/PascalPrimeList.olean",
+        "Erdos1135/Tao/Probability/PascalPrimeList.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.504,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.PascalPrimeList.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a96e33f22e5365c57108ceae3475c1b70265131d73e71de1342d86687b66ddf2"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.HoldPMF",
+      "source_sha256": "a356608173177bb66fb50d3eb5b6d94270af1d78be10fc9e7cb23b49503dea2f",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/HoldPMF.olean",
+        "Erdos1135/Tao/Renewal/HoldPMF.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.368,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.HoldPMF.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "2200e0e4341da4b06089241f72929fd911a9e47ac6754532ef1349780e7414e8"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.HoldExpectation",
+      "source_sha256": "7468348ab83db971d6cbc479542b17141ce4fcaea13ddcf9eb781ed2ea00aa3c",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/HoldExpectation.olean",
+        "Erdos1135/Tao/Renewal/HoldExpectation.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.668,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.HoldExpectation.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "21a68230f0cfd2a410501b534c160542d6eeabb279ceddf66ef4eb1a2a7db0da"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.HoldIID",
+      "source_sha256": "a967c775af774502742d7f14651f2c2a20ff55ad00377faae0f5b35c0d0952c7",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/HoldIID.olean",
+        "Erdos1135/Tao/Renewal/HoldIID.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.483,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.HoldIID.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "5aa2712409d13c5975166f646f0f0b9bc26697a345ce769105b7c43be3e298f6"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QExpectation",
+      "source_sha256": "1908deaa07c908a1598fe04ef414842070e0529534a9c61b29f28bfd083c4565",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QExpectation.olean",
+        "Erdos1135/Tao/Renewal/QExpectation.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.251,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QExpectation.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "ee1132c42084c745cf049f76c8b7f79c77ab27cc69b5e8026de30fcb2841c37b"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QFiniteApprox",
+      "source_sha256": "e3eede204d6e4a9ccd223a41916c54663d9b55fabaed8162100286678d428774",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QFiniteApprox.olean",
+        "Erdos1135/Tao/Renewal/QFiniteApprox.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.593,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QFiniteApprox.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "3d42465e6a630bb104ccf1fc18587fb347ac87e92b4b8487d774d670d373552f"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QActualRecursion",
+      "source_sha256": "7f3cb96391fd5e2752621df8f2023837103ef470b63633a2244f15d187f981cc",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QActualRecursion.olean",
+        "Erdos1135/Tao/Renewal/QActualRecursion.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.361,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QActualRecursion.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "46a6834a516c379aa3e85d57b14aab6dde2d1a947b0b74f7aa5127ecd7fd2520"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QActualLimit",
+      "source_sha256": "466fd7ee81a8006b4ca2db5f5e60aa388a832b8b9a20b930ad0d98be1b4a29db",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QActualLimit.olean",
+        "Erdos1135/Tao/Renewal/QActualLimit.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.322,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QActualLimit.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "adfed74297bd8577178fe2ff48fab740d85391a4923272a22417ef197cfc3a3d"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.SourceActualQ",
+      "source_sha256": "e703e4782a3752a18581a8c68b8cd3052760963d935d2e0bccb9232346ec60df",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/SourceActualQ.olean",
+        "Erdos1135/Tao/Renewal/SourceActualQ.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.358,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.SourceActualQ.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "d40505d89038407072e037f1cba17459e06bad3888afa3cc3deb9ee4ca64d2c0"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.SourceCutoffStabilization",
+      "source_sha256": "dac73d4bf1b14181e69811e02d87973b1b377be6e13078cf4ba856f08f9f8905",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/SourceCutoffStabilization.olean",
+        "Erdos1135/Tao/Renewal/SourceCutoffStabilization.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.475,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.SourceCutoffStabilization.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "71592c580c80bb8f8ab2bba660dbd993c353b87f196ae09cb89c0a237fe59547"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.SourceRegeneration",
+      "source_sha256": "30cf99edb2f892173c19cf934f65046a85dda84826c9822ac03b2ba6680a0c96",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/SourceRegeneration.olean",
+        "Erdos1135/Tao/Renewal/SourceRegeneration.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.489,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.SourceRegeneration.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "542ce334472990ce2cc45f149d15ba75ca890e56b9b4151b11df569992b45563"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.Section7SChiActualQ",
+      "source_sha256": "b0530ac6129768264687221c1c72f48245e9d67bb01615a5b72ea23ad55de749",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/Section7SChiActualQ.olean",
+        "Erdos1135/Tao/Fourier/Section7SChiActualQ.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.615,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.Section7SChiActualQ.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "729fa559af1b3c4b173ac08496691e946492fdca01af7b3dff66771f74233df5"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.FullL1",
+      "source_sha256": "6949180a7ba9bd30c40bb854bdda1116501a04b62c66bfa7cb0f57323c76e0ff",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/FullL1.olean",
+        "Erdos1135/Tao/Probability/FullL1.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.828,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.FullL1.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "eeaeb371ef2a1b8e1a74afbfb629291417bbc20325204d09b3f7677c6024b8cd"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.Geom2ListProjectivity",
+      "source_sha256": "5f1b7e3f6ae0f8648de199c2213130128436dbf4f749dee9085810bb013d7882",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/Geom2ListProjectivity.olean",
+        "Erdos1135/Tao/Probability/Geom2ListProjectivity.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.401,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.Geom2ListProjectivity.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "31264eec7bba7518822b4c6ae6445456d254f6aeeba3088c37f8d1b48ea718f7"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.OffsetInjectivity",
+      "source_sha256": "7b8be160bbd9d53ae47aeb7ff4185451d8db59622f4572769f973c02d6f6fd41",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/OffsetInjectivity.olean",
+        "Erdos1135/Tao/Syracuse/OffsetInjectivity.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.503,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.OffsetInjectivity.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "46e0ce8a0f77eba05b06fac60a167904f2d3a73a990b81a3901fbc784e8e94e8"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.AffineReverse",
+      "source_sha256": "7473b477d3abe839976949fba70b5274111a4500301d7ceae46959afa163200d",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/AffineReverse.olean",
+        "Erdos1135/Tao/Syracuse/AffineReverse.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.555,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.AffineReverse.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "cb59e5b97de1ae793fe182243d4e447a48ee46591f664f4a2b01964539bc34dc"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.Geom2ListReverse",
+      "source_sha256": "8676508b7d15272c211bea9f0b03f3b901d99a8b90ae3387dfc710174654c0fa",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/Geom2ListReverse.olean",
+        "Erdos1135/Tao/Probability/Geom2ListReverse.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.333,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.Geom2ListReverse.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a0d24eca7ebd6256c4856c26a632557e167f348fae9d55a23a5a260352e7478f"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.AffineEnvelope",
+      "source_sha256": "c3cc89a5a8a6aebcdd3a9ed8b26919ac9cd50a1af5db728ae6aac941a1c08d56",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/AffineEnvelope.olean",
+        "Erdos1135/Tao/Syracuse/AffineEnvelope.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.49,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.AffineEnvelope.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "6800ffb97f1b2efc6999ba2c2c6116065901fe26975066c94af52f458a77a7c2"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.AffineOdd",
+      "source_sha256": "cc154a6fc33428bd06214e0273d4843014fc17a051acb35a39388d07aa1ce883",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/AffineOdd.olean",
+        "Erdos1135/Tao/Syracuse/AffineOdd.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.557,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.AffineOdd.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "5e1b895187f0f4737c746acf284d116f1d58745b789f42777034731818fd92f9"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.OddSource",
+      "source_sha256": "c0a3592adc32b5ad549c634fdccb5112411f794fe52df0599fe580579945d2cd",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/OddSource.olean",
+        "Erdos1135/Tao/Syracuse/OddSource.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.168,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.OddSource.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "53606f57601109924c845efb06a40fdbd4256c700e95ffe5b1269432577936f1"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.AffineResidue",
+      "source_sha256": "3d3c0c3be1aecaaa471ee8dd9f798388aedb70d7cf74b11d693e94188b1b63c7",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/AffineResidue.olean",
+        "Erdos1135/Tao/Syracuse/AffineResidue.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.567,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.AffineResidue.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "dc1deae55679efc348aa3f404fc386806eb19e68731316d41f365ea6cd4d1d22"
+    },
+    {
+      "module": "Erdos1135.Tao.Section5.AffineSourceLaw",
+      "source_sha256": "190749f5c065d78af3ccefefdb89406fc4342178e517fae72273fa87309397db",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section5/AffineSourceLaw.olean",
+        "Erdos1135/Tao/Section5/AffineSourceLaw.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.525,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section5.AffineSourceLaw.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "32384f55c442e59437af4818bf41dce82f6c6fd65c9d3bffb1cfede8ed79555e"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.MixingStatement",
+      "source_sha256": "828f6c2d1b4504fc40043bd07bb554c767e9f7484ecaabe3bdeb9a4e04e089c4",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/MixingStatement.olean",
+        "Erdos1135/Tao/Fourier/MixingStatement.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.347,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.MixingStatement.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a76c4a0f1d5dd1b1cf03ead430b0e523ef5c4dc9068190db231051bb8ae7eba9"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.ModulusProjection",
+      "source_sha256": "077c5e892f6b1951e0c2ead2c7242c92754c7604cd91d9e33b92231cf965242f",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/ModulusProjection.olean",
+        "Erdos1135/Tao/Section6/ModulusProjection.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.461,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.ModulusProjection.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "84e06c32f9bc7308c4a2fad6c5f61e33be92cee97cd9651697768fff0d4c2ba1"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.ConductorProjectivity",
+      "source_sha256": "b48a8ca70bf95139284443812de0fd6471afb73cbbb6e6489d03fa3102c41f9a",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/ConductorProjectivity.olean",
+        "Erdos1135/Tao/Section6/ConductorProjectivity.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.413,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.ConductorProjectivity.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "5cb6873368cf7a52069ffae6d7e16fc0a9678c8b8fabcea7e7e71e50fe3d003f"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.ConductorDFT",
+      "source_sha256": "7019b4572661f6839e4d146d69fc9132a372a332ac11fe7f1c23f85caa1a758d",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/ConductorDFT.olean",
+        "Erdos1135/Tao/Section6/ConductorDFT.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.694,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.ConductorDFT.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "086bb71d70607eba0f6eac613f6b6d844595fe66cb138f8b2377495a75630c7d"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.ConductorIndex",
+      "source_sha256": "a3edd4dee58db2110d2dd899bcb8087e29019214fdf096b453a4364970ab213f",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/ConductorIndex.olean",
+        "Erdos1135/Tao/Section6/ConductorIndex.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.414,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.ConductorIndex.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "f30542e59da6b4f11a0dd740aca445cf3f619782896eba814d535b56119a7d2d"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.Corollary63",
+      "source_sha256": "5680fa2f25e365dbf15c64095c1bc37a7ab1978e1d0447afdf5c4b7e03c11605",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/Corollary63.olean",
+        "Erdos1135/Tao/Section6/Corollary63.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 5.804,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.Corollary63.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "43fc6dfd777ac9f9afca9939c560071f8f9f687d42529041a52577495b2c4846"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.ConductorFrequency",
+      "source_sha256": "1b519b08811e6668f17fef0118e50066df134e887889364133542f7a07ba5252",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/ConductorFrequency.olean",
+        "Erdos1135/Tao/Section6/ConductorFrequency.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.597,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.ConductorFrequency.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "dfb914048b9a403ad837f71762fa9527e0ec9d33e3308e01f97236a0845975c0"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.FiberAverageDFT",
+      "source_sha256": "3515793d0a692b2cd71df3839c568e084d4521e276748252c6c3e5d11216a8b9",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/FiberAverageDFT.olean",
+        "Erdos1135/Tao/Section6/FiberAverageDFT.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.491,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.FiberAverageDFT.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a9730f8c06991c5dc5ae96b000ef1acecac2e47cd3134d0ce4caae3c1e54963c"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.FiniteFourierConvolution",
+      "source_sha256": "71bb8044ff51de06c41dd17c884357fd6fb9f77e0d83be7418af39d44fea1eea",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/FiniteFourierConvolution.olean",
+        "Erdos1135/Tao/Section6/FiniteFourierConvolution.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.51,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.FiniteFourierConvolution.log",
+      "log_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+      "olean_sha256": "b8b3d72e5afb40ac8547e594e4744928888788822af01b98a913cc76c416abed"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.FiniteFourierParseval",
+      "source_sha256": "53a7a390a0a0bf72f4cddc9d5875f22bd449941f6e99e533b94a2ff90da48865",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/FiniteFourierParseval.olean",
+        "Erdos1135/Tao/Section6/FiniteFourierParseval.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.588,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.FiniteFourierParseval.log",
+      "log_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+      "olean_sha256": "28363b7b6b1e987b696dad049864f422340df8cc6c066a8b764047bf4a133dc9"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.FiniteFourierCollision",
+      "source_sha256": "cb7050cebcabdd34685657e35cb13aabf29490251e3da4d8b5a101e9f717f44d",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/FiniteFourierCollision.olean",
+        "Erdos1135/Tao/Section6/FiniteFourierCollision.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.603,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.FiniteFourierCollision.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "1e5a10af8697f12b2ba9b07c4b64c1a75da3da84bef1ff9507f69d4c2fd275a9"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.AmbientTailDFT",
+      "source_sha256": "2590a5bfa427ffb29508fceaee198c02365f1c6a5bc476939094bb9bc692815d",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/AmbientTailDFT.olean",
+        "Erdos1135/Tao/Section6/AmbientTailDFT.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.605,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.AmbientTailDFT.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "50fc896cd9470984b6c95548bf6708c5cd79b8e0641800262c5d8253a1decba2"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.AmbientOffsetAppend",
+      "source_sha256": "286a16589e3d281abbfae7b60379f19716d72a518439b0ba08b2ed05ffce4f14",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/AmbientOffsetAppend.olean",
+        "Erdos1135/Tao/Section6/AmbientOffsetAppend.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.885,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.AmbientOffsetAppend.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "73cae874cd5157af7243a74a5cceab970ec23630a4b7d7356bcea93903c087f2"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.Cor63HeadPrefix",
+      "source_sha256": "87529b5669940c361dd203355d36928a318b30ef4f0dde81128dc7a200d9a61c",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/Cor63HeadPrefix.olean",
+        "Erdos1135/Tao/Section6/Cor63HeadPrefix.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.419,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.Cor63HeadPrefix.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "d1f6b9d6cd705c570363a74723cc3b11d6ef0302ee9d5383c7f9f7cc8a92906d"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.GatedSubmass",
+      "source_sha256": "d9432e14d90fde1a3d76283ef863340f50359b0d55736e984cbfd304e212a6e9",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/GatedSubmass.olean",
+        "Erdos1135/Tao/Probability/GatedSubmass.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.007,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.GatedSubmass.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "587daa3f7190f75f46c5fa2f9b5be878b52a07d5e7a2d2e47590697d831cf794"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.HeadGate",
+      "source_sha256": "c9ceb0007df72ce3099db1fd88cd09845c631a521139d913a169daec01626b6f",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/HeadGate.olean",
+        "Erdos1135/Tao/Section6/HeadGate.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.274,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.HeadGate.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "78b635cba0b699144ffea45e09d34852201606e1ec0f57d3eb085b12534baf47"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.HeadGateLocalization",
+      "source_sha256": "a131fac6248d9013249a49db55f3a481bb9dea343659b4d787feb47bd2d942da",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/HeadGateLocalization.olean",
+        "Erdos1135/Tao/Section6/HeadGateLocalization.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.736,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.HeadGateLocalization.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "97de940ed42d3a6ef044f18b708c1a71a32d7e95a57de9878ab3c579b58c447b"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.HeadSubmass",
+      "source_sha256": "5f2eac7e38f9e8307a771186391637fd4439b16950a92c5bf55ebdd1fb7a1a9a",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/HeadSubmass.olean",
+        "Erdos1135/Tao/Section6/HeadSubmass.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.326,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.HeadSubmass.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "66d3c818ca9cb1bb15500a909d1f64c904a241d5b8250f363a776a8ec6f98d26"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.OptionHeadTailConvolution",
+      "source_sha256": "b7489eea3fe859f91ade7140fef6f7daae8362d45a6b8cd105509ef180cfd606",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/OptionHeadTailConvolution.olean",
+        "Erdos1135/Tao/Section6/OptionHeadTailConvolution.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.449,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.OptionHeadTailConvolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "82d125a971995b9537cdbc37feab664f0c13225c0f2a76102ecf169408d3507f"
+    },
+    {
+      "module": "Erdos1135.Tao.Section6.GatedSourceConvolution",
+      "source_sha256": "90b31b6a8d7c9a44e22a53c11f557dafb94bd7f2a4e2430a0dc01081a8b2b21b",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Section6/GatedSourceConvolution.olean",
+        "Erdos1135/Tao/Section6/GatedSourceConvolution.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.43,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Section6.GatedSourceConvolution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "8e57ad93e20a35a141d25efd99903d2e9d63327cf773580d6fd110ac51461ef3"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.AffineTrajectory",
+      "source_sha256": "4174756974ab0ae254e0e528c69410360dd28f5fc7b8c5ddb22bb6b3fa617153",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/AffineTrajectory.olean",
+        "Erdos1135/Tao/Syracuse/AffineTrajectory.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.322,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.AffineTrajectory.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "cf763e466f0d2eb60dc8bc1beca893f31e6785f7ab2e270a28f773636f46a63a"
+    },
+    {
+      "module": "Erdos1135.Terras.Density.NaturalDensity",
+      "source_sha256": "4957bde0cae31af168173298f7089af4f2a533464c1e50c315f66ccf2920c21e",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Terras/Density/NaturalDensity.olean",
+        "Erdos1135/Terras/Density/NaturalDensity.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.34,
+      "log": "results/predecessor-density-review/build/Erdos1135.Terras.Density.NaturalDensity.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "8ca8c02c4481a615a3f78a2744e1a50f7d815256d8b472eff0c0d8501c1a6278"
+    },
+    {
+      "module": "Erdos1135.ND.Fourier.FixedTotalReferenceRatio",
+      "source_sha256": "9ca616a67db3ea5e143a283885ea2f004a18a40dd9587b614a216a6e45bcd241",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/ND/Fourier/FixedTotalReferenceRatio.olean",
+        "Erdos1135/ND/Fourier/FixedTotalReferenceRatio.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.51,
+      "log": "results/predecessor-density-review/build/Erdos1135.ND.Fourier.FixedTotalReferenceRatio.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "8e6243af1be05b50d00b6844d643c40d031c214855df44dbabf646d6661fba2d"
+    },
+    {
+      "module": "Erdos1135.ND.PositiveDensity.CommonZReverseGenerator",
+      "source_sha256": "f4835fd522c8abd68466414672d417b0e5c43e3ebb1607dfcd533d65a4da38b7",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/ND/PositiveDensity/CommonZReverseGenerator.olean",
+        "Erdos1135/ND/PositiveDensity/CommonZReverseGenerator.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.507,
+      "log": "results/predecessor-density-review/build/Erdos1135.ND.PositiveDensity.CommonZReverseGenerator.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "3e83600ccadfacaca12345608202179fb30b04babff97c633dd0ec4e7ae37993"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.FirstPassageInterval",
+      "source_sha256": "42ac107b322e44322eeee43dd3f48492e177e2b90e5a306f33b5177f9b21ffde",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/FirstPassageInterval.olean",
+        "Erdos1135/Tao/Syracuse/FirstPassageInterval.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.268,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.FirstPassageInterval.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "845991049dd80ac2be91fd5359932386ff149a066d7d6d0b1a465a8d1d44031f"
+    },
+    {
+      "module": "Erdos1135.Tao.Syracuse.LogTimeCollatzBridge",
+      "source_sha256": "fa8f65fadeacff3f8269e962225e89944e9eb7728084a3f74ebe48e88fe76ea0",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Syracuse/LogTimeCollatzBridge.olean",
+        "Erdos1135/Tao/Syracuse/LogTimeCollatzBridge.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.435,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Syracuse.LogTimeCollatzBridge.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "ead8da7da54267f824560082a30b9ae8bdb27b1235d1b4ddf8540230783194a3"
+    },
+    {
+      "module": "Erdos1135.ND.PositiveDensity.CommonZPathTelescoping",
+      "source_sha256": "6924dd946c7f2aac5c302ffb9c1bd3d21345a5eba514284052aedc0f73bc7890",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/ND/PositiveDensity/CommonZPathTelescoping.olean",
+        "Erdos1135/ND/PositiveDensity/CommonZPathTelescoping.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.493,
+      "log": "results/predecessor-density-review/build/Erdos1135.ND.PositiveDensity.CommonZPathTelescoping.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "b038da7b9af080a390a84ac2f9fc8b0f189abae2f72d92db60fd5d593d4bafbd"
+    },
+    {
+      "module": "Erdos1135.ND.PositiveDensity.Statement",
+      "source_sha256": "673ce2bc86b5816d1f99cbf87df4ca953dda526eaa2bdf017d81bacb08412ace",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/ND/PositiveDensity/Statement.olean",
+        "Erdos1135/ND/PositiveDensity/Statement.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.254,
+      "log": "results/predecessor-density-review/build/Erdos1135.ND.PositiveDensity.Statement.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "65dac2921ea4e2766ddd83723105afe1b9005f5dc7ba307ec51c31133e903fde"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.CountableMarkov",
+      "source_sha256": "57d8aeec15188b0cbf51e31a37c7025b3be98e081601bf8a7996da119f0bcacc",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/CountableMarkov.olean",
+        "Erdos1135/Tao/Probability/CountableMarkov.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.881,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.CountableMarkov.log",
+      "log_sha256": "140bf4bde377d938242c3f2acb018a77b15953724f5687ffde907a449e097408",
+      "olean_sha256": "ee2fd799ec8e28e2eb34dd79eeaaab20114791ef012491159fa6410a9e43151b"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.Geom2CenteredMoment",
+      "source_sha256": "52602aa77c2d96b06e0481fc3d3ec7d3d23c8735eee564e2a5b8cd645d169cf9",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/Geom2CenteredMoment.olean",
+        "Erdos1135/Tao/Probability/Geom2CenteredMoment.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.706,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.Geom2CenteredMoment.log",
+      "log_sha256": "436c880f17d6a10061262a439b08a9f27f3716aa54d6a551cbaf56b03db8c1e3",
+      "olean_sha256": "cf2376c0088c2f2cacbf2b39909a150d2739194078919cb4685bf2da0aec8f5a"
+    },
+    {
+      "module": "Erdos1135.ND.Probability.Geom2FiniteTwoEventTail",
+      "source_sha256": "23b4026a6ed26e07cc21e292364413a5110ca3098d69d36b8ddaa5625c590edb",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/ND/Probability/Geom2FiniteTwoEventTail.olean",
+        "Erdos1135/ND/Probability/Geom2FiniteTwoEventTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.278,
+      "log": "results/predecessor-density-review/build/Erdos1135.ND.Probability.Geom2FiniteTwoEventTail.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "183a931ffe19896eeea41a96da712f1bc6a5e8f793d4ba2d3d72c97db4bf5b3f"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.GatedSubmassPartition",
+      "source_sha256": "e4dc2996976068780ea2932c7db5db0a31c1c71452c3d7a8ad691dee427bfbee",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/GatedSubmassPartition.olean",
+        "Erdos1135/Tao/Probability/GatedSubmassPartition.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.301,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.GatedSubmassPartition.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "247a6d014edc561e22cf1f9b54658112a4c6b87fd7ed7cf2bd3fcb19b469f6d2"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.GatedSubmassComplement",
+      "source_sha256": "c591734e21be3cbcaa931b12e2cfc33836c3158e2541a00108e39eddc2d69e29",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/GatedSubmassComplement.olean",
+        "Erdos1135/Tao/Probability/GatedSubmassComplement.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.864,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.GatedSubmassComplement.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "10636137ea229402bf99cb3d5f99c7acf925bb38cccebf85c0b95fce1c35a25b"
+    },
+    {
+      "module": "Erdos1135.Tao.Fourier.OscillationAlgebra",
+      "source_sha256": "dfb98d920d197eafc8fc4c9ff4d64e7d406bb8c61af7eff77ad678d1dd6c0154",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Fourier/OscillationAlgebra.olean",
+        "Erdos1135/Tao/Fourier/OscillationAlgebra.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.704,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Fourier.OscillationAlgebra.log",
+      "log_sha256": "e345f8a3612ed06a1c3c49ade2cfb8ecbe9f17dc58767324d4c98e499bf6d164",
+      "olean_sha256": "5455a4d97a6847de26e9c91a91fdcd8d842e514f98648f59460b18ddfa96885e"
+    },
+    {
+      "module": "Erdos1135.Tao.Probability.Geom2TerminalMoment",
+      "source_sha256": "a8ec6e511f000f68232293cdd92d3b5b6740bef2f767fc018f01e58788cd4ce9",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Probability/Geom2TerminalMoment.olean",
+        "Erdos1135/Tao/Probability/Geom2TerminalMoment.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.24,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Probability.Geom2TerminalMoment.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "e6ee81ae38cad2e61dfefbebbf0c65995d50710da73e58388a9144ecbc722d7c"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.RenewalPathBasic",
+      "source_sha256": "48d8a1a78ac8968f16a340339764391d8111d7c00fbe4470de67110eec0b0152",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/RenewalPathBasic.olean",
+        "Erdos1135/Tao/Renewal/RenewalPathBasic.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.269,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.RenewalPathBasic.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "9ca335d9697d7e104a14a441d574feab5b32030440cffa5fc70d4fed6a5ae2ca"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Lemma77PotentialCore",
+      "source_sha256": "3ff78527ee6147847fb101ce174a49200d162db04a9626f6628d09e35576f7ed",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Lemma77PotentialCore.olean",
+        "Erdos1135/Tao/Renewal/Lemma77PotentialCore.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.379,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Lemma77PotentialCore.log",
+      "log_sha256": "b036323e657c94c459d82cdab26edcbb148c53bcf29a7aa4b799ba8518e1cf1e",
+      "olean_sha256": "3ff29baca4ba5b7d6759459487ab101766ee6c477db9f73eaa2107ab23a16a28"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Lemma77PascalPotential",
+      "source_sha256": "3b565c8a4070577ac3b65fff5eabb8fe16b1ac51cf536b3b6796f39b6c4b2419",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Lemma77PascalPotential.olean",
+        "Erdos1135/Tao/Renewal/Lemma77PascalPotential.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.975,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Lemma77PascalPotential.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "7a54c51b5e2f83c10748f1e1200fec75f7cc47977fc54f1826cc65f5bd50d291"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Lemma77PascalComposition",
+      "source_sha256": "8e0386b348b94ee8e51d9ccf6caeaf56787afb4b627683df84508080c31c0fc1",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Lemma77PascalComposition.olean",
+        "Erdos1135/Tao/Renewal/Lemma77PascalComposition.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.082,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Lemma77PascalComposition.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "a59526f188e0db025001011333cc0e9b6876c3c64e2b5ef360302f5abebac519"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Lemma77PascalFormula",
+      "source_sha256": "ed6bfe042b18abe0c2b92005bd320b9a9399134f5d9829b4045c3bdfcb03b137",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Lemma77PascalFormula.olean",
+        "Erdos1135/Tao/Renewal/Lemma77PascalFormula.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.625,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Lemma77PascalFormula.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "aa15363b26d74963c44313a24358cd13d252d07a68f332be4eb4608437a1aeef"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Lemma77PascalGaussian",
+      "source_sha256": "a87d62867bc0a37c2da491133ac2053823fe4b98891c8abcbfde006a8dd85bd4",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Lemma77PascalGaussian.olean",
+        "Erdos1135/Tao/Renewal/Lemma77PascalGaussian.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.78,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Lemma77PascalGaussian.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "4ce4bf0178645427f1f62779f3aa372291f6b909d17c60fe4cc2196b53502a30"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Outer736SourceAlgebra",
+      "source_sha256": "35dbee79d4bc51c2455dd372ee06471a2395737c22d2f644f55561a6703b359e",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Outer736SourceAlgebra.olean",
+        "Erdos1135/Tao/Renewal/Outer736SourceAlgebra.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.998,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Outer736SourceAlgebra.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "86c867aaa6ea4f486d9914a842e8d768c18c998778313010084a090a5e53de10"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.Prop78Case1Scalar",
+      "source_sha256": "a507dcc620d0d00236d8c4cd5c7d2935e3cf59fafc383fb3b9fe2ec7e38a8d27",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/Prop78Case1Scalar.olean",
+        "Erdos1135/Tao/Renewal/Prop78Case1Scalar.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.758,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.Prop78Case1Scalar.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "e0403c24beef9e55e540fd3ad779fa89f4f8387ac9c000b26e23f3ba73c2efce"
+    },
+    {
+      "module": "Erdos1135.Tao.Renewal.QmStatement",
+      "source_sha256": "103e58140e21a395257b172ec3873dff13bd7b270650099620d9808471286b00",
+      "command": [
+        "/Users/jean/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-Dpp.unicode.fun=true",
+        "-o",
+        "/private/tmp/collatz-density-audit/assembled/.lake/build/lib/lean/Erdos1135/Tao/Renewal/QmStatement.olean",
+        "Erdos1135/Tao/Renewal/QmStatement.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.531,
+      "log": "results/predecessor-density-review/build/Erdos1135.Tao.Renewal.QmStatement.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "be94b04f57b75135530ac8c468bd146b99327304b71bfde506549a50593c4280"
     }
   ],
   "external_dependencies": [

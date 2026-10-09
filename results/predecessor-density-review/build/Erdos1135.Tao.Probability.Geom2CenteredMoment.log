@@ -1,0 +1,9 @@
+Erdos1135/Tao/Probability/Geom2CenteredMoment.lean:160:2: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Erdos1135/Tao/Probability/Geom2CenteredMoment.lean:340:8: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Erdos1135/Tao/Probability/Geom2CenteredMoment.lean:403:8: warning: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
