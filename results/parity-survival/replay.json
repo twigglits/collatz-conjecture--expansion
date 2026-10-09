@@ -1,0 +1,2683 @@
+{
+  "all_checks_passed": true,
+  "prefix_windows": {
+    "depth_interval": [
+      0,
+      16
+    ],
+    "rows": [
+      {
+        "depth": 0,
+        "positive_canonical_sources": 0,
+        "avoid_one_cases": 0,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 1,
+        "positive_canonical_sources": 1,
+        "avoid_one_cases": 0,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 2,
+        "positive_canonical_sources": 3,
+        "avoid_one_cases": 1,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 3,
+        "positive_canonical_sources": 7,
+        "avoid_one_cases": 4,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 4,
+        "positive_canonical_sources": 15,
+        "avoid_one_cases": 11,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 5,
+        "positive_canonical_sources": 31,
+        "avoid_one_cases": 25,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 6,
+        "positive_canonical_sources": 63,
+        "avoid_one_cases": 54,
+        "avoid64_cases": 0
+      },
+      {
+        "depth": 7,
+        "positive_canonical_sources": 127,
+        "avoid_one_cases": 114,
+        "avoid64_cases": 12
+      },
+      {
+        "depth": 8,
+        "positive_canonical_sources": 255,
+        "avoid_one_cases": 237,
+        "avoid64_cases": 60
+      },
+      {
+        "depth": 9,
+        "positive_canonical_sources": 511,
+        "avoid_one_cases": 487,
+        "avoid64_cases": 193
+      },
+      {
+        "depth": 10,
+        "positive_canonical_sources": 1023,
+        "avoid_one_cases": 991,
+        "avoid64_cases": 524
+      },
+      {
+        "depth": 11,
+        "positive_canonical_sources": 2047,
+        "avoid_one_cases": 2003,
+        "avoid64_cases": 1289
+      },
+      {
+        "depth": 12,
+        "positive_canonical_sources": 4095,
+        "avoid_one_cases": 4033,
+        "avoid64_cases": 2974
+      },
+      {
+        "depth": 13,
+        "positive_canonical_sources": 8191,
+        "avoid_one_cases": 8105,
+        "avoid64_cases": 6564
+      },
+      {
+        "depth": 14,
+        "positive_canonical_sources": 16383,
+        "avoid_one_cases": 16266,
+        "avoid64_cases": 14048
+      },
+      {
+        "depth": 15,
+        "positive_canonical_sources": 32767,
+        "avoid_one_cases": 32611,
+        "avoid64_cases": 29448
+      },
+      {
+        "depth": 16,
+        "positive_canonical_sources": 65535,
+        "avoid_one_cases": 65329,
+        "avoid64_cases": 60867
+      }
+    ],
+    "totals": {
+      "positive_source_depth_pairs": 131054,
+      "avoid_one_cases": 130271,
+      "avoid64_cases": 115979
+    },
+    "scope": "Complete positive canonical sources 1..2^k-1 at each depth; no all-lift claim from enumeration."
+  },
+  "complete_trajectory_window": {
+    "complete_source_interval": [
+      1,
+      32768
+    ],
+    "direct_index_checks": 2142640,
+    "smallest_time_bound_margin_in_window": 75,
+    "selected_cases": [
+      {
+        "source": 1,
+        "first_one_time": 0,
+        "first_floor64_time": 0,
+        "odd_count_at_one": 0,
+        "grade": 0,
+        "minimum_full_orbit_credit": 1,
+        "ceiling_log2_source": 0,
+        "linear_time_bound": 75
+      },
+      {
+        "source": 2,
+        "first_one_time": 1,
+        "first_floor64_time": 0,
+        "odd_count_at_one": 0,
+        "grade": 1,
+        "minimum_full_orbit_credit": 0,
+        "ceiling_log2_source": 1,
+        "linear_time_bound": 76
+      },
+      {
+        "source": 3,
+        "first_one_time": 5,
+        "first_floor64_time": 0,
+        "odd_count_at_one": 2,
+        "grade": 1,
+        "minimum_full_orbit_credit": 2,
+        "ceiling_log2_source": 2,
+        "linear_time_bound": 89
+      },
+      {
+        "source": 27,
+        "first_one_time": 70,
+        "first_floor64_time": 0,
+        "odd_count_at_one": 41,
+        "grade": -12,
+        "minimum_full_orbit_credit": 21,
+        "ceiling_log2_source": 5,
+        "linear_time_bound": 180
+      },
+      {
+        "source": 159,
+        "first_one_time": 36,
+        "first_floor64_time": 22,
+        "odd_count_at_one": 18,
+        "grade": 0,
+        "minimum_full_orbit_credit": 9,
+        "ceiling_log2_source": 8,
+        "linear_time_bound": 147
+      },
+      {
+        "source": 6171,
+        "first_one_time": 165,
+        "first_floor64_time": 94,
+        "odd_count_at_one": 96,
+        "grade": -27,
+        "minimum_full_orbit_credit": 36,
+        "ceiling_log2_source": 13,
+        "linear_time_bound": 280
+      },
+      {
+        "source": 32768,
+        "first_one_time": 15,
+        "first_floor64_time": 9,
+        "odd_count_at_one": 0,
+        "grade": 15,
+        "minimum_full_orbit_credit": 0,
+        "ceiling_log2_source": 15,
+        "linear_time_bound": 146
+      }
+    ],
+    "all_source_extension_inferred": false
+  },
+  "endpoint_tests": {
+    "sources": [
+      1,
+      2,
+      3,
+      27,
+      31,
+      159,
+      6171,
+      837799,
+      1723519
+    ],
+    "cases": [
+      {
+        "source": 1,
+        "allowance": 0,
+        "clock": 1,
+        "odd_count": 1,
+        "endpoint_condition": false,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1,
+        "allowance": 1,
+        "clock": 5,
+        "odd_count": 3,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1,
+        "allowance": 2,
+        "clock": 9,
+        "odd_count": 5,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1,
+        "allowance": 3,
+        "clock": 13,
+        "odd_count": 7,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 2,
+        "allowance": 0,
+        "clock": 6,
+        "odd_count": 3,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 2,
+        "allowance": 1,
+        "clock": 10,
+        "odd_count": 5,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 2,
+        "allowance": 2,
+        "clock": 14,
+        "odd_count": 7,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 3,
+        "allowance": 0,
+        "clock": 11,
+        "odd_count": 5,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 3,
+        "allowance": 1,
+        "clock": 15,
+        "odd_count": 7,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 3,
+        "allowance": 2,
+        "clock": 19,
+        "odd_count": 9,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 3,
+        "allowance": 3,
+        "clock": 23,
+        "odd_count": 11,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 3,
+        "allowance": 4,
+        "clock": 27,
+        "odd_count": 13,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 0,
+        "clock": 26,
+        "odd_count": 18,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 1,
+        "clock": 30,
+        "odd_count": 21,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 2,
+        "clock": 34,
+        "odd_count": 24,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 3,
+        "clock": 38,
+        "odd_count": 28,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 4,
+        "clock": 42,
+        "odd_count": 30,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 5,
+        "clock": 46,
+        "odd_count": 33,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 6,
+        "clock": 50,
+        "odd_count": 34,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 7,
+        "clock": 54,
+        "odd_count": 36,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 8,
+        "clock": 58,
+        "odd_count": 37,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 9,
+        "clock": 62,
+        "odd_count": 40,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 10,
+        "clock": 66,
+        "odd_count": 40,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 11,
+        "clock": 70,
+        "odd_count": 41,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 12,
+        "clock": 74,
+        "odd_count": 43,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 13,
+        "clock": 78,
+        "odd_count": 45,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 14,
+        "clock": 82,
+        "odd_count": 47,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 15,
+        "clock": 86,
+        "odd_count": 49,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 16,
+        "clock": 90,
+        "odd_count": 51,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 17,
+        "clock": 94,
+        "odd_count": 53,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 18,
+        "clock": 98,
+        "odd_count": 55,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 19,
+        "clock": 102,
+        "odd_count": 57,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 20,
+        "clock": 106,
+        "odd_count": 59,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 21,
+        "clock": 110,
+        "odd_count": 61,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 22,
+        "clock": 114,
+        "odd_count": 63,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 27,
+        "allowance": 23,
+        "clock": 118,
+        "odd_count": 65,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 0,
+        "clock": 26,
+        "odd_count": 19,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 1,
+        "clock": 30,
+        "odd_count": 21,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 2,
+        "clock": 34,
+        "odd_count": 25,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 3,
+        "clock": 38,
+        "odd_count": 27,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 4,
+        "clock": 42,
+        "odd_count": 31,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 5,
+        "clock": 46,
+        "odd_count": 32,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 6,
+        "clock": 50,
+        "odd_count": 34,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 7,
+        "clock": 54,
+        "odd_count": 35,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 8,
+        "clock": 58,
+        "odd_count": 37,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 9,
+        "clock": 62,
+        "odd_count": 38,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 10,
+        "clock": 66,
+        "odd_count": 39,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 11,
+        "clock": 70,
+        "odd_count": 41,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 12,
+        "clock": 74,
+        "odd_count": 43,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 13,
+        "clock": 78,
+        "odd_count": 45,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 14,
+        "clock": 82,
+        "odd_count": 47,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 15,
+        "clock": 86,
+        "odd_count": 49,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 16,
+        "clock": 90,
+        "odd_count": 51,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 17,
+        "clock": 94,
+        "odd_count": 53,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 18,
+        "clock": 98,
+        "odd_count": 55,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 19,
+        "clock": 102,
+        "odd_count": 57,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 20,
+        "clock": 106,
+        "odd_count": 59,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 21,
+        "clock": 110,
+        "odd_count": 61,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 31,
+        "allowance": 22,
+        "clock": 114,
+        "odd_count": 63,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 0,
+        "clock": 41,
+        "odd_count": 21,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 1,
+        "clock": 45,
+        "odd_count": 23,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 2,
+        "clock": 49,
+        "odd_count": 25,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 3,
+        "clock": 53,
+        "odd_count": 27,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 4,
+        "clock": 57,
+        "odd_count": 29,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 5,
+        "clock": 61,
+        "odd_count": 31,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 6,
+        "clock": 65,
+        "odd_count": 33,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 7,
+        "clock": 69,
+        "odd_count": 35,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 8,
+        "clock": 73,
+        "odd_count": 37,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 9,
+        "clock": 77,
+        "odd_count": 39,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 10,
+        "clock": 81,
+        "odd_count": 41,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 159,
+        "allowance": 11,
+        "clock": 85,
+        "odd_count": 43,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 0,
+        "clock": 66,
+        "odd_count": 41,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 1,
+        "clock": 70,
+        "odd_count": 43,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 2,
+        "clock": 74,
+        "odd_count": 45,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 3,
+        "clock": 78,
+        "odd_count": 48,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 4,
+        "clock": 82,
+        "odd_count": 50,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 5,
+        "clock": 86,
+        "odd_count": 53,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 6,
+        "clock": 90,
+        "odd_count": 53,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 7,
+        "clock": 94,
+        "odd_count": 55,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 8,
+        "clock": 98,
+        "odd_count": 58,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 9,
+        "clock": 102,
+        "odd_count": 61,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 10,
+        "clock": 106,
+        "odd_count": 63,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 11,
+        "clock": 110,
+        "odd_count": 66,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 12,
+        "clock": 114,
+        "odd_count": 69,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 13,
+        "clock": 118,
+        "odd_count": 72,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 14,
+        "clock": 122,
+        "odd_count": 74,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 15,
+        "clock": 126,
+        "odd_count": 77,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 16,
+        "clock": 130,
+        "odd_count": 80,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 17,
+        "clock": 134,
+        "odd_count": 84,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 18,
+        "clock": 138,
+        "odd_count": 86,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 19,
+        "clock": 142,
+        "odd_count": 88,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 20,
+        "clock": 146,
+        "odd_count": 90,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 21,
+        "clock": 150,
+        "odd_count": 91,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 22,
+        "clock": 154,
+        "odd_count": 92,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 23,
+        "clock": 158,
+        "odd_count": 95,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 24,
+        "clock": 162,
+        "odd_count": 96,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 25,
+        "clock": 166,
+        "odd_count": 97,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 26,
+        "clock": 170,
+        "odd_count": 99,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 27,
+        "clock": 174,
+        "odd_count": 101,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 28,
+        "clock": 178,
+        "odd_count": 103,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 29,
+        "clock": 182,
+        "odd_count": 105,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 30,
+        "clock": 186,
+        "odd_count": 107,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 31,
+        "clock": 190,
+        "odd_count": 109,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 32,
+        "clock": 194,
+        "odd_count": 111,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 33,
+        "clock": 198,
+        "odd_count": 113,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 34,
+        "clock": 202,
+        "odd_count": 115,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 35,
+        "clock": 206,
+        "odd_count": 117,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 36,
+        "clock": 210,
+        "odd_count": 119,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 37,
+        "clock": 214,
+        "odd_count": 121,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 6171,
+        "allowance": 38,
+        "clock": 218,
+        "odd_count": 123,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 0,
+        "clock": 101,
+        "odd_count": 65,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 1,
+        "clock": 105,
+        "odd_count": 66,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 2,
+        "clock": 109,
+        "odd_count": 70,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 3,
+        "clock": 113,
+        "odd_count": 72,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 4,
+        "clock": 117,
+        "odd_count": 75,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 5,
+        "clock": 121,
+        "odd_count": 77,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 6,
+        "clock": 125,
+        "odd_count": 80,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 7,
+        "clock": 129,
+        "odd_count": 83,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 8,
+        "clock": 133,
+        "odd_count": 85,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 9,
+        "clock": 137,
+        "odd_count": 89,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 10,
+        "clock": 141,
+        "odd_count": 92,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 11,
+        "clock": 145,
+        "odd_count": 94,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 12,
+        "clock": 149,
+        "odd_count": 96,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 13,
+        "clock": 153,
+        "odd_count": 100,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 14,
+        "clock": 157,
+        "odd_count": 102,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 15,
+        "clock": 161,
+        "odd_count": 105,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 16,
+        "clock": 165,
+        "odd_count": 108,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 17,
+        "clock": 169,
+        "odd_count": 110,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 18,
+        "clock": 173,
+        "odd_count": 113,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 19,
+        "clock": 177,
+        "odd_count": 114,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 20,
+        "clock": 181,
+        "odd_count": 116,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 21,
+        "clock": 185,
+        "odd_count": 119,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 22,
+        "clock": 189,
+        "odd_count": 122,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 23,
+        "clock": 193,
+        "odd_count": 123,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 24,
+        "clock": 197,
+        "odd_count": 125,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 25,
+        "clock": 201,
+        "odd_count": 127,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 26,
+        "clock": 205,
+        "odd_count": 130,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 27,
+        "clock": 209,
+        "odd_count": 132,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 28,
+        "clock": 213,
+        "odd_count": 134,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 29,
+        "clock": 217,
+        "odd_count": 136,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 30,
+        "clock": 221,
+        "odd_count": 137,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 31,
+        "clock": 225,
+        "odd_count": 140,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 32,
+        "clock": 229,
+        "odd_count": 142,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 33,
+        "clock": 233,
+        "odd_count": 145,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 34,
+        "clock": 237,
+        "odd_count": 146,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 35,
+        "clock": 241,
+        "odd_count": 148,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 36,
+        "clock": 245,
+        "odd_count": 149,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 37,
+        "clock": 249,
+        "odd_count": 150,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 38,
+        "clock": 253,
+        "odd_count": 153,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 39,
+        "clock": 257,
+        "odd_count": 154,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 40,
+        "clock": 261,
+        "odd_count": 156,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 41,
+        "clock": 265,
+        "odd_count": 159,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 42,
+        "clock": 269,
+        "odd_count": 162,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 43,
+        "clock": 273,
+        "odd_count": 164,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 44,
+        "clock": 277,
+        "odd_count": 167,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 45,
+        "clock": 281,
+        "odd_count": 171,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 46,
+        "clock": 285,
+        "odd_count": 172,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 47,
+        "clock": 289,
+        "odd_count": 175,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 48,
+        "clock": 293,
+        "odd_count": 178,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 49,
+        "clock": 297,
+        "odd_count": 182,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 50,
+        "clock": 301,
+        "odd_count": 184,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 51,
+        "clock": 305,
+        "odd_count": 187,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 52,
+        "clock": 309,
+        "odd_count": 188,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 53,
+        "clock": 313,
+        "odd_count": 190,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 54,
+        "clock": 317,
+        "odd_count": 191,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 55,
+        "clock": 321,
+        "odd_count": 194,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 56,
+        "clock": 325,
+        "odd_count": 194,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 57,
+        "clock": 329,
+        "odd_count": 195,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 58,
+        "clock": 333,
+        "odd_count": 197,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 59,
+        "clock": 337,
+        "odd_count": 199,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 60,
+        "clock": 341,
+        "odd_count": 201,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 61,
+        "clock": 345,
+        "odd_count": 203,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 62,
+        "clock": 349,
+        "odd_count": 205,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 63,
+        "clock": 353,
+        "odd_count": 207,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 64,
+        "clock": 357,
+        "odd_count": 209,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 65,
+        "clock": 361,
+        "odd_count": 211,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 66,
+        "clock": 365,
+        "odd_count": 213,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 67,
+        "clock": 369,
+        "odd_count": 215,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 68,
+        "clock": 373,
+        "odd_count": 217,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 69,
+        "clock": 377,
+        "odd_count": 219,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 70,
+        "clock": 381,
+        "odd_count": 221,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 71,
+        "clock": 385,
+        "odd_count": 223,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 837799,
+        "allowance": 72,
+        "clock": 389,
+        "odd_count": 225,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 0,
+        "clock": 106,
+        "odd_count": 72,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 1,
+        "clock": 110,
+        "odd_count": 76,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 2,
+        "clock": 114,
+        "odd_count": 78,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 3,
+        "clock": 118,
+        "odd_count": 82,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 4,
+        "clock": 122,
+        "odd_count": 85,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 5,
+        "clock": 126,
+        "odd_count": 87,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 6,
+        "clock": 130,
+        "odd_count": 88,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 7,
+        "clock": 134,
+        "odd_count": 88,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 8,
+        "clock": 138,
+        "odd_count": 88,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 9,
+        "clock": 142,
+        "odd_count": 90,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 10,
+        "clock": 146,
+        "odd_count": 94,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 11,
+        "clock": 150,
+        "odd_count": 97,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 12,
+        "clock": 154,
+        "odd_count": 99,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 13,
+        "clock": 158,
+        "odd_count": 101,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 14,
+        "clock": 162,
+        "odd_count": 103,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 15,
+        "clock": 166,
+        "odd_count": 105,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 16,
+        "clock": 170,
+        "odd_count": 109,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 17,
+        "clock": 174,
+        "odd_count": 111,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 18,
+        "clock": 178,
+        "odd_count": 113,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 19,
+        "clock": 182,
+        "odd_count": 116,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 20,
+        "clock": 186,
+        "odd_count": 117,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 21,
+        "clock": 190,
+        "odd_count": 121,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 22,
+        "clock": 194,
+        "odd_count": 124,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 23,
+        "clock": 198,
+        "odd_count": 128,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 24,
+        "clock": 202,
+        "odd_count": 131,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 25,
+        "clock": 206,
+        "odd_count": 134,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 26,
+        "clock": 210,
+        "odd_count": 137,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 27,
+        "clock": 214,
+        "odd_count": 139,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 28,
+        "clock": 218,
+        "odd_count": 142,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 29,
+        "clock": 222,
+        "odd_count": 142,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 30,
+        "clock": 226,
+        "odd_count": 143,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 31,
+        "clock": 230,
+        "odd_count": 143,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 32,
+        "clock": 234,
+        "odd_count": 145,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 33,
+        "clock": 238,
+        "odd_count": 147,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 34,
+        "clock": 242,
+        "odd_count": 150,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 35,
+        "clock": 246,
+        "odd_count": 153,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 36,
+        "clock": 250,
+        "odd_count": 156,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 37,
+        "clock": 254,
+        "odd_count": 159,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 38,
+        "clock": 258,
+        "odd_count": 161,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 39,
+        "clock": 262,
+        "odd_count": 164,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 40,
+        "clock": 266,
+        "odd_count": 166,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 41,
+        "clock": 270,
+        "odd_count": 168,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 42,
+        "clock": 274,
+        "odd_count": 169,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 43,
+        "clock": 278,
+        "odd_count": 171,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 44,
+        "clock": 282,
+        "odd_count": 172,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 45,
+        "clock": 286,
+        "odd_count": 172,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 46,
+        "clock": 290,
+        "odd_count": 174,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 47,
+        "clock": 294,
+        "odd_count": 177,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 48,
+        "clock": 298,
+        "odd_count": 180,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 49,
+        "clock": 302,
+        "odd_count": 183,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 50,
+        "clock": 306,
+        "odd_count": 185,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 51,
+        "clock": 310,
+        "odd_count": 188,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 52,
+        "clock": 314,
+        "odd_count": 191,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 53,
+        "clock": 318,
+        "odd_count": 195,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 54,
+        "clock": 322,
+        "odd_count": 197,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 55,
+        "clock": 326,
+        "odd_count": 199,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 56,
+        "clock": 330,
+        "odd_count": 201,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 57,
+        "clock": 334,
+        "odd_count": 202,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 58,
+        "clock": 338,
+        "odd_count": 203,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 59,
+        "clock": 342,
+        "odd_count": 206,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 60,
+        "clock": 346,
+        "odd_count": 207,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 61,
+        "clock": 350,
+        "odd_count": 208,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 62,
+        "clock": 354,
+        "odd_count": 210,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 63,
+        "clock": 358,
+        "odd_count": 212,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 64,
+        "clock": 362,
+        "odd_count": 214,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 65,
+        "clock": 366,
+        "odd_count": 216,
+        "endpoint_condition": false,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 66,
+        "clock": 370,
+        "odd_count": 218,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 67,
+        "clock": 374,
+        "odd_count": 220,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 68,
+        "clock": 378,
+        "odd_count": 222,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 69,
+        "clock": 382,
+        "odd_count": 224,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 70,
+        "clock": 386,
+        "odd_count": 226,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 71,
+        "clock": 390,
+        "odd_count": 228,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 72,
+        "clock": 394,
+        "odd_count": 230,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 73,
+        "clock": 398,
+        "odd_count": 232,
+        "endpoint_condition": true,
+        "earlier_credit_violation": true,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 74,
+        "clock": 402,
+        "odd_count": 234,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 75,
+        "clock": 406,
+        "odd_count": 236,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      },
+      {
+        "source": 1723519,
+        "allowance": 76,
+        "clock": 410,
+        "odd_count": 238,
+        "endpoint_condition": true,
+        "earlier_credit_violation": false,
+        "source_converges": true
+      }
+    ],
+    "valid_endpoint_certificates": 79,
+    "failed_conditions_on_convergent_sources": 181,
+    "valid_despite_earlier_credit_violation": 52,
+    "explicit_endpoint_only_witness": {
+      "source": 27,
+      "allowance": 12,
+      "clock": 74,
+      "odd_count": 43,
+      "endpoint_condition": true,
+      "earlier_credit_violation": true,
+      "source_converges": true
+    }
+  },
+  "large_families": {
+    "all_odd_prefix_cases": 1024,
+    "all_odd_length_interval": [
+      1,
+      256
+    ],
+    "explicit_large_convergent_family": [
+      {
+        "odd_prefix_length": 2,
+        "source_bits": 2,
+        "source_decimal_sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+        "power_of_two_endpoint_exponent": 3,
+        "first_one_time": 5,
+        "first_floor64_time": 0,
+        "odd_count_at_one": 2,
+        "grade": 1,
+        "minimum_full_orbit_credit": 2,
+        "ceiling_log2_source": 2,
+        "linear_time_bound": 89
+      },
+      {
+        "odd_prefix_length": 3,
+        "source_bits": 8,
+        "source_decimal_sha256": "8e612bd1f5d132a339575b8dafb7842c64614e56bcf3d5ab65a0bc4b34329407",
+        "power_of_two_endpoint_exponent": 9,
+        "first_one_time": 12,
+        "first_floor64_time": 6,
+        "odd_count_at_one": 3,
+        "grade": 6,
+        "minimum_full_orbit_credit": 3,
+        "ceiling_log2_source": 8,
+        "linear_time_bound": 123
+      },
+      {
+        "odd_prefix_length": 4,
+        "source_bits": 25,
+        "source_decimal_sha256": "848df860147cee24bd97fbd7d5b182d19547f2e4cff44ddddb815c9f28c81cf7",
+        "power_of_two_endpoint_exponent": 27,
+        "first_one_time": 31,
+        "first_floor64_time": 25,
+        "odd_count_at_one": 4,
+        "grade": 23,
+        "minimum_full_orbit_credit": 4,
+        "ceiling_log2_source": 25,
+        "linear_time_bound": 212
+      },
+      {
+        "odd_prefix_length": 5,
+        "source_bits": 79,
+        "source_decimal_sha256": "a003902eff619564255287c116d52ea0f4b598e3ef9a2434ea8d1348164e77f0",
+        "power_of_two_endpoint_exponent": 81,
+        "first_one_time": 86,
+        "first_floor64_time": 80,
+        "odd_count_at_one": 5,
+        "grade": 76,
+        "minimum_full_orbit_credit": 5,
+        "ceiling_log2_source": 79,
+        "linear_time_bound": 486
+      },
+      {
+        "odd_prefix_length": 6,
+        "source_bits": 240,
+        "source_decimal_sha256": "0426f14da2cc8c3b1fadabfb7e5d8feaf5ca1eae57180cabf7c34beb3b2c1911",
+        "power_of_two_endpoint_exponent": 243,
+        "first_one_time": 249,
+        "first_floor64_time": 243,
+        "odd_count_at_one": 6,
+        "grade": 237,
+        "minimum_full_orbit_credit": 6,
+        "ceiling_log2_source": 240,
+        "linear_time_bound": 1295
+      },
+      {
+        "odd_prefix_length": 7,
+        "source_bits": 725,
+        "source_decimal_sha256": "8bf6909aa12e41abbe3929968165b81d6aa40ddbe7d3dea45ae1f0afcb277088",
+        "power_of_two_endpoint_exponent": 729,
+        "first_one_time": 736,
+        "first_floor64_time": 730,
+        "odd_count_at_one": 7,
+        "grade": 722,
+        "minimum_full_orbit_credit": 7,
+        "ceiling_log2_source": 725,
+        "linear_time_bound": 3724
+      },
+      {
+        "odd_prefix_length": 8,
+        "source_bits": 2183,
+        "source_decimal_sha256": "2011b88d9ec0fcc50d1eea0b8cb8b852a9d2783b272ae405d49ff9e75ec904c1",
+        "power_of_two_endpoint_exponent": 2187,
+        "first_one_time": 2195,
+        "first_floor64_time": 2189,
+        "odd_count_at_one": 8,
+        "grade": 2179,
+        "minimum_full_orbit_credit": 8,
+        "ceiling_log2_source": 2183,
+        "linear_time_bound": 11018
+      },
+      {
+        "odd_prefix_length": 9,
+        "source_bits": 6556,
+        "source_decimal_sha256": "c3bd511b529e53b109d6eeceaa1ffe62c240631bce0d41c3e6f7ae13a4b172ce",
+        "power_of_two_endpoint_exponent": 6561,
+        "first_one_time": 6570,
+        "first_floor64_time": 6564,
+        "odd_count_at_one": 9,
+        "grade": 6552,
+        "minimum_full_orbit_credit": 9,
+        "ceiling_log2_source": 6556,
+        "linear_time_bound": 32887
+      }
+    ],
+    "arbitrary_all_odd_family_convergence_inferred": false
+  },
+  "universal_parity_bound_proved": false,
+  "collatz_status": "unresolved"
+}

@@ -1,0 +1,3988 @@
+{
+  "all_checks_passed": true,
+  "canonical_windows": {
+    "source_depth_pairs": 524287,
+    "complete_depths": [
+      0,
+      18
+    ],
+    "rows": [
+      {
+        "depth": 0,
+        "canonical_sources": 1,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 1,
+        "canonical_sources": 2,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 2,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 2,
+        "canonical_sources": 4,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 2,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 1,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 1,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 2,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 8,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 3,
+        "canonical_sources": 8,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 3,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 2,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 2,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 2,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 3,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 26,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 4,
+        "canonical_sources": 16,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 4,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 2,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 2,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 1,
+            "even_count": 3,
+            "count": 2,
+            "target_residue": 1,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 3,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 13,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 4,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 80,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 5,
+        "canonical_sources": 32,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 5,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 3,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 17,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 2,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 4,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 20,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 4,
+            "count": 3,
+            "target_residue": 2,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 5,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 242,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 6,
+        "canonical_sources": 64,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 6,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 3,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 17,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 2,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 2,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 4,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 20,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 1,
+            "even_count": 5,
+            "count": 3,
+            "target_residue": 1,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 5,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 107,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 6,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 728,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 7,
+        "canonical_sources": 128,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 7,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 4,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 20,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 3,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 17,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 2,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 2,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 5,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 107,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 6,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 161,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 6,
+            "count": 4,
+            "target_residue": 2,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 7,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 2186,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 8,
+        "canonical_sources": 256,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 8,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 4,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 20,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 3,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 2,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 5,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 107,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 2,
+            "even_count": 6,
+            "count": 6,
+            "target_residue": 2,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 7,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 242,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 6,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 161,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 1,
+            "even_count": 7,
+            "count": 4,
+            "target_residue": 1,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 8,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 6560,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 9,
+        "canonical_sources": 512,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 9,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 5,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 107,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 4,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 17,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 3,
+            "even_count": 6,
+            "count": 7,
+            "target_residue": 2,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 7,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 242,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 7,
+            "count": 8,
+            "target_residue": 2,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 6,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 161,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 8,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 1640,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 8,
+            "count": 5,
+            "target_residue": 2,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 9,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 19682,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 10,
+        "canonical_sources": 1024,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 10,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 5,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 20,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 4,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 44,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 6,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 161,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 3,
+            "even_count": 7,
+            "count": 10,
+            "target_residue": 2,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 8,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 1640,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 7,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 242,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 2,
+            "even_count": 8,
+            "count": 10,
+            "target_residue": 2,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 9,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 3077,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 9,
+            "count": 5,
+            "target_residue": 1,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 10,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 59048,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 11,
+        "canonical_sources": 2048,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 11,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 6,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 107,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 5,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 71,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 4,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 44,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 8,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 1640,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 3,
+            "even_count": 8,
+            "count": 14,
+            "target_residue": 2,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 7,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 242,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 9,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 3077,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 9,
+            "count": 12,
+            "target_residue": 2,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 10,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 4616,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 10,
+            "count": 6,
+            "target_residue": 2,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 11,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 177146,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 12,
+        "canonical_sources": 4096,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 12,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 6,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 107,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 5,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 71,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 4,
+            "even_count": 8,
+            "count": 17,
+            "target_residue": 44,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 9,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 3077,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 7,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 161,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 8,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 1640,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 3,
+            "even_count": 9,
+            "count": 18,
+            "target_residue": 2,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 10,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 4616,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 10,
+            "count": 14,
+            "target_residue": 2,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 1,
+            "even_count": 11,
+            "count": 6,
+            "target_residue": 1,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 11,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 54674,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 12,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 531440,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 13,
+        "canonical_sources": 8192,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 13,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 7,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 161,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 6,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 107,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 5,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 206,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 10,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 4616,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 4,
+            "even_count": 9,
+            "count": 22,
+            "target_residue": 44,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 9,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 3077,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 8,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 242,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 11,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 54674,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 3,
+            "even_count": 10,
+            "count": 22,
+            "target_residue": 2,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 2,
+            "even_count": 11,
+            "count": 16,
+            "target_residue": 2,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 12,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 95498,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 12,
+            "count": 7,
+            "target_residue": 2,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 13,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 1594322,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 14,
+        "canonical_sources": 16384,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 14,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 3194
+          },
+          {
+            "odd_count": 7,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 161,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 6,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 674,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 5,
+            "even_count": 9,
+            "count": 25,
+            "target_residue": 206,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 10,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 4616,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 11,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 54674,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 8,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 242,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 4,
+            "even_count": 10,
+            "count": 29,
+            "target_residue": 71,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 9,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 1640,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 12,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 95498,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 3,
+            "even_count": 11,
+            "count": 27,
+            "target_residue": 2,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 2,
+            "even_count": 12,
+            "count": 18,
+            "target_residue": 2,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 13,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 177146,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 13,
+            "count": 7,
+            "target_residue": 1,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 14,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 4782968,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 15,
+        "canonical_sources": 32768,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 15,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 5487
+          },
+          {
+            "odd_count": 8,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 242,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 7,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 2105,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 6,
+            "even_count": 9,
+            "count": 25,
+            "target_residue": 71,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 11,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 54674,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 5,
+            "even_count": 10,
+            "count": 34,
+            "target_residue": 152,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 9,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 2051,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 10,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 3077,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 12,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 95498,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 4,
+            "even_count": 11,
+            "count": 37,
+            "target_residue": 2,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 3,
+            "even_count": 12,
+            "count": 33,
+            "target_residue": 2,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 13,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 177146,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 13,
+            "count": 21,
+            "target_residue": 2,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 14,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 1046276,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 14,
+            "count": 8,
+            "target_residue": 2,
+            "recurrence_bound": 3194
+          },
+          {
+            "odd_count": 15,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 14348906,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 16,
+        "canonical_sources": 65536,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 16,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 9389
+          },
+          {
+            "odd_count": 8,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 3158,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 7,
+            "even_count": 9,
+            "count": 25,
+            "target_residue": 107,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 6,
+            "even_count": 10,
+            "count": 37,
+            "target_residue": 719,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 12,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 95498,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 9,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 2186,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 11,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 4616,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 5,
+            "even_count": 11,
+            "count": 47,
+            "target_residue": 152,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 10,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 3077,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 4,
+            "even_count": 12,
+            "count": 48,
+            "target_residue": 2,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 13,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 177146,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 14,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 1046276,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 3,
+            "even_count": 13,
+            "count": 40,
+            "target_residue": 2,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 2,
+            "even_count": 14,
+            "count": 24,
+            "target_residue": 2,
+            "recurrence_bound": 3194
+          },
+          {
+            "odd_count": 15,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 2657204,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 15,
+            "count": 8,
+            "target_residue": 1,
+            "recurrence_bound": 5487
+          },
+          {
+            "odd_count": 16,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 43046720,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 17,
+        "canonical_sources": 131072,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 17,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 16037
+          },
+          {
+            "odd_count": 9,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 14579,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 8,
+            "even_count": 9,
+            "count": 26,
+            "target_residue": 3158,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 7,
+            "even_count": 10,
+            "count": 37,
+            "target_residue": 395,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 13,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 177146,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 6,
+            "even_count": 11,
+            "count": 53,
+            "target_residue": 638,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 10,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 14579,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 12,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 54674,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 11,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 4616,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 5,
+            "even_count": 12,
+            "count": 63,
+            "target_residue": 236,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 4,
+            "even_count": 13,
+            "count": 62,
+            "target_residue": 74,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 14,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 1046276,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 15,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 2657204,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 3,
+            "even_count": 14,
+            "count": 48,
+            "target_residue": 2,
+            "recurrence_bound": 3194
+          },
+          {
+            "odd_count": 2,
+            "even_count": 15,
+            "count": 27,
+            "target_residue": 2,
+            "recurrence_bound": 5487
+          },
+          {
+            "odd_count": 16,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 8743868,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 16,
+            "count": 9,
+            "target_residue": 2,
+            "recurrence_bound": 9389
+          },
+          {
+            "odd_count": 17,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 129140162,
+            "recurrence_bound": 1
+          }
+        ]
+      },
+      {
+        "depth": 18,
+        "canonical_sources": 262144,
+        "maxima_by_even_count": [
+          {
+            "odd_count": 0,
+            "even_count": 18,
+            "count": 1,
+            "target_residue": 0,
+            "recurrence_bound": 27395
+          },
+          {
+            "odd_count": 9,
+            "even_count": 9,
+            "count": 26,
+            "target_residue": 14579,
+            "recurrence_bound": 191
+          },
+          {
+            "odd_count": 8,
+            "even_count": 10,
+            "count": 37,
+            "target_residue": 161,
+            "recurrence_bound": 341
+          },
+          {
+            "odd_count": 7,
+            "even_count": 11,
+            "count": 55,
+            "target_residue": 2051,
+            "recurrence_bound": 604
+          },
+          {
+            "odd_count": 13,
+            "even_count": 5,
+            "count": 5,
+            "target_residue": 95498,
+            "recurrence_bound": 16
+          },
+          {
+            "odd_count": 14,
+            "even_count": 4,
+            "count": 4,
+            "target_residue": 1046276,
+            "recurrence_bound": 8
+          },
+          {
+            "odd_count": 10,
+            "even_count": 8,
+            "count": 18,
+            "target_residue": 21869,
+            "recurrence_bound": 106
+          },
+          {
+            "odd_count": 6,
+            "even_count": 12,
+            "count": 74,
+            "target_residue": 638,
+            "recurrence_bound": 1061
+          },
+          {
+            "odd_count": 12,
+            "even_count": 6,
+            "count": 8,
+            "target_residue": 54674,
+            "recurrence_bound": 31
+          },
+          {
+            "odd_count": 11,
+            "even_count": 7,
+            "count": 12,
+            "target_residue": 21869,
+            "recurrence_bound": 58
+          },
+          {
+            "odd_count": 5,
+            "even_count": 13,
+            "count": 83,
+            "target_residue": 125,
+            "recurrence_bound": 1848
+          },
+          {
+            "odd_count": 15,
+            "even_count": 3,
+            "count": 3,
+            "target_residue": 2657204,
+            "recurrence_bound": 4
+          },
+          {
+            "odd_count": 4,
+            "even_count": 14,
+            "count": 78,
+            "target_residue": 47,
+            "recurrence_bound": 3194
+          },
+          {
+            "odd_count": 3,
+            "even_count": 15,
+            "count": 57,
+            "target_residue": 2,
+            "recurrence_bound": 5487
+          },
+          {
+            "odd_count": 16,
+            "even_count": 2,
+            "count": 2,
+            "target_residue": 8743868,
+            "recurrence_bound": 2
+          },
+          {
+            "odd_count": 2,
+            "even_count": 16,
+            "count": 30,
+            "target_residue": 2,
+            "recurrence_bound": 9389
+          },
+          {
+            "odd_count": 17,
+            "even_count": 1,
+            "count": 1,
+            "target_residue": 13935563,
+            "recurrence_bound": 1
+          },
+          {
+            "odd_count": 1,
+            "even_count": 17,
+            "count": 9,
+            "target_residue": 1,
+            "recurrence_bound": 16037
+          },
+          {
+            "odd_count": 18,
+            "even_count": 0,
+            "count": 1,
+            "target_residue": 387420488,
+            "recurrence_bound": 1
+          }
+        ]
+      }
+    ]
+  },
+  "parity_words": {
+    "small_words_compared_with_direct_trajectories": 8191,
+    "selected_parity_words": 8215772,
+    "direct_witness_lift_checks": 3621,
+    "rows": [
+      {
+        "even_count": 2,
+        "odd_count": 64,
+        "depth": 66,
+        "parity_words": 2145,
+        "complete_target_residue_classes": 3433683820292512484657849089281,
+        "nonempty_fibres": 2081,
+        "maximum": 2,
+        "recurrence_bound": 2,
+        "witness_target_residue": 3433683820292512484657849089280,
+        "complete_canonical_witness_members": [
+          73786976294838206460,
+          73786976294838206461
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 3,
+        "odd_count": 48,
+        "depth": 51,
+        "parity_words": 20825,
+        "complete_target_residue_classes": 79766443076872509863361,
+        "nonempty_fibres": 19601,
+        "maximum": 3,
+        "recurrence_bound": 4,
+        "witness_target_residue": 26588814358957503287786,
+        "complete_canonical_witness_members": [
+          750599937895076,
+          750599937895077,
+          750599937895078
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 4,
+        "odd_count": 32,
+        "depth": 36,
+        "parity_words": 58905,
+        "complete_target_residue_classes": 1853020188851841,
+        "nonempty_fibres": 52331,
+        "maximum": 4,
+        "recurrence_bound": 8,
+        "witness_target_residue": 617673396283946,
+        "complete_canonical_witness_members": [
+          22906492232,
+          22906492234,
+          22906492236,
+          22906492237
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 5,
+        "odd_count": 24,
+        "depth": 29,
+        "parity_words": 118755,
+        "complete_target_residue_classes": 282429536481,
+        "nonempty_fibres": 97878,
+        "maximum": 5,
+        "recurrence_bound": 16,
+        "witness_target_residue": 94143178826,
+        "complete_canonical_witness_members": [
+          178956944,
+          178956948,
+          178956949,
+          178956952,
+          178956954
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 6,
+        "odd_count": 16,
+        "depth": 22,
+        "parity_words": 74613,
+        "complete_target_residue_classes": 43046721,
+        "nonempty_fibres": 52548,
+        "maximum": 8,
+        "recurrence_bound": 31,
+        "witness_target_residue": 23914844,
+        "complete_canonical_witness_members": [
+          2330128,
+          2330132,
+          2330133,
+          2330136,
+          2330138,
+          2330146,
+          2330147,
+          2330155
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 7,
+        "odd_count": 16,
+        "depth": 23,
+        "parity_words": 245157,
+        "complete_target_residue_classes": 43046721,
+        "nonempty_fibres": 159892,
+        "maximum": 12,
+        "recurrence_bound": 58,
+        "witness_target_residue": 23914844,
+        "complete_canonical_witness_members": [
+          4660256,
+          4660264,
+          4660266,
+          4660272,
+          4660276,
+          4660277,
+          4660292,
+          4660293,
+          4660294,
+          4660299,
+          4660310,
+          4660311
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 8,
+        "odd_count": 16,
+        "depth": 24,
+        "parity_words": 735471,
+        "complete_target_residue_classes": 43046721,
+        "nonempty_fibres": 436868,
+        "maximum": 18,
+        "recurrence_bound": 106,
+        "witness_target_residue": 1594322,
+        "complete_canonical_witness_members": [
+          621248,
+          621264,
+          621268,
+          621269,
+          621280,
+          621282,
+          621283,
+          621288,
+          621290,
+          621297,
+          621316,
+          621317,
+          621318,
+          621326,
+          621327,
+          621340,
+          621341,
+          621342
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 9,
+        "odd_count": 7,
+        "depth": 16,
+        "parity_words": 11440,
+        "complete_target_residue_classes": 2187,
+        "nonempty_fibres": 1392,
+        "maximum": 25,
+        "recurrence_bound": 191,
+        "witness_target_residue": 593,
+        "complete_canonical_witness_members": [
+          17536,
+          17568,
+          17576,
+          17578,
+          17600,
+          17616,
+          17620,
+          17621,
+          17634,
+          17635,
+          17668,
+          17669,
+          17670,
+          17680,
+          17684,
+          17685,
+          17688,
+          17690,
+          17697,
+          17708,
+          17709,
+          17710,
+          17723,
+          17750,
+          17751
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 9,
+        "odd_count": 8,
+        "depth": 17,
+        "parity_words": 24310,
+        "complete_target_residue_classes": 6561,
+        "nonempty_fibres": 3822,
+        "maximum": 26,
+        "recurrence_bound": 191,
+        "witness_target_residue": 3158,
+        "complete_canonical_witness_members": [
+          62848,
+          62880,
+          62888,
+          62890,
+          62912,
+          62916,
+          62917,
+          62918,
+          62928,
+          62932,
+          62933,
+          62946,
+          62947,
+          62984,
+          62986,
+          62988,
+          62989,
+          62993,
+          63004,
+          63005,
+          63006,
+          63032,
+          63034,
+          63036,
+          63037,
+          63087
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 9,
+        "odd_count": 15,
+        "depth": 24,
+        "parity_words": 1307504,
+        "complete_target_residue_classes": 14348907,
+        "nonempty_fibres": 646146,
+        "maximum": 26,
+        "recurrence_bound": 191,
+        "witness_target_residue": 1062881,
+        "complete_canonical_witness_members": [
+          1242496,
+          1242528,
+          1242536,
+          1242538,
+          1242560,
+          1242564,
+          1242565,
+          1242566,
+          1242576,
+          1242580,
+          1242581,
+          1242594,
+          1242595,
+          1242632,
+          1242634,
+          1242636,
+          1242637,
+          1242641,
+          1242652,
+          1242653,
+          1242654,
+          1242680,
+          1242682,
+          1242684,
+          1242685,
+          1242735
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 10,
+        "odd_count": 9,
+        "depth": 19,
+        "parity_words": 92378,
+        "complete_target_residue_classes": 19683,
+        "nonempty_fibres": 11692,
+        "maximum": 38,
+        "recurrence_bound": 341,
+        "witness_target_residue": 16280,
+        "complete_canonical_witness_members": [
+          433280,
+          433312,
+          433320,
+          433322,
+          433344,
+          433360,
+          433364,
+          433365,
+          433378,
+          433379,
+          433412,
+          433413,
+          433414,
+          433424,
+          433428,
+          433429,
+          433432,
+          433434,
+          433452,
+          433453,
+          433454,
+          433467,
+          433506,
+          433507,
+          433508,
+          433509,
+          433510,
+          433528,
+          433530,
+          433532,
+          433533,
+          433570,
+          433571,
+          433572,
+          433573,
+          433574,
+          433607,
+          433641
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 11,
+        "odd_count": 9,
+        "depth": 20,
+        "parity_words": 167960,
+        "complete_target_residue_classes": 19683,
+        "nonempty_fibres": 12707,
+        "maximum": 56,
+        "recurrence_bound": 604,
+        "witness_target_residue": 4238,
+        "complete_canonical_witness_members": [
+          225344,
+          225360,
+          225364,
+          225365,
+          225376,
+          225384,
+          225386,
+          225393,
+          225408,
+          225416,
+          225418,
+          225420,
+          225421,
+          225430,
+          225431,
+          225440,
+          225448,
+          225450,
+          225472,
+          225488,
+          225492,
+          225493,
+          225504,
+          225506,
+          225507,
+          225512,
+          225514,
+          225520,
+          225521,
+          225524,
+          225525,
+          225552,
+          225556,
+          225557,
+          225560,
+          225562,
+          225580,
+          225581,
+          225582,
+          225592,
+          225594,
+          225595,
+          225596,
+          225597,
+          225624,
+          225626,
+          225628,
+          225629,
+          225641,
+          225643,
+          225665,
+          225703,
+          225737,
+          225742,
+          225743,
+          225769
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 12,
+        "odd_count": 11,
+        "depth": 23,
+        "parity_words": 1352078,
+        "complete_target_residue_classes": 177147,
+        "nonempty_fibres": 109141,
+        "maximum": 83,
+        "recurrence_bound": 1061,
+        "witness_target_residue": 30860,
+        "complete_canonical_witness_members": [
+          1460352,
+          1460384,
+          1460392,
+          1460394,
+          1460416,
+          1460432,
+          1460436,
+          1460437,
+          1460450,
+          1460451,
+          1460480,
+          1460544,
+          1460560,
+          1460564,
+          1460565,
+          1460576,
+          1460584,
+          1460586,
+          1460592,
+          1460593,
+          1460596,
+          1460597,
+          1460608,
+          1460640,
+          1460648,
+          1460650,
+          1460676,
+          1460677,
+          1460678,
+          1460744,
+          1460746,
+          1460748,
+          1460749,
+          1460753,
+          1460801,
+          1460802,
+          1460803,
+          1460912,
+          1460916,
+          1460917,
+          1460920,
+          1460922,
+          1460928,
+          1460929,
+          1460937,
+          1460944,
+          1460948,
+          1460949,
+          1460960,
+          1460962,
+          1460963,
+          1460968,
+          1460970,
+          1460977,
+          1460996,
+          1460997,
+          1460998,
+          1461006,
+          1461007,
+          1461020,
+          1461021,
+          1461022,
+          1461025,
+          1461060,
+          1461061,
+          1461062,
+          1461064,
+          1461066,
+          1461067,
+          1461068,
+          1461069,
+          1461112,
+          1461114,
+          1461116,
+          1461117,
+          1461147,
+          1461208,
+          1461210,
+          1461212,
+          1461213,
+          1461223,
+          1461227,
+          1461339
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 13,
+        "odd_count": 10,
+        "depth": 23,
+        "parity_words": 1144066,
+        "complete_target_residue_classes": 59049,
+        "nonempty_fibres": 39276,
+        "maximum": 122,
+        "recurrence_bound": 1848,
+        "witness_target_residue": 29798,
+        "complete_canonical_witness_members": [
+          4231424,
+          4231488,
+          4231504,
+          4231508,
+          4231509,
+          4231552,
+          4231584,
+          4231592,
+          4231594,
+          4231620,
+          4231621,
+          4231622,
+          4231680,
+          4231808,
+          4231840,
+          4231848,
+          4231850,
+          4231872,
+          4231888,
+          4231892,
+          4231893,
+          4231904,
+          4231906,
+          4231907,
+          4231912,
+          4231914,
+          4231921,
+          4231936,
+          4232000,
+          4232016,
+          4232020,
+          4232021,
+          4232072,
+          4232074,
+          4232076,
+          4232077,
+          4232208,
+          4232212,
+          4232213,
+          4232216,
+          4232218,
+          4232226,
+          4232227,
+          4232322,
+          4232323,
+          4232324,
+          4232325,
+          4232326,
+          4232544,
+          4232552,
+          4232554,
+          4232560,
+          4232561,
+          4232564,
+          4232565,
+          4232576,
+          4232578,
+          4232579,
+          4232583,
+          4232593,
+          4232594,
+          4232595,
+          4232608,
+          4232616,
+          4232618,
+          4232640,
+          4232644,
+          4232645,
+          4232646,
+          4232656,
+          4232660,
+          4232661,
+          4232674,
+          4232675,
+          4232712,
+          4232714,
+          4232716,
+          4232717,
+          4232721,
+          4232732,
+          4232733,
+          4232734,
+          4232760,
+          4232762,
+          4232764,
+          4232765,
+          4232769,
+          4232770,
+          4232771,
+          4232840,
+          4232842,
+          4232844,
+          4232845,
+          4232848,
+          4232852,
+          4232853,
+          4232854,
+          4232855,
+          4232856,
+          4232858,
+          4232889,
+          4232891,
+          4232892,
+          4232893,
+          4232894,
+          4232944,
+          4232948,
+          4232949,
+          4232952,
+          4232953,
+          4232954,
+          4232971,
+          4233014,
+          4233015,
+          4233017,
+          4233057,
+          4233083,
+          4233142,
+          4233143,
+          4233148,
+          4233149,
+          4233150
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 14,
+        "odd_count": 9,
+        "depth": 23,
+        "parity_words": 817190,
+        "complete_target_residue_classes": 19683,
+        "nonempty_fibres": 13122,
+        "maximum": 178,
+        "recurrence_bound": 3194,
+        "witness_target_residue": 3554,
+        "complete_canonical_witness_members": [
+          1509376,
+          1509888,
+          1510016,
+          1510048,
+          1510056,
+          1510058,
+          1510400,
+          1510656,
+          1510720,
+          1510736,
+          1510740,
+          1510741,
+          1510944,
+          1510952,
+          1510954,
+          1510960,
+          1510964,
+          1510965,
+          1511680,
+          1511744,
+          1511760,
+          1511764,
+          1511765,
+          1511808,
+          1511840,
+          1511848,
+          1511850,
+          1511876,
+          1511877,
+          1511878,
+          1512128,
+          1512144,
+          1512148,
+          1512149,
+          1512160,
+          1512162,
+          1512163,
+          1512168,
+          1512170,
+          1512177,
+          1512832,
+          1512864,
+          1512872,
+          1512874,
+          1512896,
+          1512900,
+          1512901,
+          1512902,
+          1512912,
+          1512916,
+          1512917,
+          1512930,
+          1512931,
+          1512960,
+          1512968,
+          1512970,
+          1512972,
+          1512973,
+          1512977,
+          1512988,
+          1512989,
+          1512990,
+          1513088,
+          1513120,
+          1513128,
+          1513130,
+          1513216,
+          1513232,
+          1513236,
+          1513237,
+          1513240,
+          1513242,
+          1513280,
+          1513296,
+          1513300,
+          1513301,
+          1513352,
+          1513354,
+          1513356,
+          1513357,
+          1513393,
+          1513394,
+          1513395,
+          1513480,
+          1513482,
+          1513484,
+          1513485,
+          1513488,
+          1513489,
+          1513492,
+          1513493,
+          1513494,
+          1513495,
+          1513496,
+          1513498,
+          1513506,
+          1513507,
+          1513516,
+          1513517,
+          1513518,
+          1513529,
+          1513744,
+          1513748,
+          1513749,
+          1513752,
+          1513754,
+          1513760,
+          1513768,
+          1513770,
+          1513772,
+          1513773,
+          1513774,
+          1513776,
+          1513780,
+          1513781,
+          1513793,
+          1513858,
+          1513859,
+          1513860,
+          1513861,
+          1513862,
+          1513863,
+          1513873,
+          1513874,
+          1513875,
+          1513878,
+          1513879,
+          1513881,
+          1514049,
+          1514050,
+          1514051,
+          1514052,
+          1514053,
+          1514054,
+          1514056,
+          1514058,
+          1514059,
+          1514060,
+          1514061,
+          1514096,
+          1514100,
+          1514101,
+          1514104,
+          1514106,
+          1514116,
+          1514117,
+          1514118,
+          1514119,
+          1514123,
+          1514224,
+          1514228,
+          1514229,
+          1514232,
+          1514234,
+          1514241,
+          1514242,
+          1514243,
+          1514358,
+          1514359,
+          1514360,
+          1514362,
+          1514364,
+          1514365,
+          1514441,
+          1514446,
+          1514447,
+          1514608,
+          1514612,
+          1514613,
+          1514616,
+          1514618,
+          1514635,
+          1514641,
+          1514642,
+          1514643,
+          1514652,
+          1514653,
+          1514654
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 15,
+        "odd_count": 9,
+        "depth": 24,
+        "parity_words": 1307504,
+        "complete_target_residue_classes": 19683,
+        "nonempty_fibres": 13122,
+        "maximum": 262,
+        "recurrence_bound": 5487,
+        "witness_target_residue": 9386,
+        "complete_canonical_witness_members": [
+          7995904,
+          7996032,
+          7996064,
+          7996072,
+          7996074,
+          7996160,
+          7996224,
+          7996240,
+          7996244,
+          7996245,
+          7996296,
+          7996298,
+          7996300,
+          7996301,
+          7996416,
+          7996480,
+          7996496,
+          7996500,
+          7996501,
+          7996512,
+          7996520,
+          7996522,
+          7996529,
+          7996592,
+          7996596,
+          7996597,
+          7996600,
+          7996602,
+          7996672,
+          7996736,
+          7996752,
+          7996756,
+          7996757,
+          7996800,
+          7996832,
+          7996840,
+          7996842,
+          7996864,
+          7996868,
+          7996869,
+          7996870,
+          7996880,
+          7996884,
+          7996885,
+          7996898,
+          7996899,
+          7996928,
+          7996996,
+          7996997,
+          7996998,
+          7997000,
+          7997002,
+          7997003,
+          7997004,
+          7997005,
+          7997056,
+          7997088,
+          7997096,
+          7997098,
+          7997200,
+          7997204,
+          7997205,
+          7997208,
+          7997210,
+          7997568,
+          7997600,
+          7997608,
+          7997610,
+          7997632,
+          7997648,
+          7997652,
+          7997653,
+          7997666,
+          7997667,
+          7997696,
+          7997760,
+          7997776,
+          7997780,
+          7997781,
+          7997792,
+          7997800,
+          7997802,
+          7997808,
+          7997809,
+          7997812,
+          7997813,
+          7997824,
+          7997856,
+          7997864,
+          7997866,
+          7997892,
+          7997893,
+          7997894,
+          7997960,
+          7997962,
+          7997964,
+          7997965,
+          7997969,
+          7997984,
+          7997992,
+          7997994,
+          7998000,
+          7998004,
+          7998005,
+          7998017,
+          7998018,
+          7998019,
+          7998040,
+          7998042,
+          7998044,
+          7998045,
+          7998070,
+          7998071,
+          7998087,
+          7998208,
+          7998272,
+          7998288,
+          7998292,
+          7998293,
+          7998336,
+          7998344,
+          7998346,
+          7998348,
+          7998349,
+          7998368,
+          7998376,
+          7998378,
+          7998404,
+          7998405,
+          7998406,
+          7998425,
+          7998600,
+          7998602,
+          7998604,
+          7998605,
+          7998608,
+          7998612,
+          7998613,
+          7998614,
+          7998615,
+          7998616,
+          7998618,
+          7998736,
+          7998740,
+          7998741,
+          7998744,
+          7998746,
+          7998752,
+          7998753,
+          7998754,
+          7998755,
+          7998756,
+          7998757,
+          7998758,
+          7998760,
+          7998762,
+          7998764,
+          7998765,
+          7998766,
+          7998768,
+          7998772,
+          7998773,
+          7998779,
+          7998785,
+          7999040,
+          7999056,
+          7999060,
+          7999061,
+          7999072,
+          7999080,
+          7999082,
+          7999089,
+          7999106,
+          7999107,
+          7999112,
+          7999114,
+          7999116,
+          7999117,
+          7999126,
+          7999127,
+          7999153,
+          7999154,
+          7999155,
+          7999164,
+          7999165,
+          7999166,
+          7999236,
+          7999237,
+          7999238,
+          7999240,
+          7999242,
+          7999244,
+          7999245,
+          7999246,
+          7999247,
+          7999249,
+          7999265,
+          7999266,
+          7999267,
+          7999268,
+          7999269,
+          7999270,
+          7999275,
+          7999279,
+          7999492,
+          7999493,
+          7999494,
+          7999496,
+          7999498,
+          7999499,
+          7999500,
+          7999501,
+          7999502,
+          7999503,
+          7999505,
+          7999510,
+          7999511,
+          7999516,
+          7999517,
+          7999518,
+          7999745,
+          7999746,
+          7999747,
+          7999755,
+          7999758,
+          7999759,
+          7999906,
+          7999907,
+          7999908,
+          7999909,
+          7999910,
+          7999916,
+          7999917,
+          7999918,
+          7999919,
+          8000260,
+          8000261,
+          8000262,
+          8000264,
+          8000266,
+          8000268,
+          8000269,
+          8000270,
+          8000271,
+          8000273,
+          8000284,
+          8000285,
+          8000286,
+          8000299,
+          8000312,
+          8000314,
+          8000315,
+          8000316,
+          8000317,
+          8000324,
+          8000325,
+          8000326,
+          8000328,
+          8000330,
+          8000331,
+          8000332,
+          8000333
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      },
+      {
+        "even_count": 16,
+        "odd_count": 8,
+        "depth": 24,
+        "parity_words": 735471,
+        "complete_target_residue_classes": 6561,
+        "nonempty_fibres": 4374,
+        "maximum": 339,
+        "recurrence_bound": 9389,
+        "witness_target_residue": 2906,
+        "complete_canonical_witness_members": [
+          7413760,
+          7415808,
+          7416320,
+          7416448,
+          7416480,
+          7416488,
+          7416490,
+          7417856,
+          7418880,
+          7419136,
+          7419200,
+          7419216,
+          7419220,
+          7419221,
+          7420032,
+          7420064,
+          7420072,
+          7420074,
+          7420096,
+          7420112,
+          7420116,
+          7420117,
+          7420130,
+          7420131,
+          7422208,
+          7422272,
+          7422288,
+          7422292,
+          7422293,
+          7422336,
+          7422368,
+          7422376,
+          7422378,
+          7422404,
+          7422405,
+          7422406,
+          7422496,
+          7422504,
+          7422506,
+          7422512,
+          7422516,
+          7422517,
+          7422552,
+          7422554,
+          7422556,
+          7422557,
+          7422976,
+          7423232,
+          7423296,
+          7423312,
+          7423316,
+          7423317,
+          7423488,
+          7423616,
+          7423648,
+          7423656,
+          7423658,
+          7423760,
+          7423764,
+          7423765,
+          7423768,
+          7423770,
+          7424032,
+          7424040,
+          7424042,
+          7424048,
+          7424052,
+          7424053,
+          7424064,
+          7424068,
+          7424069,
+          7424070,
+          7424075,
+          7424080,
+          7424084,
+          7424085,
+          7424096,
+          7424104,
+          7424106,
+          7424113,
+          7424136,
+          7424138,
+          7424140,
+          7424141,
+          7424150,
+          7424151,
+          7424172,
+          7424173,
+          7424174,
+          7424768,
+          7424832,
+          7424848,
+          7424852,
+          7424853,
+          7424896,
+          7424904,
+          7424906,
+          7424908,
+          7424909,
+          7424928,
+          7424936,
+          7424938,
+          7424964,
+          7424965,
+          7424966,
+          7424985,
+          7425728,
+          7425732,
+          7425733,
+          7425734,
+          7425736,
+          7425738,
+          7425740,
+          7425741,
+          7425744,
+          7425748,
+          7425749,
+          7425760,
+          7425762,
+          7425763,
+          7425768,
+          7425770,
+          7425777,
+          7425793,
+          7426272,
+          7426280,
+          7426282,
+          7426288,
+          7426289,
+          7426292,
+          7426293,
+          7426308,
+          7426309,
+          7426310,
+          7426312,
+          7426314,
+          7426316,
+          7426317,
+          7426321,
+          7427456,
+          7427488,
+          7427496,
+          7427498,
+          7427520,
+          7427524,
+          7427525,
+          7427526,
+          7427536,
+          7427540,
+          7427541,
+          7427554,
+          7427555,
+          7427584,
+          7427592,
+          7427594,
+          7427596,
+          7427597,
+          7427601,
+          7427612,
+          7427613,
+          7427614,
+          7427652,
+          7427653,
+          7427654,
+          7427656,
+          7427658,
+          7427659,
+          7427660,
+          7427661,
+          7427681,
+          7427712,
+          7427720,
+          7427722,
+          7427724,
+          7427725,
+          7427728,
+          7427732,
+          7427733,
+          7427734,
+          7427735,
+          7427736,
+          7427738,
+          7427744,
+          7427752,
+          7427754,
+          7427769,
+          7427771,
+          7427840,
+          7427856,
+          7427860,
+          7427861,
+          7427864,
+          7427866,
+          7427904,
+          7427920,
+          7427924,
+          7427925,
+          7427976,
+          7427978,
+          7427980,
+          7427981,
+          7428017,
+          7428018,
+          7428019,
+          7428128,
+          7428136,
+          7428138,
+          7428144,
+          7428148,
+          7428149,
+          7428164,
+          7428165,
+          7428166,
+          7428171,
+          7428208,
+          7428212,
+          7428213,
+          7428216,
+          7428218,
+          7428368,
+          7428372,
+          7428373,
+          7428376,
+          7428378,
+          7428384,
+          7428392,
+          7428394,
+          7428396,
+          7428397,
+          7428398,
+          7428400,
+          7428404,
+          7428405,
+          7428417,
+          7428482,
+          7428483,
+          7428484,
+          7428485,
+          7428486,
+          7428487,
+          7428864,
+          7428928,
+          7428944,
+          7428948,
+          7428949,
+          7428992,
+          7429000,
+          7429002,
+          7429004,
+          7429005,
+          7429024,
+          7429032,
+          7429034,
+          7429060,
+          7429061,
+          7429062,
+          7429081,
+          7429124,
+          7429125,
+          7429126,
+          7429131,
+          7429136,
+          7429140,
+          7429141,
+          7429144,
+          7429146,
+          7429154,
+          7429155,
+          7429163,
+          7429176,
+          7429178,
+          7429180,
+          7429181,
+          7429198,
+          7429199,
+          7429640,
+          7429642,
+          7429644,
+          7429645,
+          7429648,
+          7429649,
+          7429652,
+          7429653,
+          7429654,
+          7429655,
+          7429656,
+          7429657,
+          7429658,
+          7429660,
+          7429661,
+          7429662,
+          7429666,
+          7429667,
+          7429671,
+          7429675,
+          7430720,
+          7430736,
+          7430740,
+          7430741,
+          7430752,
+          7430760,
+          7430762,
+          7430768,
+          7430769,
+          7430772,
+          7430773,
+          7430774,
+          7430775,
+          7430776,
+          7430778,
+          7430786,
+          7430787,
+          7430792,
+          7430794,
+          7430796,
+          7430797,
+          7430806,
+          7430807,
+          7430827,
+          7430865,
+          7430866,
+          7430867,
+          7430870,
+          7430871,
+          7430916,
+          7430917,
+          7430918,
+          7430920,
+          7430922,
+          7430924,
+          7430925,
+          7430926,
+          7430927,
+          7430929,
+          7430940,
+          7430941,
+          7430942,
+          7430966,
+          7430967
+        ],
+        "maximum_valid_for_all_targets_at_this_depth_and_weight": true,
+        "maximum_extrapolated_to_other_depths": false
+      }
+    ]
+  },
+  "arithmetic_grids": {
+    "source_depth_pairs": 91392,
+    "grids": [
+      {
+        "spacing_exponent": 0,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 0,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 0,
+        "offset": 8,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 0,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 1,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 1,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 1,
+        "offset": 2,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 1,
+        "offset": 10,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 1,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 2,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 2,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 2,
+        "offset": 8,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 2,
+        "offset": 16,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 2,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 3,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 3,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 3,
+        "offset": 26,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 3,
+        "offset": 34,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 3,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 4,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 4,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 4,
+        "offset": 80,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 4,
+        "offset": 88,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 4,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 5,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 5,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 5,
+        "offset": 242,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 5,
+        "offset": 250,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 5,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 6,
+        "offset": 0,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 6,
+        "offset": 1,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 6,
+        "offset": 728,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 6,
+        "offset": 736,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      },
+      {
+        "spacing_exponent": 6,
+        "offset": 1208925819614629174706195,
+        "index_interval": [
+          0,
+          127
+        ],
+        "depth_interval": [
+          0,
+          20
+        ],
+        "complete_infinite_grid_fibre": false
+      }
+    ],
+    "two_even_sharp_lift_checks": 8
+  },
+  "square_root_moments": {
+    "complete_target_classes": 29524,
+    "rows": [
+      {
+        "depth": 0,
+        "complete_target_classes": 1,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 1208925819614629174706176,
+        "rate_lower_numerator": 1208925819614629174706176,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 1,
+        "complete_target_classes": 3,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 2335465342466899605490584,
+        "rate_lower_numerator": 1480625697465890390422041,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 2,
+        "complete_target_classes": 9,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 3464812110306451019109051,
+        "rate_lower_numerator": 1813388729421943762059264,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 3,
+        "complete_target_classes": 27,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 5411243533666744406192188,
+        "rate_lower_numerator": 2220938546198835585633061,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 4,
+        "complete_target_classes": 81,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 7453104456151498373066452,
+        "rate_lower_numerator": 2720083094132915643088896,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 5,
+        "complete_target_classes": 243,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 10082174218600543617173357,
+        "rate_lower_numerator": 3331407819298253378449592,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 6,
+        "complete_target_classes": 729,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 13022687129697942589740104,
+        "rate_lower_numerator": 4080124641199373464633344,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 7,
+        "complete_target_classes": 2187,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 16932123732885022139806737,
+        "rate_lower_numerator": 4997111728947380067674388,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 8,
+        "complete_target_classes": 6561,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 21659046926354086645300945,
+        "rate_lower_numerator": 6120186961799060196950016,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      },
+      {
+        "depth": 9,
+        "complete_target_classes": 19683,
+        "interval_scale": 1208925819614629174706176,
+        "maximum_upper_numerator": 27431237844774031296019146,
+        "rate_lower_numerator": 7495667593421070101511582,
+        "uniform_constant_checked": 4000,
+        "mean_combinatorial_identity_checked": true
+      }
+    ],
+    "arithmetic": "exact integer square-root enclosures; no floating-point decisions"
+  },
+  "recurrence_values": [
+    {
+      "even_count": 0,
+      "bound": 1
+    },
+    {
+      "even_count": 1,
+      "bound": 1
+    },
+    {
+      "even_count": 2,
+      "bound": 2
+    },
+    {
+      "even_count": 3,
+      "bound": 4
+    },
+    {
+      "even_count": 4,
+      "bound": 8
+    },
+    {
+      "even_count": 5,
+      "bound": 16
+    },
+    {
+      "even_count": 6,
+      "bound": 31
+    },
+    {
+      "even_count": 7,
+      "bound": 58
+    },
+    {
+      "even_count": 8,
+      "bound": 106
+    },
+    {
+      "even_count": 9,
+      "bound": 191
+    },
+    {
+      "even_count": 10,
+      "bound": 341
+    },
+    {
+      "even_count": 11,
+      "bound": 604
+    },
+    {
+      "even_count": 12,
+      "bound": 1061
+    },
+    {
+      "even_count": 13,
+      "bound": 1848
+    },
+    {
+      "even_count": 14,
+      "bound": 3194
+    },
+    {
+      "even_count": 15,
+      "bound": 5487
+    },
+    {
+      "even_count": 16,
+      "bound": 9389
+    },
+    {
+      "even_count": 17,
+      "bound": 16037
+    },
+    {
+      "even_count": 18,
+      "bound": 27395
+    },
+    {
+      "even_count": 19,
+      "bound": 46870
+    },
+    {
+      "even_count": 20,
+      "bound": 80386
+    },
+    {
+      "even_count": 21,
+      "bound": 138246
+    },
+    {
+      "even_count": 22,
+      "bound": 238341
+    },
+    {
+      "even_count": 23,
+      "bound": 411653
+    },
+    {
+      "even_count": 24,
+      "bound": 711661
+    },
+    {
+      "even_count": 25,
+      "bound": 1230396
+    },
+    {
+      "even_count": 26,
+      "bound": 2125855
+    },
+    {
+      "even_count": 27,
+      "bound": 3668892
+    },
+    {
+      "even_count": 28,
+      "bound": 6323638
+    },
+    {
+      "even_count": 29,
+      "bound": 10885860
+    },
+    {
+      "even_count": 30,
+      "bound": 18721780
+    },
+    {
+      "even_count": 31,
+      "bound": 32181572
+    },
+    {
+      "even_count": 32,
+      "bound": 55317236
+    },
+    {
+      "even_count": 33,
+      "bound": 95131584
+    },
+    {
+      "even_count": 34,
+      "bound": 163754510
+    },
+    {
+      "even_count": 35,
+      "bound": 282237880
+    },
+    {
+      "even_count": 36,
+      "bound": 487173129
+    },
+    {
+      "even_count": 37,
+      "bound": 842223797
+    },
+    {
+      "even_count": 38,
+      "bound": 1458199418
+    },
+    {
+      "even_count": 39,
+      "bound": 2527941280
+    },
+    {
+      "even_count": 40,
+      "bound": 4386839994
+    },
+    {
+      "even_count": 41,
+      "bound": 7617624812
+    },
+    {
+      "even_count": 42,
+      "bound": 13231502032
+    },
+    {
+      "even_count": 43,
+      "bound": 22980814669
+    },
+    {
+      "even_count": 44,
+      "bound": 39898111556
+    },
+    {
+      "even_count": 45,
+      "bound": 69224864404
+    },
+    {
+      "even_count": 46,
+      "bound": 120010787785
+    },
+    {
+      "even_count": 47,
+      "bound": 207867573317
+    },
+    {
+      "even_count": 48,
+      "bound": 359710547344
+    },
+    {
+      "even_count": 49,
+      "bound": 621924652755
+    },
+    {
+      "even_count": 50,
+      "bound": 1074430423334
+    },
+    {
+      "even_count": 51,
+      "bound": 1854916594928
+    },
+    {
+      "even_count": 52,
+      "bound": 3200591293819
+    },
+    {
+      "even_count": 53,
+      "bound": 5520117005897
+    },
+    {
+      "even_count": 54,
+      "bound": 9517542680228
+    },
+    {
+      "even_count": 55,
+      "bound": 16405796722999
+    },
+    {
+      "even_count": 56,
+      "bound": 28274427327971
+    },
+    {
+      "even_count": 57,
+      "bound": 48723002472072
+    },
+    {
+      "even_count": 58,
+      "bound": 83952130694746
+    },
+    {
+      "even_count": 59,
+      "bound": 144643030842846
+    },
+    {
+      "even_count": 60,
+      "bound": 249196552940351
+    },
+    {
+      "even_count": 61,
+      "bound": 429317346652632
+    },
+    {
+      "even_count": 62,
+      "bound": 739646507469236
+    },
+    {
+      "even_count": 63,
+      "bound": 1274388626441859
+    },
+    {
+      "even_count": 64,
+      "bound": 2196032178368260
+    },
+    {
+      "even_count": 65,
+      "bound": 3784994396347342
+    },
+    {
+      "even_count": 66,
+      "bound": 6525493195213964
+    },
+    {
+      "even_count": 67,
+      "bound": 11254170237539570
+    },
+    {
+      "even_count": 68,
+      "bound": 19417444640831400
+    },
+    {
+      "even_count": 69,
+      "bound": 33517297133006894
+    },
+    {
+      "even_count": 70,
+      "bound": 57883602894036939
+    },
+    {
+      "even_count": 71,
+      "bound": 100012283874159754
+    },
+    {
+      "even_count": 72,
+      "bound": 172883596950032209
+    },
+    {
+      "even_count": 73,
+      "bound": 298977612206501100
+    },
+    {
+      "even_count": 74,
+      "bound": 517227211487088395
+    },
+    {
+      "even_count": 75,
+      "bound": 895052917378715968
+    },
+    {
+      "even_count": 76,
+      "bound": 1549184756890222420
+    },
+    {
+      "even_count": 77,
+      "bound": 2681670377951768952
+    },
+    {
+      "even_count": 78,
+      "bound": 4642116615033403647
+    },
+    {
+      "even_count": 79,
+      "bound": 8035228322567094127
+    },
+    {
+      "even_count": 80,
+      "bound": 13906531394096469710
+    },
+    {
+      "even_count": 81,
+      "bound": 24062997093046609674
+    },
+    {
+      "even_count": 82,
+      "bound": 41626359957438441175
+    },
+    {
+      "even_count": 83,
+      "bound": 71987712645544697585
+    },
+    {
+      "even_count": 84,
+      "bound": 124453957416609373427
+    },
+    {
+      "even_count": 85,
+      "bound": 215086928452174256680
+    },
+    {
+      "even_count": 86,
+      "bound": 371598302758987645815
+    },
+    {
+      "even_count": 87,
+      "bound": 641787836116134970348
+    },
+    {
+      "even_count": 88,
+      "bound": 1108088773218794770809
+    },
+    {
+      "even_count": 89,
+      "bound": 1912639882833287901939
+    },
+    {
+      "even_count": 90,
+      "bound": 3300503482923653373265
+    },
+    {
+      "even_count": 91,
+      "bound": 5694168582952926735313
+    },
+    {
+      "even_count": 92,
+      "bound": 9822002906231723011777
+    },
+    {
+      "even_count": 93,
+      "bound": 16939758806535755029742
+    },
+    {
+      "even_count": 94,
+      "bound": 29212629472324282285106
+    },
+    {
+      "even_count": 95,
+      "bound": 50374397785370017877632
+    },
+    {
+      "even_count": 96,
+      "bound": 86864977859700822877304
+    },
+    {
+      "even_count": 97,
+      "bound": 149794170462840815998870
+    },
+    {
+      "even_count": 98,
+      "bound": 258332820009921692984286
+    },
+    {
+      "even_count": 99,
+      "bound": 445570790897065446975681
+    },
+    {
+      "even_count": 100,
+      "bound": 768639292296712507060544
+    },
+    {
+      "even_count": 101,
+      "bound": 1326206716448332353566124
+    },
+    {
+      "even_count": 102,
+      "bound": 2288726571863232148554434
+    },
+    {
+      "even_count": 103,
+      "bound": 3950742610200589909228139
+    },
+    {
+      "even_count": 104,
+      "bound": 6821349329592396639926213
+    },
+    {
+      "even_count": 105,
+      "bound": 11780656878766910385548857
+    },
+    {
+      "even_count": 106,
+      "bound": 20350432636561020601338674
+    },
+    {
+      "even_count": 107,
+      "bound": 35162233453739203444718219
+    },
+    {
+      "even_count": 108,
+      "bound": 60767092416680521372361557
+    },
+    {
+      "even_count": 109,
+      "bound": 105035814822922497822713842
+    },
+    {
+      "even_count": 110,
+      "bound": 181580337208706553642599644
+    },
+    {
+      "even_count": 111,
+      "bound": 313939927859465238706627798
+    },
+    {
+      "even_count": 112,
+      "bound": 542817047126424457544707965
+    },
+    {
+      "even_count": 113,
+      "bound": 938581675797974454910532913
+    },
+    {
+      "even_count": 114,
+      "bound": 1622874817887713062643159135
+    },
+    {
+      "even_count": 115,
+      "bound": 2805923014446910978649181950
+    },
+    {
+      "even_count": 116,
+      "bound": 4850973043463519976741757544
+    },
+    {
+      "even_count": 117,
+      "bound": 8385529349830222306097631508
+    },
+    {
+      "even_count": 118,
+      "bound": 14493341875988662933617008401
+    },
+    {
+      "even_count": 119,
+      "bound": 25045683665086763565368931349
+    },
+    {
+      "even_count": 120,
+      "bound": 43272844330795008739298867741
+    },
+    {
+      "even_count": 121,
+      "bound": 74749813439047248535642738925
+    },
+    {
+      "even_count": 122,
+      "bound": 129096000607023493267978406088
+    },
+    {
+      "even_count": 123,
+      "bound": 222905714110436082736221317810
+    },
+    {
+      "even_count": 124,
+      "bound": 384799756519602624773054027180
+    },
+    {
+      "even_count": 125,
+      "bound": 664132161625157484346316401340
+    },
+    {
+      "even_count": 126,
+      "bound": 1145994889460329409017849385456
+    },
+    {
+      "even_count": 127,
+      "bound": 1977073271127110297442009039650
+    },
+    {
+      "even_count": 128,
+      "bound": 3410195033582586123569570055534
+    }
+  ],
+  "collatz_status": "unresolved"
+}

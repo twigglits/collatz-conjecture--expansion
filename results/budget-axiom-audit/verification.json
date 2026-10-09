@@ -1,0 +1,36 @@
+{
+  "verified_at_utc": "2026-10-08T16:27:30.553627+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "witness hypotheses",
+    "all 201 ordinary prefix counts",
+    "negation of the stated universal budget",
+    "arrival at one after 1476 steps"
+  ],
+  "python_scope": [
+    "105 finite family instances",
+    "first arrival at one and peak for the witness"
+  ],
+  "not_proved": [
+    "Collatz for every positive integer",
+    "foreign repository compilation",
+    "full convergence for all 105 family instances"
+  ],
+  "source_audited": "https://github.com/AIDoctrine/CollatzLayerA/blob/main/CollatzLayerA_v8_1_FINAL.lean",
+  "foreign_axiom_imported": false,
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "command": [
+    "lean",
+    "-o",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-budget-axiom-uoh30dj3/BudgetAxiomAudit.olean",
+    "lean/BudgetAxiomAudit.lean"
+  ],
+  "returncode": 0,
+  "sha256": {
+    "lean/BudgetAxiomAudit.lean": "bfc7dd52d4781688bd57d5e4f8a2c65720a8356a3a131cd99f3ecc41365f1424",
+    "verify_budget_axiom.py": "f5c6b8b8aca0531fcaf6788271ca84aaf9aea49b025480483b0c681b05a18b63",
+    "docs/BUDGET-AXIOM-AUDIT.md": "4dc62f64de753a7ad5f359fe48b4845197ed9f8c9af81b781e4d03f873b50315",
+    "results/budget-axiom-audit/replay.json": "c896c1d89833e8b29954a0bb38cf331cf17de34f91c41d1c453a765f7981d91b",
+    "results/budget-axiom-audit/BudgetAxiomAudit.log": "72f87b2d845766a15e97dc5c6aca8467f6d5da1c906ced4b62e5199de69e63d8"
+  }
+}

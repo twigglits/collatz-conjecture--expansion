@@ -1,0 +1,102 @@
+{
+  "verified_at_utc": "2026-10-09T10:41:44.144484+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "two all-time finite shifted affine envelopes",
+    "fibre span and cardinality at most 2^(even count)",
+    "injectivity when there is at most one even step",
+    "nesting of equal-time equal-weight coalescence fibres",
+    "all-source finite endpoint cap",
+    "eventual fibre stabilization conditional on a uniform normalized endpoint bound",
+    "complete fibres F34(1)={1} and F35(1)={1,159}",
+    "cancellation of later equal-weight merging inside the standard cycle",
+    "27 reaches one and has no positive smaller equal-weight mate at any time"
+  ],
+  "written_scope": [
+    "sharp uniform exponential growth rate of coefficient moments",
+    "reciprocal summability gives the normalized bound for divergent orbits",
+    "divergence forces eventual equal-weight fibre stabilization",
+    "divergence exists iff an all-prefix coefficient-supercritical start exists",
+    "classification of convergent equal-weight coalescence classes by the integer arrival label",
+    "unbounded convergent minimal-label representatives rule out a finite-base repair of smaller equal-weight induction"
+  ],
+  "python_scope": [
+    "complete canonical residue fibres and envelopes through depth16, including zero",
+    "large affine lifts of representatives from every maximum-weight group",
+    "complete target-residue coefficient moments through depth10 at integer exponents1,2",
+    "finite evolving fibres in an explicit source window, with completeness flags",
+    "independent replay of the complete plateau and its convergent new member",
+    "complete convergence and arrival-label table for starts1..27"
+  ],
+  "not_proved": [
+    "unbounded fibre growth for every start",
+    "universal coefficient stopping",
+    "exclusion of nontrivial positive cycles",
+    "vanishing fixed-floor survivor mass",
+    "the full Collatz conjecture"
+  ],
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-equal-weight-f3oekncs/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/equal-weight-fibres/CollatzPacking.log"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-equal-weight-f3oekncs/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/equal-weight-fibres/FirstPassagePacking.log"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-equal-weight-f3oekncs/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/equal-weight-fibres/FinitePathPacking.log"
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-equal-weight-f3oekncs/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "log": "results/equal-weight-fibres/EqualWeightFibres.log"
+    }
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "docs/EQUAL-WEIGHT-FIBRES.md": "4053bca6f27903371513d9483230d5d96f4c5c0a52d8e84fad8b19a1d3f7e32d",
+    "results/finite-path-packing/verification.json": "47e9b90a87bfd59213c44789b4860b93e931ff368fc5c5485e14a4f28cc0012b",
+    "verify_equal_weight_fibres.py": "72455834e28e7d36d1d8bbe372d07b0c70d5795f3df5ab4bb7e4f85a5189dc9b",
+    "results/equal-weight-fibres/replay.json": "c345b85ffdc099cea61e35d9248170a1ffc5966a947c501223fa293952d20cfa",
+    "results/equal-weight-fibres/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/equal-weight-fibres/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/equal-weight-fibres/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/equal-weight-fibres/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33"
+  },
+  "documentation_updated_at_utc": "2026-10-09T10:44:56.848205+00:00",
+  "documentation_update_scope": "Added the written minimal-arrival-label corollary giving unbounded convergent starts with no smaller equal-weight mate. Lean, verifier, replay, and build logs are unchanged; completed checks reused."
+}

@@ -1,0 +1,68 @@
+{
+  "verified_at_utc": "2026-10-09T08:52:35.047962+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "exact killed predecessor characterization",
+    "complete finite inverse-cone membership and height bound",
+    "all n > 2^k H survive k steps",
+    "convergence of every positive n <= 64",
+    "full Collatz equivalent to eventual absorption below 65",
+    "integer inequalities for the conditional contraction factor"
+  ],
+  "python_scope": [
+    "37 complete inverse cones through depth 36",
+    "integer square-root enclosures with analytic integral tails",
+    "independent direct forward checks and base hitting times"
+  ],
+  "written_scope": [
+    "infinite weighted transport identity",
+    "mass tends to zero iff all starts reach the certified floor",
+    "exponential mass envelope iff a uniform logarithmic hitting bound",
+    "obstruction to power-comparable pointwise supersolutions",
+    "conditional aggregate contraction and persistent-bias criterion",
+    "integral inequalities enclosing infinite tails"
+  ],
+  "not_proved": [
+    "all-time or eventual survivor residue-share bound",
+    "exponential mass decay",
+    "any universal hitting-time upper bound",
+    "Collatz for every positive integer"
+  ],
+  "source_lead": "https://github.com/GettysburgResearch/collatz/blob/main/research/astra-three-routes/ROUTE1_MELLIN.md",
+  "source_role": "independently reconstructed definitions, conditional target, and finite test",
+  "foreign_code_executed": false,
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-survivors-1xcs4qy1/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-survivors/CollatzContradiction.log"
+    },
+    {
+      "source": "lean/WeightedSurvivors.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-survivors-1xcs4qy1/WeightedSurvivors.olean",
+        "lean/WeightedSurvivors.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-survivors/WeightedSurvivors.log"
+    }
+  ],
+  "sha256": {
+    "lean/WeightedSurvivors.lean": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "verify_weighted_survivors.py": "a6fbdf97da8e9f8a773cc04def5ef7eacacd06933d169611fd0ce5870452ea92",
+    "docs/WEIGHTED-SURVIVORS.md": "4317db2a600b6de94624a8bc8645eb75f7bcea9a8c079500e3bd6e0a2538f0ec",
+    "results/weighted-survivors/replay.json": "801db6ac0aa5526ef137b567b55d053e6db77f2f9dc25fa9bb7ac85bc9ddb782",
+    "results/weighted-survivors/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/weighted-survivors/WeightedSurvivors.log": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b"
+  }
+}

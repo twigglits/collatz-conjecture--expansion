@@ -1,0 +1,530 @@
+{
+  "all_checks_passed": true,
+  "complete_source_shells": [
+    {
+      "floor": 1,
+      "source_interval": [
+        2,
+        4
+      ],
+      "source_count": 2,
+      "longest_first_entry_time": 5,
+      "first_longest_source": 3,
+      "sources_with_correction_sum_at_most_one_third": 2,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "13",
+      "max_correction_sum_denominator": "80",
+      "qualified_fibre_count": 2,
+      "qualified_fibres_with_collisions": 0,
+      "largest_qualified_fibre": {
+        "size": 1,
+        "time": 1,
+        "landing": 1,
+        "odd_count": 0,
+        "sources": [
+          2
+        ]
+      }
+    },
+    {
+      "floor": 1,
+      "source_interval": [
+        4,
+        8
+      ],
+      "source_count": 4,
+      "longest_first_entry_time": 11,
+      "first_longest_source": 7,
+      "sources_with_correction_sum_at_most_one_third": 4,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "35317",
+      "max_correction_sum_denominator": "194480",
+      "qualified_fibre_count": 4,
+      "qualified_fibres_with_collisions": 0,
+      "largest_qualified_fibre": {
+        "size": 1,
+        "time": 2,
+        "landing": 1,
+        "odd_count": 0,
+        "sources": [
+          4
+        ]
+      }
+    },
+    {
+      "floor": 1,
+      "source_interval": [
+        8,
+        16
+      ],
+      "source_count": 8,
+      "longest_first_entry_time": 13,
+      "first_longest_source": 9,
+      "sources_with_correction_sum_at_most_one_third": 8,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "295839",
+      "max_correction_sum_denominator": "1361360",
+      "qualified_fibre_count": 6,
+      "qualified_fibres_with_collisions": 2,
+      "largest_qualified_fibre": {
+        "size": 2,
+        "time": 7,
+        "landing": 1,
+        "odd_count": 2,
+        "sources": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "floor": 2,
+      "source_interval": [
+        4,
+        8
+      ],
+      "source_count": 4,
+      "longest_first_entry_time": 10,
+      "first_longest_source": 7,
+      "sources_with_correction_sum_at_most_one_third": 4,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "35317",
+      "max_correction_sum_denominator": "194480",
+      "qualified_fibre_count": 4,
+      "qualified_fibres_with_collisions": 0,
+      "largest_qualified_fibre": {
+        "size": 1,
+        "time": 1,
+        "landing": 2,
+        "odd_count": 0,
+        "sources": [
+          4
+        ]
+      }
+    },
+    {
+      "floor": 2,
+      "source_interval": [
+        8,
+        16
+      ],
+      "source_count": 8,
+      "longest_first_entry_time": 12,
+      "first_longest_source": 9,
+      "sources_with_correction_sum_at_most_one_third": 8,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "295839",
+      "max_correction_sum_denominator": "1361360",
+      "qualified_fibre_count": 6,
+      "qualified_fibres_with_collisions": 2,
+      "largest_qualified_fibre": {
+        "size": 2,
+        "time": 6,
+        "landing": 2,
+        "odd_count": 2,
+        "sources": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "floor": 2,
+      "source_interval": [
+        16,
+        32
+      ],
+      "source_count": 16,
+      "longest_first_entry_time": 69,
+      "first_longest_source": 27,
+      "sources_with_correction_sum_at_most_one_third": 16,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "295839",
+      "max_correction_sum_denominator": "1361360",
+      "qualified_fibre_count": 10,
+      "qualified_fibres_with_collisions": 5,
+      "largest_qualified_fibre": {
+        "size": 3,
+        "time": 12,
+        "landing": 2,
+        "odd_count": 5,
+        "sources": [
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "floor": 16,
+      "source_interval": [
+        32,
+        64
+      ],
+      "source_count": 32,
+      "longest_first_entry_time": 66,
+      "first_longest_source": 54,
+      "sources_with_correction_sum_at_most_one_third": 32,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "193319950538207294507060086767737164253829240119425876947730779158593846627",
+      "max_correction_sum_denominator": "1660795812894306182772253052052640552854944138993704903297770404010853343200",
+      "qualified_fibre_count": 29,
+      "qualified_fibres_with_collisions": 3,
+      "largest_qualified_fibre": {
+        "size": 2,
+        "time": 7,
+        "landing": 11,
+        "odd_count": 3,
+        "sources": [
+          50,
+          51
+        ]
+      }
+    },
+    {
+      "floor": 16,
+      "source_interval": [
+        64,
+        128
+      ],
+      "source_count": 64,
+      "longest_first_entry_time": 70,
+      "first_longest_source": 97,
+      "sources_with_correction_sum_at_most_one_third": 64,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "193319950538207294507060086767737164253829240119425876947730779158593846627",
+      "max_correction_sum_denominator": "1660795812894306182772253052052640552854944138993704903297770404010853343200",
+      "qualified_fibre_count": 44,
+      "qualified_fibres_with_collisions": 17,
+      "largest_qualified_fibre": {
+        "size": 3,
+        "time": 8,
+        "landing": 11,
+        "odd_count": 3,
+        "sources": [
+          100,
+          101,
+          102
+        ]
+      }
+    },
+    {
+      "floor": 16,
+      "source_interval": [
+        128,
+        256
+      ],
+      "source_count": 128,
+      "longest_first_entry_time": 76,
+      "first_longest_source": 231,
+      "sources_with_correction_sum_at_most_one_third": 128,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "193319950538207294507060086767737164253829240119425876947730779158593846627",
+      "max_correction_sum_denominator": "1660795812894306182772253052052640552854944138993704903297770404010853343200",
+      "qualified_fibre_count": 66,
+      "qualified_fibres_with_collisions": 39,
+      "largest_qualified_fibre": {
+        "size": 5,
+        "time": 22,
+        "landing": 11,
+        "odd_count": 11,
+        "sources": [
+          246,
+          247,
+          249,
+          254,
+          255
+        ]
+      }
+    },
+    {
+      "floor": 64,
+      "source_interval": [
+        128,
+        256
+      ],
+      "source_count": 128,
+      "longest_first_entry_time": 67,
+      "first_longest_source": 235,
+      "sources_with_correction_sum_at_most_one_third": 128,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "212849480559544005412756603331653938862634272375259867736019564248524471023075751",
+      "max_correction_sum_denominator": "4343777124167131128770064082980711287533653202203396833072885394470741940854563600",
+      "qualified_fibre_count": 113,
+      "qualified_fibres_with_collisions": 15,
+      "largest_qualified_fibre": {
+        "size": 2,
+        "time": 52,
+        "landing": 61,
+        "odd_count": 32,
+        "sources": [
+          142,
+          143
+        ]
+      }
+    },
+    {
+      "floor": 64,
+      "source_interval": [
+        256,
+        512
+      ],
+      "source_count": 256,
+      "longest_first_entry_time": 71,
+      "first_longest_source": 417,
+      "sources_with_correction_sum_at_most_one_third": 256,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "3250248201713631256555362147485632583886634878652820987490780869468541822399882415601",
+      "max_correction_sum_denominator": "63901305273622666035336412724729243750907572257614170811335217038059084691911485119600",
+      "qualified_fibre_count": 175,
+      "qualified_fibres_with_collisions": 64,
+      "largest_qualified_fibre": {
+        "size": 4,
+        "time": 49,
+        "landing": 61,
+        "odd_count": 29,
+        "sources": [
+          484,
+          485,
+          486,
+          495
+        ]
+      }
+    },
+    {
+      "floor": 64,
+      "source_interval": [
+        512,
+        1024
+      ],
+      "source_count": 512,
+      "longest_first_entry_time": 99,
+      "first_longest_source": 871,
+      "sources_with_correction_sum_at_most_one_third": 512,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "3250248201713631256555362147485632583886634878652820987490780869468541822399882415601",
+      "max_correction_sum_denominator": "63901305273622666035336412724729243750907572257614170811335217038059084691911485119600",
+      "qualified_fibre_count": 267,
+      "qualified_fibres_with_collisions": 150,
+      "largest_qualified_fibre": {
+        "size": 7,
+        "time": 50,
+        "landing": 61,
+        "odd_count": 29,
+        "sources": [
+          968,
+          970,
+          972,
+          973,
+          977,
+          990,
+          991
+        ]
+      }
+    },
+    {
+      "floor": 256,
+      "source_interval": [
+        512,
+        1024
+      ],
+      "source_count": 512,
+      "longest_first_entry_time": 85,
+      "first_longest_source": 937,
+      "sources_with_correction_sum_at_most_one_third": 512,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "6071588832504044427740566837150327656047070677892807",
+      "max_correction_sum_denominator": "526072814341352323595086541808868595191297472238102700",
+      "qualified_fibre_count": 450,
+      "qualified_fibres_with_collisions": 61,
+      "largest_qualified_fibre": {
+        "size": 3,
+        "time": 20,
+        "landing": 173,
+        "odd_count": 11,
+        "sources": [
+          1019,
+          1022,
+          1023
+        ]
+      }
+    },
+    {
+      "floor": 256,
+      "source_interval": [
+        1024,
+        2048
+      ],
+      "source_count": 1024,
+      "longest_first_entry_time": 89,
+      "first_longest_source": 1665,
+      "sources_with_correction_sum_at_most_one_third": 1024,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "6071588832504044427740566837150327656047070677892807",
+      "max_correction_sum_denominator": "526072814341352323595086541808868595191297472238102700",
+      "qualified_fibre_count": 676,
+      "qualified_fibres_with_collisions": 260,
+      "largest_qualified_fibre": {
+        "size": 6,
+        "time": 21,
+        "landing": 173,
+        "odd_count": 11,
+        "sources": [
+          2038,
+          2039,
+          2041,
+          2044,
+          2045,
+          2046
+        ]
+      }
+    },
+    {
+      "floor": 256,
+      "source_interval": [
+        2048,
+        4096
+      ],
+      "source_count": 2048,
+      "longest_first_entry_time": 112,
+      "first_longest_source": 2919,
+      "sources_with_correction_sum_at_most_one_third": 2048,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "6071588832504044427740566837150327656047070677892807",
+      "max_correction_sum_denominator": "526072814341352323595086541808868595191297472238102700",
+      "qualified_fibre_count": 1015,
+      "qualified_fibres_with_collisions": 572,
+      "largest_qualified_fibre": {
+        "size": 10,
+        "time": 22,
+        "landing": 173,
+        "odd_count": 11,
+        "sources": [
+          4076,
+          4077,
+          4078,
+          4082,
+          4083,
+          4088,
+          4089,
+          4090,
+          4092,
+          4093
+        ]
+      }
+    },
+    {
+      "floor": 1024,
+      "source_interval": [
+        2048,
+        4096
+      ],
+      "source_count": 2048,
+      "longest_first_entry_time": 89,
+      "first_longest_source": 2223,
+      "sources_with_correction_sum_at_most_one_third": 2048,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "2430958606962358037747784832338288274137833733602415610699487011910306796639737834697037756470281084188372238952421267964515075826761960880258970471906584385733003",
+      "max_correction_sum_denominator": "841522328235444017486620661143617026157929800116334909636670326027396236130389995364700272626990559095624217600055174411538919868012369472246958949807731208424736800",
+      "qualified_fibre_count": 1801,
+      "qualified_fibres_with_collisions": 243,
+      "largest_qualified_fibre": {
+        "size": 3,
+        "time": 26,
+        "landing": 767,
+        "odd_count": 15,
+        "sources": [
+          3581,
+          3582,
+          3583
+        ]
+      }
+    },
+    {
+      "floor": 1024,
+      "source_interval": [
+        4096,
+        8192
+      ],
+      "source_count": 4096,
+      "longest_first_entry_time": 97,
+      "first_longest_source": 7023,
+      "sources_with_correction_sum_at_most_one_third": 4096,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "1034266509797261245878817790833017449914671066147555692391275309618419902486475210754532088838434818427593984606888406432653005705895932666341434859749958223521744824546595796065097729",
+      "max_correction_sum_denominator": "352265216333394692178619796779472753368861637692566598828023229874145224935563901157268010408969088606269155423995626374188137104971926306237398364542326777912465440748152032325293250400",
+      "qualified_fibre_count": 2715,
+      "qualified_fibres_with_collisions": 1050,
+      "largest_qualified_fibre": {
+        "size": 5,
+        "time": 13,
+        "landing": 653,
+        "odd_count": 6,
+        "sources": [
+          7330,
+          7331,
+          7332,
+          7333,
+          7334
+        ]
+      }
+    },
+    {
+      "floor": 1024,
+      "source_interval": [
+        8192,
+        16384
+      ],
+      "source_count": 8192,
+      "longest_first_entry_time": 114,
+      "first_longest_source": 15595,
+      "sources_with_correction_sum_at_most_one_third": 8192,
+      "excluded_sources_from_fibre_margin": 0,
+      "max_correction_sum_numerator": "129571207203797811736765598086778087059317415174233057202650166517196839673673256346990231330520469986120969354066935968104629976225821522926185135802937916769276005361948800535908304255485813518134118082362389319",
+      "max_correction_sum_denominator": "43641495959115088030708827768236391639614823057919981722919190928764388619864329171368742198188825477372081261888819967788605388496710385012425874889020245751986008549276322239613082459184957766757376832906206968400",
+      "qualified_fibre_count": 4111,
+      "qualified_fibres_with_collisions": 2305,
+      "largest_qualified_fibre": {
+        "size": 8,
+        "time": 23,
+        "landing": 910,
+        "odd_count": 12,
+        "sources": [
+          14340,
+          14341,
+          14342,
+          14347,
+          14350,
+          14351,
+          14354,
+          14355
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "first_entry_paths": 19082,
+    "shortcut_steps": 312115,
+    "image_checks": 18417,
+    "fixed_weight_groups": 16708,
+    "boundary_checks": 3093,
+    "interval_checks": 59802,
+    "selected_paths_for_transfer": 199,
+    "fixed_time_fibres": 11494
+  },
+  "large_floor_witness": {
+    "family_K": 9,
+    "power_target_exponent": 6561,
+    "floor_power_of_two": 300,
+    "source_bits": 6556,
+    "source_sha256_hexadecimal": "d89c25de2a2c35e2ea69329e4431dc7304aa802806566adacd10750d6309f8bd",
+    "first_entry_time": 6270,
+    "odd_count": 9,
+    "entry_is_exactly_the_floor": true,
+    "explicit_uniform_margin_applies": true,
+    "distinct_states": 6271,
+    "exact_product_and_sum_checked": true
+  },
+  "new_collatz_counterexample": false,
+  "universal_first_entry_proved": false
+}

@@ -1,0 +1,57 @@
+{
+  "verified_at_utc": "2026-10-09T13:29:58.074646+00:00",
+  "conjecture_status": "unresolved",
+  "lean_build": {
+    "source": "lean/ExitCertificateBudget.lean",
+    "command": [
+      "lean",
+      "-o",
+      "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-exit-budget-jn0vkufk/ExitCertificateBudget.olean",
+      "lean/ExitCertificateBudget.lean"
+    ],
+    "returncode": 0,
+    "log": "results/exit-certificate-budget/ExitCertificateBudget.log",
+    "native_computation_used": false
+  },
+  "reused_verification": {
+    "manifest": "results/survivor-exit-mass/verification.json",
+    "matched_hashes": 6,
+    "first_entry_table_recomputed": false,
+    "scope": "unchanged independent Python verification reused"
+  },
+  "kernel_scope": [
+    "integer exit test implies envelope contraction",
+    "product bound counts arbitrarily spaced successful horizons",
+    "positive fixed tail bounds the integer success count"
+  ],
+  "written_scope": [
+    "monotonicity of the exact real test in its source cutoff",
+    "exponential lower cutoff bound for arbitrary schedules",
+    "variable-loss product and logarithmic budget",
+    "fixed arithmetic scale permits only finitely many successes",
+    "polynomial cutoffs limit the density of successful horizons",
+    "conditional failure of polynomial cutoffs under actual exponential decay"
+  ],
+  "python_scope": [
+    "all saved envelope decrement identities and successful tests",
+    "all stored prefixes satisfy the kernel product inequality",
+    "exact cutoff and precision threshold comparisons"
+  ],
+  "not_proved": [
+    "another successful contraction horizon",
+    "infinitely many successful contraction horizons",
+    "that larger cutoffs or scales suffice for infinitely many successes",
+    "vanishing survivor mass",
+    "the full Collatz conjecture"
+  ],
+  "external_proof_inputs": [],
+  "sha256": {
+    "lean/ExitCertificateBudget.lean": "24cd3775c37018e3bca90867208d1b017841d09140e4ee0915aab28b0cc649b7",
+    "docs/EXIT-CERTIFICATE-BUDGET.md": "9a7386fe12a00f7631dd4185df083aaa36b33d7c2d44cbd6d5c484ec47a1f158",
+    "verify_exit_certificate_budget.py": "0f8a8879c98edc0bec8b86abe8b55cdab377ce78d3d293dbd1d8fd2fde6f22c9",
+    "results/exit-certificate-budget/ExitCertificateBudget.log": "0caa47ca9b81029ee126209bc56856247ef280edb86d24a4b3b4d66d16d8303f",
+    "results/exit-certificate-budget/replay.json": "579d9874917410630824dd11cc885434d55044dc630d3b3eff49420b7b457142",
+    "results/survivor-exit-mass/verification.json": "d5da8d246a5b35cb7271eba58ad81acb8863181edc5260f4538b62d092e3cff6",
+    "results/survivor-exit-mass/replay.json": "581c3867e78b8a9f1b949f990be8e143decdcd7a183cbf007f4eaf31b6ee155c"
+  }
+}

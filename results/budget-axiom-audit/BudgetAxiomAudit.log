@@ -1,0 +1,6 @@
+'BudgetAxiomAudit.witness_large' does not depend on any axioms
+'BudgetAxiomAudit.witness_eligible' does not depend on any axioms
+'BudgetAxiomAudit.witness_counts' does not depend on any axioms
+'BudgetAxiomAudit.no_budget_at_witness' depends on axioms: [propext, Quot.sound]
+'BudgetAxiomAudit.claimed_certificate_false' depends on axioms: [propext, Quot.sound]
+'BudgetAxiomAudit.witness_reaches_one' does not depend on any axioms

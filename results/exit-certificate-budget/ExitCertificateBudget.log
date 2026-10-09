@@ -1,0 +1,7 @@
+'ExitCertificateBudget.contraction_of_exit' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.envelope_product' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.tail_product' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.exit_tail_product' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.positive_success_decreases' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.good_count_plus_envelope' depends on axioms: [propext, Quot.sound]
+'ExitCertificateBudget.fixed_tail_good_count' depends on axioms: [propext, Quot.sound]

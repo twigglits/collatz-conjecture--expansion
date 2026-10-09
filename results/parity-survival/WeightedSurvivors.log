@@ -1,0 +1,10 @@
+'WeightedSurvivors.survives_succ' depends on axioms: [propext, Quot.sound]
+'WeightedSurvivors.predecessor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.killed_predecessor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.mem_cone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.survives_iff_not_mem_cone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.cone_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.large_survives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.base64' depends on axioms: [propext, Quot.sound]
+'WeightedSurvivors.conjecture_iff_absorption64' depends on axioms: [propext, Classical.choice, Quot.sound]
+'WeightedSurvivors.contraction_arithmetic' does not depend on any axioms

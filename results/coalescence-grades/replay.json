@@ -1,0 +1,434 @@
+{
+  "all_checks_passed": true,
+  "grade_and_credit_census": {
+    "complete_source_interval": [
+      1,
+      2000000
+    ],
+    "all_sources_reach_one_in_python": true,
+    "kernel_checked_source_interval_not_claimed": true,
+    "canonical_row_format": "source,first_one_time,odd_count,minimum_full_orbit_credit\n",
+    "canonical_rows_sha256": "61e57fabcdb9acc59ba8d0e27baee52a11e40fc53fa0d9d2518844ef10907e7a",
+    "negative_grade_records": [
+      {
+        "source": 27,
+        "grade": -12,
+        "drop_from_previous": 12
+      },
+      {
+        "source": 327,
+        "grade": -13,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 703,
+        "grade": -16,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 871,
+        "grade": -17,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 2463,
+        "grade": -20,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 2919,
+        "grade": -21,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 3711,
+        "grade": -24,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 6171,
+        "grade": -27,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 13255,
+        "grade": -28,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 26623,
+        "grade": -32,
+        "drop_from_previous": 4
+      },
+      {
+        "source": 35655,
+        "grade": -34,
+        "drop_from_previous": 2
+      },
+      {
+        "source": 52527,
+        "grade": -36,
+        "drop_from_previous": 2
+      },
+      {
+        "source": 77031,
+        "grade": -37,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 142587,
+        "grade": -40,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 156159,
+        "grade": -41,
+        "drop_from_previous": 1
+      },
+      {
+        "source": 230631,
+        "grade": -50,
+        "drop_from_previous": 9
+      },
+      {
+        "source": 511935,
+        "grade": -53,
+        "drop_from_previous": 3
+      },
+      {
+        "source": 626331,
+        "grade": -59,
+        "drop_from_previous": 6
+      },
+      {
+        "source": 837799,
+        "grade": -61,
+        "drop_from_previous": 2
+      },
+      {
+        "source": 1723519,
+        "grade": -65,
+        "drop_from_previous": 4
+      }
+    ],
+    "minimum_credit_records": [
+      {
+        "source": 3,
+        "minimum_credit": 2
+      },
+      {
+        "source": 7,
+        "minimum_credit": 3
+      },
+      {
+        "source": 15,
+        "minimum_credit": 4
+      },
+      {
+        "source": 27,
+        "minimum_credit": 21
+      },
+      {
+        "source": 327,
+        "minimum_credit": 22
+      },
+      {
+        "source": 703,
+        "minimum_credit": 26
+      },
+      {
+        "source": 2463,
+        "minimum_credit": 30
+      },
+      {
+        "source": 2919,
+        "minimum_credit": 31
+      },
+      {
+        "source": 3711,
+        "minimum_credit": 33
+      },
+      {
+        "source": 6171,
+        "minimum_credit": 36
+      },
+      {
+        "source": 13255,
+        "minimum_credit": 37
+      },
+      {
+        "source": 26623,
+        "minimum_credit": 41
+      },
+      {
+        "source": 52527,
+        "minimum_credit": 45
+      },
+      {
+        "source": 77031,
+        "minimum_credit": 47
+      },
+      {
+        "source": 142587,
+        "minimum_credit": 49
+      },
+      {
+        "source": 216367,
+        "minimum_credit": 50
+      },
+      {
+        "source": 230631,
+        "minimum_credit": 59
+      },
+      {
+        "source": 511935,
+        "minimum_credit": 62
+      },
+      {
+        "source": 626331,
+        "minimum_credit": 68
+      },
+      {
+        "source": 837799,
+        "minimum_credit": 70
+      },
+      {
+        "source": 1723519,
+        "minimum_credit": 74
+      }
+    ],
+    "lowest_grade": -65,
+    "highest_minimum_credit": 74,
+    "nonnegative_grade_minima": {
+      "0": 1,
+      "1": 2,
+      "2": 4,
+      "3": 8,
+      "4": 16,
+      "5": 32,
+      "6": 64,
+      "7": 128,
+      "8": 256,
+      "9": 512,
+      "10": 1024,
+      "11": 2048,
+      "12": 4096,
+      "13": 8192,
+      "14": 16384,
+      "15": 32768,
+      "16": 65536,
+      "17": 131072,
+      "18": 262144,
+      "19": 524288,
+      "20": 1048576
+    },
+    "all_start_extension_inferred": false
+  },
+  "independent_direct_replay": {
+    "complete_source_interval": [
+      1,
+      8192
+    ],
+    "direct_step_checks": 476621,
+    "includes_two_post_arrival_indices": true,
+    "checks": [
+      "first arrival and odd count against memoized census",
+      "exact minimum credit against direct prefix maximum",
+      "dyadic envelope at every replay index",
+      "strict rank decrease and exact drop before reaching one"
+    ]
+  },
+  "meeting_partitions": {
+    "complete_source_interval": [
+      1,
+      8192
+    ],
+    "common_clock": 165,
+    "number_of_grade_classes": 40,
+    "grade_partition_equals_state_and_weight_partition": true,
+    "ordered_pairs_classified_by_partition_equality": 67108864
+  },
+  "sharp_27_meetings": {
+    "small_grade_table": [
+      {
+        "source": 1,
+        "first_one_time": 0,
+        "odd_count": 0,
+        "grade": 0
+      },
+      {
+        "source": 2,
+        "first_one_time": 1,
+        "odd_count": 0,
+        "grade": 1
+      },
+      {
+        "source": 3,
+        "first_one_time": 5,
+        "odd_count": 2,
+        "grade": 1
+      },
+      {
+        "source": 4,
+        "first_one_time": 2,
+        "odd_count": 0,
+        "grade": 2
+      },
+      {
+        "source": 5,
+        "first_one_time": 4,
+        "odd_count": 1,
+        "grade": 2
+      },
+      {
+        "source": 6,
+        "first_one_time": 6,
+        "odd_count": 2,
+        "grade": 2
+      },
+      {
+        "source": 7,
+        "first_one_time": 11,
+        "odd_count": 5,
+        "grade": 1
+      },
+      {
+        "source": 8,
+        "first_one_time": 3,
+        "odd_count": 0,
+        "grade": 3
+      },
+      {
+        "source": 9,
+        "first_one_time": 13,
+        "odd_count": 6,
+        "grade": 1
+      },
+      {
+        "source": 10,
+        "first_one_time": 5,
+        "odd_count": 1,
+        "grade": 3
+      },
+      {
+        "source": 11,
+        "first_one_time": 10,
+        "odd_count": 4,
+        "grade": 2
+      },
+      {
+        "source": 12,
+        "first_one_time": 7,
+        "odd_count": 2,
+        "grade": 3
+      },
+      {
+        "source": 13,
+        "first_one_time": 7,
+        "odd_count": 2,
+        "grade": 3
+      },
+      {
+        "source": 14,
+        "first_one_time": 12,
+        "odd_count": 5,
+        "grade": 2
+      },
+      {
+        "source": 15,
+        "first_one_time": 12,
+        "odd_count": 5,
+        "grade": 2
+      },
+      {
+        "source": 16,
+        "first_one_time": 4,
+        "odd_count": 0,
+        "grade": 4
+      },
+      {
+        "source": 17,
+        "first_one_time": 9,
+        "odd_count": 3,
+        "grade": 3
+      },
+      {
+        "source": 18,
+        "first_one_time": 14,
+        "odd_count": 6,
+        "grade": 2
+      },
+      {
+        "source": 19,
+        "first_one_time": 14,
+        "odd_count": 6,
+        "grade": 2
+      },
+      {
+        "source": 20,
+        "first_one_time": 6,
+        "odd_count": 1,
+        "grade": 4
+      },
+      {
+        "source": 21,
+        "first_one_time": 6,
+        "odd_count": 1,
+        "grade": 4
+      },
+      {
+        "source": 22,
+        "first_one_time": 11,
+        "odd_count": 4,
+        "grade": 3
+      },
+      {
+        "source": 23,
+        "first_one_time": 11,
+        "odd_count": 4,
+        "grade": 3
+      },
+      {
+        "source": 24,
+        "first_one_time": 8,
+        "odd_count": 2,
+        "grade": 4
+      },
+      {
+        "source": 25,
+        "first_one_time": 16,
+        "odd_count": 7,
+        "grade": 2
+      },
+      {
+        "source": 26,
+        "first_one_time": 8,
+        "odd_count": 2,
+        "grade": 4
+      }
+    ],
+    "clock_horizon": 128,
+    "same_clock_meetings_checked": 900,
+    "equal_weight_meetings_checked": 1185,
+    "minimum_odd_gap_at_common_clock": 6,
+    "minimum_clock_gap_at_equal_weight": 12,
+    "all_time_extension": "Kernel meeting_grade_balance with the complete small-grade table."
+  },
+  "all_odd_prefixes": {
+    "length_interval": [
+      1,
+      256
+    ],
+    "positive_quotients": [
+      1,
+      3,
+      17,
+      340282366920938463463374607431768211459
+    ],
+    "cases": 1024,
+    "minimum_credit_through_tested_prefix": "K",
+    "convergence_of_arbitrary_family_members_inferred": false
+  },
+  "universal_credit_bound_proved": false,
+  "collatz_status": "unresolved"
+}

@@ -1,0 +1,6 @@
+'CollatzPacking.fibre_span_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.grid_fibre_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.fibre_prefix_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.two_even_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.two_even_sharp' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.prefix_exponent_certificates' does not depend on any axioms

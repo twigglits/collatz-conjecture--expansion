@@ -1,0 +1,119 @@
+{
+  "verified_at_utc": "2026-10-09T11:28:47.210446+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "dyadic envelope for every positive source and finite time",
+    "classification of convergent equal-time equal-weight meetings by arrival grade",
+    "grade balance for arbitrary clocks and odd counts at a physical meeting",
+    "sharp all-time lower bounds of six odd steps or twelve clock steps for 27",
+    "powers of two are exact minimal nonnegative-grade representatives",
+    "powers of two have no positive smaller equal-time equal-weight mates at any time",
+    "strict conditional credit-rank decrease and explicit hitting-time bound",
+    "finite-credit test and bounded-time excess witnesses for hypothetical counterexamples",
+    "all-odd prefixes force arbitrarily large credits across starting numbers",
+    "full Collatz equivalence to finite per-source odd/even credit",
+    "full Collatz equivalence to same-clock descent allowing unequal odd counts",
+    "full Collatz equivalence to equal-weight descent allowing different clocks"
+  ],
+  "python_scope": [
+    "exact memoized convergence, grade, and minimum-credit census through 2,000,000",
+    "independent direct trajectory and rank replay through source 8192",
+    "complete finite grade/meeting partition comparison through source 8192",
+    "finite arbitrary-clock meeting identities for starts 1..27",
+    "large all-odd family prefixes through length 256"
+  ],
+  "not_proved": [
+    "a finite credit for every positive start",
+    "a computable universal formula for such a credit",
+    "universal smaller coalescence under either relaxed criterion",
+    "exclusion of nontrivial positive cycles or divergent positive trajectories",
+    "the positive-integer Collatz conjecture"
+  ],
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/CollatzPacking.log"
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/CollatzContradiction.log"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/FirstPassagePacking.log"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/FinitePathPacking.log"
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/EqualWeightFibres.log"
+    },
+    {
+      "source": "lean/CoalescenceGrades.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-grades-m0omvrbr/CoalescenceGrades.olean",
+        "lean/CoalescenceGrades.lean"
+      ],
+      "returncode": 0,
+      "log": "results/coalescence-grades/CoalescenceGrades.log"
+    }
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "lean/CoalescenceGrades.lean": "1eb22548b49b6bdbe4ba18aab0c862f133e56a8d5eb47b1d384c40d5afc2c5f5",
+    "docs/COALESCENCE-GRADES.md": "34227041d1bd9a84438477078c0333b09ec885e8d6032f33ebcf54635e4b06b3",
+    "verify_coalescence_grades.py": "1ec91cce9269be5f501e669e25fb1c47bdc682ae40ea5d5c9b9dba2c3771edb7",
+    "results/equal-weight-fibres/verification.json": "31a91f92b75f5d0d1a4725261ede33a9cfea952f7276896782552edc6cddd11f",
+    "results/coalescence-grades/replay.json": "c8e124eb527954606a10cd40020626ba7d83dd3da47942a22d0c8026efa636e9",
+    "results/coalescence-grades/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/coalescence-grades/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/coalescence-grades/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/coalescence-grades/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/coalescence-grades/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+    "results/coalescence-grades/CoalescenceGrades.log": "292f8e2c885a1dc5412b947320b3dad0216fe1d646bc936dc021dd00a084bc88"
+  }
+}

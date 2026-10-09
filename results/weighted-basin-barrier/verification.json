@@ -1,0 +1,95 @@
+{
+  "verified_at_utc": "2026-10-09T09:29:59.705635+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "exact single exit for any nonreturning root basin",
+    "convergence of every member of a convergent root basin",
+    "power-of-two convergence and nonreturn above two",
+    "all-index divisibility 3^(k+1) divides 2^(3^k)+1",
+    "all-index rising path to a power of two, convergence, and source/target inequality",
+    "K9 concrete parameters, convergence, basin boundary, and ratio arithmetic",
+    "rational comparisons for the 0.993 obstructions",
+    "finite 3/2 power-profile witness arithmetic and convergence"
+  ],
+  "python_scope": [
+    "12 family arithmetic checks; first 10 full trajectory certificates replayed",
+    "12 moderate cofinite constructions",
+    "independent absorption check for every removed start in each construction",
+    "complete finite exits, disjoint inverse loss layers, and direct membership checks",
+    "directed rational mass bounds using existing written integral tails",
+    "first arrivals and peaks for the two power-profile witness starts"
+  ],
+  "written_scope": [
+    "weighted basin mass identity and no uniform one-step contraction",
+    "cofinite extension with finite absorbed complement",
+    "fixed-block obstruction after any fixed survival history",
+    "bounds for the infinite weighted transfer operator",
+    "no uniform power loss bound below exponent log_2(3) on this class of populations"
+  ],
+  "not_proved": [
+    "failure of contraction for the actual S_k at a new horizon",
+    "the needed infinitely recurrent contraction for the actual S_k",
+    "a complete proof or disproof of Collatz"
+  ],
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-basin-11mj6aav/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-basin-barrier/CollatzContradiction.log"
+    },
+    {
+      "source": "CollatzGrowth.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-basin-11mj6aav/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-basin-barrier/CollatzGrowth.log"
+    },
+    {
+      "source": "lean/WeightedSurvivors.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-basin-11mj6aav/WeightedSurvivors.olean",
+        "lean/WeightedSurvivors.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-basin-barrier/WeightedSurvivors.log"
+    },
+    {
+      "source": "lean/WeightedBasinBarrier.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-weighted-basin-11mj6aav/WeightedBasinBarrier.olean",
+        "lean/WeightedBasinBarrier.lean"
+      ],
+      "returncode": 0,
+      "log": "results/weighted-basin-barrier/WeightedBasinBarrier.log"
+    }
+  ],
+  "sha256": {
+    "lean/WeightedBasinBarrier.lean": "a093497c7444de44871fd5b618db0a7340fc7c8cab6d88e49a625230de5eacde",
+    "lean/WeightedSurvivors.lean": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "verify_weighted_basin_barrier.py": "238cbb30887fd957d20e6c50c59381ed64e467feddbccd1d7d8680435992e253",
+    "verify_weighted_survivors.py": "a6fbdf97da8e9f8a773cc04def5ef7eacacd06933d169611fd0ce5870452ea92",
+    "docs/WEIGHTED-BASIN-BARRIER.md": "b794bdad916d021f793b62b904eb7550461182dae1a52b7f3533ff44e4a38caa",
+    "results/weighted-basin-barrier/replay.json": "c0cbc82cb9801e58ea555f4da4db1086631e7c7f442c4d0e817c58bf5fab38c1",
+    "results/weighted-basin-barrier/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/weighted-basin-barrier/CollatzGrowth.log": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498",
+    "results/weighted-basin-barrier/WeightedSurvivors.log": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b",
+    "results/weighted-basin-barrier/WeightedBasinBarrier.log": "abfb036442fa6abd24e2346addacc06b0aec440a22487d1a50e027ea0351a78a"
+  }
+}

@@ -504,6 +504,22 @@ possibility below. A repaired re-entry argument would have to handle
 unbounded deposit patterns, and a density estimate would still need a
 separate pointwise argument.
 
+## Audit of a claimed universal 200-step budget
+
+The [CollatzLayerA v8.1 source audit](docs/BUDGET-AXIOM-AUDIT.md) found
+that its claimed complete proof imports an axiom asserting at most
+44 odd and at least 71 even ordinary steps in some prefix of length
+at most 200, for every large start congruent to 3 modulo 4.
+The explicit start `2^111−1` contradicts it: every such prefix has
+`ceil(k/2)` odd and `floor(k/2)` even steps.
+[BudgetAxiomAudit.lean](lean/BudgetAxiomAudit.lean) kernel checks all
+201 counts and negates the stated universal axiom. It also proves that
+this witness reaches 1 after 1,476 steps. This is a counterexample to
+the imported assumption, not to Collatz. An independent exact replay
+checks 105 instances of the growing-prefix family; no full foreign
+repository build or convergence proof for all those instances is claimed.
+[Verification](results/budget-axiom-audit/verification.json).
+
 ## Real-series density argument: a necessary source correction
 
 An explicit symbolic construction now demonstrates the real/2-adic gap
@@ -768,6 +784,173 @@ Neither a universal first-drop time nor the unrestricted coefficient
 stopping-time claim is proved.
 [Verification](results/first-slope-budget/verification.json).
 
+The [weighted survivor investigation](docs/WEIGHTED-SURVIVORS.md) keeps
+one certified floor, H=64, and the finite mass
+`M_k=sum_{tau_64(n)>k} n^(-3/2)`. Vanishing mass is equivalent to every
+start reaching that floor. Exact predecessor transport retains the
+odd-source cutoff and affine correction. The kernel checks the inverse
+branches, finite inverse-cone characterization, base convergence, and
+integer comparisons used in the conditional contraction bound.
+
+The written analysis distinguishes two targets. An exponential mass
+envelope is equivalent to a universal `O(log n)` floor-hitting bound.
+A fixed contraction at merely infinitely many horizons already suffices
+for convergence, without that timing conclusion. Specifically, if the
+eligible residue-2 mass `Q_k` is at most `69 M_k/200` infinitely often,
+then full Collatz follows. The unconditional critical bias bound gives
+strict positive loss at each horizon, but does not prove that the sum of
+relative losses diverges. That is the remaining global estimate.
+
+Exact Python enclosures independently refute `Q_k<=M_k/3` at k=19
+and verify the weaker 69/200 bound only for k=0,...,36. The last cone
+contains 2,510,783 absorbed starts. No all-time or infinitely recurrent
+share bound is proved. A written all-odd-path argument also excludes
+pointwise inverse contraction for every weight uniformly comparable to
+`n^(-s)`, while leaving aggregate contraction open.
+[Verification](results/weighted-survivors/verification.json).
+
+The [closure obstruction](docs/WEIGHTED-BASIN-BARRIER.md) tests a possible
+way to prove the missing aggregate estimate. Backward closure, cofiniteness,
+and a provably absorbed finite complement do not imply uniform weighted
+contraction. A written construction gives counterexamples for every fixed
+block length, even after any fixed amount of survival information. Its
+supporting all-index rising paths end at powers of two and converge;
+their integer arithmetic and ancestor-basin boundary are kernel checked.
+The constructed populations need not be actual survivor sets S_k.
+
+The same construction rules out a uniform lost-mass bound `c*mass^p` on
+that class whenever `1<=p<log_2(3)`. A concrete counterexample to the
+`p=3/2,c=1` estimate uses a source and target that the kernel checks reach
+one in 560 and 496 shortcut steps. Bounds with larger exponents are not
+excluded here, and none is established. The proof must retain additional
+information about the actual common clock, or obtain a weaker loss
+estimate that still forces the mass to zero.
+[Verification and scope](results/weighted-basin-barrier/verification.json).
+
+The [finite-path extension](docs/FINITE-PATH-PACKING.md) retains information
+about exact first-entry paths. The packing induction now applies to every
+finite trajectory with distinct states, giving `256 L^sigma` states in
+any interval of length L, where `sigma=H_2(log_3 2)<19/20`. At each
+scale, discarding only the final observation-length positions restores
+the required injective image inside the same prefix. The kernel checks
+that finite transfer and proves distinctness up to first entry.
+
+The written shell estimate then bounds the reverse correction sum before
+first entry below Y by `4096 Y^(-1/20)`, independently of the entry time.
+This gives a bound for each fixed-time, fixed-landing fibre in a dyadic
+source interval, with kernel-checked odd-count uniqueness. The explicit
+constant gives a useful margin only at an enormous floor. Exact replay
+checks 19,082 finite first-entry paths and a separate 6,270-step large-floor
+witness. Neither a union bound over all times nor universal first entry
+follows. The mass of eternal survivors remains uncontrolled.
+[Verification and scope](results/finite-path-packing/verification.json).
+
+The [equal-weight fibre analysis](docs/EQUAL-WEIGHT-FIBRES.md) gives two
+kernel affine envelopes after shifting states by one. A complete inverse
+fibre with k steps and j odd steps contains at most `2^(k-j)` starts;
+with at most one even step it contains at most one. A written consequence
+gives the sharp uniform exponential rate of the inverse coefficient
+moment, which is not a survivor-mass contraction.
+
+Along a divergent trajectory, reciprocal summability supplies a bounded
+normalized endpoint. The nested sets of starts that merge with it at
+equal time and odd count must therefore eventually stabilize. The finite
+cap and conditional stabilization are kernel checked; the divergence
+bridge remains written analysis. No universal growth theorem for these
+particular fibres is proved.
+
+Two complete examples prevent overclaiming the approach. The kernel
+proves `F_34(1)={1}` and `F_35(1)={1,159}`, so a finite plateau does
+not certify stabilization. It also proves that 27 reaches one but has
+no positive smaller equal-time, equal-weight mate at any time. A written
+arrival-label argument supplies unboundedly many convergent examples of
+this latter obstruction. Thus a universal smaller-mate induction cannot
+require equal times and equal odd counts, even beyond a finite base.
+The broader coalescence criterion remains available.
+[Verification and scope](results/equal-weight-fibres/verification.json).
+
+The [arrival-grade extension](docs/COALESCENCE-GRADES.md) now kernel-checks
+the classification and makes the nonnegative minimal representatives
+explicit: the least convergent start of grade `a>=0` is exactly `2^a`.
+It also proves that allowing either unequal odd counts at a common clock,
+or unequal clocks with equal odd counts, restores a criterion equivalent
+to the full conjecture. Both universal meeting premises remain unproved.
+For 27, any smaller partner at a common clock must have at least six fewer
+odd steps; at equal odd counts its clock must be at least twelve steps
+later. Both all-time lower bounds are sharp and kernel checked.
+
+There is also a kernel termination bound conditional on finite odd/even
+credit. If `2*wt(k,n)<=k+A` at every index, then the rank
+`R(x,g)=2^(g+1)*(x-1)+g`, with `g=A+k-2*wt(k,n)`, strictly decreases
+until one is reached. The hitting time is at most `2^(A+1)*(n-1)+A`.
+A finite credit for each positive source is equivalent to full Collatz,
+including exclusion of nontrivial cycles. A counterexample would exceed
+each proposed credit A by time `R(n,A)+1`. No general source-dependent
+credit bound is proved. A Python census through 2,000,000 and independent
+direct replay supplement the kernel implications; neither finite check
+supplies the missing universal bound.
+[Verification and scope](results/coalescence-grades/verification.json).
+
+The [parity-survival follow-up](docs/PARITY-SURVIVAL.md) strengthens that
+conditional time bound to `4A+5b+71` when `n<=2^b`. In fact, the single
+endpoint condition `2*wt(K,n)<=K+A` at `K=4A+5b+1` suffices; earlier
+violations of the same allowance are permitted. The proof uses exact
+growth while avoiding the kernel-certified base 1..64. A counterexample
+would satisfy `5k<=8*wt(k,n)+5b` at every clock, hence would have lower
+limiting odd frequency at least 5/8. The finite inequalities and time
+bound are kernel checked; the limiting statement is their written
+consequence. No individual-orbit estimate crossing this threshold is
+proved. The exact inequalities also show that a proposed uniform
+`O(log n)` credit bound is equivalent to a uniform `O(log n)` total
+stopping-time bound, rather than an easier quantitative target.
+[Verification and scope](results/parity-survival/verification.json).
+
+The [parity-prefix fibre bound](docs/FIBRE-PREFIX-BOUND.md) improves the
+universal multiplicity estimate. A kernel-checked recurrence `B(e,a)`
+tracks both the number `e` of remaining even steps and the grid spacing
+`3^a`. It stops at one member when `3^a+1>=2^e`, and otherwise splits
+as `B(e-1,a)+B(e,a+1)`. Every same-time, same-weight fibre has at most
+`B(e,0)` members. In particular, two even steps permit at most two
+members, with a kernel all-index family attaining two at arbitrarily
+large targets.
+
+Written analysis bounds this recurrence by `2*alpha^e`, where
+`alpha=1.726541...` and `alpha=2^delta`, `2^(-delta)+3^(-delta)=1`.
+This extends the optimal uniform-target time-exponential rate for
+coefficient moments to `s>0.497100...`, including the explicit bound
+`Z(k,1/2,y)<=4000*(3/2)^(k/2)`. The kernel certifies the integer
+comparisons supporting that explicit constant; the real-analysis
+deduction is written. This remains a coefficient estimate whose right
+side grows with time, not contraction of actual survivor mass. The
+upper bound does not force new merging starts along an individual
+orbit. No convergence conclusion is inferred.
+[Verification and scope](results/fibre-prefix-bound/verification.json).
+
+An [independent exit-mass replay](docs/SURVIVOR-EXIT-MASS.md) certifies
+`M(k+1)<=0.993*M(k)` for the actual infinite survivor mass at floor64,
+exponent3/2, for `k=0..126` and `k=128`. It uses exact first-entry times
+through 2,000,000 and a written infinite-tail bound: known exit mass
+divided by a full mass upper bound gives a lower bound on relative
+loss. All numerical comparisons are exact integer Python checks, not
+new Lean proofs. The first inconclusive test, at k=127, does not refute
+the actual contraction inequality. The 128 certified horizons do not
+establish infinitely many contractions, vanishing survivor mass, or
+Collatz. [Verification and scope](results/survivor-exit-mass/verification.json).
+
+A [certificate budget](docs/EXIT-CERTIFICATE-BUDGET.md) now quantifies
+what an infinite extension of that test would require. Certifying the
+factor 993/1000 at G distinct horizons requires a largest cutoff
+`R >= 64*(1000/993)^(2G)`, even for an adaptive schedule. If the exit
+lower bounds use integer scales at most S, then
+`S > 4*(1000/993)^(G-1)` for G>=1. The abstract integer telescoping
+theorem is kernel checked; the integral-tail and real-mass applications
+are written. Exact comparisons bound the success count by 736 when all
+cutoffs are at most 2,000,000, and by 9276 when all scales are at most
+2^96. These necessary bounds do not predict attainable counts. Growing
+cutoffs and scales still do not force new successful horizons, and the
+existing 128 certificates remain the full certified scope.
+[Verification and scope](results/exit-certificate-budget/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -832,6 +1015,18 @@ Stabilisation throughout the interval of scales also gives a written
 proof that each set `Col_min(N)≤B` has a natural density, and that these
 densities tend to one as B grows. This does not establish positive density
 for the basin of 1. The exceptional set still need not be empty.
+
+The [total-variation deduction](docs/DENSITY-TO-POINTWISE.md) strengthens
+this written consequence: the full distribution of orbit minima among
+starts up to X approaches a probability law p at rate `O((log X)^(-c))`,
+uniformly over all sets of minima. It also gives a direct proof of the
+almost-bounded-minima estimate from first-passage stabilisation.
+Coalescence-component densities form a countably additive probability
+distribution. Neither this nor the current rate excludes a single
+exceptional component. Even with the unproved premise `p_1=1`, the
+resulting exceptional count can exceed the published `X^0.84` inverse
+basin lower bound. An `o(X^0.84)` bound for the entire exceptional set
+would suffice with that external input; it has not been established.
 
 ## Reproduction
 

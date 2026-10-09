@@ -1,0 +1,47 @@
+{
+  "verified_at_utc": "2026-10-09T13:01:01.007598+00:00",
+  "conjecture_status": "unresolved",
+  "new_kernel_theorems": [],
+  "reused_verifications": [
+    {
+      "manifest": "results/weighted-survivors/verification.json",
+      "matched_hashes": 7,
+      "scope": "reused verification; no new Lean build claimed"
+    },
+    {
+      "manifest": "results/fibre-prefix-bound/verification.json",
+      "matched_hashes": 14,
+      "scope": "reused verification; no new Lean build claimed"
+    }
+  ],
+  "written_scope": [
+    "exact exit-mass identity for nested actual survivor sets",
+    "known exits divided by a full mass upper bound certify relative loss",
+    "integral bounds on unclassified infinite tails"
+  ],
+  "python_scope": [
+    "exact first-floor-entry times for all starts1..2000000",
+    "direct replay for all starts1..65536 and recorded extra samples",
+    "independent physical first-return certificates for every nonbase table row",
+    "exact integer enclosures of weights and tails",
+    "128 certificates for full infinite mass contraction, at k=0..126 and128",
+    "overlap with every prior complete inverse-cone mass interval"
+  ],
+  "not_proved": [
+    "that a failed sufficient test disproves the actual contraction inequality",
+    "infinitely many successful contraction horizons",
+    "all-time contraction",
+    "vanishing survivor mass",
+    "exclusion of nontrivial positive cycles or divergent positive orbits",
+    "the full Collatz conjecture"
+  ],
+  "external_proof_inputs": [],
+  "sha256": {
+    "verify_survivor_exit_mass.py": "5f03c6460d927b08ef80df42149b3556fc5c169b7d570b38ebbaa14a384c5bc5",
+    "docs/SURVIVOR-EXIT-MASS.md": "11f4038d0dbfa35e5b13349595fa2d4c3f1c6ab07a187d3fb899b057baaee0c8",
+    "results/survivor-exit-mass/replay.json": "581c3867e78b8a9f1b949f990be8e143decdcd7a183cbf007f4eaf31b6ee155c",
+    "results/weighted-survivors/verification.json": "8602ec985a11af6330fcf55633d4083b6f32ca552015e7485b09745820548527",
+    "results/weighted-survivors/replay.json": "801db6ac0aa5526ef137b567b55d053e6db77f2f9dc25fa9bb7ac85bc9ddb782",
+    "results/fibre-prefix-bound/verification.json": "368a54717bce5780dbe1835da316f583f74d753b1b13fec1628af96f26cb7c30"
+  }
+}

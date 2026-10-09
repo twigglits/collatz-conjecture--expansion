@@ -1,0 +1,13 @@
+'CollatzPacking.shifted_lower' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.shifted_upper' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.fibre_span' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.fibre_cardinality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.one_even_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.mate_persists' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.mates_bounded' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.mates_stabilize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollatzPacking.one_fibre_34' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.one_fibre_35' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.mate_after_core_iff' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.no_smaller_equal_weight_27' depends on axioms: [propext, Quot.sound]
+'CollatzPacking.convergent_27' does not depend on any axioms

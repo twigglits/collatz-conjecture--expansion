@@ -1,0 +1,94 @@
+{
+  "verified_at_utc": "2026-10-09T10:02:28.187016+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "first entry implies a simple finite prefix",
+    "at most k terminal positions lack a k-step image inside the prefix",
+    "fixed-time injectivity and local image packing on the remaining positions",
+    "even final entry and landing in (H/2,H]",
+    "unique odd count in a dyadic source shell under a 2/3 reverse-product margin",
+    "exact integer constants supporting the entropy and reciprocal estimates"
+  ],
+  "written_scope": [
+    "uniform 256 L^sigma packing for finite simple trajectories",
+    "extension to the distinct value set of every individual orbit",
+    "uniform reciprocal bound 8192 Y^(-1/20) on distinct values above Y",
+    "time-independent first-entry correction and reverse product",
+    "fixed-time first-entry fibre bound and its restriction on summing over time"
+  ],
+  "python_scope": [
+    "complete finite source shells and direct first-entry replay",
+    "exact rational reverse products, correction sums, and finite shell estimates",
+    "fixed-time fibre odd-count uniqueness and interval width",
+    "selected finite and truncated-prefix image transfers and boundary counts",
+    "one long exact first passage above the explicit large-floor threshold"
+  ],
+  "not_proved": [
+    "an all-time union bound over possible entry times",
+    "universal finite entry",
+    "vanishing weighted survivor mass",
+    "exclusion of all nontrivial cycles or divergent orbits"
+  ],
+  "external_source_scope": "The elementary fibre argument was motivated by Shaik draft Section 4; no global theorem or foreign code from that source is assumed.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-finite-path-e2c3lj51/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/finite-path-packing/CollatzPacking.log"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-finite-path-e2c3lj51/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/finite-path-packing/FirstPassagePacking.log"
+    },
+    {
+      "source": "lean/PackingExponent.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-finite-path-e2c3lj51/PackingExponent.olean",
+        "lean/PackingExponent.lean"
+      ],
+      "returncode": 0,
+      "log": "results/finite-path-packing/PackingExponent.log"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-finite-path-e2c3lj51/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/finite-path-packing/FinitePathPacking.log"
+    }
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/PackingExponent.lean": "0a5bed7dfc38cc8403a7834d0a1be8e1f30827f5ccd1e6c8c37f1a26a9a89d25",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "docs/ORBIT-PACKING-BOOTSTRAP.md": "10b2b5871d07875296eeb8582165469406a356a71f93b298887634b8b4118365",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "verify_finite_path_packing.py": "ee82b5c329816056b9a503d3f4fd85898f3c81d4b151efbb1b213c6e4273433a",
+    "results/finite-path-packing/replay.json": "dee32abb58c82536d75a318953fd58526dd07859243255cb3dcbfa7a16035aca",
+    "results/finite-path-packing/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/finite-path-packing/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/finite-path-packing/PackingExponent.log": "8ab39f7dc38b2afbb68d385076d8baa49deae05edcc85e7c730b9e1b05271410",
+    "results/finite-path-packing/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1"
+  }
+}

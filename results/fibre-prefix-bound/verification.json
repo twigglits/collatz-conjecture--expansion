@@ -1,0 +1,113 @@
+{
+  "verified_at_utc": "2026-10-09T12:33:20.380922+00:00",
+  "conjecture_status": "unresolved",
+  "kernel_scope": [
+    "strict fibre diameter below 2^e-1 when e>0",
+    "exact parity images of grids with spacing 3^a",
+    "terminating universal recurrence B(e,a)",
+    "every finite same-time same-weight grid fibre has size at most B(e,a)",
+    "every finite unrestricted fibre has size at most B(e,0)",
+    "two even steps give at most two sources, with an all-index sharp family",
+    "exact integer comparisons supporting a rational analytic exponent"
+  ],
+  "written_scope": [
+    "B(e,0)<=2*(2^delta)^e where 2^-delta+3^-delta=1",
+    "uniform coefficient-moment bound for s>delta*log(2)/log(3)",
+    "square-root coefficient moment at most 4000*(3/2)^(k/2)",
+    "all-odd targets show optimal time-exponential rate in the proved range",
+    "averaging prevents that rate below s=log(3/2)/log(3)"
+  ],
+  "python_scope": [
+    "all canonical sources through depth18",
+    "independent even-position words versus direct paths through depth12",
+    "selected complete parity-word classes through64 odd steps",
+    "reconstructed maximal fibres and large positive affine lifts",
+    "finite source windows on arithmetic grids",
+    "exact interval checks of square-root moments and complete target averaging through depth9"
+  ],
+  "not_proved": [
+    "exact universal fibre maxima for e>=3",
+    "the optimal coefficient-moment threshold",
+    "vanishing or reusable contraction of actual survivor mass",
+    "unbounded fibre growth along a particular forward orbit",
+    "universal pointwise descent",
+    "exclusion of nontrivial positive cycles",
+    "exclusion of divergent positive orbits",
+    "the full Collatz conjecture"
+  ],
+  "external_proof_inputs": [],
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-prefix-at1907pa/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/fibre-prefix-bound/CollatzPacking.log"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-prefix-at1907pa/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/fibre-prefix-bound/FirstPassagePacking.log"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-prefix-at1907pa/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/fibre-prefix-bound/FinitePathPacking.log"
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-prefix-at1907pa/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "log": "results/fibre-prefix-bound/EqualWeightFibres.log"
+    },
+    {
+      "source": "lean/FibrePrefixBound.lean",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-fibre-prefix-at1907pa/FibrePrefixBound.olean",
+        "lean/FibrePrefixBound.lean"
+      ],
+      "returncode": 0,
+      "log": "results/fibre-prefix-bound/FibrePrefixBound.log"
+    }
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "lean/FibrePrefixBound.lean": "73ca0f523b880055a9085a45eb2224b122c7e1e447fc56a166ac89126c515a92",
+    "docs/FIBRE-PREFIX-BOUND.md": "5dbfa78b9e0e7ce88da65e0eba65d7261947c2085d8c71fa58a24d9637c71f58",
+    "verify_fibre_prefix_bound.py": "232811664665286336d1ab8e050390d9b5bb5af2280b32479a023538fcb7e0b8",
+    "results/equal-weight-fibres/verification.json": "31a91f92b75f5d0d1a4725261ede33a9cfea952f7276896782552edc6cddd11f",
+    "results/fibre-prefix-bound/replay.json": "58b06b784161b953e660324c4ceb3b080f5395c94cd935b596f4eeb5ecc5e7ed",
+    "results/fibre-prefix-bound/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/fibre-prefix-bound/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/fibre-prefix-bound/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/fibre-prefix-bound/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+    "results/fibre-prefix-bound/FibrePrefixBound.log": "2fff3a25ba63d18c9131cff707f7acde4b4f1b407404c44067c964ecc00fe3fc"
+  }
+}
