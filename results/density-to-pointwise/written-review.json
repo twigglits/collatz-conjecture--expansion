@@ -1,0 +1,65 @@
+{
+  "reviewed_at_utc": "2026-10-12T14:55:37.509208+00:00",
+  "status": "written_arguments_reviewed_not_formalized",
+  "collatz_status": "unresolved",
+  "written_scope": [
+    "Total-variation convergence of the minimum law and countably additive component densities, conditional on the written uniform first-passage Proposition 4.1.",
+    "Existence of finite odd-target visitation-profile laws and odd-target predecessor densities, from Proposition 4.1 alone.",
+    "Coarse first-passage landing lower bound x^(7/10), outside O(x^(-c)), from Tao Proposition 1.9 and Chernoff plus the affine iteration formula.",
+    "Using that overshoot bound, existence of every finite positive-target visitation-profile law and every fixed positive-target predecessor density.",
+    "Sum of predecessor densities in a length-L interval is at most 256 L^sigma for odd targets and 512 L^sigma for all targets, using the written finite-path packing theorem; sigma=H_2(log_3 2)<19/20.",
+    "Predecessor densities increase along a forward orbit to its component density, using tightness of the written minimum law.",
+    "Targets divisible by three have only repeated-doubling predecessors, hence density zero; the independently replayed PLD theorem gives positive density at every other target.",
+    "Under the written minimum law and the verified external PLD theorem, universal convergence is equivalent to p_1=1 and p_1>0; the equality p_1=1 remains unproved."
+  ],
+  "review_details": [
+    "The initial odd-target argument does not directly cover even targets; the separate overshoot proof controls the final halving segment.",
+    "Initial removal of powers of two changes an all-target profile only for O_A(log X) starts up to X.",
+    "The sum over targets is finite before taking a density limit; no arbitrary countable-union density rule is used.",
+    "The forward-orbit density limit uses finitely many possible minima up to B, then the probability-law tail as B tends to infinity.",
+    "In the overshoot proof alpha=1.001, n0=floor(log_2(x)/10), 19n0/10<=S<=3n0, 3^5<2^8, and alpha^2-3/100=972001/1000000<1.",
+    "The written first-passage proof was reread against Tao v7: the Fourier tilt is constant under paired-sum conditioning, and the shifted renewal parameter contains 2*m0*(2-log_2(3))."
+  ],
+  "evidence_scope": {
+    "new_Lean_or_native_finite_checks_for_these_deductions": false,
+    "new_numerical_checks_for_these_deductions": false,
+    "prior_evidence_reused_without_recompilation": {
+      "results/natural-density/verification.json": 2,
+      "results/finite-path-packing/verification.json": 12
+    },
+    "prior_natural_density_numerics": "Floating-point and Monte Carlo sanity checks only, not proofs of the analytic assertions.",
+    "prior_finite_path_packing": "Kernel finite transport lemmas and exact finite Python checks; entropy estimates and the assembled packing theorem remain written.",
+    "external_PLD": "All 389 project Lean modules passed; three public roots use propext, Classical.choice, Quot.sound. Pinned third-party compiled libraries reused, no separate kernel implementation.",
+    "external_PLD_finished_at_utc": "2026-10-12T14:44:35.318300+00:00"
+  },
+  "external_analytic_sources": [
+    {
+      "url": "https://arxiv.org/html/1909.03562v7",
+      "use": "Tao valuation, Chernoff, affine, and Fourier/mixing ingredients listed in the natural-density note; the new consequences are written deductions."
+    },
+    {
+      "url": "https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/",
+      "use": "Source of independently replayed positive lower predecessor-density theorem; not a proof of the remaining density-one premise."
+    }
+  ],
+  "not_proved": [
+    "p_1=1 or upper natural density one for convergence to one",
+    "Decay of r_a along every unbounded forward orbit",
+    "Absence of nontrivial positive cycles or divergent orbits",
+    "Formal verification of the written uniform first-passage adaptation or the deductions recorded here"
+  ],
+  "sha256": {
+    "docs/DENSITY-TO-POINTWISE.md": "d2105e10e28a3e187062f86cdf09f5d101085a37d0459be5c66f4e512637ff1f",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "results/natural-density/verification.json": "8c31e1977c4ca2e85d4bd7534e472d2c9851d3bf874dc3b3ae541773255ef3ef",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "results/finite-path-packing/verification.json": "47e9b90a87bfd59213c44789b4860b93e931ff368fc5c5485e14a4f28cc0012b",
+    "docs/PREDECESSOR-DENSITY-REVIEW.md": "1d24f741749586b15418c25376fbfa28ec817b466ea07d0a9503e614fbdc35f5",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/predecessor-density-review/archive-authentication.json": "83b6804a96e9f27ada98b4c8c9d5054633e0e9b857509bf5d88981f283f59c67",
+    "results/predecessor-density-review/axiom-parser-check.json": "2f93b92a7ade82096fa9fd2f8296f0fbc670b00cd5f62ca3ac87846e02ad9dd3",
+    "results/predecessor-density-review/build/Verification.ReleaseAudit.log": "943c598e4bf3d55f6ce45ce4a01c75249d2b76ff488e54df0b91992773a798a7",
+    "verify_predecessor_density_source.py": "0359ff5a2f5aa4882e32f964160b775619b9211c67116ef80d303529f31376ad",
+    "verify_predecessor_density_archives.py": "e1cfa88de1ac70dd3816d715e6a9d02aa558aa3707e348a73821271a51dddf26"
+  }
+}

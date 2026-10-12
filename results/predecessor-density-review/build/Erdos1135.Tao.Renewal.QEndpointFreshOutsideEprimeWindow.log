@@ -1,0 +1,8 @@
+Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeWindow.lean:62:48: warning: This simp argument is unused:
+  Set.mem_image
+
+Hint: Omit it from the simp argument list.
+  simp only [lemma79EndpointFreshNearSigmaHorizontalEvent, Set.mem_setOf_eq,
+  ̲  ̲ ̲ ̲ ̲ ̲s̵i̵g̵m̵a̵H̵o̵r̵i̵z̵o̵n̵t̵a̵l̵C̵e̵n̵t̵e̵r̵s̵,̵ ̵S̵e̵t̵.̵m̵e̵m̵_̵i̵m̵a̵g̵e̵]̵s̲i̲g̲m̲a̲H̲o̲r̲i̲z̲o̲n̲t̲a̲l̲C̲e̲n̲t̲e̲r̲s̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

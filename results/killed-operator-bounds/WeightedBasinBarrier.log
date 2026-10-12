@@ -1,0 +1,21 @@
+'WeightedBasinBarrier.pull_basin_iff' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.basin_converges' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.power_hits' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.power_no_return' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.power_target_divisibility' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.power_target_quotient' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.growth_in_basin' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.general_growth_in_basin' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.growth_hits_one' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.growth_ratio' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.witness_parameters' does not depend on any axioms
+'WeightedBasinBarrier.witness_in_basin' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.witness_reaches_one' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.witness_basin_boundary' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.witness_basin_converges' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.witness_ratio' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.boundary_constant' does not depend on any axioms
+'WeightedBasinBarrier.cofinite_boundary_constant' does not depend on any axioms
+'WeightedBasinBarrier.profile_parameters' does not depend on any axioms
+'WeightedBasinBarrier.profile_in_basin' depends on axioms: [propext, Quot.sound]
+'WeightedBasinBarrier.profile_convergence' does not depend on any axioms

@@ -951,6 +951,26 @@ cutoffs and scales still do not force new successful horizons, and the
 existing 128 certificates remain the full certified scope.
 [Verification and scope](results/exit-certificate-budget/verification.json).
 
+A [weighted operator calculation](docs/KILLED-OPERATOR-BOUNDS.md) now
+converts inverse coefficient estimates into bounds for actual source
+weights. For killed composition `K_H f(n)=1_{U(n)>H} f(U(n))` on
+`l1(n^(-s),n>H)`, with fixed H>=1 and s>1, the written proof gives both
+spectral radius and essential spectral radius exactly `(3/2)^s`. At
+H64,s3/2, its kth operator norm lies between `(3/2)^(3k/2)` and five
+times that quantity. The kernel verifies the integer comparisons and
+arbitrarily large surviving column witnesses; the Banach-space and
+spectral arguments remain written analysis.
+
+An explicit positive function of finite weighted norm, supported on
+powers of two, has iterates that eventually vanish at each fixed source
+while their norms tend to infinity. Its contributing sources all have
+certified paths to one. This rules out uniform contraction on that whole
+function space, even after finite-rank corrections or an equivalent
+renorming. The actual mass is the norm of `K_H^k` applied to the constant
+function, and its decay remains open. The result does not refute that
+decay or add a successful survivor horizon.
+[Verification and scope](results/killed-operator-bounds/verification.json).
+
 ## The two unresolved possibilities
 
 A counterexample must either enter a nontrivial positive cycle or have an
@@ -996,7 +1016,8 @@ not an all-mask exclusion. A separate written subset-sum argument shows
 that divisibility tests with a fixed bounded combined modulus eventually
 allow some mask, so those tests alone cannot settle the unbounded family.
 
-Negative expected drift and density-one results do not close the universal gap.
+Negative expected drift and almost-bounded-minimum results do not establish
+convergence to one.
 Tao proves almost-bounded orbit minima in logarithmic density, which is not a
 theorem that almost every orbit reaches 1 or becomes periodic.
 [Tao's theorem](https://arxiv.org/abs/1909.03562)
@@ -1013,8 +1034,9 @@ are floating-point and Monte Carlo sanity checks only. The audit supplies
 the uniform harmonic counting bound and renewal tail estimate explicitly.
 Stabilisation throughout the interval of scales also gives a written
 proof that each set `Col_min(N)≤B` has a natural density, and that these
-densities tend to one as B grows. This does not establish positive density
-for the basin of 1. The exceptional set still need not be empty.
+densities tend to one as B grows. This written argument alone does not
+establish positive density for the basin of 1. The exceptional set still
+need not be empty.
 
 The [total-variation deduction](docs/DENSITY-TO-POINTWISE.md) strengthens
 this written consequence: the full distribution of orbit minima among
@@ -1022,11 +1044,36 @@ starts up to X approaches a probability law p at rate `O((log X)^(-c))`,
 uniformly over all sets of minima. It also gives a direct proof of the
 almost-bounded-minima estimate from first-passage stabilisation.
 Coalescence-component densities form a countably additive probability
-distribution. Neither this nor the current rate excludes a single
-exceptional component. Even with the unproved premise `p_1=1`, the
-resulting exceptional count can exceed the published `X^0.84` inverse
-basin lower bound. An `o(X^0.84)` bound for the entire exceptional set
-would suffice with that external input; it has not been established.
+distribution. This does not determine `p_1`, the density of convergence
+to one. With only the older published `X^0.84` inverse-basin bound,
+even `p_1=1` would have needed a better exceptional-count estimate for
+that comparison to exclude a counterexample.
+
+The newer [positive predecessor-density theorem has passed independent
+source replay](docs/PREDECESSOR-DENSITY-REVIEW.md). Both published
+archives and all 404 assembled files were authenticated; all 389 Lean
+modules passed and the three public roots report only `propext`,
+`Classical.choice`, and `Quot.sound`. Pinned third-party compiled
+libraries were reused. The external theorem is now a verified input
+within that scope. It proves that upper natural density one for
+convergence excludes every positive counterexample. With the written
+minimum law, `p_1=1` suffices without an improved error rate; `p_1>0`
+also follows. The remaining premise `p_1=1` is still unproved.
+
+The written first-passage argument also gives natural densities `r_a`
+for predecessor sets of each fixed odd target. An early-valuation bound
+puts the first-passage landing above `x^(7/10)` with probability
+`1-O(x^(-c))`, extending the profile argument to every positive target.
+Finite orbit packing implies `sum r_a ≤ 256 L^σ` over odd targets in
+any length-L integer interval, and `≤512 L^σ` over all targets, where
+`σ<19/20`; uniform positive target-independent lower bounds are therefore
+impossible. Along a forward orbit these densities increase to its
+component density. Targets divisible by three have density zero because
+their predecessors are only repeated doublings; the external PLD theorem
+makes all other target densities positive. Neither the summed upper bound
+nor positivity excludes a sparse divergent orbit. These are
+[written deductions](docs/DENSITY-TO-POINTWISE.md#4-densities-of-odd-target-predecessor-sets),
+not new kernel proofs or a proof of the remaining density-one premise.
 
 ## Reproduction
 

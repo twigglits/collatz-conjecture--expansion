@@ -1,0 +1,14 @@
+Erdos1135/ND/PositiveDensity/PredecessorCountSupport.lean:24:37: warning: This simp argument is unused:
+  Nat.add_comm
+
+Hint: Omit it from the simp argument list.
+  simp [hs, ht, Nat.add_assoc, Nat.add_c̵o̵m̵m̵,̵ ̵N̵a̵t̵.̵a̵d̵d̵_̵left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Erdos1135/ND/PositiveDensity/PredecessorCountSupport.lean:24:51: warning: This simp argument is unused:
+  Nat.add_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [hs, ht, Nat.add_assoc, Nat.add_comm,̵ ̵N̵a̵t̵.̵a̵d̵d̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

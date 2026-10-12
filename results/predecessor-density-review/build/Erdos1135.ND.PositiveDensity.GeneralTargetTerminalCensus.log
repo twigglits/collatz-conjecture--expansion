@@ -1,0 +1,6 @@
+Erdos1135/ND/PositiveDensity/GeneralTargetTerminalCensus.lean:179:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Erdos1135/ND/PositiveDensity/GeneralTargetTerminalCensus.lean:179:56: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

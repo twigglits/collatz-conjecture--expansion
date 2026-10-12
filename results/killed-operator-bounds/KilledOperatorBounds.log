@@ -1,0 +1,10 @@
+'KilledOperatorBounds.mixed_power_bound' depends on axioms: [propext]
+'KilledOperatorBounds.source_coefficient_error' depends on axioms: [propext, Quot.sound]
+'KilledOperatorBounds.large_target_comparison' depends on axioms: [propext, Quot.sound]
+'KilledOperatorBounds.global_image_bound' depends on axioms: [propext, Quot.sound]
+'KilledOperatorBounds.target_forces_source_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KilledOperatorBounds.orbit_bridge' does not depend on any axioms
+'KilledOperatorBounds.growing_column' depends on axioms: [propext, Quot.sound]
+'KilledOperatorBounds.convergent_column' depends on axioms: [propext, Quot.sound]
+'KilledOperatorBounds.cubic_ratio' depends on axioms: [propext]
+'KilledOperatorBounds.numerical_constants' does not depend on any axioms

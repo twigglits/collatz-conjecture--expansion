@@ -1,0 +1,2855 @@
+{
+  "status": "passed_archive_and_assembled_source_identity",
+  "checked_at_utc": "2026-10-12T13:58:23.269372+00:00",
+  "assembled": "/private/tmp/collatz-density-audit/assembled",
+  "assembly_sha256": "9da50833f18f8427523da5cd89ff4a0dbf1198fe09a9a4acccf4583898ac2ec3",
+  "archives": {
+    "baseline": {
+      "path": "/private/tmp/collatz-positive-density-baseline.zip",
+      "bytes": 914975,
+      "sha256": "23f5cac4d66e696401144658752cf180a13ce70373a122f00693e1e1fe969c1f"
+    },
+    "companion": {
+      "path": "/private/tmp/collatz-predecessor-density-source.zip",
+      "bytes": 55103,
+      "sha256": "55ceb4df0cca17ae728dc65b30bf5077000e1b47f2dc322454eea9f637ac75b3"
+    }
+  },
+  "counts": {
+    "companion_lean_modules": 12,
+    "baseline_lean_modules": 377
+  },
+  "files": [
+    {
+      "path": "CollatzPredecessorDensity.lean",
+      "archive": "companion",
+      "member": "CollatzPredecessorDensity.lean",
+      "sha256": "eb5aef151a767622d1a28ee0dce1473e8b85aafa30f434809462193fa1d383f9",
+      "bytes": 2105
+    },
+    {
+      "path": "Erdos1135/Basic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Basic.lean",
+      "sha256": "550df54592aaa699633dba72ae59af98fdbd694c395cb35d839d769dd5617f38",
+      "bytes": 195
+    },
+    {
+      "path": "Erdos1135/CollatzStep.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/CollatzStep.lean",
+      "sha256": "184ca72cc9ded302abba16d303dc6f6c878f5d88368897d072a67e200ac936d7",
+      "bytes": 384
+    },
+    {
+      "path": "Erdos1135/ND/Fourier/FixedTotalReferenceRatio.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/Fourier/FixedTotalReferenceRatio.lean",
+      "sha256": "9ca616a67db3ea5e143a283885ea2f004a18a40dd9587b614a216a6e45bcd241",
+      "bytes": 1414
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/A5CoarseUnitSupport.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/A5CoarseUnitSupport.lean",
+      "sha256": "4ad92b27be25ec67423a20a3d662ea4ce68f1941e11ef66511212d138ca40963",
+      "bytes": 4261
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/A5HistoricalAdjacentCylinderPreviousPhysicalLowerShellNoGo.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/A5HistoricalAdjacentCylinderPreviousPhysicalLowerShellNoGo.lean",
+      "sha256": "452dc09bdc791f9fe0b5e332040a0ea502d4ca2c403eb96b62f4fadac649675c",
+      "bytes": 1369
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/A5HistoricalAdjacentCylinderQOneRootDyadicPhysicalCensus.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/A5HistoricalAdjacentCylinderQOneRootDyadicPhysicalCensus.lean",
+      "sha256": "96670d36766c105e404404d9a6f0c12d785164770cfc0864f79669d05b704363",
+      "bytes": 8107
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/A5SupportedTargetCounting.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/A5SupportedTargetCounting.lean",
+      "sha256": "6e2779945dada1a96fed778eaa78c346f689fef88e683ae9c4e751c6cb21d262",
+      "bytes": 2475
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/BoundedPMFDisintegration.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/BoundedPMFDisintegration.lean",
+      "sha256": "4ecbaf4a9b4ef43f31002bfe0d719b039f69a66ea38ef1f9ed59d65fb7cc4557",
+      "bytes": 8593
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZBalancedChainFirstEntryEnergyNoRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZBalancedChainFirstEntryEnergyNoRate.lean",
+      "sha256": "6ecafea13cb5a4b0df32c9b2c4eed7e3eebf1aa94b16d5af9bbf7e451fbd7228",
+      "bytes": 5669
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZEndpointAdaptiveCanonicalTotal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZEndpointAdaptiveCanonicalTotal.lean",
+      "sha256": "1fba4f8193f184cab1e67379f0eaea3f070890c9630a9f24cbe36ecbcf44a538",
+      "bytes": 6076
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZEndpointPrefixFactorization.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZEndpointPrefixFactorization.lean",
+      "sha256": "ec5eb23fc473de12593c6a206398f4826d0e35555cba63a77ded0e05d34db2d9",
+      "bytes": 2855
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZFullReverseKernel.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZFullReverseKernel.lean",
+      "sha256": "c8614732091a8cebd6f13f15fada4fd763493f27dcab38a7c48d3a93970da50b",
+      "bytes": 7268
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZKCapLongTailFiberCentering.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZKCapLongTailFiberCentering.lean",
+      "sha256": "3d5f7af2bc2577ba4874d0ea1c436a82ae81ff016df3ee8aab1da208b0ca2e80",
+      "bytes": 7003
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZLongRangeCoordinateCapFirstBad.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZLongRangeCoordinateCapFirstBad.lean",
+      "sha256": "34b0d79c75cc42b868a65c8382173cac118da86ebc51f4a06b2c095bd58b0515",
+      "bytes": 8931
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZPathTelescoping.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZPathTelescoping.lean",
+      "sha256": "6924dd946c7f2aac5c302ffb9c1bd3d21345a5eba514284052aedc0f73bc7890",
+      "bytes": 4657
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZProjectionEnergyBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZProjectionEnergyBound.lean",
+      "sha256": "c50741c622da69fd456743fba97961acb5cfa5dd74af102f16d41ca58f012b2d",
+      "bytes": 2376
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/CommonZReverseGenerator.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/CommonZReverseGenerator.lean",
+      "sha256": "f4835fd522c8abd68466414672d417b0e5c43e3ebb1607dfcd533d65a4da38b7",
+      "bytes": 1909
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitAccumulatedFloorHeight.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitAccumulatedFloorHeight.lean",
+      "sha256": "7d82f2089c486dbe838ed228873f7669c61b94ab4efcaee824190858795c4e43",
+      "bytes": 2481
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase1Threshold.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase1Threshold.lean",
+      "sha256": "ed8040c5c9b61ef306cf587679cddd87d57c48ae1599b1d1957c223df442850b",
+      "bytes": 5940
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase2Moment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase2Moment.lean",
+      "sha256": "d0792715cc5879a20a4dce4e608910dfce4e94880ec227388454067105c44726",
+      "bytes": 6027
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase2Threshold.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase2Threshold.lean",
+      "sha256": "403d9e025af98ffa7be87f5a34b4468cc8bd5aa16b411e7408a254d5bb726c2f",
+      "bytes": 13414
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Parameters.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Parameters.lean",
+      "sha256": "7eacabc6e00ae972b09ad943ad1b1a493a47adbafdf955d165b224b65fa9b341",
+      "bytes": 11943
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Scale.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Scale.lean",
+      "sha256": "cf38895c65df77c3daac6cb18f7ec0bbc18e97774d22985d06b672c966632685",
+      "bytes": 3539
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Threshold.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Threshold.lean",
+      "sha256": "5dfa9105607baae308b021e07c7c8e5dbea4b5a384064e0c5fe217c49a1e8520",
+      "bytes": 7133
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCollar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalCollar.lean",
+      "sha256": "076bf901a050366725aee01374f74ea93ca931fe2e3c6ca865fc87db8d40ecd3",
+      "bytes": 2936
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFirstPassagePointwise.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFirstPassagePointwise.lean",
+      "sha256": "f4ae45d252ccf44eedd31bf2b3a93df8dabbaa597df6d022fce6f6d3d4278e56",
+      "bytes": 8203
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFirstPassageTails.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFirstPassageTails.lean",
+      "sha256": "93fc80d41c4f32a8773434d42488230d03bdbca8ef46d7e2db729b1e72acc403",
+      "bytes": 14827
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFreshEStar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFreshEStar.lean",
+      "sha256": "688673e3dc9559f8ce3ab607809dbfc408d24a9873a76494fec9ea0045d5235d",
+      "bytes": 9986
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFreshEprime.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalFreshEprime.lean",
+      "sha256": "7bb0cc684ddf2a975e9c0a87866071a130b94447e27327173df8611ac1e0bb2f",
+      "bytes": 6540
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalGeom4Moment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalGeom4Moment.lean",
+      "sha256": "23c2d889d5a5b4d40d8359f0de3736bd514b4aaec6f26bd703b04a8b2953da3d",
+      "bytes": 1726
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalMonotonicity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalMonotonicity.lean",
+      "sha256": "32ede6c962548b5f47d9a3d721299fe80e9fbadd55e593d697fae1f514b633a6",
+      "bytes": 3615
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOuterBadJAbsorption.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOuterBadJAbsorption.lean",
+      "sha256": "94524f7047104a6c6be1476af73245776a24e7365302fe9f65fd1d2c1b7a0b90",
+      "bytes": 4358
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOuterBadJTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOuterBadJTail.lean",
+      "sha256": "a23b62eee5cd3e1798a9b7710da35480875a3715cad1db6e5499124a6fd6ebb0",
+      "bytes": 6833
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOutsideEprime.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalOutsideEprime.lean",
+      "sha256": "f1fded0a8c13fb70260fd64f2f44cf32e194fad64e3802644a53a8c87d5923e6",
+      "bytes": 17470
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalPrimitiveCoefficient.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalPrimitiveCoefficient.lean",
+      "sha256": "8b33446933d7e19b78c1d2787a71b5303ab052fbf601a4bcba5019028f743e9a",
+      "bytes": 3009
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalSourceMargin.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCanonicalSourceMargin.lean",
+      "sha256": "a51f013b85690e7f1b0c8f9dc2948f0b8073273c7091bbbaf3ff1999a6c0c673",
+      "bytes": 2899
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitCoreVariation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitCoreVariation.lean",
+      "sha256": "91be4bca6bd997ae6c74236f82ab8a6365d7c3e0a1c2237084aeb288ce6d8522",
+      "bytes": 13064
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitExactSeedConductor.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitExactSeedConductor.lean",
+      "sha256": "a84c402e4926f2bb636a37cd98683fdadee6dd9887ca1c34bddb2f18d5277599",
+      "bytes": 363
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitFrozenCoreSeed.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitFrozenCoreSeed.lean",
+      "sha256": "e7454fe9b82757c4ff9963c0b67fd6140ed88fef98bd1513b4e0fc72ce770ee2",
+      "bytes": 1250
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicConductorRoom.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicConductorRoom.lean",
+      "sha256": "dda2282f69c8071703e5018cb9ed10e832edfe37adc339fc5a6f9a466fa89deb",
+      "bytes": 2886
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicFrozenSeed.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicFrozenSeed.lean",
+      "sha256": "edd79197fc7e8f7363648c24dc7b549f13742ee99e0bd6f54b0ed0352d62163c",
+      "bytes": 478
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicVariationBudgets.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitLogarithmicVariationBudgets.lean",
+      "sha256": "dc2f384723588a37af5d4566479de338ae1b7308b191eb13bcbb5fccbdb1f26c",
+      "bytes": 4596
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitNumericalPrimitiveDecay.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitNumericalPrimitiveDecay.lean",
+      "sha256": "61416ca961806b11fdb520d90bd2a8f959d25a05c395f66ccb62709934260e9b",
+      "bytes": 2799
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitNumericalSyracuseMixing.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitNumericalSyracuseMixing.lean",
+      "sha256": "e78d3ce2a6e74f1ae85a64b93824e18ea823a85759164fbf754a17de6872afaf",
+      "bytes": 1274
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitOnePeriodSeedToCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitOnePeriodSeedToCount.lean",
+      "sha256": "73eb1a7de04b8b3e65c39b583c668ef2b1290e2419ac03f879e4380c60101dcf",
+      "bytes": 1353
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitOnePeriodSuccessfulRoot.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitOnePeriodSuccessfulRoot.lean",
+      "sha256": "373c5aef280c95cd8af51642a353179be05e836e147bba772d8771254b20aed7",
+      "bytes": 3902
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitPolynomialGeometricTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitPolynomialGeometricTail.lean",
+      "sha256": "b3a32947dcbd917b4629181f76f8db05e1e66084e301fb1929b34f190d5c1bbd",
+      "bytes": 1524
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitPositiveDensityPair.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitPositiveDensityPair.lean",
+      "sha256": "9f5f647f80745de64b52cb9e4918b0ee5155b14f2e7914fca0c3565fd2d6cec0",
+      "bytes": 244
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitReferenceHeightCensus.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitReferenceHeightCensus.lean",
+      "sha256": "30494f824af201a32d751a676706c8f060031cf470ff1352b945ab184e0a2165",
+      "bytes": 5178
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitRetainedGeometricTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitRetainedGeometricTail.lean",
+      "sha256": "ac886e51b2ea95bf977e829f7f8134f6d91ef383d6bce939b2694b116923630b",
+      "bytes": 5599
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitSection6FixedSlice.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitSection6FixedSlice.lean",
+      "sha256": "b9049d861c2fa119a7dc963066e4e064e74b7c3c6e417e0904daa4dff7b5bb75",
+      "bytes": 3830
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitSection6Mixing.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitSection6Mixing.lean",
+      "sha256": "f967531a2d8fe3cc9e930d8a82b36f462b5594d4b84562e761bcbd86068f0d7a",
+      "bytes": 4630
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitSection6NumericalCutoff.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitSection6NumericalCutoff.lean",
+      "sha256": "a603d49dbea881a359748825be761c93ac775b8c8a8d186a08e7f09afd47842c",
+      "bytes": 5237
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitSeedToCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitSeedToCount.lean",
+      "sha256": "e6b579b9b7c4576b52b5139a4021d47c88e78f596ae0e71be826b2223cb9880e",
+      "bytes": 4462
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitSixthRootSeedToCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitSixthRootSeedToCount.lean",
+      "sha256": "537f680d82a74ada4460feda23df85bd1e126a1c053f577a22a6d951e666104a",
+      "bytes": 577
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitTerminalVariation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitTerminalVariation.lean",
+      "sha256": "90d250f39e864f4abf91b407663fd1192a27ec5d3f61ce08ad9069d435df38c2",
+      "bytes": 13366
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitUnitSupportedCoreSeed.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitUnitSupportedCoreSeed.lean",
+      "sha256": "e111c27406ce7d130fd054421bad4b8027d5052168d36764872cfbb519e8c59b",
+      "bytes": 3355
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitUnitSupportedFrozenSeed.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitUnitSupportedFrozenSeed.lean",
+      "sha256": "6cc53b5a4076606b037f1b23951bf28f768b96a530a21cfa6cab65a0ca296aab",
+      "bytes": 8828
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ExplicitVariationBudgets.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ExplicitVariationBudgets.lean",
+      "sha256": "87ecd7082542a050434e02bf899452cf30b22bec01672f98b11c33d670f42f24",
+      "bytes": 2474
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GatedFiberCovariance.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/GatedFiberCovariance.lean",
+      "sha256": "81388b3f21e6ac3ff7d3fd50ab8cce541527e67a82d2d80d32cd56e9111b42cd",
+      "bytes": 3455
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetFrozenSeed.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetFrozenSeed.lean",
+      "sha256": "c7728eeae7c5fcf00ac22766f21c9363cb56919ad53143472066c926d0f3ee80",
+      "bytes": 5587
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetPositiveDensity.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetPositiveDensity.lean",
+      "sha256": "5e23daa11fc9bd22ce0bc6d303ce8f56057aa8a194e8a201f8404521ed31b667",
+      "bytes": 3245
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetPredecessorCount.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetPredecessorCount.lean",
+      "sha256": "d2d33e3a442200c429a7910ca4c78a4feaf9f1fc2bd9963ade165a94896d18c3",
+      "bytes": 4476
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetResidueCoverage.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetResidueCoverage.lean",
+      "sha256": "4ea7d359c9bef9fdee93ceab8a5be9842a67d5c80e00eb037cf02006f2f26463",
+      "bytes": 5522
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetSeedNonreturn.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetSeedNonreturn.lean",
+      "sha256": "cd8b50665a77f9b23020c940cb16dea9976419c24e9a62539bf467cdbed07673",
+      "bytes": 7607
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/GeneralTargetTerminalCensus.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/GeneralTargetTerminalCensus.lean",
+      "sha256": "a21009e65f764d848755404965f5fb287bcdc67fd61d9aed259cee1966c16db6",
+      "bytes": 14836
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2MarkedFirstHitUnitSupportEnergyFloor.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2MarkedFirstHitUnitSupportEnergyFloor.lean",
+      "sha256": "fafddeb3c45ff561a4e7b6aa34c13bd615debd808a7c9288b0754e9866d48260",
+      "bytes": 7610
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2OneLawAlignedRenewalReturnRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2OneLawAlignedRenewalReturnRate.lean",
+      "sha256": "650e5f5a66dc059745f476e81b192a5ba9bd799adfff869efd369b5f57d99ed6",
+      "bytes": 5439
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2OneLawGaussianBaseAdaptiveFirstHitRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2OneLawGaussianBaseAdaptiveFirstHitRate.lean",
+      "sha256": "aca9e6d2c08dec510978c1ba06b6bb8a859c6f8a39b3a5f9154b6eccb244c1fe",
+      "bytes": 1404
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2OneLawGaussianFirstHitRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2OneLawGaussianFirstHitRate.lean",
+      "sha256": "55d6e6183daa83babbb86fe0ffe81450c7774384b6a7401fd98b90d8952dfb2d",
+      "bytes": 7481
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBalancedCrossingAffineDensity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBalancedCrossingAffineDensity.lean",
+      "sha256": "0212daa08d0c9247d264178418c996d99e6a4d31390492dbadcb41654015f5af",
+      "bytes": 9737
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBalancedCrossingRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBalancedCrossingRate.lean",
+      "sha256": "75b26f25dffd5fe86070c6e21b6986fe46d25788a37621c481b4a85924d64bd7",
+      "bytes": 21354
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBoundedOvershootPhysicalIncidence.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricBoundedOvershootPhysicalIncidence.lean",
+      "sha256": "483d471677c4151e1efc0e74079511d3abf2d5fddfc7a911c7f0accbbd9c7efe",
+      "bytes": 5960
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreBackwardMean.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreBackwardMean.lean",
+      "sha256": "18534c24eab300a84f8e7b61f38a829b8fefdb8b731fddb664e26533020290b5",
+      "bytes": 24195
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreOrdinaryElevenClock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreOrdinaryElevenClock.lean",
+      "sha256": "f5200c4bb6d2168b2fa422cd815fa9605baf0c05dbfd13c91482f30a2874114a",
+      "bytes": 1580
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreStripRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreStripRate.lean",
+      "sha256": "a2e1c93097e9b7f1c884c432835814e126ac59e08030b2e316e85799fc6b0cfc",
+      "bytes": 25017
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreSummedVariation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreSummedVariation.lean",
+      "sha256": "c2833e3d0f1fe465ae64e12bc8acf45606c4a354456f87bd9a3295446a70e65f",
+      "bytes": 18233
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreVariation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricCoreVariation.lean",
+      "sha256": "badfab2c22aaf083e9c3e4e0659b3e9f99cbb9443fb49af8950ff3a74e56ab90",
+      "bytes": 12582
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitConductor.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitConductor.lean",
+      "sha256": "d6ae5145b5d6fe87807c17401ad1eef5cda027795f4cb8df7109351f0aca3076",
+      "bytes": 973
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitCoreProduct.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitCoreProduct.lean",
+      "sha256": "55852cd5f2b6685accee969bf66ae8f94bfc2915efda51f7840c309e34602a21",
+      "bytes": 6882
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitCutoffCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitCutoffCount.lean",
+      "sha256": "7178eb01d2b64a397b83ab1dc787b43c8401ed105f42f92ddce7e439ec3a7eac",
+      "bytes": 5435
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitVariationTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricExplicitVariationTail.lean",
+      "sha256": "de359fea3f714943972ccff1efd75223b7e4ee1b48c9f5a811b87ba6a32dce19",
+      "bytes": 2560
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricFirstCrossingOvershootRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricFirstCrossingOvershootRate.lean",
+      "sha256": "8b19280be5e419db62863b8ca8eaf4a62140b46d0e059f4016b7d3af5689ab61",
+      "bytes": 27892
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricFirstCrossingPhysicalShell.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricFirstCrossingPhysicalShell.lean",
+      "sha256": "dbf0c819e2a0a37a53672e2d8b3a8d850cc98134180a67a071a5077e16c3f795",
+      "bytes": 10352
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricOrdinaryTen46Clock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricOrdinaryTen46Clock.lean",
+      "sha256": "872d92740dda3a8feaf777cc47edb4dd04038440181ec798d4adf749b6872eb6",
+      "bytes": 7511
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricOutwardBaseGrowth.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricOutwardBaseGrowth.lean",
+      "sha256": "2b2b3ec5df29788b5af709eeb6eb2282198393d3a64a00cf6ecc862c1612fadf",
+      "bytes": 2542
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricPhysicalScaleIntervalAdvance.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricPhysicalScaleIntervalAdvance.lean",
+      "sha256": "2bcbd766dc61e19fd298b1cfda0b7bacfee5c06b1520c80b54357b9cfeab3d30",
+      "bytes": 2068
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricPhysicalScaleIntervalOverlap.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricPhysicalScaleIntervalOverlap.lean",
+      "sha256": "7121e21f24f17bc129fdda94b345661de49988568517917a4f5a9c84de7fe8d2",
+      "bytes": 7345
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricReferenceDensityTransport.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricReferenceDensityTransport.lean",
+      "sha256": "06f592a31d7d18e704b8d693a482ef88044de4b7f1e9d3dd95fa20d22d1c896f",
+      "bytes": 32113
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricReferenceMarkedPhysicalIncidence.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricReferenceMarkedPhysicalIncidence.lean",
+      "sha256": "ec28673505ce0356817912707471051a6525f5413e1409c3f34d7b70ce208e6b",
+      "bytes": 16558
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRegenerativeState.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRegenerativeState.lean",
+      "sha256": "f2002a71dd662de480a9e10bdc6849cf2715eb931679d8af12b119a53287b1b6",
+      "bytes": 1312
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideBoundedOvershootPhysicalIncidence.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideBoundedOvershootPhysicalIncidence.lean",
+      "sha256": "d9f4dcfb320e8916a589063e8d0dc874a6668078f7b7bed3f41f9ac20a7dcb3a",
+      "bytes": 25134
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideBoundedOvershootRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideBoundedOvershootRate.lean",
+      "sha256": "77c03b5c1173dfcdcef378886caa8c40fe499d4fca83e0bc91b893464ca0bcf6",
+      "bytes": 1223
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideCommonFloorFullTerminalPhysical.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideCommonFloorFullTerminalPhysical.lean",
+      "sha256": "8fb524ad8c06b1712142fcfc1b2756be263fbc3f25528b78e32737b455e36326",
+      "bytes": 10966
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricFullTerminalCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricFullTerminalCount.lean",
+      "sha256": "c8ce0313dcbe89a9b453175f402ec65781234df4548965b176e984e24d9ce5cf",
+      "bytes": 20017
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricHistogramCapacity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricHistogramCapacity.lean",
+      "sha256": "ace5e9a69a6c0bb823b2a9de066a7d7e45d08e9e52f75cc6444bd40d59e6e090",
+      "bytes": 8341
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricSynchronizedIntervals.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideGeometricSynchronizedIntervals.lean",
+      "sha256": "b277c2b312f6f2de2d2c34753f30e8a22695c531d648345a793d5c6cdfbca15f",
+      "bytes": 11607
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideHistoryInjectivity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideHistoryInjectivity.lean",
+      "sha256": "4c3260bdc7513afeb9f29a90390c214075a7f6e1740c180db9b512e89293ec9e",
+      "bytes": 404
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideHistoryPhysicalCollision.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideHistoryPhysicalCollision.lean",
+      "sha256": "fcd0f8f05e1b91ccb7e6874fa98f2be2902415bc13835d8c0a6b8d683107fdfb",
+      "bytes": 4062
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideIntervalFirstReachingRootTerminal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideIntervalFirstReachingRootTerminal.lean",
+      "sha256": "c35ec402984cbf3880bdab21f352df1055ebdc269a9b444314902f0dbf939033",
+      "bytes": 11814
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideIntervalFirstReachingTerminalSourceClock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideIntervalFirstReachingTerminalSourceClock.lean",
+      "sha256": "099e8d78a77f660c485b474afcd816b7f98ff8b55a607e73edc57268086063f3",
+      "bytes": 7013
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideKilledLiftHighExitPhysical.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideKilledLiftHighExitPhysical.lean",
+      "sha256": "a10f42fa100cb31c1400dc8e631dd1e8ad1058e4ef7d594f0904c39dd8d364bd",
+      "bytes": 6024
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorGeometricIntervalStoppedFlux.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorGeometricIntervalStoppedFlux.lean",
+      "sha256": "14b3fd71fab5afbcd8adc0cf4f858cbae2797cf168f70f030b35f429c6f44bc1",
+      "bytes": 9894
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorGeometricIntervalStoppingGeometry.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorGeometricIntervalStoppingGeometry.lean",
+      "sha256": "90679e075749b4a2d2b228a42d3ab2acae76f558de9efdbf202914d95949b667",
+      "bytes": 3798
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorIntervalStoppedFlux.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorIntervalStoppedFlux.lean",
+      "sha256": "cfdb4b54f82330c03be9bf609ed07766d2cbf93d13e4103b633fc78839b7e9d1",
+      "bytes": 7771
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorPhysical.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorPhysical.lean",
+      "sha256": "fb2fe118f2cfe56394b170971afcc234aafdeba002ec477ecdb7b16e3b6a8f8e",
+      "bytes": 14582
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorTerminalHighExitAggregation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorTerminalHighExitAggregation.lean",
+      "sha256": "3dd7591d5130ea8c598371dc64d2e8da97ad00eb16099a6bda0c5fb7327abeed",
+      "bytes": 2114
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorTerminalSourceTariff.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorTerminalSourceTariff.lean",
+      "sha256": "f79b57bb7c35a5a7ada0a22843162bc37b364d1639a57b494078acd788972ac8",
+      "bytes": 4395
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorUnitChildState.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorUnitChildState.lean",
+      "sha256": "8d49585a845934ce81f637a232326e981d0c41dfb9eabd7c456495ef3f14b35d",
+      "bytes": 20997
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorUnitChildTerminalPrefixCode.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUniformFloorUnitChildTerminalPrefixCode.lean",
+      "sha256": "304c380ed3597aaacb988725688f1783c2fdc6d175a529202f24455048015e88",
+      "bytes": 6365
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUnitChildRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootSideUnitChildRate.lean",
+      "sha256": "b4a14319eb8016467c2412c8e5e30416113f8bbe197a5d1f444ea1fbaaa43a4a",
+      "bytes": 11307
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootUniformCoreCapacity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootUniformCoreCapacity.lean",
+      "sha256": "8c5c54ec49e7380328c6c2263890a897c6ea9e1422f6781225dad6af0c9bb532",
+      "bytes": 14226
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootUniformGroupedCapacity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricRootUniformGroupedCapacity.lean",
+      "sha256": "3342978c3213c6fad5c3f8a29d4a10b5bcdc8c29532583291898ab03f38b6d2c",
+      "bytes": 22347
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalCapOneCompression.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalCapOneCompression.lean",
+      "sha256": "53ba66c636a6ff07a435516b970cbeb3ad35d15b8a1f00dd29b80fd14fea2573",
+      "bytes": 24268
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftCensus.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftCensus.lean",
+      "sha256": "0c712381f5086246019184c999e98c5ad0beef7bf6fd578b78d2c5a4767a78d5",
+      "bytes": 16616
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftMarkedLoss.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftMarkedLoss.lean",
+      "sha256": "d557668672ab62c2c1e7e779c44d703273df9f1f1ed2ed9f484c5d356651f95d",
+      "bytes": 15068
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftOrdinaryClock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftOrdinaryClock.lean",
+      "sha256": "a370831668bdbc5ccf67813c94ffa5d1d2d60450ae27fe4bd0e6d90038fb2c02",
+      "bytes": 12339
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalDepthShiftTail.lean",
+      "sha256": "c868624a98ff2898c23bdeb30951cf17bc6cf8bb272449b0e0759000e385e6cd",
+      "bytes": 11172
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalMaskedCensus.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalMaskedCensus.lean",
+      "sha256": "7b1d919aacf2cb27dd4a5859e181e7f5807a1488ed55c1fc70652f03810a8dda",
+      "bytes": 6135
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalShiftImageRate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalShiftImageRate.lean",
+      "sha256": "a2dc0a2f175102d3349ef8e123ca50345069cca213c6f1b61edf2660c84464f1",
+      "bytes": 9968
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalWeightedCensus.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricTerminalWeightedCensus.lean",
+      "sha256": "3ac0e8728e375cb118e260f15c191219c9c18975a7b43d7eb060cdb259d5a788",
+      "bytes": 12330
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricWholeHistoryOrdinaryClock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Geom2ShiftedWideSymmetricWholeHistoryOrdinaryClock.lean",
+      "sha256": "22cb617226b19921d7662cf5a2b04181f5b596dd58b141b5de104b7e874db727",
+      "bytes": 13890
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/NonconvergenceDensityAmplification.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/NonconvergenceDensityAmplification.lean",
+      "sha256": "50a4bb76403d4b6d2f51b27e2171652e8bf9a5990a76bab0bf036cd19903852f",
+      "bytes": 2908
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/PredecessorAnalyticSupport.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/PredecessorAnalyticSupport.lean",
+      "sha256": "147fcdcae87da02a70bc7363f01cd58583e9aa32ea2fd4bb4d6330307eb4391e",
+      "bytes": 8413
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/PredecessorCountSupport.lean",
+      "archive": "companion",
+      "member": "Erdos1135/ND/PositiveDensity/PredecessorCountSupport.lean",
+      "sha256": "966f7538bd099b1dd61d5905e0a1593799afc8d4c9cabfb46c8973903bd69db5",
+      "bytes": 950
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/ReversedPrefixPredictableSibling.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/ReversedPrefixPredictableSibling.lean",
+      "sha256": "22d41fbffd5a1140f61cc5e4ecc05964da5486e543cb8db979fc01ccbbf5e99b",
+      "bytes": 9762
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/Statement.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/Statement.lean",
+      "sha256": "673ce2bc86b5816d1f99cbf87df4ca953dda526eaa2bdf017d81bacb08412ace",
+      "bytes": 1296
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/SuccessfulRootTernaryResidueCoverage.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/SuccessfulRootTernaryResidueCoverage.lean",
+      "sha256": "3bfb2a0fbfe6fe5aef621530939c69e2223c3095702528e5d963a152b44a318b",
+      "bytes": 3358
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/SyracuseBoundedRealizer.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/SyracuseBoundedRealizer.lean",
+      "sha256": "1f60b35228444bd3a8ba529438b671d4d1effc9b36c1eba255963135d9fdd2eb",
+      "bytes": 262
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/SyracuseWholeHistoryOrdinaryClock.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/SyracuseWholeHistoryOrdinaryClock.lean",
+      "sha256": "0cd8c9ef3aa9eea28748c3cd2e0695f956cbe68e9cc2f984df553e5b9d66cd13",
+      "bytes": 4640
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/TargetCounting.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/TargetCounting.lean",
+      "sha256": "55d7f1aa30a9d6112591f6e12bf38901a3c5f16ef2c4608b9d82929dc49f67c0",
+      "bytes": 5972
+    },
+    {
+      "path": "Erdos1135/ND/PositiveDensity/TerminalTotalCancellation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/PositiveDensity/TerminalTotalCancellation.lean",
+      "sha256": "66638c55ba4983f01370858980fb4d7f8907aa7371dbac5d64cebed04e7eac28",
+      "bytes": 1709
+    },
+    {
+      "path": "Erdos1135/ND/Probability/Geom2FiniteTwoEventTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/ND/Probability/Geom2FiniteTwoEventTail.lean",
+      "sha256": "23b4026a6ed26e07cc21e292364413a5110ca3098d69d36b8ddaa5625c590edb",
+      "bytes": 622
+    },
+    {
+      "path": "Erdos1135/StoppingTime.lean",
+      "archive": "companion",
+      "member": "Erdos1135/StoppingTime.lean",
+      "sha256": "d5a5c09281d2b53c648bb4f4233f77f3156109d99e711799cc6ad0c16fea575f",
+      "bytes": 2419
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Basic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Basic.lean",
+      "sha256": "dd0c3babe7d3bfb3abe6b123eb3661ce9fb6e0835fa93e581abcd5326e75fe1f",
+      "bytes": 908
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/DecayStatement.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/DecayStatement.lean",
+      "sha256": "c5bba5516dd78cab3768ccf3a56d7cb047b760d1be4969d018278279e147d2de",
+      "bytes": 997
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74CanonicalClaimStar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74CanonicalClaimStar.lean",
+      "sha256": "70b5ecad5c6c0ecbc5f003d515dfefbd1e92e8274aca5a8ee15ebb242d6213fb",
+      "bytes": 14398
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74CanonicalCoherence.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74CanonicalCoherence.lean",
+      "sha256": "c3f2c2d2e7f16bae53836509b921af61ea6e1621490907c5f116044ebc403501",
+      "bytes": 9622
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74CanonicalFamily.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74CanonicalFamily.lean",
+      "sha256": "9ccf36f2e8fa028f153d0d25e03dfbbdfe53ccac95712543bd5f06c2b0c66684",
+      "bytes": 8027
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74CanonicalRaw.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74CanonicalRaw.lean",
+      "sha256": "0dd6a52c26c720a8a5c1c605587d72a4c41c8d60d697854205d73621d1acc264",
+      "bytes": 29176
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74CanonicalSourceMem.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74CanonicalSourceMem.lean",
+      "sha256": "c24cd3aa2866e1d8749dfffec047fa2125ae88bdcb5d5c3a1ccf93772cfa2c9d",
+      "bytes": 5323
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74ClaimStarMetric.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74ClaimStarMetric.lean",
+      "sha256": "d24e817e4d504b5a08fcdd673314e31cb929a5c8be60da5eb56be31c84ee6783",
+      "bytes": 8148
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74ClaimStarPropagation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74ClaimStarPropagation.lean",
+      "sha256": "ccd7e9f2cabbf3cce47779801a74067714ea89e484324199234b4c2b10d8d067",
+      "bytes": 11592
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74ClaimStarScalars.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74ClaimStarScalars.lean",
+      "sha256": "82556e195d6907f3ce3c4114afa6eb275a84159daf0332aad85d088f399baa12",
+      "bytes": 7888
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74PrimitiveStrip.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74PrimitiveStrip.lean",
+      "sha256": "f54a2d90bb1cab97861e72789e28335e99c6b511b1b17c6ffd8eb00c05aee6a3",
+      "bytes": 14702
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74SoutheastTransport.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74SoutheastTransport.lean",
+      "sha256": "f86019aa9daf5a8691ea4efccb8a0852817391f587949e31b26a5000cff7b5bc",
+      "bytes": 7049
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Lemma74ThetaArithmetic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Lemma74ThetaArithmetic.lean",
+      "sha256": "21fdf4b0a541a2bda828866a7528429956be3a5353ffb538c5d99fa55140979f",
+      "bytes": 14272
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/MixingStatement.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/MixingStatement.lean",
+      "sha256": "828f6c2d1b4504fc40043bd07bb554c767e9f7484ecaabe3bdeb9a4e04e089c4",
+      "bytes": 1347
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/OscillationAlgebra.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/OscillationAlgebra.lean",
+      "sha256": "dfb98d920d197eafc8fc4c9ff4d64e7d406bb8c61af7eff77ad678d1dd6c0154",
+      "bytes": 8395
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7Cancellation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7Cancellation.lean",
+      "sha256": "1100656ec31c4ae0a0b954af3d651402d222eefa9b38dd6db36dc06dff507ba1",
+      "bytes": 11489
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7Character.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7Character.lean",
+      "sha256": "7f9ba7ae85df43bf55006255dd07639a1b8bbe921a450b3557f8957ed8eb5191",
+      "bytes": 10746
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7Geometry.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7Geometry.lean",
+      "sha256": "beb8cdc6d825635c08f6c6814664d0ad3afdcd335a3618fbc7eb731ab1a031b4",
+      "bytes": 61940
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7PairExpansion.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7PairExpansion.lean",
+      "sha256": "613dd7a0c2dda6a063ab45a6994268f80f37daeeea5f97b2678c0aaaf72599ff",
+      "bytes": 18704
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7PairExpectation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7PairExpectation.lean",
+      "sha256": "95a649544e393f0779307aa0d41395b25f0359d309a8215fdb90b23e2dfa70d9",
+      "bytes": 27245
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7PairFiber.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7PairFiber.lean",
+      "sha256": "bc0832e9a592cae9fdec22be147d55fb73eda02a4bf678a32a72fd25cb4b5c79",
+      "bytes": 12504
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7ProductPenalty.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7ProductPenalty.lean",
+      "sha256": "16cf81f2410346ef62fdbc2d6274dc3e17bf32c885768e74776e1d50bade56ce",
+      "bytes": 8735
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SChiActualQ.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SChiActualQ.lean",
+      "sha256": "b0530ac6129768264687221c1c72f48245e9d67bb01615a5b72ea23ad55de749",
+      "bytes": 18719
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SourceDomain.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SourceDomain.lean",
+      "sha256": "dec962e6906d7b182ca1d25375f5a00ed401b266d90c6b3a71fd64f01389f4a4",
+      "bytes": 3524
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SourceFThreeQFinite.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SourceFThreeQFinite.lean",
+      "sha256": "7090e9aea01592fd2b1438fa34354b1aff5fc61a1546ca351f5d3fe42c18ed72",
+      "bytes": 3013
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SourceLaw.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SourceLaw.lean",
+      "sha256": "6bbaf1838889a0ca6ceaeb317c1a189f783bf24f1232d2dc42ddf44254325820",
+      "bytes": 6658
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SourcePairing.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SourcePairing.lean",
+      "sha256": "c4759b0330eb09183b490ea8b0dc5beb50b960bb83dc987663ca084ed6042397",
+      "bytes": 2304
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7SourcePredicates.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7SourcePredicates.lean",
+      "sha256": "ae2a90072d503f4d8c4499f42e97c4908972c018484201568b01a44a2d58f766",
+      "bytes": 1109
+    },
+    {
+      "path": "Erdos1135/Tao/Fourier/Section7WhiteHitSplit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Fourier/Section7WhiteHitSplit.lean",
+      "sha256": "6c8c1b6ac844775628c919924bd17439e31e71909cc4c1f1f24ecaac759b4577",
+      "bytes": 1978
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/CountableMarkov.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/CountableMarkov.lean",
+      "sha256": "57d8aeec15188b0cbf51e31a37c7025b3be98e081601bf8a7996da119f0bcacc",
+      "bytes": 3495
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Finite.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Finite.lean",
+      "sha256": "4768278f83ccb5ab456b330efc9e8602e6f56f296325edc63bbdd405dfc8c8f8",
+      "bytes": 563
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/FullL1.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/FullL1.lean",
+      "sha256": "6949180a7ba9bd30c40bb854bdda1116501a04b62c66bfa7cb0f57323c76e0ff",
+      "bytes": 840
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/GatedSubmass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/GatedSubmass.lean",
+      "sha256": "d9432e14d90fde1a3d76283ef863340f50359b0d55736e984cbfd304e212a6e9",
+      "bytes": 4321
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/GatedSubmassComplement.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/GatedSubmassComplement.lean",
+      "sha256": "c591734e21be3cbcaa931b12e2cfc33836c3158e2541a00108e39eddc2d69e29",
+      "bytes": 4524
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/GatedSubmassPartition.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/GatedSubmassPartition.lean",
+      "sha256": "e4dc2996976068780ea2932c7db5db0a31c1c71452c3d7a8ad691dee427bfbee",
+      "bytes": 3149
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Geom.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Geom.lean",
+      "sha256": "6e860549e6a25b8179e17557520830137b1f3415344dbb6d0c5be43b97c250c9",
+      "bytes": 5233
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Geom2CenteredMoment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Geom2CenteredMoment.lean",
+      "sha256": "52602aa77c2d96b06e0481fc3d3ec7d3d23c8735eee564e2a5b8cd645d169cf9",
+      "bytes": 22185
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Geom2ListProjectivity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Geom2ListProjectivity.lean",
+      "sha256": "5f1b7e3f6ae0f8648de199c2213130128436dbf4f749dee9085810bb013d7882",
+      "bytes": 5797
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Geom2ListReverse.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Geom2ListReverse.lean",
+      "sha256": "8676508b7d15272c211bea9f0b03f3b901d99a8b90ae3387dfc710174654c0fa",
+      "bytes": 1338
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Geom2TerminalMoment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Geom2TerminalMoment.lean",
+      "sha256": "a8ec6e511f000f68232293cdd92d3b5b6740bef2f767fc018f01e58788cd4ce9",
+      "bytes": 586
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/HoldExpWeight.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/HoldExpWeight.lean",
+      "sha256": "89cc4452a8d4694a3efb2497f1fac4f6342e6c7f92c76cddf342924d07ceb169",
+      "bytes": 16956
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Pascal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Pascal.lean",
+      "sha256": "405caf9097670b4ac6192af77d8d948703f95b7de41943aae739acd7410b667d",
+      "bytes": 2447
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/PascalPrime.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/PascalPrime.lean",
+      "sha256": "89b6b1683164c8926832c964ea82ca9e731d3beffa782bbdfbc4a8d38f1e4385",
+      "bytes": 20624
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/PascalPrimeList.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/PascalPrimeList.lean",
+      "sha256": "9ae54da24243a88910c03b1bc04f4a88619592c76d97fd7ee7b65913e615f35d",
+      "bytes": 9470
+    },
+    {
+      "path": "Erdos1135/Tao/Probability/Truncation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Probability/Truncation.lean",
+      "sha256": "e45522eb8698612b890ba3ac43c0ed23e4c5645ccc527f44ec9583cb30207600",
+      "bytes": 1029
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageEndpoint.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageEndpoint.lean",
+      "sha256": "b3c36cf8fb2a8981a36b3f65706871597916b70094a539d6dcec1be8f83b2ef7",
+      "bytes": 5635
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageExpMoment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageExpMoment.lean",
+      "sha256": "8900d966b3b4309523870f0f79d15457905f8019acdec14c3276fd2000165362",
+      "bytes": 5253
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageHorizontal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageHorizontal.lean",
+      "sha256": "63d871d105e6f1b66f9a7048a086a9319566fb213885839b2a22e878eb7852f6",
+      "bytes": 5125
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageLocalizedMass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageLocalizedMass.lean",
+      "sha256": "7815c47e4cfa2c9baee5c3011cda97c4f3e2479a72b8a8f1fda16ae4ca88a164",
+      "bytes": 2096
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSigmaCenters.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSigmaCenters.lean",
+      "sha256": "355b58aa53987aabbe50906005f79f318447e9553a6dd1ccd89ee337e7e05899",
+      "bytes": 5370
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedAverage.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedAverage.lean",
+      "sha256": "b29cdb868ee954721da0d79bf269a8b002f893f59e62176329ab1e367d7e8ce8",
+      "bytes": 3408
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedCenterSum.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedCenterSum.lean",
+      "sha256": "bfdcd9319639ffba69baee28c3dedd5b9229bd2bba806ac58c5c29e7cd7c1b72",
+      "bytes": 4365
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedSparse.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedSparse.lean",
+      "sha256": "ab4db23f3c73b599acb666f64c2a427602d8e7e686a81b94fd4478c049dbe0a4",
+      "bytes": 7542
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedTotal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageSignedTotal.lean",
+      "sha256": "fffc2fa516a5c3651a6861f21047db60cd23047ca7c35a1017a9bf735a2ec316",
+      "bytes": 9556
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageTails.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageTails.lean",
+      "sha256": "a5caf97c5ddeff4d6d6767a308a61d11f88219a3e7323c4e3f6e2b1aecb011a4",
+      "bytes": 29703
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/CanonicalFirstPassageTerminal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/CanonicalFirstPassageTerminal.lean",
+      "sha256": "41f8f06bba9fb6415d938f25d71bef4e03ccd5aeef4a65f6ab318ce3c2f5b58e",
+      "bytes": 14751
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/GeometryBridge.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/GeometryBridge.lean",
+      "sha256": "29747c890edc06f9bf5232a520d5d65c1a4a11929c774c7024795bfe577eb7ad",
+      "bytes": 3584
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldExpectation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldExpectation.lean",
+      "sha256": "7468348ab83db971d6cbc479542b17141ce4fcaea13ddcf9eb781ed2ea00aa3c",
+      "bytes": 8034
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldFirstPassagePMF.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldFirstPassagePMF.lean",
+      "sha256": "145b64b8685753c945bf8735a32dfc2f8245c79d92cb2fd0c357eaa9480baba1",
+      "bytes": 15390
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldIID.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldIID.lean",
+      "sha256": "a967c775af774502742d7f14651f2c2a20ff55ad00377faae0f5b35c0d0952c7",
+      "bytes": 17542
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldListHorizontalMoment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldListHorizontalMoment.lean",
+      "sha256": "2086b088923c8cfa7a80f63fe59076514ef738ddf206022aacee6c703dd1ef4c",
+      "bytes": 11066
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldListHorizontalTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldListHorizontalTail.lean",
+      "sha256": "26b254388e2df965917e2039ec5ea97ff99e3beb65df0c71399f7d64f34c9680",
+      "bytes": 4147
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldListVerticalTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldListVerticalTail.lean",
+      "sha256": "b5e09cfb922dc301914dbfd9282c340674a97bccca0ce6c58370e1bb6acbbf0f",
+      "bytes": 16411
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldPMF.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldPMF.lean",
+      "sha256": "a356608173177bb66fb50d3eb5b6d94270af1d78be10fc9e7cb23b49503dea2f",
+      "bytes": 3678
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldPoint.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldPoint.lean",
+      "sha256": "08b29ea9bad25058e37d150363b2ff291b78e0c8b6cccfd224974370123a8d48",
+      "bytes": 1002
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/HoldStoppedTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/HoldStoppedTail.lean",
+      "sha256": "e3fb8b2d670005597a0309a4972dff1144a2b8fe67fffb28ca592e1ef91ee93b",
+      "bytes": 2121
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma710EprimeProbability.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma710EprimeProbability.lean",
+      "sha256": "0699b0b9e4015fa5ee95566aa1908bc6ab6ece00cb6135cf65680cebf3fb85e4",
+      "bytes": 548
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma710KernelWindow.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma710KernelWindow.lean",
+      "sha256": "cee14ce8b5821fe656c21d0ad3cac58bbf69e09dafbcbf848cd04d9d17663d16",
+      "bytes": 1263
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma710PostStoppedKernel.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma710PostStoppedKernel.lean",
+      "sha256": "f1543b2e80fbf364670dd19393477558258665d08c3609f64b73f96ea2411f89",
+      "bytes": 2002
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77EndpointAssembly.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77EndpointAssembly.lean",
+      "sha256": "6a0b125b3323bff83a34b3bf36fc21e0bb9bed64b2a1031ba9690226314ea633",
+      "bytes": 22944
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77FirstPassageEndpoint.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77FirstPassageEndpoint.lean",
+      "sha256": "c285356cab6ab0cbed661cbb2b77ba1ae961cc179f7fbc5f46ebe2ad3b422201",
+      "bytes": 690
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77HorizontalMarginal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77HorizontalMarginal.lean",
+      "sha256": "c7449715e26372125f5b23b1fc06704471d968509fc678ce8c692f3d59fce20e",
+      "bytes": 753
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77LocalLimit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77LocalLimit.lean",
+      "sha256": "faed73cabf7a50d9aa07fbfc6ad1e99690a2292c9db50c023f874e35558d927d",
+      "bytes": 49663
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77PascalComposition.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77PascalComposition.lean",
+      "sha256": "8e0386b348b94ee8e51d9ccf6caeaf56787afb4b627683df84508080c31c0fc1",
+      "bytes": 16985
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77PascalFormula.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77PascalFormula.lean",
+      "sha256": "ed6bfe042b18abe0c2b92005bd320b9a9399134f5d9829b4045c3bdfcb03b137",
+      "bytes": 5550
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77PascalGaussian.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77PascalGaussian.lean",
+      "sha256": "a87d62867bc0a37c2da491133ac2053823fe4b98891c8abcbfde006a8dd85bd4",
+      "bytes": 32478
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77PascalPotential.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77PascalPotential.lean",
+      "sha256": "3b565c8a4070577ac3b65fff5eabb8fe16b1ac51cf536b3b6796f39b6c4b2419",
+      "bytes": 40812
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77PotentialCore.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77PotentialCore.lean",
+      "sha256": "3ff78527ee6147847fb101ce174a49200d162db04a9626f6628d09e35576f7ed",
+      "bytes": 11851
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma77TerminalHoldMoment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma77TerminalHoldMoment.lean",
+      "sha256": "606f3194c3e7b332fe60f4ac6fdfd7b713df44464648bf5c29b12486a883c690",
+      "bytes": 23517
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79AllRBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79AllRBound.lean",
+      "sha256": "eb2dae5e971716f0d8657089b6751a0f6fda94fba1391b4baf458cd55e996dab",
+      "bytes": 3874
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79CanonicalExitWhite.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79CanonicalExitWhite.lean",
+      "sha256": "005eb4869c8278346aec800c58ba18e1680753701bb3a2ac0a9cdd007b169853",
+      "bytes": 6100
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79CanonicalTraceProjection.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79CanonicalTraceProjection.lean",
+      "sha256": "85bd8e3032850a7c9976c91603a1d7adf2b8d9575147349f8ad5d29884917b0e",
+      "bytes": 4375
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79Case3EventAdapter.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79Case3EventAdapter.lean",
+      "sha256": "93c1596073e3c74b6e702c1bc5ee3e4c2a6096f93ac8a498e3fd1832670dd995",
+      "bytes": 7060
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79ClockDeath.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79ClockDeath.lean",
+      "sha256": "73a1acc528068f3fa7a71740350fdc6b493eb8098e0875fdbeb9da5ddda18edc",
+      "bytes": 2765
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79CutoffLocality.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79CutoffLocality.lean",
+      "sha256": "aff200e8a462c3ef20dfad314740f2bf45f34a71f7824f5fbaba5ca68ca71140",
+      "bytes": 5238
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79CutoffStatistic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79CutoffStatistic.lean",
+      "sha256": "c22df90b6edc33e8857b40b523673d06c07709b173c0c528f38b2acedbb3bdde",
+      "bytes": 6179
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79EndpointFreshCoordinates.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79EndpointFreshCoordinates.lean",
+      "sha256": "9ca1e9e09965a834365b11080584bfe8caf0737862097f7aea544ae6d188d8e1",
+      "bytes": 1692
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79EndpointFreshLaw.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79EndpointFreshLaw.lean",
+      "sha256": "986489210f2d5eca672d3fcfd1b96c6d1a4eca22c4c31598f45e2b06025f7af8",
+      "bytes": 4928
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79FirstEntryCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79FirstEntryCount.lean",
+      "sha256": "d202fa19d2fde8f916d60896397d6b353ba0cb7a26bbacb793403bd6e331d7df",
+      "bytes": 5003
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79FirstEntryCylinder.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79FirstEntryCylinder.lean",
+      "sha256": "f3e3fb918e2d5cddd84f6eb5640cd7b13a8916c72674bd0c189f698242d196e6",
+      "bytes": 2395
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79FirstEntryFiberLaw.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79FirstEntryFiberLaw.lean",
+      "sha256": "070843d89a89810f5d02c41331ec38f82c5b5a6145c003767900351e35e41ba4",
+      "bytes": 9605
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79FirstExit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79FirstExit.lean",
+      "sha256": "7eacf7f4aaaa09a01ccd2abd6c4df64e3a2a41b58064e600d924e8fc6d34624d",
+      "bytes": 15951
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79InclusiveTrace.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79InclusiveTrace.lean",
+      "sha256": "722482da6459e3c96fa876a7587ebc5d1c97a1ce2bfefdde6eaa69fd832bda3d",
+      "bytes": 32576
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79NativeMarkov.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79NativeMarkov.lean",
+      "sha256": "37bd77f5ae18306e0d42b2b95bb5f44422b9c6d337e08e0b36b31114c74cf55a",
+      "bytes": 3308
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79OneStepBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79OneStepBound.lean",
+      "sha256": "652bfa32f6c1b48a3021915722fd91cfcfb7e188081ffff428e8bf6c2ce9a15d",
+      "bytes": 13963
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79PostExitFreshTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79PostExitFreshTail.lean",
+      "sha256": "cf12799034fd62bdd599b8f5401da64db3510792cb975943cbcb7df8e7ef4604",
+      "bytes": 7509
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2Aggregation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2Aggregation.lean",
+      "sha256": "8c38ecb2d0934ed1707e25d0e042b028b91d62f43b5018675123ac285035aa53",
+      "bytes": 7296
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean",
+      "sha256": "96bf0f579b14f71803f8ea6ec4a05a8e0e08b9d83fc1cd65208ff01ed538b409",
+      "bytes": 6480
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2MasterAtom.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2MasterAtom.lean",
+      "sha256": "a3bb1a5e809b23ad77393ada96d391f4ceeacfacc13fe766751571a7b0019a91",
+      "bytes": 10563
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2MasterTransport.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2MasterTransport.lean",
+      "sha256": "3f7d98b06e6b8c6d3456479d49cc1796519f2e79be78e557038a47b51adb3547",
+      "bytes": 6780
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2Pointwise.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2Pointwise.lean",
+      "sha256": "156a19378b5837157158699f1a3f84761bfd1c53a2b140b31a4fb5134fdf126e",
+      "bytes": 2381
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2PositiveKey.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2PositiveKey.lean",
+      "sha256": "ba1283ed09b2065e785b320e699cadd84ad649de96e3269c7a31f814b9225c6a",
+      "bytes": 5618
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2PositiveKeyBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2PositiveKeyBound.lean",
+      "sha256": "1082e4e11d9fa9396aa055ad35dd21c0a7f04556c7451a1019e787d6503b79da",
+      "bytes": 1324
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R2Scalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R2Scalar.lean",
+      "sha256": "b3dd475268ffb0cbd560b776dced586b4f5a91200883bb9ba0d175142a45d7a7",
+      "bytes": 1764
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R3AtomBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R3AtomBound.lean",
+      "sha256": "254204548eeced37b9458fb37315fbffbf523b20b055b672e91331171984da34",
+      "bytes": 8813
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R3MasterAtom.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R3MasterAtom.lean",
+      "sha256": "07f05661acf659d782608daeaf2429718c43b19a49d395c600523fcab4a6796d",
+      "bytes": 5972
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R3Pointwise.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R3Pointwise.lean",
+      "sha256": "d88811e63fe96cc5b1a8c0c2181140dae759a8be90c133b311461fae221c74a7",
+      "bytes": 4973
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79R3Prefix.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79R3Prefix.lean",
+      "sha256": "cbaabddb28aca3c3ef41b69322087525e9a5a641044590f2124897c39e4fa559",
+      "bytes": 3283
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79Recurrence.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79Recurrence.lean",
+      "sha256": "9f30b8191f6c3f26d501da453f059cfb487a4a0351a1a6db7270da074efce646",
+      "bytes": 10040
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79Restart.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79Restart.lean",
+      "sha256": "06a309e44cece6ae6e6266f37c5bfe5e731ad199ca56b55202d5b55132c9cc48",
+      "bytes": 8907
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Lemma79TailExpectationCore.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Lemma79TailExpectationCore.lean",
+      "sha256": "635c37ea8a70443fb4e769679e50f49feac2e3d76028fea9a7fb483933c138db",
+      "bytes": 25900
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Outer736HoldExpectation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Outer736HoldExpectation.lean",
+      "sha256": "c09b2bf7381b32c903a1950c30e81c3d4f31d7c7e04e9abb7898fcf59385d439",
+      "bytes": 5160
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Outer736SourceAlgebra.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Outer736SourceAlgebra.lean",
+      "sha256": "35dbee79d4bc51c2455dd372ee06471a2395737c22d2f644f55561a6703b359e",
+      "bytes": 3521
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Outer754HorizontalFactor.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Outer754HorizontalFactor.lean",
+      "sha256": "891d01ad98024a7168b3efdacec51dc6dffec8092ed9d535f578ed551e82b1cc",
+      "bytes": 3684
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Outer754SourceWeight.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Outer754SourceWeight.lean",
+      "sha256": "58cc934b2d3e10ac7ccbe5103f792e5490b98b8f70d5281a1c4dcc51c60a7ea4",
+      "bytes": 1027
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/PMFExpectationThreeRegion.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/PMFExpectationThreeRegion.lean",
+      "sha256": "18bb1f1d4a0f74d07acc3c9b48583ac62c6ddc921bbc4abc0337a9ba48d96689",
+      "bytes": 9210
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/PMFIntWindowUnion.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/PMFIntWindowUnion.lean",
+      "sha256": "894ea95f2f44de30e08e5a7dc3059dea0efe34f7b09aff2bc146314745728083",
+      "bytes": 2773
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/PathGrowth.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/PathGrowth.lean",
+      "sha256": "eac1a13b0cfaa1d29a3a2190aa207e5facddfe6c7f417170930fda9977280682",
+      "bytes": 2260
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78ActiveCover.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78ActiveCover.lean",
+      "sha256": "bf0299343a319a7aa942f1c224834cfc73aec1f0321eb9ac62e222f0fcdc38b0",
+      "bytes": 2035
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Boundary.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Boundary.lean",
+      "sha256": "af3ad5952451b3307199cd2d59cf9c12c6ca68458139e689f51ff2012cff726a",
+      "bytes": 4404
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case1Scalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case1Scalar.lean",
+      "sha256": "a507dcc620d0d00236d8c4cd5c7d2935e3cf59fafc383fb3b9fe2ec7e38a8d27",
+      "bytes": 11364
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case1White.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case1White.lean",
+      "sha256": "e67e8891f8c19091d039ddfcc173c37fdc0b12c315554016e61e81ff22bf58ea",
+      "bytes": 9427
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2Discount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2Discount.lean",
+      "sha256": "837b463da6a9afb5dfdecc6a683fd1d274dc9a93d184d215ad0810d76cf0d971",
+      "bytes": 5331
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2EndpointSplit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2EndpointSplit.lean",
+      "sha256": "a6bd7455c0162a7c447e67737b025485e9468061bd76005b093f5d284e65dcba",
+      "bytes": 396
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2Expectation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2Expectation.lean",
+      "sha256": "4d8eaadeb6868941360955d5d7aed901f2691754b4685e9205af2ed2fb79993f",
+      "bytes": 3461
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2Geometry.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2Geometry.lean",
+      "sha256": "97fecdcc8adde4c6688f20eea95eed5691924cf95b0a39a6d7e50a4975dd920e",
+      "bytes": 11697
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2MomentScalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2MomentScalar.lean",
+      "sha256": "f269e62ce0a4a66d3ae0814a11af5d6089f6b9baacf0da3cd81d30c7a901d1a8",
+      "bytes": 2015
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case2Pointwise.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case2Pointwise.lean",
+      "sha256": "eb96f8ff34ba169c5ac199603fa5a2dd9c1be4199a1140862eb6692d55e3201a",
+      "bytes": 1129
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3BaseKcutFiniteSum.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3BaseKcutFiniteSum.lean",
+      "sha256": "b71203d2bd16bc3632ef0b4710374a5645cae8302be582dbb7b965d03e7e9fbd",
+      "bytes": 22994
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3CutoffAlignment.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3CutoffAlignment.lean",
+      "sha256": "714fd20323cca08d7a8771312058852a581d1ee076424ea2a3720532db54064b",
+      "bytes": 1643
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3EStarSupportProducer.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3EStarSupportProducer.lean",
+      "sha256": "575a69cea76ed738ea38d93a780f08135e3b029a22a2355b756f4315736c4df1",
+      "bytes": 3769
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3Event.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3Event.lean",
+      "sha256": "eb35d14c26b08f3373494279784b95ac78490086d2cb9bcf125c775c0eb8c154",
+      "bytes": 15785
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3EventualScale.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3EventualScale.lean",
+      "sha256": "caf1f0b87126ee1545afb416b190bea40efb7c2022ae522c6da63b225af86bf1",
+      "bytes": 1530
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3FixedParameters.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3FixedParameters.lean",
+      "sha256": "f8bb6f38ea238660588cc46efab2f77bf667bca848be22c0910a45986eeb2b14",
+      "bytes": 2242
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3PriorityScalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3PriorityScalar.lean",
+      "sha256": "0ee596329953435405b7c69cf6fa06d61f60766a074328cf9f62fb6c2e1fe37a",
+      "bytes": 3650
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3Stopping.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3Stopping.lean",
+      "sha256": "714656cc28bba1711b3727fbe9a1d5c85032d028210ffcdcf9c4b6b0f19062c4",
+      "bytes": 13221
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Case3TriangleExit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Case3TriangleExit.lean",
+      "sha256": "e18a0202a42f7729aa7a2a02ff3fbfba7c1f7552931c05158797f82ca063c90b",
+      "bytes": 2040
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78CaseAssembly.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78CaseAssembly.lean",
+      "sha256": "e89b6abbfa8ea239c7e25622e11070833d02ddd24fd96125d20da31bb6eb8cab",
+      "bytes": 3182
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Pointwise737.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Pointwise737.lean",
+      "sha256": "e6a0893b4e64bcd929e98811a6627c207f6f809b0a609e760b25ea269973cc17",
+      "bytes": 3975
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/Prop78Threshold.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/Prop78Threshold.lean",
+      "sha256": "eda5dcc5e13718978e660d5bf5de393be916596519a974adac6a8e83a8bb9588",
+      "bytes": 2579
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QActualLimit.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QActualLimit.lean",
+      "sha256": "466fd7ee81a8006b4ca2db5f5e60aa388a832b8b9a20b930ad0d98be1b4a29db",
+      "bytes": 2231
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QActualRecursion.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QActualRecursion.lean",
+      "sha256": "7f3cb96391fd5e2752621df8f2023837103ef470b63633a2244f15d187f981cc",
+      "bytes": 2103
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshCloseout.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshCloseout.lean",
+      "sha256": "d587c90f38c8f9e6688f0041685b5738d89d62a40763d9ce6ac1cfbb6fe6fe74",
+      "bytes": 7089
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshCount.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshCount.lean",
+      "sha256": "8821b3e68ecc097e44522f44bfde8f8e5d8a7f09d8c7cc374fed616ba82b9941",
+      "bytes": 4070
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshDomain.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshDomain.lean",
+      "sha256": "28b2536587a376ba75b9b307c603c859c634499db2f3e25eb23051e9e4304093",
+      "bytes": 5791
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEStarCountable.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEStarCountable.lean",
+      "sha256": "15881e1e3b96c0dc8cc5b4f5d1e7a5ed8f8afe079eef8f64c83da21f0d5f6543",
+      "bytes": 2306
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEStarEprime.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEStarEprime.lean",
+      "sha256": "e60ae2ba9b5906fbe539d92f487229e8ef4b7474f2138681d9a67492d7284193",
+      "bytes": 7608
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEStarFiber.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEStarFiber.lean",
+      "sha256": "6ca614d898d1bee81c2165b66a0a429f0e8a93ae89b247bd1df8ef471dcb4c6e",
+      "bytes": 2786
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEStarMass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEStarMass.lean",
+      "sha256": "d93d13d0c139a777cc8b3dcfba58b021ca7c6f6a727fc1c00b71f1b9fc208062",
+      "bytes": 3141
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEStarUniform.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEStarUniform.lean",
+      "sha256": "d656f235b7916ebcb6393ae854ab148bda2b1f76ec73d5aa5fe322dd74d08877",
+      "bytes": 1425
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeFourTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeFourTail.lean",
+      "sha256": "9c5be1158fa299260484a2a23143ca40ad4a0853b73df31ef03727a3848f9bc1",
+      "bytes": 8199
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeHorizontalTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeHorizontalTail.lean",
+      "sha256": "dd418cfa1b11b1a19b717c9243e4aa4cb62e75e959de79e5fdf247f1a208ea41",
+      "bytes": 7956
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeMarginalMass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeMarginalMass.lean",
+      "sha256": "6ac8b1fe4d9ec88bd3a52c26abb6447daf1b9bc1d5c0a19f92cacd8a3c76db7b",
+      "bytes": 7609
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeMasterWidth.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshEprimeMasterWidth.lean",
+      "sha256": "42dcc482333559c440ee8665cff3e0d3ce185615fb8351d5f17118d20f71b6cd",
+      "bytes": 4878
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshMarginals.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshMarginals.lean",
+      "sha256": "fee8e8eab24c51628426882e5065ad8b126f29e9ea0448d542cf90db2aaa7a13",
+      "bytes": 3795
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshMiddleMass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshMiddleMass.lean",
+      "sha256": "68fac48bbebb82e4b71945d092811417c06ac8233dc8f73e9f19fc4fe49c023c",
+      "bytes": 10405
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOuterBadJ.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOuterBadJ.lean",
+      "sha256": "07ede4d9389147e9700aa7e7ad8c4eabe3c94bcc3f272b06e39cfdbf685003e9",
+      "bytes": 3959
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOuterBadJBoundary.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOuterBadJBoundary.lean",
+      "sha256": "d866d5236f8ebf98d1e5ea0505a2506d12bc9410048343c615b9816425af771c",
+      "bytes": 2193
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeBoundary.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeBoundary.lean",
+      "sha256": "8313cdbae7bfe2a6abc1c8b4e0915371ef3bfcd27a679522479d05c764d97591",
+      "bytes": 3018
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeBudget.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeBudget.lean",
+      "sha256": "682503a4a55ef5db462d0720e94e09ca3077b7d37499da997a140b483307f8ac",
+      "bytes": 5235
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeFiber.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeFiber.lean",
+      "sha256": "5fcdfebf0a162e1c64e52e68b9e61f2f128ec3ad3d12d41019e6111fba9ea962",
+      "bytes": 12742
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeHorizontal.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeHorizontal.lean",
+      "sha256": "a28290af0290b17f082ef6a46dce15ab6d61a051f4257f9ca344d92a75a35925",
+      "bytes": 3113
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeNative.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeNative.lean",
+      "sha256": "83418fe1d05672ac8109d8aeaae1684290c18dc54ca27bd79f71a85d2dd2e3de",
+      "bytes": 1433
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeNearSigma.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeNearSigma.lean",
+      "sha256": "974ea2043922670ff797b08db57089a0827a63d248020142d19767b840c45824",
+      "bytes": 5089
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeScalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeScalar.lean",
+      "sha256": "ea05a06fd42b992926d0156928bfd2791cc778239b77224d500f9094ddc9f6c4",
+      "bytes": 7073
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeSourceMargin.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeSourceMargin.lean",
+      "sha256": "157e3120ec35f4518429931180320bb264ef45e934b3183186b156132b994c3a",
+      "bytes": 961
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeSourceWidth.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeSourceWidth.lean",
+      "sha256": "9b24f60e7d70693829e021d81274a9920fb2c837d727557d49849edf7278815f",
+      "bytes": 3124
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeWidth.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeWidth.lean",
+      "sha256": "625e1249434094f5ef1a04500bbb822149679bb831487a08372f5a2ecc83abea",
+      "bytes": 4831
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeWindow.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshOutsideEprimeWindow.lean",
+      "sha256": "8a63917ec79a3aa6c896ffbf612c8eb99d82a30fc4bcf842e239457f67a28de2",
+      "bytes": 2713
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshPairFSlack.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshPairFSlack.lean",
+      "sha256": "41fe4e632304a3b3ca92ab4f1ae17e4e5d8f2149315523e24b0b051f1bbde9b5",
+      "bytes": 3922
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshPriorityPartition.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshPriorityPartition.lean",
+      "sha256": "a0a8d9ac01854caa83bdc8442ef990125eb36ab59886fb0e68850c36e1796a66",
+      "bytes": 9460
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshSupport.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshSupport.lean",
+      "sha256": "14524a44e1c221099403dfccd25dc84eb788a1ca37367a371ac27ceb65143711",
+      "bytes": 2771
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshSurvival.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshSurvival.lean",
+      "sha256": "09291d8e188adb69ca55cfe64c518cd5008bacc374e49ba0477a2e0d5b98550a",
+      "bytes": 15621
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QEndpointFreshTower.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QEndpointFreshTower.lean",
+      "sha256": "b5725805dc9e038459f4c84141fd089c6eb92a55ac8873ff2ed72b5b062ddf6e",
+      "bytes": 6543
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QExpectation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QExpectation.lean",
+      "sha256": "1908deaa07c908a1598fe04ef414842070e0529534a9c61b29f28bfd083c4565",
+      "bytes": 594
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QFinite.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QFinite.lean",
+      "sha256": "4591673f2948f7a1c50204914d296fbb5085cb498ba9d6a793aa957ccb407d26",
+      "bytes": 4252
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QFiniteApprox.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QFiniteApprox.lean",
+      "sha256": "e3eede204d6e4a9ccd223a41916c54663d9b55fabaed8162100286678d428774",
+      "bytes": 18044
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QFiniteIteration.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QFiniteIteration.lean",
+      "sha256": "02a097aef9d8580ecd469287f52a91e721172ac35ba4a68a8108df271f75ffcf",
+      "bytes": 14136
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QPrefixFactor.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QPrefixFactor.lean",
+      "sha256": "2b8d5e494cc54b5ee989e6f910eb3d78423200bf22fd650471c025a9dfd66619",
+      "bytes": 3367
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QStoppedApprox.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QStoppedApprox.lean",
+      "sha256": "0a5a20d75e7694e29fcf85d201550196ddc65570fe6b10fa7360c4f8518346a9",
+      "bytes": 16989
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QStoppedEndpoint.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QStoppedEndpoint.lean",
+      "sha256": "ee7b31fe6e1d175e286cfeabd4ff6e748f7233676e19e647b6fb6f0bcd1a4130",
+      "bytes": 4109
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QmHorizontalNormalization.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QmHorizontalNormalization.lean",
+      "sha256": "ad647338e7fa5b4f1142ae3454583a1a9537dd84aa88351e9f60e528e1c94533",
+      "bytes": 4303
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/QmStatement.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/QmStatement.lean",
+      "sha256": "103e58140e21a395257b172ec3873dff13bd7b270650099620d9808471286b00",
+      "bytes": 10669
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/RenewalPathBasic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/RenewalPathBasic.lean",
+      "sha256": "48d8a1a78ac8968f16a340339764391d8111d7c00fbe4470de67110eec0b0152",
+      "bytes": 2728
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SeparatedWindowFlattening.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SeparatedWindowFlattening.lean",
+      "sha256": "9075ff6eb768cf3d4810d38b3a821d926f9b9398bd85aa5fd884ae0369d82fe5",
+      "bytes": 2460
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SeparatedWindowGeometry.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SeparatedWindowGeometry.lean",
+      "sha256": "d28d616efda0f5abce2697158c5829f7089cd839b91d99358261dca96e8e96f6",
+      "bytes": 1716
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SeparatedWindowSum.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SeparatedWindowSum.lean",
+      "sha256": "97d0fc57dc4218a3658861c3ea13d0a7752a3eca72bcf160e26173435d94bb43",
+      "bytes": 432
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SourceActualQ.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SourceActualQ.lean",
+      "sha256": "e703e4782a3752a18581a8c68b8cd3052760963d935d2e0bccb9232346ec60df",
+      "bytes": 2066
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SourceActualQIteration.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SourceActualQIteration.lean",
+      "sha256": "7caafe0447c57879be11c01e6a58a950b4b5ba3a48a3b16e174d9d98866b50e5",
+      "bytes": 969
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SourceCutoffStabilization.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SourceCutoffStabilization.lean",
+      "sha256": "dac73d4bf1b14181e69811e02d87973b1b377be6e13078cf4ba856f08f9f8905",
+      "bytes": 5177
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SourceListBridge.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SourceListBridge.lean",
+      "sha256": "2daf549d4ea267f99a493c101813ed02521149f6736215531f3e9d8bd62cdb93",
+      "bytes": 6359
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/SourceRegeneration.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/SourceRegeneration.lean",
+      "sha256": "30cf99edb2f892173c19cf934f65046a85dda84826c9822ac03b2ba6680a0c96",
+      "bytes": 11791
+    },
+    {
+      "path": "Erdos1135/Tao/Renewal/VerticalFirstPassageBasic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Renewal/VerticalFirstPassageBasic.lean",
+      "sha256": "abc5714385b8ae7a18bef8615eef339460b799bb6228f1ea8a9b24a00cff4754",
+      "bytes": 2426
+    },
+    {
+      "path": "Erdos1135/Tao/Section5/AffineSourceLaw.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section5/AffineSourceLaw.lean",
+      "sha256": "190749f5c065d78af3ccefefdb89406fc4342178e517fae72273fa87309397db",
+      "bytes": 4199
+    },
+    {
+      "path": "Erdos1135/Tao/Section5/EndpointRatio.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section5/EndpointRatio.lean",
+      "sha256": "4b23e840846ee978c74a25e573c18a3c071dd34c08a8259eaaa572dfe835aaea",
+      "bytes": 1919
+    },
+    {
+      "path": "Erdos1135/Tao/Section5/FiveStepCompression.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section5/FiveStepCompression.lean",
+      "sha256": "ab160ad0bd21cc19b1dde74c7b7858e3fada32646485ff13c78e0e8cf38b9f09",
+      "bytes": 737
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/AdjacentOneStep.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/AdjacentOneStep.lean",
+      "sha256": "75e6e5a912574111e40e171fa23188484c93eb31ce57bd9253662d14995bb39d",
+      "bytes": 3983
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/AdjacentTelescope.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/AdjacentTelescope.lean",
+      "sha256": "5ff6e84a7de68a44e37193a2846968ce5acbbf539e143415bc08252681cadbdb",
+      "bytes": 1036
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/AmbientOffsetAppend.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/AmbientOffsetAppend.lean",
+      "sha256": "286a16589e3d281abbfae7b60379f19716d72a518439b0ba08b2ed05ffce4f14",
+      "bytes": 6111
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/AmbientTailDFT.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/AmbientTailDFT.lean",
+      "sha256": "2590a5bfa427ffb29508fceaee198c02365f1c6a5bc476939094bb9bc692815d",
+      "bytes": 3967
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/AmbientTailDecay.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/AmbientTailDecay.lean",
+      "sha256": "1b5633db471d3f4f48069ce2d2344767bff79cc5f2a2851d62c3216ef19b8f59",
+      "bytes": 2575
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/ConductorDFT.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/ConductorDFT.lean",
+      "sha256": "7019b4572661f6839e4d146d69fc9132a372a332ac11fe7f1c23f85caa1a758d",
+      "bytes": 4081
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/ConductorFrequency.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/ConductorFrequency.lean",
+      "sha256": "1b519b08811e6668f17fef0118e50066df134e887889364133542f7a07ba5252",
+      "bytes": 8421
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/ConductorIndex.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/ConductorIndex.lean",
+      "sha256": "a3edd4dee58db2110d2dd899bcb8087e29019214fdf096b453a4364970ab213f",
+      "bytes": 1490
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/ConductorProjectivity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/ConductorProjectivity.lean",
+      "sha256": "b48a8ca70bf95139284443812de0fd6471afb73cbbb6e6489d03fa3102c41f9a",
+      "bytes": 5664
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/Cor63HeadPrefix.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/Cor63HeadPrefix.lean",
+      "sha256": "87529b5669940c361dd203355d36928a318b30ef4f0dde81128dc7a200d9a61c",
+      "bytes": 2893
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/Corollary63.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/Corollary63.lean",
+      "sha256": "5680fa2f25e365dbf15c64095c1bc37a7ab1978e1d0447afdf5c4b7e03c11605",
+      "bytes": 46153
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/EventAggregation.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/EventAggregation.lean",
+      "sha256": "1f26446758a7ee342249c9368be4b4fd342d6c471c2ff707b782b123d2639824",
+      "bytes": 2482
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FiberAverageDFT.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FiberAverageDFT.lean",
+      "sha256": "3515793d0a692b2cd71df3839c568e084d4521e276748252c6c3e5d11216a8b9",
+      "bytes": 11807
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FiniteFourierCollision.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FiniteFourierCollision.lean",
+      "sha256": "cb7050cebcabdd34685657e35cb13aabf29490251e3da4d8b5a101e9f717f44d",
+      "bytes": 7856
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FiniteFourierConvolution.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FiniteFourierConvolution.lean",
+      "sha256": "71bb8044ff51de06c41dd17c884357fd6fb9f77e0d83be7418af39d44fea1eea",
+      "bytes": 3335
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FiniteFourierParseval.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FiniteFourierParseval.lean",
+      "sha256": "53a7a390a0a0bf72f4cddc9d5875f22bd449941f6e99e533b94a2ff90da48865",
+      "bytes": 3275
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FirstCrossingPartition.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FirstCrossingPartition.lean",
+      "sha256": "b29925604d0b0566c233c1e71f0b72f45c851750107949a30bdaccb066187370",
+      "bytes": 8531
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FixedAmbientSlice.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FixedAmbientSlice.lean",
+      "sha256": "cb2cb6f6f29e73b029f6b3955fb50e97e970f811d241933a1d6764d862bfafd1",
+      "bytes": 1981
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/FixedSliceCollision.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/FixedSliceCollision.lean",
+      "sha256": "0824e545469d9a21105dc0c39d83fa0f5231c988fdb2e9c875bffa48b30230ed",
+      "bytes": 2612
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/GatePartition.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/GatePartition.lean",
+      "sha256": "4698aaed8b5eb4ebeca2a02cbc88a726776463cbde6a04a9cc241881b4b41a44",
+      "bytes": 4117
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/GatedSourceConvolution.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/GatedSourceConvolution.lean",
+      "sha256": "90b31b6a8d7c9a44e22a53c11f557dafb94bd7f2a4e2430a0dc01081a8b2b21b",
+      "bytes": 8355
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/Geom2IntervalConcentration.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/Geom2IntervalConcentration.lean",
+      "sha256": "179c25b726d5e7b30988277c59f94211c4d5a2c95a38d53af0c78bd3388e66f9",
+      "bytes": 14779
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/GlobalOscillationBound.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/GlobalOscillationBound.lean",
+      "sha256": "3a733c9a31d55d6f7a50ea02a7035757e629011c9b20083cd60e0dc213c262cb",
+      "bytes": 958
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/GlobalTypicalEvent.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/GlobalTypicalEvent.lean",
+      "sha256": "873429ab50db512713b81332f879c1824c37b160043bdcccd23c528e8eb83d03",
+      "bytes": 1966
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HeadEntropyScalar.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HeadEntropyScalar.lean",
+      "sha256": "0823b417778f317464a14ea4d476e232559f89ff1a95d973f7e2ebb15c6a6181",
+      "bytes": 3781
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HeadGate.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HeadGate.lean",
+      "sha256": "c9ceb0007df72ce3099db1fd88cd09845c631a521139d913a169daec01626b6f",
+      "bytes": 1291
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HeadGateIndex.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HeadGateIndex.lean",
+      "sha256": "136e6c2f9b589db72d56f7d61eaeee5363eeb492c8412cfe563b772d30de3c57",
+      "bytes": 3759
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HeadGateLocalization.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HeadGateLocalization.lean",
+      "sha256": "a131fac6248d9013249a49db55f3a481bb9dea343659b4d787feb47bd2d942da",
+      "bytes": 3115
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HeadSubmass.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HeadSubmass.lean",
+      "sha256": "5f2eac7e38f9e8307a771186391637fd4439b16950a92c5bf55ebdd1fb7a1a9a",
+      "bytes": 1514
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HighRegimeAllScale.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HighRegimeAllScale.lean",
+      "sha256": "b6cfbe1b5c60b27038b9334c7297d5191c89230e7dd9941c3c09cf3409160e7d",
+      "bytes": 1245
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/HighRegimeMixing.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/HighRegimeMixing.lean",
+      "sha256": "9832a46a10842e915007e9bc9dde0ed835ed4043692b6f0a0385d66a216a3555",
+      "bytes": 1543
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/InversePowerTail.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/InversePowerTail.lean",
+      "sha256": "d40b77993e64fe450ab7fbfda9ed48a95e0e7bbe4b68bbe3307cb887650016bc",
+      "bytes": 2623
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/ModulusProjection.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/ModulusProjection.lean",
+      "sha256": "077c5e892f6b1951e0c2ead2c7242c92754c7604cd91d9e33b92231cf965242f",
+      "bytes": 5545
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/OptionHeadTailConvolution.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/OptionHeadTailConvolution.lean",
+      "sha256": "b7489eea3fe859f91ade7140fef6f7daae8362d45a6b8cd105509ef180cfd606",
+      "bytes": 2491
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/Prop114Assembly.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/Prop114Assembly.lean",
+      "sha256": "212dce2366f7ccf61c8a82a9bde3071be96f46ba88ce88fb17158107084ba581",
+      "bytes": 1351
+    },
+    {
+      "path": "Erdos1135/Tao/Section6/UniformLift.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Section6/UniformLift.lean",
+      "sha256": "be8ed0ff90a6593a141ddb007b8f76be4242226992d6d619af669bf1e356f3c6",
+      "bytes": 7255
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/Affine.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/Affine.lean",
+      "sha256": "68061e01d8a6f70febf74ee54151c2ee4a228aab0dd9a9ca70867ea24cf5de78",
+      "bytes": 2073
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/AffineEnvelope.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/AffineEnvelope.lean",
+      "sha256": "c3cc89a5a8a6aebcdd3a9ed8b26919ac9cd50a1af5db728ae6aac941a1c08d56",
+      "bytes": 1254
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/AffineOdd.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/AffineOdd.lean",
+      "sha256": "cc154a6fc33428bd06214e0273d4843014fc17a051acb35a39388d07aa1ce883",
+      "bytes": 5228
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/AffineResidue.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/AffineResidue.lean",
+      "sha256": "3d3c0c3be1aecaaa471ee8dd9f798388aedb70d7cf74b11d693e94188b1b63c7",
+      "bytes": 6659
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/AffineReverse.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/AffineReverse.lean",
+      "sha256": "7473b477d3abe839976949fba70b5274111a4500301d7ceae46959afa163200d",
+      "bytes": 4145
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/AffineTrajectory.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/AffineTrajectory.lean",
+      "sha256": "4174756974ab0ae254e0e528c69410360dd28f5fc7b8c5ddb22bb6b3fa617153",
+      "bytes": 1049
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/Basic.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/Basic.lean",
+      "sha256": "1e352d2ab64ba74bfb6604a9260bf8d00f65de9a7e6107105daf75f7df4319f2",
+      "bytes": 1345
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/CollatzBridge.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/CollatzBridge.lean",
+      "sha256": "14ec13769614971e20c75ee51599f767ffaeea37476d37a30db2a0f0d4acd5f7",
+      "bytes": 1165
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/Defs.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/Defs.lean",
+      "sha256": "b375da400df822eacd367816678bbc6811a60c10ef1081e963ba82faca4945c7",
+      "bytes": 145
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/FirstPassageInterval.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/FirstPassageInterval.lean",
+      "sha256": "42ac107b322e44322eeee43dd3f48492e177e2b90e5a306f33b5177f9b21ffde",
+      "bytes": 1112
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/LogTimeCollatzBridge.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/LogTimeCollatzBridge.lean",
+      "sha256": "fa8f65fadeacff3f8269e962225e89944e9eb7728084a3f74ebe48e88fe76ea0",
+      "bytes": 1024
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/OddSource.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/OddSource.lean",
+      "sha256": "c0a3592adc32b5ad549c634fdccb5112411f794fe52df0599fe580579945d2cd",
+      "bytes": 146
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/OffsetInjectivity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/OffsetInjectivity.lean",
+      "sha256": "7b8be160bbd9d53ae47aeb7ff4185451d8db59622f4572769f973c02d6f6fd41",
+      "bytes": 6929
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/ParityBridge.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/ParityBridge.lean",
+      "sha256": "f7ac14bb1bbf6578a4aa8cff88caee487d35a47520585fefe7e9ded3a3c43ef9",
+      "bytes": 470
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/Syrac.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/Syrac.lean",
+      "sha256": "b3d0f5dad18962a8964ccc8001d74519659bf4da830d24e17f7b756af0ba92a3",
+      "bytes": 12401
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/TruncatedValuationPacking.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/TruncatedValuationPacking.lean",
+      "sha256": "fe8879fa1efc1d2c48415904574dc9aeb0b2191dc97b9a16704a24c4ad67db54",
+      "bytes": 3018
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/TruncatedValuationTV.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/TruncatedValuationTV.lean",
+      "sha256": "4347a84edb481c857cf8ecde6e0f63e1c18bc5b03a39f8bffb6014f1ab0ea816",
+      "bytes": 627
+    },
+    {
+      "path": "Erdos1135/Tao/Syracuse/ValuationDistribution.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Tao/Syracuse/ValuationDistribution.lean",
+      "sha256": "0ac046c2b9129c141d70c1ceb5cc5948996d3ffcfd1802fa1daf0f892794491e",
+      "bytes": 4452
+    },
+    {
+      "path": "Erdos1135/Terras/Core/Defs.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Terras/Core/Defs.lean",
+      "sha256": "3873e6919732d9de23477ac5fded933090c9cd8ddbf35df8edbc2efa94167fe3",
+      "bytes": 279
+    },
+    {
+      "path": "Erdos1135/Terras/Density/NaturalDensity.lean",
+      "archive": "baseline",
+      "member": "Erdos1135/Terras/Density/NaturalDensity.lean",
+      "sha256": "4957bde0cae31af168173298f7089af4f2a533464c1e50c315f66ccf2920c21e",
+      "bytes": 1262
+    },
+    {
+      "path": "FormalConjectures/Wikipedia/CollatzConjecture.lean",
+      "archive": "baseline",
+      "member": "FormalConjectures/Wikipedia/CollatzConjecture.lean",
+      "sha256": "12eebf530f2ceae6d458c8eaf681d67c2d4757dd7a9bc67e86677bea62691d5a",
+      "bytes": 779
+    },
+    {
+      "path": "Verification/ReleaseAudit.lean",
+      "archive": "companion",
+      "member": "Verification/ReleaseAudit.lean",
+      "sha256": "30a8906e927f914f427c8062c2423bf9bb4d0de4108db90266a398ba6ad34c12",
+      "bytes": 3030
+    },
+    {
+      "path": "lakefile.toml",
+      "archive": "companion",
+      "member": "lakefile.toml",
+      "sha256": "5be40cf42e668b9b03061511044275677e149ecf1512c452427a419672d4a0d0",
+      "bytes": 455
+    },
+    {
+      "path": "lake-manifest.json",
+      "archive": "companion",
+      "member": "lake-manifest.json",
+      "sha256": "eed092212aab4dfd809f3278d01beae5e8ac83a3ae72c43b5a4cecf4b4bba663",
+      "bytes": 3599
+    },
+    {
+      "path": "lean-toolchain",
+      "archive": "companion",
+      "member": "lean-toolchain",
+      "sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+      "bytes": 29
+    },
+    {
+      "path": "BASELINE_LICENSE",
+      "archive": "baseline",
+      "member": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357
+    },
+    {
+      "path": "BASELINE_NOTICE",
+      "archive": "baseline",
+      "member": "NOTICE",
+      "sha256": "a42c24fb15a8cde899a4b76a0ca3f9ace85b1e085dfd48eebc57baedba647319",
+      "bytes": 1481
+    },
+    {
+      "path": "RIGHTS.md",
+      "archive": "companion",
+      "member": "RIGHTS.md",
+      "sha256": "de0f6376a786b7e21d12c830814842cf68e4591b120bcc82239111425afb4e14",
+      "bytes": 943
+    },
+    {
+      "path": "license.json",
+      "archive": "companion",
+      "member": "license.json",
+      "sha256": "cb10aeec21a61d44414f089024fa9cd1752dfb6e45579d722ef9143314ea303b",
+      "bytes": 603
+    },
+    {
+      "path": "LICENSE",
+      "archive": "companion",
+      "member": "LICENSE",
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "bytes": 11357
+    },
+    {
+      "path": "NOTICE",
+      "archive": "companion",
+      "member": "NOTICE",
+      "sha256": "df7ac28e54e3eca1c35a456262f7cc82f4ab2c5e7352b1a1586d54fbb1105f6e",
+      "bytes": 818
+    },
+    {
+      "path": "scripts/replay.py",
+      "archive": "companion",
+      "member": "scripts/replay.py",
+      "sha256": "9f5185a04695f8ded302135de953818b7863c4714c501257733c086ae08937dd",
+      "bytes": 12544
+    },
+    {
+      "path": "scripts/verify-assembly.py",
+      "archive": "companion",
+      "member": "scripts/verify-assembly.py",
+      "sha256": "4efa22f44934b82309cf8f1459b8ef1bf4e62017032847c7b8f294f9398436bb",
+      "bytes": 985
+    },
+    {
+      "path": "scripts/reproduce.sh",
+      "archive": "companion",
+      "member": "scripts/reproduce.sh",
+      "sha256": "3060653fece9a5e3cc4f3185ee5905b882ab0301bcd0bb10538e3564482b5fee",
+      "bytes": 739
+    },
+    {
+      "path": "scripts/serial-lake.py",
+      "archive": "companion",
+      "member": "scripts/serial-lake.py",
+      "sha256": "1324cb46cde1abcccc081bc5d1ba1ace63a79b9ad7ef4996e459da93af5a34dd",
+      "bytes": 1780
+    },
+    {
+      "path": "scripts/lake-bounded.sh",
+      "archive": "companion",
+      "member": "scripts/lake-bounded.sh",
+      "sha256": "cab62e64db062ceb7947ec78e5a29fe64148fe6aa5d779bf79dc74a57eaba493",
+      "bytes": 476
+    },
+    {
+      "path": "scripts/lean-one-worker.sh",
+      "archive": "companion",
+      "member": "scripts/lean-one-worker.sh",
+      "sha256": "6d2ad8fa63263a475a0d6e4ad53b06b6ec049eaa49f0af3db2c6479217401bff",
+      "bytes": 205
+    }
+  ],
+  "verifier_sha256": "e1cfa88de1ac70dd3816d715e6a9d02aa558aa3707e348a73821271a51dddf26",
+  "lean_replay_performed_by_this_script": false,
+  "collatz_status": "unresolved"
+}

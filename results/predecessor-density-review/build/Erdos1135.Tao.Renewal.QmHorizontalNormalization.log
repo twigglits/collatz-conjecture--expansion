@@ -1,0 +1,7 @@
+Erdos1135/Tao/Renewal/QmHorizontalNormalization.lean:97:6: warning: 'change
+  ((m : ℝ) ^ A)⁻¹ * taoSection7Case3Outer754HorizontalScalar A m (Jtot omega) *
+      taoSection7SourceActualQmAtCutoff n A (m - 1) xi epsilon =
+    ((m : ℝ) ^ A)⁻¹ * taoSection7SourceActualQmAtCutoff n A (m - 1) xi epsilon *
+      taoSection7Case3Outer754HorizontalScalar A m (Jtot omega)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

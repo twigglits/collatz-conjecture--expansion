@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-10-12T14:41:01.565228+00:00",
+  "status": "passed_parser_regression_checks",
+  "valid_cases": [
+    "actual_multiline_Lean_output",
+    "normalized_single_line_output"
+  ],
+  "rejected_cases": [
+    "sorry_axiom",
+    "native_reduction_axiom",
+    "extra_custom_axiom",
+    "missing_public_root",
+    "duplicated_public_root",
+    "wrong_public_name",
+    "missing_standard_axiom"
+  ],
+  "verifier_sha256": "0359ff5a2f5aa4882e32f964160b775619b9211c67116ef80d303529f31376ad",
+  "audit_log_sha256": "943c598e4bf3d55f6ce45ce4a01c75249d2b76ff488e54df0b91992773a798a7",
+  "initial_post_build_failure": {
+    "all_389_Lean_compilations_passed": true,
+    "verifier_exit_code": 1,
+    "reason": "The original parser read only the first line of each wrapped axiom list.",
+    "verifier_sha256": "1ddafcea8dfa7e16ca866b9d784cb8136841190680c1ad81452e9091434884bb",
+    "progress_sha256": "c4adf5f451483086cae1f47f606bd8babec362de87e1d5447a3b2b35d2d49a49"
+  },
+  "lean_modules_recompiled_by_these_tests": 0
+}

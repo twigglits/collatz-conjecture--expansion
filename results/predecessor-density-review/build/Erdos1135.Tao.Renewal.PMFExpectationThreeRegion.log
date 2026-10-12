@@ -1,0 +1,9 @@
+Erdos1135/Tao/Renewal/PMFExpectationThreeRegion.lean:90:5: warning: unused variable `hbadCap0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Erdos1135/Tao/Renewal/PMFExpectationThreeRegion.lean:90:29: warning: unused variable `hlowCap0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Erdos1135/Tao/Renewal/PMFExpectationThreeRegion.lean:91:5: warning: unused variable `hgoodCap0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

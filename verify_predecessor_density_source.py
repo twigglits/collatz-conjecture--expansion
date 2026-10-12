@@ -1,6 +1,7 @@
 """Independently rebuild the pinned external predecessor-density proof.
 
 Usage: python3 verify_predecessor_density_source.py /tmp/.../assembled
+       python3 verify_predecessor_density_source.py /tmp/.../assembled --resume
 The assembled directory must come from the authenticated public supplement
 and baseline, and its pinned Mathlib cache must already be available.
 
@@ -8,12 +9,14 @@ All project modules are compiled sequentially from source. Official third-party
 compiled dependencies are reused. This does not prove density-one convergence
 or the Collatz conjecture.
 """
+import argparse
+import fcntl
 import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
-import sys
 import time
 from datetime import datetime, timezone
 
@@ -34,6 +37,63 @@ def sha(path):
 
 def capture(command, cwd):
     return subprocess.check_output(command, cwd=cwd, text=True).strip()
+
+
+def write_json(path, value):
+    temporary = path.with_suffix(path.suffix + '.tmp')
+    temporary.write_text(json.dumps(value, indent=2) + '\n')
+    temporary.replace(path)
+
+
+def bad_log(text):
+    return any(marker in text for marker in
+               ('sorryAx', 'ofReduceBool', "declaration uses 'sorry'"))
+
+
+def public_axiom_lines(audit):
+    # Lean's pretty printer can wrap the list after any axiom name.
+    blocks = re.findall(r"'([^']+)' depends on axioms:\s*\[([^\]]*)\]", audit)
+    assert len(blocks) == len(PUBLIC), blocks
+    lines = []
+    for name in PUBLIC:
+        matches = [body for declaration, body in blocks if declaration == name]
+        assert len(matches) == 1, (name, matches)
+        actual = {axiom.strip() for axiom in matches[0].split(',')}
+        assert actual == {'propext', 'Classical.choice', 'Quot.sound'}, (name, actual)
+        lines.append(f"'{name}' depends on axioms: [" + ', '.join(sorted(actual)) + ']')
+    return lines
+
+
+def build_command(compiler, output, source_path):
+    return [str(compiler), '-DautoImplicit=false', '-DrelaxedAutoImplicit=false',
+            '-Dpp.unicode.fun=true', '-o', str(output), source_path]
+
+
+def validate_resume(progress, assembled, assembly_path, version, dependencies,
+                    ordered, modules, build, compiler, logs):
+    assert progress['status'] == 'running', 'Resume requires an interrupted running replay.'
+    assert progress['assembled'] == str(assembled)
+    assert progress['assembly_sha256'] == sha(assembly_path)
+    assert progress['lean_version'] == version
+    assert progress['external_dependencies'] == dependencies
+    assert progress['modules_total'] == len(ordered)
+    rows = progress['builds']
+    assert [row['module'] for row in rows] == ordered[:len(rows)]
+    expected_objects = set()
+    for row in rows:
+        module = row['module']
+        source = modules[module]
+        output = build / (module.replace('.', '/') + '.olean')
+        log = logs / (module + '.log')
+        assert row['returncode'] == 0 and not bad_log(log.read_text()), module
+        assert row['source_sha256'] == source['sha256'], module
+        assert row['command'] == build_command(compiler, output, source['path']), module
+        assert row['log'] == str(log.relative_to(ROOT)), module
+        assert not log.is_symlink() and sha(log) == row['log_sha256'], module
+        assert not output.is_symlink() and sha(output) == row['olean_sha256'], module
+        expected_objects.add(output)
+    assert set(build.rglob('*.olean')) == expected_objects, 'Unrecorded project objects present.'
+    return rows
 
 
 def validate_sources(assembled, assembly):
@@ -69,13 +129,20 @@ def order_modules(modules):
 
 
 def main():
-    assert len(sys.argv) == 2, __doc__
-    assembled = Path(sys.argv[1]).resolve()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('assembled', type=Path)
+    parser.add_argument('--resume', action='store_true',
+                        help='validate and reuse the recorded successful source-build prefix')
+    args = parser.parse_args()
+    assembled = args.assembled.resolve()
     assembly_path = assembled / 'assembly.json'
     assembly = json.loads(assembly_path.read_text())
     modules = validate_sources(assembled, assembly)
     ordered = order_modules(modules)
     OUT.mkdir(parents=True, exist_ok=True)
+    # The operating system releases this lock even if the verifier is interrupted.
+    replay_lock = (assembled / '.source-replay.lock').open('a')
+    fcntl.flock(replay_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     logs = OUT / 'build'
     logs.mkdir(exist_ok=True)
     version = capture(['lean', '--version'], assembled)
@@ -94,34 +161,53 @@ def main():
     prefix = Path(capture(['lean', '--print-prefix'], assembled))
     compiler = prefix / 'bin/lean'
     build = assembled / '.lake/build/lib/lean'
-    # No imported author-supplied project objects may stand in for this replay.
-    assert not list(build.rglob('*.olean')), 'Choose a fresh assembled project for a fresh replay.'
     env = dict(os.environ, LEAN_PATH=lean_path, LEAN_NUM_THREADS='1',
                LEAN_STACK_SIZE_KB='65536')
-    rows = []
     started = datetime.now(timezone.utc).isoformat()
-    progress = {'status': 'running', 'started_at_utc': started, 'assembled': str(assembled),
-                'assembly_sha256': sha(assembly_path), 'lean_version': version,
-                'modules_total': len(ordered), 'builds': rows,
-                'external_dependencies': dependencies, 'collatz_status': 'unresolved'}
-    (OUT / 'progress.json').write_text(json.dumps(progress, indent=2) + '\n')
-    print(f'Fresh serial replay: {len(ordered)} project modules, {version}', flush=True)
-    for index, module in enumerate(ordered, 1):
+    progress_path = OUT / 'progress.json'
+    if args.resume:
+        previous_progress_hash = sha(progress_path)
+        progress = json.loads(progress_path.read_text())
+        rows = validate_resume(progress, assembled, assembly_path, version, dependencies,
+                               ordered, modules, build, compiler, logs)
+        if 'lake_manifest_sha256' in progress:
+            assert progress['lake_manifest_sha256'] == lock_hash
+        progress.setdefault('resume_sessions', []).append({
+            'started_at_utc': started, 'validated_prior_modules': len(rows),
+            'previous_progress_sha256': previous_progress_hash,
+            'verifier_sha256': sha(Path(__file__))})
+    else:
+        # No imported author-supplied project objects may stand in for this replay.
+        assert not list(build.rglob('*.olean')), 'Choose a fresh assembled project or use --resume.'
+        rows = []
+        progress = {'status': 'running', 'started_at_utc': started, 'assembled': str(assembled),
+                    'assembly_sha256': sha(assembly_path), 'lean_version': version,
+                    'modules_total': len(ordered), 'builds': rows,
+                    'external_dependencies': dependencies, 'collatz_status': 'unresolved'}
+    previous_count = len(rows)
+    progress['lake_manifest_sha256'] = lock_hash
+    progress['runner_pid'] = os.getpid()
+    progress['verifier_sha256'] = sha(Path(__file__))
+    write_json(progress_path, progress)
+    print(f'Serial replay: {previous_count} validated prior modules, '
+          f'{len(ordered) - previous_count} remaining, {version}', flush=True)
+    for index, module in enumerate(ordered[previous_count:], previous_count + 1):
         row = modules[module]
         source = assembled / row['path']
         assert sha(source) == row['sha256']
         output = build / (module.replace('.', '/') + '.olean')
         output.parent.mkdir(parents=True, exist_ok=True)
         log = logs / (module + '.log')
-        command = [str(compiler), '-DautoImplicit=false', '-DrelaxedAutoImplicit=false',
-                   '-Dpp.unicode.fun=true', '-o', str(output), row['path']]
+        command = build_command(compiler, output, row['path'])
+        progress['current_module'] = module
+        write_json(progress_path, progress)
         before = time.monotonic()
         with log.open('w') as stream:
             result = subprocess.run(command, cwd=assembled, env=env,
                                     stdout=stream, stderr=subprocess.STDOUT)
         elapsed = time.monotonic() - before
         log_text = log.read_text()
-        bad = any(marker in log_text for marker in ('sorryAx', 'ofReduceBool', 'declaration uses \'sorry\''))
+        bad = bad_log(log_text)
         entry = {'module': module, 'source_sha256': row['sha256'], 'command': command,
                  'returncode': result.returncode, 'elapsed_seconds': round(elapsed, 3),
                  'log': str(log.relative_to(ROOT)), 'log_sha256': sha(log),
@@ -129,29 +215,27 @@ def main():
         rows.append(entry)
         if result.returncode != 0 or bad:
             progress['status'] = 'failed'
-        (OUT / 'progress.json').write_text(json.dumps(progress, indent=2) + '\n')
+        write_json(progress_path, progress)
         print(f'[{index}/{len(ordered)}] {module}: exit {result.returncode}, {elapsed:.1f}s', flush=True)
         assert result.returncode == 0 and not bad, log_text
     validate_sources(assembled, assembly)
     assert sha(lock_path) == lock_hash
     audit = (logs / 'Verification.ReleaseAudit.log').read_text()
-    axiom_lines = [line for line in audit.splitlines() if 'depends on axioms:' in line]
-    assert len(axiom_lines) == 3, axiom_lines
-    for name in PUBLIC:
-        lines = [line for line in axiom_lines if name in line]
-        assert len(lines) == 1
-        actual = set(lines[0].split('[', 1)[1].split(']', 1)[0].replace(' ', '').split(','))
-        assert actual == {'propext', 'Classical.choice', 'Quot.sound'}, lines
+    axiom_lines = public_axiom_lines(audit)
     progress['status'] = 'passed'
     progress['finished_at_utc'] = datetime.now(timezone.utc).isoformat()
     progress['axiom_lines'] = axiom_lines
     progress['fresh_project_modules'] = 388
     progress['fresh_audit_modules'] = 1
+    progress['final_session_compiled_modules'] = len(rows) - previous_count
+    progress['source_replay_includes_verified_prior_sessions'] = bool(previous_count)
     progress['full_third_party_source_rebuild'] = False
     progress['independent_leanchecker_used'] = False
     progress['density_one_convergence_proved'] = False
-    (OUT / 'progress.json').write_text(json.dumps(progress, indent=2) + '\n')
-    (OUT / 'verification.json').write_text(json.dumps(progress, indent=2) + '\n')
+    progress.pop('current_module', None)
+    progress.pop('runner_pid', None)
+    write_json(progress_path, progress)
+    write_json(OUT / 'verification.json', progress)
     print('All project sources and public roots passed; the density-one premise remains unproved.', flush=True)
 
 

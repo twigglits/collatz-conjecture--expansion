@@ -1,0 +1,27 @@
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:63:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:63:58: warning: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:63:58: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:69:39: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:153:8: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:153:62: warning: 'norm_num' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Erdos1135/Tao/Renewal/Lemma79R2EndpointContraction.lean:153:62: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

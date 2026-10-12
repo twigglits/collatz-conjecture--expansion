@@ -1,0 +1,242 @@
+{
+  "verified_at_utc": "2026-10-12T13:30:01.176521+00:00",
+  "conjecture_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "source_sha256": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/FirstPassagePacking.log",
+      "log_sha256": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+      "olean_sha256": "31480253b60dcea76cc2f9ab095b2e46f073e6c131b82929f3a1bb1df7ff1594",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "source_sha256": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/FinitePathPacking.log",
+      "log_sha256": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+      "olean_sha256": "294da06788658ebb49e17e02151a83be3eae6efeda04c6019fb8e5b24379c4f1",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "source_sha256": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/EqualWeightFibres.log",
+      "log_sha256": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+      "olean_sha256": "3bb02f6b0c9268e6ee29afa12c504e34c1294f4352c82ae70f7c03f0ff676b4d",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "CollatzGrowth.lean",
+      "source_sha256": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/CollatzGrowth.olean",
+        "CollatzGrowth.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/CollatzGrowth.log",
+      "log_sha256": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498",
+      "olean_sha256": "25f77fc161c5c67e387d79b5f3115dbdc27772e4d8268c76eb7ea3f0ca03808d",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/WeightedSurvivors.lean",
+      "source_sha256": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/WeightedSurvivors.olean",
+        "lean/WeightedSurvivors.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/WeightedSurvivors.log",
+      "log_sha256": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b",
+      "olean_sha256": "da804024be3b92ef86efdb1c8ceb061071244deba17ac7b166466a268468e018",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/WeightedBasinBarrier.lean",
+      "source_sha256": "a093497c7444de44871fd5b618db0a7340fc7c8cab6d88e49a625230de5eacde",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/WeightedBasinBarrier.olean",
+        "lean/WeightedBasinBarrier.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/WeightedBasinBarrier.log",
+      "log_sha256": "abfb036442fa6abd24e2346addacc06b0aec440a22487d1a50e027ea0351a78a",
+      "olean_sha256": "abc1c0e0a0aafa72abb6adc5e0a29dc7b94a02d5e872c723345303e5d9ac6834",
+      "reused_verified_build": true,
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/KilledOperatorBounds.lean",
+      "source_sha256": "372b34e6c1836176a3b60628ab77850f1869c49f544e34669208c31e605ac0e0",
+      "command": [
+        "lean",
+        "-o",
+        "/private/tmp/collatz-killed-operator-build/KilledOperatorBounds.olean",
+        "lean/KilledOperatorBounds.lean"
+      ],
+      "returncode": 0,
+      "log": "results/killed-operator-bounds/KilledOperatorBounds.log",
+      "log_sha256": "d8698e19ab9d80859a33a0e4d2c3d19e40cab9a0a9f7e98c02f9d7365c288f1e",
+      "olean_sha256": "1c55526f976fc934d1afe0c183a63d2da819fb06d917cd1b15ca31c5721c68a7",
+      "reused_verified_build": false,
+      "native_computation_used": false
+    }
+  ],
+  "reused_verification": [
+    {
+      "manifest": "results/equal-weight-fibres/verification.json",
+      "matched_hashes": 13
+    },
+    {
+      "manifest": "results/weighted-basin-barrier/verification.json",
+      "matched_hashes": 12
+    },
+    {
+      "manifest": "results/fibre-prefix-bound/verification.json",
+      "matched_hashes": 14
+    },
+    {
+      "manifest": "results/exit-certificate-budget/verification.json",
+      "matched_hashes": 7
+    }
+  ],
+  "kernel_scope": [
+    "uniform additive error converting affine coefficients to source sizes",
+    "actual source comparison above the high-target threshold",
+    "inverse sources escape every fixed bound when the target does",
+    "arbitrarily large killed all-odd column witnesses at every depth",
+    "convergent power-target column witnesses for every K>=7",
+    "cubic ratio and integer constants for the written analysis"
+  ],
+  "written_scope": [
+    "exact killed composition operator norm as supremum of weighted columns",
+    "two-sided all-depth norm bounds with exponential rate (3/2)^s for s>1",
+    "constant 5 at floor64 and exponent3/2",
+    "essential norm equals the maximum finite target-residue coefficient moment",
+    "spectral radius and essential spectral radius both equal (3/2)^s",
+    "positive summable observable with pointwise eventual zero and diverging norms"
+  ],
+  "python_scope": [
+    "canonical sources and large affine lifts with source comparisons",
+    "complete killed inverse fibres reconstructed independently in two ways",
+    "directed square-root enclosures for actual weighted columns",
+    "large-target coefficient comparison at specified residues and quotients",
+    "all-odd witnesses and explicit convergent power-target witnesses"
+  ],
+  "not_proved": [
+    "spectral or infinite-sum theorems in Lean",
+    "contraction of the specific scalar survivor masses at new horizons",
+    "decay of K^k applied to the constant function",
+    "a survivor-conditioned renewal or mixing estimate",
+    "the full Collatz conjecture or a positive-integer counterexample"
+  ],
+  "external_collatz_proof_inputs": [],
+  "standard_analysis_used_in_written_proof": [
+    "summability and integral bounds for positive power tails",
+    "compactness of images of bounded sequences",
+    "spectral radius formula in a Banach algebra and its Calkin quotient"
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzGrowth.lean": "75a1b24235cf70d73ffd7577eeb71fd3bd6631f291025f48d14da96b3e61559e",
+    "lean/WeightedSurvivors.lean": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+    "lean/WeightedBasinBarrier.lean": "a093497c7444de44871fd5b618db0a7340fc7c8cab6d88e49a625230de5eacde",
+    "lean/KilledOperatorBounds.lean": "372b34e6c1836176a3b60628ab77850f1869c49f544e34669208c31e605ac0e0",
+    "docs/KILLED-OPERATOR-BOUNDS.md": "03c72c820aaf4f10ffc63d09568e4bce5413fb6e68e171d49d86ea6c2ff9d91f",
+    "verify_killed_operator_bounds.py": "06ff126f02eb1432b7041ef51473ed2dcffe57e89cd7019209abe769720c05dc",
+    "results/killed-operator-bounds/replay.json": "d495f8a8b5f555940e05a07176cc896c0c5135a6889d7b978b0037b9330dc31c",
+    "results/killed-operator-bounds/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/killed-operator-bounds/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/killed-operator-bounds/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/killed-operator-bounds/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+    "results/killed-operator-bounds/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/killed-operator-bounds/CollatzGrowth.log": "233822fdaeb90999adcabc2f9a813f075d0189b1deb8ed4870753350dae8e498",
+    "results/killed-operator-bounds/WeightedSurvivors.log": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b",
+    "results/killed-operator-bounds/WeightedBasinBarrier.log": "abfb036442fa6abd24e2346addacc06b0aec440a22487d1a50e027ea0351a78a",
+    "results/killed-operator-bounds/KilledOperatorBounds.log": "d8698e19ab9d80859a33a0e4d2c3d19e40cab9a0a9f7e98c02f9d7365c288f1e",
+    "results/equal-weight-fibres/verification.json": "31a91f92b75f5d0d1a4725261ede33a9cfea952f7276896782552edc6cddd11f",
+    "results/weighted-basin-barrier/verification.json": "28cd44bd213c8bf04f8d164beb0352f1367f13d22df1d462947e01cffe7274cd",
+    "results/fibre-prefix-bound/verification.json": "368a54717bce5780dbe1835da316f583f74d753b1b13fec1628af96f26cb7c30",
+    "results/exit-certificate-budget/verification.json": "ec7a4cf4c801a2d9498baa1e0c785288da50422cad2ccfaf9e0963472ad8e3c2"
+  },
+  "documentation_corrections": [
+    {
+      "corrected_at_utc": "2026-10-12T13:50:08.506644+00:00",
+      "path": "docs/KILLED-OPERATOR-BOUNDS.md",
+      "previous_sha256": "f1c596392b910e597abd389de4e1a6ad86212d40d1465b51429de2c269d29fed",
+      "current_sha256": "03c72c820aaf4f10ffc63d09568e4bce5413fb6e68e171d49d86ea6c2ff9d91f",
+      "change": "Removed stray commas in two exponents in the introduction; no mathematical or executable-source change.",
+      "verification_reused": true
+    }
+  ]
+}

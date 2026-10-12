@@ -1,0 +1,9 @@
+Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Parameters.lean:85:77: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Parameters.lean:136:81: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Erdos1135/ND/PositiveDensity/ExplicitCanonicalCase3Parameters.lean:162:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`

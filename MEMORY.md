@@ -1,11 +1,16 @@
 # Collatz project memory
 
-Last updated: 2026-10-09, after cutoff and precision budgets for exit-mass certificates.
+Last updated: 2026-10-12, after completing the external predecessor-density replay and deriving written fixed-target density consequences.
 
 **Current status: active following the user's resumption.** Collatz remains
-unresolved. The latest entry quantifies necessary cutoff and precision
-growth for an infinite exit-certificate extension. The 128 existing
-finite-horizon contractions remain the full certified scope.
+unresolved. The external predecessor-density replay has passed all 389
+modules and all three public theorem audits, with standard axioms only.
+There is no live replay to resume. Upper natural density one of convergence
+would now suffice; it remains unproved. The new fixed-target density
+deductions are written analysis, not new Lean certificates. The preceding
+operator result still leaves decay of the constant starting function open.
+The 128 existing finite-horizon contractions remain that route's full
+certified scope. See the last entry for provenance and the remaining gaps.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -1838,3 +1843,343 @@ infinite conclusion. A polynomial cutoff alone cannot track even a
 hypothetically exponential mass decrease with this tail enclosure.
 Both nontrivial positive cycles and divergent positive orbits remain
 unresolved. No staging or commits; preserve the user's index.
+
+## 2026-10-12 — Actual source weights and the killed operator spectrum
+
+The preceding goal turn was progress: the cutoff/precision budget and
+its seven manifest hashes were revalidated, along with all 13 equal-weight
+fibre hashes, 14 fibre-prefix hashes and 12 weighted-basin hashes.
+The full Collatz goal remains active and unresolved. No sub-agents were
+used. This turn did not enlarge a source census or certify new mass
+contractions; it addressed the missing conversion from coefficient
+weights to actual source weights.
+
+New files: `docs/KILLED-OPERATOR-BOUNDS.md`,
+`lean/KilledOperatorBounds.lean`, `verify_killed_operator_bounds.py`,
+and `results/killed-operator-bounds/`. README and ATTEMPT link them.
+Earlier sources and verification records were preserved.
+
+KERNEL: for y=U^k(n), j=wt(k,n), the shifted envelope implies
+`2^k*y <= 3^j*n+3^k`. If `2*3^k<=2^k*y`, then
+`2^k*y<=2*3^j*n`. Also `2^k*y<=3^k*(n+1)`, so sources of targets
+tending to infinity at a fixed depth escape every bounded interval.
+These statements apply even to paths that might repeat above a floor;
+there is no unproved distinctness or convergence premise.
+
+KERNEL: for every H,k,B there are x,y>B with a surviving length-k
+path above H and `3^k*x<=2^k*y`. Use x=2^k*q-1,y=3^k*q-1 with
+q=H+B+2. A separate all-index theorem for K>=7 uses
+a=3^(K-1), b=2^a, q=(b+1)/3^K, x=2^K*q-1. The previous divisibility
+theorem makes q a positive integer. The path stays above 64 for K steps,
+reaches b at K, and reaches one at K+a. Thus the norm-growth witnesses
+can all be chosen among provably convergent starts.
+
+WRITTEN: define X_(H,s) by norm sum_(n>H)|f(n)|*n^(-s), s>1, and
+K_H f(n)=1_(U(n)>H) f(U(n)), n>H. This is composition on functions,
+not forward transport of probability masses. Its kth norm is exactly
+sup_(y>H) y^s sum_(U^k(n)=y, tau_H(n)>k) n^(-s).
+For y>=2*(3/2)^k, the kernel comparison converts this to at most
+2^s times the old coefficient moment. For smaller y, the full summable
+source tail bounds it. Consequently
+`(3/2)^(s*k) <= ||K_H^k|| <= C_(H,s)*(3/2)^(s*k)`.
+At H=64, s=3/2 the constant C can be replaced by5, using the kernel
+integer comparisons 8<9 and 25<27. This is an actual-weight norm bound,
+but its exponential rate is greater than one.
+
+WRITTEN: at fixed k, every target residue modulo3^k has a coefficient
+sum Z_k(r) from the canonical residues a modulo2^k. Along that target
+class, actual column masses tend to Z_k(r) as the target tends to
+infinity; every finite killing condition eventually disappears.
+The essential norm is exactly max_r Z_k(r). Finite column truncations
+prove the upper bound. For the lower bound, disjoint image columns
+and a Cauchy subsequence of their images under any compact operator
+give the matching bound. The proof does NOT assume that normalized
+coordinate vectors in l1 are weakly null. The old fibre moment bound
+and the all-odd column give
+`r_ess(K_H)=r(K_H)=(3/2)^s` by the spectral radius formula.
+Thus this space has no gap between spectral and essential spectral
+radius; equivalent norms and compact corrections do not repair that.
+A different stronger space would need separate justification.
+
+WRITTEN explicit example at H64,s3/2: for the power targets b_K above,
+set f(b_K)=(3/4)^K*b_K^(3/2), K>=7, and f=0 elsewhere. Its norm is
+2187/4096, but `||K_64^K f|| >= (243/128)^(K/2)`, tending to infinity.
+For every fixed n, K_64^k f(n) is nevertheless eventually zero: if
+the orbit ever hits the support it reaches a power of two and then
+the floor; otherwise all values are zero. Every contributing source
+converges. The real infinite function and its norm are written; the
+support paths and cubic ratio inequality are kernel checked.
+
+VERIFICATION: nine dependency/final modules passed sequential Lean
+4.33.1 builds in this turn. The final replay reused the first eight
+after matching source/log/olean hashes and freshly built the new
+module, which prints ten theorem dependencies. Only standard logical
+axioms occur; no admitted proof, native reduction axiom or warnings.
+Default reproduction makes all nine builds fresh.
+
+Exact Python checks cover 32767 canonical sources through depth 14,
+98301 large affine lifts, 90939 qualified high-target comparisons,
+and 159056 source-escape implications. At depths 0..12 and floors 1,64,256,
+5211 complete killed fibres (43886 members) agree between inverse
+branching and independent canonical lifting. Actual power3/2 column
+bounds use integer square roots at scale 2^112. There are 144 coefficient
+limit checks in selected complete target classes; 48 large-target
+intervals certify relative discrepancy below 2^(-70). These finite
+checks do not prove the infinite spectral argument.
+
+There are 771 all-odd column witnesses through k=256 and 98688 direct
+steps, plus six convergent power-target witnesses K=7..12. Their first
+four pure-halving suffixes are fully replayed (29160 steps); the last
+two use the exact power-of-two endpoint and the reused kernel power
+hitting identity. The largest source has 177140 bits. All 25 hashes in
+the new manifest match. No external Collatz theorem is a proof input.
+Standard infinite-sum and Banach-algebra facts remain written analysis.
+
+A primary-source renewal paper was inspected at
+https://arxiv.org/html/2606.27488v1 . Its Section 2 hypotheses assume
+the requisite killed induced contraction/renewal bounds; no such
+bound for Collatz was imported. The Gettysburg exceptional-mass guide
+likewise retains a survivor-specific hypothesis. Neither supplies the
+missing estimate for the actual constant-vector orbit.
+
+The old external predecessor-density audit's progress file still says
+running, but an authorized process-list inspection on 2026-10-12 found
+no live Lean/lake or collatz-density audit process. It has 121 recorded
+successful modules out of 389, with no completed theorem audit. Its
+existing progress changes and untracked logs were left intact; it was
+not restarted and no result from it was adopted.
+
+NEXT: focus on the specific bounded functions K_H^k(1), or prove a
+usable regularity condition preserved along that orbit. Global operator
+contraction on X_(H,s) or an equivalent renorming cannot work. Removing
+finitely many target columns does not remove the obstruction. The scalar survivor masses remain nonincreasing
+and may still vanish; the norm-growth theorem neither proves nor
+refutes this. No nontrivial cycle or divergent orbit has been found.
+No staging, commits, or other Git writes were performed.
+
+## 2026-10-12: authenticated predecessor-density source and resumed replay
+
+The universal proof/disproof goal remains active, with no token budget.
+No complete proof or positive counterexample was found. No blocker was
+declared. This entry concerns an external result under verification,
+not an adopted theorem or a completed Collatz proof.
+
+The public Mazur predecessor-density claim and formalization were read:
+https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html
+https://www.proofatlas.ai/formalizations/positive-lower-density-collatz-predecessors/
+The public roots assert positive lower natural density for predecessors
+of each fixed positive target not divisible by three, amplification of
+any positive counterexample to a positive-lower-density nonconvergent
+set, and universal convergence conditional on upper-density-one
+convergence. That last density-one premise is not proved.
+
+Source semantics were inspected directly: the ordinary map is even n/2,
+odd 3n+1; Reaches means existence of an iterate, including zero steps;
+predecessor sets contain positive starts; natCount counts distinct n<X.
+The target-dependent constants need not be uniform. A static scan found
+no custom axioms, sorry/admit, native_decide, unsafe declarations, kernel
+bypass options, or environment mutation. The only run_cmd traverses and
+reports public theorem dependencies in Verification.ReleaseAudit.
+These inspections are not substitutes for the pending kernel replay.
+
+New `verify_predecessor_density_archives.py` authenticated both published
+ZIP hashes and compared all 404 assembled files byte for byte against
+archive members. The Lean sources are 377 baseline modules plus 12
+companion modules (10 support/implementation modules, public interface,
+and release audit). The public interface closure has 388 modules, the
+whole replay 389. Record:
+`results/predecessor-density-review/archive-authentication.json`.
+Baseline `/private/tmp/collatz-positive-density-baseline.zip`:
+914975 bytes, SHA256
+23f5cac4d66e696401144658752cf180a13ce70373a122f00693e1e1fe969c1f.
+Companion `/private/tmp/collatz-predecessor-density-source.zip`:
+55103 bytes, SHA256
+55ceb4df0cca17ae728dc65b30bf5077000e1b47f2dc322454eea9f637ac75b3.
+The separately downloaded `collatz-positive-density-source.zip` is an
+older/differently packaged checked source and is NOT the pinned slim
+baseline archive for this replay; do not substitute it.
+
+The stale replay was confirmed not live with an authorized process-list
+inspection. All 121 existing source/log/olean hashes matched; there
+were exactly 121 project objects and no unrecorded project objects.
+`verify_predecessor_density_source.py` now has `--resume`: it checks
+the exact topological successful prefix, all those hashes, compiler
+commands, toolchain, pinned dependency revisions, and absence of extra
+project objects. It uses atomic progress writes, a per-assembly flock,
+and records each resumed session's prior progress and verifier hashes.
+
+The replay was actually launched, sequentially with one Lean worker,
+at 2026-10-12 13:47:45 UTC. As of the latest poll while writing this
+entry, 133/389 modules had passed; the current module was
+`Erdos1135.Tao.Fourier.Lemma74CanonicalClaimStar`. This number will grow:
+read `results/predecessor-density-review/progress.json` for the current
+state. No compiler failure has occurred in this resumed run so far.
+The runner PID is 65674 and the unified tool session is 93435; prefer
+polling that session, then inspect live processes if it is unavailable.
+Do not launch another replay while this one is running.
+
+Assembled tree: `/private/tmp/collatz-density-audit/assembled`.
+Assembly SHA256:
+9da50833f18f8427523da5cd89ff4a0dbf1198fe09a9a4acccf4583898ac2ec3.
+Compiler: Lean4.30.0-rc2, commit
+3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc.
+Pinned official third-party compiled libraries are reused; they are
+not rebuilt from source and no independent Lean checker is being run.
+The verifier writes `verification.json` only after all 389 modules
+pass and all three public root axiom reports contain exactly propext,
+Classical.choice, Quot.sound. A status of running with a dead process
+is not success. If interrupted, first establish that no audit is live,
+then use:
+`python3 verify_predecessor_density_source.py /private/tmp/collatz-density-audit/assembled --resume`.
+
+New `docs/PREDECESSOR-DENSITY-REVIEW.md` records the exact statements,
+provenance, pending scope, and conditional connection to the written
+minimum law. Assuming both the external PLD theorem and that law,
+universal convergence is equivalent to p_1=1, with no improved error
+rate required; p_1>0 follows from PLD at target1. Every coalescence
+component would have positive density, not merely some component.
+This does not prove there is only one component or establish p_1=1.
+ATTEMPT, README, and the older DENSITY-TO-POINTWISE note now link this
+pending review without adopting the external theorem prematurely.
+
+A notation typo in the killed-operator note's introduction was fixed
+(stray commas in two exponents). Its manifest records the old/new
+document hash and reuse of the unchanged Lean/Python evidence. All
+25 manifest hashes matched afterward; no heavy replay was repeated.
+
+NEXT: continue the existing external replay, inspect all three public
+statements/axioms after completion, and update the review's status only
+if the whole check passes. Then the remaining density route is to
+prove p_1=1, not to seek a faster rate assuming it. Until completion,
+PLD remains a conditional external input in this project. The actual
+weighted survivor functions remain another possible direction; whole
+operator contraction on the previous space is ruled out. Preserve the
+index and user changes. No staging, commits, or Git writes were done.
+
+## 2026-10-12: completed predecessor-density audit and fixed-target densities
+
+The universal proof/disproof goal remains active, with no token budget.
+No complete proof or positive counterexample was found. No blocker was
+declared. This entry supersedes the preceding entry's pending replay
+status. The audit processes have finished; sessions 93435 and 11119 are
+not live work to resume.
+
+### Completed external Lean replay
+
+The source replay completed all 389 modules: the previously validated
+121-module prefix plus 268 further successful compilations, including
+CollatzPredecessorDensity and Verification.ReleaseAudit. The accumulated
+compiler time in the module records is 3536.928 seconds. All return codes
+are zero. The three public roots use exactly propext, Classical.choice,
+and Quot.sound. Their printed types were read and match the ordinary
+positive-integer predecessor-density and conditional convergence claims.
+The release audit enumerates 4717 project declarations in their combined
+dependency closure and rejects an imported unproved universal Collatz
+declaration. Linter/deprecation warnings are present, without proof
+admissions or extra axioms.
+
+After all Lean compilations passed, the Python script initially exited 1
+because it parsed only the first line of a wrapped axiom list. The actual
+multiline lists all contained the three standard axioms. The parser now
+reads complete bracketed blocks. Two valid formats were accepted, and
+seven invalid cases were rejected: sorry axiom, native reduction axiom,
+extra custom axiom, missing root, duplicate root, wrong root name, and
+missing standard axiom. Record:
+`results/predecessor-density-review/axiom-parser-check.json`.
+This was a report-formatting failure, not a Lean proof failure.
+
+The final `--resume` validated all 389 source/log/olean records and exact
+compiler commands, toolchain, manifest, and dependency revisions. It
+compiled zero modules, then passed the corrected final gate at
+2026-10-12T14:44:35.318300+00:00. The final record is
+`results/predecessor-density-review/verification.json`, SHA256
+fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582.
+`progress.json` also says passed. Verifier SHA256:
+0359ff5a2f5aa4882e32f964160b775619b9211c67116ef80d303529f31376ad.
+ReleaseAudit log SHA256:
+943c598e4bf3d55f6ce45ce4a01c75249d2b76ff488e54df0b91992773a798a7.
+The two resume sessions preserve the prior-progress hashes. The parser
+record separately preserves the initial post-build failure provenance.
+
+The authenticated assembly and archive hashes are those in the preceding
+entry. The compiler was Lean4.30.0-rc2, commit
+3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc. Pinned official third-party
+compiled libraries were reused; they were not rebuilt from source and
+no independent kernel implementation was used. Within that stated scope,
+the external PLD theorem is now adopted as an independently replayed
+proof input. This is separate from the local standalone Lean4.33.1 work.
+
+For each fixed positive target a with 3 not dividing a, PLD says that
+the distinct positive starts whose ordinary Collatz orbit reaches a have
+positive lower natural density. Its constants depend on a. A positive
+counterexample therefore forces the entire nonconvergent set to have
+positive lower natural density. Upper natural density one of convergence
+would exclude every counterexample, both a nontrivial cycle and a
+divergent orbit. The upper-density-one premise is not proved.
+
+`docs/PREDECESSOR-DENSITY-REVIEW.md`, ATTEMPT, README, and the current
+density-to-pointwise note have been updated to this completed scope.
+Historical memory entries remain unchanged. Under the separate written
+minimum law, PLD gives p_1>0 and makes p_1=1 sufficient without a faster
+error rate. The older X^0.84 comparison alone had needed more; that rate
+requirement is superseded by the linear predecessor lower bound.
+
+### New written deductions and their limits
+
+`docs/DENSITY-TO-POINTWISE.md` now includes:
+
+- From the written uniform first-passage Proposition 4.1, every finite
+  odd-target visitation profile has a limiting law. Thus every fixed odd
+  target a has a natural predecessor density r_a.
+- Summing the written finite-orbit packing bound over a finite target
+  interval and then taking densities gives sum r_a <= 256 L^sigma over
+  odd targets, with sigma=H_2(log_3 2)<19/20. In particular no uniform
+  positive lower bound over all eligible targets is possible.
+- Along a forward Syracuse orbit a_j, r_(a_j) increases to the density
+  lambda of its coalescence component. This uses tightness of the written
+  minimum law: the finitely many possible minima <=B eventually merge
+  with a_j, and the minimum-law tail tends to zero. It does not assume
+  arbitrary countable additivity of natural density.
+- A separate coarse overshoot estimate extends the profile result to
+  every positive target, including even targets. With alpha=1.001 and
+  n0=floor(log_2(x)/10), Tao Proposition 1.9 and Chernoff give
+  19n0/10 <= S <= 3n0 except on an O(x^(-c)) event. The affine formula
+  gives entry by n0, because 3^5<2^8 and
+  alpha^2-3/100=972001/1000000<1. The last valuation is <=3n0, so the
+  odd landing exceeds x^(7/10). For x^(7/10)>max A no target in a finite
+  set A is visited in the prior ordinary halving segments. The added
+  error is summable in the same scale telescope. Initial halving of an
+  even source changes a profile for only O_A(log X) starts up to X.
+- Every ordinary orbit value lies in V union 2V for the shortcut value
+  set V. Thus sum r_a <=512 L^sigma over all positive targets in a
+  length-L interval. The forward-density limit extends to ordinary
+  orbits as well. Targets divisible by three have only repeated-doubling
+  predecessors and density zero. PLD makes all other r_a positive.
+
+All of these new conclusions are written analysis, not new Lean or
+native certificates. The older odd-target proof alone still does not
+handle even targets; Section 5 explicitly supplies the additional bound.
+The record `results/density-to-pointwise/written-review.json` contains
+12 source/evidence hashes and the exact dependency distinctions. The
+prior natural-density manifest's 2 hashes and finite-path-packing
+manifest's 12 hashes were checked; no old numerical or Lean suite was
+rerun unnecessarily. The natural-density numerical checks remain only
+floating-point and Monte Carlo sanity checks.
+
+The written first-passage argument was reread against Tao arXiv v7,
+https://arxiv.org/html/1909.03562v7 (July 2026). The paired-sum Fourier
+tilt, weighted submeasure mixing, renewal mass 1/(2-log_2 3), and harmonic
+sum bounds were rechecked. The shifted renewal parameter has the factor
+2*m0*(2-log_2 3), correctly accounting for the E-prime scale; do not
+replace it by a single m0. No new analytic gap was found in that review,
+but this does not turn the written adaptation into a kernel proof.
+
+NEXT: the density route needs p_1=1, not merely positivity or existence
+of density. A divergent component would have lambda>0 and r_(a_j)
+increasing to lambda along its unbounded forward orbit. A bound forcing
+these particular densities to tend to zero would exclude divergence,
+but the summed target-interval bound does not supply it: a sparse orbit
+is compatible with that bound. Nontrivial cycles also remain open.
+The actual bounded weighted survivor functions remain another route;
+global contraction on the previously studied weighted space is already
+ruled out. No staging, commits, or Git writes were performed.

@@ -1,0 +1,7 @@
+Erdos1135/ND/PositiveDensity/ExplicitOnePeriodSuccessfulRoot.lean:31:64: warning: This simp argument is unused:
+  Nat.zero_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Nat.add_mul, Nat.one_mul, N̵a̵t̵.̵z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵Nat.add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

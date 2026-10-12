@@ -1,0 +1,4 @@
+'CollatzGrowth.growth_formula' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.growth_prefix' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.no_uniform_descent_horizon' depends on axioms: [propext, Quot.sound]
+'CollatzGrowth.no_natural_all_ones' depends on axioms: [propext, Quot.sound]
