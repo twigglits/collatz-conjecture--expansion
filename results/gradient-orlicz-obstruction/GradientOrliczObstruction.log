@@ -1,0 +1,8 @@
+'GradientOrliczObstruction.image_scale_mod_nine' depends on axioms: [propext, Quot.sound]
+'GradientOrliczObstruction.family_image_location' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientOrliczObstruction.returned_scale_identity' depends on axioms: [propext, Quot.sound]
+'GradientOrliczObstruction.returned_parent_half' depends on axioms: [propext, Quot.sound]
+'GradientOrliczObstruction.returned_child_ceiling' depends on axioms: [propext, Quot.sound]
+'GradientOrliczObstruction.gap_cross_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientOrliczObstruction.squared_gap_cross_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientOrliczObstruction.quadratic_exponential_witness' does not depend on any axioms

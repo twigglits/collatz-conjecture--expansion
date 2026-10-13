@@ -1,0 +1,6 @@
+'BinaryConePredecessors.child_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryConePredecessors.spine_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryConePredecessors.spine_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryConePredecessors.spine_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryConePredecessors.spine_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BinaryConePredecessors.binary_cone_closed' depends on axioms: [propext, Classical.choice, Quot.sound]

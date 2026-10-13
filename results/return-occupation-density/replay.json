@@ -1,0 +1,954 @@
+{
+  "persistent_return_family": [
+    {
+      "j": 2,
+      "source_binary_level": 11,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 19,
+      "guaranteed_negative_cost": [
+        5,
+        64
+      ]
+    },
+    {
+      "j": 4,
+      "source_binary_level": 23,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 37,
+      "guaranteed_negative_cost": [
+        5,
+        16
+      ]
+    },
+    {
+      "j": 6,
+      "source_binary_level": 35,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 55,
+      "guaranteed_negative_cost": [
+        35,
+        64
+      ]
+    },
+    {
+      "j": 8,
+      "source_binary_level": 47,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 73,
+      "guaranteed_negative_cost": [
+        25,
+        32
+      ]
+    },
+    {
+      "j": 10,
+      "source_binary_level": 59,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 91,
+      "guaranteed_negative_cost": [
+        65,
+        64
+      ]
+    },
+    {
+      "j": 12,
+      "source_binary_level": 71,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 109,
+      "guaranteed_negative_cost": [
+        5,
+        4
+      ]
+    },
+    {
+      "j": 14,
+      "source_binary_level": 83,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 127,
+      "guaranteed_negative_cost": [
+        95,
+        64
+      ]
+    },
+    {
+      "j": 16,
+      "source_binary_level": 95,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 145,
+      "guaranteed_negative_cost": [
+        55,
+        32
+      ]
+    },
+    {
+      "j": 18,
+      "source_binary_level": 107,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 163,
+      "guaranteed_negative_cost": [
+        125,
+        64
+      ]
+    },
+    {
+      "j": 20,
+      "source_binary_level": 119,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 181,
+      "guaranteed_negative_cost": [
+        35,
+        16
+      ]
+    },
+    {
+      "j": 22,
+      "source_binary_level": 131,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 199,
+      "guaranteed_negative_cost": [
+        155,
+        64
+      ]
+    },
+    {
+      "j": 24,
+      "source_binary_level": 143,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 217,
+      "guaranteed_negative_cost": [
+        85,
+        32
+      ]
+    },
+    {
+      "j": 26,
+      "source_binary_level": 155,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 235,
+      "guaranteed_negative_cost": [
+        185,
+        64
+      ]
+    },
+    {
+      "j": 28,
+      "source_binary_level": 167,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 253,
+      "guaranteed_negative_cost": [
+        25,
+        8
+      ]
+    },
+    {
+      "j": 30,
+      "source_binary_level": 179,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 271,
+      "guaranteed_negative_cost": [
+        215,
+        64
+      ]
+    },
+    {
+      "j": 32,
+      "source_binary_level": 191,
+      "first_return": [
+        6,
+        2,
+        1
+      ],
+      "last_checked_pair_clock_without_second_return": 289,
+      "guaranteed_negative_cost": [
+        115,
+        32
+      ]
+    }
+  ],
+  "generating_function_arithmetic": {
+    "failure_probability_exponent": 5180,
+    "cycle_moment_base": "1+2^-5192",
+    "cycle_moment_upper": "2^5182",
+    "scope": "Exact rational and integer comparisons; infinite cycle probability proof is written."
+  },
+  "return_occupation": {
+    "horizon": 16,
+    "rows": [
+      {
+        "horizon": 2,
+        "nonfused_prefixes": 0,
+        "nonfused_return_occupation": [
+          0,
+          1
+        ],
+        "unfused_even_prefixes": 2,
+        "fused_mass": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 3,
+        "nonfused_prefixes": 0,
+        "nonfused_return_occupation": [
+          0,
+          1
+        ],
+        "unfused_even_prefixes": 3,
+        "fused_mass": [
+          1,
+          8
+        ]
+      },
+      {
+        "horizon": 4,
+        "nonfused_prefixes": 0,
+        "nonfused_return_occupation": [
+          0,
+          1
+        ],
+        "unfused_even_prefixes": 5,
+        "fused_mass": [
+          3,
+          16
+        ]
+      },
+      {
+        "horizon": 5,
+        "nonfused_prefixes": 0,
+        "nonfused_return_occupation": [
+          0,
+          1
+        ],
+        "unfused_even_prefixes": 9,
+        "fused_mass": [
+          7,
+          32
+        ]
+      },
+      {
+        "horizon": 6,
+        "nonfused_prefixes": 1,
+        "nonfused_return_occupation": [
+          1,
+          64
+        ],
+        "unfused_even_prefixes": 17,
+        "fused_mass": [
+          15,
+          64
+        ]
+      },
+      {
+        "horizon": 7,
+        "nonfused_prefixes": 3,
+        "nonfused_return_occupation": [
+          1,
+          32
+        ],
+        "unfused_even_prefixes": 33,
+        "fused_mass": [
+          31,
+          128
+        ]
+      },
+      {
+        "horizon": 8,
+        "nonfused_prefixes": 7,
+        "nonfused_return_occupation": [
+          3,
+          64
+        ],
+        "unfused_even_prefixes": 65,
+        "fused_mass": [
+          63,
+          256
+        ]
+      },
+      {
+        "horizon": 9,
+        "nonfused_prefixes": 17,
+        "nonfused_return_occupation": [
+          17,
+          256
+        ],
+        "unfused_even_prefixes": 128,
+        "fused_mass": [
+          1,
+          4
+        ]
+      },
+      {
+        "horizon": 10,
+        "nonfused_prefixes": 39,
+        "nonfused_return_occupation": [
+          45,
+          512
+        ],
+        "unfused_even_prefixes": 252,
+        "fused_mass": [
+          65,
+          256
+        ]
+      },
+      {
+        "horizon": 11,
+        "nonfused_prefixes": 81,
+        "nonfused_return_occupation": [
+          111,
+          1024
+        ],
+        "unfused_even_prefixes": 497,
+        "fused_mass": [
+          527,
+          2048
+        ]
+      },
+      {
+        "horizon": 12,
+        "nonfused_prefixes": 166,
+        "nonfused_return_occupation": [
+          529,
+          4096
+        ],
+        "unfused_even_prefixes": 981,
+        "fused_mass": [
+          1067,
+          4096
+        ]
+      },
+      {
+        "horizon": 13,
+        "nonfused_prefixes": 331,
+        "nonfused_return_occupation": [
+          1223,
+          8192
+        ],
+        "unfused_even_prefixes": 1939,
+        "fused_mass": [
+          2157,
+          8192
+        ]
+      },
+      {
+        "horizon": 14,
+        "nonfused_prefixes": 658,
+        "nonfused_return_occupation": [
+          2773,
+          16384
+        ],
+        "unfused_even_prefixes": 3838,
+        "fused_mass": [
+          2177,
+          8192
+        ]
+      },
+      {
+        "horizon": 15,
+        "nonfused_prefixes": 1295,
+        "nonfused_return_occupation": [
+          6183,
+          32768
+        ],
+        "unfused_even_prefixes": 7605,
+        "fused_mass": [
+          8779,
+          32768
+        ]
+      },
+      {
+        "horizon": 16,
+        "nonfused_prefixes": 2552,
+        "nonfused_return_occupation": [
+          13623,
+          65536
+        ],
+        "unfused_even_prefixes": 15083,
+        "fused_mass": [
+          17685,
+          65536
+        ]
+      }
+    ],
+    "largest_return_index": 7,
+    "first_return_prefixes": 744,
+    "later_return_prefixes": 1808,
+    "scope": "Complete finite even-period law, pruned only at balanced fusion."
+  },
+  "ternary_projections": {
+    "rows": [
+      {
+        "horizon": 6,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 6,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 6,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 6,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 6,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 6,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          1,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          3,
+          64
+        ],
+        "one_level_projection_error": [
+          1,
+          64
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          3,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          3,
+          64
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          15,
+          256
+        ],
+        "one_level_projection_error": [
+          1,
+          32
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          15,
+          256
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 8,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          15,
+          256
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          45,
+          512
+        ],
+        "one_level_projection_error": [
+          71,
+          1536
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          45,
+          512
+        ],
+        "one_level_projection_error": [
+          9,
+          512
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          45,
+          512
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          41,
+          256
+        ],
+        "one_level_projection_error": [
+          17,
+          128
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          41,
+          256
+        ],
+        "one_level_projection_error": [
+          9,
+          128
+        ]
+      },
+      {
+        "horizon": 10,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          41,
+          256
+        ],
+        "one_level_projection_error": [
+          0,
+          1
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          529,
+          4096
+        ],
+        "one_level_projection_error": [
+          437,
+          6144
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          529,
+          4096
+        ],
+        "one_level_projection_error": [
+          39,
+          1024
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          529,
+          4096
+        ],
+        "one_level_projection_error": [
+          17,
+          3072
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          1173,
+          4096
+        ],
+        "one_level_projection_error": [
+          61,
+          256
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          1173,
+          4096
+        ],
+        "one_level_projection_error": [
+          865,
+          6144
+        ]
+      },
+      {
+        "horizon": 12,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          1173,
+          4096
+        ],
+        "one_level_projection_error": [
+          175,
+          6144
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          2773,
+          16384
+        ],
+        "one_level_projection_error": [
+          803,
+          8192
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          2773,
+          16384
+        ],
+        "one_level_projection_error": [
+          469,
+          8192
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          2773,
+          16384
+        ],
+        "one_level_projection_error": [
+          457,
+          24576
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          6993,
+          16384
+        ],
+        "one_level_projection_error": [
+          1121,
+          3072
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          6993,
+          16384
+        ],
+        "one_level_projection_error": [
+          5545,
+          24576
+        ]
+      },
+      {
+        "horizon": 14,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          6993,
+          16384
+        ],
+        "one_level_projection_error": [
+          515,
+          6144
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 0,
+        "coarse_depth": 3,
+        "mass": [
+          13623,
+          65536
+        ],
+        "one_level_projection_error": [
+          12011,
+          98304
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 0,
+        "coarse_depth": 5,
+        "mass": [
+          13623,
+          65536
+        ],
+        "one_level_projection_error": [
+          305,
+          4096
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 0,
+        "coarse_depth": 7,
+        "mass": [
+          13623,
+          65536
+        ],
+        "one_level_projection_error": [
+          3121,
+          98304
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 1,
+        "coarse_depth": 3,
+        "mass": [
+          38029,
+          65536
+        ],
+        "one_level_projection_error": [
+          16273,
+          32768
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 1,
+        "coarse_depth": 5,
+        "mass": [
+          38029,
+          65536
+        ],
+        "one_level_projection_error": [
+          663,
+          2048
+        ]
+      },
+      {
+        "horizon": 16,
+        "integer_power": 1,
+        "coarse_depth": 7,
+        "mass": [
+          38029,
+          65536
+        ],
+        "one_level_projection_error": [
+          1805,
+          12288
+        ]
+      }
+    ],
+    "scope": "Finite powers zero and one test counting; the power-one infinite moment is not claimed."
+  },
+  "integer_intervals": {
+    "horizons": [
+      6,
+      10,
+      14
+    ],
+    "integer_powers": [
+      0,
+      1
+    ],
+    "starts": [
+      0,
+      17,
+      511
+    ],
+    "lengths": [
+      1,
+      7,
+      31,
+      257
+    ]
+  },
+  "counts": {
+    "direct_fixed_return_cylinders": 4112,
+    "full_persistent_second_excursions": 16,
+    "exact_persistent_drift_offsets": 752,
+    "inverse_bernoulli_checks": 19305,
+    "exponential_linearization_checks": 5241,
+    "failed_attempt_rational_comparisons": 8384,
+    "explicit_cycle_constant_checks": 5,
+    "near_half_moment_constant_checks": 1249,
+    "all_return_tree_edges": 30750,
+    "finite_all_return_column_bounds": 45,
+    "nonfused_return_prefixes": 2552,
+    "later_return_prefixes": 1808,
+    "direct_full_period_pair_trajectories": 32768,
+    "exact_occupation_prefix_identities": 16,
+    "ternary_occupation_projection_checks": 36,
+    "ternary_density_values_checked": 117936,
+    "direct_occupation_residue_counts": 16752,
+    "finite_occupation_interval_bounds": 72,
+    "integer_density_values_checked": 5328
+  }
+}

@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-13, after extending written return-correction and separation moments to all powers below one half, obtaining an explicit endpoint image-truncation rate, and verifying twelve new kernel arithmetic roots and independent exact stopped laws.
+Last updated: 2026-10-13, after proving a weaker conditional temporal-drift criterion, removing its PLD dependency via a convergent inverse spine meeting every binary cone, and certifying complete future-time costs on fifteen finite annuli with twelve new kernel roots.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
@@ -211,6 +211,55 @@ region is now beta+alpha<1/2, and its Haar truncation error is at most
 7 H^(beta-1/2)/(1-2 beta) for 0<=beta<1/2. All infinite probability
 and real-analysis steps remain written. The pairing with actual weighted
 gradients and bounded energy remain unproved; Collatz is unresolved.
+
+The newest all-return argument gives the WRITTEN exponential cycle
+moment E[(1+2^-5192)^N]<=2^5182. This counts cycles, not physical time.
+The occupation measure over every nonfused return has clock and
+separation tails O((1+log H)/sqrt(H)), giving L(log L)^alpha control
+of the accumulated ternary density K*_beta for beta+alpha<1/2.
+Its Haar truncation rate is O_beta((1+log H)H^(beta-1/2)). Fifteen
+new kernel roots also show that the persistent family first returns
+at (clock,count,separation)=(6,2,1), then has an arbitrarily costly
+second excursion pointwise. Averaging remains necessary. The actual
+future-gradient pairing, bounded energy, escape, and other cycles
+remain unresolved; all infinite probability steps remain written.
+
+The newest actual-gradient result rules out uniform moments
+exp((G_m/C)^p) for p>1 and fixed C, on both actual returned intervals
+and their progressions. The persistent family makes G_m grow linearly
+at one point while the interval length grows exponentially. Eight new
+kernel roots support this written norm obstruction. Thus a single
+uniform complementary Orlicz norm after summing time contributions
+cannot use the earlier L(log L)^alpha density estimates with alpha<1.
+Ordinary averaged energy is not shown unbounded. The next result
+improves the available density moments and changes the complementary
+estimate that could suffice; it does not invalidate this obstruction.
+
+The newest binary-image argument now gives the WRITTEN theorem
+K*_beta in Lp for 0<=beta<1/2 and 1<=p<10/(9+2beta), counting all
+nonfused returns. Eleven new kernel roots prove affine-numerator
+injection on each image fibre, the exact numerator mass t*4^t/4,
+and the required polynomial arithmetic. Written fibre counting yields
+||rho_t||_2^2<=(t+1)(t+4)/2, hence a 3H^2 norm bound for the
+all-return truncation. Its existing L1 tail then gives the Lp theorem
+by dyadic interpolation. This permits every finite logarithmic moment
+order for each beta<1/2. Truncated pth moments transfer to integer
+intervals with factor 1+3^H/M. No bound for the actual gradient pairing
+or bounded-energy subsequence follows yet; Collatz remains unresolved.
+
+The newest temporal argument gives a weaker WRITTEN conditional escape
+criterion: for every fixed k, the time average of N^rev_(s,k) tends
+to zero, with no uniformity across source levels. This would make the
+limiting refinements nondecreasing and their limiting energy at most
+1/2. An explicit convergent inverse spine now removes PLD from this
+particular implication: its normalized growth has a positive limit,
+so irrational rotation makes its binary significands dense. Every
+binary cone therefore contains a known predecessor of one. A positive
+limiting weight cannot be closed under both binary children, proving
+zero limiting weights under the proposed condition. The condition
+is unproved for all levels. Twelve new kernel roots and exact full
+future-time checks on fifteen finite annuli passed. Neither absence
+of escape nor exclusion of other cycles has been established.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -5025,3 +5074,596 @@ been adopted or verified. The exploratory tilted-slope return-law idea
 is also unproved and unused. Escape and additional cycles remain open.
 All processes are terminal. No agents, installations, credentials,
 staging, commits, or other Git writes occurred.
+
+## 2026-10-13: exponential cycle count and the all-return occupation density
+
+The previous stopped-correction turn was progress. This turn authenticated
+its 21 hashes, the image record's 20, and the ordered-drift record's 16
+before proceeding. The new work is also progress: it controls the
+sampling density accumulated over every nonfused count return, and
+rules out a scalar pointwise charge at a return. The full user objective
+remains active and unresolved. There is no genuine user/external blocker.
+
+Added docs/RETURN-OCCUPATION-DENSITY.md,
+lean/ReturnOccupationDensity.lean,
+verify_return_occupation_density.py, and
+results/return-occupation-density. Updated README and ATTEMPT.
+Earlier hashed sources and records were not changed.
+
+NEW KERNEL arithmetic (fifteen roots):
+- The fixed even first-return cylinder r=48 mod 64 has tau=6,
+  common count two, and endpoints 9q+8,9q+7; alive through time five.
+- The persistent family 2n_j=16(64^j-1)/9, even j>=2, returns at
+  six to X=2^(6j-2)+1 and Y=2^(6j-2).
+- Odd counts are nondecreasing in the clock; for a>=2 and
+  0<t<=3a-2, wt_t(2^(2a)+1)>wt_t(2^(2a)). This verifies that the
+  whole known persistent window lies within the SECOND count excursion.
+- Multiplicative drift arithmetic outside V>=400; a general finite
+  inverse Bernoulli inequality and its exponential linearization;
+  the rational denominator and failed-attempt contraction inequalities;
+  half-power root comparisons and the total attempt constant.
+- Selected all-return cubic weights are bounded by full-period cubic
+  mass; cumulative slope-column numerator plus 2^(H+1) is <=2*4^H.
+
+WRITTEN obstruction: the earlier family has unaveraged negative drift
+at least 5(3j-4)/128 during that second excursion. Its first-return
+data (tau,a,D) are always (6,2,1), with common multiplier 9/64.
+Thus no finite function of these data alone bounds the accumulated
+pointwise excursion cost. Separation moments do not repair that
+pointwise approach, even when the separation is exactly one. The
+displayed source cells are rare; this does not refute integrated bounds.
+
+WRITTEN exponential cycle moment, now adopted (superseding the previous
+entry's tentative suggestion): retain D_j, N, V=D^(1/4), R=400^4,
+and the conditional drift E V_next<=(39/40)V+9. Outside D<=R,
+this is at most qV with q=399/400. If sigma is the cycle count to
+reach D<=R, the killed potential gives
+  Pr(sigma>n)<=V(D)q^n/400,
+  E s^sigma<=1+(s-1)V(D)/[400(1-sq)], 1<s<1/q.
+These are conditional estimates given any finite return history;
+neither Markov independence nor independent attempts is needed.
+
+Take the previous attempt length M=140 and success lower bound
+p=2^-5180. Set delta=p/4096=2^-5192 and s=1+delta. An attempt
+starts in the positive part of D<=R, runs M cycles with zero absorbing,
+then waits to reach D<=R again if needed. It can fuse during this
+reentry. Use the upper-bound attempt length L=M+sigma, even when
+fusion occurred earlier. Since E V(D_M)<=400,
+  E[s^L 1_failed | attempt start]
+       <=s^M[1-p+delta/(1-sq)]<=1-p/2=:rho<1.
+The arithmetic uses 1-sq>=1/800, s^140<=1+280delta, and
+(1+280delta)(1-p+800delta)<=1-p/2. The last inequality is proved
+with cleared rational denominators for arbitrary 0<=p<=1.
+
+IMPORTANT: fusion during reentry can take MORE than M cycles. Do not
+bound successful length by M. Instead bound the entire attempt:
+  E s^L<=s^M[1+delta/(1-sq)]
+         <=(1+280delta)(1+800delta)<=2.
+The discounted probability of reaching attempt k is <=rho^(k-1).
+Summing the successful contributions gives
+  E(1+2^-5192)^N<=A:=4/p=2^5182.
+This is a WRITTEN probability theorem. It concerns return-cycle count,
+not physical clock. The physical fusion time still has infinite mean.
+
+WRITTEN occupation measure: for physical return clocks S_j, fusion
+clock T=S_N, and C=540*2^5180, define
+  integral g dnu = E sum_(1<=j<N) g(D_j,S_j).
+Its total mass is <=C. From the prior Pr(T>H)<=14C/sqrt(H) and
+the new exponential cycle moment, for integer ell>=1,
+  nu(S>H)<=14C ell/sqrt(H)+A s^(1-ell)/delta.
+Taking ell=max(1,ceil(logH/[2logs])) gives
+  nu(S>H)<=[A_T+B_T logH]/sqrt(H), H>=1,
+  A_T=14C+A s/delta, B_T=7C/logs.
+
+For gamma in [1/4,1/2), convexity of r_gamma and the two endpoint
+root comparisons give r_gamma<=39/40. Since
+2m_gamma<=7/(1-2gamma), the summed separation moment obeys
+  integral D^gamma dnu<=B/(1-2gamma), B=40(1+7C).
+For u>=16 choose gamma=1/2-1/log_2(u), and for u<16 use mass<=C:
+  nu(D>u)<=B(1+log_2 u)/sqrt(u), u>=1.
+Consequently D+1+S has every nu moment below 1/2, and
+  E sum_(1<=j<N) D_j^beta(1+S_j)^alpha<infinity
+for beta>=0, alpha>0, beta+alpha<1/2. No independence is assumed.
+
+WRITTEN all-return density: index EVERY nonfused even-source return
+prefix i, not just first returns. Ancestors and descendants can both
+appear. Let t_i be its total source clock, a_i its common total odd
+count, x_i=U^t_i(r_i), D_i>0 its separation, p_i=2^-t_i, and
+  F_i(z)=3^a_i 1_(z=x_i mod 3^a_i),
+  K*_beta=sum_i p_i D_i^beta F_i.
+Its Haar mass M*_beta is finite for beta<1/2. With
+Mbar=max(1,M*_beta), the same convex mixture/Jensen proof gives
+  integral K*_beta[log(1+K*_beta/Mbar)]^alpha
+       <=A*_(beta,alpha)<infinity, beta+alpha<1/2,
+  A*=(log3)^alpha sum_i p_i D_i^beta(1+t_i)^alpha.
+Prefix disjointness is not needed; the finite occupation mass supplies
+the mixture normalization.
+
+WRITTEN all-return truncation: for 0<=beta<1/2, c=1/2-beta, H>=1,
+  ||K*_beta-K*_(beta,H)||_1 <= H^(beta-1/2) times
+    [A_T+B_T logH
+       +beta B{(1+logH/log2)/c+1/(c^2 log2)}].
+At beta=0 the final term is zero. This is
+O_beta((1+logH)H^(beta-1/2)); the logarithm has not been removed.
+It follows by splitting the layer-cake integral at H and using the
+two occupation tails. Ternary projection at depth L has error at most
+twice this bound with H=L. First-return bounds remain stronger for
+their smaller density; do not confuse the two objects.
+
+WRITTEN finite integer sampling: each level's return slopes have sum
+<=2^t, and all levels through H have sum <=2^(H+1)-2. The kernel
+cumulative-column recurrence checks the latter's integer form. Since
+D_i<2*3^a_i, for any beta>=0 the finite coefficient sum is bounded by
+  sum_(t_i<=H) lambda_i D_i^beta<=2^(beta+1)(2*3^beta)^H.
+Thus the all-return truncated mean on any integer interval of length M
+differs from its Haar mean by at most this quantity divided by M.
+The logarithmic-moment transfer has the additional [(H+1)log3]^alpha
+factor. No infinite separation moment at beta>=1/2 is asserted.
+The old explicit logarithmic constants 80 and 82 are first-return
+constants and are NOT asserted for this larger occupation density.
+
+Fresh verification passed at 2026-10-13T18:31:07.233846+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Ten modules
+were freshly built sequentially. All fifteen new roots use only the
+standard axioms; no warnings, admitted proofs, or native evaluation.
+The correction, image, and persistence records had 21, 20, and 14
+hashes authenticated respectively. The new manifest records 29 hashes.
+
+Independent exact finite checks passed: 4112 fixed-return cylinders,
+16 full persistent second excursions, 752 persistent drift offsets,
+19305 inverse-Bernoulli cases, 5241 exponential linearizations,
+8384 failed-attempt rational comparisons, five explicit cycle-constant
+checks, and 1249 near-half moment coefficient comparisons. The exact
+comparison at the actual delta=2^-5192 was checked with integers.
+
+The all-return tree through depth 16 had 30750 edges and 2552 nonfused
+return prefixes: 744 first returns and 1808 later returns, up to return
+index seven. All were independently matched against 32768 directly
+iterated even inputs in the full period. Sixteen occupation identities
+and 45 finite column bounds passed. The finite occupation mass was
+13623/65536, and balanced-fused mass 17685/65536; these are finite
+values, not claimed limiting masses. Also passed: 36 ternary projection
+checks covering 117936 density values, 16752 direct interval residue
+counts, and 72 interval bounds covering 5328 density values. Finite
+integer-power checks at beta=1 or 2 verify counting algebra only,
+not infinite moments. No floating arithmetic was used in decisions.
+
+NEXT: the sampling weight over all returns is now controlled. The
+remaining obstacle is its pairing with the actual future squared
+weight differences, at prefix-dependent continuation clocks and
+endpoint intervals. Prove complementary integrability or a direct
+averaged charge. A separation-only cost per excursion is now excluded
+pointwise even at fixed return clock and count. Improving unweighted
+coalescence tails or cycle constants again would not settle bounded
+energy. The tilted-slope idea remains unproved and unused. Escape and
+other cycles remain open; the full Collatz goal stays active.
+All jobs are terminal. No agents, installations, credentials, staging,
+commits, or other Git writes occurred.
+
+## 2026-10-13: actual-gradient complementary-norm obstruction
+
+The previous occupation-density turn was progress. Its 29 hashes,
+the correction record's 21 hashes, and the energy-cap record's 16
+hashes matched at this turn's start. This turn also made progress:
+it rules out the proposed uniform complementary norm for accumulated
+actual gradients, then identifies a candidate replacement below.
+The full Collatz goal remains active and unresolved; no user or
+external blocker prevents further research.
+
+Added docs/GRADIENT-ORLICZ-OBSTRUCTION.md,
+lean/GradientOrliczObstruction.lean,
+verify_gradient_orlicz_obstruction.py, and
+results/gradient-orlicz-obstruction. Updated README and ATTEMPT.
+Earlier hashed sources and records were not rewritten.
+
+For m>=0 define Q=2^(12m+6), M=9Q, and the actual image interval
+I=[9Q+8,18Q+8), length M. The fixed return cylinder r=48 mod64
+maps source quotients Q<=q<2Q to paired endpoints 9q+8,9q+7.
+Q=1 mod9, q_m=16 floor(Q/9)+1 lies in that quotient interval, and
+x_m=9q_m+8=16Q+1=2^(12m+10)+1 belongs to the sampled progression.
+Its paired endpoint is x_m-1. This is the earlier persistent family
+with j=2m+2 and fixed first-return data (tau,a,D)=(6,2,1).
+
+Define the FINITE accumulated returned squared gradient
+  G_m(x)=sum_(h=0)^(6m+1)
+       [M(f_(12m+12+h)(x)-f_(12m+12+h)(x-1))]^2.
+It is defined on all of I and its actual progression; no eventual
+orbit convergence or infinite time sum is required. The exact scale
+identity is M/2^(12m+12+h)=9/2^(h+6). New kernel versions of the
+retained-parent and child-ceiling bounds give throughout this window
+  M f_(12m+12+h)(x_m)>=1/2,
+  M f_(12m+12+h)(x_m-1)<=27/64.
+Therefore the written squared sum is
+  G_m(x_m)>=L_m:=25(6m+2)/4096.
+The window lies entirely in the second count excursion.
+
+NEW KERNEL roots (eight): Q mod9, actual interval/progression location,
+the returned scale identity, returned parent retention, returned child
+ceiling, a general cross-product gap lower bound, its squared version,
+and an exact large quadratic-exponential integer comparison. The real
+division, finite sum, exponential growth, and norm consequences are
+WRITTEN, not full Lean formalizations.
+
+WRITTEN obstruction: for any p>1,C>0, the interval average of
+exp((G_m/C)^p) is at least exp((L_m/C)^p)/M, which tends to infinity
+because log M=(12m+6)log2+log9 grows linearly and (L_m/C)^p grows
+superlinearly. The actual progression has Q elements and yields the
+same conclusion with Q in the denominator. Under the convention
+mean(exp((G/C)^p)-1)<=1, the Luxemburg norm is at least
+  L_m/[log(M+1)]^(1/p),
+or L_m/[log(Q+1)]^(1/p) on the progression. It grows at least as
+m^(1-1/p). At m=16384,p=2,C=1, the kernel integer comparison and
+the written log2<1, log9<3 bounds imply an average >exp(100000).
+That large example uses the general family proof, NOT an orbit replay
+at the huge source size.
+
+For Phi_alpha(u)=u[log(1+u)]^alpha, define the convex conjugate
+Psi_alpha(v)=sup_u(uv-Phi_alpha(u)). Taking
+u=exp((v/2)^(1/alpha))-1 gives, for v>=2,
+  Psi_alpha(v)>=(v/4)exp((v/2)^(1/alpha))
+              >=(1/2)exp((v/2)^(1/alpha)).
+Thus mean Psi_alpha(G_m/C) is unbounded for every alpha<1 and C>0.
+In particular, the available density exponents alpha<1/2 demand an
+exponential power >2 whose uniform norm fails. This excludes the
+specific method of first accumulating time contributions and then
+using ONE uniform complementary norm. It does not exclude clockwise
+estimates, support-sensitive estimates, or use of actual correlation.
+
+IMPORTANT scope: the exceptional point contributes only L_m/M to
+the ordinary mean lower bound, which tends to zero and is summable
+over m. This does NOT show unbounded ordinary means, failure of an
+averaged density-gradient pairing, or unbounded actual energy. The
+single return column has bounded value 9/64 on the residue 8 mod9.
+An ordinary exponential norm (p=1) at sufficiently large scale is
+not excluded by this family; no such uniform bound is proved.
+
+Fresh verification passed at 2026-10-13T18:50:44.028881+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Eleven
+modules were freshly built sequentially. All eight new roots use only
+standard axioms, with no warnings, admitted proofs, or native evaluation.
+The occupation and persistence records had 29 and 14 hashes verified.
+The new manifest records 29 hashes.
+
+Independent exact replay checked 21 image/family instances through
+m=64, 84 direct original-source transport identities, 1866 returned
+gradient offsets, all 576 gradients on the smallest interval [584,1160),
+and all 64 sampled progression gradients there. The exceptional x=1025
+has G_0=39778923825/516006608896. Exact ordinary mean enclosures are
+saved; they concern only that finite interval. Five large quadratic
+exponential comparisons and two elementary exponential constants also
+passed. No floating arithmetic was used in verification decisions.
+
+External reading was limited to primary sources. Tao's 2019/2020
+Syracuse-law discussion and the OpenAI ordinary-correlation catalogue
+did not supply the stopped weighted-gradient comparison. A more useful
+lead is Lucas Valbuena's 8 October paper:
+https://raw.githubusercontent.com/x1xhlol/collatz-two-coordinate-obstruction/main/paper/quadratic-cylinder-energy.tex
+It uses distinct offset quotients to obtain polynomial cylinder energy
+for the stationary Syracuse law, then combines it with Tao mixing to
+obtain subcritical L^p integrability. Its stationary result is NOT our
+return density; no external proof bundle was replayed or adopted here.
+
+NEXT — PROMISING CANDIDATE, NOT YET ADOPTED OR VERIFIED:
+Adapt that quotient-counting idea to our finite binary image law.
+For ALL r<2^t, let a=wt_t(r), N=2^t U^t(r)-3^a r, and
+  rho_t(z)=sum_(r<2^t) 2^-t 3^a 1_(z=U^t(r) mod3^a).
+This has Haar integral one and dominates the selected return density
+at total clock t. At fixed (t,a,image residue v), N has fixed residue
+mod3^a. Distinct r give distinct N: the exact affine equation plus
+gcd(3^a,2^t)=1 forces r=r' if N=N' within the full binary period.
+Thus q=floor(N/3^a) is injective on such a fibre and q<=Y=N/3^a.
+If its cardinality is m_f, the elementary distinct-quotient count gives
+  m_f^2<=2 sum_fibre(1+Y).
+Summing and using Cauchy over a=0..t should give
+  ||rho_t||_2^2 <=2(t+1) sum_(r<2^t) 3^a4^-t(1+N/3^a)
+                 =2(t+1)(1+t/4)=(t+1)(t+4)/2.
+The exact inputs are sum3^a=4^t (already kernel) and
+4 sumN=t4^t. The latter follows from the new numerator child sum
+4N+2^t, but currently needs its own all-depth kernel proof if used.
+No Tao mixing or external stationary theorem is needed for this
+finite-binary argument. Check the fibre injection carefully before
+adopting it, especially t=0,a=0.
+
+If that quadratic bound holds, each selected return layer kappa_t is
+pointwise <=rho_t and ||kappa_t||_2<=t+2. Hence the all-return
+truncation has
+  ||K*_(0,H)||_2<=H(H+5)/2<=3H^2 for H>=1.
+Combine it with the VERIFIED WRITTEN L1 clock-truncation error
+O((1+log H)H^-1/2). Dyadic increments at H=2^j have L1 size
+O(j2^-j/2) and L2 size O(2^(2j)). Interpolation gives Lp increment
+exponent [-(2-p)/2+4(p-1)]/p = (9p/2-5)/p.
+This is summable in j for 1<p<10/9. Thus a prospective result is
+K*_0 in Lp for every 1<=p<10/9, substantially stronger than the
+currently adopted logarithmic moments. This has NOT yet been promoted
+to a proved project result or checked by a verifier.
+
+Possible extensions once the unweighted claim is verified:
+- Pointwise Holder over columns gives
+  K*_beta <=(K*_gamma)^(beta/gamma)(K*_0)^(1-beta/gamma).
+  With gamma<1/2, K*_gamma in L1 and K*_0 in Lp0, this would give
+  K*_beta in Lp for 1<=p<10/(9+2beta), 0<=beta<1/2.
+- K*_(beta,H) is periodic mod3^H, so any interval mean of its pth
+  power is <=(1+3^H/M) times its Haar pth moment. This may transfer
+  uniform power bounds when 3^H<=M, using actual finite intervals.
+- A first-return-only variant may improve the L2 growth to H^(3/2)
+  using stopped slope/correction budgets and then allow p<8/7; this
+  is more tentative and is not needed for the all-return result.
+
+The weighted-gradient comparison remains the actual objective of this
+route. Even a new Lp density theorem would still require control of
+the complementary power moment of the accumulated gradients, or an
+estimate retaining their correlation. Do not treat density integrability
+as bounded actual energy or escape exclusion. All processes are
+terminal. No agents, installs, credentials, staging, commits, or other
+Git writes occurred.
+
+## 2026-10-13: quadratic binary image energy and all-return Lp moments
+
+The candidate in the preceding entry is now ADOPTED as a WRITTEN
+analytic theorem with fresh kernel arithmetic and independent exact
+finite verification. This supersedes the preceding candidate status.
+Added docs/BINARY-IMAGE-ENERGY.md, lean/BinaryImageEnergy.lean,
+verify_binary_image_energy.py, and results/binary-image-energy/.
+README and ATTEMPT include the result and reproduction command.
+
+For r<2^t put a=wt_t(r), x=U^t(r), and N=2^t*x-3^a*r>=0.
+Define the full ternary Haar image density
+  rho_t(z)=sum_(r<2^t) 2^-t*3^a*1_(z=x mod3^a).
+It has mass one. At fixed t and a, equal N forces equal r: subtract
+the affine equations and use coprimality of 2^t and 3^a. At fixed
+image residue v, N=2^t*v mod3^a, so floor(N/3^a) is injective
+on that fibre. This includes t=0 and a=0; no exceptional case is
+left unproved. If the fibre has m sources, sorting its quotients
+gives q_j>=j for j=0,...,m-1 and
+  3^a*m^2 <= 2 sum_fibre(3^a+N).
+The injection, residue, and ranked cost lemmas are kernel checked;
+the sorting/existence of a ranked finite enumeration is written.
+
+The new all-depth kernel identity is
+  4 sum_(r<2^t) N_t(r) = t*4^t.
+Its induction sums the previous numerator children 4N+2^t. Combining
+it with the existing cubic mass sum3^a=4^t gives
+  4 sum(3^a+N)=(t+4)*4^t.
+Group rho_t by count a, apply the fibre square bound, then Cauchy
+over the t+1 possible counts. The WRITTEN Haar consequence is
+  ||rho_t||_2^2 <= (t+1)(t+4)/2,
+  ||rho_t||_2 <= t+2.
+This is a bound at every finite depth, not an asymptotic extrapolation
+from the enumerated periods.
+
+At total clock t, the selected even nonfused return layer kappa_t
+is pointwise <=rho_t. Its first endpoint is consistently U^t(r),
+not reordered by size, so the domination matches the occupation
+density definition exactly. Nested returns at different clocks are
+allowed; each r at a fixed clock appears at most once. Minkowski
+and the new finite sum roots give
+  ||K*_(0,H)||_2 <= H(H+5)/2 <=3H^2 for H>=1.
+Use the prior WRITTEN occupation tail
+  ||K*_0-K*_(0,H)||_1 <=(A_T+B_T log H)/sqrt(H).
+For Delta_j=K*_(0,2^(j+1))-K*_(0,2^j),
+  ||Delta_j||_1 <=(A_T+B_T*j*log2)*2^(-j/2),
+  ||Delta_j||_2 <=12*2^(2j).
+For theta=(2-p)/p, eta=2(p-1)/p, interpolation yields
+  ||Delta_j||_p <=12^eta (A_T+B_T*j*log2)^theta
+                    *2^[-j(5/p-9/2)].
+This is summable for 1<p<10/9. Positive partial sums, Minkowski,
+and monotone convergence prove K*_0 in Lp in that range. No endpoint
+claim is made. An explicit norm bound recorded in the note is
+  C_p=3+12^eta*(A_T+B_T*log2)^theta
+                  /[1-2^(-(5/p-9/2))]^2.
+
+For 0<beta<gamma<1/2, pointwise column Holder gives
+  K*_beta <=(K*_gamma)^(beta/gamma)*(K*_0)^(1-beta/gamma).
+The prior separation occupation budget makes K*_gamma integrable.
+Combining this with any base p0<10/9 and taking gamma towards 1/2
+proves the WRITTEN result
+  K*_beta in Lp for 0<=beta<1/2, 1<=p<10/(9+2beta).
+Consequently every finite logarithmic moment order alpha is allowed
+for each fixed beta<1/2. The earlier beta+alpha<1/2 region remains
+valid but is no longer the best membership statement. Its earlier
+explicit bounds and cutoff errors remain in their original scope.
+
+The truncated density K*_(beta,H) is periodic modulo 3^H. Every
+residue occurs at most M/3^H+1 times in an integer interval I of
+length M. Therefore
+  mean_I K*_(beta,H)^p <=(1+3^H/M)||K*_beta||_p^p.
+This is uniform in interval location when 3^H<=M, but it is NOT an
+infinite-cutoff integer trace theorem. Haar sets also gain a power
+absolute-continuity modulus from ordinary Holder.
+
+Fresh verification passed 2026-10-13T19:07:39.164678+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Ten
+modules were freshly built sequentially; eleven new roots have only
+standard axioms, without warnings, sorry, or native evaluation.
+The occupation and image records had 29 and 20 hashes authenticated.
+The new record contains 26 hashes, all reauthenticated after the run.
+
+Exact replay covered 131071 sources over all binary periods t=0..16,
+41109 injective fibres and rank bounds, 17 complete image energies,
+and 9841 direct ternary density values through depth eight. Independent
+direct adjacent trajectories numbered 65535 through depth sixteen,
+including 2552 nonfused return prefixes; all 16 selected-layer
+dominations and 16 cumulative energy bounds passed. Further checks:
+66339 exact column Holder inequalities, 180 finite periodic interval
+power bounds, 4950 interpolation exponent identities, and twelve
+weighted exponent examples. All decisions used exact arithmetic.
+The finite interval tests use integer beta=0,1,2 and p=2,3 only
+to check finite counting; no infinite moment is claimed there.
+
+At t=16 the full image squared norm is
+  15611322797/2147483648,
+against the general upper bound 170; its largest fibre has 48 sources.
+The all-return truncation at H=16 has mass 13623/65536 and squared
+norm 3820172355/4294967296. These examples are not asymptotic claims.
+
+Provenance: the distinct-quotient counting idea is attributed to
+Valbuena's primary paper linked in the preceding entry and the new
+note. No external theorem, stationary Syracuse result, or Tao mixing
+result is imported. The proof is the binary-period adaptation above
+plus the project's earlier WRITTEN return occupation estimates.
+
+NEXT: return to the actual weighted-gradient pairing with the stronger
+density class available. In the unweighted case a complementary Lq
+bound would require q>10; for beta it would require q>10/(1-2beta).
+The known exceptional point makes an exponential-power norm fail but
+does NOT make any fixed polynomial moment fail: its single-point
+contribution is a polynomial in m divided by an exponential in m.
+One must still handle prefix-dependent image scales and clocks, and
+retain correlations as needed. Finite power-moment experiments should
+use the actual returned progressions/intervals and exact weights,
+without replacing full-period laws by uncontrolled integer sampling.
+The first-return-only p<8/7 refinement mentioned in the prior entry
+remains a candidate, not a verified theorem and not needed here.
+
+The actual energy bound is still O(sqrt(s)), with no bounded subsequence
+proved. Escape and additional cycles remain open. The user's full
+Collatz goal remains active. All processes are terminal. No agents,
+installs, credentials, staging, commits, or other Git writes occurred.
+
+## 2026-10-13: complete temporal budgets and a PLD-free escape criterion
+
+The previous goal turn was verified progress (binary-image Lp theorem).
+This turn made further progress on the actual-gradient question, without
+proving the universal condition or full Collatz. Added:
+  docs/ANNULUS-TIME-BUDGETS.md
+  lean/AnnulusTimeBudgets.lean
+  lean/BinaryConePredecessors.lean
+  verify_annulus_time_budgets.py
+  results/annulus-time-budgets/
+README and ATTEMPT contain the result and reproduction command.
+
+NEW WRITTEN SUFFICIENT CONDITION Q:
+For every fixed source level k,
+  (1/S) sum_(s<S) N^rev_(s,k) -> 0 as S -> infinity.
+There is NO uniformity requirement across k. This is weaker than the
+previous uniform complementary power norm or a uniform all-time budget.
+It is NOT proved for all k. The proof of its implication is:
+- On each fixed cell, parent and odd-child weights A_s,B_s decrease
+  to limits, and the historical reversal flag is either always zero
+  or eventually one. Thus the finite annulus reversed-negative average
+  has a limit. Q makes that limit zero.
+- The ordered negative averages also tend to zero, using the existing
+  sum_(s,k) N^ord_(s,k)<=14. Nonnegativity of the finitely many cells
+  yields A_inf*(A_inf-B_inf)_+=0 on every cell. Hence B_inf>=A_inf,
+  including when A_inf=0.
+- With exact even-child copying, h_k(x)=2^k f_inf(floor(2^k x))
+  is nondecreasing in k. It starts at h_0=0 and its limit is <=1/x.
+  Sum of squares of nonnegative increments is <= square of their sum,
+  so sum_k integral(h_(k+1)-h_k)^2 <=1/2. This is limiting energy,
+  NOT an assertion of a bounded subsequence of finite-offset E_s.
+
+The criterion now has a more direct escape implication WITHOUT PLD,
+real-scaling measure rigidity, or an external mixing theorem. Reuse
+the old six-step inverse child from UniformInverseBranching, choosing
+the false branch, and define v_0=1, v_(j+1)=child(v_j,false).
+The new kernel induction proves:
+  v_j>0, v_j%3!=0, U^(6j)(v_j)=1, wt_(6j)(v_j)=j,
+  3 v_(j+1)=64 v_j-d_j with 4<=d_j<=32,
+  29*64^j+32*3^j <=61*3^j*v_j <=61*64^j.
+The child table for residue r=1,2,4,5,7,8 mod9 has offsets
+16,32,80,104,148,160 after 192*floor(v/9), and errors
+16,32,16,8,4,32 respectively. The construction works at every depth.
+
+WRITTEN: r_j=3^j v_j/64^j decreases to c in [29/61,1], with
+  0<=r_j-c<=(32/61)*(3/64)^j.
+Therefore log2(v_j)=j*(6-log2(3))+log2(c)+o(1). Irrational rotation
+(log2(3) irrational by prime factorization) and a shrinking error
+make the binary significands dense, with arbitrarily late visits to
+every open subinterval of [1,2]. Every binary cone
+  C(n)={2^ell*n+r : ell>=0, 0<=r<2^ell}
+therefore contains arbitrarily large known predecessors v_j of one.
+This is leading-digit density, NOT positive natural density.
+
+Under Q, positivity of f_inf(n) propagates to both 2n and 2n+1.
+The new kernel binary_cone_closed lemma propagates such closure to
+every member of C(n). A spine member in that cone has f_inf=0,
+so f_inf(n)>0 is impossible. Thus Q implies W_inf=0 everywhere.
+Only the prior WRITTEN packing/weight characterization is then needed
+to exclude escape. Other cycles are NOT detected by W_inf and remain
+open. Do not conflate this conditional reduction with proving Q.
+
+Quantitative alternatives are also recorded. Define possibly infinite
+  T_k=sum_s e_(s,k), R_k=sum_s N^rev_(s,k), L_k=sum_s L_(s,k).
+Always L_k<=5/2, by telescoping parent and shifted-parent losses.
+For J(S)=ceil(121S/50), K>=J(S), S>=1, the prior geometric tail
+and N^rev_(s,k)<=sqrt(e_(s,k)/2) give the WRITTEN inequalities
+  sum_(s<S) E_s <=sum_(k<K) T_k+73/20,
+  sum_(s<S) E_s <=S/2+2 sum_(k<K) R_k+54.
+Consequently a finite lower Cesaro source-level average a of T_k
+gives an upper bound 121*a/50 for the lower Cesaro offset energy;
+the corresponding average b of R_k gives 1/2+121*b/25. The weaker
+charge R_k<=C L_k after summing time would give 1/2+121*C/10.
+These hypotheses also imply Q, hence their escape implications now
+avoid PLD. None is proved over unbounded source levels.
+
+Exact all-time census: every sampled endpoint is directly checked to
+enter {1,2}. Two further cycle steps settle the historical reversal
+flag. Both weights multiply by 3/4 every two steps; the squared gap
+and reversed negative product multiply by 9/16. The remaining tail
+is exactly (16/7)*(cost_phase_0+cost_phase_1). Six new kernel roots
+check known-cycle continuation, periodic count comparison, weight
+data, and the finite geometric identity. Infinite sums remain written.
+
+For all 32767 parent pairs n,3n+2 with 1<=n<32768 (levels 0..14),
+the exact census includes EVERY future offset and verifies
+  T_k<4, R_k<5/4, R_k<=L_k.
+It also proves R_13>1. Selected display values, backed by rational
+enclosures: T_14 about 3.146954, R_14 about 0.963368,
+L_14 about 1.729177, and R_13 about 1.010606. The latest tail start
+at level 14 is parent clock 214. No universal k bound follows.
+
+The actual return cylinder r=48 mod64 was checked separately at
+Q=2^L, M=9Q, L=0,2,4,6,8,10. It uses source [64Q,128Q), image
+[M+8,2M+8), and progression x=9q+8, Q<=q<2Q. Its full future field
+  G_L(x)=sum_(s>=0)[M*(f_(L+s)(x)-f_(L+s)(x-1))]^2
+contributes (1/64)*mean_progression G_L to T_(L+5). This exact
+original-source transport was checked. Certified moment enclosures
+for p=1,2,4,8,12 are stored on both the progression and full interval.
+The pairing with 9*1_(x=8 mod9) is retained exactly. At L=10 the
+display means are interval 8.454073/progression 8.683249, and display
+L12 norms are 60.893131/48.677974. This neither proves nor disproves
+a uniform high power norm as L grows.
+
+Fresh verification passed 2026-10-13T19:42:30.582547+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Seven
+modules were built sequentially, and all twelve new roots use only
+standard axioms, without warnings, sorry, or native evaluation.
+Prior records reauthenticated: persistence 14 hashes, energy caps 16,
+escape refinements 16, binary image 26, uniform inverse branching 8.
+The final new manifest has 24 hashes, all reauthenticated.
+
+Finite counts: 45052 pairs with certified cycle entry (32767 source
+pairs plus 12285 returned-interval pairs), 2906007 exact pre-tail cost
+terms, 180208 terminal-phase ratio checks, three complete rational
+cross-checks, 45 annulus bounds, 1365 original-source transports, and
+60 exact progression/interval pairings. Rounded aggregation used
+outward enclosures with denominator 2^96; no floating decisions.
+The inverse spine checked 1226 normalized growth bounds and 1225 direct
+six-step links; 68 full trajectories were checked separately. By index
+1225 it supplies exact cone witnesses for every root 1..1023. The last
+new prefix 1023 uses binary shift 5398. Universal cone density remains
+the WRITTEN irrational-rotation proof, not finite extrapolation.
+
+Exploratory f64 scouts in /tmp/collatz-gradient-power-scout.rs and
+/tmp/collatz-actual-energy-scout.rs ran to level 21 and are terminal.
+They suggested testing correlated temporal means instead of assuming
+uniform high moments. Their larger-range displays were not adopted as
+certified results. A brief primary-source literature search supplied
+no external theorem used here. No packages were installed.
+
+NEXT: use the weaker local temporal condition Q as a direct target.
+The required statement is now zero limiting reversed negative drift
+on each fixed source annulus, or any proved sublinear temporal bound
+there. Uniform high moments across annuli are unnecessary for this
+criterion. Correlated mean estimates using the Lp return densities
+remain possible, and the time-summed whole-annulus charge R_k<=C L_k
+is still an alternative, supported only on the finite range above.
+The spine/cone lemma applies to any set closed under both binary
+children and disjoint from the basin of one; proving such closure
+for the full nonconvergence set would also exclude other cycles, but
+that closure is NOT proved. Preserve the distinction between escape
+and all counterexamples.
+
+Collatz remains unresolved and the full user goal remains active.
+All jobs are terminal. No agents, installs, credentials, staging,
+commits, or other Git writes occurred in this turn.

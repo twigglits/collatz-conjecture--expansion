@@ -1,0 +1,193 @@
+{
+  "verified_at_utc": "2026-10-13T19:42:30.582547+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 12,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.339,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.564,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.61,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/AnnulusTimeBudgets.lean",
+      "source_sha256": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/AnnulusTimeBudgets.olean",
+        "lean/AnnulusTimeBudgets.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.215,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/AnnulusTimeBudgets.log",
+      "log_sha256": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+      "olean_sha256": "fcf488c5c9b42b9c8ba36e6aeb43254f547d8a46459ea8c22991786b0969a82f"
+    },
+    {
+      "source": "lean/InverseFibreGrowth.lean",
+      "source_sha256": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/InverseFibreGrowth.olean",
+        "lean/InverseFibreGrowth.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.414,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/InverseFibreGrowth.log",
+      "log_sha256": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560",
+      "olean_sha256": "9aa2b54cf45c92b556deb43b45f922b2aca0ee11581af81e5480f43c4654b53e"
+    },
+    {
+      "source": "lean/UniformInverseBranching.lean",
+      "source_sha256": "1bd69fd72bce0adc5e0b270d5088ddef7386d4c02f3d3dc761237e1ea37077b3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/UniformInverseBranching.olean",
+        "lean/UniformInverseBranching.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.56,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/UniformInverseBranching.log",
+      "log_sha256": "39f2f31f1c8be1a4f3e1e43db50cdd804e4150031ca2350a752891bb4a2c1663",
+      "olean_sha256": "2da48ed943aab95429c3fbc470e08b1fb72bc67ddc82df56451a7f3b199f5f5b"
+    },
+    {
+      "source": "lean/BinaryConePredecessors.lean",
+      "source_sha256": "c51e70efcc30e4ae2811dab7ee929d96129f7c3602676925ebf701663f6ff378",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/BinaryConePredecessors.olean",
+        "lean/BinaryConePredecessors.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.362,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-time-budgets/BinaryConePredecessors.log",
+      "log_sha256": "56fe8b0bd87b5919848533fadffbb033a9d35fcb36ec0febaa04bf661470525a",
+      "olean_sha256": "7fa05c22632257d6bd20ce88a41df07ddd684349539065bc56f83ff49675b01a"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/reversal-persistence/verification.json": 14,
+    "results/coalescence-energy-caps/verification.json": 16,
+    "results/escape-weight-refinements/verification.json": 16,
+    "results/binary-image-energy/verification.json": 26,
+    "results/uniform-inverse-branching/verification.json": 8
+  },
+  "kernel_scope": [
+    "Known-cycle closure and arbitrary even-step continuation.",
+    "Periodic count comparison, two-step weight data, and the finite geometric identity.",
+    "A convergent inverse spine with bounded affine errors, two-sided normalized growth bounds, and propagation of binary-child closure through every finite binary cone."
+  ],
+  "written_scope": [
+    "Quadratic costs of a pair that has reached the known cycle have exact two-phase tails with ratio 9/16.",
+    "The inverse spine has dense binary significands and meets every binary cone, by its normalized positive limit and irrational rotation.",
+    "Sublinear reversed-drift time sums separately at every fixed source level would force nondecreasing limiting refinements, limiting energy at most 1/2, and zero limiting weights through the known-cycle binary-cone intersection.",
+    "A bounded lower Cesaro mean of the all-time annulus energy budgets would give a bounded Cesaro subsequence of actual offset energy.",
+    "The analogous averaged reversed-drift budget would also suffice, using the summable ordered contribution."
+  ],
+  "finite_scope": {
+    "exact_precycle_cost_terms": 2906007,
+    "exact_cycle_tail_ratio_checks": 180208,
+    "independent_full_rational_sums": 3,
+    "pairs_with_certified_known_cycle_entry": 45052,
+    "finite_all_time_annulus_bounds": 45,
+    "actual_returned_source_transport_checks": 1365,
+    "exact_progression_interval_pairings": 60,
+    "exact_inverse_spine_mass_bounds": 1226,
+    "certified_binary_cone_witnesses": 1023,
+    "independent_full_spine_trajectories": 68,
+    "independent_six_step_spine_links": 1225
+  },
+  "floating_scope": "Approximate console displays only; all verification decisions are integer or rational.",
+  "external_scope": "No external density or mixing theorem is needed for the qualitative temporal criterion. It uses the explicit inverse spine and the prior written weight/packing characterization. Irrational rotation and infinite limits remain written analysis.",
+  "not_proved": [
+    "Sublinear temporal reversed drift at every source level, any uniform all-annulus time budget, or a uniform complementary power norm.",
+    "Unbounded power norms or failure of a direct density-gradient pairing.",
+    "A bounded-energy subsequence, escape exclusion, other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/AnnulusTimeBudgets.lean": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+    "lean/InverseFibreGrowth.lean": "c7f0714c03dcfa56aec4c6753442c8b7757bf701ed00f71fe2b40ffbb36f73cc",
+    "lean/UniformInverseBranching.lean": "1bd69fd72bce0adc5e0b270d5088ddef7386d4c02f3d3dc761237e1ea37077b3",
+    "lean/BinaryConePredecessors.lean": "c51e70efcc30e4ae2811dab7ee929d96129f7c3602676925ebf701663f6ff378",
+    "verify_annulus_time_budgets.py": "791ef6cc9a308d391c02ac01cadf79a2c8f174f80cce3a37729aa5cae378aca7",
+    "docs/ANNULUS-TIME-BUDGETS.md": "e5cb8e2e1218b7f3ad29dc9b1501cee9ade8229059bd559bda61467e5bc8589c",
+    "docs/ESCAPE-WEIGHT-REFINEMENTS.md": "48bb99c11db620a7054489a5f4af7bdf192d8b6c8735ebdf9e1effe78871bbb9",
+    "docs/ORDERED-WEIGHT-DRIFT.md": "d324a4d8bccdaa7f10c465bedc482ed904d1c88dda46a86bdc71bdbe8be03428",
+    "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",
+    "results/coalescence-energy-caps/verification.json": "786f23192b0fb6f25aca69803090a59dbe230270bc02c396bfc7d892bff1de26",
+    "results/escape-weight-refinements/verification.json": "e495d6e0b2647cd06b175533041cac209b3c3f0fedc5f54437deae34dc0a5f42",
+    "results/binary-image-energy/verification.json": "e639e58b95213203595d898a903bef51db35aaab82532d75142785733bde1b0d",
+    "results/uniform-inverse-branching/verification.json": "06b279ba7c09c61b62c2de4c4a0bfec86d6b98220f308db1844280b30a98e4de",
+    "results/annulus-time-budgets/replay.json": "56ebf1514155ef13f27a7777fc0d2af4214e566673943be035c46fe9b5043c8f",
+    "results/annulus-time-budgets/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/annulus-time-budgets/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/annulus-time-budgets/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/annulus-time-budgets/AnnulusTimeBudgets.log": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+    "results/annulus-time-budgets/InverseFibreGrowth.log": "ca74beeddfac417dcf8ae8a324c174d2ce0977c509a5e9a4a218c85d229b4560",
+    "results/annulus-time-budgets/UniformInverseBranching.log": "39f2f31f1c8be1a4f3e1e43db50cdd804e4150031ca2350a752891bb4a2c1663",
+    "results/annulus-time-budgets/BinaryConePredecessors.log": "56fe8b0bd87b5919848533fadffbb033a9d35fcb36ec0febaa04bf661470525a"
+  }
+}

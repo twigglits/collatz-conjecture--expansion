@@ -1522,6 +1522,96 @@ decay rate. The finite-interval sampling formulas retain their necessary
 depth/length errors. None of this proves a bounded actual-energy
 subsequence or closes the escaping-orbit and other-cycle gaps.
 
+The [all-return occupation argument](docs/RETURN-OCCUPATION-DENSITY.md)
+now gives the written exponential cycle moment
+`E[(1+2^(-5192))^N]<=2^5182`. This concerns the number of return
+cycles; the physical fusion clock still has infinite mean. It permits
+counting every nonfused return, including nested prefixes, and proves
+that the resulting ternary density `K*_beta` lies in `L(log L)^alpha`
+when `beta>=0`, `alpha>0`, and `beta+alpha<1/2`. Its Haar clock
+truncation error is `O_beta((1+log H) H^(beta-1/2))`; its finite
+integer-interval estimates retain explicit depth/length errors.
+
+Fifteen new kernel arithmetic roots and exact independent finite checks
+support these written arguments. The same module shows that the
+persistent family always first returns at clock six, common count two,
+and separation one, followed by a second excursion of unbounded
+pointwise drift cost. Thus a return cost depending only on those data
+cannot replace averaging over the returned endpoints. The comparison
+with actual future weighted gradients and a bounded-energy subsequence
+remains unproved.
+
+The [gradient norm obstruction](docs/GRADIENT-ORLICZ-OBSTRUCTION.md)
+now rules out one direct use of those logarithmic density bounds.
+On actual returned intervals of length `M=9*2^(12m+6)`, a finite sum
+`G_m` of squared future gradients is at least `25(6m+2)/4096` at one
+point of the sampled progression. Therefore the interval and progression
+averages of `exp((G_m/C)^p)` are unbounded for every fixed `C>0,p>1`.
+The corresponding Luxemburg norms grow at least as `m^(1-1/p)`.
+
+Eight new kernel arithmetic roots and exact finite replay support the
+written exponential and convex-conjugate deductions. In particular,
+summing time contributions and then applying a single uniform
+complementary norm against `L(log L)^alpha`, `alpha<1`, cannot work.
+The exceptional point's contribution to the ordinary mean still tends
+to zero; no failure of a direct averaged density-gradient estimate or
+of a bounded-energy subsequence follows.
+
+The [binary image energy argument](docs/BINARY-IMAGE-ENERGY.md) now
+provides stronger density integrability. At fixed clock and odd count,
+the affine numerator identifies each source in a full binary period.
+Within one ternary image fibre, its quotient by `3^a` is therefore
+injective. Counting these distinct nonnegative quotients, together with
+the exact identity `4 sum_(r<2^t) N_t(r)=t*4^t`, gives the written
+bound `||rho_t||_2^2<=(t+1)(t+4)/2` for the full image density.
+
+Every return layer is a subset of this law. Thus the all-return
+truncation has `L2` norm at most `3H^2`. Interpolating dyadic increments
+against the established `L1` truncation error
+`O((1+log H)/sqrt(H))` proves `K*_0 in Lp` for `1<=p<10/9`.
+Column Hölder then gives `K*_beta in Lp` for
+`0<=beta<1/2`, `1<=p<10/(9+2beta)`. In particular, every finite
+logarithmic moment order is now allowed for each such separation
+weight. The truncated density's integer-interval `p`th mean is bounded
+by `(1+3^H/M)` times the full Haar `p`th moment.
+
+Eleven new kernel arithmetic roots and exact complete-period checks
+support these written analytic deductions. No new external theorem is
+used. A uniform complementary power norm of the actual gradients is
+still unproved, and their prefix-dependent clocks and image scales
+still have to be handled in the pairing. The actual energy estimate
+remains `O(sqrt(s))`; escape, other cycles, and full Collatz remain open.
+
+The [temporal budget argument](docs/ANNULUS-TIME-BUDGETS.md) now gives
+a weaker sufficient escape criterion: at each fixed source level `k`,
+the time average `S^(-1) sum_(s<S) N^rev_(s,k)` need only tend to
+zero, with no uniformity across `k`. The ordered negative contribution
+already tends to zero. Since every cell's weights and history indicator
+have limits, this would force the limiting refinements to be
+nondecreasing, with total limiting squared energy at most `1/2`.
+
+For this criterion, an explicit inverse spine removes the external
+predecessor-density dependency. Starting at one and repeatedly choosing
+the earlier six-step inverse child gives `U^(6j)(v_j)=1` and
+`3v_(j+1)=64v_j-d_j`, `4<=d_j<=32`. Kernel bounds place
+`3^j v_j/64^j` between `29/61` and one; it decreases to a positive
+limit. A written irrational-rotation argument makes its leading binary
+digits dense, so every binary cone contains a known convergent member.
+Under the proposed temporal condition, a positive limiting weight
+would persist through both binary children and contradict this cone
+intersection. This implication uses no PLD or mixing theorem. Its
+universal temporal hypothesis remains unproved, and other cycles
+remain a separate gap.
+
+Twelve new kernel roots and exact finite checks passed. The census
+includes every future offset for all parents `1<=n<32768`, using
+certified known-cycle entry and exact two-phase geometric tails. It
+checks temporal energy below four and reversed drift below `5/4` on
+each of those fifteen annuli, as well as the weaker charge made only
+after time summation. Actual returned progressions and containing
+intervals have separate complete-time moment checks. None of these
+finite-source results is extrapolated to all source levels.
+
 ## Reproduction
 
 ```sh
@@ -1605,6 +1695,10 @@ python3 verify_annulus_height_coupling.py
 python3 verify_count_return_clock.py
 python3 verify_return_image_bounds.py
 python3 verify_return_correction_moments.py
+python3 verify_return_occupation_density.py
+python3 verify_gradient_orlicz_obstruction.py
+python3 verify_binary_image_energy.py
+python3 verify_annulus_time_budgets.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

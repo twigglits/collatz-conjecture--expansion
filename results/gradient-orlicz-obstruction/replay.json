@@ -1,0 +1,378 @@
+{
+  "returned_gradient_family": [
+    {
+      "m": 0,
+      "image_length_binary_bits": 10,
+      "window_length": 2,
+      "gradient_sum_lower": [
+        25,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        125,
+        8388608
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 1,
+      "image_length_binary_bits": 22,
+      "window_length": 8,
+      "gradient_sum_lower": [
+        25,
+        512
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        625,
+        5767168
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 2,
+      "image_length_binary_bits": 34,
+      "window_length": 14,
+      "gradient_sum_lower": [
+        175,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        30625,
+        142606336
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 3,
+      "image_length_binary_bits": 46,
+      "window_length": 20,
+      "gradient_sum_lower": [
+        125,
+        1024
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        15625,
+        48234496
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 4,
+      "image_length_binary_bits": 58,
+      "window_length": 26,
+      "gradient_sum_lower": [
+        325,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        105625,
+        243269632
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 5,
+      "image_length_binary_bits": 70,
+      "window_length": 32,
+      "gradient_sum_lower": [
+        25,
+        128
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        125,
+        229376
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 6,
+      "image_length_binary_bits": 82,
+      "window_length": 38,
+      "gradient_sum_lower": [
+        475,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        225625,
+        343932928
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 7,
+      "image_length_binary_bits": 94,
+      "window_length": 44,
+      "gradient_sum_lower": [
+        275,
+        1024
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        75625,
+        98566144
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 8,
+      "image_length_binary_bits": 106,
+      "window_length": 50,
+      "gradient_sum_lower": [
+        625,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        390625,
+        444596224
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 9,
+      "image_length_binary_bits": 118,
+      "window_length": 56,
+      "gradient_sum_lower": [
+        175,
+        512
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        30625,
+        30932992
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 10,
+      "image_length_binary_bits": 130,
+      "window_length": 62,
+      "gradient_sum_lower": [
+        775,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        120125,
+        109051904
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 11,
+      "image_length_binary_bits": 142,
+      "window_length": 68,
+      "gradient_sum_lower": [
+        425,
+        1024
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        180625,
+        148897792
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 12,
+      "image_length_binary_bits": 154,
+      "window_length": 74,
+      "gradient_sum_lower": [
+        925,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        855625,
+        645922816
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 13,
+      "image_length_binary_bits": 166,
+      "window_length": 80,
+      "gradient_sum_lower": [
+        125,
+        256
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        15625,
+        10878976
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 14,
+      "image_length_binary_bits": 178,
+      "window_length": 86,
+      "gradient_sum_lower": [
+        1075,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        1155625,
+        746586112
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 15,
+      "image_length_binary_bits": 190,
+      "window_length": 92,
+      "gradient_sum_lower": [
+        575,
+        1024
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        66125,
+        39845888
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 16,
+      "image_length_binary_bits": 202,
+      "window_length": 98,
+      "gradient_sum_lower": [
+        1225,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        1500625,
+        847249408
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 24,
+      "image_length_binary_bits": 298,
+      "window_length": 146,
+      "gradient_sum_lower": [
+        1825,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        3330625,
+        1249902592
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 32,
+      "image_length_binary_bits": 394,
+      "window_length": 194,
+      "gradient_sum_lower": [
+        2425,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        5880625,
+        1652555776
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 48,
+      "image_length_binary_bits": 586,
+      "window_length": 290,
+      "gradient_sum_lower": [
+        3625,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        13140625,
+        2457862144
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    },
+    {
+      "m": 64,
+      "image_length_binary_bits": 778,
+      "window_length": 386,
+      "gradient_sum_lower": [
+        4825,
+        2048
+      ],
+      "quadratic_Luxemburg_norm_squared_lower": [
+        23280625,
+        3263168512
+      ],
+      "scope": "Exact pointwise gradient bounds; logarithmic norm interpretation is written."
+    }
+  ],
+  "small_interval": {
+    "m": 0,
+    "interval": [
+      584,
+      1160
+    ],
+    "progression_length": 64,
+    "witness": 1025,
+    "witness_gradient_sum": [
+      39778923825,
+      516006608896
+    ],
+    "interval_mean_enclosure": {
+      "lower": [
+        51138814985039225,
+        18446744073709551616
+      ],
+      "upper": [
+        25569407492519613,
+        9223372036854775808
+      ]
+    },
+    "progression_mean_enclosure": {
+      "lower": [
+        31489102287287163,
+        9223372036854775808
+      ],
+      "upper": [
+        62978204574574327,
+        18446744073709551616
+      ]
+    },
+    "scope": "One finite interval only; no extrapolation to bounded or unbounded ordinary means."
+  },
+  "large_exponential_arithmetic": [
+    {
+      "m": 16384,
+      "scale": 1,
+      "power": 2,
+      "written_log_average_lower": 100000,
+      "scope": "Integer comparison plus general family theorem; no orbit enumeration at this size."
+    },
+    {
+      "m": 65536,
+      "scale": 2,
+      "power": 2,
+      "written_log_average_lower": 400000,
+      "scope": "Integer comparison plus general family theorem; no orbit enumeration at this size."
+    },
+    {
+      "m": 262144,
+      "scale": 4,
+      "power": 2,
+      "written_log_average_lower": 1600000,
+      "scope": "Integer comparison plus general family theorem; no orbit enumeration at this size."
+    },
+    {
+      "m": 1048576,
+      "scale": 8,
+      "power": 2,
+      "written_log_average_lower": 6400000,
+      "scope": "Integer comparison plus general family theorem; no orbit enumeration at this size."
+    },
+    {
+      "m": 4194304,
+      "scale": 16,
+      "power": 2,
+      "written_log_average_lower": 25600000,
+      "scope": "Integer comparison plus general family theorem; no orbit enumeration at this size."
+    }
+  ],
+  "counts": {
+    "exact_family_image_and_first_return_checks": 21,
+    "independent_original_source_transport_checks": 84,
+    "exact_returned_gradient_offsets": 1866,
+    "complete_small_interval_gradients": 576,
+    "complete_small_progression_gradients": 64,
+    "large_quadratic_exponential_integer_certificates": 5,
+    "elementary_exponential_constant_checks": 2
+  }
+}

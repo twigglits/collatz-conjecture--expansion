@@ -1,0 +1,7 @@
+'InverseFibreGrowth.wt_affine' depends on axioms: [propext, Quot.sound]
+'InverseFibreGrowth.same_weight_fibre_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InverseFibreGrowth.certificate_checked' does not depend on any axioms
+'InverseFibreGrowth.members_distinct' does not depend on any axioms
+'InverseFibreGrowth.member_count' does not depend on any axioms
+'InverseFibreGrowth.lifted_fibre' depends on axioms: [propext, Quot.sound]
+'InverseFibreGrowth.lifted_distinct' depends on axioms: [propext]

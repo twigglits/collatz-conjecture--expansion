@@ -1,0 +1,259 @@
+{
+  "verified_at_utc": "2026-10-13T18:50:44.028881+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 8,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.361,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.446,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.49,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.308,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.537,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.347,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.615,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.347,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.275,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    },
+    {
+      "source": "lean/ReturnOccupationDensity.lean",
+      "source_sha256": "75211a55f8f02054fbe70aaf16c8d2f1369fae82ca9e713c8bfb18042a14cf67",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/ReturnOccupationDensity.olean",
+        "lean/ReturnOccupationDensity.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.479,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/ReturnOccupationDensity.log",
+      "log_sha256": "f62d2f8dbf120876b85b37dbdbf8b716b1b0ab67d5b34f55f5140a6cc6eb8aeb",
+      "olean_sha256": "86f0165d9e9ca27feda7d5df65d0628d2a34e230c62c57778b0e55cef41bea01"
+    },
+    {
+      "source": "lean/GradientOrliczObstruction.lean",
+      "source_sha256": "4d11a1907187e25d46ce2512272376642c200f99268370645b3893cab2e01db0",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-gradient-orlicz-qws7oa5n/GradientOrliczObstruction.olean",
+        "lean/GradientOrliczObstruction.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.307,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/gradient-orlicz-obstruction/GradientOrliczObstruction.log",
+      "log_sha256": "07a669f785374398cf4245160e55bb7deb575f6502591fcc0160455f31bae056",
+      "olean_sha256": "cde893938f0ebef6f4a25bb7babb562aaa549d3ddec2266b63db994a82079a89"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/return-occupation-density/verification.json": 29,
+    "results/reversal-persistence/verification.json": 14
+  },
+  "kernel_scope": [
+    "All-parameter membership of the exceptional endpoint in its actual returned progression and interval.",
+    "Exact returned scale, retained parent lower bound, and child ceiling.",
+    "Cross-multiplied difference and squared-gap bounds and an explicit large integer certificate."
+  ],
+  "written_scope": [
+    "A finite accumulated squared returned gradient is >=25*(6m+2)/4096 at one sampled endpoint.",
+    "Every fixed exponential moment exp((G/C)^p), p>1, is unbounded over these actual intervals and progressions.",
+    "Corresponding Luxemburg norms have lower growth order m^(1-1/p).",
+    "The conjugate of u*log(1+u)^alpha has a lower bound of exponential power 1/alpha.",
+    "A uniform complementary norm after summing time contributions cannot pair the current L(log L)^alpha density bounds with these gradients."
+  ],
+  "finite_scope": {
+    "exact_family_image_and_first_return_checks": 21,
+    "independent_original_source_transport_checks": 84,
+    "exact_returned_gradient_offsets": 1866,
+    "complete_small_interval_gradients": 576,
+    "complete_small_progression_gradients": 64,
+    "large_quadratic_exponential_integer_certificates": 5,
+    "elementary_exponential_constant_checks": 2
+  },
+  "floating_scope": "None in verification decisions.",
+  "external_scope": "No new external theorem. Earlier kernel family and return formulas are reused.",
+  "not_proved": [
+    "Unbounded ordinary means of the accumulated gradient or failure of a direct density-gradient pairing.",
+    "Failure of every possible use of Orlicz estimates or of an ordinary exponential norm at sufficiently large scale.",
+    "A uniform actual weighted-energy bound, escape exclusion, other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "lean/ReturnOccupationDensity.lean": "75211a55f8f02054fbe70aaf16c8d2f1369fae82ca9e713c8bfb18042a14cf67",
+    "lean/GradientOrliczObstruction.lean": "4d11a1907187e25d46ce2512272376642c200f99268370645b3893cab2e01db0",
+    "verify_gradient_orlicz_obstruction.py": "ce8dcfdd9e4b305f34bf4cbda5718db2d70ff4e44901772ed3c0b5be2df9de4e",
+    "docs/GRADIENT-ORLICZ-OBSTRUCTION.md": "d4e49eb4ebeb747875eab59ccc2a80ac5f5e5c9e6f7e1fdad253524636885531",
+    "docs/RETURN-OCCUPATION-DENSITY.md": "3be18b4d874750df871c4e186d0d33b5feb27ecec10bf65fa7769fde0a6e3b20",
+    "docs/REVERSAL-PERSISTENCE.md": "5777bd39fd2c1ba3a149918864ff3d9a702fd2b85ace3256c3ec44cf5313fe11",
+    "results/return-occupation-density/verification.json": "9a60b43b7d1201977627fb21c2bc3a968b4991a8ae0cec0ef0ebaa0c16f7a072",
+    "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",
+    "results/gradient-orlicz-obstruction/replay.json": "0beca30b8928a8ff666d13ff2fb91f54d7d4c6d43bfb4971303f57c2402f9663",
+    "results/gradient-orlicz-obstruction/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/gradient-orlicz-obstruction/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/gradient-orlicz-obstruction/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/gradient-orlicz-obstruction/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/gradient-orlicz-obstruction/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/gradient-orlicz-obstruction/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/gradient-orlicz-obstruction/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/gradient-orlicz-obstruction/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/gradient-orlicz-obstruction/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+    "results/gradient-orlicz-obstruction/ReturnOccupationDensity.log": "f62d2f8dbf120876b85b37dbdbf8b716b1b0ab67d5b34f55f5140a6cc6eb8aeb",
+    "results/gradient-orlicz-obstruction/GradientOrliczObstruction.log": "07a669f785374398cf4245160e55bb7deb575f6502591fcc0160455f31bae056"
+  }
+}

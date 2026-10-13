@@ -1,0 +1,15 @@
+'ReturnOccupationDensity.return_class' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.family_early_return' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.weight_prefix_mono' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.power_pair_no_return' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.geometric_drift_arithmetic' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.inverse_bernoulli_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnOccupationDensity.inverse_bernoulli' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnOccupationDensity.exponential_linearization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnOccupationDensity.attempt_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnOccupationDensity.failed_attempt_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnOccupationDensity.half_root_constants' does not depend on any axioms
+'ReturnOccupationDensity.total_attempt_constant' does not depend on any axioms
+'ReturnOccupationDensity.return_weight_bound' does not depend on any axioms
+'ReturnOccupationDensity.return_level_mass' depends on axioms: [propext, Quot.sound]
+'ReturnOccupationDensity.cumulative_column_bound' depends on axioms: [propext, Quot.sound]
