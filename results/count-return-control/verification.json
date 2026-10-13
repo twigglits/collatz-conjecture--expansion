@@ -1,0 +1,129 @@
+{
+  "verified_at_utc": "2026-10-13T15:49:07.064642+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 12,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-count-return-0cu5bcs1/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.361,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/count-return-control/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-count-return-0cu5bcs1/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.441,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/count-return-control/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-count-return-0cu5bcs1/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.484,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/count-return-control/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-count-return-0cu5bcs1/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.284,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/count-return-control/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/coalescence-energy-caps/verification.json": 16,
+    "results/reversal-persistence/verification.json": 14
+  },
+  "kernel_scope": [
+    "Two-child absolute-gap restart identity and exact all-depth full-period mass recurrence.",
+    "Positive coefficient 3^d-1 is below 2^(2d), supporting the written holding bound.",
+    "Prescribed even departure, holding, and return transitions and strict separation descent.",
+    "Integer comparisons for the fractional-moment and finite-set return constants."
+  ],
+  "written_scope": [
+    "Conditioned Haar endpoint law, parity-prefix congruence, and uniform expected holding bound.",
+    "First positive count-return tail <=16*H^(-1/5), uniformly in starting separation.",
+    "Stopped 1/16 correction moment <=3202 and return drift <=509/512*D^(1/16)+6404.",
+    "Finite-set return and prescribed-path argument gives expected count-return cycles <=C_star.",
+    "Full-period unstopped absolute count gap has mean <=C_star, with C_star=2187414*2^454272.",
+    "Balanced noncoalescence <=21*C_star*H^(-1/5), without importing an external coalescence theorem.",
+    "Actual energy E_s <=(105/4)*C_star*ceil(121*s/50)^(4/5)+23/4, hence E_s=o(s)."
+  ],
+  "finite_scope": {
+    "actual_pair_residue_paths": 131056,
+    "complete_direct_state_laws": 208,
+    "exact_full_gap_mass_recurrences": 25,
+    "state_nodes_refined": 216189,
+    "holding_prefix_congruence_cases": 270072,
+    "exact_holding_period_counts": 1320,
+    "prescribed_actual_bits": 173305,
+    "strict_return_descent_cycles": 86026,
+    "actual_balanced_fusion_witnesses": 8192
+  },
+  "external_scope": "No new external theorem, package, or coalescence replay used.",
+  "not_proved": [
+    "A complete Lean formalization of the probability and real-analysis arguments.",
+    "A bounded late-offset energy subsequence or a uniform whole-annulus reversal charge.",
+    "Exclusion of escape, additional positive cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "verify_count_return_control.py": "34e4af2c036b96a9756596fe975c79362976ea9aad84c6f5a979b1c877d6a3df",
+    "docs/COUNT-RETURN-CONTROL.md": "44ded2dbc1619cfb872d6463c3c28ad431ca45b2570852ecd26d0fec3584f311",
+    "docs/COALESCENCE-ENERGY-CAPS.md": "05cfbe0216f05f1256de0b714651ef4de1b342c52e2bed3f4be202f95f901500",
+    "results/coalescence-energy-caps/verification.json": "786f23192b0fb6f25aca69803090a59dbe230270bc02c396bfc7d892bff1de26",
+    "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",
+    "results/count-return-control/replay.json": "fe39e16287047744e1c0a368ad58f9d627bb51166352e5ed3809bf688c3b619e",
+    "results/count-return-control/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/count-return-control/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/count-return-control/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/count-return-control/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac"
+  }
+}

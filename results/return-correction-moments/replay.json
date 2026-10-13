@@ -1,0 +1,1799 @@
+{
+  "actual_affine_corrections": {
+    "maximum_full_period_depth": 13,
+    "scope": "Direct integer iteration, including n=0; no assumed moment law."
+  },
+  "bounded_stopping_laws": {
+    "horizon": 14,
+    "separations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      15,
+      31,
+      255,
+      1023,
+      25599999999,
+      25600000000,
+      34359738367
+    ],
+    "barriers": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      15
+    ],
+    "rows": [
+      {
+        "separation": 1,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 1,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 1,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          38933,
+          8192
+        ],
+        "each_correction_mean": [
+          38933,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2655,
+          8192
+        ],
+        "unresolved_prefixes": 323
+      },
+      {
+        "separation": 1,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          49111,
+          8192
+        ],
+        "each_correction_mean": [
+          49111,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          3349,
+          16384
+        ],
+        "unresolved_prefixes": 1568
+      },
+      {
+        "separation": 1,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          59883,
+          8192
+        ],
+        "each_correction_mean": [
+          59883,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          55,
+          4096
+        ],
+        "unresolved_prefixes": 4564
+      },
+      {
+        "separation": 1,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60225,
+          8192
+        ],
+        "each_correction_mean": [
+          60225,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4784
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 2,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          45869,
+          8192
+        ],
+        "each_correction_mean": [
+          45869,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2597,
+          8192
+        ],
+        "unresolved_prefixes": 563
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          27875,
+          4096
+        ],
+        "each_correction_mean": [
+          27875,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1503,
+          8192
+        ],
+        "unresolved_prefixes": 2272
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          3937,
+          512
+        ],
+        "each_correction_mean": [
+          3937,
+          2048
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          105,
+          16384
+        ],
+        "unresolved_prefixes": 5123
+      },
+      {
+        "separation": 3,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          31541,
+          4096
+        ],
+        "each_correction_mean": [
+          31541,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 5228
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 4,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          20355,
+          4096
+        ],
+        "each_correction_mean": [
+          20355,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2629,
+          8192
+        ],
+        "unresolved_prefixes": 433
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          52607,
+          8192
+        ],
+        "each_correction_mean": [
+          52607,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1557,
+          8192
+        ],
+        "unresolved_prefixes": 2024
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60919,
+          8192
+        ],
+        "each_correction_mean": [
+          60919,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          23,
+          4096
+        ],
+        "unresolved_prefixes": 4973
+      },
+      {
+        "separation": 5,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          30487,
+          4096
+        ],
+        "each_correction_mean": [
+          30487,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 5065
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          34791,
+          8192
+        ],
+        "each_correction_mean": [
+          34791,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2677,
+          8192
+        ],
+        "unresolved_prefixes": 223
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          48237,
+          8192
+        ],
+        "each_correction_mean": [
+          48237,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1659,
+          8192
+        ],
+        "unresolved_prefixes": 1565
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          14545,
+          2048
+        ],
+        "each_correction_mean": [
+          14545,
+          8192
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          25,
+          4096
+        ],
+        "unresolved_prefixes": 4686
+      },
+      {
+        "separation": 7,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          58231,
+          8192
+        ],
+        "each_correction_mean": [
+          58231,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4786
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          10369,
+          2048
+        ],
+        "each_correction_mean": [
+          10369,
+          8192
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          5221,
+          16384
+        ],
+        "unresolved_prefixes": 480
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          6411,
+          1024
+        ],
+        "each_correction_mean": [
+          6411,
+          4096
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1571,
+          8192
+        ],
+        "unresolved_prefixes": 1898
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60963,
+          8192
+        ],
+        "each_correction_mean": [
+          60963,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          53,
+          16384
+        ],
+        "unresolved_prefixes": 4923
+      },
+      {
+        "separation": 15,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          15247,
+          2048
+        ],
+        "each_correction_mean": [
+          15247,
+          8192
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4976
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          19587,
+          4096
+        ],
+        "each_correction_mean": [
+          19587,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          5277,
+          16384
+        ],
+        "unresolved_prefixes": 359
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          24581,
+          4096
+        ],
+        "each_correction_mean": [
+          24581,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          417,
+          2048
+        ],
+        "unresolved_prefixes": 1513
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          29725,
+          4096
+        ],
+        "each_correction_mean": [
+          29725,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          115,
+          16384
+        ],
+        "unresolved_prefixes": 4584
+      },
+      {
+        "separation": 31,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          59551,
+          8192
+        ],
+        "each_correction_mean": [
+          59551,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4699
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          39013,
+          8192
+        ],
+        "each_correction_mean": [
+          39013,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2645,
+          8192
+        ],
+        "unresolved_prefixes": 340
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          49165,
+          8192
+        ],
+        "each_correction_mean": [
+          49165,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          829,
+          4096
+        ],
+        "unresolved_prefixes": 1551
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          3735,
+          512
+        ],
+        "each_correction_mean": [
+          3735,
+          2048
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          39,
+          4096
+        ],
+        "unresolved_prefixes": 4587
+      },
+      {
+        "separation": 255,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60003,
+          8192
+        ],
+        "each_correction_mean": [
+          60003,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4743
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          38955,
+          8192
+        ],
+        "each_correction_mean": [
+          38955,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          5293,
+          16384
+        ],
+        "unresolved_prefixes": 335
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          49095,
+          8192
+        ],
+        "each_correction_mean": [
+          49095,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          3345,
+          16384
+        ],
+        "unresolved_prefixes": 1514
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          29907,
+          4096
+        ],
+        "each_correction_mean": [
+          29907,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          49,
+          4096
+        ],
+        "unresolved_prefixes": 4537
+      },
+      {
+        "separation": 1023,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60131,
+          8192
+        ],
+        "each_correction_mean": [
+          60131,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4733
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          38933,
+          8192
+        ],
+        "each_correction_mean": [
+          38933,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2655,
+          8192
+        ],
+        "unresolved_prefixes": 323
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          49111,
+          8192
+        ],
+        "each_correction_mean": [
+          49111,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          3349,
+          16384
+        ],
+        "unresolved_prefixes": 1568
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          59883,
+          8192
+        ],
+        "each_correction_mean": [
+          59883,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          55,
+          4096
+        ],
+        "unresolved_prefixes": 4564
+      },
+      {
+        "separation": 25599999999,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60225,
+          8192
+        ],
+        "each_correction_mean": [
+          60225,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4784
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 25600000000,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 1,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          1,
+          1
+        ],
+        "each_correction_mean": [
+          1,
+          4
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          1,
+          1
+        ],
+        "unresolved_prefixes": 0
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 2,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          12287,
+          4096
+        ],
+        "each_correction_mean": [
+          12287,
+          16384
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          8191,
+          16384
+        ],
+        "unresolved_prefixes": 2
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 3,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          38933,
+          8192
+        ],
+        "each_correction_mean": [
+          38933,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          2655,
+          8192
+        ],
+        "unresolved_prefixes": 323
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 4,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          49111,
+          8192
+        ],
+        "each_correction_mean": [
+          49111,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          3349,
+          16384
+        ],
+        "unresolved_prefixes": 1568
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 8,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          59883,
+          8192
+        ],
+        "each_correction_mean": [
+          59883,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          55,
+          4096
+        ],
+        "unresolved_prefixes": 4564
+      },
+      {
+        "separation": 34359738367,
+        "gap_boundary": 15,
+        "horizon": 14,
+        "truncated_clock_mean": [
+          60225,
+          8192
+        ],
+        "each_correction_mean": [
+          60225,
+          32768
+        ],
+        "each_stopped_slope_mean": [
+          1,
+          1
+        ],
+        "upper_exit_mass": [
+          0,
+          1
+        ],
+        "unresolved_prefixes": 4784
+      }
+    ],
+    "tail_scope": "Only returns completed by the finite horizon."
+  },
+  "prescribed_descent": {
+    "sample_count": 4167,
+    "largest_start": 25600000000,
+    "maximum_cycles_observed": 42,
+    "maximum_bits_observed": 81,
+    "maximum_cycle_bits_observed": 13,
+    "scope": "Finite replay; the all-separation descent and bit-count argument is written with kernel transition inputs."
+  },
+  "constants": {
+    "correction_tail_coefficient": [
+      7,
+      2
+    ],
+    "adjacent_return_tail_coefficient": 7,
+    "quarter_moment_per_endpoint": [
+      9,
+      2
+    ],
+    "quarter_drift": [
+      [
+        39,
+        40
+      ],
+      9
+    ],
+    "small_set_limit": 25600000000,
+    "attempt_cycles": 140,
+    "attempt_bits": 5180,
+    "return_cycle_bound": {
+      "coefficient": 540,
+      "power_of_two": 5180
+    },
+    "truncation_bound": "7/(1-2*beta)*H^(beta-1/2), 0<=beta<1/2"
+  },
+  "counts": {
+    "direct_affine_child_identities": 16383,
+    "full_period_correction_and_slope_masses": 14,
+    "direct_stopped_endpoint_replays": 12130,
+    "actual_stopping_tree_edges": 272774,
+    "bounded_stopping_law_identities": 1092,
+    "finite_correction_tail_checks": 4992,
+    "finite_return_separation_tail_checks": 78,
+    "direct_prescribed_return_cycles": 41524,
+    "finite_prescribed_fusion_paths": 4167,
+    "exact_drift_and_attempt_constant_checks": 9,
+    "rational_tail_bound_comparisons": 20405,
+    "exact_truncation_constant_identities": 2450
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "verified_at_utc": "2026-10-13T14:22:16.286386+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 31,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-ordered-drift-6xpea194/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.355,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/ordered-weight-drift/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-ordered-drift-6xpea194/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.442,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/ordered-weight-drift/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-ordered-drift-6xpea194/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.487,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/ordered-weight-drift/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-ordered-drift-6xpea194/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.59,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/ordered-weight-drift/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/escape-weight-refinements/verification.json": 16,
+    "results/coalescence-energy-caps/verification.json": 16
+  },
+  "kernel_scope": [
+    "Shifted one-step identity, all-depth count-order propagation, and first-return endpoint order.",
+    "Cross-multiplied downward reciprocal estimate and time-charge denominator inequalities.",
+    "All-depth shifted affine identity, periodicity, and exact moment.",
+    "A convergent example has reversed counts and violates shifted refinement order.",
+    "Even-indexed jump-family endpoint formulas and count reversal at every parameter.",
+    "All positive-offset transition formulas and persistence of unshifted order while count order remains nonnegative.",
+    "Exactly k+1 one-turn parity prefixes on every depth-k period and on its actual source annulus."
+  ],
+  "written_scope": [
+    "Ordered negative drift is at most three halves of the original deficit increment plus the shifted deficit increment.",
+    "The original and shifted total deficits are finite and have explicit linear upper bounds.",
+    "Sum over offsets s<S of ordered negative drift <= (5/2)*ceil(121*S/50)+27/4 < (121/20)*S+37/4.",
+    "The positive-offset transitions force a one-turn parent parity prefix for any ordered negative change; the source-height bound gives s<=2k+2.",
+    "Stronger unconditional bounds: ordered negative drift is <=2 at each offset, tends to zero exponentially, and its sum over all offsets is <=14.",
+    "The full drift series is absolutely convergent at each fixed offset, without a uniform bound.",
+    "A bounded subsequence of reversal Cesaro means would imply the existing sufficient escape-exclusion criterion.",
+    "No fixed immediate parent time-loss multiplier bounds all reversed downward changes; an exact family makes the required factor unbounded."
+  ],
+  "finite_scope": {
+    "ordered_endpoint_and_reciprocal_checks": 805599,
+    "ordered_negative_pattern_and_height_checks": 32770,
+    "adjacent_pair_clocks": 1048576,
+    "first_positive_count_returns": 6820,
+    "direct_shifted_affine_rows": 524287,
+    "nonzero_quotient_shifted_lifts": 405,
+    "one_turn_annulus_rows": 524287,
+    "ordered_rational_time_charges": 157635,
+    "rational_cells_and_time_losses": 200606,
+    "finite_annulus_deficit_bounds": 2156,
+    "finite_cumulative_ordered_budgets": 97,
+    "even_jump_family_exact_paths": 64,
+    "cutoff_and_cesaro_constant_checks": 1024
+  },
+  "external_scope": "No new external theorem adopted or replayed. New bounds need neither passage mixing nor PLD. The conditional implication to no escape reuses the prior packing/PLD route.",
+  "not_proved": [
+    "A bound on the reversal Cesaro means or the full late-offset energies.",
+    "Absence of escape, exclusion of other positive cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/CoalescenceEnergyCaps.lean": "5610654f78e3bbe3a57bebf745d06e90024f0e2aa173bfcf1276cc040cd4c0d0",
+    "verify_ordered_weight_drift.py": "be48e73ba1e87a10b700f6829e495137dc0eea5ac9591bd46ea9b3b616e7a942",
+    "docs/ORDERED-WEIGHT-DRIFT.md": "d324a4d8bccdaa7f10c465bedc482ed904d1c88dda46a86bdc71bdbe8be03428",
+    "docs/ESCAPE-WEIGHT-REFINEMENTS.md": "48bb99c11db620a7054489a5f4af7bdf192d8b6c8735ebdf9e1effe78871bbb9",
+    "docs/COALESCENCE-ENERGY-CAPS.md": "05cfbe0216f05f1256de0b714651ef4de1b342c52e2bed3f4be202f95f901500",
+    "results/escape-weight-refinements/verification.json": "e495d6e0b2647cd06b175533041cac209b3c3f0fedc5f54437deae34dc0a5f42",
+    "results/coalescence-energy-caps/verification.json": "786f23192b0fb6f25aca69803090a59dbe230270bc02c396bfc7d892bff1de26",
+    "results/ordered-weight-drift/replay.json": "5e33528e54cb958036509ca19d74ee654221976d2e956a2b1146fff9f80b7bed",
+    "results/ordered-weight-drift/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/ordered-weight-drift/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/ordered-weight-drift/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/ordered-weight-drift/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "verified_at_utc": "2026-10-13T17:40:34.195980+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 12,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.463,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.458,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.487,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.593,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.343,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-image-adblvl37/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.27,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-image-bounds/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-clock/verification.json": 11,
+    "results/annulus-height-coupling/verification.json": 15,
+    "results/reversal-persistence/verification.json": 14
+  },
+  "kernel_scope": [
+    "Cubic child and full-period masses; ordinary and tilted prefix-tree bounds and multiplier numerator cap.",
+    "All-prefix endpoint and equal-count separation caps and exact endpoint image lift.",
+    "Integer residue floor counter, its interval discrepancy, and full-period count."
+  ],
+  "written_scope": [
+    "Joint first-return moment sum p_i D_i^beta (1+tau_i)^alpha is finite when beta>=0, alpha>0, and 3beta+2alpha<1.",
+    "Separation-weighted image density K_beta lies in L(log L)^alpha under ternary Haar probability in that range.",
+    "Quantitative Haar absolute continuity, clock truncation rate, and coarse-cylinder L1 approximation.",
+    "Finite integer interval mean error <=2^beta*(2*3^beta)^H/M for truncated image coefficients.",
+    "Logarithmic density moment transfers to finite integer intervals with the explicitly retained depth/length error.",
+    "Unweighted logarithmic quarter-moment is <80 under Haar, and <82 on finite integer intervals when 2^H*(H+1)<=M."
+  ],
+  "finite_scope": {
+    "actual_cubic_child_and_endpoint_checks": 32767,
+    "exact_cubic_period_masses": 15,
+    "first_return_prefix_tree_edges": 75562,
+    "finite_integer_power_column_bounds": 51,
+    "exact_prefix_tree_identities": 17,
+    "all_first_return_prefixes": 2494,
+    "nonfused_first_return_prefixes": 2478,
+    "direct_interval_residue_counts": 30240,
+    "exact_ternary_projection_comparisons": 12,
+    "ternary_residues_compared": 2125764,
+    "direct_truncated_density_interval_checks": 160,
+    "integer_density_values_summed": 174840,
+    "exact_logarithmic_constant_comparisons": 7
+  },
+  "floating_scope": "None in this verification.",
+  "external_scope": "No new external theorem. Earlier written first-return clock and separation moments are reused.",
+  "not_proved": [
+    "An L^p bound with p>1 or a bounded essential supremum for the full image density.",
+    "Control of the full untruncated density on individual integer traces.",
+    "A uniform comparison for actual weighted progression gradients or bounded actual energy.",
+    "Escape exclusion, exclusion of additional cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "verify_return_image_bounds.py": "2cf3e452c484ccc6ff7c93c80281a9f7dcf193cd56118ed603cbb3b10a9f133d",
+    "docs/RETURN-IMAGE-BOUNDS.md": "bc77ac20f9dbe1d64aba29e832dfe8b2133a56d0d409c7ca433059aeddcc7bb1",
+    "docs/COUNT-RETURN-CLOCK.md": "d8999680bfa33a761d957b8779876664178de383c6a46f1cb11163e354d15c39",
+    "docs/ANNULUS-HEIGHT-COUPLING.md": "4505438ea55b350915e5d12bb7d3b7b884fa876f5998cc5e36924111712b3b77",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/annulus-height-coupling/verification.json": "7ee10fb9318ccef32cef568ddb0b5b73585121ad87b13d98c6ae9062a5d1a0a5",
+    "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",
+    "results/return-image-bounds/replay.json": "08d6573a8737ce9870c40b739f9cde7c66d93b49fb3c35e6031ee54ecd79f81c",
+    "results/return-image-bounds/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/return-image-bounds/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/return-image-bounds/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/return-image-bounds/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/return-image-bounds/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/return-image-bounds/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3"
+  }
+}

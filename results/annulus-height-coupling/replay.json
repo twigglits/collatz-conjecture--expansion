@@ -1,0 +1,948 @@
+{
+  "annulus_checks": [
+    {
+      "clock": 1,
+      "source_annulus": [
+        2,
+        4
+      ],
+      "even_pair_count": 1,
+      "normalized_height_gap_mean": [
+        2,
+        3
+      ],
+      "normalized_height_gap_bound": [
+        2,
+        3
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 0,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.6094379124341003,
+        "mean_absolute_log_ratio": 1.6094379124341003,
+        "mean_absolute_log_residual": 0.5108256237659905
+      }
+    },
+    {
+      "clock": 2,
+      "source_annulus": [
+        4,
+        8
+      ],
+      "even_pair_count": 2,
+      "normalized_height_gap_mean": [
+        5,
+        18
+      ],
+      "normalized_height_gap_bound": [
+        4,
+        9
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 0,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.3050348963710032,
+        "mean_absolute_log_ratio": 1.3050348963710032,
+        "mean_absolute_log_residual": 0.20642260770289345
+      }
+    },
+    {
+      "clock": 3,
+      "source_annulus": [
+        8,
+        16
+      ],
+      "even_pair_count": 4,
+      "normalized_height_gap_mean": [
+        11,
+        108
+      ],
+      "normalized_height_gap_bound": [
+        8,
+        27
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 1,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.1784072096589808,
+        "mean_absolute_log_ratio": 1.1784072096589808,
+        "mean_absolute_log_residual": 0.07979492099087088
+      }
+    },
+    {
+      "clock": 4,
+      "source_annulus": [
+        16,
+        32
+      ],
+      "even_pair_count": 8,
+      "normalized_height_gap_mean": [
+        23,
+        648
+      ],
+      "normalized_height_gap_bound": [
+        16,
+        81
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 3,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.1191361314798631,
+        "mean_absolute_log_ratio": 1.1191361314798631,
+        "mean_absolute_log_residual": 0.026142056774768052
+      }
+    },
+    {
+      "clock": 5,
+      "source_annulus": [
+        32,
+        64
+      ],
+      "even_pair_count": 16,
+      "normalized_height_gap_mean": [
+        89,
+        3888
+      ],
+      "normalized_height_gap_bound": [
+        32,
+        243
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 7,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0990142665223228,
+        "mean_absolute_log_ratio": 1.0990142665223228,
+        "mean_absolute_log_residual": 0.016009227767853698
+      }
+    },
+    {
+      "clock": 6,
+      "source_annulus": [
+        64,
+        128
+      ],
+      "even_pair_count": 32,
+      "normalized_height_gap_mean": [
+        425,
+        23328
+      ],
+      "normalized_height_gap_bound": [
+        64,
+        729
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1,
+        1
+      ],
+      "balanced_pairs": 15,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0908199554830744,
+        "mean_absolute_log_ratio": 1.0946089943466015,
+        "mean_absolute_log_residual": 0.012227663034209968
+      }
+    },
+    {
+      "clock": 7,
+      "source_annulus": [
+        128,
+        256
+      ],
+      "even_pair_count": 64,
+      "normalized_height_gap_mean": [
+        2147,
+        139968
+      ],
+      "normalized_height_gap_bound": [
+        128,
+        2187
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        33,
+        32
+      ],
+      "balanced_pairs": 31,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0900236421839191,
+        "mean_absolute_log_ratio": 1.1269478388383434,
+        "mean_absolute_log_residual": 0.010009092103876772
+      }
+    },
+    {
+      "clock": 8,
+      "source_annulus": [
+        256,
+        512
+      ],
+      "even_pair_count": 128,
+      "normalized_height_gap_mean": [
+        10223,
+        839808
+      ],
+      "normalized_height_gap_bound": [
+        256,
+        6561
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        17,
+        16
+      ],
+      "balanced_pairs": 63,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.090798505114548,
+        "mean_absolute_log_ratio": 1.1613008670688991,
+        "mean_absolute_log_residual": 0.008189109328142223
+      }
+    },
+    {
+      "clock": 9,
+      "source_annulus": [
+        512,
+        1024
+      ],
+      "even_pair_count": 256,
+      "normalized_height_gap_mean": [
+        46577,
+        5038848
+      ],
+      "normalized_height_gap_bound": [
+        512,
+        19683
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        139,
+        128
+      ],
+      "balanced_pairs": 128,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0925252752727106,
+        "mean_absolute_log_ratio": 1.188242333156805,
+        "mean_absolute_log_residual": 0.0062056123645196515
+      }
+    },
+    {
+      "clock": 10,
+      "source_annulus": [
+        1024,
+        2048
+      ],
+      "even_pair_count": 512,
+      "normalized_height_gap_mean": [
+        204791,
+        30233088
+      ],
+      "normalized_height_gap_bound": [
+        1024,
+        59049
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        71,
+        64
+      ],
+      "balanced_pairs": 260,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.094044675302269,
+        "mean_absolute_log_ratio": 1.2150273184748803,
+        "mean_absolute_log_residual": 0.0046092464072905685
+      }
+    },
+    {
+      "clock": 11,
+      "source_annulus": [
+        2048,
+        4096
+      ],
+      "even_pair_count": 1024,
+      "normalized_height_gap_mean": [
+        882845,
+        181398528
+      ],
+      "normalized_height_gap_bound": [
+        2048,
+        177147
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        291,
+        256
+      ],
+      "balanced_pairs": 527,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0953495844059566,
+        "mean_absolute_log_ratio": 1.2460494654393681,
+        "mean_absolute_log_residual": 0.003313863155131395
+      }
+    },
+    {
+      "clock": 12,
+      "source_annulus": [
+        4096,
+        8192
+      ],
+      "even_pair_count": 2048,
+      "normalized_height_gap_mean": [
+        3743777,
+        1088391168
+      ],
+      "normalized_height_gap_bound": [
+        4096,
+        531441
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        1189,
+        1024
+      ],
+      "balanced_pairs": 1067,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0963081259807004,
+        "mean_absolute_log_ratio": 1.2736481487299334,
+        "mean_absolute_log_residual": 0.0023568728563516605
+      }
+    },
+    {
+      "clock": 13,
+      "source_annulus": [
+        8192,
+        16384
+      ],
+      "even_pair_count": 4096,
+      "normalized_height_gap_mean": [
+        15685655,
+        6530347008
+      ],
+      "normalized_height_gap_bound": [
+        8192,
+        1594323
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        2429,
+        2048
+      ],
+      "balanced_pairs": 2157,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0970209628221685,
+        "mean_absolute_log_ratio": 1.3015833338294034,
+        "mean_absolute_log_residual": 0.001644986482086346
+      }
+    },
+    {
+      "clock": 14,
+      "source_annulus": [
+        16384,
+        32768
+      ],
+      "even_pair_count": 8192,
+      "normalized_height_gap_mean": [
+        65098763,
+        39182082048
+      ],
+      "normalized_height_gap_bound": [
+        16384,
+        4782969
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        4955,
+        4096
+      ],
+      "balanced_pairs": 4354,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0975175890619864,
+        "mean_absolute_log_ratio": 1.328014083747574,
+        "mean_absolute_log_residual": 0.0011423345532375817
+      }
+    },
+    {
+      "clock": 15,
+      "source_annulus": [
+        32768,
+        65536
+      ],
+      "even_pair_count": 16384,
+      "normalized_height_gap_mean": [
+        268165235,
+        235092492288
+      ],
+      "normalized_height_gap_bound": [
+        32768,
+        14348907
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        10103,
+        8192
+      ],
+      "balanced_pairs": 8779,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0978686657886874,
+        "mean_absolute_log_ratio": 1.3541957271275145,
+        "mean_absolute_log_residual": 0.0007848252789614563
+      }
+    },
+    {
+      "clock": 16,
+      "source_annulus": [
+        65536,
+        131072
+      ],
+      "even_pair_count": 32768,
+      "normalized_height_gap_mean": [
+        1098566375,
+        1410554953728
+      ],
+      "normalized_height_gap_bound": [
+        65536,
+        43046721
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        643,
+        512
+      ],
+      "balanced_pairs": 17685,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0981083081936547,
+        "mean_absolute_log_ratio": 1.3792190953027614,
+        "mean_absolute_log_residual": 0.0005372570516136445
+      }
+    },
+    {
+      "clock": 17,
+      "source_annulus": [
+        131072,
+        262144
+      ],
+      "even_pair_count": 65536,
+      "normalized_height_gap_mean": [
+        4482133505,
+        8463329722368
+      ],
+      "normalized_height_gap_bound": [
+        131072,
+        129140163
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        41887,
+        32768
+      ],
+      "balanced_pairs": 35602,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0982728592740332,
+        "mean_absolute_log_ratio": 1.4040123165271579,
+        "mean_absolute_log_residual": 0.0003653808259120039
+      }
+    },
+    {
+      "clock": 18,
+      "source_annulus": [
+        262144,
+        524288
+      ],
+      "even_pair_count": 131072,
+      "normalized_height_gap_mean": [
+        18227012555,
+        50779978334208
+      ],
+      "normalized_height_gap_bound": [
+        262144,
+        387420489
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        2663,
+        2048
+      ],
+      "balanced_pairs": 71630,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.0983839471194485,
+        "mean_absolute_log_ratio": 1.4282901653850297,
+        "mean_absolute_log_residual": 0.0002479747790584519
+      }
+    },
+    {
+      "clock": 19,
+      "source_annulus": [
+        524288,
+        1048576
+      ],
+      "even_pair_count": 262144,
+      "normalized_height_gap_mean": [
+        73935472865,
+        304679870005248
+      ],
+      "normalized_height_gap_bound": [
+        524288,
+        1162261467
+      ],
+      "signed_count_gap_mean": [
+        1,
+        1
+      ],
+      "absolute_count_gap_mean": [
+        86635,
+        65536
+      ],
+      "balanced_pairs": 144048,
+      "floating_log_diagnostics_not_certificate": {
+        "mean_log_ratio": 1.098459146367574,
+        "mean_absolute_log_ratio": 1.452150212363318,
+        "mean_absolute_log_residual": 0.00016766230644097362
+      }
+    }
+  ],
+  "return_transport": {
+    "first_returns_through_depth": 14,
+    "all_return_prefix_count": 245,
+    "nonfused_prefixes_used": 64,
+    "selected_nonzero_transports": [
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 6,
+        "later_offset": 0,
+        "progression_step": 9,
+        "source_energy": [
+          81,
+          4734976
+        ],
+        "progression_energy": [
+          9,
+          73984
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 6,
+        "later_offset": 3,
+        "progression_step": 9,
+        "source_energy": [
+          81,
+          1638400
+        ],
+        "progression_energy": [
+          9,
+          25600
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 6,
+        "later_offset": 8,
+        "progression_step": 9,
+        "source_energy": [
+          6561,
+          16777216
+        ],
+        "progression_energy": [
+          729,
+          262144
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 8,
+        "later_offset": 0,
+        "progression_step": 9,
+        "source_energy": [
+          145761115603136049,
+          66012671693662863769600
+        ],
+        "progression_energy": [
+          16195679511459561,
+          1031447995213482246400
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 8,
+        "later_offset": 3,
+        "progression_step": 9,
+        "source_energy": [
+          799557717664449,
+          110401144246298214400
+        ],
+        "progression_energy": [
+          88839746407161,
+          1725017878848409600
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 6,
+        "residue": 48,
+        "common_count": 2,
+        "base_endpoints": [
+          8,
+          7
+        ],
+        "source_level": 8,
+        "later_offset": 8,
+        "progression_step": 9,
+        "source_energy": [
+          53975869941753,
+          2929272505153617920
+        ],
+        "progression_energy": [
+          5997318882417,
+          45769882893025280
+        ],
+        "exact_transport_multiplier": [
+          9,
+          64
+        ],
+        "binary_branch_mass": [
+          1,
+          64
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 7,
+        "later_offset": 0,
+        "progression_step": 27,
+        "source_energy": [
+          729,
+          598303232
+        ],
+        "progression_energy": [
+          27,
+          4674244
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 7,
+        "later_offset": 3,
+        "progression_step": 27,
+        "source_energy": [
+          59049,
+          149119158272
+        ],
+        "progression_energy": [
+          2187,
+          1164993424
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 7,
+        "later_offset": 8,
+        "progression_step": 27,
+        "source_energy": [
+          531441,
+          984036147200
+        ],
+        "progression_energy": [
+          19683,
+          7687782400
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 9,
+        "later_offset": 0,
+        "progression_step": 27,
+        "source_energy": [
+          54497265566088753456129,
+          512902375769313237011333120000
+        ],
+        "progression_energy": [
+          2018417243188472350227,
+          4007049810697759664151040000
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 9,
+        "later_offset": 3,
+        "progression_step": 27,
+        "source_energy": [
+          2405231351051983639659,
+          9022215427084998177574092800
+        ],
+        "progression_energy": [
+          89082642631554949617,
+          70486058024101548262297600
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      },
+      {
+        "prefix_clock": 7,
+        "residue": 88,
+        "common_count": 3,
+        "base_endpoints": [
+          20,
+          19
+        ],
+        "source_level": 9,
+        "later_offset": 8,
+        "progression_step": 27,
+        "source_energy": [
+          259539932010356380507797,
+          958337801322015118013235200
+        ],
+        "progression_energy": [
+          9612590074457643722511,
+          7487014072828243109478400
+        ],
+        "exact_transport_multiplier": [
+          27,
+          128
+        ],
+        "binary_branch_mass": [
+          1,
+          128
+        ]
+      }
+    ],
+    "scope": "Progression averages retained exactly. No interval averaging estimate is asserted."
+  },
+  "progression_bias_witness": {
+    "prefix_clock": 10,
+    "residue": 200,
+    "common_count": 4,
+    "continuation_clock": 128,
+    "progression_pair": [
+      98,
+      97
+    ],
+    "containing_interval": [
+      98,
+      179
+    ],
+    "progression_spacing": 81,
+    "required_multiplier": [
+      10453976883,
+      926254009
+    ],
+    "scope": "Exact finite counterexample to C<=11 for this progression comparison, not to all finite C."
+  },
+  "counts": {
+    "actual_even_annulus_pairs": 524287,
+    "height_gap_quotient_lifts": 284,
+    "exact_annulus_mass_and_count_identities": 19,
+    "first_return_tree_edges": 5540,
+    "enumerated_first_count_return_prefixes": 245,
+    "exact_lifted_weight_factorizations": 960,
+    "exact_progression_energy_transports": 384,
+    "progression_bias_cycle_endpoints": 82
+  }
+}

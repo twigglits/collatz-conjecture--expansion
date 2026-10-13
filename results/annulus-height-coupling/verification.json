@@ -1,0 +1,144 @@
+{
+  "verified_at_utc": "2026-10-13T16:27:34.956994+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 12,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-height-dhs3iz0r/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.358,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-height-coupling/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-height-dhs3iz0r/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.443,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-height-coupling/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-height-dhs3iz0r/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.494,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-height-coupling/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-height-dhs3iz0r/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.287,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-height-coupling/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/AnnulusHeightCoupling.lean",
+      "source_sha256": "06cf1488c221ec61a66268d2eba03eea2838bcc4bf0b34ae43a44c06c0e7c78e",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-height-dhs3iz0r/AnnulusHeightCoupling.olean",
+        "lean/AnnulusHeightCoupling.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.25,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/annulus-height-coupling/AnnulusHeightCoupling.log",
+      "log_sha256": "b8cf1ace7cb8499dca7d11c51bd59e5b70b6956dae743c8a12989745348bed2c",
+      "olean_sha256": "ab3e7cfedfa7c57b3b9adf2ed272135b57a6a6722b1f830f2f3089eb3c9f0163"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-control/verification.json": 14
+  },
+  "kernel_scope": [
+    "Scaled endpoint affine identity, lower bound, gap periodicity, and cross-multiplied gap bound.",
+    "All-depth actual-annulus normalized-height difference mass bound.",
+    "Two-child odd-count identity, parity mass recurrence, and exact signed count mean one on the even annulus."
+  ],
+  "written_scope": [
+    "Actual-annulus mean |log(Y/X)-(b-a)*log(3)| <=(2/3)^t.",
+    "Actual logarithmic height separation has bounded first moment and a uniform integrated threshold-disagreement budget.",
+    "Signed logarithmic height mean tends to log(3); combined with earlier coalescence, first-mean convergence and uniform integrability fail.",
+    "Every fractional logarithmic height moment of order below one tends to zero at the stated rate.",
+    "Expected sum of D_j^(1/16) over all Haar count-return cycles <=(512/3)*(1+6404*C_star).",
+    "Exact continuation factorization transports a source residue to a progression of spacing 3^a, retaining multiplier 3^a/2^tau."
+  ],
+  "finite_scope": {
+    "actual_even_annulus_pairs": 524287,
+    "height_gap_quotient_lifts": 284,
+    "exact_annulus_mass_and_count_identities": 19,
+    "first_return_tree_edges": 5540,
+    "enumerated_first_count_return_prefixes": 245,
+    "exact_lifted_weight_factorizations": 960,
+    "exact_progression_energy_transports": 384,
+    "progression_bias_cycle_endpoints": 82
+  },
+  "floating_scope": "Logarithm table columns are diagnostic only; they make no verification decisions.",
+  "external_scope": "No new external theorem or package. Probability consequences reuse the previous written count-return proof.",
+  "not_proved": [
+    "A uniform bound comparing the actual progression energies to interval energies.",
+    "Control at arbitrary later clocks from the source-boundary logarithmic estimate alone.",
+    "A bounded energy subsequence, absence of escape, other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/AnnulusHeightCoupling.lean": "06cf1488c221ec61a66268d2eba03eea2838bcc4bf0b34ae43a44c06c0e7c78e",
+    "verify_annulus_height_coupling.py": "f107d482513d3cca8a30a1db516d391c35e5dd8a570ea6d599986b5880ac1443",
+    "docs/ANNULUS-HEIGHT-COUPLING.md": "4505438ea55b350915e5d12bb7d3b7b884fa876f5998cc5e36924111712b3b77",
+    "docs/COUNT-RETURN-CONTROL.md": "44ded2dbc1619cfb872d6463c3c28ad431ca45b2570852ecd26d0fec3584f311",
+    "results/count-return-control/verification.json": "bcebc20234a91272484a5663b6dd8a6b9f7ca589b2d99cac4a3808b454f90c0d",
+    "results/annulus-height-coupling/replay.json": "11ab0648d62b1f76eb25201bd8fc3710ed8d9a40572372770b77a121256d14ac",
+    "results/annulus-height-coupling/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/annulus-height-coupling/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/annulus-height-coupling/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/annulus-height-coupling/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/annulus-height-coupling/AnnulusHeightCoupling.log": "b8cf1ace7cb8499dca7d11c51bd59e5b70b6956dae743c8a12989745348bed2c"
+  }
+}

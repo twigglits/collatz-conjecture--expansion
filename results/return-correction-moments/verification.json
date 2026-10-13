@@ -1,0 +1,175 @@
+{
+  "verified_at_utc": "2026-10-13T18:04:21.422785+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 12,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.14,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.453,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.498,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.287,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.318,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-return-correction-enrec4vb/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.347,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-correction-moments/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-control/verification.json": 14,
+    "results/count-return-clock/verification.json": 11,
+    "results/return-image-bounds/verification.json": 20
+  },
+  "kernel_scope": [
+    "Actual affine numerator recurrence, residue lift, and two-child drift identity.",
+    "All finite binary stopping trees: exact correction and slope identities, with denominators cleared, and clock bound.",
+    "Named prior gap-boundary clock budget and exact quarter-power drift, descent-attempt, and bit constants."
+  ],
+  "written_scope": [
+    "Unbounded boundary stopping via Fatou gives correction tail <=7/(2*sqrt(L)), uniformly in starting separation.",
+    "First-return correction moments and summable cycle separation moments exist for every 0<beta<1/2.",
+    "Returned separation from D has tail <=(D+6)/sqrt(L); adjacent case coefficient is 7.",
+    "Quarter-power drift yields expected balanced-fusion cycle count <=540*2^5180.",
+    "Return-image logarithmic moment region improves to beta+alpha<1/2.",
+    "Haar L1 truncation error <=7/(1-2*beta)*H^(beta-1/2), including that endpoint rate, for 0<=beta<1/2.",
+    "Earlier square-root fusion-clock and energy bounds can use the smaller cycle constant."
+  ],
+  "finite_scope": {
+    "direct_affine_child_identities": 16383,
+    "full_period_correction_and_slope_masses": 14,
+    "direct_stopped_endpoint_replays": 12130,
+    "actual_stopping_tree_edges": 272774,
+    "bounded_stopping_law_identities": 1092,
+    "finite_correction_tail_checks": 4992,
+    "finite_return_separation_tail_checks": 78,
+    "direct_prescribed_return_cycles": 41524,
+    "finite_prescribed_fusion_paths": 4167,
+    "exact_drift_and_attempt_constant_checks": 9,
+    "rational_tail_bound_comparisons": 20405,
+    "exact_truncation_constant_identities": 2450
+  },
+  "floating_scope": "None in this verification.",
+  "external_scope": "No new external theorem. Earlier written gap-clock, fresh-prefix, and return-image arguments are reused.",
+  "not_proved": [
+    "Moments at exponent 1/2 or above.",
+    "An L^p bound with p>1 for the full returned-endpoint density.",
+    "A uniform comparison for actual weighted progression gradients or a bounded actual-energy subsequence.",
+    "Escape exclusion, exclusion of additional cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "verify_return_correction_moments.py": "4d0210e52bdf7c488751cbc03256cdc8cf3c389d4381b33a4b2f7f1c7e5f4002",
+    "docs/RETURN-CORRECTION-MOMENTS.md": "877c97513342f1265da6d6af3d57fcb7cc24b4515e438561ae26a68adc9597fc",
+    "docs/COUNT-RETURN-CLOCK.md": "d8999680bfa33a761d957b8779876664178de383c6a46f1cb11163e354d15c39",
+    "docs/COUNT-RETURN-CONTROL.md": "44ded2dbc1619cfb872d6463c3c28ad431ca45b2570852ecd26d0fec3584f311",
+    "docs/RETURN-IMAGE-BOUNDS.md": "bc77ac20f9dbe1d64aba29e832dfe8b2133a56d0d409c7ca433059aeddcc7bb1",
+    "results/count-return-control/verification.json": "bcebc20234a91272484a5663b6dd8a6b9f7ca589b2d99cac4a3808b454f90c0d",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/return-image-bounds/verification.json": "4f0f2177b6c831a126477835ff277f07edbdeb542113e154e0770e3bc61bab68",
+    "results/return-correction-moments/replay.json": "09c464501c51eebd83a75fdd82677de9bc9f7c9385565191017fe109fcd0792e",
+    "results/return-correction-moments/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/return-correction-moments/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/return-correction-moments/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/return-correction-moments/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/return-correction-moments/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/return-correction-moments/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc"
+  }
+}

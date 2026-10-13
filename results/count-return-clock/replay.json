@@ -1,0 +1,508 @@
+{
+  "holding_expectations": {
+    "largest_checked_wait_expectation": [
+      10,
+      1
+    ],
+    "gap_range": [
+      1,
+      64
+    ],
+    "offset_range": [
+      -128,
+      128
+    ],
+    "scope": "Exact congruence probabilities with exact geometric remainder."
+  },
+  "finite_walks": [
+    {
+      "height_boundary": 1,
+      "expected_clock_under_wait_envelope": [
+        1,
+        1
+      ],
+      "linear_bound": 1
+    },
+    {
+      "height_boundary": 2,
+      "expected_clock_under_wait_envelope": [
+        4,
+        1
+      ],
+      "linear_bound": 10
+    },
+    {
+      "height_boundary": 3,
+      "expected_clock_under_wait_envelope": [
+        25,
+        3
+      ],
+      "linear_bound": 19
+    },
+    {
+      "height_boundary": 8,
+      "expected_clock_under_wait_envelope": [
+        29,
+        1
+      ],
+      "linear_bound": 64
+    },
+    {
+      "height_boundary": 16,
+      "expected_clock_under_wait_envelope": [
+        64,
+        1
+      ],
+      "linear_bound": 136
+    },
+    {
+      "height_boundary": 64,
+      "expected_clock_under_wait_envelope": [
+        278,
+        1
+      ],
+      "linear_bound": 568
+    },
+    {
+      "height_boundary": 128,
+      "expected_clock_under_wait_envelope": [
+        565,
+        1
+      ],
+      "linear_bound": 1144
+    },
+    {
+      "height_boundary": 1024,
+      "expected_clock_under_wait_envelope": [
+        4594,
+        1
+      ],
+      "linear_bound": 9208
+    },
+    {
+      "height_boundary": 4096,
+      "expected_clock_under_wait_envelope": [
+        18416,
+        1
+      ],
+      "linear_bound": 36856
+    }
+  ],
+  "actual_stopped_prefixes": [
+    {
+      "initial_separation": 1,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 1,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1300,
+      "lower_exit_mass": 2653,
+      "surviving_gap_mass": 196,
+      "truncated_clock_mean": [
+        1201,
+        256
+      ]
+    },
+    {
+      "initial_separation": 1,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 779,
+      "lower_exit_mass": 2791,
+      "surviving_gap_mass": 980,
+      "truncated_clock_mean": [
+        2947,
+        512
+      ]
+    },
+    {
+      "initial_separation": 1,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 38,
+      "lower_exit_mass": 2804,
+      "surviving_gap_mass": 3792,
+      "truncated_clock_mean": [
+        13747,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 3,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 3,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1248,
+      "lower_exit_mass": 2598,
+      "surviving_gap_mass": 352,
+      "truncated_clock_mean": [
+        11249,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 3,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 662,
+      "lower_exit_mass": 2664,
+      "surviving_gap_mass": 1448,
+      "truncated_clock_mean": [
+        6611,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 3,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 14,
+      "lower_exit_mass": 2666,
+      "surviving_gap_mass": 3984,
+      "truncated_clock_mean": [
+        14367,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 5,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 5,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1271,
+      "lower_exit_mass": 2628,
+      "surviving_gap_mass": 283,
+      "truncated_clock_mean": [
+        5003,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 5,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 686,
+      "lower_exit_mass": 2711,
+      "surviving_gap_mass": 1352,
+      "truncated_clock_mean": [
+        12505,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 5,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 8,
+      "lower_exit_mass": 2717,
+      "surviving_gap_mass": 4032,
+      "truncated_clock_mean": [
+        13893,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 17,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 17,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1286,
+      "lower_exit_mass": 2654,
+      "surviving_gap_mass": 238,
+      "truncated_clock_mean": [
+        4839,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 17,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 707,
+      "lower_exit_mass": 2762,
+      "surviving_gap_mass": 1268,
+      "truncated_clock_mean": [
+        6095,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 17,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 16,
+      "lower_exit_mass": 2776,
+      "surviving_gap_mass": 3968,
+      "truncated_clock_mean": [
+        865,
+        128
+      ]
+    },
+    {
+      "initial_separation": 257,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 257,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1301,
+      "lower_exit_mass": 2659,
+      "surviving_gap_mass": 193,
+      "truncated_clock_mean": [
+        9595,
+        2048
+      ]
+    },
+    {
+      "initial_separation": 257,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 761,
+      "lower_exit_mass": 2807,
+      "surviving_gap_mass": 1052,
+      "truncated_clock_mean": [
+        2947,
+        512
+      ]
+    },
+    {
+      "initial_separation": 257,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 25,
+      "lower_exit_mass": 2821,
+      "surviving_gap_mass": 3896,
+      "truncated_clock_mean": [
+        6853,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 8191,
+      "height_boundary": 2,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 2047,
+      "lower_exit_mass": 2047,
+      "surviving_gap_mass": 2,
+      "truncated_clock_mean": [
+        3071,
+        1024
+      ]
+    },
+    {
+      "initial_separation": 8191,
+      "height_boundary": 3,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 1300,
+      "lower_exit_mass": 2653,
+      "surviving_gap_mass": 196,
+      "truncated_clock_mean": [
+        1201,
+        256
+      ]
+    },
+    {
+      "initial_separation": 8191,
+      "height_boundary": 4,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 779,
+      "lower_exit_mass": 2791,
+      "surviving_gap_mass": 980,
+      "truncated_clock_mean": [
+        2947,
+        512
+      ]
+    },
+    {
+      "initial_separation": 8191,
+      "height_boundary": 8,
+      "source_period_depth": 12,
+      "denominator": 4096,
+      "upper_exit_mass": 38,
+      "lower_exit_mass": 2804,
+      "surviving_gap_mass": 3792,
+      "truncated_clock_mean": [
+        13747,
+        2048
+      ]
+    }
+  ],
+  "expanding_image_family": {
+    "selected": [
+      {
+        "parameter": 0,
+        "residue": 248,
+        "clock": 8,
+        "common_count": 5,
+        "base_endpoint": 242,
+        "separation": 4,
+        "multiplier": [
+          243,
+          256
+        ]
+      },
+      {
+        "parameter": 1,
+        "residue": 506,
+        "clock": 9,
+        "common_count": 6,
+        "base_endpoint": 728,
+        "separation": 4,
+        "multiplier": [
+          729,
+          512
+        ]
+      },
+      {
+        "parameter": 4,
+        "residue": 3486,
+        "clock": 12,
+        "common_count": 9,
+        "base_endpoint": 16766,
+        "separation": 4,
+        "multiplier": [
+          19683,
+          4096
+        ]
+      },
+      {
+        "parameter": 16,
+        "residue": 7995390,
+        "clock": 24,
+        "common_count": 21,
+        "base_endpoint": 4985012078,
+        "separation": 4,
+        "multiplier": [
+          10460353203,
+          16777216
+        ]
+      },
+      {
+        "parameter": 32,
+        "residue": 1073741823998,
+        "clock": 40,
+        "common_count": 37,
+        "base_endpoint": 439730376846677117,
+        "separation": 4,
+        "multiplier": [
+          450283905890997363,
+          1099511627776
+        ]
+      },
+      {
+        "parameter": 64,
+        "residue": 4611686018427387903998,
+        "clock": 72,
+        "common_count": 69,
+        "base_endpoint": 814829265948320833761579422553992,
+        "separation": 4,
+        "multiplier": [
+          834385168331080533771857328695283,
+          4722366482869645213696
+        ]
+      },
+      {
+        "parameter": 128,
+        "residue": 85070591730234615865843651857942052863998,
+        "clock": 136,
+        "common_count": 133,
+        "base_endpoint": 2797866066787573936210519634104728550546684977463895888193907742,
+        "separation": 4,
+        "multiplier": [
+          2865014852390475710679572105323242035759805416923029389510561523,
+          87112285931760246646623899502532662132736
+        ]
+      }
+    ],
+    "scope": "Finite exact replay of a written all-parameter family; not one of the new Lean roots."
+  },
+  "counts": {
+    "exact_coefficient_valuations": 8192,
+    "dyadic_odd_cofactors": 352,
+    "exact_valuation_mass_identities": 65536,
+    "exact_holding_congruence_counts": 197376,
+    "exact_wait_expectations": 16448,
+    "independent_rational_walk_systems": 384,
+    "stopped_clock_envelope_bounds": 132,
+    "exact_green_equations": 14012,
+    "actual_stopped_residue_paths": 98304,
+    "exact_stopped_prefix_laws": 24,
+    "integer_horizon_tail_comparisons": 65536,
+    "actual_expanding_return_family_lifts": 516
+  }
+}

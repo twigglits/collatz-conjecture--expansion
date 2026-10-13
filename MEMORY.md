@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-13, after sharper coalescence energy caps and a proof that the cap-plus-tail certificate cannot give bounded energy.
+Last updated: 2026-10-13, after extending written return-correction and separation moments to all powers below one half, obtaining an explicit endpoint image-truncation rate, and verifying twelve new kernel arithmetic roots and independent exact stopped laws.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
@@ -161,6 +161,56 @@ pairs still needs control. The even pair 6,7 first has equal odd counts
 at positive time eleven but never merges at a common clock, and a
 whole residue class has the same finite absorption-without-fusion defect.
 The bounded subsequence and all other full-Collatz gaps remain open.
+
+The newest actual-weight argument bounds the total negative refinement
+drift before a reversal of the adjacent odd-count order by fourteen,
+summed over ALL time offsets and binary levels. Thirty-one new kernel
+roots prove shifted-weight order, first-return endpoint order, reciprocal
+moments, positive-offset transitions, and exactly k+1 one-turn parity
+prefixes on each depth-k source annulus. The classification induction,
+source-height cutoff, and real sum are WRITTEN. The negative contribution
+after a count reversal remains uncontrolled. An exact family at offset
+six makes its downward product tend to 81/1024 while the immediate parent
+time losses tend to zero, so no fixed pointwise charge of that kind can
+cover it. The family cells have summable lengths and do not refute an
+integrated bound. All fresh builds and independent checks passed; the
+full escape and other-cycle gaps remain open. See the latest entry.
+
+The newest clock argument uses the exact valuations of `3^d-1` and a
+finite symmetric-walk Green function to give the WRITTEN uniform
+first count-return tail `7/sqrt(H)`. The existing finite return-cycle
+budget then gives balanced noncoalescence of order `H^(-1/2)` and
+actual refinement energy `E_s=O(sqrt(s))`. Fifteen new kernel roots
+check arithmetic inputs; the probability and energy arguments remain
+written. The return-separation power budget now holds for every
+`0<beta<1/3`. A separate written first-return family has separation four
+and unbounded multiplier `(243/256)*(3/2)^m`, ruling out a constant bound
+on raw aggregate image coefficients, but not on the actual weighted
+gradients. The square-root order matches the previously proved lower
+order of the coalescence-only upper-bound certificate, not a lower bound
+on actual energy. Bounded actual energy and full Collatz remain open.
+
+The newest return-image argument gives WRITTEN logarithmic moments for
+the ternary density K_beta weighted by return separation: it lies in
+L(log L)^alpha whenever beta>=0, alpha>0, and 3beta+2alpha<1. Twelve
+new kernel roots verify prefix-weight bounds, endpoint caps, and integer
+residue-count discrepancy. The resulting truncated density bounds also
+hold on actual finite integer intervals, with an explicit depth/length
+error. These do not permit an infinite cutoff at a fixed interval or
+bound pairing with the actual future weighted gradients. The actual
+energy estimate remains O(sqrt(s)), and Collatz remains unresolved.
+
+The newest boundary-stop argument improves those WRITTEN return moments
+to every power below 1/2. The affine correction has drift 1/4; combining
+bounded stopping with the gap-boundary clock bound and Fatou gives
+Pr(B_tau>L)<=7/(2 sqrt(L)). For returned separation from initial D,
+Pr(D'>L)<=(D+6)/sqrt(L). Twelve new kernel roots check the actual
+numerator and finite stopping identities and constants. The improved
+cycle budget is E N<=540*2^5180. The return-image logarithmic-moment
+region is now beta+alpha<1/2, and its Haar truncation error is at most
+7 H^(beta-1/2)/(1-2 beta) for 0<=beta<1/2. All infinite probability
+and real-analysis steps remain written. The pairing with actual weighted
+gradients and bounded energy remain unproved; Collatz is unresolved.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -4057,3 +4107,921 @@ stays nonnegative, proving the observed endpoint order at first return.
 This was derived on paper only in this follow-up, not added as a new
 kernel theorem or used to claim an energy estimate. The missing weighted
 cancellation, escape exclusion, and remaining-cycle exclusion are open.
+
+## 2026-10-13: summable ordered drift and the remaining count reversals
+
+The preceding turn is classified as progress: it established the sharper
+energy caps and a verified obstruction to using those caps with the old
+tail to get bounded energy. This turn is also progress. It controls an
+infinite part of the ACTUAL weighted drift, and proves why the same
+pointwise charge cannot cover its complement. Collatz is still unresolved;
+the active goal is neither completed nor blocked.
+
+Added docs/ORDERED-WEIGHT-DRIFT.md, lean/OrderedWeightDrift.lean,
+verify_ordered_weight_drift.py, and results/ordered-weight-drift with
+verification/replay JSON and four fresh local build logs. README and
+ATTEMPT include the result and reproduction command. Older checked
+source files, notes, and manifests were preserved.
+
+For positive n, put f_t=3^a/(2^t*x_t) and z_t=3^a/(2^t*(x_t+1)).
+KERNEL U(x)+1=3^(x mod 2)*(floor(x/2)+1). The WRITTEN fractions give
+two decreasing sequences: f loses f/(3x+1) on odd inputs and zero on
+even inputs; z loses f*x/((x+1)(x+2)) on even inputs and zero on odds.
+For n_k=floor(2^k*x), write A_(s,k)=2^k*f_(s+k)(n_k)=H_(s,k),
+Z_(s,k)=2^k*z_(s+k)(n_k), and g_k=2^k/n_k. Both refinements copy
+their even children. They satisfy 0<Z<=A<=g<=1 on the source annulus.
+
+Call the pair 2n,2n+1 ordered through T when its odd member's count b_i
+has never fallen below its even member's count a_i for 1<=i<=T.
+KERNEL all-depth propagation gives Y_T+1<=3^(b_T-a_T)*(X_T+1).
+It also proves Y_T<=X_T at the first positive return of equal counts,
+without identifying count equality with fusion. The exact cross product
+then gives, WRITTEN, A*(A-B)_+<=A^2/(X+1), where B is the odd child
+and X the parent endpoint. This is bounded by
+  3*(A_(s,k)-A_(s+1,k))+2*(Z_(s,k)-Z_(s+1,k)).
+The kernel checks the reciprocal cross inequality and the elementary
+denominator bounds used here.
+
+KERNEL shifted affine correction: R_t=Q_t+2^t*D_t, with the earlier
+D=3^(t-a), Q=b*D, has period 2^t and satisfies
+  D_t*2^t*(x_t+1)=3^t*n+R_t,
+  2*sum_(n<2^t)R_t(n)+6^t=3*8^t.
+WRITTEN source-annulus bounds give finite deficits
+  M_s=sum_k integral(g_k-A_(s,k)) <= J(s)+3/2,
+  Mtilde_s=sum_k integral(g_k-Z_(s,k)) <= J(s)+9/2,
+where J(s)=ceil(121s/50) uses the previously checked cutoff. The ordered
+negative drift N_ord_s is at most (3/2)*(M_(s+1)-M_s) plus
+Mtilde_(s+1)-Mtilde_s. Thus its first S offsets sum to at most
+(5/2)*J(S)+27/4 < (121/20)*S+37/4. This estimate is valid but is
+superseded by the stronger summable bound below.
+
+KERNEL positive-offset transitions: in an ordered downward refinement,
+write Y=3^d*X+c. Initially (d,c)=(1,2). Odd parent steps keep that
+state. The first even parent step gives (1,1). Subsequent even steps
+alternate (d,1)->(d+1,2) and (d,2)->(d,1). An odd step after the first
+even gives Y'<=3^d'*X', so closes the negative difference. KERNEL
+unshifted order persists while the count difference remains nonnegative.
+The WRITTEN induction therefore confines every ordered downward cell
+at parent time t to a parity word 1^L 0^(t-L).
+
+KERNEL exact count: precisely k+1 residues at depth k have a parity word
+consisting of an initial odd run followed by even steps; the same count
+holds on [2^k,2^(k+1)). Two next-bit children have opposite final
+parities. The count recurrence is c_(k+1)=c_k+1, since appending zero
+keeps every admissible prefix while appending one keeps just the unique
+all-odd prefix. This is an all-depth proof, not a census extrapolation.
+
+WRITTEN source clock: a positive n in that annulus with word 1^L0^(t-L)
+satisfies 2^t*U^t(n)+2^L=3^L*(n+1) and 2^L divides n+1. Hence L<=k+1,
+2^t<2^(3k+3), and t<=3k+2. For t=s+k, any ordered downward cell thus
+requires s<=2k+2. Since A*(A-B)_+<=1, its integrated level contribution
+is at most (k+1)/2^(k+1). Nonnegative sums give the strongest new bound
+  N_ord_s <= 2 for all s,
+  sum_(s>=0) N_ord_s <= sum_k (2k+3)*(k+1)/2^(k+1) = 14.
+Also N_ord_s <= (K+2)/2^K for K=max(0,ceil(s/2)-1). It tends to zero
+exponentially. The classification induction, height deduction, and real
+summation are WRITTEN, using the new finite-step and counting kernels.
+No PLD, passage law, or other external input is used for this estimate.
+
+The full fixed-offset drift series is now shown WRITTEN absolutely
+convergent: the earlier geometric bound makes sum_k sqrt(e_(s,k))
+finite, and Cauchy--Schwarz bounds each absolute drift integral by that
+square root. The old note only asserted ordinary convergence, which
+remains true. This is not a bound uniform in s.
+
+N_rev_s is the complementary negative drift from cells whose odd-count
+order has reversed at some earlier or current clock. The energy identity
+gives E_s<=1/2+2*N_ord_s+2*N_rev_s. Thus bounded Cesaro means of N_rev
+along an unbounded sequence of offset counts would suffice for the prior
+bounded-energy-subsequence criterion and, using prior packing and the
+replayed external PLD, exclude escape. This estimate is OPEN. It is a
+sufficient criterion, not asserted necessary: positive drift might also
+cancel an unbounded negative part. Other positive cycles remain open.
+
+KERNEL n=37,k=5,s=6 has reversed pair counts 5,4 and endpoints 5,2;
+its downward values are 243/320 and 81/128. Both sources reach one.
+A KERNEL specialization of the earlier jump family gives a stronger
+WRITTEN obstruction to an immediate parent-loss estimate. For even j>=2,
+  n=8*(64^j-1)/9, k=6j-1, s=6, Astar=3^(3j-1),
+the parent endpoint is the odd number (Astar+1)/4, its count is 3j+1,
+and the odd child's count at the matched pair clock is three. The parent
+value P=9*Astar/(16*(Astar+1)) and child B=27/64 satisfy
+  P*(P-B)/(P-A_(7,k))
+    =9*(Astar-3)*(3*Astar+7)/(256*(Astar+1)) -> infinity.
+The shifted parent loss is exactly zero. P*(P-B)->81/1024 while the
+unshifted loss tends to zero. Thus NO fixed multiplier of the two
+immediate parent losses bounds all reversed downward cells. The family
+half-cells have summable lengths, so this does not refute an INTEGRATED
+bound. No universal eventual behavior of that family is asserted.
+
+Fresh verification passed at 2026-10-13T14:22:16.286386+00:00 on pinned
+Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All
+31 audited new roots use standard axioms only, with no warnings, sorry,
+native evaluator, or new axioms. The four builds were sequential.
+Sixteen hashes in each of the preceding refinement and energy-cap
+records were revalidated. No external replay or installation was needed.
+
+Independent exact checks covered 1048576 adjacent pair clocks, 805599
+ordered endpoint/cross-product checks, 6820 first positive count returns,
+32770 ordered negative parity/height checks, 524287 shifted affine rows,
+524287 annulus parity rows, 405 nonzero quotient lifts, all moment and
+one-turn counts through depth 18, 200606 rational refinement/time-loss
+cells, 157635 ordered time charges, 2156 annulus deficit bounds,
+97 cumulative budgets, 64 even-indexed jump-family members, and 1024
+cutoff/constant checks. Integrated finite sums use rational enclosures
+at scale 2^64; floats are display-only. These checks do not establish
+any late-offset bound on N_rev. Every verification job is terminal.
+
+The external basin repository's current README was reviewed through
+the web tool, including newer stationary-density claims. None was
+replayed or adopted, and none is an input to the new result.
+
+NEXT: control the actual reversal contribution over source intervals,
+or its cancellation with positive drift. Do not revisit the ordered
+part as though it were still an unbounded error. A uniform pointwise
+charge to the parent's next time step is impossible by the family above.
+Earlier unweighted first-count-return distance moments are also not
+contractions; any induced-pair estimate must retain the actual weights.
+The full Collatz goal remains active. No staging, commits, credentials,
+installations, or other Git writes occurred.
+
+## 2026-10-13: persistent reversals require averaging across source cells
+
+This follow-up is progress, not completion of the Collatz goal. It proves
+a stronger obstruction to the parent-loss approach and records a precise
+remaining averaging question. Escape and additional cycles remain open.
+The prior ordered-drift result and its verification record were preserved.
+
+Added docs/REVERSAL-PERSISTENCE.md, lean/ReversalPersistence.lean,
+verify_reversal_persistence.py, and results/reversal-persistence. README
+and ATTEMPT link the result and reproduction command. Eight new kernel
+roots use standard axioms only. No new external theorem was adopted.
+
+KERNEL, for all h,x, with a=wt(h,x), y=U^h(x):
+  3*2^h*y+3^a <= 3^a*(3x+2^h),
+  2^h*(y+1) <= 3^a*(x+2^h).
+WRITTEN these give W_h(x)>=3x/(3x+2^h-1), z_h(x)>=1/(x+2^h).
+For a parent value P at endpoint X and its shifted value Z=PX/(X+1),
+after h more steps the cumulative parent charge satisfies
+  3*(P-P_h)+2*(Z-Z_h) <= 3P*(2^h-1)/X.
+It tends to zero whenever 2^h/X tends to zero, not only at fixed h.
+
+Use the prior family, even j>=2:
+  n=8*(64^j-1)/9, k=6j-1, R=3^(3j-1), X=(R+1)/4.
+At s=6 its parent is P=9R/[16(R+1)] and its odd child B=27/64.
+Set H=3j-5. KERNEL: for every 0<=h<=H, 4*2^h<=X,
+the actual parent at offset 6+h is >=1/2, the actual odd child is
+<=27/64, and the history includes a count reversal. The parent lower
+bound and child ceiling are checked as integer cross products of actual
+orbit/weight expressions, not just arithmetic on assumed endpoints.
+
+WRITTEN each such cell has negative product >=5/128 and square gap
+>=25/4096. The 3j-4 consecutive offsets therefore have accumulated
+negative drift >=5*(3j-4)/128. Yet the entire future parent charge
+telescopes to at most 3P+2Z<45/16, regardless of the parent's eventual
+behavior. No uniform multiplier can charge a cell's accumulated drift
+to all that parent's future losses; it would have to exceed (3j-4)/72.
+Also no fixed lookahead charges the initial jump, whose negative product
+tends to 81/1024. Even the displayed linear-in-bit-length horizons fail
+to charge the initial jump, since 2^H/X tends to zero. Thus replacing
+the failed immediate charge with a bounded block is insufficient.
+
+The guaranteed persistence rectangles have total source/offset measure
+sum_(m>=0)(6m+2)/2^(12m+12)=2q(1+2q)/(1-q)^2, q=2^-12, finite.
+This is only the measure of the stated finite horizons. It is NOT a
+proof of all-time integrability of this family's contribution. These
+obstructions still do not disprove an averaged source-interval bound.
+
+Precise OPEN sufficient estimate: let L_(s,k) be the sum of
+3*(A_(s,k)-A_(s+1,k))+2*(Z_(s,k)-Z_(s+1,k)) over all parent sources
+2^k<=n<2^(k+1), multiplied by the half-cell length 2^(-k-1).
+If N_rev_(s,k)<=C*L_(s,k) uniformly, the earlier deficits give
+sum_(s<S,k)L_(s,k)<=(5/2)*ceil(121S/50)+27/4. Together with the
+ordered total <=14, this yields the WRITTEN conditional conclusion
+limsup_S (1/S)*sum_(s<S)E_s <= 1/2+121C/10. This would feed the prior
+escape criterion, but no such C is proved and other cycles remain open.
+
+Independent exact finite annulus checks support C=8 only on
+0<=k<=10, 0<=s<=96. They certify that C=6 already fails at k=5,s=46,
+where the exact ratio is approximately 6.607568163248772. Decisions
+use fractions and rational enclosures at scale 2^64; decimals are
+display-only. This is not evidence of a verified all-level constant.
+
+Fresh verification passed at 2026-10-13T15:10:45.976999+00:00 on
+pinned Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All five local modules were freshly compiled sequentially. The eight
+new roots use only propext/Quot.sound; no warnings, sorry, native
+evaluation, or extra axioms. All 16 prior ordered-drift hashes were
+revalidated. New independent checks cover 528384 endpoint clocks,
+36876 retained-half comparisons, 64 family members and 12224 persistent
+offset cells, 198559 rational annulus cells, and 1067 finite C=8 bounds.
+The first replay reached all checks but hit Python's decimal-digit limit
+when serializing huge exact sum denominators. Cumulative family sums
+were changed to exact rational enclosures, and the full replay passed.
+This was a reporting-size issue, not a failed mathematical inequality.
+
+Uncertified exploratory files, NOT inputs to the result:
+/tmp/collatz-reversal-average-charge.cpp and its two CSV outputs scan
+floating normalized weights through k=20,s=1024. The levelwise maximum
+ratio there decreases from 6.607568 at k=5 to about 1.02274 at k=20.
+There is no all-level estimate. /tmp/collatz-time-area-samples.py and
+its JSON sample 2000 sources at each bit length 20,40,80,160,320,640,1280.
+Exact integer trajectories but floating weight sums give mean all-time
+per-level energies approximately 3.47,4.32,5.77,7.44,8.54,10.39,10.15;
+all samples reached {1,2}, with an explicit two-step geometric tail.
+These samples are not a uniform bound, nor a proof about untested sources.
+Do not mistake time summability at every cell for an easy substitute:
+it would already force equality of the limiting adjacent weights.
+
+The external basin manuscript and quadratic-cylinder-energy manuscript
+were browsed again for quantitative coalescence or occupation input.
+No newly reviewed claim was replayed or adopted. Zenodo 23003500 and
+the GitHub formal-periodic-census directory/README remained inaccessible
+through the web tool. The former source's almost-sure inverse-height law
+explicitly lacks the expectation/occupation upper bound needed to close
+its separate route. Its Haar stationary-density claims concern a
+different measure from actual integer trace values.
+
+NEXT: attack the whole-source averaging estimate or signed cancellation.
+Do not retry immediate, fixed-block, or cell-by-cell total-future loss
+charges: the new all-parameter family rules them out. The ordered part
+is already summable. All verification jobs have terminated; no agents,
+installations, staging, commits, or credentials were involved.
+
+## 2026-10-13: count-return control and sublinear actual energy
+
+The previous reversal-persistence turn was progress and its fourteen
+recorded hashes were revalidated at this turn's start. This turn makes
+further progress: a new WRITTEN probability argument bounds repeated
+count-gap restarts and gives actual energy E_s=O(s^(4/5))=o(s).
+This is not bounded energy, escape exclusion, or a solution of Collatz.
+The full goal remains active; no blocked condition has been declared.
+
+Added docs/COUNT-RETURN-CONTROL.md, lean/CountReturnControl.lean,
+verify_count_return_control.py, and results/count-return-control.
+README and ATTEMPT describe the result and reproduction command.
+The twelve kernel roots are arithmetic inputs. The stopping-time,
+fractional-moment, finite-set, probability, and real-energy proofs are
+WRITTEN, not completely Lean formalized. No external coalescence theorem
+was assumed, installed, or replayed, and no novelty claim is made.
+
+The probability law is Haar-uniform binary input, equivalently uniform
+complete residue periods. After any exposed prefix, both endpoints are
+odd affine functions of the remaining Haar input. Each marginal next
+parity is fair; the pair is dependent. Countably partitioning by finite
+prefixes gives the same property at an almost-surely finite stopping time.
+These are not probabilities uniformly sampling all positive integers.
+
+KERNEL exact unstopped gap accounting: the two next-bit absolute gaps
+sum to twice the current absolute gap, plus two exactly when the current
+gap is zero and the endpoint parities differ. Thus the normalized
+full-period first moment increases by the departure-from-zero probability.
+This includes all restarts, unlike the old stopped-gap identity.
+
+WRITTEN uniform first positive count-return tail:
+  Pr(tau>H) <= 16 H^(-1/5), for every starting separation D>0.
+While counts differ by d>=1, orient Y=3^d X+c. The lower-count endpoint
+X is conditionally Haar. Holding for h steps is equivalent to
+  (3^d-1)X+c == 0 mod 2^h.
+If v=nu_2(3^d-1), this event has probability <=min(1,2^(v-h)).
+KERNEL 0<3^d-1<2^(2d), so v<=2d-1. The expected clock until the next
+active gap step is <=v+2<=2d+1, uniformly in c. The active gap is a
+simple symmetric walk absorbed at zero. Up to m active steps it has
+physical expected clock <=3(m+1)^2 and survival <=2/sqrt(m+1).
+Markov with m=floor(H^(2/5)) yields the displayed tail and proves the
+first return is finite almost surely. An initial even separation returns
+after one step; an odd one departs to absolute gap one.
+
+WRITTEN stopped moment, with all stopping justified rather than inferred
+from fixed-time bounds: U^t(X)=lambda_t X+B_t,
+lambda_t=3^a/2^t, B_(t+1)=m_t B_t+epsilon_t/2. Marginal parities are
+independent fair bits. At alpha=1/2, r_alpha<31/32 gives E B_t^alpha<=16.
+For beta=1/16, Holder on dyadic events 2^(j-1)<tau<=2^j gives
+E[B_tau^beta; event] <=64*2^(-j/20). The tau=1 contribution is <=2;
+sum 2^(-j/20)<50, so E B_tau^beta<=3202 for either endpoint, uniformly
+in D. The nonnegative supermartingale lambda_t^beta and optional stopping
+give E lambda_tau^beta<=r_beta<509/512. At equal counts the slopes agree,
+so the new separation D' satisfies the WRITTEN drift inequality
+  E[(D')^(1/16) | D] <= (509/512) D^(1/16)+6404.
+No independence between the two corrections is used.
+
+WRITTEN finite expected number of count-return cycles:
+take V(D)=D^(1/16), R=1093120^16<2^336. Outside D<=R, the drift is
+at most -1, so expected return cycles to that finite set are <=V(D).
+KERNEL prescribed descent transitions: for even D choose both even to
+get D/2. For odd D choose the lower endpoint even to obtain count gap one
+and c=(3D+1)/2; keep choosing both even until c is odd, then choose the
+lower-count endpoint odd. This first count return has D'=(c-1)/2<=
+(3D-1)/4. Thus prescribed returns decrease separation by factor <=3/4.
+From D<=R, 1344 returns suffice for fusion, using <=338 bits per return.
+The success probability is >=2^(-454272). After an attempt, expected
+V is <2186070. Including the next visit to D<=R, each attempt has
+expected length <=2187414 return cycles. Conditional success is uniformly
+positive, so from adjacent starts the expected number N of return cycles
+until balanced fusion is bounded by
+  C_star = 2187414 * 2^454272.
+This enormous explicit constant is finite; no numerical optimization is
+claimed. The integer comparisons for all constants are kernel checked.
+
+WRITTEN consequences:
+  E|a_t(x)-a_t(x+1)| <= C_star for every complete-period depth t;
+  1-p_H <= 21*C_star*H^(-1/5).
+For the latter, E min(tau,H)<=21H^(4/5) uniformly at each return. Whether
+cycle j is needed is determined before it starts. Conditional expectation
+and Tonelli therefore bound E sum_(j<=N) min(tau_j,H) by
+21*C_star*H^(4/5); on T>H this sum is >=H. This avoids any independence
+assumption about return times or the number of returns. Conditioning on
+either first parity doubles these bounds. The existing H^(-1/2) lower
+bound and infinite physical mean coalescence clock are compatible.
+
+Apply the old KERNEL actual-annulus cap e_(s,k)<=q_(k+1), where
+q_H=(1-p_H^even)/2, plus its WRITTEN geometric tail. For
+J(s)=ceil(121s/50), the new WRITTEN actual energy bound is
+  E_s <= (105/4)*C_star*J(s)^(4/5)+23/4.
+Thus E_s=o(s), without adopting any new external result. The old
+0.542s+6 bound remains much better at practical offsets because C_star
+is huge. Neither estimate supplies a bounded-energy subsequence.
+
+Fresh verification passed at 2026-10-13T15:49:07.064642+00:00 using
+pinned Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Four local modules were freshly compiled sequentially. All twelve new
+roots use standard axioms only; no warnings, sorry, added axioms, or
+native evaluation. The sixteen energy-cap and fourteen reversal-persistence
+hashes were revalidated. No previous source or manifest was rewritten.
+
+Independent exact checks: 131056 actual pair residue paths, 208 complete
+state distributions for initial separations 1..16 through depth 12,
+25 exact raw-gap recurrences through depth 24, 216189 state nodes,
+270072 holding-prefix/congruence comparisons, 1320 exact congruence counts,
+and actual balanced-fusion witnesses for every separation 1..8192. Those
+witnesses use 173305 prescribed bits and 86026 strictly descending return
+cycles in total; maximum witness clock 33 and return count 19. They were
+recomputed as actual integer orbits, not only as offset-state transitions.
+The full adjacent depth-24 law has raw gap mass 32206350, restart mass
+421301, and balanced mass 6966495 over denominator 16777216. Finite checks
+do not substitute for the all-depth probability proof.
+
+Uncertified exploration retained in /tmp/collatz-full-gap-moments.json
+(initial even branch, state aggregation through 29 further clocks) and
+/tmp/collatz-full-gap-samples.json (5000 random state paths, seed
+2026101302, through 32768 clocks). The samples suggested bounded mean
+restart count and motivated the fractional-moment argument; neither file
+is an input to the new theorem or verification record.
+
+NEXT: use the uniform FULL count-gap moment and return-separation moment
+to control the actual weighted reversal contribution, or its signed
+cancellation, across source intervals. Do not treat the old stopped-gap
+mean-one identity as if it included restarts. Optimizing the unweighted
+coalescence exponent alone cannot establish bounded energy: the earlier
+cap-plus-tail obstruction still applies. Full escape and cycle exclusion
+remain open. All checks are terminal; no agents, staging, commits,
+installations, credentials, or other Git writes were used.
+
+## 2026-10-13: actual-annulus logarithmic height coupling and return transport
+
+The preceding count-return turn was progress; its fourteen recorded
+hashes were revalidated before use. This turn is progress as well: it
+transfers the full count-gap control to actual real endpoint heights,
+adds a cumulative return-separation budget, and identifies the exact
+arithmetic-progression factor in a prospective weighted-energy transfer.
+The full Collatz goal remains active and unresolved.
+
+Added docs/ANNULUS-HEIGHT-COUPLING.md, lean/AnnulusHeightCoupling.lean,
+verify_annulus_height_coupling.py, and results/annulus-height-coupling.
+README and ATTEMPT link the result and reproduction command. Twelve
+new kernel roots cover integer height and count identities. Logarithm,
+threshold, probability, and cumulative-return consequences are WRITTEN.
+No new external theorem or package was used.
+
+Let t>=1, N=2^t, m=N+2r for 0<=r<N/2, X=U^t(m), Y=U^t(m+1),
+and a,b their odd counts. These are actual even/odd refinement pairs
+at source level k=t-1 and offset zero, not arbitrary later clocks.
+Set u=X/3^a, v=Y/3^b. The KERNEL normalized-height comparison gives,
+after WRITTEN division,
+  mean |u-v| <= (2/3)^t,   u,v>=1.
+It uses the earlier exact correction moment
+2*sum_(n<N)Q_t(n)+6^t=8^t. The checked integer form is
+  2^(t+1)*sum_(r<N/2)|h_t(N+2r+1)-h_t(N+2r)| <= 8^t,
+where h_t(n)=3^(t-a_t(n))*U^t(n). Height lifts add the same 3^t*q
+to both scaled endpoints, so the gap transports exactly to the annulus.
+The individual difference is bounded by the two nonnegative affine
+corrections plus the source increment; the correction moment cancels
+the remaining source-increment term in the complete even/odd sum.
+
+WRITTEN log comparison, because u,v>=1:
+  mean |log(Y/X)-(b-a)*log(3)| <= (2/3)^t.
+The earlier full-gap bound conditioned on even input yields
+  mean |log(Y/X)| <= 2*C_star*log(3)+(2/3)^t.
+Equivalently, integrate over all logarithmic height thresholds z the
+probability that exp(z) lies between X and Y; that total disagreement
+has the same uniform bound. This gives an actual height-coupling budget.
+It does not claim future weight is a monotone function of height.
+
+KERNEL signed count mean is exactly one: mean(b-a)=1 on every such
+actual annulus. Hence WRITTEN
+  |mean log(Y/X)-log(3)| <= (2/3)^t.
+Meanwhile the earlier written coalescence rate gives probability
+log(Y/X)!=0 <=42*C_star*t^(-1/5), tending to zero. These logarithmic
+differences are therefore NOT uniformly integrable, even though their
+first absolute moment is bounded. For every 0<theta<1, Holder gives
+mean |log(Y/X)|^theta=O(t^(-(1-theta)/5)). Do not replace the first
+moment bound by first-mean convergence; its signed limit is log(3).
+None of this lower-bounds actual refinement energy.
+
+Additional WRITTEN return budget under the Haar binary law: let D_j
+be the separation at count-return cycle boundaries, D_0=1, with N
+cycles until fusion. Applying the earlier drift with absorption at zero
+and telescoping deterministic truncations gives
+  E sum_(j<N) D_j^(1/16) <= (512/3)*(1+6404*C_star).
+Also log(1+D)<=16D^(1/16), so the total expected logarithmic separation
+cost over all these returns is finite. This is NOT asserted for a
+finite uniform integer interval followed indefinitely past the end of
+its source bits. The distinction between those laws remains essential.
+
+Exact return transport: if r,r+1 first have equal counts a at clock tau
+and endpoints x0,y0, then for every q>=0 their lifted endpoints are
+  X(q)=3^a*q+x0, Y(q)=3^a*q+y0.
+With lambda=3^a/2^tau and f_h(n)=3^a_h/(2^h U^h(n)), the difference
+at clock tau+h is lambda*(f_h(X(q))-f_h(Y(q))). For source annulus
+[A,2A), A=2^K,K>=tau, a fixed even prefix has q=Q..2Q-1, Q=A/2^tau.
+Put M=3^a Q=lambda*A. Its normalized squared contribution is
+  lambda*M*sum_(q=Q..2Q-1) G_h(3^a*q+x0)^2,
+where G_h(x)=f_h(x)-f_h(x+y0-x0).
+The endpoint sample is one progression of spacing 3^a inside an interval
+of length M. To recover the binary branch factor 2^(-tau) by interval
+averaging requires paying for that spacing. Trivial inclusion instead
+retains lambda, larger by 3^a. The note gives an explicit unproved
+progression-versus-interval inequality, while also warning that this
+inequality alone would not settle the other transport and tail issues.
+
+An independent exact finite witness shows substantial progression bias.
+For tau=10,r=200,a=4, first-return endpoints are 17,16. At Q=1 the
+progression samples 98,97, with containing interval 98<=x<179. At
+continuation clock h=128,
+  81*(f_128(98)-f_128(97))^2 /
+     sum_(x=98..178)(f_128(x)-f_128(x-1))^2
+  =10453976883/926254009 >11.
+All 82 sources 97..178 are checked to lie in {1,2} by this clock. Thus
+even a factor of eleven fails for this finite progression comparison.
+It does not exclude every possible uniform constant, and it is NOT the
+earlier, different whole-annulus parent-loss inequality with tested C=8.
+
+Fresh verification passed at 2026-10-13T16:27:34.956994+00:00 on
+pinned Lean 4.33.1, commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Five local modules were built
+sequentially; the twelve new roots use standard axioms only, without
+warnings, sorry, extra axioms, or native computation. The previous
+count-return record's fourteen hashes were checked without modifying it.
+Independent exact checks cover 524287 actual even-annulus pairs through
+clock 19, 284 quotient lifts, nineteen full mass/count identities,
+5540 first-return prefix-tree edges and 245 first-return prefixes,
+960 exact lifted weight factorizations, 384 progression-energy transports,
+and the 82 cycle endpoints in the finite bias example. Floating logarithm
+table columns are diagnostic only and make no verification decisions.
+
+Exploratory /tmp/collatz-return-progression-late-ratios.json computes
+late-even-clock ratios for 64 nonfused prefixes using known-basin arrival
+grades. Its largest observed ratio motivated the independently replayed
+h=128 example above; the exploratory file is not a proof input. No claim
+of an all-prefix progression bound is made.
+
+NEXT: control the actual weighted progression averages, possibly after
+aggregating several returned residues, using the available total return
+cost. The bounded logarithmic height coupling covers the source-bit
+boundary only and cannot by itself propagate to arbitrary later clocks.
+Do not silently turn a ternary progression into an interval average or
+replace bounded first moments by uniform integrability. The actual
+energy bound remains O(s^(4/5)); bounded energy, escape exclusion, and
+additional-cycle exclusion remain open. All jobs are terminal; no agents,
+installations, credentials, staging, commits, or other Git writes occurred.
+
+## 2026-10-13: square-root count-return clock and the remaining sampling gap
+
+The preceding actual-annulus height-coupling turn was progress, and its
+fifteen hashes were authenticated. This turn is progress too: it improves
+the WRITTEN clock and energy exponents, strengthens the return-separation
+moment range, and gives an all-parameter obstruction to a raw image-column
+bound. Collatz remains unresolved, and the full goal remains active.
+No unchanged blocker was declared.
+
+Added docs/COUNT-RETURN-CLOCK.md, lean/CountReturnClock.lean,
+verify_count_return_clock.py, and results/count-return-clock. README and
+ATTEMPT include the result and reproduction command. Fifteen new kernel
+roots are arithmetic inputs; the probability, real-energy, moment, and
+raw image-density deductions are WRITTEN. The prior source files and
+verification records were authenticated without modification.
+
+WRITTEN uniform first positive count-return tail, for every separation D>0:
+  Pr(tau>H) <=7/sqrt(H), H>=1.
+Even D has tau=1. For odd D, the first step gives absolute count gap one.
+At a nonzero gap d, orient Y=3^d X+c with X conditionally Haar. The prior
+congruence gives expected wait to the next active step <=v(d)+2, uniformly
+in c. The exact valuation is v(d)=1 for odd d and 2+nu_2(d) for even d.
+KERNEL cofactors prove 3^u=3 mod8 for odd u, then
+3^(2^(j+1)u)-1=2^(j+3)*q with q odd, and nondivisibility by the next power.
+Decomposition of d and the valuation interpretation are written.
+
+Count multiples of powers of two to get
+  B(n)=sum_(d=1..n) nu_2(d)=sum_(r>=1) floor(n/2^r)<=n,
+  C(n)=sum_(d=1..n)(v(d)+2)=3n+floor(n/2)+B(n), 2C(n)<=9n.
+The repeated-halving bound and integer cost bound are kernel checked;
+the finite double-sum interpretation is written.
+
+Stop the embedded active simple symmetric walk, starting at one, when
+it hits 0 or K. Its upper-exit probability is 1/K, and expected visits
+to d before exit are G(1,d)=2(K-d)/K<=2, 1<=d<K. The kernel checks the
+cross-multiplied finite Green equations, boundaries, and cap. The finite
+walk interpretation and uniqueness are written. Conditioning before
+each holding wait and using Tonelli gives, including the initial step,
+  E sigma_K <=1+sum_d G(1,d)(v(d)+2)<=1+2C(K-1)<=9K-8.
+No independence of holding times and subsequent exit events is assumed.
+Then Pr(tau>H)<=1/K+(9K-8)/H. Set K=floor(sqrt(H)/3)+1 to obtain
+7/sqrt(H). This replaces the earlier, weaker H^(-1/5) bound without
+changing that prior authenticated proof or its constants.
+
+WRITTEN consequences using the existing C_star=2187414*2^454272:
+  E min(tau,H)<=14sqrt(H),
+  Pr(balanced fusion clock T>H)<=14*C_star/sqrt(H).
+Conditioning on either first input parity doubles the latter bound.
+Predictable cycle gating and the existing E N<=C_star justify the sum
+of truncated waits; no independent-cycle assumption is used. The old
+central-binomial lower bound has the same H^(-1/2) order. Infinite mean
+physical coalescence time is still consistent with these estimates.
+
+With the existing actual-annulus cap and J(s)=ceil(121s/50),
+  E_s <=28*C_star*sqrt(J(s))+23/4 =O(sqrt(s)).
+The old 0.542s+6 bound still has a much smaller practical constant. The
+coalescence-cap-plus-tail certificate now has matching square-root upper
+and lower orders. This is NOT a square-root lower bound for actual E_s.
+Further improvement to bounded actual energy needs the weights or signed
+cancellation, not a better power in unweighted coalescence alone.
+
+WRITTEN stronger return-separation budget: for every 0<beta<1/3,
+  E sum_(j<N) D_j^beta <infinity.
+Choose 3beta<alpha<1. Fixed-time alpha moments of the affine correction
+B_t are bounded by M_alpha=2^(-alpha-1)/(1-r_alpha), r_alpha<1. On a
+dyadic stopping block, Holder plus the new return tail gives decay
+2^(-j(1-3beta/alpha)/2). Thus E B_tau^beta<=B_beta<infinity uniformly
+in starting separation, and optional stopping gives
+E lambda_tau^beta<=r_beta<1. Consequently
+  E[(D')^beta|D]<=r_beta D^beta+2B_beta,
+  E sum_(j<N) D_j^beta <=(1+2B_beta*C_star)/(1-r_beta).
+No endpoint result at beta=1/3 is proved, and this budget is under the
+Haar binary law, not indefinite continuation of a finite integer interval.
+
+WRITTEN raw image-coefficient obstruction, independently checked on
+finite family members: choose v_m odd in 1..127 with
+3^m v_m=125 mod128; r_m=2^(m+1)v_m-2; tau=m+8; a=m+5. Parent parity
+word is 0, then m ones, then 0011111; child word is 1, then m ones,
+then 0110110. After the initial and common-odd steps, X=128z+124,
+Y=384z+374. The seven-step suffix returns first to equal counts at
+endpoints 243z+242 and 243z+238. Their separation is four, while
+  lambda=3^a/2^tau=(243/256)*(3/2)^m ->infinity.
+The larger base endpoint is (3^(m+5)*v_m+601)/128. This family is not
+among the fifteen new Lean roots; its all-parameter proof is written.
+
+For nonfused even first-return prefixes, the raw ternary density
+K_H(z)=sum_(tau<=H)lambda*1_(z=x0 mod3^a) has Haar integral
+sum2^(-tau)<=1/2 by prefix freeness. Its increasing limit is integrable.
+But the displayed family makes its essential supremum unbounded, and
+also makes the raw positive-integer columns unbounded using the q=1
+annulus lifts. A simple constant column bound therefore cannot repair
+the earlier progression transfer. This does NOT disprove a bound for
+actual weighted gradients, which can offset a large coefficient.
+
+Fresh verification passed at 2026-10-13T16:57:55.756923+00:00, pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. One new
+standalone module was freshly built, fifteen roots use standard axioms
+only, and there were no warnings, admitted proofs, or native evaluation.
+The prior count-return, energy-cap, and height-coupling records had
+14, 16, and 15 hashes authenticated respectively; their builds were
+reused rather than repeated.
+
+Independent exact finite replay: 8192 coefficient valuations, 352
+structured dyadic odd cofactors, 65536 valuation/cost mass identities,
+197376 holding congruence counts with 16448 exact wait expectations,
+384 rational finite-walk systems, 14012 Green equations, 132 stopped
+clock envelopes, 98304 actual stopped residue paths in 24 full-period
+laws, 65536 exact squared horizon comparisons, and 516 actual lifts
+of the expanding return family. No floating decisions were used.
+
+Exploration before the new argument: /tmp/collatz-return-image-columns.json
+scanned raw columns through first-return depth 22, and
+/tmp/collatz-return-max-slope.json found the displayed family's pattern
+through depth 24. Those exploratory float tables are not proof inputs;
+the family was separately replayed using exact integers. A web review of
+https://raw.githubusercontent.com/x1xhlol/collatz-two-coordinate-obstruction/main/paper/tao-basin-densities.tex
+looked at the external masked quadratic-cylinder energy criterion. Its
+E'_K uses canonical inverse-word densities at integer targets, not this
+project's dyadic E_s. No bridge between the energies, new external theorem,
+or external replay was adopted. Sublinear bounds on our E_s do not satisfy
+that other criterion automatically.
+
+NEXT: use the strengthened return-separation budget with the actual
+weighted progression samples or signed cancellation. Raw image columns
+cannot have a uniform constant bound; ternary Haar integrability does
+not control positive-integer trace samples. The coalescence-only energy
+certificate already has its square-root growth order, so do not try to
+obtain bounded energy merely by optimizing its constants or tail power.
+Bounded actual energy, full escape exclusion, and additional-cycle
+exclusion remain open. All jobs have terminated. No agents, installations,
+credentials, staging, commits, or other Git writes were used.
+
+## 2026-10-13: return-image logarithmic moments and finite integer sampling
+
+The previous square-root-clock turn was progress; its eleven recorded
+hashes were revalidated at this turn's start. This turn is progress too:
+it proves a WRITTEN logarithmic-moment bound for return-image densities
+and transfers its truncated version to finite integer intervals. This
+provides positive sampling control after the raw coefficient obstruction.
+It does not settle the pairing with actual future gradients. The full
+Collatz goal remains active and unresolved; no blocked condition applies.
+
+Added docs/RETURN-IMAGE-BOUNDS.md, lean/ReturnImageBounds.lean,
+verify_return_image_bounds.py, and results/return-image-bounds. README
+and ATTEMPT include the result and reproduction. Twelve kernel roots
+supply arithmetic. Integration, convexity, logarithms, Holder estimates,
+and all infinite probability consequences remain WRITTEN.
+
+Use nonfused first positive count-return prefixes i for adjacent even
+sources, with clock tau_i, even residue r_i, common count a_i, endpoints
+x_i,y_i, and separation D_i=|x_i-y_i|>0. Let p_i=2^(-tau_i), the
+UNCONDITIONAL binary prefix mass, so sum p_i<=1/2. Put
+  lambda_i=3^a_i/2^tau_i,
+  F_i(z)=3^a_i * 1_(z=x_i mod3^a_i),
+  K_beta(z)=sum_i p_i D_i^beta F_i(z).
+F_i has ternary additive Haar integral one. M_beta=integral K_beta is
+finite for 0<=beta<1/3 by the prior written return-separation moment.
+K_(beta,H) retains only tau_i<=H. The density is periodic for every finite
+H and includes all integer representatives of each cylinder; requiring
+an additional allowed source quotient only reduces its positive columns.
+
+WRITTEN joint first-return moment:
+  sum_i p_i D_i^beta (1+tau_i)^alpha <infinity
+whenever beta>=0, alpha>0, and 3beta+2alpha<1. The clock tail gives
+E(1+tau)^q<infinity for q<1/2. For beta>0 choose
+beta/(1-2alpha)<beta'<1/3, then apply Holder using the beta' separation
+moment and q=alpha beta'/(beta'-beta)<1/2. No independence is assumed.
+For beta=0 use the clock moment alone. Also
+  ||K_beta-K_(beta,H)||_1 <=C_(beta,eta) H^(-eta)
+for every 0<eta<(1-3beta)/2; beta=0 permits eta=1/2 directly.
+
+WRITTEN logarithmic moment: Phi_alpha(t)=t(log(1+t))^alpha is convex
+for alpha>0. With Mbar_beta=max(1,M_beta), apply finite-mixture Jensen
+to weights p_iD_i^beta/Mbar_beta and add unused weight at zero, then use
+monotone convergence. The result is
+  integral K_beta [log(1+K_beta/Mbar_beta)]^alpha <=A_(beta,alpha),
+  A_(beta,alpha)=(log3)^alpha sum_i p_iD_i^beta(1+tau_i)^alpha<infinity.
+Thus K_beta is in L(log L)^alpha for 3beta+2alpha<1. This is NOT an
+L^p bound for p>1 or an essential-supremum bound.
+
+The moment gives an explicit modulus of absolute continuity on a Haar
+set A of measure delta>0:
+  integral_A K_beta <=Mbar_beta sqrt(delta)
+     + A_(beta,alpha)/[log(1+delta^(-1/2))]^alpha.
+Ternary cylinder averaging P_L fixes each F_i with a_i<=L. Since
+otherwise tau_i>L, its L1 contraction and the truncation tail give
+  ||K_beta-P_L K_beta||_1<=2C_(beta,eta)L^(-eta).
+These are ternary Haar assertions; the finite-integer result below is
+separate. Do not confuse this uniformly integrable image-density family
+with the non-uniformly-integrable endpoint log-height differences from
+the earlier annulus note. They have different values and sampling laws.
+
+KERNEL cubic child identity: 3^a_(t+1)(r)+3^a_(t+1)(r+2^t)=4*3^a_t(r),
+and complete-period cubic mass is 4^t. Parent parity words give a binary
+prefix tree, because each source-prefix split has opposite new endpoint
+parities. Giving its even/odd branches tilted weights 1/4 and 3/4, the
+prefix-free stopped mass satisfies sum_i 3^a_i/4^tau_i<=1. Thus
+  sum_(tau_i<=H) lambda_i<=2^H.
+The abstract pruned-tree integer inequalities and cubic identities are
+kernel checked; their probability/word interpretation is written.
+
+KERNEL endpoint comparison: orbit_t(r)<2*3^a_t(r) for r<2^t, via the
+previous shifted retention bound. For the equal-count pair this gives
+D_i<2*3^a_i. Therefore, in WRITTEN real powers,
+  sum_(tau_i<=H)lambda_i D_i^beta<=2^beta(2*3^beta)^H.
+The kernel also checks an integer floor counter's discrepancy
+|q*count-M|<q. Its identification with the number of representatives of
+one residue in an interval is elementary written counting, independently
+replayed by direct enumeration.
+
+For any interval I of M>=1 nonnegative integers, WRITTEN division and
+summation give the actual finite-integer bound
+  |mean_I K_(beta,H)-sum_(tau_i<=H)p_iD_i^beta|
+       <=2^beta(2*3^beta)^H/M.
+Applying the pointwise convex-mixture bound before counting gives
+  mean_I K_(beta,H) [log(1+K_(beta,H)/Mbar_beta)]^alpha
+       <=A_(beta,alpha)
+          +2^beta[(H+1)log3]^alpha(2*3^beta)^H/M.
+For beta=0 and H=floor((1-epsilon)log_2 M), epsilon fixed in (0,1),
+these are uniform logarithmic moments on the actual finite intervals.
+For general beta use H=floor(c log M), c<1/log(2*3^beta). This improves
+on a Haar-only mass bound but retains the essential truncation error.
+It is invalid to fix M and pass H to infinity in these estimates.
+
+An explicit unweighted version does not use the huge C_star constant:
+  integral K_0[log(1+K_0)]^(1/4) <80,
+  mean_I K_(0,H)[log(1+K_(0,H))]^(1/4)<82
+whenever 2^H(H+1)<=M. This permits H=log_2 M-log_2 log_2 M+O(1).
+The associated finite-interval mass above coefficient R is at most
+82/[log(1+R)]^(1/4). The exact rational root comparisons give
+E(1+tau)^(1/4)<356/5 and (log3)^(1/4)<11/10, so the Haar bound is
+<3916/50<80. The logarithm comparison uses the written inequality
+exp(4/3)>1+4/3+8/9=29/9>3. Seven exact constant comparisons accompany
+the finite verifier; the real steps remain written.
+
+Fresh verification passed at 2026-10-13T17:40:34.195980+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Six modules
+were freshly built sequentially; all twelve new roots use standard
+axioms only, with no warnings, admitted proofs, or native evaluation.
+The prior clock, height, and persistence records had 11, 15, and 14
+hashes authenticated respectively without rewriting the prior records.
+
+Independent exact replay: 32767 actual cubic-child/endpoint comparisons,
+15 full-period masses, 75562 first-return tree edges, 2494 first-return
+prefixes (2478 nonfused) through depth 18, 17 pruned-tree identities,
+51 finite integer-power column bounds, 30240 direct interval residue
+counts, 12 exact ternary projection comparisons covering 2125764 residue
+values, and 160 truncated-density interval comparisons covering 174840
+integer values. The finite integer-power checks at powers 1 and 2 test
+counting algebra, not infinite separation moments of those powers.
+No floating arithmetic was used in the verification decisions.
+
+Exploration only: /tmp/collatz-annulus-charge-scan.rs and its CSV scan
+whole-annulus reversal drift/parent-loss ratios through k=18,s=512 using
+floating weights and checked u64 orbit arithmetic. The largest observed
+ratio remains about 6.607568 at k=5,s=46 (the old exact witness). At k=18
+the largest observed ratio is about 1.039756 at s=81. These new larger
+ranges are NOT certified C=8 inequalities; the earlier exact certified
+rectangle remains k<=10,s<=96. The scan's finite-level energy peaks
+near 0.702683 at s=50 through level 18, but does not bound omitted levels.
+The process terminated; no job is left running.
+
+External reading used primary sources: Tao's 2020 post
+https://terrytao.wordpress.com/2020/01/25/equidistribution-of-syracuse-random-variables-and-density-of-collatz-preimages/
+and the recent archimedean almost-boundedness preprint
+https://arxiv.org/html/2609.33018v1 . No new external theorem or estimate
+was adopted, replayed, or used in the new result. The latter's announced
+almost-boundedness conclusion would not itself supply the weighted
+progression comparison or full convergence.
+
+NEXT: exploit the new logarithmic-moment control in the actual pairing
+with [f_h(x)-f_h(x-D_i)]^2, or find a direct bound for that pairing.
+Its continuation clock and endpoint interval depend on the prefix.
+Neither Haar L(log L) integrability nor the truncated finite-interval
+bound allows replacing it by an interval energy with a fixed constant.
+The actual energy bound remains O(sqrt(s)); bounded energy, escape
+exclusion, and additional-cycle exclusion remain open. All jobs are
+terminal; no agents, package installs, credentials, staging, commits,
+or other Git writes occurred.
+
+## 2026-10-13: corrections stopped at gap boundaries and half-power moments
+
+The preceding return-image turn was progress. At this turn's start its
+twenty recorded hashes and the clock record's eleven hashes matched.
+This turn also made progress: a different stopping argument improves
+the moment range, the explicit return-cycle constant, and the image
+truncation rate. No full proof or counterexample was found. The user's
+unbounded Collatz goal remains active; no blocker requires user input.
+
+Added docs/RETURN-CORRECTION-MOMENTS.md,
+lean/ReturnCorrectionMoments.lean,
+verify_return_correction_moments.py, and
+results/return-correction-moments. README and ATTEMPT were updated.
+The earlier hashed notes, source files, and records were not rewritten.
+
+The probability law is still the coherent full binary residue law,
+equivalently Haar binary input. After each finite stopping prefix each
+endpoint's next parity is conditionally fair; paired parities are
+dependent. No infinite-time uniform law on a fixed finite integer
+interval is assumed. For the actual affine coefficients
+  U^t(X)=lambda_t X+B_t, lambda_t=3^a/2^t, B_0=0,
+the conditional identities are
+  E(lambda_(t+1)|F_t)=lambda_t,
+  E(B_(t+1)|F_t)=B_t+1/4.
+
+NEW KERNEL inputs (twelve audited roots): actual additive numerator
+recurrence, residue lift, and two-child sum; the algebraic power identity;
+an exact finite stopping-tree correction identity, clock bound, and
+slope identity; named reuse of the prior gap-boundary clock budget;
+quarter-root comparisons, drift/small-set constants, prescribed-attempt
+constants, and the odd-offset bit bound. The correction tree has
+P=d4^h E B_terminal, Q=2^h E extra_clock, initial B=N/d, and satisfies
+4P=4^(h+1)N+d2^h Q. The stopped slope numerator is 4^h A from A/d.
+Their probability interpretation and infinite stopping are WRITTEN.
+
+WRITTEN boundary-stop proof: for odd initial separation D, sigma_K is
+the physical time of first gap-walk exit from 0..K, including the first
+departure step. The earlier proof gives upper-exit probability 1/K and
+E sigma_K<=9K-8. For K=1, sigma_K=1. Even D has tau=1 and can use
+sigma_K=1 without an upper exit. For S=sigma_K truncated at n,
+  E B_S=E S/4, E lambda_S=1.
+Fatou, nonnegativity, and monotone convergence give only the inequalities
+  E B_sigmaK<=(9K-8)/4, E lambda_sigmaK<=1.
+Do not claim equality at the unbounded stop or assume uniform
+integrability. On lower exit sigma_K=tau, the first positive count
+return. Therefore, for L>=1,
+  Pr(B_tau>L)<=1/K+(9K-8)/(4L).
+Taking K=floor(sqrt(L))+1 proves
+  Pr(B_tau>L)<=7/(2 sqrt(L)),
+  E B_tau^beta<=m_beta=1+7beta/(1-2beta), 0<beta<1/2.
+Each endpoint's quarter-power moment is at most 9/2, uniformly in D
+and conditionally at every return boundary. No independence is used.
+
+WRITTEN direct returned-separation tail: at equal counts,
+  D'<=D lambda_tau+B_tau^(1)+B_tau^(2).
+The nonnegative process Z_t=D lambda_t^(1)+B_t^(1)+B_t^(2) has drift
+1/2. The same stopped calculation yields
+  E Z_sigmaK<=D+(9K-8)/2,
+  Pr(D'>L)<=1/K+[D+(9K-8)/2]/L<=(D+6)/sqrt(L).
+For adjacent starts D=1 the coefficient is seven. This is under the
+full unconditioned binary law; restricting nonnegative sums to even,
+nonfused return prefixes decreases them.
+
+WRITTEN improved cycle budget: for beta<1/2,
+  E (D')^beta<=r_beta D^beta+2m_beta,
+  r_beta=(2^(-beta)+(3/2)^beta)/2<1.
+Use nonnegative stopped slope powers after time one to get
+E lambda_tau^beta<=r_beta, since tau>=1. At beta=1/4, the exact root
+comparisons 120^4<2*101^4 and 3*120^4<2*133^4 imply r_beta<39/40:
+  E (D')^(1/4)<=(39/40)D^(1/4)+9.
+With V=D^(1/4) and R=400^4=25,600,000,000<2^35, the drift is at
+most minus one outside R, so expected return-cycle time to R is <=V.
+The existing prescribed descent paths shrink separation by at most
+3/4 each cycle; (3/4)^4<1/2 gives at most 140 cycles from D<=R.
+Each uses at most 37 bits because c=(3D+1)/2<2^36. Thus each attempt
+succeeds with conditional probability >=2^-5180. From V<=400,
+the expected V after any number of cycles stays <=400, using
+(39/40)*400+9=399. Attempt plus reentry therefore costs at most 540
+in conditional expectation. Summing over the geometric bound for
+reached attempts proves
+  E N<=C_quarter:=540*2^5180.
+Attempts are not assumed independent. This supersedes the numeric
+constant 2187414*2^454272, not the existing valid exponent bounds.
+It also gives
+  E sum_(j<N) D_j^beta<=[1+2m_beta C_quarter]/(1-r_beta), beta<1/2,
+and at beta=1/4 the bound 40(1+9 C_quarter).
+The fusion-clock upper tail can use 14 C_quarter/sqrt(H), and the
+actual-energy bound 28 C_quarter sqrt(ceil(121s/50))+23/4. The
+physical mean fusion time remains infinite, and bounded energy is open.
+
+WRITTEN image consequences: the logarithmic-moment parameter region
+is now beta>=0, alpha>0, beta+alpha<1/2. Choose
+beta/(1-2alpha)<beta'<1/2 and reuse the prior Holder and Jensen proofs.
+More sharply, from the two adjacent-pair tails
+Pr(tau>H)<=7/sqrt(H) and Pr(D'>u)<=7/sqrt(u), integration split at H
+gives
+  E[(D')^beta 1_(tau>H)]<=7 H^(beta-1/2)/(1-2beta).
+For beta=0 use the clock tail on nonfused prefixes. Thus, for H>=1,
+  ||K_beta-K_(beta,H)||_1<=7 H^(beta-1/2)/(1-2beta), 0<=beta<1/2.
+This reaches the endpoint decay rate, improving the prior strict
+Holder exponent. Ternary conditional projection at depth L>=1 has
+L1 error at most 14 L^(beta-1/2)/(1-2beta). The finite-integer-interval
+formulas and their depth/length errors are unchanged; the unweighted
+quarter-logarithmic constants 80 and 82 remain valid. No beta=1/2
+moment, L^p density bound for p>1, or actual-gradient pairing is proved.
+
+Fresh verification passed at 2026-10-13T18:04:21.422785+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Six modules
+were freshly built sequentially. All twelve roots use only standard
+axioms; there were no warnings, admitted proofs, or native evaluation.
+The control, clock, and image records had 14, 11, and 20 hashes
+authenticated respectively. The new verification manifest has 21 hashes.
+
+Exact finite replay passed: 16383 direct affine child identities;
+14 full-period correction/slope masses; 12130 independently recomputed
+stopped endpoint trajectories; 272774 actual stopping-tree edges;
+1092 bounded stopped laws; 4992 finite correction-tail comparisons;
+78 finite returned-separation tail checks; 41524 prescribed return
+cycles across 4167 fusion paths; nine constant comparisons;
+20405 rational tail-bound comparisons; and 2450 exact truncation
+coefficient identities. Stopping trees used thirteen separations,
+including values near R and 2^35, six gap barriers, and horizon 14.
+Prescribed fusion samples included all D<=4096, dyadic boundary values,
+and values near R; the observed maximum was 42 cycles and 81 bits.
+These finite observations do not replace the general written bounds.
+No floating arithmetic was used in verification decisions.
+
+Exploration only: /tmp/collatz-return-image-l2.rs and its executable/CSV
+enumerate the nonfused even-prefix image density through depth 24. The
+trie evaluates exactly
+  integral K_H^2=sum_(i,j) p_i p_j 3^min(a_i,a_j)
+                    1_(compatible ternary image cylinders).
+The CSV stores binary-mass numerator over 2^24 and squared-density
+numerator over 2^48. Diagnostic floating values were about 0.002197 at
+H=6, 0.056691 at H=10, 0.168366 at H=14, 0.274069 at H=18, and
+0.416410 at H=24. At depth 24 there were 1,931,482 live prefixes and
+54,364 trie nodes. No convergence or divergence conclusion follows,
+and this exploration is not part of the new verification manifest.
+
+NEXT: use the stronger separation-weighted image estimates in the
+actual future-gradient pairing, or prove a direct integrated return
+comparison. The unweighted coalescence-only certificate already has
+its square-root growth order. Merely improving its constants, or
+sampling deeper L2 image densities, does not establish bounded energy.
+A possible additional route is exponential moments of the number of
+return cycles from the multiplicative drift outside R; this has not
+been adopted or verified. The exploratory tilted-slope return-law idea
+is also unproved and unused. Escape and additional cycles remain open.
+All processes are terminal. No agents, installations, credentials,
+staging, commits, or other Git writes occurred.

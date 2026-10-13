@@ -1,0 +1,81 @@
+{
+  "verified_at_utc": "2026-10-13T16:57:55.756923+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 15,
+  "builds": [
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-count-return-clock-aogzl7gx/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.549,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/count-return-clock/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-control/verification.json": 14,
+    "results/coalescence-energy-caps/verification.json": 16,
+    "results/annulus-height-coupling/verification.json": 15
+  },
+  "kernel_scope": [
+    "Exact odd cofactors for odd and dyadically factored even exponents of three, and nondivisibility by the next power of two.",
+    "Repeated-halving sum bound and integer holding-cost mass inequality.",
+    "Finite Green-function boundaries, difference equation, cap, and stopped-clock linear budget."
+  ],
+  "written_scope": [
+    "Haar first positive count-return tail <=7/sqrt(H), uniformly over initial separation.",
+    "Predictable holding-time sum before embedded walk exits [0,K] has mean <=9K-8.",
+    "Balanced noncoalescence <=14*C_star/sqrt(H), doubled when conditioned on either initial input parity.",
+    "Actual refinement energy E_s <=28*C_star*sqrt(ceil(121*s/50))+23/4.",
+    "The coalescence-only cap-plus-tail certificate, not the actual energy, has square-root growth order.",
+    "Expected sum of D_j^beta over Haar return cycles is finite for every 0<beta<1/3.",
+    "All-parameter first-return family of separation four has multiplier (243/256)*(3/2)^m; raw aggregate endpoint coefficients are unbounded.",
+    "Raw ternary return-image density is integrable but has unbounded essential supremum."
+  ],
+  "finite_scope": {
+    "exact_coefficient_valuations": 8192,
+    "dyadic_odd_cofactors": 352,
+    "exact_valuation_mass_identities": 65536,
+    "exact_holding_congruence_counts": 197376,
+    "exact_wait_expectations": 16448,
+    "independent_rational_walk_systems": 384,
+    "stopped_clock_envelope_bounds": 132,
+    "exact_green_equations": 14012,
+    "actual_stopped_residue_paths": 98304,
+    "exact_stopped_prefix_laws": 24,
+    "integer_horizon_tail_comparisons": 65536,
+    "actual_expanding_return_family_lifts": 516
+  },
+  "floating_scope": "None.",
+  "external_scope": "No new external theorem, package, or replay. Earlier written return-cycle budget and authenticated kernel annulus transport are reused.",
+  "not_proved": [
+    "A bounded actual-energy subsequence or a uniform weighted progression comparison.",
+    "A square-root lower bound on actual energy.",
+    "Return-separation moments at exponent 1/3 or above.",
+    "Escape exclusion, exclusion of additional cycles, or full Collatz."
+  ],
+  "sha256": {
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "verify_count_return_clock.py": "04ae0f5107686bc8264c2d7a556b64de6922f3361340213d7f9c516673b3b455",
+    "docs/COUNT-RETURN-CLOCK.md": "d8999680bfa33a761d957b8779876664178de383c6a46f1cb11163e354d15c39",
+    "docs/COUNT-RETURN-CONTROL.md": "44ded2dbc1619cfb872d6463c3c28ad431ca45b2570852ecd26d0fec3584f311",
+    "docs/COALESCENCE-ENERGY-CAPS.md": "05cfbe0216f05f1256de0b714651ef4de1b342c52e2bed3f4be202f95f901500",
+    "docs/ANNULUS-HEIGHT-COUPLING.md": "4505438ea55b350915e5d12bb7d3b7b884fa876f5998cc5e36924111712b3b77",
+    "results/count-return-control/verification.json": "bcebc20234a91272484a5663b6dd8a6b9f7ca589b2d99cac4a3808b454f90c0d",
+    "results/coalescence-energy-caps/verification.json": "786f23192b0fb6f25aca69803090a59dbe230270bc02c396bfc7d892bff1de26",
+    "results/annulus-height-coupling/verification.json": "7ee10fb9318ccef32cef568ddb0b5b73585121ad87b13d98c6ae9062a5d1a0a5",
+    "results/count-return-clock/replay.json": "840f12bbfd4e405d6478177fda585ff0bfa3f69ce92c4b77ed999486395cbe54",
+    "results/count-return-clock/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9"
+  }
+}

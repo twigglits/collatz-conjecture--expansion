@@ -1,0 +1,140 @@
+{
+  "verified_at_utc": "2026-10-13T15:10:45.976999+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 8,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reversal-persistence-fw62nnht/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.356,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/reversal-persistence/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reversal-persistence-fw62nnht/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.444,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/reversal-persistence/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reversal-persistence-fw62nnht/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.487,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/reversal-persistence/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reversal-persistence-fw62nnht/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.591,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/reversal-persistence/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reversal-persistence-fw62nnht/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.338,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/reversal-persistence/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/ordered-weight-drift/verification.json": 16
+  },
+  "kernel_scope": [
+    "All-clock original and shifted endpoint retention inequalities.",
+    "Integer arithmetic for a parent value at least one half.",
+    "All-parameter horizon h<=6m+1, persistent parent lower bound, child upper bound, and historical reversal."
+  ],
+  "written_scope": [
+    "Real weight factorization and bounds on parent losses over a block of future steps.",
+    "At every family clock in the stated horizon, negative product >=5/128 and squared difference >=25/4096.",
+    "No uniform pointwise charge to fixed future blocks, or to horizons with 2^h/X tending to zero.",
+    "No uniform charge of one cell's accumulated negative drift to all of that parent's future losses.",
+    "The guaranteed persistence rectangles have finite total source/offset measure; no all-time family integrability is asserted.",
+    "A uniform whole-annulus charge with constant C would imply limsup Cesaro energy <=1/2+121*C/10."
+  ],
+  "finite_scope": {
+    "direct_endpoint_retention_clocks": 528384,
+    "retained_half_cross_products": 36876,
+    "persistent_family_offset_cells": 12224,
+    "family_members": 64,
+    "exact_annulus_weight_cells": 198559,
+    "finite_C8_annulus_inequalities": 1067
+  },
+  "external_scope": "No new external input adopted or replayed. Only the conditional escape implication reuses the earlier packing/rigidity/PLD route.",
+  "not_proved": [
+    "Any whole-annulus charge constant valid at all offsets and levels.",
+    "Bounded late-offset energies or reversal Cesaro means.",
+    "Exclusion of escape, additional positive cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "verify_reversal_persistence.py": "3431df02f0f3de6d99bbbe3edaf16aec7dc281c2e39a4a89b6f19bf8a352aa78",
+    "docs/REVERSAL-PERSISTENCE.md": "5777bd39fd2c1ba3a149918864ff3d9a702fd2b85ace3256c3ec44cf5313fe11",
+    "results/ordered-weight-drift/verification.json": "fb91a766a237f1621bcf03e790b220386b4f2a3a8a5deedbfb2df6a567eca589",
+    "results/reversal-persistence/replay.json": "0deeb56c4081b2e10d874dcdd619c68c770f29f72f3b69faba87ecc568991d0f",
+    "results/reversal-persistence/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/reversal-persistence/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/reversal-persistence/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/reversal-persistence/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/reversal-persistence/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575"
+  }
+}
