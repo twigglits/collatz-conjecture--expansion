@@ -218,8 +218,10 @@ remains the unresolved part.
 
 ## 4. Quantitative conclusions from averages over source levels
 
-There is an even weaker sufficient hypothesis. The existing written
-estimates give
+For quantitative energy bounds, one can instead control averages over
+source levels. A finite lower average of `R_k` weakens the uniform bound
+in (3); it is stronger than the qualitative condition (Q). The existing
+written estimates give
 
 \[
  e_{s,k}\le\frac38 4^{-k}+\frac74(8/3)^s(2/3)^k,

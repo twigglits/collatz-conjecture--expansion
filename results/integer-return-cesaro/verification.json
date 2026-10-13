@@ -1,0 +1,140 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-13T21:35:58.316654+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 9,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-integer-return-jcjaj_gj/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.536,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/integer-return-cesaro/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-integer-return-jcjaj_gj/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.339,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/integer-return-cesaro/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-integer-return-jcjaj_gj/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.454,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/integer-return-cesaro/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/IntegerReturnCesaro.lean",
+      "source_sha256": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-integer-return-jcjaj_gj/IntegerReturnCesaro.olean",
+        "lean/IntegerReturnCesaro.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.172,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/integer-return-cesaro/IntegerReturnCesaro.log",
+      "log_sha256": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+      "olean_sha256": "8e0a78ba1284e1ba1de4eee7b6259571982a4dc95fef70fecbe60e6ad456dfc7"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-clock/verification.json": 11,
+    "results/two-coordinate-review/verification.json": 4
+  },
+  "external_dependencies": {
+    "revision": "a7275d5a73814d3d9a400c6fe6577de9542b03a3",
+    "worktree_clean": true,
+    "locally_recompiled": false,
+    "source_sha256": {
+      "formal-stationary-envelope/source/WeightedSourcePeriodicMean.lean": "d7c604b7355e5d12838dd9ebbfc04e8ffd7eb9ca49c151f8ac5a2a8153caa523",
+      "formal-stationary-envelope/source/FirstHitWordWeights.lean": "dc92a03fc91ad44ef5b952b7db68b407501539ddc25a3534e4aaeec92a37a3f9",
+      "formal-stationary-envelope/source/ActualUnconditionalCanonicalTrace.lean": "f586325119fecd4a96920f76b33178589da7bc9f1a9232481c3860af9a0cea62",
+      "formal-stationary-envelope/source/FirstHitClockDensity.lean": "395b4321df2c8cfed1d7574842a70c32498d65f5bcaf4a3db5ef9950c84b3400",
+      "formal-stationary-envelope/source/FirstHitClockConversion.lean": "9431894327b1018f61abbaaabdd3bc259a4bf5d61cf7573466e40e8150caacff",
+      "formal-stationary-envelope/source/ActualCycleWeights.lean": "67c1a934ec745a22e410ab0da1a4b49bef1ab295ffc250365e3a4f46e43fed7d",
+      "formal-stationary-envelope/source/ActualGreenSeries.lean": "01579cbc6f8ae2c1c48e132949d7b651542a854653949b8f13f5167cba3b5f99",
+      "formal-stationary-envelope/source/ActualGreenDensityLimit.lean": "f6cc92ea2c11f836d37c92d514f18157f2a775e93cce7363f1dfb5b5d5ca8f04",
+      "formal-stationary-envelope/source/PeriodicMarkedFirstHitMeanFromSources.lean": "be2937d81a12da3012c3227416589813c7917c0e379a52fbbc252630c311fa68"
+    },
+    "source_inventory_sha256": "c3a623f8f06ec66824099ca3b4e40e5448533c0dfb0ce389cee70e52879dc28c"
+  },
+  "kernel_scope": [
+    "Exact positive-column preimages, uniqueness and source cutoff.",
+    "Persistence of balanced fusion, backward nonfusion and periodic masks."
+  ],
+  "finite_scope": {
+    "residue_endpoint_bounds": 8191,
+    "positive_column_preimages": 15832,
+    "exact_first_hit_weight_identities": 15615,
+    "complete_residue_inverse_bijections": 1664,
+    "lifted_nonfusion_and_selection_checks": 101364,
+    "marked_integer_selection_inequalities": 7424,
+    "actual_periodic_targets_checked": 2,
+    "marked_finite_visit_reconstructions": 19968,
+    "dyadic_first_hit_clock_transports": 10668,
+    "exact_dyadic_harmonic_tail_identities": 2322
+  },
+  "floating_scope": "None in verification decisions.",
+  "written_external_scope": [
+    "Full-source first-hit elapsed clock obtained from the external odd-source clock.",
+    "Periodic marked physical-time first-hit and all-visit Cesaro limits.",
+    "K*_(0,H)(n)/H tends to zero at each fixed positive integer."
+  ],
+  "not_proved": [
+    "Finite K*_0 at each integer or pointwise decay of individual kappa_t.",
+    "Uniformity on growing target intervals or periods, or a convergence rate.",
+    "Actual-gradient bounds, temporal criterion Q, exclusion of escape or other cycles, or Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/IntegerReturnCesaro.lean": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+    "verify_integer_return_cesaro.py": "efc44b42c2c249e18905290acb5f1073be797b48af3460bf3efdce5eb4420e72",
+    "docs/INTEGER-RETURN-CESARO.md": "d3b4dbd71d5c6e9ef80bc9aa91caf43572253ed4f3afac39e3f104a26e1c1c7f",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/two-coordinate-review/verification.json": "ca08a176380037161fcdd7577524f6d3a16d3b75afe8de04ab97feb3e0fc16cc",
+    "results/integer-return-cesaro/replay.json": "75ed4584463b0a1d9a0d55e716ef2078f9f33e93d077b5905dd7dbb073ab60b5",
+    "results/integer-return-cesaro/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/integer-return-cesaro/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/integer-return-cesaro/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/integer-return-cesaro/IntegerReturnCesaro.log": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb"
+  }
+}

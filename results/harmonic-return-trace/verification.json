@@ -1,0 +1,144 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-13T21:37:01.446836+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 10,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-harmonic-trace-t2o9tky2/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.397,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/harmonic-return-trace/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-harmonic-trace-t2o9tky2/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.348,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/harmonic-return-trace/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-harmonic-trace-t2o9tky2/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.469,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/harmonic-return-trace/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/IntegerReturnCesaro.lean",
+      "source_sha256": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-harmonic-trace-t2o9tky2/IntegerReturnCesaro.olean",
+        "lean/IntegerReturnCesaro.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.174,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/harmonic-return-trace/IntegerReturnCesaro.log",
+      "log_sha256": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+      "olean_sha256": "8e0a78ba1284e1ba1de4eee7b6259571982a4dc95fef70fecbe60e6ad456dfc7"
+    },
+    {
+      "source": "lean/HarmonicReturnTrace.lean",
+      "source_sha256": "6dd60f3fdc94c82cbe9c91d79606039d826f259223f819bf3d4bdd56c69eedf6",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-harmonic-trace-t2o9tky2/HarmonicReturnTrace.olean",
+        "lean/HarmonicReturnTrace.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.261,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/harmonic-return-trace/HarmonicReturnTrace.log",
+      "log_sha256": "82cc808a04187a248a6816ce22dc1ecc2e012a8416d83d84144ed756b5d9eb03",
+      "olean_sha256": "89d9d49da4d81bccad56e8152f83d062caa2c1d67fab9a48a6b810857ec33eeb"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/count-return-clock/verification.json": 11
+  },
+  "kernel_scope": [
+    "Shifted source growth, target-independent predecessor span and binary band count.",
+    "Nested nonfusion masks and exact complete-period populations.",
+    "Positive odd correction and the cycle factor bound G_n <= 3*n+1."
+  ],
+  "finite_scope": {
+    "direct_residue_mask_values": 131071,
+    "positive_count_correction_bounds": 983041,
+    "nested_binary_band_population_checks": 187,
+    "exact_harmonic_binary_band_checks": 187,
+    "exact_harmonic_interval_checks": 882,
+    "actual_inverse_paths_and_weight_bounds": 52173,
+    "finite_predecessor_span_bounds": 2278,
+    "exact_first_hit_clock_blocks": 670,
+    "actual_cycle_factor_checks": 2,
+    "finite_nonfusion_and_return_trace_bounds": 2144
+  },
+  "floating_scope": "None in verification decisions.",
+  "written_scope": [
+    "Harmonic mask mass on binary source bands, including small sources.",
+    "Nonfused first-hit mass is at most 25*A*n*sqrt(H), uniformly in n.",
+    "K*_(0,H)(n) <= Z_H(n) <= 350*C_star*n*G_n*sqrt(H).",
+    "Independent quantitative fixed-target Cesaro decay and normalized moving-target bound.",
+    "Finite time-discounted integer trace for sigma>1/2 and a square-root Abel rate."
+  ],
+  "external_scope": "None. The existing written local fusion tail is reused; no external analytic result or compiled library is required.",
+  "not_proved": [
+    "Finite total occupation at each positive integer.",
+    "Unnormalized uniform decay for arbitrarily growing targets or pointwise decay of individual return layers.",
+    "Actual-gradient criterion Q, exclusion of escape or additional cycles, or Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/IntegerReturnCesaro.lean": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+    "lean/HarmonicReturnTrace.lean": "6dd60f3fdc94c82cbe9c91d79606039d826f259223f819bf3d4bdd56c69eedf6",
+    "verify_harmonic_return_trace.py": "2845b88293026ce6dcb9823547ba770764f59dc5eaeb22a15cd878e48092e31e",
+    "docs/HARMONIC-RETURN-TRACE.md": "840de478dd9557f1f51ca9593189dbf9e45cb14b0a794b1e9e8f6fe9662ae409",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/harmonic-return-trace/replay.json": "37c378e1730bc98dbe0fd520efd313fd0148e0dd6e14faa96b5832e90f04e87d",
+    "results/harmonic-return-trace/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/harmonic-return-trace/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/harmonic-return-trace/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/harmonic-return-trace/IntegerReturnCesaro.log": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+    "results/harmonic-return-trace/HarmonicReturnTrace.log": "82cc808a04187a248a6816ce22dc1ecc2e012a8416d83d84144ed756b5d9eb03"
+  }
+}

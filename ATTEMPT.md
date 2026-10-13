@@ -1612,6 +1612,111 @@ after time summation. Actual returned progressions and containing
 intervals have separate complete-time moment checks. None of these
 finite-source results is extrapolated to all source levels.
 
+The [cumulative affine budget](docs/RETURN-AFFINE-BUDGET.md) strengthens
+the available return-density estimate to `K*_beta in Lp` for
+`0<=beta<1/2`, `1<=p<6/(5+2beta)`. In particular the unweighted
+range improves from `p<10/9` to `p<6/5`. Write the formal affine
+coefficient as `C_t=(3^a_t+N_t)/2^t`. Its composition across a return
+is `C_next=lambda*C_current+b`. The existing conditional slope and
+correction estimates now give a summable budget for `C^eta` over all
+nonfused returns, for every `eta<1/2`.
+
+Fractional fibre counting bounds each clock/count density component by
+this coefficient cost. A written binomial concentration bound removes
+atypical counts; the remaining dyadic clock block has only
+`O(H^(3/2)*sqrt(log H))` components. Combining their costs with the
+occupation-clock tail proves the improved range. The proof includes
+the overlap between components, rather than inferring an `Lp` bound
+from summability of their separate `p`th powers.
+
+Eight new kernel arithmetic roots and exact finite checks passed. The
+fractional moments, concentration, and infinite-density theorem remain
+written. For the unweighted density a complementary power strictly
+above six could now suffice, in place of one strictly above ten. No
+such uniform bound for the actual accumulated gradients is proved;
+infinite-cutoff integer sampling also remains unresolved. The temporal
+criterion, escape exclusion, and other-cycle exclusion are still open.
+
+The [local obstruction-repository review](docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md)
+examines Lucas Valbuena's clone at commit `a7275d5a7381`. It finds a direct
+written connection: our full binary image density `b_t` is `L^t 1` for
+its binary transfer operator. Its external positive stationary envelope
+therefore gives `b_t<=2^(-t)+(3/c)(1-2^(-t))E`, hence uniform full-image
+`Lp` norms for every `1<=p<2` and a bound at each fixed positive integer.
+The majorant depends on the integer trace. Summing selected return layers
+with the existing clock tail recovers `p<6/5`; it does not improve the
+local range or control actual gradients and infinite-cutoff sampling.
+
+The clone also isolates a finite masked cylinder energy whose sublinearity
+is equivalent to universal eventual periodicity, and an occupation upper
+bound that would exclude escape. Their remaining small-ancestor and upper
+estimates are unproved, and eventual periodicity still allows other cycles.
+Its Fourier selection theorem conditions on total exponent, not arbitrary
+paired return histories. This review authenticated 7,493 distributed files
+and checked the binary transfer identity on all ternary residues through
+depth ten. It did not replay the external Lean bundles; these analytic
+inputs remain external dependencies, not additional local kernel results.
+
+The subsequent [active-gap potential](docs/ACTIVE-GAP-POTENTIAL.md) gives
+an independent written improvement. At absolute count gap `d`, use
+`F(B,d)=q^d B^eta+h_q(d)`, where `r_eta<q<1` and
+`h_q(d)=2 sum_(j>=1) min(d,j)q^(j-1)(j+3)` is bounded. Its discrete
+curvature pays for the expected affine correction during the next active
+block. Nonnegative stopping at active epochs proves returned correction
+moments for every `eta<1`, extending the previous `eta<1/2` range.
+
+Killing at balanced fusion then gives summable `C^eta` and `D^eta` over
+all nonfused returns. The fractional-fibre and concentration argument
+therefore improves to `K*_beta in Lp` for `0<=beta<1` and
+`1<=p<5/(4+beta)`, in particular `p<5/4` unweighted. Weighted clock
+truncation is `O_beta(H^(-(1-beta)/2)(1+log H)^(1+2beta))`.
+Nine kernel arithmetic roots and exact finite stopping checks support
+this result; the probability and infinite analysis remain written.
+No new external theorem is used. Complementary actual-gradient powers
+above five, infinite-cutoff integer sampling, and the global Collatz
+conclusion remain unproved.
+
+The [integer return Cesaro argument](docs/INTEGER-RETURN-CESARO.md) now
+uses two analytic results from the local clone: periodic weighted
+first-hit source means and the first-hit shortcut clock on odd basin
+sources. A dyadic valuation split extends the clock to all sources;
+partial summation and the finite source cutoff then give marked
+physical-time first-hit means. Repeated visits to periodic targets add
+the usual finite geometric factor. Thus every fixed periodic source
+mark `p` gives `H^-1 sum_(t<=H) B_t^p(n) -> g(n) mean(p)` at each
+fixed positive target `n`.
+
+Taking `p` to be nonfusion by a fixed clock `L`, then sending `H` and
+afterward `L` to infinity, proves `K*_(0,H)(n)/H -> 0` for every fixed
+positive integer. Nine new local kernel roots and exact finite checks
+verify the integer correspondence and mask inputs. The analytic limits
+are written deductions from external results, without a fresh external
+Lean replay. This establishes sublinear truncated occupation at fixed
+targets, not finite total occupation, a growing-interval estimate, the
+actual-gradient criterion, or the Collatz conjecture.
+
+The [harmonic return trace proof](docs/HARMONIC-RETURN-TRACE.md) now
+strengthens that conclusion independently of the clone's analytic
+theorems. Bounded-clock predecessors of any target have a uniformly
+bounded ratio of largest to smallest source. On a binary source range,
+use the earlier of its range index and the nonfusion clock: its
+reciprocal-weighted mask mass is at most that earlier mask's full-period
+probability. This includes the small sources, where using only the
+later mask's mean would fail.
+
+The written square-root fusion tail then gives, uniformly in every
+positive target and H>=1,
+`K*_(0,H)(n)<=Z_H(n)<=350 C_star n G_n sqrt(H)`, where `Z_H` counts
+all nonfused visits. The cycle factor is one for nonperiodic targets
+and at most `3n+1` always, by new kernel arithmetic. Ten kernel roots
+and exact finite rational checks passed. This provides a quantitative
+fixed-target limit and normalized moving-target control without an
+external density or clock theorem. Time-discounted return occupation
+is finite at each integer for every discount power greater than one half.
+The bound still allows a positive single
+column along a divergent moving target; the actual-gradient criterion
+and full Collatz remain unproved.
+
 ## Reproduction
 
 ```sh
@@ -1699,6 +1804,9 @@ python3 verify_return_occupation_density.py
 python3 verify_gradient_orlicz_obstruction.py
 python3 verify_binary_image_energy.py
 python3 verify_annulus_time_budgets.py
+python3 verify_return_affine_budget.py
+python3 verify_two_coordinate_review.py
+python3 verify_active_gap_potential.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

@@ -1,0 +1,9 @@
+'ActiveGapPotential.min_curvature' depends on axioms: [propext, Quot.sound]
+'ActiveGapPotential.total_diagonal' depends on axioms: [propext, Quot.sound]
+'ActiveGapPotential.green_boundary' depends on axioms: [propext, Quot.sound]
+'ActiveGapPotential.green_cap' depends on axioms: [propext, Quot.sound]
+'ActiveGapPotential.green_curvature' depends on axioms: [propext, Quot.sound]
+'ActiveGapPotential.linear_geometric_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActiveGapPotential.quadratic_geometric_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActiveGapPotential.geometric_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActiveGapPotential.fractional_slope_constants' does not depend on any axioms

@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-13, after proving a weaker conditional temporal-drift criterion, removing its PLD dependency via a convergent inverse spine meeting every binary cone, and certifying complete future-time costs on fifteen finite annuli with twelve new kernel roots.
+Last updated: 2026-10-13, after independently strengthening the integer return bound to K*_(0,H)(n)<=350 C_star n G_n sqrt(H), uniformly in the target after normalization. Ten new kernel roots and exact finite checks passed. This quantitative Cesaro result uses no external analytic theorem; actual-gradient control and Collatz remain unresolved.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
@@ -261,6 +261,18 @@ is unproved for all levels. Twelve new kernel roots and exact full
 future-time checks on fifteen finite annuli passed. Neither absence
 of escape nor exclusion of other cycles has been established.
 
+The latest density improvement controls the cumulative affine coefficient
+C_t=(3^a_t+N_t)/2^t at ALL nonfused returns. Its continuation identity
+C_next=lambda*C_current+b and the existing conditional return moments
+give a finite summed C^eta budget for every eta<1/2. Fractional fibre
+counting and binomial concentration then prove the WRITTEN improvement
+K*_beta in Lp for 0<=beta<1/2 and 1<=p<6/(5+2beta), in particular
+p<6/5 when beta=0. Eight new kernel roots and exact finite checks passed.
+For the unweighted density, a complementary power above six could now
+suffice; neither that actual-gradient estimate nor the required ordinary
+integer sampling bound is proved. The temporal criterion Q and both
+parts of full Collatz remain unresolved. See the last dated entry.
+
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
 specific result. The historical session transcript has already been analyzed;
@@ -298,6 +310,10 @@ inferring that a proof is imminent from the user's encouragement.
   descriptions in dated entries are historical. Allow longer Rust/Lean
   runs and avoid concurrent heavy compiles. A short tool timeout is not
   a mathematical or build failure.
+- The user has cloned `/Users/jean/Personal/collatz-two-coordinate-obstruction`.
+  Prefer this local source for further review. On 2026-10-13 its clean HEAD
+  was `a7275d5a73814d3d9a400c6fe6577de9542b03a3`. The local review and
+  exact source/finite-check scope are in `docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md`.
 - [lean-toolchain](lean-toolchain) pins `leanprover/lean4:v4.33.1`.
   The last verified compiler commit is
   `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`.
@@ -5667,3 +5683,642 @@ and all counterexamples.
 Collatz remains unresolved and the full user goal remains active.
 All jobs are terminal. No agents, installs, credentials, staging,
 commits, or other Git writes occurred in this turn.
+
+## 2026-10-13: cumulative affine return budgets and the 6/5 density range
+
+The previous goal turn was progress. The full conjecture remains
+unresolved and the active goal is unchanged. The new substantive result
+is WRITTEN, with eight kernel arithmetic roots and exact finite support:
+
+  K*_beta in Lp(mu_3) for 0<=beta<1/2, 1<=p<6/(5+2beta).
+
+For beta=0 this improves p<10/9 to p<6/5. It does not prove the actual
+gradient pairing, the temporal criterion Q, escape exclusion, or absence
+of other cycles. The grade-sensitive weight considered at the beginning
+of this turn was already exactly V_t in GRADE-WEIGHT-MOMENTS.md; no new
+result was claimed for that duplicate construction.
+
+Files:
+  docs/RETURN-AFFINE-BUDGET.md
+  lean/ReturnAffineBudget.lean
+  verify_return_affine_budget.py
+  results/return-affine-budget/verification.json
+  results/return-affine-budget/replay.json and eleven build logs.
+
+Let C_t=lambda_t+B_t=(3^a_t+N_t)/2^t. This is the formal affine image
+of one under the sampled parity prefix, NOT generally the actual orbit
+of the integer one. New KERNEL identities prove augmented-numerator
+recurrence and lifting, exact composition
+  C_(t+h)=lambda_continuation*C_t+B_continuation,
+the parity-count generating polynomial for every natural argument,
+finite drift telescoping with denominators cleared, and the sorted
+fibre rank inequality 3^a*(j+1)<=3^a+N_j.
+
+WRITTEN fixed-time moment: for 0<eta<1,
+  r_eta=(2^(-eta)+(3/2)^eta)/2<1,
+  sup_t E C_t^eta <= A_eta=1+2^(-eta-1)/(1-r_eta).
+At a count return the existing fresh-prefix estimates give
+  E lambda_tau^eta<=r_eta,
+  E B_tau^eta<=m_eta=1+7eta/(1-2eta), for eta<1/2.
+Killing at balanced fusion, composing C, and telescoping gives
+  E sum_(j<N) C_(S_j)^eta
+    <=M_eta=(1+m_eta*C_*)/(1-r_eta), eta<1/2,
+  C_*=540*2^5180.
+At eta=1/4 the bound is <=40+180*C_*. The sum includes j=0;
+the occupation measure uses 1<=j<N and so is also bounded. No
+independence between the continuation slope and correction is assumed.
+
+WRITTEN fractional fibre estimate, alpha=p-1>0:
+  ||kappa_(t,a)||_p^p <= p*2^(-t)*sum_selected C_t^alpha.
+Sort the injective numerator quotients, use
+  m^p<=p*sum_(j=1)^m j^(p-1),
+then integrate each ternary fibre. Combining all t,a without paying
+for their overlap would be invalid; the proof does pay that cost.
+
+The full-period count is Binomial(t,1/2). Define typical counts by
+  |a-t/2|<=2*sqrt(t*log(t+2)).
+The elementary exponential-moment proof gives atypical mass
+<=2*(t+2)^(-8). Holder against the fixed-clock half moment makes
+the selected atypical density satisfy
+  ||psi_t||_p^p << (t+2)^(17alpha-8),
+so these norms are summable for p<6/5.
+There are O(H^(3/2)*sqrt(log H)) typical (t,a) components in H<=t<2H.
+Using the all-return C^eta budget and the prior occupation-clock tail
+O((1+log H)/sqrt H), their combined density Delta_H satisfies
+  ||Delta_H||_p^p << H^[3alpha/2-1/2+alpha/(2eta)]
+                     *log(H+1)^[alpha/2+1-alpha/eta].
+Choosing alpha/(1-3alpha)<eta<1/2 is possible exactly for alpha<1/5.
+Dyadic Minkowski and monotone convergence give p<6/5. Column Holder
+with the prior separation moments then gives p<6/(5+2beta).
+Neither the endpoint nor optimality is claimed.
+
+For beta=0 a complementary power strictly above six could suffice,
+instead of strictly above ten. The actual accumulated gradient norm
+is still unproved, and the Haar estimate is not an infinite-cutoff
+trace bound on a fixed ordinary integer interval. The finite transfer
+factor 1+3^H/M remains. This is the same substantive arithmetic gap.
+
+Verification passed 2026-10-13T20:12:43.907413+00:00 on pinned
+Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Eleven sequential fresh builds took 6.282 seconds; all eight new roots
+have only standard axioms and no warnings, sorry, or native evaluation.
+The manifest authenticates 28 files. Prior records reauthenticated:
+binary image energy 26 hashes, return correction 21, occupation 29.
+
+Exact finite replay checks 36864 compositions, 12288 lifts,
+131071 full-period rows through clock sixteen, 102 generating-polynomial
+identities, 17 fourth moments, 41109 full and 2232 selected image fibres,
+459 full and 174 selected fractional component bounds, 65535 adjacent
+return tests, and 2552 nonfused even return prefixes. A full source
+period through clock fourteen checks 14109 cumulative return
+compositions and eight finite killed-drift inequalities. Direct ternary
+moments use 81162 power evaluations, plus 2480 exact dyadic/atypical
+exponent checks and twelve weighted exponent checks. Fractional powers
+are enclosed with integer roots at denominator 2^48. No floating
+comparison decides a claim. Finite p=3/2 checks are explicitly NOT an
+infinite integrability result at that exponent.
+
+An editorial correction in ANNULUS-TIME-BUDGETS.md now states correctly
+that source-level average budgets are weaker than its uniform charge
+(3), but stronger than its qualitative condition Q. The complete
+annulus verifier was rerun and passed at
+2026-10-13T20:15:34.293783+00:00; its 24 hashes were reauthenticated.
+The finite all-future cost results are unchanged. Both final manifests
+were independently rehashed after these checks.
+
+### Next candidate: a bounded potential at active gap steps (NOT adopted)
+
+A potentially stronger stopping estimate was derived after the verified
+6/5 milestone. It has not yet been written as a reviewed theorem,
+formalized, or added to any verification manifest. Check it next rather
+than rediscovering it. It may extend returned correction moments to
+all eta<1, but no such extension is claimed in the authoritative note.
+
+At absolute count gap d>=1, let W be the wait INCLUDING the next active
+step. COUNT-RETURN-CLOCK gives E[W|prefix]<=v(d)+2 with
+v(d)=v_2(3^d-1)<=d+1. The next active sign is fair, although W and
+the coefficient data can be correlated. The holding time is NOT bounded
+deterministically; only this uniform conditional expectation is needed.
+
+For the affine coefficients lambda_W,b_W of either endpoint during
+that block, bounded stopping followed by Fatou should give
+  E lambda_W^eta <= r_eta,  0<eta<1, W>=1,
+  E b_W <= E W/4,
+  E b_W^eta <= ((v(d)+2)/4)^eta <= d+3.
+Choose r_eta<q<1 and define the bounded half-line Green potential
+  h(d)=2 sum_(j>=1) min(d,j)*q^(j-1)*(j+3).
+Then h(0)=0, h>=0, and
+  [h(d-1)+h(d+1)]/2 = h(d)-q^(d-1)*(d+3).
+It is bounded by h(infinity)=(8-4q)/(1-q)^3, with
+  h(1)=(8-6q)/(1-q)^2.
+The correct closed form is
+  h(d)=[8-4q-2*q^d*((d+4)-(d+2)*q)]/(1-q)^3.
+A terminal exact rational calculation checked the finite-sum curvature
+at d=1,2,7,31 with q=9/10; that calculation alone is not a global proof.
+
+If a current cumulative coefficient is B>=0, put
+  F(B,d)=q^d*B^eta+h(d).
+Across the active block, B'=lambda_W*B+b_W and d'=d+-1. Thus
+  E[q^d'*(B')^eta]
+    <=q^(d-1)*(r_eta*B^eta+d+3)
+    <=q^d*B^eta+q^(d-1)*(d+3).
+The h term cancels the last cost exactly, suggesting F is a
+nonnegative supermartingale at active epochs. Stop at gap zero or K
+and use nonnegativity at K, then let K increase. The known a.s. finite
+return would give E B_return^eta <= F(B_start,d_start).
+For a fresh count-return cycle, even D returns in one step; odd D
+departs to gap one after one step, with E b_1^eta=2^(-eta-1).
+The prospective uniform conclusion is
+  E b_tau^eta <= q*2^(-eta-1)+h(1) <= 1+h(1), eta<1.
+
+If this audit succeeds, reuse E lambda_tau^eta<=r_eta to obtain
+returned separation drift and all-return C and D moment budgets for
+every eta<1, retaining the already proved C_* as the cycle-count
+constant. In the present density proof, replacing eta<1/2 by eta<1
+would improve the unweighted range to p<5/4 and the separation-weighted
+range to beta<1, p<5/(4+beta). Atypical estimate (13) still works for
+alpha<1/4. These are prospective consequences, NOT current results.
+They would still leave ordinary-integer sampling and actual gradients
+uncontrolled, so even a successful potential does not settle Collatz.
+
+All jobs are terminal. A primary-source literature check added no new
+external theorem. No agents, installations, credentials, staging,
+commits, or other Git writes were used by the assistant. The user
+committed the preceding milestone while work continued; preserve the
+index and their concurrent changes.
+
+## 2026-10-13: local two-coordinate-obstruction source review
+
+The user explicitly pointed out their local clone and asked whether its
+code could help solve Collatz. Reviewed the clean clone at
+  /Users/jean/Personal/collatz-two-coordinate-obstruction
+  a7275d5a73814d3d9a400c6fe6577de9542b03a3 (2026-10-08).
+Use this source rather than redownloading the same manuscripts. The clone
+was read only. No new external theorem was replayed or imported into the
+local Lean dependency graph. Collatz remains unresolved; the goal is active.
+
+Added:
+  docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md
+  verify_two_coordinate_review.py
+  results/two-coordinate-review/verification.json
+README and ATTEMPT link the review and distinguish its external inputs.
+
+The review reads all four paper summaries, the envelope proof, the relevant
+energy/occupation/Fourier sections, theorem maps, and selected Lean endpoint
+proofs. Independent published-inventory checks authenticate 7,493 distinct
+files in eight packages plus four paper/source/map sets. The module manifests
+check 2,457 source entries; broader inventories contain 2,522 Lean files,
+including audit/provenance sources. These are integrity checks, NOT fresh
+Lean compilation or authentication of external compiled libraries. Seven
+retained upstream execution records report PASS and are hash authenticated.
+Density bundles use Lean 4.30.0-rc2; Fourier uses 4.35.0-rc3. Do not confuse
+these records with our earlier completed 389-module PLD replay.
+
+NEW WRITTEN EXTERNAL DEDUCTION: denote our full binary image density by b_t
+to distinguish it from their Syracuse cylinder rho^S_k. Exact parity-word
+enumeration gives b_0=1 and b_(t+1)=L b_t, where
+  Lf(z)=f(2z)/2+(3/2)1_(z=2 mod3)f((2z-1)/3).
+The new external envelope satisfies LE<=E POINTWISE, E>=c>0 on units,
+E(n)=g(n)=delta G_n n D_n at every positive integer, and E in Lp for p<2.
+Here delta=log(4/3)/2, G_n is the periodic Green factor, D_n the actual
+weighted first-hit density. Write h=(3/2)1_(z=2 mod3). Then
+  b_t=2^-t+sum_(j<t)2^(-(t-1-j)) L^j h
+     <=2^-t+(3/c)(1-2^-t)E.
+This proves externally dependent uniform full-image Lp bounds for every
+1<=p<2 and b_t(n)<=2^-t+(3/c)g(n) at fixed positive integers. It improves
+the previous time-growing bound for the full law, not the all-return law.
+The integer majorant g is unbounded in every unit residue class.
+
+A common-noise coupling with a stationary binary affine chain gives weak
+convergence of b_t to the stationary law: the difference acquires a factor
+3^a with a~Binomial(t,1/2). Uniform L2 bounds would then bound all stationary
+cylinder L2 norms and contradict the external non-L2 theorem. This is a
+written external consequence, not a local kernel theorem or a claim about
+the optimal exponent of our selected return density.
+
+For dyadic all-return block Delta_H, uniform per-clock Lq gives ||Delta_H||q
+<=C_q H, while the existing L1 clock tail is O(H^-1/2 log H).
+Interpolation yields p<3q/(2q+1); taking q<2 recovers p<6/5 only.
+Our prior independent RETURN-AFFINE-BUDGET proof is unchanged. No stronger
+all-return exponent, actual-gradient estimate, or infinite-cutoff integer
+sampling bound follows from this review.
+
+MOST USEFUL TARGETS IN THE CLONE:
+- GammaFreeFirstHitCoefficient.lean discharges its reciprocal-density floor
+  in the public endpoint; exact first-hit coefficients satisfy a_k(N)<=L N D_N
+  at positive odd depths, including periodic targets. Its finite fan selects
+  a unit nonperiodic predecessor with exponent <=6 and uses disjoint basins.
+- MaskedEnergyPeriodicityEquivalence.lean proves E_K/(K+1)->0 iff every
+  positive orbit is eventually periodic. E_K is the squared normalized
+  Syracuse cylinder density at odd N<3^K with no return in <=K odd steps.
+  This is NOT our dyadic E_s. The decomposition controls the no-small-ancestor
+  portion by L epsilon(M)(2+3K+(64/81)^K(1+2K)), epsilon(M)->0. The remaining
+  small-ancestor portion is on actual forward orbits of bounded seeds and
+  remains open. Even a successful estimate permits additional cycles.
+- RawOccupationDivergentExcess.lean proves that a divergent odd unit root
+  forces liminf sum_(odd N<=R)D_N/log R >=1/log(4/3)
+  +D_u/(P_infinity(u)log(3/2)), with a strictly positive additional term.
+  The matching upper bound is open. ActualInverseHeightClock.lean proves an
+  a.s. inverse-path height rate at fixed nonperiodic unit roots, without the
+  expectation/uniform-integrability estimate needed for that upper bound.
+- The Fourier theorem selects exact TOTAL-EXPONENT slices, uniformly in
+  affine seed and total-exponent phase. It does not select arbitrary paired
+  return histories. Polynomial slice mass does not repair this distinction:
+  conditioning a uniform cyclic law on its first third of residues gives
+  probability 1/3 and a primitive Fourier coefficient with modulus >=1/2.
+
+Exact local finite checks passed: 2,047 direct binary residue rows, 2,047
+independently generated affine words, 88,572 full ternary transfer values
+through depth ten, 2,816 actual positive-target inverse-tree comparisons,
+and four rational interpolation exponent tests. These certify finite
+identities only. The written all-depth operator argument is in the review.
+
+CURRENT UNADOPTED CANDIDATE: before the clone review, added
+lean/ActiveGapPotential.lean. Its nine standalone kernel arithmetic roots
+passed a development build using the existing temporary dependency objects:
+min/Green curvature, nonnegative Green cap, two geometric polynomial
+identities and caps, and exact fractional-slope constants. This has no final
+verification manifest or completed analytic note yet. The prospective
+eta<1 return moment and p<5/4 all-return range in the preceding entry are
+still NOT adopted. Resume that audit without mistaking the development
+module for a complete verified milestone.
+
+No agents, installations, credentials, staging, commits, or other Git
+writes were used. Preserve the user's index and existing changes. The next
+research step can use the external majorant as an explicitly stated input,
+or continue the independent active-gap potential; neither route has closed
+the actual-gradient/integer-sampling gap.
+
+## 2026-10-13: active-gap potential and the 5/4 density range
+
+The previous local-clone review turn was progress. This turn completed
+the formerly unadopted active-gap potential. The new infinite results are
+WRITTEN, with nine kernel arithmetic roots and independent exact finite
+checks. The Collatz objective remains active and unresolved.
+
+Files:
+  docs/ACTIVE-GAP-POTENTIAL.md
+  lean/ActiveGapPotential.lean
+  verify_active_gap_potential.py
+  results/active-gap-potential/verification.json
+  results/active-gap-potential/replay.json and twelve build logs.
+README and ATTEMPT link the new result. The prior 6/5 note remains intact
+as a verified earlier result. The local-clone review now links this later,
+independent improvement; its own new stationary comparison is still an
+external deduction and is not used in the active-gap proof.
+
+At a nonzero absolute count gap d, the physical wait W INCLUDING the next
+active step has conditional mean <=v_2(3^d-1)+2. Bounded physical stopping
+and Fatou give, for either endpoint and every 0<eta<1,
+  E lambda_W^eta <=r_eta=(2^-eta+(3/2)^eta)/2<1,
+  E b_W <= E W/4,
+  E b_W^eta <=d+3.
+The last bound needs only v(d)<2d and concavity; no deterministic wait
+bound is used. The two endpoint parities, wait, and active sign can be
+correlated. Each marginal next parity is fair, and the next active sign
+is conditionally fair under the coherent binary residue law.
+
+Choose r_eta<q<1. The bounded half-line Green potential is
+  h_q(d)=2 sum_(j>=1)min(d,j)q^(j-1)(j+3),
+  h_q(0)=0, h_q(1)=(8-6q)/(1-q)^2,
+  0<=h_q(d)<=(8-4q)/(1-q)^3,
+  [h_q(d-1)+h_q(d+1)]/2=h_q(d)-q^(d-1)(d+3).
+For current cumulative correction B, define F(B,d)=q^d B^eta+h_q(d).
+Across an active block B'=lambda_W B+b_W and d'=d+-1. Using
+q^d'<=q^(d-1) gives
+  E[q^d' B'^eta]<=q^d B^eta+q^(d-1)(d+3).
+The h curvature cancels this cost exactly. Thus F is a nonnegative
+supermartingale at ACTIVE epochs. Finite active-step cutoffs followed
+by Fatou are sufficient: the fair gap walk hits zero a.s. from every
+finite gap, and every wait is finite a.s. by its finite expectation.
+No optional-stopping equality or integrability of the full physical
+return time is assumed.
+
+For a fresh count-return cycle, even separation returns in one step.
+Odd separation first departs to gap one. Both cases give the uniform
+conditional bound
+  E b_tau^eta<=b_eta:=1+h_q(1), all 0<eta<1.
+This replaces eta<1/2. For eta=1/2,3/4,7/8 take q=63/64,127/128,255/256
+and obtain b_eta=8577,33537,132609 respectively. These are coarse constants;
+retain the older quarter-power constants when using the old EN estimate.
+
+Use C_t=lambda_t+B_t, the FORMAL image of one under the sampled parity
+word, and retain C_*=540*2^5180 as the bound on E N. Killing at balanced
+fusion and finite drift telescoping prove
+  E sum_(j<N) C_(S_j)^eta <=(1+b_eta C_*)/(1-r_eta),
+  E sum_(j<N) D_j^eta <=(1+2b_eta C_*)/(1-r_eta), 0<eta<1.
+These sums include j=0; the occupation measure uses 1<=j<N. Restricting
+to even initial sources only decreases nonnegative integrals.
+
+For eta>=1/2, concavity of 1-r_eta and the exact half-moment cap imply
+1-r_eta>=(1-eta)/16. Choose q=1-(1-eta)/32. Then
+  b_eta<=8193/(1-eta)^2,
+  both occupation moment budgets <=B/(1-eta)^3,
+  B=16(1+16386 C_*).
+Choosing eta=1-1/log_2 u for u>=4 gives
+  nu(C>u),nu(D>u)<=2B(log_2 u)^3/u,
+  Pr(b_tau>u)<=16386(log_2 u)^2/u.
+No endpoint first moment is asserted.
+
+The previous fractional-fibre and binomial-concentration proof now takes
+alpha/(1-3alpha)<eta<1, alpha=p-1, which is possible iff alpha<1/4.
+The atypical exponent (17alpha-8)/p is still <-1. Dyadic Minkowski yields
+  K*_0 in Lp for 1<=p<5/4.
+Column Holder with D^gamma moments for gamma<1 gives the stronger range
+  K*_beta in Lp for 0<=beta<1, 1<=p<5/(4+beta).
+The method's limiting dyadic exponent is 2alpha-1/2. Its range is not
+claimed optimal; stronger overlap or joint clock/coefficient control would
+be needed to improve this component-counting argument further.
+
+Holder against the existing O(H^-1/2 log H) clock tail and the near-one
+moment constants also gives the written truncation rate
+  ||K*_beta-K*_(beta,H)||1
+    =O_beta(H^(-(1-beta)/2)(1+log H)^(1+2beta)), beta<1.
+The unweighted complementary gradient exponent can now be any q>5.
+Actual accumulated-gradient power bounds and infinite-cutoff integer trace
+sampling are still unproved. The finite transfer still has its
+1+3^H/M factor. The temporal criterion Q and exclusion of other cycles
+remain open. No external stationary result was needed for these bounds.
+
+Final verification passed 2026-10-13T21:00:53.975945+00:00 on pinned
+Lean 4.33.1 commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Twelve sequential fresh builds took 4.729 seconds. All nine new roots
+use standard axioms only; no warnings, admitted proof or native evaluation
+occurred. The manifest authenticates 31 files. The affine-budget,
+occupation, and count-clock prior records had 28,29,11 hashes checked.
+
+Exact finite replay checked 1,584 integer Green curvatures, 375 geometric
+identity pairs, 1,152 exact series remainders, 384 rational curvatures/caps,
+three fractional slope/budget constants, and 31 near-one chord comparisons.
+It checked 270,816 actual active-block paths at gaps 1,2,3,4,8,16,31,32 and
+varied affine offsets, retaining unfinished paths through clock caps
+4,8,12; 404 bounded-stop slope/correction identity pairs; 1,488 active-time
+sign balances; 3,348 partial terminal potential bounds with initial
+correction 0,1,16; and 1,116 partial block moment comparisons.
+Fresh-return tests covered 34,816 paths at eight starting separations,
+plus 96 moment bounds. A complete binary period through clock fourteen
+checked 20,239 cumulative compositions (including terminal fusion),
+84,654 fractional moment values at nonfused returns, 48 killed drift
+bounds and six finite total budgets. There are 3,120 exact density-exponent
+and fifteen weighted-exponent checks. Fractional roots use outward rational
+enclosures at denominator 2^48, reusing and authenticating the earlier
+integer-root implementation. No float decides a verification inequality.
+
+The review verifier was rerun after its follow-up link changed, passing at
+2026-10-13T21:00:48.377013+00:00. Final independent rehashes checked all
+31 potential files and all four review-local hashes; local links passed.
+
+NEXT: the active-gap candidate is now completed, so do not restart it as
+unadopted. The remaining problem needs information about actual gradients
+or integer sampling, or a sharper structural treatment of the selected
+return columns. A possible identity to audit if grouping by common odd
+count helps: let A f=f(2z)/2 and B f=(3/2)1_(z=2 mod3)f((2z-1)/3).
+For the FULL binary density pieces rho_(t,a), summing over t at fixed a
+formally gives Sigma_0=2 and Sigma_a=(I-A)^(-1)B Sigma_(a-1), suggesting
+Sigma_a=2 rho^S_a for the canonical Syracuse cylinder density. This is
+only a recorded lead, not a new theorem or verification claim. A uniform
+norm per count alone would still recover only p<6/5 with the current
+clock tail; any improvement needs the selected-return structure as well.
+
+All jobs are terminal. No agents, installations, credentials, staging,
+commits, or other Git writes were used. Preserve the user's concurrent
+work and index. The full positive-integer conjecture remains unresolved.
+
+## 2026-10-13: fixed-integer return Cesaro limit from the local clone
+
+This goal turn is progress. It completed a new WRITTEN, externally
+dependent arithmetic consequence of the local obstruction repository:
+  K*_(0,H)(n)/H -> 0 for EVERY FIXED positive integer n.
+Here K*_(0,H)=sum_(1<=t<=H)kappa_t is the unweighted density accumulated
+over all nonfused equal-count returns of even initial adjacent pairs.
+This is a fixed ordinary-integer trace statement, not just Haar-a.e.
+It is sublinearity of a truncated sum, NOT finite total occupation,
+pointwise decay of kappa_t, uniformity for growing target intervals,
+the temporal criterion Q, or the Collatz conjecture.
+
+Files:
+  docs/INTEGER-RETURN-CESARO.md
+  lean/IntegerReturnCesaro.lean
+  verify_integer_return_cesaro.py
+  results/integer-return-cesaro/verification.json
+  results/integer-return-cesaro/replay.json and four build logs.
+README, ATTEMPT, and the local-clone review link this follow-up.
+
+EXACT INTEGER BRIDGE:
+Existing CollatzPacking.residue_image_bound already proves
+  U^t(r)<3^a for r<2^t, a=wt(t,r).
+It was NOT necessary to rediscover that bound. New kernel roots transfer
+the packing definitions to CollatzAffine and prove that a matching
+positive target column n=U^t(r) mod3^a has a unique nonnegative quotient
+q=floor(n/3^a), hence a positive actual source m=2^t q+r reaching n.
+Conversely every positive predecessor has this residue and quotient.
+Thus b_t(n)=sum_(m>0,U^t(m)=n)3^wt(t,m)/2^t exactly. Balanced fusion
+and count equality lift with the residue. Kernel source bound m<=2^t n
+makes every finite-clock inverse sum finite. Balanced fusion persists,
+so nonfusion at t implies nonfusion at every L<=t; its mask has period 2^L.
+
+EXTERNAL INPUTS, NOT LOCALLY REPLAYED:
+Clone still clean at a7275d5a73814d3d9a400c6fe6577de9542b03a3.
+WeightedSourcePeriodicMean.lean proves, for ANY fixed periodic p in[0,1],
+  X^-1 sum_(m<=X) w_n(m)p(m) -> D_n mean(p).
+There is NO odd/unit support restriction in this source-mean theorem.
+FirstHitWordWeights.lean gives lambda_firsthit=n*w_n(m)/m, w in[0,1].
+ActualUnconditionalCanonicalTrace.lean proves zero logarithmic density
+of first-hit ELAPSED SHORTCUT clock exceptions among odd basin sources,
+with drift delta=log(4/3)/2. Its sources may be divisible by three.
+
+IMPORTANT SUPPORT AUDIT:
+PeriodicMarkedFirstHitMeanFromSources.lean's PUBLIC marked theorem has
+odd-unit support and an odd-count clock. It is not directly applicable
+to our nonfusion masks. The new deduction explicitly uses the more
+general source mean plus the separate elapsed clock, not an unstated
+strengthening of the public marked theorem.
+
+WRITTEN PROOF:
+For m=2^ell q with q odd and q>n, first-hit clocks satisfy
+tau_n(m)=ell+tau_n(q). At fixed ell, the difference from
+log(m)/delta is a fixed shift of the odd clock error. Thus each fixed
+valuation layer inherits zero logarithmic exception density. The
+remaining layers have harmonic mass at most 2^-J(1+log X). Take X->infinity
+first and J->infinity next to extend the clock law to all positive sources.
+Initial-halving hits are finite exceptions on each retained layer.
+
+Partial summation gives sum_(m<=X)w_n(m)p(m)/m
+=D_n mean(p)logX+o(logX). Squeeze the finite first-hit mass F_H^p(n)
+using good-clock cutoffs exp(delta H/(1+-epsilon)); bad sources contribute
+o(H) because every hit by H has m<=2^H n. Thus
+  F_H^p(n)/H -> delta*n*D_n*mean(p).
+No new unbounded-source tail estimate is needed.
+
+Let B_t^p(n)=sum_(m>0,U^t(m)=n)lambda_t(m)p(m).
+At a nonperiodic target, total visits through H equal first hits.
+At a periodic target of least period R and ratio rho=3^a/2^R<1,
+  sum_(t<=H)B_t^p(n)=sum_(jR<=H)rho^j F_(H-jR)^p(n).
+The convergent first-hit mean gives F_h<=C(h+1), so geometric dominated
+convergence proves
+  H^-1 sum_(t<=H)B_t^p(n) -> g(n)mean(p),
+  g(n)=delta*G_n*n*D_n, G_n=(1-rho)^-1 if periodic and 1 otherwise.
+This is physical-time Cesaro, not the external Syracuse-depth statement.
+Setting p=1 also identifies the Cesaro limit of our full b_t(n).
+
+Now p_L(m)=nonfusion of (m,m+1) by L is periodic modulo 2^L with mean
+q_L=Pr(T>L)->0 by our existing WRITTEN coherent-binary clock bound.
+For t>=L, selected actual returns satisfy kappa_t(n)<=B_t^(p_L)(n).
+Hence limsup_H K*_(0,H)(n)/H<=g(n)q_L for each fixed L. Send L->infinity.
+This proves the claimed fixed-target limit. It is uniform over each
+FIXED finite target set, implies zero time density of kappa_t(n)>=epsilon,
+and implies the corresponding vanishing Abel average. There is no rate
+uniform in the period 2^L or target n. The old proposed fixed-odd-count
+identity Sigma_a=2rho^S_a was bypassed and remains only a recorded lead.
+
+VERIFICATION:
+Final record passed 2026-10-13T21:18:28.322266+00:00 on pinned Lean 4.33.1
+commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Four fresh sequential
+builds took 1.327 seconds. All nine audited roots use standard axioms only;
+no warning, admitted proof, or native computation. Thirteen local hashes,
+eleven prior clock hashes, four review-local hashes, and nine specific
+external source hashes were authenticated. The review was refreshed at
+2026-10-13T21:18:26.254688+00:00 after the new link; all 7,493 distributed
+hashes and its existing exact finite transfer checks passed again.
+
+Exact finite checks through clock 12 and targets 1..128:
+8,191 residue endpoint bounds; 15,832 positive column preimages;
+1,664 complete residue/inverse-tree bijections; 15,615 first-hit weight
+identities; 101,364 lifted mask/selection checks; 7,424 marked selection
+bounds; 19,968 finite all-visit reconstructions with twelve periodic marks;
+the known periodic targets 1 and 2; 10,668 dyadic first-hit clock transports;
+2,322 exact dyadic harmonic tail identities. Rational finite averages are
+diagnostics only, with no convergence-rate claim or nonperiodicity
+inference from a finite search. No floating value decides a check.
+
+NEXT GAP:
+The new theorem handles fixed inverse targets. It does not control the
+moving endpoints of a hypothetical divergent forward orbit, nor sum
+actual gradient costs. Their target dependence can grow while every
+fixed-target Cesaro limit still vanishes. A moving-target or joint
+source/target estimate is still needed; do not infer Q from (1). The
+external inverse Doob height clock likewise lacks the expectation/UI
+bound needed for the raw occupation upper estimate. The independent
+active-gap potential and p<5/(4+beta) range remain completed and valid.
+
+All work is terminal. No agents, installations, credentials, staging,
+commits, or other Git writes were used. Preserve the user's index and
+existing changes. The Collatz goal remains active and unresolved.
+
+## 2026-10-13: independent uniform harmonic return trace bound
+
+This goal turn is progress. A new WRITTEN argument strengthens the last
+integer Cesaro conclusion and REMOVES its external analytic dependencies
+for that conclusion. It proves, for EVERY n>0 and integer H>=1,
+  K*_(0,H)(n) <= Z_H(n) <= 350 C_star n G_n sqrt(H),
+  C_star=540*2^5180.
+Z_H counts ALL nonfused inverse visits, not just even-source equal-count
+returns. G_n=1 for nonperiodic n and (1-rho)^-1 for a periodic target,
+rho=3^a_R(n)/2^R at its least positive shortcut period R.
+New kernel arithmetic proves G_n<=3n+1 in all cases. No unknown cycle
+is assumed absent. The Collatz goal remains active and unresolved.
+
+Files:
+  docs/HARMONIC-RETURN-TRACE.md
+  lean/HarmonicReturnTrace.lean
+  verify_harmonic_return_trace.py
+  results/harmonic-return-trace/verification.json
+  results/harmonic-return-trace/replay.json and five build logs.
+README, ATTEMPT, the earlier integer Cesaro note, and the clone review
+link this stronger follow-up. The older marked full-image identification
+g(n)*mean(p) REMAINS an external deduction; it was not reclassified.
+
+NEW WRITTEN PROOF:
+Let p_L(m) be nonfusion of (m,m+1) by clock L, and q_L its full binary
+period mean. p_T<=p_L for L<=T; p_L has period 2^L; q_0=1.
+Reuse the existing local WRITTEN fusion tail q_L<=A/sqrt(L), L>=1,
+with A=14 C_star. No external density, clock or envelope input is used.
+
+For any hit U^t(m)=n with t<=h, local arithmetic gives
+  m<=2^h n,   2^h(n+1)<=3^h(m+1).
+Thus any two positive sources u,v reaching n by h satisfy
+  v<=3^h(u+1)<=2*3^h*u.
+Their complete source interval meets at most 2h+2 binary ranges
+[2^j,2^(j+1)), independently of n. This controls the RATIO of source
+sizes, so no log(n) term or fixed-target asymptotic is needed.
+The affine lower bound also gives lambda_t(m)/n<=1/m.
+
+For a binary SOURCE range j and mask clock T, put L=min(j,T).
+The mask p_L has exactly 2^j q_L marked points in that full range;
+p_T<=p_L and 1/m<=2^-j imply
+  sum_(2^j<=m<2^(j+1)) p_T(m)/m <= q_min(j,T).
+The earlier mask is essential for small sources. At m=1, p_12(1)=1,
+while q_12=655/1024. Replacing every band bound by q_T is false.
+Write Q_T=sum_(j<T) q_j. Any interval meeting B source ranges has
+harmonic p_T mass <=Q_T+B*q_T. From the square-root tail,
+Q_T<=2 A sqrt(T) for T>=1 (the initial j=0 term is included).
+
+Let F_H(n) count FIRST hits through H with coefficient lambda_tau and
+mask p_tau. In a clock block T<=tau<2T, the sources lie in P_(2T-1)(n),
+whose interval meets at most 4T binary ranges. Hence
+  block mass/n <=Q_T+4T*q_T <=6 A sqrt(T).
+Sum blocks T=1,2,4,...<=H. Their square roots sum to less than 4sqrt(H).
+The clock-zero source m=n adds at most one after division by n.
+Therefore F_H(n)<=25 A n sqrt(H), uniformly over n.
+
+If n is nonperiodic, Z_H(n)=F_H(n). If it is periodic, each source's
+later visits acquire factors rho^j and their nonfusion masks can only
+decrease. Thus Z_H(n)<=G_n F_H(n). An actual positive cycle has an odd
+step; the new positive-count coefficient inequality
+  (3m+1)3^a_t(m)<=3*2^t*U^t(m) whenever a_t(m)>0
+gives rho<=3n/(3n+1)<1 and G_n<=3n+1. This proves the stated bound.
+
+CONSEQUENCES:
+- sup_(n>0) K*_(0,H)(n)/(H n G_n)<=350 C_star/sqrt(H).
+- For each fixed positive target, the previous vanishing Cesaro limit
+  now has an independent O_n(H^-1/2) proof, also for the larger Z_H.
+- Unnormalized convergence is uniform on all-target windows
+  n<=R(H)=o(H^(1/4)); on nonperiodic targets, R(H)=o(sqrt(H)) suffices.
+- For every sigma>1/2, the ACTUAL integer trace with a time discount
+  sum_(t>=1)t^-sigma kappa_t(n) is finite, bounded by
+  350 sqrt(2) C_star n G_n / (1-2^(1/2-sigma)).
+- Its Abel average satisfies
+  (1-z)sum_(t>=1)kappa_t(n)z^t
+     <=350 C_star n G_n sqrt(z(1-z)), 0<z<1.
+These are written consequences, not additional kernel real-analysis claims.
+
+VERIFICATION:
+Final record passed 2026-10-13T21:37:01.446836+00:00. Five fresh sequential
+builds took 2.649 seconds on pinned Lean 4.33.1 commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Ten audited roots use standard
+axioms only, with no warnings, admitted proofs, or native computation.
+The manifest has fourteen local hashes and authenticates all eleven
+hashes of the prior count-return-clock record. No external source or
+compiled external library is needed for this proof.
+
+Exact finite checks at clock cap 16 and 134 targets, including targets
+2^40+1 and 2^80+17, passed:
+131,071 direct residue masks; 983,041 positive-count correction bounds;
+187 nested range population checks and 187 exact harmonic range bounds;
+882 rational harmonic interval comparisons; 52,173 actual inverse paths
+and coefficient checks; 2,278 predecessor span bounds; 670 first-hit
+clock blocks; both known periodic targets 1 and 2; 2,144 nonfusion and
+selected-return trace comparisons. A finite-table coefficient A=3 fits
+the tested mask table ONLY; it is not an all-depth constant claim.
+All verification decisions use integers or exact fractions.
+
+The older review was refreshed after its new follow-up link at
+2026-10-13T21:35:54.949033+00:00 (all 7,493 source hashes passed again).
+The original integer Cesaro record was refreshed at
+2026-10-13T21:35:58.316654+00:00 after the historical note gained the
+independent-proof link. Its original full marked limit still depends
+on the external theorems. No external Lean replay was done.
+
+REMAINING GAP / NEXT RESEARCH:
+The sqrt(H) bound still allows a persistent individual contribution at
+a moving divergent-orbit target: lambda_t(m)/U^t(m)=W_t(m)/m may tend
+to a positive number. Thus this does not prove Q or absence of escape.
+Time-discounting the inverse returns does not pay for an arbitrarily
+long future excursion following one fixed return prefix; actual gradient
+costs and their correlations remain the issue. Finite total undiscounted
+occupation at a fixed integer also remains open. The source/count
+grouping lead Sigma_a=2rho^S_a remains unused, not adopted.
+
+All jobs are terminal. No agents, installations, credentials, staging,
+commits, or other Git writes were used. Preserve the user's index and
+concurrent changes. The full Collatz goal remains active and unresolved.

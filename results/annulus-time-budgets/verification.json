@@ -1,5 +1,5 @@
 {
-  "verified_at_utc": "2026-10-13T19:42:30.582547+00:00",
+  "verified_at_utc": "2026-10-13T20:15:34.293783+00:00",
   "status": "passed",
   "collatz_status": "unresolved",
   "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
@@ -11,11 +11,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/CollatzAffine.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/CollatzAffine.olean",
         "CollatzAffine.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 1.339,
+      "elapsed_seconds": 1.001,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/CollatzAffine.log",
@@ -28,11 +28,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/CoalescenceTail.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/CoalescenceTail.olean",
         "lean/CoalescenceTail.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.564,
+      "elapsed_seconds": 0.49,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/CoalescenceTail.log",
@@ -45,11 +45,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/EscapeWeightRefinements.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/EscapeWeightRefinements.olean",
         "lean/EscapeWeightRefinements.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.61,
+      "elapsed_seconds": 0.529,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/EscapeWeightRefinements.log",
@@ -62,11 +62,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/AnnulusTimeBudgets.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/AnnulusTimeBudgets.olean",
         "lean/AnnulusTimeBudgets.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.215,
+      "elapsed_seconds": 0.18,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/AnnulusTimeBudgets.log",
@@ -79,11 +79,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/InverseFibreGrowth.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/InverseFibreGrowth.olean",
         "lean/InverseFibreGrowth.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.414,
+      "elapsed_seconds": 0.332,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/InverseFibreGrowth.log",
@@ -96,11 +96,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/UniformInverseBranching.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/UniformInverseBranching.olean",
         "lean/UniformInverseBranching.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.56,
+      "elapsed_seconds": 0.454,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/UniformInverseBranching.log",
@@ -113,11 +113,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-win1qh2q/BinaryConePredecessors.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-annulus-time-afj05qky/BinaryConePredecessors.olean",
         "lean/BinaryConePredecessors.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.362,
+      "elapsed_seconds": 0.301,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/annulus-time-budgets/BinaryConePredecessors.log",
@@ -173,7 +173,7 @@
     "lean/UniformInverseBranching.lean": "1bd69fd72bce0adc5e0b270d5088ddef7386d4c02f3d3dc761237e1ea37077b3",
     "lean/BinaryConePredecessors.lean": "c51e70efcc30e4ae2811dab7ee929d96129f7c3602676925ebf701663f6ff378",
     "verify_annulus_time_budgets.py": "791ef6cc9a308d391c02ac01cadf79a2c8f174f80cce3a37729aa5cae378aca7",
-    "docs/ANNULUS-TIME-BUDGETS.md": "e5cb8e2e1218b7f3ad29dc9b1501cee9ade8229059bd559bda61467e5bc8589c",
+    "docs/ANNULUS-TIME-BUDGETS.md": "90ce166e6cf4c7ce4905defb1b50a3f89a06e928db9394509f435627b22cc14f",
     "docs/ESCAPE-WEIGHT-REFINEMENTS.md": "48bb99c11db620a7054489a5f4af7bdf192d8b6c8735ebdf9e1effe78871bbb9",
     "docs/ORDERED-WEIGHT-DRIFT.md": "d324a4d8bccdaa7f10c465bedc482ed904d1c88dda46a86bdc71bdbe8be03428",
     "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",

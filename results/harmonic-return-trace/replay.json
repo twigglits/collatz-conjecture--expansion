@@ -1,0 +1,152 @@
+{
+  "clock_cap": 16,
+  "counts": {
+    "direct_residue_mask_values": 131071,
+    "positive_count_correction_bounds": 983041,
+    "nested_binary_band_population_checks": 187,
+    "exact_harmonic_binary_band_checks": 187,
+    "exact_harmonic_interval_checks": 882,
+    "actual_inverse_paths_and_weight_bounds": 52173,
+    "finite_predecessor_span_bounds": 2278,
+    "exact_first_hit_clock_blocks": 670,
+    "actual_cycle_factor_checks": 2,
+    "finite_nonfusion_and_return_trace_bounds": 2144
+  },
+  "mask_means": [
+    {
+      "L": 0,
+      "qL": "1"
+    },
+    {
+      "L": 1,
+      "qL": "1"
+    },
+    {
+      "L": 2,
+      "qL": "1"
+    },
+    {
+      "L": 3,
+      "qL": "7/8"
+    },
+    {
+      "L": 4,
+      "qL": "13/16"
+    },
+    {
+      "L": 5,
+      "qL": "3/4"
+    },
+    {
+      "L": 6,
+      "qL": "23/32"
+    },
+    {
+      "L": 7,
+      "qL": "89/128"
+    },
+    {
+      "L": 8,
+      "qL": "87/128"
+    },
+    {
+      "L": 9,
+      "qL": "171/256"
+    },
+    {
+      "L": 10,
+      "qL": "673/1024"
+    },
+    {
+      "L": 11,
+      "qL": "1327/2048"
+    },
+    {
+      "L": 12,
+      "qL": "655/1024"
+    },
+    {
+      "L": 13,
+      "qL": "1295/2048"
+    },
+    {
+      "L": 14,
+      "qL": "5127/8192"
+    },
+    {
+      "L": 15,
+      "qL": "10159/16384"
+    },
+    {
+      "L": 16,
+      "qL": "40295/65536"
+    }
+  ],
+  "small_source_pitfall": {
+    "T": 12,
+    "source_interval": [
+      1,
+      1
+    ],
+    "actual_harmonic_mass": "1",
+    "incorrect_qT_cap": "655/1024",
+    "scope": "Finite counterexample to dropping the earlier-mask contribution."
+  },
+  "traces": {
+    "targets_checked": 134,
+    "finite_table_coefficient": 3,
+    "coefficient_scope": "Valid only for the finite mask table; not an all-depth fusion-tail claim.",
+    "examples": [
+      {
+        "target": 1,
+        "observed_period_through_cap": 2,
+        "nonfused_trace_at_cap": "691027/65536",
+        "selected_return_trace_at_cap": "1215/65536",
+        "normalized_first_hit_mass": "265291/65536"
+      },
+      {
+        "target": 2,
+        "observed_period_through_cap": 2,
+        "nonfused_trace_at_cap": "1312999/65536",
+        "selected_return_trace_at_cap": "41607/65536",
+        "normalized_first_hit_mass": "507655/131072"
+      },
+      {
+        "target": 3,
+        "observed_period_through_cap": null,
+        "nonfused_trace_at_cap": "131071/65536",
+        "selected_return_trace_at_cap": "0",
+        "normalized_first_hit_mass": "131071/196608"
+      },
+      {
+        "target": 27,
+        "observed_period_through_cap": null,
+        "nonfused_trace_at_cap": "131071/65536",
+        "selected_return_trace_at_cap": "0",
+        "normalized_first_hit_mass": "131071/1769472"
+      },
+      {
+        "target": 128,
+        "observed_period_through_cap": null,
+        "nonfused_trace_at_cap": "339853/16384",
+        "selected_return_trace_at_cap": "14715/32768",
+        "normalized_first_hit_mass": "339853/2097152"
+      },
+      {
+        "target": 1099511627777,
+        "observed_period_through_cap": null,
+        "nonfused_trace_at_cap": "947623/16384",
+        "selected_return_trace_at_cap": "585/512",
+        "normalized_first_hit_mass": "947623/18014398509498368"
+      },
+      {
+        "target": 1208925819614629174706193,
+        "observed_period_through_cap": null,
+        "nonfused_trace_at_cap": "131071/65536",
+        "selected_return_trace_at_cap": "0",
+        "normalized_first_hit_mass": "131071/79228162514264337593545064448"
+      }
+    ]
+  },
+  "asymptotic_scope": "None. Infinite tail and harmonic bounds remain written."
+}

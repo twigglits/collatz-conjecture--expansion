@@ -1,0 +1,292 @@
+{
+  "verified_at_utc": "2026-10-13T21:00:53.975945+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 9,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.375,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.487,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.501,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.285,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.53,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.349,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.61,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.344,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.271,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    },
+    {
+      "source": "lean/BinaryImageEnergy.lean",
+      "source_sha256": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/BinaryImageEnergy.olean",
+        "lean/BinaryImageEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.331,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/BinaryImageEnergy.log",
+      "log_sha256": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+      "olean_sha256": "4d0a65b1b4cada4350345d83b9414edc2cf765758120561d4abb103dace027f8"
+    },
+    {
+      "source": "lean/ReturnAffineBudget.lean",
+      "source_sha256": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/ReturnAffineBudget.olean",
+        "lean/ReturnAffineBudget.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.287,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/ReturnAffineBudget.log",
+      "log_sha256": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+      "olean_sha256": "066daa029c06c89730b625f81537d6e3b3a64d880575803fda79960e2108120d"
+    },
+    {
+      "source": "lean/ActiveGapPotential.lean",
+      "source_sha256": "7529a4fb16278f8b65089d9e93a36e106e73e67ec4f73106e2a38e70de903b1c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-active-gap-dtz2k83p/ActiveGapPotential.olean",
+        "lean/ActiveGapPotential.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.359,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/active-gap-potential/ActiveGapPotential.log",
+      "log_sha256": "b2732ade312b83ffb6a55c38612b64a66dbffef81c8e33c1c12577a429497e49",
+      "olean_sha256": "3ec39088b8031195360b9df46e7c3402822b668864d7eab491e168b88825f924"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/return-affine-budget/verification.json": 28,
+    "results/return-occupation-density/verification.json": 29,
+    "results/count-return-clock/verification.json": 11
+  },
+  "kernel_scope": [
+    "Finite half-line Green curvature, zero boundary and cap.",
+    "Two homogeneous geometric identities and nonnegative-remainder caps.",
+    "Exact integer comparisons giving three strict fractional-slope bounds."
+  ],
+  "written_scope": [
+    "Conditional active-block correction bound and nonnegative potential stopping argument.",
+    "Returned corrections, cumulative coefficients, and separations have moments of every power below one.",
+    "Occupation C and D tails are O((log u)^3/u); fresh correction tail is O((log u)^2/u).",
+    "All-return K*_beta is in Lp for 0<=beta<1 and 1<=p<5/(4+beta).",
+    "Weighted clock-truncation error is O_beta(H^(-(1-beta)/2)(log H)^(1+2*beta))."
+  ],
+  "finite_scope": {
+    "finite_integer_green_curvatures": 1584,
+    "homogeneous_geometric_identity_pairs": 375,
+    "exact_green_series_tail_checks": 1152,
+    "rational_green_curvatures_and_caps": 384,
+    "fractional_slope_and_correction_constants": 3,
+    "near_one_chord_and_budget_checks": 31,
+    "direct_active_block_paths": 270816,
+    "bounded_stopping_identity_pairs": 404,
+    "active_time_sign_balance_checks": 1488,
+    "partial_terminal_potential_bounds": 3348,
+    "partial_active_slope_and_correction_bounds": 1116,
+    "direct_fresh_return_paths": 34816,
+    "partial_fresh_return_moment_bounds": 96,
+    "direct_cumulative_affine_compositions": 20239,
+    "finite_return_fractional_moments": 84654,
+    "finite_killed_return_drift_checks": 48,
+    "finite_cumulative_moment_budget_checks": 6,
+    "exact_dyadic_and_atypical_exponent_checks": 3120,
+    "exact_weighted_exponent_checks": 15
+  },
+  "floating_scope": "None in verification decisions.",
+  "external_scope": "No new external theorem. Existing written active-wait, return-clock, occupation and fractional-fibre arguments are reused with authenticated records.",
+  "not_proved": [
+    "Endpoint moments at eta=1 or endpoint Lp integrability; optimality of the range.",
+    "A finite mean of the physical fusion clock, which has a known infinite mean under this law.",
+    "Infinite-cutoff ordinary-integer trace sampling or complementary actual-gradient power bounds.",
+    "The temporal criterion Q, bounded actual energy, exclusion of escape or additional cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "lean/BinaryImageEnergy.lean": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+    "lean/ReturnAffineBudget.lean": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+    "lean/ActiveGapPotential.lean": "7529a4fb16278f8b65089d9e93a36e106e73e67ec4f73106e2a38e70de903b1c",
+    "verify_active_gap_potential.py": "271fc484ca4dbb34a050c8cc6ba75b56b56f25ba466eb1a851519e8b696b33a3",
+    "verify_return_affine_budget.py": "af437c04aa6d7369670418fa5979888cdec70299bbab50ac336f8311cbf1e2e5",
+    "docs/ACTIVE-GAP-POTENTIAL.md": "e77d687141a5a47698f3af18ed357155e059d23d58012771316858e52b6725d1",
+    "results/return-affine-budget/verification.json": "b308580cda5d382c2b0a73dd71618f995e9a5fb8b9e54a5aa643d204cf9704db",
+    "results/return-occupation-density/verification.json": "9a60b43b7d1201977627fb21c2bc3a968b4991a8ae0cec0ef0ebaa0c16f7a072",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/active-gap-potential/replay.json": "982528325494478e69299540b3ccf931c659aea8d0c078efc94409c232cbccaa",
+    "results/active-gap-potential/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/active-gap-potential/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/active-gap-potential/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/active-gap-potential/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/active-gap-potential/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/active-gap-potential/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/active-gap-potential/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/active-gap-potential/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/active-gap-potential/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+    "results/active-gap-potential/BinaryImageEnergy.log": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+    "results/active-gap-potential/ReturnAffineBudget.log": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+    "results/active-gap-potential/ActiveGapPotential.log": "b2732ade312b83ffb6a55c38612b64a66dbffef81c8e33c1c12577a429497e49"
+  }
+}

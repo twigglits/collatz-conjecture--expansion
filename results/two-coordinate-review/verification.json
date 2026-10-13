@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "kind": "source-review-and-exact-finite-checks",
+  "finished_utc": "2026-10-13T21:35:54.949033+00:00",
+  "external_checkout": "/Users/jean/Personal/collatz-two-coordinate-obstruction",
+  "authentication": {
+    "revision": "a7275d5a73814d3d9a400c6fe6577de9542b03a3",
+    "worktree_clean": true,
+    "publication_inventories": [
+      {
+        "path": "formal-stationary-envelope/publication-manifest.json",
+        "sha256": "fd5e291225eacd415823f55b6da9ab1f347f2a78cc92df0968b5c29b168bc366",
+        "entries_checked": 5167
+      },
+      {
+        "path": "formal-sharp-haar/publication-manifest.json",
+        "sha256": "9f0bfd120d1f02554b879f2962c724c60f740793d52db79d5b95c78106e1df47",
+        "entries_checked": 1321
+      },
+      {
+        "path": "formal-growing-deficit/SHA256SUMS.json",
+        "sha256": "7b23efcf51f49885374dfc1d05054af2b88f2e428183dcc5a5834f031a164e66",
+        "entries_checked": 400
+      },
+      {
+        "path": "formal-periodic-census/SHA256SUMS.json",
+        "sha256": "153023613c0c0ab4adb0b09b4c6e4cf060fdd352a7aba333e3ddf1cb395cdc01",
+        "entries_checked": 246
+      },
+      {
+        "path": "formal-cylinder-energy/SHA256SUMS.json",
+        "sha256": "b640253b5cbd423b31c07887bdee145741c0a32827d6c6a05cda4a038f12208a",
+        "entries_checked": 95
+      },
+      {
+        "path": "formal-raw-occupation/SHA256SUMS.json",
+        "sha256": "135a54b87e5313e9108646d0cce80518d4b528b9378bd299be545d7014f9e0ff",
+        "entries_checked": 88
+      },
+      {
+        "path": "formal-raw-divergent-excess/SHA256SUMS.json",
+        "sha256": "d0f6a00f474d64ede5bfb23bc78ef497d0e7fc72f1f55216b596752f2ff14e4b",
+        "entries_checked": 58
+      },
+      {
+        "path": "formal-inverse-doob-clock/SHA256SUMS.json",
+        "sha256": "cca560548e76dc8c5ddbdf265929bcbe4802c028efae634adcb4a55ca9967361",
+        "entries_checked": 106
+      }
+    ],
+    "source_bundles": [
+      {
+        "bundle": "formal-stationary-envelope",
+        "source_entries_checked": 1620
+      },
+      {
+        "bundle": "formal-sharp-haar",
+        "source_entries_checked": 362
+      },
+      {
+        "bundle": "formal-growing-deficit",
+        "source_entries_checked": 357
+      },
+      {
+        "bundle": "formal-periodic-census",
+        "source_entries_checked": 51
+      },
+      {
+        "bundle": "formal-cylinder-energy",
+        "source_entries_checked": 17
+      },
+      {
+        "bundle": "formal-raw-occupation",
+        "source_entries_checked": 16
+      },
+      {
+        "bundle": "formal-raw-divergent-excess",
+        "source_entries_checked": 8
+      },
+      {
+        "bundle": "formal-inverse-doob-clock",
+        "source_entries_checked": 26
+      }
+    ],
+    "unique_files_matching_published_hashes": 7493,
+    "unique_lean_sources_matching_hashes": 2522,
+    "paper_manifest_sha256": "78e898dc095c1b81d6717bb9e938eedb81f15aaa378e69076b7632bb2b15e812",
+    "upstream_execution_records": [
+      {
+        "path": "formal-stationary-envelope/evidence/reference-replay/replay-record.json",
+        "sha256": "d51c6afb6168cf34f629cd1d1849cdf5c98067a30c6f60c5d311b74e4e9f39fe",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-sharp-haar/evidence/reference-replay/replay-record.json",
+        "sha256": "1dc27c7083ad4b634117335ba6ee641e1b05fdd6a07582e5afc2695279a67572",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-growing-deficit/recorded/replay-record.json",
+        "sha256": "3186c817bcaff2c05b36c0ca8bab35c0ed7b9e201fe5c372aad6aa63855b8332",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-cylinder-energy/recorded/replay-record.json",
+        "sha256": "6237b76e79ac588e19cfcb1be25ae09460e4f36c107fe22331b9e674d9d59786",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-raw-occupation/recorded/replay-record.json",
+        "sha256": "739e2c98cbc0632b5d889b13249e66b03427cb70a36a484aef25107f196daf00",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-raw-divergent-excess/recorded/replay-record.json",
+        "sha256": "0c7bf8bbf99978101a3501607c22d05c9e71d01a40361454cb32b580f84e6e86",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      },
+      {
+        "path": "formal-inverse-doob-clock/recorded/replay-record.json",
+        "sha256": "80a8462ad6d0a926388d421cf155cfed6759d6bbc576812b5945bd6f990c212d",
+        "upstream_status": "PASS",
+        "locally_recompiled": false
+      }
+    ],
+    "limitations": [
+      "No local compilation or kernel replay of these bundles.",
+      "Published hashes authenticate consistency, not proof correctness.",
+      "No external compiled libraries were acquired or checked."
+    ]
+  },
+  "finite_checks": {
+    "counts": {
+      "binary_residue_rows": 2047,
+      "formal_word_coefficients": 2047,
+      "positive_integer_inverse_checks": 2816,
+      "full_ternary_transfer_values": 88572,
+      "external_route_exponent_checks": 4
+    },
+    "depth_rows": [
+      {
+        "depth": 0,
+        "binary_period": 1,
+        "ternary_period": 1,
+        "scaled_total_mass": 1,
+        "scaled_maximum_density": 1
+      },
+      {
+        "depth": 1,
+        "binary_period": 2,
+        "ternary_period": 3,
+        "scaled_total_mass": 6,
+        "scaled_maximum_density": 4
+      },
+      {
+        "depth": 2,
+        "binary_period": 4,
+        "ternary_period": 9,
+        "scaled_total_mass": 36,
+        "scaled_maximum_density": 13
+      },
+      {
+        "depth": 3,
+        "binary_period": 8,
+        "ternary_period": 27,
+        "scaled_total_mass": 216,
+        "scaled_maximum_density": 43
+      },
+      {
+        "depth": 4,
+        "binary_period": 16,
+        "ternary_period": 81,
+        "scaled_total_mass": 1296,
+        "scaled_maximum_density": 133
+      },
+      {
+        "depth": 5,
+        "binary_period": 32,
+        "ternary_period": 243,
+        "scaled_total_mass": 7776,
+        "scaled_maximum_density": 406
+      },
+      {
+        "depth": 6,
+        "binary_period": 64,
+        "ternary_period": 729,
+        "scaled_total_mass": 46656,
+        "scaled_maximum_density": 1225
+      },
+      {
+        "depth": 7,
+        "binary_period": 128,
+        "ternary_period": 2187,
+        "scaled_total_mass": 279936,
+        "scaled_maximum_density": 3694
+      },
+      {
+        "depth": 8,
+        "binary_period": 256,
+        "ternary_period": 6561,
+        "scaled_total_mass": 1679616,
+        "scaled_maximum_density": 11110
+      },
+      {
+        "depth": 9,
+        "binary_period": 512,
+        "ternary_period": 19683,
+        "scaled_total_mass": 10077696,
+        "scaled_maximum_density": 33370
+      },
+      {
+        "depth": 10,
+        "binary_period": 1024,
+        "ternary_period": 59049,
+        "scaled_total_mass": 60466176,
+        "scaled_maximum_density": 100186
+      }
+    ],
+    "scope": "Exact finite identities through depth 10; not an all-depth kernel proof."
+  },
+  "local_sha256": {
+    "verify_two_coordinate_review.py": "d76859b67e0e0a30733b8850acf4098e3b08a67cfee0da1f432e616d445e56f9",
+    "docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md": "6d31e50d1c2324a9b25bf7e51964b8594f67a602746cca2d5250575b7747e0e1",
+    "docs/BINARY-IMAGE-ENERGY.md": "c7e5d086b35efbc4ee0644273e75657ccfe31b4ff3a2a93ffffa1a9567a301e0",
+    "docs/RETURN-AFFINE-BUDGET.md": "308d0227e36139fcf9e14442cea390a081e571728f71a9d455ccf98354f82f55"
+  },
+  "new_local_kernel_theorems": 0,
+  "external_results_adopted_as_locally_replayed": false,
+  "collatz_resolved": false
+}

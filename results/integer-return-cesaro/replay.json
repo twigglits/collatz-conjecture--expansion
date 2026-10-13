@@ -1,0 +1,241 @@
+{
+  "clock_cap": 12,
+  "target_cap": 128,
+  "counts": {
+    "residue_endpoint_bounds": 8191,
+    "positive_column_preimages": 15832,
+    "exact_first_hit_weight_identities": 15615,
+    "complete_residue_inverse_bijections": 1664,
+    "lifted_nonfusion_and_selection_checks": 101364,
+    "marked_integer_selection_inequalities": 7424,
+    "actual_periodic_targets_checked": 2,
+    "marked_finite_visit_reconstructions": 19968,
+    "dyadic_first_hit_clock_transports": 10668,
+    "exact_dyadic_harmonic_tail_identities": 2322
+  },
+  "nonfusion_mask_means": [
+    {
+      "L": 0,
+      "mean": "1"
+    },
+    {
+      "L": 1,
+      "mean": "1"
+    },
+    {
+      "L": 2,
+      "mean": "1"
+    },
+    {
+      "L": 3,
+      "mean": "7/8"
+    },
+    {
+      "L": 4,
+      "mean": "13/16"
+    },
+    {
+      "L": 5,
+      "mean": "3/4"
+    },
+    {
+      "L": 6,
+      "mean": "23/32"
+    },
+    {
+      "L": 7,
+      "mean": "89/128"
+    },
+    {
+      "L": 8,
+      "mean": "87/128"
+    },
+    {
+      "L": 9,
+      "mean": "171/256"
+    },
+    {
+      "L": 10,
+      "mean": "673/1024"
+    },
+    {
+      "L": 11,
+      "mean": "1327/2048"
+    },
+    {
+      "L": 12,
+      "mean": "655/1024"
+    }
+  ],
+  "illustrative_finite_averages": [
+    {
+      "target": 1,
+      "observed_period_through_cap": 2,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "1"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "475/512"
+        },
+        {
+          "H": 12,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "21767/24576"
+        }
+      ]
+    },
+    {
+      "target": 2,
+      "observed_period_through_cap": 2,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "121/64"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "913/512"
+        },
+        {
+          "H": 12,
+          "return_occupation": "1431/4096",
+          "return_time_average": "477/16384",
+          "full_time_average": "85987/49152"
+        }
+      ]
+    },
+    {
+      "target": 3,
+      "observed_period_through_cap": null,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "31/64"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "511/2048"
+        },
+        {
+          "H": 12,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "8191/49152"
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "observed_period_through_cap": null,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "85/64"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "1187/1024"
+        },
+        {
+          "H": 12,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "26501/24576"
+        }
+      ]
+    },
+    {
+      "target": 27,
+      "observed_period_through_cap": null,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "31/64"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "511/2048"
+        },
+        {
+          "H": 12,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "8191/49152"
+        }
+      ]
+    },
+    {
+      "target": 97,
+      "observed_period_through_cap": null,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "55/64"
+        },
+        {
+          "H": 8,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "19/32"
+        },
+        {
+          "H": 12,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "2915/6144"
+        }
+      ]
+    },
+    {
+      "target": 128,
+      "observed_period_through_cap": null,
+      "rows": [
+        {
+          "H": 4,
+          "return_occupation": "0",
+          "return_time_average": "0",
+          "full_time_average": "37/16"
+        },
+        {
+          "H": 8,
+          "return_occupation": "81/256",
+          "return_time_average": "81/2048",
+          "full_time_average": "4543/2048"
+        },
+        {
+          "H": 12,
+          "return_occupation": "1647/4096",
+          "return_time_average": "549/16384",
+          "full_time_average": "49109/24576"
+        }
+      ]
+    }
+  ],
+  "asymptotic_scope": "None: finite averages are diagnostics, not evidence certifying a limit or rate."
+}
