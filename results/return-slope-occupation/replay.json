@@ -19,6 +19,8 @@
     "completed_return_and_age_contributions": 93309,
     "capped_actual_group_drift_pairs": 18,
     "exact_even_column_diagonal_identity_pairs": 3,
+    "exact_ternary_cylinder_energy_terms": 1597,
+    "independent_full_ternary_period_energy_checks": 1,
     "actual_positive_column_overlap_witnesses": 3
   },
   "logarithm_precision": 1099511627776,
@@ -266,6 +268,8 @@
       "even_nonfused_columns": 7,
       "diagonal_squared_mass": "99/8192",
       "age_weighted_diagonal_squared_mass": "2835/32768",
+      "full_truncated_density_squared_norm": "729/32768",
+      "cross_term_mass": "333/32768",
       "overlap_witness": {
         "prefixes": [
           [
@@ -302,6 +306,8 @@
       "even_nonfused_columns": 166,
       "diagonal_squared_mass": "1049013/16777216",
       "age_weighted_diagonal_squared_mass": "2868453/8388608",
+      "full_truncated_density_squared_norm": "5155209/16777216",
+      "cross_term_mass": "1026549/4194304",
       "overlap_witness": {
         "prefixes": [
           [
@@ -340,6 +346,8 @@
       "even_nonfused_columns": 2552,
       "diagonal_squared_mass": "461042127/4294967296",
       "age_weighted_diagonal_squared_mass": "610724205/1073741824",
+      "full_truncated_density_squared_norm": "3820172355/4294967296",
+      "cross_term_mass": "839782557/1073741824",
       "overlap_witness": {
         "prefixes": [
           [

@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "verified_at_utc": "2026-10-13T22:31:03.577927+00:00",
+  "verified_at_utc": "2026-10-13T22:33:13.602180+00:00",
   "collatz_status": "unresolved",
   "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
   "kernel_theorems_audited": 13,
@@ -11,11 +11,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CollatzAffine.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/CollatzAffine.olean",
         "CollatzAffine.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.503,
+      "elapsed_seconds": 0.378,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/CollatzAffine.log",
@@ -28,11 +28,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CoalescenceTail.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/CoalescenceTail.olean",
         "lean/CoalescenceTail.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.497,
+      "elapsed_seconds": 0.451,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/CoalescenceTail.log",
@@ -45,7 +45,7 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/EscapeWeightRefinements.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/EscapeWeightRefinements.olean",
         "lean/EscapeWeightRefinements.lean"
       ],
       "returncode": 0,
@@ -62,11 +62,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CountReturnControl.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/CountReturnControl.olean",
         "lean/CountReturnControl.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.293,
+      "elapsed_seconds": 0.289,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/CountReturnControl.log",
@@ -79,11 +79,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CountReturnClock.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/CountReturnClock.olean",
         "lean/CountReturnClock.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.646,
+      "elapsed_seconds": 0.533,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/CountReturnClock.log",
@@ -96,11 +96,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnCorrectionMoments.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/ReturnCorrectionMoments.olean",
         "lean/ReturnCorrectionMoments.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.346,
+      "elapsed_seconds": 0.348,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/ReturnCorrectionMoments.log",
@@ -113,11 +113,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnSlopeTilt.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/ReturnSlopeTilt.olean",
         "lean/ReturnSlopeTilt.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.388,
+      "elapsed_seconds": 0.381,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/ReturnSlopeTilt.log",
@@ -130,11 +130,11 @@
       "command": [
         "lean",
         "-o",
-        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnSlopeOccupation.olean",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-uwlrb80_/ReturnSlopeOccupation.olean",
         "lean/ReturnSlopeOccupation.lean"
       ],
       "returncode": 0,
-      "elapsed_seconds": 0.366,
+      "elapsed_seconds": 0.367,
       "fresh_build": true,
       "native_computation_used": false,
       "log": "results/return-slope-occupation/ReturnSlopeOccupation.log",
@@ -171,6 +171,8 @@
     "completed_return_and_age_contributions": 93309,
     "capped_actual_group_drift_pairs": 18,
     "exact_even_column_diagonal_identity_pairs": 3,
+    "exact_ternary_cylinder_energy_terms": 1597,
+    "independent_full_ternary_period_energy_checks": 1,
     "actual_positive_column_overlap_witnesses": 3
   },
   "floating_scope": "None in verification decisions.",
@@ -196,13 +198,13 @@
     "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
     "lean/ReturnSlopeTilt.lean": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
     "lean/ReturnSlopeOccupation.lean": "2d8e2b137d5b2f72caf82ecfb26da430e1ae73e3b74f3bdf1124bcbed12cf138",
-    "verify_return_slope_occupation.py": "57f1569acf14ad0d2cf55316dfcd0fca86a94d5282b31c96b56387f9b60c81c0",
+    "verify_return_slope_occupation.py": "7055feb3edfaac253157ae74bb23bc594458b0381e96af2d607cba69b474a524",
     "verify_return_slope_tilt.py": "e71d8cd3a198f9443d0b002103deb41d96ad6c981438e80e744dcda1eb0643f5",
     "verify_return_affine_budget.py": "af437c04aa6d7369670418fa5979888cdec70299bbab50ac336f8311cbf1e2e5",
-    "docs/RETURN-SLOPE-OCCUPATION.md": "df85461400b3edc03908e8e8996ea8f1c64893274503f9c2fb756cee93331452",
+    "docs/RETURN-SLOPE-OCCUPATION.md": "7ef56b4a67db7d74016bd132400337bcf89cb1a656e3f70d9f07754a875428c1",
     "results/return-slope-tilt/verification.json": "7163da25f45142bdba20dcf8cf11bb15f05afe9c8002ea328b52eba8f8f59956",
     "results/return-occupation-density/verification.json": "9a60b43b7d1201977627fb21c2bc3a968b4991a8ae0cec0ef0ebaa0c16f7a072",
-    "results/return-slope-occupation/replay.json": "34ce6b4edcc2b5c90b8de75e098c7385cda7147d704fa25745da459e199a9689",
+    "results/return-slope-occupation/replay.json": "9050301c945d8807a0008c262fac1f9e57254720221a3b061d8ebaa05b867a76",
     "results/return-slope-occupation/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
     "results/return-slope-occupation/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
     "results/return-slope-occupation/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",

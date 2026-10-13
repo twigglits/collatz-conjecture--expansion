@@ -4,7 +4,7 @@
 infinite mean, but the cumulative slopes over all returns have a small
 finite budget. For an initially adjacent pair under the coherent binary
 residue law, let `S_j` be its successive positive equal-count return
-clocks, `N` the first balanced-fusion index, and
+clocks, `N` the first balanced-fusion index (infinity if absent), and
 
 \[
  \Lambda_j=3^{a_{S_j}}2^{-S_j},\qquad h_j=S_j-S_{j-1},\quad S_0=0.
@@ -287,7 +287,13 @@ also contains the nonnegative cross terms
                2\sum_{i<j}p_ip_j\int F_iF_j\,d\mu_3,
 \]
 which (13) does not control. There is no asserted orthogonality of
-overlapping ternary cylinders. Likewise, (13) does not yet control
+overlapping ternary cylinders. For example, the actual first-return
+prefixes `(t,r,a,x)=(6,48,2,8)` and `(7,74,3,17)` have nested image
+cylinders, and their cross inner product is `9/8192>0`, although their
+binary source cylinders are disjoint. The finite replay also computes
+the full squared norm, keeping these cross terms.
+
+Likewise, (13) does not yet control
 their pairing with actual forward gradients or justify an infinite
 cutoff on a fixed finite interval of integer sources.
 

@@ -300,6 +300,21 @@ def all_return_trees(counts):
         assert diagonal == F(even_mass, scale)
         assert age_diagonal == F(even_ages, scale)
         counts["exact_even_column_diagonal_identity_pairs"] += 1
+        heights = Counter()
+        for (t, r), (a, x, h) in columns.items():
+            heights[a, x] += 3**a*(1 << (H-t))
+        energy = F(0)
+        for (a, x), height in heights.items():
+            ancestors = sum(heights[b0, x % (3**b0)] for b0 in range(a))
+            energy += F(height*height+2*height*ancestors, 3**a*scale)
+            counts["exact_ternary_cylinder_energy_terms"] += 1
+        assert energy > diagonal
+        if H == 8:
+            depth = max(a for a, x in heights)
+            dense = sum(sum(height for (a, x), height in heights.items()
+                            if z % (3**a) == x)**2 for z in range(3**depth))
+            assert F(dense, 3**depth*scale) == energy
+            counts["independent_full_ternary_period_energy_checks"] += 1
         witness = None
         seen = {}
         for (t, r), (a, x, h) in sorted(columns.items()):
@@ -324,6 +339,8 @@ def all_return_trees(counts):
                      "even_nonfused_columns": len(columns),
                      "diagonal_squared_mass": str(diagonal),
                      "age_weighted_diagonal_squared_mass": str(age_diagonal),
+                     "full_truncated_density_squared_norm": str(energy),
+                     "cross_term_mass": str(energy-diagonal),
                      "overlap_witness": witness})
         print("Exact all-return slope, age and grouping checks passed through clock", H, flush=True)
     return rows
