@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-13T22:31:03.577927+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 13,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.503,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.497,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.499,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.293,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.646,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.346,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/ReturnSlopeTilt.lean",
+      "source_sha256": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnSlopeTilt.olean",
+        "lean/ReturnSlopeTilt.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.388,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/ReturnSlopeTilt.log",
+      "log_sha256": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+      "olean_sha256": "cbe198207a879f3633b3456b9052f2fa48a63d8bd47508758054e4e6bd091f75"
+    },
+    {
+      "source": "lean/ReturnSlopeOccupation.lean",
+      "source_sha256": "2d8e2b137d5b2f72caf82ecfb26da430e1ae73e3b74f3bdf1124bcbed12cf138",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-slope-occupation-3dzujci5/ReturnSlopeOccupation.olean",
+        "lean/ReturnSlopeOccupation.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.366,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/return-slope-occupation/ReturnSlopeOccupation.log",
+      "log_sha256": "bdeb2dbdd8315967b07d921e357f5116b2445513f93ecc3a037f3869d87e86e3",
+      "olean_sha256": "b9c20cda2d4f4b378603b6d3ac0a068ef850a892d46461e3386d7a96a0cdd09f"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/return-slope-tilt/verification.json": 22,
+    "results/return-occupation-density/verification.json": 29
+  },
+  "kernel_scope": [
+    "All-word affine correction cap, common-parity separation and equal-count separation growth.",
+    "Logarithmic-drift polynomial and exact rational power comparisons.",
+    "Tilted holding/Green arithmetic, finite grouped drift and constants 44 and 70."
+  ],
+  "finite_scope": {
+    "finite_inward_green_values": 2016,
+    "exact_return_conditioned_transition_pairs": 128,
+    "finite_tilted_clock_budgets": 512,
+    "tilted_holding_shift_comparisons": 1089,
+    "logarithmic_drift_polynomial_values": 1025,
+    "finite_macro_drift_and_cost_budgets": 516,
+    "direct_conditioned_holding_paths": 209664,
+    "conditioned_active_direction_ratios": 1152,
+    "bounded_conditioned_wait_moments": 144,
+    "direct_zero_gap_paths": 1536,
+    "tilted_zero_gap_logarithmic_drift_checks": 132,
+    "direct_affine_correction_cap_pairs": 174578,
+    "direct_fresh_return_clock_paths": 26112,
+    "fresh_equal_count_separation_caps": 17486,
+    "partial_conditional_slope_clock_budgets": 24,
+    "direct_all_return_paths": 69888,
+    "completed_return_and_age_contributions": 93309,
+    "capped_actual_group_drift_pairs": 18,
+    "exact_even_column_diagonal_identity_pairs": 3,
+    "actual_positive_column_overlap_witnesses": 3
+  },
+  "floating_scope": "None in verification decisions.",
+  "written_scope": [
+    "Conditioning a tilted odd-separation excursion on return gives the inward 3/4 active walk and mean physical clock at most 27.",
+    "The fresh odd-separation slope-weighted clock mean is at most 27/2, including either conditional initial parity.",
+    "Grouping all consecutive even-separation returns yields a killed logarithmic drift.",
+    "For initially adjacent sources, cumulative slopes over all count returns including fusion sum in expectation to at most 44; slope times each excursion length sums to at most 70.",
+    "Even-source nonfused columns have total individual squared Haar norms at most 44, and excursion-age-weighted diagonal mass at most 70."
+  ],
+  "external_scope": "None. Previously written local slope-tilt and valuation arguments are reused.",
+  "not_proved": [
+    "An improved unweighted return-count or physical fusion-clock bound.",
+    "Control of cross terms between overlapping columns or an L2 bound on their sum.",
+    "A uniform actual accumulated-gradient norm, infinite-cutoff integer sampling, criterion Q, escape or additional-cycle exclusion, or Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/ReturnSlopeTilt.lean": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+    "lean/ReturnSlopeOccupation.lean": "2d8e2b137d5b2f72caf82ecfb26da430e1ae73e3b74f3bdf1124bcbed12cf138",
+    "verify_return_slope_occupation.py": "57f1569acf14ad0d2cf55316dfcd0fca86a94d5282b31c96b56387f9b60c81c0",
+    "verify_return_slope_tilt.py": "e71d8cd3a198f9443d0b002103deb41d96ad6c981438e80e744dcda1eb0643f5",
+    "verify_return_affine_budget.py": "af437c04aa6d7369670418fa5979888cdec70299bbab50ac336f8311cbf1e2e5",
+    "docs/RETURN-SLOPE-OCCUPATION.md": "df85461400b3edc03908e8e8996ea8f1c64893274503f9c2fb756cee93331452",
+    "results/return-slope-tilt/verification.json": "7163da25f45142bdba20dcf8cf11bb15f05afe9c8002ea328b52eba8f8f59956",
+    "results/return-occupation-density/verification.json": "9a60b43b7d1201977627fb21c2bc3a968b4991a8ae0cec0ef0ebaa0c16f7a072",
+    "results/return-slope-occupation/replay.json": "34ce6b4edcc2b5c90b8de75e098c7385cda7147d704fa25745da459e199a9689",
+    "results/return-slope-occupation/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/return-slope-occupation/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/return-slope-occupation/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/return-slope-occupation/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/return-slope-occupation/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/return-slope-occupation/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/return-slope-occupation/ReturnSlopeTilt.log": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+    "results/return-slope-occupation/ReturnSlopeOccupation.log": "bdeb2dbdd8315967b07d921e357f5116b2445513f93ecc3a037f3869d87e86e3"
+  }
+}

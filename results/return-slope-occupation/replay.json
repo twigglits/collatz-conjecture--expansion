@@ -1,0 +1,363 @@
+{
+  "counts": {
+    "finite_inward_green_values": 2016,
+    "exact_return_conditioned_transition_pairs": 128,
+    "finite_tilted_clock_budgets": 512,
+    "tilted_holding_shift_comparisons": 1089,
+    "logarithmic_drift_polynomial_values": 1025,
+    "finite_macro_drift_and_cost_budgets": 516,
+    "direct_conditioned_holding_paths": 209664,
+    "conditioned_active_direction_ratios": 1152,
+    "bounded_conditioned_wait_moments": 144,
+    "direct_zero_gap_paths": 1536,
+    "tilted_zero_gap_logarithmic_drift_checks": 132,
+    "direct_affine_correction_cap_pairs": 174578,
+    "direct_fresh_return_clock_paths": 26112,
+    "fresh_equal_count_separation_caps": 17486,
+    "partial_conditional_slope_clock_budgets": 24,
+    "direct_all_return_paths": 69888,
+    "completed_return_and_age_contributions": 93309,
+    "capped_actual_group_drift_pairs": 18,
+    "exact_even_column_diagonal_identity_pairs": 3,
+    "actual_positive_column_overlap_witnesses": 3
+  },
+  "logarithm_precision": 1099511627776,
+  "logarithm_method": "32-term positive atanh series, explicit geometric remainder, then outward rounding; no floating decisions.",
+  "selected_zero_gap_blocks": [
+    {
+      "D": 1,
+      "even_returns": 0,
+      "binary_population": 1,
+      "tilted_final_log_upper": "1"
+    },
+    {
+      "D": 2,
+      "even_returns": 1,
+      "binary_population": 2,
+      "tilted_final_log_upper": "7/4"
+    },
+    {
+      "D": 16,
+      "even_returns": 4,
+      "binary_population": 16,
+      "tilted_final_log_upper": "1361789308575391/281474976710656"
+    },
+    {
+      "D": 96,
+      "even_returns": 5,
+      "binary_population": 32,
+      "tilted_final_log_upper": "2123248878519257/281474976710656"
+    },
+    {
+      "D": 1536,
+      "even_returns": 9,
+      "binary_population": 512,
+      "tilted_final_log_upper": "1770367855325641297/144115188075855872"
+    }
+  ],
+  "fresh_clock_budgets": [
+    {
+      "D": 1,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 54,
+      "partial_mean_slope": "5433/16384",
+      "partial_mean_slope_times_clock": "13275/8192"
+    },
+    {
+      "D": 1,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 45,
+      "partial_mean_slope": "14889/32768",
+      "partial_mean_slope_times_clock": "5079/4096"
+    },
+    {
+      "D": 1,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 686,
+      "partial_mean_slope": "1762341/4194304",
+      "partial_mean_slope_times_clock": "663183/262144"
+    },
+    {
+      "D": 1,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 606,
+      "partial_mean_slope": "2001615/4194304",
+      "partial_mean_slope_times_clock": "1541037/1048576"
+    },
+    {
+      "D": 3,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 56,
+      "partial_mean_slope": "1581/4096",
+      "partial_mean_slope_times_clock": "1707/2048"
+    },
+    {
+      "D": 3,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 54,
+      "partial_mean_slope": "7107/16384",
+      "partial_mean_slope_times_clock": "13953/8192"
+    },
+    {
+      "D": 3,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 718,
+      "partial_mean_slope": "906375/2097152",
+      "partial_mean_slope_times_clock": "172455/131072"
+    },
+    {
+      "D": 3,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 712,
+      "partial_mean_slope": "1915917/4194304",
+      "partial_mean_slope_times_clock": "4082403/2097152"
+    },
+    {
+      "D": 5,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 55,
+      "partial_mean_slope": "14025/32768",
+      "partial_mean_slope_times_clock": "12687/8192"
+    },
+    {
+      "D": 5,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 49,
+      "partial_mean_slope": "14565/32768",
+      "partial_mean_slope_times_clock": "9177/8192"
+    },
+    {
+      "D": 5,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 708,
+      "partial_mean_slope": "1886703/4194304",
+      "partial_mean_slope_times_clock": "3735627/2097152"
+    },
+    {
+      "D": 5,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 671,
+      "partial_mean_slope": "3892341/8388608",
+      "partial_mean_slope_times_clock": "2794569/2097152"
+    },
+    {
+      "D": 9,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 56,
+      "partial_mean_slope": "1689/4096",
+      "partial_mean_slope_times_clock": "3789/2048"
+    },
+    {
+      "D": 9,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 48,
+      "partial_mean_slope": "57/128",
+      "partial_mean_slope_times_clock": "33/32"
+    },
+    {
+      "D": 9,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 721,
+      "partial_mean_slope": "3774891/8388608",
+      "partial_mean_slope_times_clock": "1173105/524288"
+    },
+    {
+      "D": 9,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 652,
+      "partial_mean_slope": "246081/524288",
+      "partial_mean_slope_times_clock": "674781/524288"
+    },
+    {
+      "D": 31,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 43,
+      "partial_mean_slope": "14403/32768",
+      "partial_mean_slope_times_clock": "9429/8192"
+    },
+    {
+      "D": 31,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 53,
+      "partial_mean_slope": "13485/32768",
+      "partial_mean_slope_times_clock": "17037/8192"
+    },
+    {
+      "D": 31,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 590,
+      "partial_mean_slope": "1981527/4194304",
+      "partial_mean_slope_times_clock": "1539903/1048576"
+    },
+    {
+      "D": 31,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 667,
+      "partial_mean_slope": "3842931/8388608",
+      "partial_mean_slope_times_clock": "1342143/524288"
+    },
+    {
+      "D": 63,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 42,
+      "partial_mean_slope": "3783/8192",
+      "partial_mean_slope_times_clock": "10617/8192"
+    },
+    {
+      "D": 63,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 55,
+      "partial_mean_slope": "12513/32768",
+      "partial_mean_slope_times_clock": "15975/8192"
+    },
+    {
+      "D": 63,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 584,
+      "partial_mean_slope": "2010525/4194304",
+      "partial_mean_slope_times_clock": "3102621/2097152"
+    },
+    {
+      "D": 63,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 701,
+      "partial_mean_slope": "3772137/8388608",
+      "partial_mean_slope_times_clock": "5534451/2097152"
+    }
+  ],
+  "all_return_trees": [
+    {
+      "H": 8,
+      "population": 256,
+      "unmerged_at_cap": 174,
+      "partial_slope_sum_including_fusion": "33/64",
+      "partial_slope_age_sum_including_fusion": "111975/65536",
+      "group_start_masses": [
+        "1",
+        "7827/32768",
+        "2817/65536",
+        "27/4096",
+        "81/65536"
+      ],
+      "even_nonfused_columns": 7,
+      "diagonal_squared_mass": "99/8192",
+      "age_weighted_diagonal_squared_mass": "2835/32768",
+      "overlap_witness": {
+        "prefixes": [
+          [
+            6,
+            48,
+            2,
+            8
+          ],
+          [
+            7,
+            74,
+            3,
+            17
+          ]
+        ],
+        "positive_cross_inner_product": "9/8192"
+      }
+    },
+    {
+      "H": 12,
+      "population": 4096,
+      "unmerged_at_cap": 2620,
+      "partial_slope_sum_including_fusion": "5700189/8388608",
+      "partial_slope_age_sum_including_fusion": "42857367/16777216",
+      "group_start_masses": [
+        "1",
+        "4559331/16777216",
+        "532539/8388608",
+        "183249/16777216",
+        "27783/16777216",
+        "243/1048576",
+        "729/16777216"
+      ],
+      "even_nonfused_columns": 166,
+      "diagonal_squared_mass": "1049013/16777216",
+      "age_weighted_diagonal_squared_mass": "2868453/8388608",
+      "overlap_witness": {
+        "prefixes": [
+          [
+            6,
+            48,
+            2,
+            8
+          ],
+          [
+            7,
+            74,
+            3,
+            17
+          ]
+        ],
+        "positive_cross_inner_product": "9/8192"
+      }
+    },
+    {
+      "H": 16,
+      "population": 65536,
+      "unmerged_at_cap": 40295,
+      "partial_slope_sum_including_fusion": "3396379515/4294967296",
+      "partial_slope_age_sum_including_fusion": "211291431/67108864",
+      "group_start_masses": [
+        "1",
+        "619976571/2147483648",
+        "346917285/4294967296",
+        "40843251/2147483648",
+        "7188831/2147483648",
+        "1940841/4294967296",
+        "271917/4294967296",
+        "2187/268435456",
+        "6561/4294967296"
+      ],
+      "even_nonfused_columns": 2552,
+      "diagonal_squared_mass": "461042127/4294967296",
+      "age_weighted_diagonal_squared_mass": "610724205/1073741824",
+      "overlap_witness": {
+        "prefixes": [
+          [
+            6,
+            48,
+            2,
+            8
+          ],
+          [
+            7,
+            74,
+            3,
+            17
+          ]
+        ],
+        "positive_cross_inner_product": "9/8192"
+      }
+    }
+  ],
+  "infinite_scope": "None. Unfinished paths remain unfinished; all infinite expectations and stopping arguments are written."
+}
