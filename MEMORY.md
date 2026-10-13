@@ -6337,3 +6337,146 @@ grouping lead Sigma_a=2rho^S_a remains unused, not adopted.
 All jobs are terminal. No agents, installations, credentials, staging,
 commits, or other Git writes were used. Preserve the user's index and
 concurrent changes. The full Collatz goal remains active and unresolved.
+
+## 2026-10-14: exact return-slope tilt and critical first moments
+
+This goal turn is progress. The new WRITTEN change-of-measure argument
+proves an exact fresh-return slope law and a sharp obstruction at the
+first separation moment. The improved fractional estimates also lower
+the logarithmic powers in occupation and clock-truncation tails. This
+does not prove Q, exclude escape or other cycles, or solve Collatz.
+
+Files:
+  docs/RETURN-SLOPE-TILT.md
+  lean/ReturnSlopeTilt.lean
+  verify_return_slope_tilt.py
+  results/return-slope-tilt/verification.json
+  results/return-slope-tilt/replay.json and seven build logs.
+README and ATTEMPT link the result. Earlier authenticated research
+notes and records were not edited or reclassified.
+
+LAW AND EXACT SLOPE:
+Use the coherent full binary residue law, not one finite interval of
+ordinary integer inputs followed forever. A fresh pair has positive
+integer separation D. At the first positive count return tau its
+endpoint slopes agree. For odd D, condition on either first input
+parity and label F the initially odd endpoint and S the initially even
+one. The lead k=a_F-a_S stays positive until the return.
+
+Tilting by either endpoint's continuation slope changes its conditional
+odd probability to 3/4. Active/holding status is predictable: both
+endpoint parities flip with the fresh bit. At nonzero gap k the endpoint
+relation is Y=3^k X+c. At least h holds requires
+2^h | (3^k-1)X+c, allowing at most 2^v(k) source residues modulo 2^h,
+where v(k)=v_2(3^k-1). The same count holds for either endpoint.
+Every endpoint parity word has tilted mass at most (3/4)^h. Thus
+  P_tilt(at least h holds | prefix) <=min(1,2^v(k)(3/4)^h) ->0.
+Every active step is finite under the tilted laws as well.
+
+The embedded walk under F tilt has outward probability 3/4, giving
+zero-hit probability h_F(k)=3^-k. Under S tilt, inward probability
+is 3/4 and h_S(k)=1. On [0,K] the respective probabilities are
+  (3^(K-k)-1)/(3^K-1), (3^K-3^k)/(3^K-1).
+Finite exit and the maximum principle identify them; then send K up.
+Summing finite stopping cylinders proves
+  E[lambda_sigma 1_(sigma finite) | prefix] = P_tilt(sigma finite).
+No unbounded optional-stopping equality or UI is assumed. Original
+return is almost surely finite by the existing fair-walk/holding proof.
+
+At fresh odd D, the initial multipliers give
+  E lambda_tau = (1/2)h_S(1) = (3/2)h_F(1) = 1/2,
+conditional on either initial parity. For even D, tau=1 and the
+unconditioned mean is one. Jensen gives E lambda_tau^eta<=2^-eta for
+odd D, but even D retains r_eta; no uniform endpoint contraction follows.
+
+CRITICAL MEANS:
+Pathwise b_tau=(1/2)sum_(j<tau)1_odd(j)lambda_(j+1,tau).
+Tonelli evaluates future slope factors using h_S and h_F above.
+The original fair gap walk from 1 killed at 0 has expected visits
+exactly 2 to EVERY positive level k (finite Green 2(K-k)/K).
+It has mean one inward active step at each level. Each is odd for S
+and has remaining expected slope one. Consequently E b_S=infinity.
+
+For F the first correction costs 1/6. At a visit to k, the conditional
+wait bound E W<=v(k)+2 and predictable holds give expected cost at most
+(1/4)3^-k(v(k)+4/3). Sum Green visits and use v(k)<2k:
+  E b_F <=1/6+(1/2)sum_(k>=1)3^-k(2k+4/3)=5/4.
+The pathwise inequality b_S<=D_next+b_F+lambda_tau D then forces
+E D_next=infinity, without subtracting infinite expectations.
+All these statements hold for every odd D and either initial parity.
+
+For our even-source adjacent occupation, the first endpoint is S.
+Fusion contributes D_next=0 and has b_S=lambda_tau+b_F, of finite
+mean. Removing fused paths therefore leaves infinite means of both
+D and the cumulative formal C=lambda+B already at return index one.
+Every nonfused integer D>=1, and each Haar column integrates to one.
+Hence K*_beta is NOT in Haar L1 for beta>=1. The earlier beta<1 range
+is sharp for L1; optimality of the separate density exponent p is unknown.
+These are distributional statements, not ordinary-orbit divergence.
+
+IMPROVED FRACTIONAL BOUNDS:
+For 0<eta<1 set a=(3/2)^eta/2, b=(1/2)^eta/2,
+z=2^eta[1-sqrt(1-(3/4)^eta)] and z_F=3^-eta z.
+Both roots lie in (0,1), with a/z+bz=1 and b/z_F+a z_F=1.
+The stopped physical processes lambda_S^eta z^k and
+lambda_F^eta z_F^k are nonnegative supermartingales: active factors
+have mean one and holding factors have mean r_eta<1.
+Bounded stopping and Fatou give future slope moments <=z^k, z_F^k.
+
+Subadditivity of correction contributions and Green visits imply
+  E b_S^eta <=2^-eta sum_(k>=1)[(v(k)+1)z^k+z^(k-1)].
+The earlier valuation prefix mass sum_(k<=N)(v(k)+2)<=9N/2 and
+Abel summation bound this by 9/[2(1-z)]. The root identity gives
+1-r_eta=(1-z)[1-b(1+z)]<=1-z. The existing chord estimate
+1-r_eta>=(1-eta)/16 for eta>=1/2 yields the UNIFORM fresh correction
+budget b_eta=72/(1-eta). F follows from Jensen and its finite first
+moment; even D is one step. For eta<1/2 the prior bounds remain valid.
+
+With C_star=540*2^5180 and B_star=16(1+144 C_star), the existing
+killed-return drift gives
+  integral C^eta dnu, integral D^eta dnu <= B_star/(1-eta)^2.
+For u>=4 this gives fresh tail <=144 log_2(u)/u and occupation tails
+<=2 B_star(log_2 u)^2/u. Holder against the existing occupation-clock
+tail improves weighted truncation to
+  O_beta(H^(-(1-beta)/2)(1+log H)^(1+beta)), 0<=beta<1.
+The established density range p<5/(4+beta) is unchanged.
+
+VERIFICATION:
+Record passed 2026-10-13T22:05:51.227230+00:00 (2026-10-14 local).
+Seven fresh sequential builds took 4.753 seconds on pinned Lean 4.33.1
+commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Nine audited roots
+use standard axioms only, with no warnings, admissions, or native
+computation. Twenty-two hashes record the new sources and artifacts;
+the prior active-gap, correction, clock, and occupation records had
+31, 21, 11, and 29 authenticated hashes respectively.
+
+Exact independent checks passed:
+- 2,142 finite biased hitting/exit values and 2,016 fair Green values,
+  obtained by rational tridiagonal elimination on intervals through 64.
+- 513 geometric fast-correction budgets and four fractional root
+  enclosures, using integer-root intervals at precision 2^48.
+- 419,328 actual fresh-return paths for D=1,3,5,9,31,63, clocks 8,12,16.
+  Both initial parities are checked separately; unfinished paths remain
+  in the bounded-stop identities and are NOT declared returned.
+- 300,141 returned separation comparisons; 24,155 even-source fusion
+  correction identities; 36 conditional bounded-stop identity groups;
+  144 stopped fractional-potential pairs and 144 partial-moment groups.
+- Six even-separation one-step laws; 98,208 actual tilted holding paths
+  and 480 tail pairs at eight nonzero count gaps and six offsets.
+No floating value decides a verification check. Finite partial means
+do not prove the infinite means; those follow from the written argument.
+No external analytic theorem or external compiled library is used.
+
+NEXT GAP:
+The slope contraction and below-one moments still do not control the
+actual future gradients after a return. The infinite first separation
+moment rules out extending that particular occupation budget to eta=1.
+It does not refute the needed actual-gradient average. Correlations
+between returned columns and future orbit losses, or a stronger direct
+temporal argument, remain necessary. Q, escape exclusion, additional
+cycle exclusion, and full Collatz are unresolved.
+
+All work is terminal. No agents, installations, credentials, staging,
+commits, or other Git writes were used. The user committed the preceding
+milestones during the turn; their index and changes were preserved.
+The unbounded Collatz goal remains active.
