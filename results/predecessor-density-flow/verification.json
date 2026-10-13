@@ -1,0 +1,208 @@
+{
+  "verified_at_utc": "2026-10-12T15:24:30.324035+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": null,
+      "returncode": 0,
+      "elapsed_seconds": 0.002,
+      "reused_verified_build": true,
+      "log": "results/predecessor-density-flow/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036",
+      "native_computation_used": false
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": null,
+      "returncode": 0,
+      "elapsed_seconds": 0.002,
+      "reused_verified_build": true,
+      "log": "results/predecessor-density-flow/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e",
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/WeightedSurvivors.lean",
+      "source_sha256": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+      "command": null,
+      "returncode": 0,
+      "elapsed_seconds": 0.002,
+      "reused_verified_build": true,
+      "log": "results/predecessor-density-flow/WeightedSurvivors.log",
+      "log_sha256": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b",
+      "olean_sha256": "da804024be3b92ef86efdb1c8ceb061071244deba17ac7b166466a268468e018",
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/BoundedHitFibres.lean",
+      "source_sha256": "c1775ffeaf109265d3d6921d2310b5028a0468e83e97a12d5f4d3e4628ee79c3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-predecessor-flow-jz_7qgbu/BoundedHitFibres.olean",
+        "lean/BoundedHitFibres.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.673,
+      "reused_verified_build": false,
+      "log": "results/predecessor-density-flow/BoundedHitFibres.log",
+      "log_sha256": "a21a7b1c826e8a054c4e6c23006df2b23f5462ec596fb8cdd3aaba08099a6b94",
+      "olean_sha256": "9e0d32f56a140771a6f3ab7a8b7e4baeb310d20ea5b82b942133b1a3fafdaf93",
+      "native_computation_used": false
+    }
+  ],
+  "reused_build_manifest_sha256": "c316e5a598c79fb2b0a57d090d6f6a909c4224473a72828d289b39996a9432a9",
+  "kernel_scope": [
+    "Exact bounded-time shortcut predecessor list membership.",
+    "At most 2^(k+1)-1 distinct starts hit a positive target by time k.",
+    "First-hit uniqueness and one-step recursion.",
+    "Ordinary predecessor arithmetic and basin decomposition.",
+    "Disjoint immediate predecessor basins at a nonperiodic root."
+  ],
+  "written_scope": [
+    "Limiting first-passage location laws and vanishing maximum atom.",
+    "Predecessor densities tend to zero at infinity within each fixed basin.",
+    "Doubling-ray tail decay and the countable inverse Syracuse flow at a nonperiodic odd root."
+  ],
+  "python_scope": {
+    "scope": "complete stated finite ranges; no asymptotic density conclusion",
+    "counts": {
+      "complete_bounded_fibre_sources": 135168,
+      "bounded_fibre_forward_steps": 1078715,
+      "complete_bounded_fibres": 288,
+      "complete_ordinary_trajectories": 4096,
+      "ordinary_steps": 311850,
+      "terminal_halving_marks": 47463,
+      "exact_doubling_tail_identities": 1298432,
+      "exact_finite_branch_partitions": 491520,
+      "finite_basin_passage_transports": 89680
+    },
+    "bounded_fibre_targets": [
+      1,
+      32
+    ],
+    "bounded_fibre_depths": [
+      0,
+      8
+    ],
+    "ordinary_sources": [
+      1,
+      4096
+    ],
+    "terminal_mark_targets": [
+      1,
+      32
+    ],
+    "doubling_exponents": [
+      1,
+      10
+    ],
+    "branch_partition_cutoffs": [
+      1,
+      8
+    ],
+    "basin_transport_thresholds": [
+      {
+        "root": 1,
+        "floor": 32,
+        "retained_count": 141,
+        "R": 9232
+      },
+      {
+        "root": 1,
+        "floor": 64,
+        "retained_count": 203,
+        "R": 9232
+      },
+      {
+        "root": 1,
+        "floor": 128,
+        "retained_count": 307,
+        "R": 9232
+      },
+      {
+        "root": 5,
+        "floor": 32,
+        "retained_count": 133,
+        "R": 9232
+      },
+      {
+        "root": 5,
+        "floor": 64,
+        "retained_count": 194,
+        "R": 9232
+      },
+      {
+        "root": 5,
+        "floor": 128,
+        "retained_count": 289,
+        "R": 9232
+      },
+      {
+        "root": 27,
+        "floor": 32,
+        "retained_count": 1,
+        "R": 27
+      },
+      {
+        "root": 27,
+        "floor": 64,
+        "retained_count": 2,
+        "R": 54
+      },
+      {
+        "root": 27,
+        "floor": 128,
+        "retained_count": 3,
+        "R": 108
+      }
+    ],
+    "periodic_overlap_witness": {
+      "root": 4,
+      "distinct_parents": [
+        8,
+        1
+      ],
+      "common_start": 8,
+      "path": [
+        8,
+        4,
+        2,
+        1
+      ]
+    }
+  },
+  "dependencies": {
+    "uniform_first_passage": "Written Proposition 4.1, not kernel checked.",
+    "early_valuation_and_overshoot": "Written deduction using Tao Proposition 1.9 and Chernoff.",
+    "external_PLD": "Independently replayed 389-module proof; used for positivity and comparison with divergent component mass."
+  },
+  "not_proved": [
+    "Uniform decay over all targets in all basins at once.",
+    "Density-one convergence, exclusion of every cycle, or exclusion of divergence.",
+    "Kernel verification of the analytic limits or infinite branch sums."
+  ],
+  "sha256": {
+    "lean/BoundedHitFibres.lean": "c1775ffeaf109265d3d6921d2310b5028a0468e83e97a12d5f4d3e4628ee79c3",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/WeightedSurvivors.lean": "93c7d0a1b93e8d3b25292ea6725d2986d5415bdb594950d756426e8814f751de",
+    "verify_predecessor_flow.py": "a3e178d1177261b104cf55402b5eed45e8ab45eda4b0531261e607f186ffa572",
+    "docs/PREDECESSOR-DENSITY-FLOW.md": "b8857057786ccd98035a3f75402cac7f8e70f6212268b50ce48ec95bb756943a",
+    "docs/DENSITY-TO-POINTWISE.md": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
+    "results/density-to-pointwise/written-review.json": "cc2f26fbbe80e4cb2de7be68ebd1d27ef4e671da8a4ee1e6a38e3b616620a65d",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/predecessor-density-flow/replay.json": "d0c49198c4e82b7ac81f18623d666b72a11249c960d103f1de2154c85d93cf4f",
+    "results/predecessor-density-flow/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/predecessor-density-flow/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/predecessor-density-flow/WeightedSurvivors.log": "7d04da9c4c8a915f5424c01ee6012aaaaee649877ccbbbec814588f328a4db5b",
+    "results/predecessor-density-flow/BoundedHitFibres.log": "a21a7b1c826e8a054c4e6c23006df2b23f5462ec596fb8cdd3aaba08099a6b94"
+  }
+}

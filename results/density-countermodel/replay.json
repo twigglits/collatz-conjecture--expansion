@@ -1,0 +1,291 @@
+{
+  "scope": "An explicitly altered map; exact finite comparisons do not assert a Collatz counterexample.",
+  "counts": {
+    "inverse_parent_targets": 512,
+    "inverse_source_steps": 393984,
+    "trajectory_membership_comparisons": 8437760,
+    "classified_sources": 8192,
+    "density_formula_targets": 8192,
+    "explicit_tail_parameters": 129,
+    "passage_formula_residues": 504,
+    "passage_interval_spot_checks": 1152
+  },
+  "density_rows": [
+    {
+      "cutoff": 64,
+      "targets_checked": 1030,
+      "maximum_density_error": [
+        3,
+        64
+      ],
+      "stated_uniform_bound": [
+        7,
+        8
+      ],
+      "convergent_source_count": 33
+    },
+    {
+      "cutoff": 512,
+      "targets_checked": 1030,
+      "maximum_density_error": [
+        3,
+        512
+      ],
+      "stated_uniform_bound": [
+        5,
+        32
+      ],
+      "convergent_source_count": 257
+    },
+    {
+      "cutoff": 8192,
+      "targets_checked": 1030,
+      "maximum_density_error": [
+        3,
+        8192
+      ],
+      "stated_uniform_bound": [
+        7,
+        512
+      ],
+      "convergent_source_count": 4097
+    }
+  ],
+  "passage_rows": [
+    {
+      "floor": 7,
+      "source_scale": 8,
+      "period": 16,
+      "total_variation": [
+        1,
+        8
+      ],
+      "bound": [
+        7,
+        2
+      ]
+    },
+    {
+      "floor": 7,
+      "source_scale": 49,
+      "period": 16,
+      "total_variation": [
+        3,
+        100
+      ],
+      "bound": [
+        4,
+        7
+      ]
+    },
+    {
+      "floor": 7,
+      "source_scale": 343,
+      "period": 16,
+      "total_variation": [
+        1,
+        344
+      ],
+      "bound": [
+        4,
+        49
+      ]
+    },
+    {
+      "floor": 15,
+      "source_scale": 16,
+      "period": 32,
+      "total_variation": [
+        1,
+        16
+      ],
+      "bound": [
+        15,
+        4
+      ]
+    },
+    {
+      "floor": 15,
+      "source_scale": 225,
+      "period": 32,
+      "total_variation": [
+        7,
+        904
+      ],
+      "bound": [
+        4,
+        15
+      ]
+    },
+    {
+      "floor": 15,
+      "source_scale": 3375,
+      "period": 32,
+      "total_variation": [
+        1,
+        3376
+      ],
+      "bound": [
+        4,
+        225
+      ]
+    },
+    {
+      "floor": 31,
+      "source_scale": 32,
+      "period": 64,
+      "total_variation": [
+        1,
+        32
+      ],
+      "bound": [
+        31,
+        8
+      ]
+    },
+    {
+      "floor": 31,
+      "source_scale": 961,
+      "period": 64,
+      "total_variation": [
+        15,
+        7696
+      ],
+      "bound": [
+        4,
+        31
+      ]
+    },
+    {
+      "floor": 31,
+      "source_scale": 29791,
+      "period": 64,
+      "total_variation": [
+        1,
+        29792
+      ],
+      "bound": [
+        4,
+        961
+      ]
+    },
+    {
+      "floor": 63,
+      "source_scale": 64,
+      "period": 128,
+      "total_variation": [
+        1,
+        64
+      ],
+      "bound": [
+        63,
+        16
+      ]
+    },
+    {
+      "floor": 63,
+      "source_scale": 3969,
+      "period": 128,
+      "total_variation": [
+        31,
+        63520
+      ],
+      "bound": [
+        4,
+        63
+      ]
+    },
+    {
+      "floor": 63,
+      "source_scale": 250047,
+      "period": 128,
+      "total_variation": [
+        1,
+        250048
+      ],
+      "bound": [
+        4,
+        3969
+      ]
+    },
+    {
+      "floor": 127,
+      "source_scale": 128,
+      "period": 256,
+      "total_variation": [
+        1,
+        128
+      ],
+      "bound": [
+        127,
+        32
+      ]
+    },
+    {
+      "floor": 127,
+      "source_scale": 16129,
+      "period": 256,
+      "total_variation": [
+        63,
+        516160
+      ],
+      "bound": [
+        4,
+        127
+      ]
+    },
+    {
+      "floor": 127,
+      "source_scale": 2048383,
+      "period": 256,
+      "total_variation": [
+        1,
+        2048384
+      ],
+      "bound": [
+        4,
+        16129
+      ]
+    },
+    {
+      "floor": 255,
+      "source_scale": 256,
+      "period": 512,
+      "total_variation": [
+        1,
+        256
+      ],
+      "bound": [
+        255,
+        64
+      ]
+    },
+    {
+      "floor": 255,
+      "source_scale": 65025,
+      "period": 512,
+      "total_variation": [
+        127,
+        4161664
+      ],
+      "bound": [
+        4,
+        255
+      ]
+    },
+    {
+      "floor": 255,
+      "source_scale": 16581375,
+      "period": 512,
+      "total_variation": [
+        1,
+        16581376
+      ],
+      "bound": [
+        4,
+        65025
+      ]
+    }
+  ],
+  "tail_handling": "Known cycle or explicit symbolic escaping spine, not a fuel-based classification."
+}

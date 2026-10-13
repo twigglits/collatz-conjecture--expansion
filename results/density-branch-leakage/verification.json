@@ -1,0 +1,537 @@
+{
+  "verified_at_utc": "2026-10-12T16:18:31.609227+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "prior_hashes_validated": {
+    "results/predecessor-density-flow/verification.json": 14,
+    "results/uniform-predecessor-approximation/verification.json": 11,
+    "results/finite-path-packing/verification.json": 12
+  },
+  "new_lean_compilation": false,
+  "new_kernel_theorems": 0,
+  "kernel_dependency_scope": "Previously checked nonperiodic parent partition, validated by the prior record; no new Lean replay.",
+  "written_scope": [
+    "Summability of unused branch densities along a hypothetical divergent orbit.",
+    "A logarithmic relative branch lower bound would exclude divergent orbits; that lower bound is not proved.",
+    "The existing orbit packing estimate makes reciprocal orbit values summable, so an absolute c/a predecessor lower bound gives no contradiction by summing its contributions."
+  ],
+  "external_review": {
+    "url": "https://arxiv.org/html/2608.27617",
+    "version": "arXiv:2608.27617v1, 2026-08-27",
+    "scope": "Inspected the claimed program and its remaining condition; no new theorem adopted as an input."
+  },
+  "python_scope": {
+    "scope": "Distinct source counts in complete finite forward graphs; no asymptotic density assertion.",
+    "source_cutoffs": [
+      4096,
+      8192,
+      65536,
+      524288
+    ],
+    "closed_graph_size": 1137753,
+    "maximum_observed_value": 24648077896,
+    "cycle": [
+      1,
+      2,
+      4
+    ],
+    "finite_convergence_scope": "All positive sources at most 524288.",
+    "direct_replay_source_cutoff": 4096,
+    "direct_replay_steps": 311850,
+    "direct_target_comparisons": 1137753,
+    "parent_partition_checks": 4551000,
+    "rows": [
+      {
+        "source_cutoff": 4096,
+        "target_counts_sha256": "667269bceeb9c8896fbff1d537b26cafee011d5cca84ab67342e6779a86c7f47",
+        "noncycle_parent_partitions": 1137750,
+        "witness": {
+          "odd_target": 3077,
+          "used_branch_count": 1625,
+          "unused_target": 18464,
+          "unused_branch_count": 0,
+          "ratio_numerator": 0,
+          "ratio_denominator": 1,
+          "merge_target": 9232,
+          "merge_count": 1625
+        },
+        "ranked_scope": "Odd 3<=b<10000, 3 not dividing b, with at least X/2000 represented predecessors.",
+        "smallest_ratios": [
+          {
+            "odd_target": 1025,
+            "used_branch_count": 38,
+            "unused_target": 6152,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1031,
+            "used_branch_count": 16,
+            "unused_target": 6188,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1037,
+            "used_branch_count": 27,
+            "unused_target": 6224,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1043,
+            "used_branch_count": 83,
+            "unused_target": 6260,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1049,
+            "used_branch_count": 8,
+            "unused_target": 6296,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1055,
+            "used_branch_count": 23,
+            "unused_target": 6332,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1061,
+            "used_branch_count": 19,
+            "unused_target": 6368,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1067,
+            "used_branch_count": 45,
+            "unused_target": 6404,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1073,
+            "used_branch_count": 58,
+            "unused_target": 6440,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1079,
+            "used_branch_count": 1511,
+            "unused_target": 6476,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1085,
+            "used_branch_count": 18,
+            "unused_target": 6512,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 1091,
+            "used_branch_count": 24,
+            "unused_target": 6548,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          }
+        ]
+      },
+      {
+        "source_cutoff": 8192,
+        "target_counts_sha256": "a2387819e1b191f30c4dc8bf3a3da034e7244e4d4510f4de84040b08047d873f",
+        "noncycle_parent_partitions": 1137750,
+        "witness": {
+          "odd_target": 3077,
+          "used_branch_count": 3263,
+          "unused_target": 18464,
+          "unused_branch_count": 0,
+          "ratio_numerator": 0,
+          "ratio_denominator": 1,
+          "merge_target": 9232,
+          "merge_count": 3263
+        },
+        "ranked_scope": "Odd 3<=b<10000, 3 not dividing b, with at least X/2000 represented predecessors.",
+        "smallest_ratios": [
+          {
+            "odd_target": 2051,
+            "used_branch_count": 3261,
+            "unused_target": 12308,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2057,
+            "used_branch_count": 8,
+            "unused_target": 12344,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2063,
+            "used_branch_count": 18,
+            "unused_target": 12380,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2069,
+            "used_branch_count": 132,
+            "unused_target": 12416,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2075,
+            "used_branch_count": 12,
+            "unused_target": 12452,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2081,
+            "used_branch_count": 41,
+            "unused_target": 12488,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2087,
+            "used_branch_count": 15,
+            "unused_target": 12524,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2093,
+            "used_branch_count": 7,
+            "unused_target": 12560,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2099,
+            "used_branch_count": 57,
+            "unused_target": 12596,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2105,
+            "used_branch_count": 162,
+            "unused_target": 12632,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2111,
+            "used_branch_count": 16,
+            "unused_target": 12668,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          },
+          {
+            "odd_target": 2117,
+            "used_branch_count": 19,
+            "unused_target": 12704,
+            "unused_branch_count": 0,
+            "ratio_numerator": 0,
+            "ratio_denominator": 1
+          }
+        ]
+      },
+      {
+        "source_cutoff": 65536,
+        "target_counts_sha256": "71359abae53d91dc53146536c82c277880e40b95d22db92e19a168aeec016e81",
+        "noncycle_parent_partitions": 1137750,
+        "witness": {
+          "odd_target": 3077,
+          "used_branch_count": 25511,
+          "unused_target": 18464,
+          "unused_branch_count": 6,
+          "ratio_numerator": 6,
+          "ratio_denominator": 25511,
+          "merge_target": 9232,
+          "merge_count": 25518
+        },
+        "ranked_scope": "Odd 3<=b<10000, 3 not dividing b, with at least X/2000 represented predecessors.",
+        "smallest_ratios": [
+          {
+            "odd_target": 3077,
+            "used_branch_count": 25511,
+            "unused_target": 18464,
+            "unused_branch_count": 6,
+            "ratio_numerator": 6,
+            "ratio_denominator": 25511
+          },
+          {
+            "odd_target": 2051,
+            "used_branch_count": 25501,
+            "unused_target": 12308,
+            "unused_branch_count": 8,
+            "ratio_numerator": 8,
+            "ratio_denominator": 25501
+          },
+          {
+            "odd_target": 2429,
+            "used_branch_count": 23767,
+            "unused_target": 14576,
+            "unused_branch_count": 8,
+            "ratio_numerator": 8,
+            "ratio_denominator": 23767
+          },
+          {
+            "odd_target": 1619,
+            "used_branch_count": 23755,
+            "unused_target": 9716,
+            "unused_branch_count": 10,
+            "ratio_numerator": 2,
+            "ratio_denominator": 4751
+          },
+          {
+            "odd_target": 1367,
+            "used_branch_count": 25487,
+            "unused_target": 8204,
+            "unused_branch_count": 12,
+            "ratio_numerator": 12,
+            "ratio_denominator": 25487
+          },
+          {
+            "odd_target": 1079,
+            "used_branch_count": 23739,
+            "unused_target": 6476,
+            "unused_branch_count": 14,
+            "ratio_numerator": 14,
+            "ratio_denominator": 23739
+          },
+          {
+            "odd_target": 719,
+            "used_branch_count": 23716,
+            "unused_target": 4316,
+            "unused_branch_count": 21,
+            "ratio_numerator": 3,
+            "ratio_denominator": 3388
+          },
+          {
+            "odd_target": 911,
+            "used_branch_count": 25461,
+            "unused_target": 5468,
+            "unused_branch_count": 24,
+            "ratio_numerator": 8,
+            "ratio_denominator": 8487
+          },
+          {
+            "odd_target": 8747,
+            "used_branch_count": 1726,
+            "unused_target": 52484,
+            "unused_branch_count": 2,
+            "ratio_numerator": 1,
+            "ratio_denominator": 863
+          },
+          {
+            "odd_target": 593,
+            "used_branch_count": 21345,
+            "unused_target": 3560,
+            "unused_branch_count": 29,
+            "ratio_numerator": 29,
+            "ratio_denominator": 21345
+          },
+          {
+            "odd_target": 5831,
+            "used_branch_count": 1721,
+            "unused_target": 34988,
+            "unused_branch_count": 3,
+            "ratio_numerator": 3,
+            "ratio_denominator": 1721
+          },
+          {
+            "odd_target": 8807,
+            "used_branch_count": 1075,
+            "unused_target": 52844,
+            "unused_branch_count": 2,
+            "ratio_numerator": 2,
+            "ratio_denominator": 1075
+          }
+        ]
+      },
+      {
+        "source_cutoff": 524288,
+        "target_counts_sha256": "24898933caef9a11529df9c1f89d796e58ea0f2d032b3028acf6bac4407cd8ec",
+        "noncycle_parent_partitions": 1137750,
+        "witness": {
+          "odd_target": 3077,
+          "used_branch_count": 206048,
+          "unused_target": 18464,
+          "unused_branch_count": 39,
+          "ratio_numerator": 39,
+          "ratio_denominator": 206048,
+          "merge_target": 9232,
+          "merge_count": 206088
+        },
+        "ranked_scope": "Odd 3<=b<10000, 3 not dividing b, with at least X/2000 represented predecessors.",
+        "smallest_ratios": [
+          {
+            "odd_target": 3077,
+            "used_branch_count": 206048,
+            "unused_target": 18464,
+            "unused_branch_count": 39,
+            "ratio_numerator": 39,
+            "ratio_denominator": 206048
+          },
+          {
+            "odd_target": 2051,
+            "used_branch_count": 206002,
+            "unused_target": 12308,
+            "unused_branch_count": 44,
+            "ratio_numerator": 22,
+            "ratio_denominator": 103001
+          },
+          {
+            "odd_target": 2429,
+            "used_branch_count": 192199,
+            "unused_target": 14576,
+            "unused_branch_count": 46,
+            "ratio_numerator": 46,
+            "ratio_denominator": 192199
+          },
+          {
+            "odd_target": 1367,
+            "used_branch_count": 205923,
+            "unused_target": 8204,
+            "unused_branch_count": 77,
+            "ratio_numerator": 77,
+            "ratio_denominator": 205923
+          },
+          {
+            "odd_target": 1619,
+            "used_branch_count": 192125,
+            "unused_target": 9716,
+            "unused_branch_count": 72,
+            "ratio_numerator": 72,
+            "ratio_denominator": 192125
+          },
+          {
+            "odd_target": 1079,
+            "used_branch_count": 192007,
+            "unused_target": 6476,
+            "unused_branch_count": 116,
+            "ratio_numerator": 116,
+            "ratio_denominator": 192007
+          },
+          {
+            "odd_target": 719,
+            "used_branch_count": 191883,
+            "unused_target": 4316,
+            "unused_branch_count": 122,
+            "ratio_numerator": 122,
+            "ratio_denominator": 191883
+          },
+          {
+            "odd_target": 8747,
+            "used_branch_count": 13658,
+            "unused_target": 52484,
+            "unused_branch_count": 14,
+            "ratio_numerator": 7,
+            "ratio_denominator": 6829
+          },
+          {
+            "odd_target": 593,
+            "used_branch_count": 172622,
+            "unused_target": 3560,
+            "unused_branch_count": 265,
+            "ratio_numerator": 265,
+            "ratio_denominator": 172622
+          },
+          {
+            "odd_target": 5831,
+            "used_branch_count": 13635,
+            "unused_target": 34988,
+            "unused_branch_count": 21,
+            "ratio_numerator": 7,
+            "ratio_denominator": 4545
+          },
+          {
+            "odd_target": 911,
+            "used_branch_count": 205594,
+            "unused_target": 5468,
+            "unused_branch_count": 327,
+            "ratio_numerator": 327,
+            "ratio_denominator": 205594
+          },
+          {
+            "odd_target": 7055,
+            "used_branch_count": 8955,
+            "unused_target": 42332,
+            "unused_branch_count": 18,
+            "ratio_numerator": 2,
+            "ratio_denominator": 995
+          }
+        ]
+      }
+    ],
+    "elapsed_seconds": 5.021
+  },
+  "not_proved": [
+    "A positive uniform constant in the logarithmic relative branch estimate.",
+    "Asymptotic density ratios from the finite population ratios.",
+    "Exclusion of divergent orbits or all nontrivial positive cycles."
+  ],
+  "sha256": {
+    "verify_density_branch_leakage.py": "1f5e40cd4f988aa54d807a973835d0fb780ddeb082ae1c10b17a5165385eb966",
+    "docs/DENSITY-BRANCH-LEAKAGE.md": "f88dd940a058d0da1d40f12afe6c94ad507c92e82be6829fa5494cacfde9f40b",
+    "docs/PREDECESSOR-DENSITY-FLOW.md": "b8857057786ccd98035a3f75402cac7f8e70f6212268b50ce48ec95bb756943a",
+    "docs/UNIFORM-PREDECESSOR-APPROXIMATION.md": "4aa7622a10dafd3c47d40f73895acbee7c89a6e582be78ad3f8a9bba04b9a7ac",
+    "docs/DENSITY-TO-POINTWISE.md": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/predecessor-density-flow/verification.json": "0d0258b8044b8737443d75e8a96c182ebba55f38d44795c1db839c6a26a5b609",
+    "results/uniform-predecessor-approximation/verification.json": "20124ce46b4da839d6cd4f1ea032d89307c9ceb8a9241482bac56dc39068fe63",
+    "results/finite-path-packing/verification.json": "47e9b90a87bfd59213c44789b4860b93e931ff368fc5c5485e14a4f28cc0012b",
+    "results/density-branch-leakage/replay.json": "f1236495212fd19f01378266224f2d15125dc96cb3dd8162f9b60063ccbcec61"
+  },
+  "post_run_document_review": {
+    "reviewed_at_utc": "2026-10-12T16:21:26.445301+00:00",
+    "source": "docs/DENSITY-BRANCH-LEAKAGE.md",
+    "prior_sha256": "a643937b63493706ef090629adc7ce5f04e40f62dc19401f7c04f6300f0ab04d",
+    "new_sha256": "2b65a863e0230288d00f092bbbaf47046d9e35c65bc1327652ef903a2af64219",
+    "scope": "Only parenthesized three set intersections inside their cardinalities; exact reconstruction checked against the verified document hash. No mathematical statement or executable source changed; no checks rerun."
+  },
+  "subsequent_document_reviews": [
+    {
+      "reviewed_at_utc": "2026-10-12T16:55:21.650714+00:00",
+      "source": "docs/DENSITY-BRANCH-LEAKAGE.md",
+      "prior_sha256": "2b65a863e0230288d00f092bbbaf47046d9e35c65bc1327652ef903a2af64219",
+      "new_sha256": "f88dd940a058d0da1d40f12afe6c94ad507c92e82be6829fa5494cacfde9f40b",
+      "scope": "Removed an accidental comma in a target subscript; reconstruction confirms this is the only document change. Mathematical content and executable sources unchanged."
+    }
+  ]
+}

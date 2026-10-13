@@ -1,0 +1,602 @@
+{
+  "verified_at_utc": "2026-10-12T18:11:02.855342+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "map_scope": "Ordinary positive-integer Collatz.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": null,
+      "returncode": 0,
+      "reused_verified_build": true,
+      "elapsed_seconds": 0.002,
+      "log": "results/clocked-minimum/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e",
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clocked-minimum-eoyi27jm/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "reused_verified_build": false,
+      "elapsed_seconds": 1.541,
+      "log": "results/clocked-minimum/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285",
+      "native_computation_used": false
+    }
+  ],
+  "kernel_theorems": 22,
+  "reused_build_manifest_sha256": "c316e5a598c79fb2b0a57d090d6f6a909c4224473a72828d289b39996a9432a9",
+  "prior_hashes_validated": {
+    "results/density-time-truncation/verification.json": 13,
+    "results/density-to-pointwise/written-review.json": 12
+  },
+  "kernel_scope": [
+    "Every orbit attains its global minimum at a finite time; this does not identify it with one.",
+    "Every finite population has a finite common minimum-attainment clock.",
+    "First odd passage is a strict record low, with exact suffix and coupled clock transfer, including the signed difference of first-minimum times.",
+    "For a convergent source, MinimumBy is equivalent to hitting one within the same time.",
+    "Exact rational comparisons for the Chernoff and logarithmic clock budgets."
+  ],
+  "written_scope": [
+    "Conditional on written natural first-passage stabilization, the global-minimum time divided by log n tends in natural density to 3/log(4/3).",
+    "Every fixed finite eventual-target profile is captured by c log n outside density zero for each c greater than 3/log(4/3); every fixed target has zero density of earlier hits for smaller c.",
+    "The uniform eventual-hit truncation defect at c log X tends to the largest component density below that coefficient, and to the largest divergent-component density above it; the equality case is not determined.",
+    "A separate coarse one-sided argument gives the explicit 435 log n bound using kernel-checked integer comparisons."
+  ],
+  "python_scope": {
+    "scope": "Exact finite ordinary Collatz trajectories and rational inequalities; no numerical certification of a density error or asymptotic time bound.",
+    "counts": {
+      "complete_known_cycle_sources": 8192,
+      "distinct_path_entries_with_source_multiplicity": 684579,
+      "nonentry_marks_checked": 8192,
+      "record_entry_and_minimum_clock_checks": 57344,
+      "target_before_or_after_checks": 436408,
+      "coupled_clock_checks_against_group_representative": 57344,
+      "exact_probability_clock_transfer_checks": 480,
+      "exact_centered_probability_clock_checks": 640,
+      "exact_scale_clock_sums": 129,
+      "ordinary_clock_budget_checks": 771
+    },
+    "floors": [
+      {
+        "floor": 0,
+        "finite_landing_groups": 0,
+        "nonentry_sources": 8192,
+        "ordinary_prefix_values_compared_with_landing": 0
+      },
+      {
+        "floor": 1,
+        "finite_landing_groups": 1,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 676384
+      },
+      {
+        "floor": 3,
+        "finite_landing_groups": 2,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 676300
+      },
+      {
+        "floor": 7,
+        "finite_landing_groups": 4,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 621217
+      },
+      {
+        "floor": 31,
+        "finite_landing_groups": 16,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 484729
+      },
+      {
+        "floor": 127,
+        "finite_landing_groups": 64,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 285107
+      },
+      {
+        "floor": 511,
+        "finite_landing_groups": 256,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 185127
+      },
+      {
+        "floor": 2047,
+        "finite_landing_groups": 1024,
+        "nonentry_sources": 0,
+        "ordinary_prefix_values_compared_with_landing": 81598
+      }
+    ],
+    "even_below_floor_before_odd_landing_witness": {
+      "source": 85,
+      "floor": 31,
+      "ordinary_landing_time": 9,
+      "landing": 1,
+      "earlier_time": 5,
+      "earlier_value": 16
+    },
+    "probability_clock_transfers": [
+      {
+        "source_odd_interval": [
+          128,
+          256
+        ],
+        "reference_odd_interval": [
+          64,
+          128
+        ],
+        "floor": 0,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -27,
+          32
+        ]
+      },
+      {
+        "source_odd_interval": [
+          128,
+          256
+        ],
+        "reference_odd_interval": [
+          64,
+          128
+        ],
+        "floor": 1,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          0,
+          1
+        ]
+      },
+      {
+        "source_odd_interval": [
+          128,
+          256
+        ],
+        "reference_odd_interval": [
+          64,
+          128
+        ],
+        "floor": 7,
+        "total_variation": [
+          3,
+          64
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -3,
+          64
+        ]
+      },
+      {
+        "source_odd_interval": [
+          128,
+          256
+        ],
+        "reference_odd_interval": [
+          64,
+          128
+        ],
+        "floor": 31,
+        "total_variation": [
+          5,
+          32
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -5,
+          32
+        ]
+      },
+      {
+        "source_odd_interval": [
+          128,
+          256
+        ],
+        "reference_odd_interval": [
+          64,
+          128
+        ],
+        "floor": 127,
+        "total_variation": [
+          41,
+          64
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -41,
+          64
+        ]
+      },
+      {
+        "source_odd_interval": [
+          256,
+          512
+        ],
+        "reference_odd_interval": [
+          128,
+          256
+        ],
+        "floor": 0,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -121,
+          128
+        ]
+      },
+      {
+        "source_odd_interval": [
+          256,
+          512
+        ],
+        "reference_odd_interval": [
+          128,
+          256
+        ],
+        "floor": 1,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -7,
+          128
+        ]
+      },
+      {
+        "source_odd_interval": [
+          256,
+          512
+        ],
+        "reference_odd_interval": [
+          128,
+          256
+        ],
+        "floor": 7,
+        "total_variation": [
+          3,
+          64
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -9,
+          128
+        ]
+      },
+      {
+        "source_odd_interval": [
+          256,
+          512
+        ],
+        "reference_odd_interval": [
+          128,
+          256
+        ],
+        "floor": 31,
+        "total_variation": [
+          5,
+          64
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -5,
+          64
+        ]
+      },
+      {
+        "source_odd_interval": [
+          256,
+          512
+        ],
+        "reference_odd_interval": [
+          128,
+          256
+        ],
+        "floor": 127,
+        "total_variation": [
+          41,
+          128
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -41,
+          128
+        ]
+      },
+      {
+        "source_odd_interval": [
+          1024,
+          2048
+        ],
+        "reference_odd_interval": [
+          512,
+          1024
+        ],
+        "floor": 0,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -483,
+          512
+        ]
+      },
+      {
+        "source_odd_interval": [
+          1024,
+          2048
+        ],
+        "reference_odd_interval": [
+          512,
+          1024
+        ],
+        "floor": 1,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -205,
+          512
+        ]
+      },
+      {
+        "source_odd_interval": [
+          1024,
+          2048
+        ],
+        "reference_odd_interval": [
+          512,
+          1024
+        ],
+        "floor": 7,
+        "total_variation": [
+          5,
+          512
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -93,
+          256
+        ]
+      },
+      {
+        "source_odd_interval": [
+          1024,
+          2048
+        ],
+        "reference_odd_interval": [
+          512,
+          1024
+        ],
+        "floor": 31,
+        "total_variation": [
+          11,
+          256
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -149,
+          512
+        ]
+      },
+      {
+        "source_odd_interval": [
+          1024,
+          2048
+        ],
+        "reference_odd_interval": [
+          512,
+          1024
+        ],
+        "floor": 127,
+        "total_variation": [
+          29,
+          256
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -19,
+          64
+        ]
+      },
+      {
+        "source_odd_interval": [
+          4096,
+          8192
+        ],
+        "reference_odd_interval": [
+          2048,
+          4096
+        ],
+        "floor": 0,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -1969,
+          2048
+        ]
+      },
+      {
+        "source_odd_interval": [
+          4096,
+          8192
+        ],
+        "reference_odd_interval": [
+          2048,
+          4096
+        ],
+        "floor": 1,
+        "total_variation": [
+          0,
+          1
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -1143,
+          2048
+        ]
+      },
+      {
+        "source_odd_interval": [
+          4096,
+          8192
+        ],
+        "reference_odd_interval": [
+          2048,
+          4096
+        ],
+        "floor": 7,
+        "total_variation": [
+          9,
+          2048
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -1073,
+          2048
+        ]
+      },
+      {
+        "source_odd_interval": [
+          4096,
+          8192
+        ],
+        "reference_odd_interval": [
+          2048,
+          4096
+        ],
+        "floor": 31,
+        "total_variation": [
+          3,
+          128
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -865,
+          2048
+        ]
+      },
+      {
+        "source_odd_interval": [
+          4096,
+          8192
+        ],
+        "reference_odd_interval": [
+          2048,
+          4096
+        ],
+        "floor": 127,
+        "total_variation": [
+          43,
+          1024
+        ],
+        "clock_pairs_checked": 24,
+        "maximum_lhs_minus_rhs": [
+          -677,
+          2048
+        ]
+      }
+    ],
+    "exact_arithmetic": {
+      "log_two_positive_partial_sum": [
+        53056,
+        76545
+      ],
+      "chernoff_factor": [
+        8758052445214736248012157388060650264925973262822460268538244271890458289793460381912055595056905495058205379553204484056282189749878624764906123675972706974428168323685746284391054585169101131209025861127626766563221412824602296121946021918661046522447876468481696516156945142209402453910382481151908707304565301507567113413937506577688981036743491814736200524156250406559182780983267650279829146685990019295680795068705900012000164433717363101418564827204040201,
+        8779865855173300486978303030990571811821624167087653709763155593257813058119917925305132281082484195275451308794837619797604522209521738412503103883392457697115015065868338904121307194377113897190499863243444663820566787629628424187456279067985895091827853439795200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      ],
+      "scale_clock_coefficient_upper_bound": [
+        43000000,
+        99099
+      ]
+    },
+    "finite_population_minimum_clocks": [
+      {
+        "source_cutoff": 64,
+        "exact_maximum_minimum_time": 112,
+        "least_maximizing_source": 54
+      },
+      {
+        "source_cutoff": 256,
+        "exact_maximum_minimum_time": 127,
+        "least_maximizing_source": 231
+      },
+      {
+        "source_cutoff": 1024,
+        "exact_maximum_minimum_time": 178,
+        "least_maximizing_source": 871
+      },
+      {
+        "source_cutoff": 4096,
+        "exact_maximum_minimum_time": 237,
+        "least_maximizing_source": 3711
+      },
+      {
+        "source_cutoff": 8192,
+        "exact_maximum_minimum_time": 261,
+        "least_maximizing_source": 6171
+      }
+    ],
+    "minimum_scope": "All sampled paths end in the verified 1,4,2 cycle, so their global minimum and first attainment are determined exactly."
+  },
+  "dependencies": {
+    "natural_passage_mixing": "Local written Proposition 4.1; not kernel checked or independently strengthened here.",
+    "early_valuation_law": "Tao arXiv:1909.03562v7 Proposition 1.9 and Lemma 2.2, with the local uniform-residue argument; primary source rechecked this turn.",
+    "minimum_and_component_density_laws": "Earlier written deductions from the passage estimates.",
+    "external_PLD": "Only for positivity of each fixed eligible target and for zero divergent density implying no divergent component; previous source replay reused."
+  },
+  "primary_source": "https://arxiv.org/html/1909.03562v7",
+  "not_proved": [
+    "That the global orbit minimum equals one for every positive start.",
+    "That the logarithmic-clock uniform defect or divergent-component density is zero.",
+    "Exclusion of nontrivial cycles or the full Collatz conjecture.",
+    "Kernel formalization or an effective numerical error rate for the analytic density conclusions."
+  ],
+  "sha256": {
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "verify_clocked_minimum.py": "1ee477a3ef7543fef5ef625ca2165b70da33b10a48abaa3259c6a03424849589",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "docs/DENSITY-TO-POINTWISE.md": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
+    "docs/DENSITY-TIME-TRUNCATION.md": "92b47579632150d2b324d212eec25f821a5ab1b5c9f92968a81b643cb300ac2a",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/density-time-truncation/verification.json": "c2af5fdd6781ea4b2347fbe029e48fc0395ab3dfbec336700eba1f95dc112bde",
+    "results/density-to-pointwise/written-review.json": "cc2f26fbbe80e4cb2de7be68ebd1d27ef4e671da8a4ee1e6a38e3b616620a65d",
+    "results/clocked-minimum/replay.json": "3fac6a2c2d8d663d9193803747ef01388adfe7a6468564ee9eb5e100de2662a1",
+    "results/clocked-minimum/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/clocked-minimum/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333"
+  }
+}

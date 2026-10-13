@@ -1,0 +1,199 @@
+{
+  "verified_at_utc": "2026-10-12T21:00:26.609704+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 18,
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.346,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.478,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "source_sha256": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.197,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/FirstPassagePacking.log",
+      "log_sha256": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+      "olean_sha256": "31480253b60dcea76cc2f9ab095b2e46f073e6c131b82929f3a1bb1df7ff1594"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "source_sha256": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.212,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/FinitePathPacking.log",
+      "log_sha256": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+      "olean_sha256": "294da06788658ebb49e17e02151a83be3eae6efeda04c6019fb8e5b24379c4f1"
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "source_sha256": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.923,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/EqualWeightFibres.log",
+      "log_sha256": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+      "olean_sha256": "3bb02f6b0c9268e6ee29afa12c504e34c1294f4352c82ae70f7c03f0ff676b4d"
+    },
+    {
+      "source": "lean/CoalescenceGrades.lean",
+      "source_sha256": "1eb22548b49b6bdbe4ba18aab0c862f133e56a8d5eb47b1d384c40d5afc2c5f5",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/CoalescenceGrades.olean",
+        "lean/CoalescenceGrades.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.628,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/CoalescenceGrades.log",
+      "log_sha256": "292f8e2c885a1dc5412b947320b3dad0216fe1d646bc936dc021dd00a084bc88",
+      "olean_sha256": "ea41999d5e4e1d58cb4ecfe48fc795c16e8739709aee94acd0048bee1676c10d"
+    },
+    {
+      "source": "lean/DyadicCoalescenceDefects.lean",
+      "source_sha256": "b1beb303a3a17e593b43f34221fc7ddff16a3760a7b1a1015e3dc0e3559857e3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-dyadic-defects-_12i6vow/DyadicCoalescenceDefects.olean",
+        "lean/DyadicCoalescenceDefects.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.298,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/dyadic-coalescence-defects/DyadicCoalescenceDefects.log",
+      "log_sha256": "b86a83b487d4f1db9a5a8aa4afce890797a23f29f48283f2b27dba3464cdd160",
+      "olean_sha256": "e1956212872756b879d785835e6c6979b4977a348a4d62ab851445d746ce3533"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/coalescence-grades/verification.json": 16,
+    "results/coalescence-tail/verification.json": 12,
+    "results/weighted-dissipation/verification.json": 15
+  },
+  "external_input": {
+    "reused_completed_replay": true,
+    "project_module_source_object_log_hashes_revalidated": 389,
+    "premise_used": "Positive lower natural density of predecessors of 1 only.",
+    "full_third_party_source_rebuild": false,
+    "natural_passage_or_density_one_premise_used": false
+  },
+  "kernel_scope": [
+    "Arrival-grade uniqueness and transport along doubling or a balanced odd refinement.",
+    "A strict rational envelope before first arrival at one.",
+    "A source-size and odd-count bound on arrival length; injectivity of endpoint plus parity word.",
+    "Every leading-grade first arrival uses at most three odd inputs."
+  ],
+  "written_scope": [
+    "A polynomial bound on sources with bounded first-arrival odd count.",
+    "Uninterrupted balanced descendants of any convergent root have bounded first-arrival odd count and zero limiting fraction.",
+    "Dyadic paths eventually making only balanced refinements, and later visiting the known basin, form a null set.",
+    "Using positive lower density at one, actual eventual-unbalanced even-pair fractions B_k have divergent sum.",
+    "If full Collatz holds, almost every dyadic path has infinitely many such unweighted defects despite having identically zero infinite weights."
+  ],
+  "finite_scope": {
+    "complete_first_arrival_integer_bounds": 524288,
+    "leading_grade_odd_caps": 311,
+    "doubling_grade_identities": 262144,
+    "safe_root_one_descendants": 190,
+    "independent_first_arrival_paths": 4096,
+    "direct_strict_prefix_envelopes": 205771,
+    "independent_inverse_word_certificates": 142,
+    "finite_low_odd_count_bounds": 96,
+    "independent_fraction_grade_weights": 944,
+    "safe_general_root_leaves": 379
+  },
+  "not_proved": [
+    "A summable bound for actual infinite-weight changes.",
+    "Zero escaping mass or exclusion of other cycles.",
+    "The full positive-integer Collatz conjecture."
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "lean/CoalescenceGrades.lean": "1eb22548b49b6bdbe4ba18aab0c862f133e56a8d5eb47b1d384c40d5afc2c5f5",
+    "lean/DyadicCoalescenceDefects.lean": "b1beb303a3a17e593b43f34221fc7ddff16a3760a7b1a1015e3dc0e3559857e3",
+    "verify_dyadic_coalescence_defects.py": "9c9196a579e2e8a0b1afd7e403771dd93ef6bcf1f2e52e326de7e1559b6cf88f",
+    "docs/DYADIC-COALESCENCE-DEFECTS.md": "bc6e37d36ce8e45600d8c6b31f699409444bd69fec4de2275fa40981c374187d",
+    "docs/COALESCENCE-TAIL.md": "83d64bc37dda190237a9d762428126e83b7ea102d69c0cf766146327df6445f5",
+    "results/coalescence-grades/verification.json": "565b6b5797e97fbb7c362cbb9a4953569ca444c38e30ba35e68e0773250db6e0",
+    "results/coalescence-tail/verification.json": "37916a2d845b7e3443c9d72d8533e16157430fd956e262781f2f14a20e054133",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/dyadic-coalescence-defects/replay.json": "5cb4d3f3676a48775118da665058262f12b628dbb7f90db2c1b3f2fd78e8dbc4",
+    "results/dyadic-coalescence-defects/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/dyadic-coalescence-defects/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/dyadic-coalescence-defects/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/dyadic-coalescence-defects/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/dyadic-coalescence-defects/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+    "results/dyadic-coalescence-defects/CoalescenceGrades.log": "292f8e2c885a1dc5412b947320b3dad0216fe1d646bc936dc021dd00a084bc88",
+    "results/dyadic-coalescence-defects/DyadicCoalescenceDefects.log": "b86a83b487d4f1db9a5a8aa4afce890797a23f29f48283f2b27dba3464cdd160"
+  },
+  "written_scope_review": {
+    "at_utc": "2026-10-12T21:02:11.440921+00:00",
+    "changes": "Updated hashes after adding the cross-reference to the preceding note and its document-only review. All new sources, successful builds, exact finite checks, and the external replay validation are unchanged.",
+    "unchanged_artifact_hashes_revalidated": 20
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "verified_at_utc": "2026-10-13T00:20:50.567988+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 21,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-escape-refinement-jqtyrphm/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.36,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/escape-weight-refinements/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-escape-refinement-jqtyrphm/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.447,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/escape-weight-refinements/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-escape-refinement-jqtyrphm/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.492,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/escape-weight-refinements/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/grade-weight-moments/verification.json": 14,
+    "results/weighted-dissipation/verification.json": 15,
+    "results/dyadic-coalescence-defects/verification.json": 22
+  },
+  "kernel_scope": [
+    "Exact even and odd refinement arithmetic for actual shortcut paths.",
+    "All-depth reciprocal affine identities, periodicity, and moment formula.",
+    "An infinite integer family with explicit paired endpoints, odd counts, source shells, and a two-step jump bound."
+  ],
+  "written_scope": [
+    "A geometric tail bound at each fixed offset, yielding E_s <= 3s/2+23/4.",
+    "The actual fixed-offset jump family has parent-minus-odd-child jump at least 27/512 and limit 9/64.",
+    "Finite exact energy enclosures plus the written tail prove E_0<1/7 and E_16>1/4.",
+    "A convergent dyadic-prefix indicator invariant under actual Collatz has constant zero-or-one scaling limit and natural density.",
+    "Finite limiting escape-weight squared variation would exclude divergence using packing and external PLD, without the natural-passage premise.",
+    "A bounded subsequence of E_s at offsets tending to infinity would suffice by Fatou; no such bound is proved."
+  ],
+  "finite_scope": {
+    "exact_reciprocal_affine_data_rows": 524286,
+    "paired_reciprocal_moment_identities": 262143,
+    "complete_reciprocal_moment_pairs": 18,
+    "independent_direct_residue_paths": 18825,
+    "independent_lifted_corrections": 258,
+    "independent_large_jump_family_members": 128,
+    "independent_two_step_jump_bounds": 4092,
+    "exact_finite_weight_enclosures": 114681,
+    "exact_binary_energy_cells": 57337,
+    "independent_fraction_energy_cells": 665,
+    "finite_mean_loss_bounds": 91
+  },
+  "external_scope": {
+    "fixed_offset_bounds_and_jump_family": "No external dependencies.",
+    "exclusion_criterion": "Previously replayed target-dependent PLD; previous packing argument remains written.",
+    "natural_passage_premise_used": false,
+    "external_modules_rebuilt": false,
+    "operator_sources_reviewed_not_adopted": [
+      "https://arxiv.org/html/2106.11859v9",
+      "https://arxiv.org/html/2303.03203v1"
+    ]
+  },
+  "not_proved": [
+    "liminf_(s to infinity) E_s < infinity, or finite limiting escape-weight energy.",
+    "No divergent positive orbit, exclusion of other cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "verify_escape_weight_refinements.py": "c5bd565e6a1903977f626851ceaa1b174f3e56b62cc07d0146dd8baaa9645a8e",
+    "docs/ESCAPE-WEIGHT-REFINEMENTS.md": "48bb99c11db620a7054489a5f4af7bdf192d8b6c8735ebdf9e1effe78871bbb9",
+    "docs/GRADE-WEIGHT-MOMENTS.md": "2df6e896521cd5c1713d5306f72c2fd6a6668084c22080d4f0b8ae69f4b2cb90",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/PREDECESSOR-DENSITY-REVIEW.md": "1d24f741749586b15418c25376fbfa28ec817b466ea07d0a9503e614fbdc35f5",
+    "results/grade-weight-moments/verification.json": "c5e5c2926cadfb8375c97c930695cb658dde9ba8c1217e8775d5c265098c3b4b",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/dyadic-coalescence-defects/verification.json": "f84d3f9b16d6fe8e9e7d5a6a0ff1bb8b16a3d0953e836dede88e64fa44abdec8",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/escape-weight-refinements/replay.json": "3b984eb021a7196751d00b5bddb7693c888a8fed47efbf0dade96af0a3efd107",
+    "results/escape-weight-refinements/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/escape-weight-refinements/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/escape-weight-refinements/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "verified_at_utc": "2026-10-12T20:35:20.537311+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "map_scope": "Actual shortcut Collatz on nonnegative residue representatives; positive lifts retain their exact properties.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 23,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-tail-y3lnqccr/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.382,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-tail/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-coalescence-tail-y3lnqccr/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.516,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-tail/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/prefix-coalescence/verification.json": 12,
+    "results/weighted-dissipation/verification.json": 15
+  },
+  "kernel_scope": [
+    "All-depth exact affine odd-count periodicity and simultaneous endpoint parity flips.",
+    "Balanced coalescence is periodic and persists with depth.",
+    "Stopped absolute-gap mass equals the residue-period length at every positive depth.",
+    "The same unit mean holds conditioned on either initial parity.",
+    "At least 1/H of each whole period, and of each parity half, is unmerged at depth H."
+  ],
+  "written_scope": [
+    "The complete-period coalescence errors are not summable, and Haar balanced-fusion time has infinite expectation.",
+    "Coupling the changing gap to a simple symmetric walk gives the stronger central-binomial survival lower bound.",
+    "Assuming the prior natural mean exists, a summable actual dyadic refinement error would force the infinite-weight mean d to zero.",
+    "The whole-period coalescence bounds cannot supply that summable error at depths within the source scale."
+  ],
+  "finite_scope": {
+    "affine_parity_flip_pairs": 1048575,
+    "pointwise_gap_bounds": 2097150,
+    "independent_direct_pair_paths": 48151,
+    "independent_lifted_pair_paths": 456,
+    "local_stopped_mass_identities": 1048574,
+    "balanced_child_persistence": 826010
+  },
+  "not_proved": [
+    "An upper bound on the actual source-interval refinement error sufficient to make its sum finite.",
+    "Any asymptotic upper rate of balanced coalescence, or adoption of an external density-one theorem.",
+    "Vanishing infinite-weight mean d, exclusion of other cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "verify_coalescence_tail.py": "b1ac5d5e3102453b8a8027b2b4896d04f2a4b3069eb2edc431f3e1de5ca0bc3d",
+    "docs/COALESCENCE-TAIL.md": "83d64bc37dda190237a9d762428126e83b7ea102d69c0cf766146327df6445f5",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/PREFIX-COALESCENCE-AUDIT.md": "c9ccfc67bf7777fb3d123138926f3658909708142d9ea3df557eec048778355a",
+    "results/prefix-coalescence/verification.json": "5953349ef1799d83f64cebd0eb8e6f09f3ba9398edf7f8db716fc439401dfba3",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/prefix-coalescence/replay.json": "d663bd467e4a2b10dfb9e611f50c542344a9251f59289d8516c25dd6231d3ce0",
+    "results/coalescence-tail/replay.json": "ab8f0e129d8bc8b3e89489595e08f27b47834aa77818e0de550c8f2fe8384860",
+    "results/coalescence-tail/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/coalescence-tail/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01"
+  },
+  "written_scope_review": {
+    "at_utc": "2026-10-12T21:02:11.440226+00:00",
+    "changes": "Added a forward pointer to the subsequent proof that the actual unweighted B_k are nonsummable. The earlier kernel identities, finite replay, and conditional implication are unchanged.",
+    "unchanged_artifact_hashes_revalidated": 11
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "verified_at_utc": "2026-10-12T17:26:43.837589+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "map_scope": "Ordinary positive-integer Collatz.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": null,
+      "returncode": 0,
+      "reused_verified_build": true,
+      "elapsed_seconds": 0.002,
+      "log": "results/density-time-truncation/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e",
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/DensityTimeTruncation.lean",
+      "source_sha256": "ce90d44f2c64c70ba9214c39a46d8b7020ded822d1cf8d57a5acb4bbdd7a900d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-density-time-truncation-uespaeer/DensityTimeTruncation.olean",
+        "lean/DensityTimeTruncation.lean"
+      ],
+      "returncode": 0,
+      "reused_verified_build": false,
+      "elapsed_seconds": 7.51,
+      "log": "results/density-time-truncation/DensityTimeTruncation.log",
+      "log_sha256": "ac05f0702bcd9fef41cd6e20ed4f50414da055002ea430cfc5ac67a12b05c81a",
+      "olean_sha256": "5ef0c316f6e6805dfc1f613c284b3bcb14ed0b8249b8b856981fe0ddc76c8127",
+      "native_computation_used": false
+    }
+  ],
+  "kernel_theorems": 17,
+  "reused_build_manifest_sha256": "c316e5a598c79fb2b0a57d090d6f6a909c4224473a72828d289b39996a9432a9",
+  "prior_hashes_validated": {
+    "results/uniform-predecessor-approximation/verification.json": 11,
+    "results/density-to-pointwise/written-review.json": 12
+  },
+  "kernel_scope": [
+    "Exact two-step inverse branches and complete finite inverse lists.",
+    "Inverse count periodicity modulo 2*3^k at time 2*k.",
+    "At most 38 distinct twelve-step predecessors, attained at target 364.",
+    "Composition and the all-depth even-time bound 2^(k mod 6)*38^(k/6)."
+  ],
+  "written_scope": [
+    "The bounded-hit estimate 195*38^(T/12) and necessary logarithmic clock.",
+    "Positive accumulation values of r_a are precisely divergent component masses.",
+    "Exact eventual finite-population truncation defect equals the largest divergent component fraction.",
+    "The two iterated limits of the defect and the unresolved existence of a vanishing-defect clock."
+  ],
+  "python_scope": {
+    "scope": "Exact finite arithmetic for ordinary Collatz; no asymptotic or infinite-orbit classification.",
+    "counts": {
+      "residue_fibres_checked_by_one_step_inversion": 2184,
+      "inverse_sources_checked": 28632,
+      "lifted_residue_checks": 546,
+      "independent_forward_sources": 349511,
+      "complete_forward_fibre_comparisons": 455,
+      "independent_forward_steps": 3961386,
+      "all_depth_composition_checks": 95,
+      "complete_convergent_sources": 4096,
+      "complete_path_distinct_vertices_with_multiplicity": 311850,
+      "finite_population_target_comparisons": 93224
+    },
+    "residue_maxima": [
+      {
+        "ordinary_steps": 2,
+        "target_period": 6,
+        "maximum_fibre_size": 2,
+        "least_residue_witness": 2,
+        "counts_sha256": "5451716e24bf25565956dd72e7fe04f6f198962af6645c66b3e7536befcbb2c0"
+      },
+      {
+        "ordinary_steps": 4,
+        "target_period": 18,
+        "maximum_fibre_size": 4,
+        "least_residue_witness": 4,
+        "counts_sha256": "5b5786aebe94592ced53c4622ff5f88e580fa79a8d0ecdb12e2d81020aba6321"
+      },
+      {
+        "ordinary_steps": 6,
+        "target_period": 54,
+        "maximum_fibre_size": 8,
+        "least_residue_witness": 40,
+        "counts_sha256": "701b89196365a973ee21e19686d0b7e08182448dc877ae9cfc78a3d1d1eb32c6"
+      },
+      {
+        "ordinary_steps": 8,
+        "target_period": 162,
+        "maximum_fibre_size": 14,
+        "least_residue_witness": 40,
+        "counts_sha256": "bb1dd73443dd12f12390ca6ef7beaf9aa9e0e05a9a18f19b2197ba1bef70336a"
+      },
+      {
+        "ordinary_steps": 10,
+        "target_period": 486,
+        "maximum_fibre_size": 23,
+        "least_residue_witness": 364,
+        "counts_sha256": "6bc4bbf603a986b8ac34e735c2002b837be271ab41adf45612718cdbfe02a143"
+      },
+      {
+        "ordinary_steps": 12,
+        "target_period": 1458,
+        "maximum_fibre_size": 38,
+        "least_residue_witness": 364,
+        "counts_sha256": "4503f1d208577ced65f24a34020d3559dee795b6bbb0bcd908f7b20959b9476e"
+      }
+    ],
+    "twelve_step_distinct_witness_sources": [
+      31,
+      188,
+      189,
+      190,
+      1136,
+      1140,
+      1141,
+      1144,
+      1146,
+      6848,
+      6864,
+      6868,
+      6869,
+      6880,
+      6882,
+      6883,
+      6888,
+      6890,
+      6897,
+      41216,
+      41280,
+      41296,
+      41300,
+      41301,
+      41344,
+      41376,
+      41384,
+      41386,
+      41412,
+      41413,
+      41414,
+      247808,
+      248320,
+      248448,
+      248480,
+      248488,
+      248490,
+      1490944
+    ],
+    "lift_checks": [
+      {
+        "ordinary_steps": 2,
+        "residues_checked": 6,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      },
+      {
+        "ordinary_steps": 4,
+        "residues_checked": 18,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      },
+      {
+        "ordinary_steps": 6,
+        "residues_checked": 54,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      },
+      {
+        "ordinary_steps": 8,
+        "residues_checked": 34,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      },
+      {
+        "ordinary_steps": 10,
+        "residues_checked": 35,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      },
+      {
+        "ordinary_steps": 12,
+        "residues_checked": 35,
+        "quotients": [
+          1,
+          17,
+          36893488147419103249
+        ]
+      }
+    ],
+    "complete_forward_enumeration": [
+      {
+        "ordinary_steps": 0,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          64
+        ]
+      },
+      {
+        "ordinary_steps": 2,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          256
+        ]
+      },
+      {
+        "ordinary_steps": 4,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          1024
+        ]
+      },
+      {
+        "ordinary_steps": 6,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          4096
+        ]
+      },
+      {
+        "ordinary_steps": 8,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          16384
+        ]
+      },
+      {
+        "ordinary_steps": 10,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          65536
+        ]
+      },
+      {
+        "ordinary_steps": 12,
+        "targets": [
+          0,
+          64
+        ],
+        "complete_source_interval": [
+          0,
+          262144
+        ]
+      }
+    ],
+    "all_depth_checks": {
+      "targets": [
+        1,
+        5,
+        27,
+        40,
+        364
+      ],
+      "bounds": [
+        {
+          "ordinary_steps": 0,
+          "certified_bound": 1
+        },
+        {
+          "ordinary_steps": 2,
+          "certified_bound": 2
+        },
+        {
+          "ordinary_steps": 4,
+          "certified_bound": 4
+        },
+        {
+          "ordinary_steps": 6,
+          "certified_bound": 8
+        },
+        {
+          "ordinary_steps": 8,
+          "certified_bound": 16
+        },
+        {
+          "ordinary_steps": 10,
+          "certified_bound": 32
+        },
+        {
+          "ordinary_steps": 12,
+          "certified_bound": 38
+        },
+        {
+          "ordinary_steps": 14,
+          "certified_bound": 76
+        },
+        {
+          "ordinary_steps": 16,
+          "certified_bound": 152
+        },
+        {
+          "ordinary_steps": 18,
+          "certified_bound": 304
+        },
+        {
+          "ordinary_steps": 20,
+          "certified_bound": 608
+        },
+        {
+          "ordinary_steps": 22,
+          "certified_bound": 1216
+        },
+        {
+          "ordinary_steps": 24,
+          "certified_bound": 1444
+        },
+        {
+          "ordinary_steps": 26,
+          "certified_bound": 2888
+        },
+        {
+          "ordinary_steps": 28,
+          "certified_bound": 5776
+        },
+        {
+          "ordinary_steps": 30,
+          "certified_bound": 11552
+        },
+        {
+          "ordinary_steps": 32,
+          "certified_bound": 23104
+        },
+        {
+          "ordinary_steps": 34,
+          "certified_bound": 46208
+        },
+        {
+          "ordinary_steps": 36,
+          "certified_bound": 54872
+        }
+      ]
+    },
+    "finite_clock_defects": [
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 0,
+        "defect_numerator": 255,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1,
+        "integer_union_fibre_bound": 1,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 4,
+        "defect_numerator": 251,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 13,
+        "integer_union_fibre_bound": 13,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 12,
+        "defect_numerator": 221,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 56,
+        "integer_union_fibre_bound": 227,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 24,
+        "defect_numerator": 143,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 131,
+        "integer_union_fibre_bound": 8815,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 48,
+        "defect_numerator": 75,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 182,
+        "integer_union_fibre_bound": 12736231,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 96,
+        "defect_numerator": 52,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 205,
+        "integer_union_fibre_bound": 26556784413511,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 127,
+        "defect_numerator": 0,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 256,
+        "integer_union_fibre_bound": 314589318004599111,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock": 192,
+        "defect_numerator": 0,
+        "defect_denominator": 256,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 256,
+        "integer_union_fibre_bound": 115463378496818440837894471,
+        "complete_orbit_cover_time": 127
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 0,
+        "defect_numerator": 1023,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1,
+        "integer_union_fibre_bound": 1,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 4,
+        "defect_numerator": 1019,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 13,
+        "integer_union_fibre_bound": 13,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 12,
+        "defect_numerator": 979,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 92,
+        "integer_union_fibre_bound": 227,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 24,
+        "defect_numerator": 803,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 296,
+        "integer_union_fibre_bound": 8815,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 48,
+        "defect_numerator": 470,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 586,
+        "integer_union_fibre_bound": 12736231,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 96,
+        "defect_numerator": 273,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 769,
+        "integer_union_fibre_bound": 26556784413511,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 178,
+        "defect_numerator": 0,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1024,
+        "integer_union_fibre_bound": 1703235555376179657642311,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock": 192,
+        "defect_numerator": 0,
+        "defect_denominator": 1024,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1024,
+        "integer_union_fibre_bound": 115463378496818440837894471,
+        "complete_orbit_cover_time": 178
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 0,
+        "defect_numerator": 4095,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1,
+        "integer_union_fibre_bound": 1,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 4,
+        "defect_numerator": 4091,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 13,
+        "integer_union_fibre_bound": 13,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 12,
+        "defect_numerator": 4049,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 121,
+        "integer_union_fibre_bound": 227,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 24,
+        "defect_numerator": 3727,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 589,
+        "integer_union_fibre_bound": 8815,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 48,
+        "defect_numerator": 2521,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 1739,
+        "integer_union_fibre_bound": 12736231,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 96,
+        "defect_numerator": 1394,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 2790,
+        "integer_union_fibre_bound": 26556784413511,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 192,
+        "defect_numerator": 6,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 4091,
+        "integer_union_fibre_bound": 115463378496818440837894471,
+        "complete_orbit_cover_time": 237
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock": 237,
+        "defect_numerator": 0,
+        "defect_denominator": 4096,
+        "least_maximizing_target": 1,
+        "largest_finite_hit_count": 4096,
+        "integer_union_fibre_bound": 101763781472146194659003154272583,
+        "complete_orbit_cover_time": 237
+      }
+    ],
+    "clock_target_scope": "All targets reached by each complete sample; all other full and truncated counts are zero."
+  },
+  "dependencies": {
+    "density_limits": "Written first-passage adaptation and its uniform-target and component-law consequences; not kernel checked.",
+    "positive_component_masses": "External predecessor theorem, independently replayed earlier; not rebuilt here."
+  },
+  "not_proved": [
+    "A clock producing vanishing uniform time-truncation error.",
+    "Global decay r_a -> 0 or exclusion of divergent positive orbits.",
+    "Exclusion of nontrivial cycles or the full Collatz conjecture.",
+    "Kernel verification of the density limits, accumulation spectrum, or limit exchanges."
+  ],
+  "sha256": {
+    "lean/DensityTimeTruncation.lean": "ce90d44f2c64c70ba9214c39a46d8b7020ded822d1cf8d57a5acb4bbdd7a900d",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "verify_density_time_truncation.py": "b1df417b66e1291769284e3e294fa173453f0927e17427322606acb351ca6939",
+    "docs/DENSITY-TIME-TRUNCATION.md": "92b47579632150d2b324d212eec25f821a5ab1b5c9f92968a81b643cb300ac2a",
+    "docs/UNIFORM-PREDECESSOR-APPROXIMATION.md": "4aa7622a10dafd3c47d40f73895acbee7c89a6e582be78ad3f8a9bba04b9a7ac",
+    "docs/DENSITY-TO-POINTWISE.md": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/uniform-predecessor-approximation/verification.json": "20124ce46b4da839d6cd4f1ea032d89307c9ceb8a9241482bac56dc39068fe63",
+    "results/density-to-pointwise/written-review.json": "cc2f26fbbe80e4cb2de7be68ebd1d27ef4e671da8a4ee1e6a38e3b616620a65d",
+    "results/density-time-truncation/replay.json": "3fc8d994a94f894c4f46e1c362cdd549e6f63874aa3cc7bbb42ad6a89fb20926",
+    "results/density-time-truncation/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/density-time-truncation/DensityTimeTruncation.log": "ac05f0702bcd9fef41cd6e20ed4f50414da055002ea430cfc5ac67a12b05c81a"
+  }
+}

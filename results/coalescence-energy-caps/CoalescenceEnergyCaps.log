@@ -1,0 +1,17 @@
+'CoalescenceEnergyCaps.balanced_add' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.balanced_later' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.refinement_data_equal' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.refinement_cross_equal' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.even_period' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.even_block_count' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.shell_count' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.cutoff_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoalescenceEnergyCaps.cutoff_decomposition' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.cutoff_block' does not depend on any axioms
+'CoalescenceEnergyCaps.cutoff_remainders' does not depend on any axioms
+'CoalescenceEnergyCaps.tail_cutoff' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.six_first_return' does not depend on any axioms
+'CoalescenceEnergyCaps.lifted_first_return' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.stopped_but_unmerged' depends on axioms: [propext, Quot.sound]
+'CoalescenceEnergyCaps.cycle_pair' depends on axioms: [propext]
+'CoalescenceEnergyCaps.six_never_balanced' depends on axioms: [propext, Quot.sound]

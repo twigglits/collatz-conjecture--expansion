@@ -49,7 +49,7 @@
     "Formal verification of the written uniform first-passage adaptation or the deductions recorded here"
   ],
   "sha256": {
-    "docs/DENSITY-TO-POINTWISE.md": "d2105e10e28a3e187062f86cdf09f5d101085a37d0459be5c66f4e512637ff1f",
+    "docs/DENSITY-TO-POINTWISE.md": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
     "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
     "results/natural-density/verification.json": "8c31e1977c4ca2e85d4bd7534e472d2c9851d3bf874dc3b3ae541773255ef3ef",
     "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
@@ -61,5 +61,14 @@
     "results/predecessor-density-review/build/Verification.ReleaseAudit.log": "943c598e4bf3d55f6ce45ce4a01c75249d2b76ff488e54df0b91992773a798a7",
     "verify_predecessor_density_source.py": "0359ff5a2f5aa4882e32f964160b775619b9211c67116ef80d303529f31376ad",
     "verify_predecessor_density_archives.py": "e1cfa88de1ac70dd3816d715e6a9d02aa558aa3707e348a73821271a51dddf26"
-  }
+  },
+  "document_updates": [
+    {
+      "updated_at_utc": "2026-10-12T15:23:39.823237+00:00",
+      "path": "docs/DENSITY-TO-POINTWISE.md",
+      "previous_sha256": "d2105e10e28a3e187062f86cdf09f5d101085a37d0459be5c66f4e512637ff1f",
+      "new_sha256": "1f1b033cba37b7c80a3ef75e0b73acf6739a5d6f9871eb1059787a9d7bcbda52",
+      "change": "Added a link and scope summary for the separately reviewed predecessor-density-flow follow-up. Sections 1-5 and their earlier evidence are unchanged."
+    }
+  ]
 }

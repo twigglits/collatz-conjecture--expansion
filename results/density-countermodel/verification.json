@@ -1,0 +1,372 @@
+{
+  "verified_at_utc": "2026-10-12T16:53:27.940017+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "map_scope": "Explicitly altered odd branch; not ordinary Collatz.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": null,
+      "returncode": 0,
+      "reused_verified_build": true,
+      "log": "results/density-countermodel/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e",
+      "native_computation_used": false
+    },
+    {
+      "source": "lean/DensityCountermodel.lean",
+      "source_sha256": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-density-countermodel-228o0q6a/DensityCountermodel.olean",
+        "lean/DensityCountermodel.lean"
+      ],
+      "returncode": 0,
+      "reused_verified_build": false,
+      "log": "results/density-countermodel/DensityCountermodel.log",
+      "log_sha256": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+      "olean_sha256": "27e04775bc0bfe33bb3901ed4a036a6c6a67092334fffcc8fe113613728547e7",
+      "native_computation_used": false
+    }
+  ],
+  "kernel_theorems": 14,
+  "reused_build_manifest_sha256": "c316e5a598c79fb2b0a57d090d6f6a909c4224473a72828d289b39996a9432a9",
+  "kernel_scope": [
+    "Ordinary even halving and the 1,4,2 cycle for the comparison map.",
+    "All iterates of the explicit escaping spine, nonarrival at one, and unboundedness.",
+    "The comparison map differs from ordinary Collatz at 3."
+  ],
+  "written_scope": [
+    "Complete orbit classification and density formulas for the comparison map.",
+    "Target-uniform density convergence and the lower bound r_a >= 1/(2a).",
+    "Periodic first-passage laws, small atoms, and sparse orbit values.",
+    "Failure of the logarithmic relative branch estimate in this comparison map."
+  ],
+  "python_scope": {
+    "scope": "An explicitly altered map; exact finite comparisons do not assert a Collatz counterexample.",
+    "counts": {
+      "inverse_parent_targets": 512,
+      "inverse_source_steps": 393984,
+      "trajectory_membership_comparisons": 8437760,
+      "classified_sources": 8192,
+      "density_formula_targets": 8192,
+      "explicit_tail_parameters": 129,
+      "passage_formula_residues": 504,
+      "passage_interval_spot_checks": 1152
+    },
+    "density_rows": [
+      {
+        "cutoff": 64,
+        "targets_checked": 1030,
+        "maximum_density_error": [
+          3,
+          64
+        ],
+        "stated_uniform_bound": [
+          7,
+          8
+        ],
+        "convergent_source_count": 33
+      },
+      {
+        "cutoff": 512,
+        "targets_checked": 1030,
+        "maximum_density_error": [
+          3,
+          512
+        ],
+        "stated_uniform_bound": [
+          5,
+          32
+        ],
+        "convergent_source_count": 257
+      },
+      {
+        "cutoff": 8192,
+        "targets_checked": 1030,
+        "maximum_density_error": [
+          3,
+          8192
+        ],
+        "stated_uniform_bound": [
+          7,
+          512
+        ],
+        "convergent_source_count": 4097
+      }
+    ],
+    "passage_rows": [
+      {
+        "floor": 7,
+        "source_scale": 8,
+        "period": 16,
+        "total_variation": [
+          1,
+          8
+        ],
+        "bound": [
+          7,
+          2
+        ]
+      },
+      {
+        "floor": 7,
+        "source_scale": 49,
+        "period": 16,
+        "total_variation": [
+          3,
+          100
+        ],
+        "bound": [
+          4,
+          7
+        ]
+      },
+      {
+        "floor": 7,
+        "source_scale": 343,
+        "period": 16,
+        "total_variation": [
+          1,
+          344
+        ],
+        "bound": [
+          4,
+          49
+        ]
+      },
+      {
+        "floor": 15,
+        "source_scale": 16,
+        "period": 32,
+        "total_variation": [
+          1,
+          16
+        ],
+        "bound": [
+          15,
+          4
+        ]
+      },
+      {
+        "floor": 15,
+        "source_scale": 225,
+        "period": 32,
+        "total_variation": [
+          7,
+          904
+        ],
+        "bound": [
+          4,
+          15
+        ]
+      },
+      {
+        "floor": 15,
+        "source_scale": 3375,
+        "period": 32,
+        "total_variation": [
+          1,
+          3376
+        ],
+        "bound": [
+          4,
+          225
+        ]
+      },
+      {
+        "floor": 31,
+        "source_scale": 32,
+        "period": 64,
+        "total_variation": [
+          1,
+          32
+        ],
+        "bound": [
+          31,
+          8
+        ]
+      },
+      {
+        "floor": 31,
+        "source_scale": 961,
+        "period": 64,
+        "total_variation": [
+          15,
+          7696
+        ],
+        "bound": [
+          4,
+          31
+        ]
+      },
+      {
+        "floor": 31,
+        "source_scale": 29791,
+        "period": 64,
+        "total_variation": [
+          1,
+          29792
+        ],
+        "bound": [
+          4,
+          961
+        ]
+      },
+      {
+        "floor": 63,
+        "source_scale": 64,
+        "period": 128,
+        "total_variation": [
+          1,
+          64
+        ],
+        "bound": [
+          63,
+          16
+        ]
+      },
+      {
+        "floor": 63,
+        "source_scale": 3969,
+        "period": 128,
+        "total_variation": [
+          31,
+          63520
+        ],
+        "bound": [
+          4,
+          63
+        ]
+      },
+      {
+        "floor": 63,
+        "source_scale": 250047,
+        "period": 128,
+        "total_variation": [
+          1,
+          250048
+        ],
+        "bound": [
+          4,
+          3969
+        ]
+      },
+      {
+        "floor": 127,
+        "source_scale": 128,
+        "period": 256,
+        "total_variation": [
+          1,
+          128
+        ],
+        "bound": [
+          127,
+          32
+        ]
+      },
+      {
+        "floor": 127,
+        "source_scale": 16129,
+        "period": 256,
+        "total_variation": [
+          63,
+          516160
+        ],
+        "bound": [
+          4,
+          127
+        ]
+      },
+      {
+        "floor": 127,
+        "source_scale": 2048383,
+        "period": 256,
+        "total_variation": [
+          1,
+          2048384
+        ],
+        "bound": [
+          4,
+          16129
+        ]
+      },
+      {
+        "floor": 255,
+        "source_scale": 256,
+        "period": 512,
+        "total_variation": [
+          1,
+          256
+        ],
+        "bound": [
+          255,
+          64
+        ]
+      },
+      {
+        "floor": 255,
+        "source_scale": 65025,
+        "period": 512,
+        "total_variation": [
+          127,
+          4161664
+        ],
+        "bound": [
+          4,
+          255
+        ]
+      },
+      {
+        "floor": 255,
+        "source_scale": 16581375,
+        "period": 512,
+        "total_variation": [
+          1,
+          16581376
+        ],
+        "bound": [
+          4,
+          65025
+        ]
+      }
+    ],
+    "tail_handling": "Known cycle or explicit symbolic escaping spine, not a fuel-based classification."
+  },
+  "not_proved": [
+    "A counterexample to ordinary positive-integer Collatz.",
+    "The required relative branch estimate for ordinary Collatz.",
+    "Kernel verification of the infinite density, passage, or packing arguments."
+  ],
+  "sha256": {
+    "lean/DensityCountermodel.lean": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "verify_density_countermodel.py": "a053abfb877eb31ea06e4ef1bc43c8691c127c59078c5d059c60b2db83c5ccd3",
+    "docs/DENSITY-COUNTERMODEL.md": "a8c6e66e6bd4de48ada4317ac10462d14181afa593ce61af4b0106cac93b5991",
+    "docs/DENSITY-BRANCH-LEAKAGE.md": "f88dd940a058d0da1d40f12afe6c94ad507c92e82be6829fa5494cacfde9f40b",
+    "results/density-branch-leakage/verification.json": "ec928c8e6aae6c2a51ca62d43e65091702da982192485094b21a152291f7cf97",
+    "results/density-countermodel/replay.json": "ece2c36fd2571f6fcc55e4838ff6b540d33a4e0b2dab2f9a9d3c61edeee4adb8",
+    "results/density-countermodel/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/density-countermodel/DensityCountermodel.log": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83"
+  },
+  "post_run_dependency_review": {
+    "reviewed_at_utc": "2026-10-12T16:55:21.651371+00:00",
+    "scope": "Notation-only correction in the referenced branch note and its provenance record. No countermodel source, proof, formula, or finite check changed.",
+    "updates": [
+      {
+        "source": "docs/DENSITY-BRANCH-LEAKAGE.md",
+        "prior_sha256": "2b65a863e0230288d00f092bbbaf47046d9e35c65bc1327652ef903a2af64219",
+        "new_sha256": "f88dd940a058d0da1d40f12afe6c94ad507c92e82be6829fa5494cacfde9f40b"
+      },
+      {
+        "source": "results/density-branch-leakage/verification.json",
+        "prior_sha256": "490fc0d9160f7bf2b514ae5108653e403fd7ac368b4261f1cbc69d4e97ffd437",
+        "new_sha256": "ec928c8e6aae6c2a51ca62d43e65091702da982192485094b21a152291f7cf97"
+      }
+    ]
+  }
+}

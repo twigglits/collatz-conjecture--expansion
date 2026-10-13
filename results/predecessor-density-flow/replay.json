@@ -1,0 +1,108 @@
+{
+  "scope": "complete stated finite ranges; no asymptotic density conclusion",
+  "counts": {
+    "complete_bounded_fibre_sources": 135168,
+    "bounded_fibre_forward_steps": 1078715,
+    "complete_bounded_fibres": 288,
+    "complete_ordinary_trajectories": 4096,
+    "ordinary_steps": 311850,
+    "terminal_halving_marks": 47463,
+    "exact_doubling_tail_identities": 1298432,
+    "exact_finite_branch_partitions": 491520,
+    "finite_basin_passage_transports": 89680
+  },
+  "bounded_fibre_targets": [
+    1,
+    32
+  ],
+  "bounded_fibre_depths": [
+    0,
+    8
+  ],
+  "ordinary_sources": [
+    1,
+    4096
+  ],
+  "terminal_mark_targets": [
+    1,
+    32
+  ],
+  "doubling_exponents": [
+    1,
+    10
+  ],
+  "branch_partition_cutoffs": [
+    1,
+    8
+  ],
+  "basin_transport_thresholds": [
+    {
+      "root": 1,
+      "floor": 32,
+      "retained_count": 141,
+      "R": 9232
+    },
+    {
+      "root": 1,
+      "floor": 64,
+      "retained_count": 203,
+      "R": 9232
+    },
+    {
+      "root": 1,
+      "floor": 128,
+      "retained_count": 307,
+      "R": 9232
+    },
+    {
+      "root": 5,
+      "floor": 32,
+      "retained_count": 133,
+      "R": 9232
+    },
+    {
+      "root": 5,
+      "floor": 64,
+      "retained_count": 194,
+      "R": 9232
+    },
+    {
+      "root": 5,
+      "floor": 128,
+      "retained_count": 289,
+      "R": 9232
+    },
+    {
+      "root": 27,
+      "floor": 32,
+      "retained_count": 1,
+      "R": 27
+    },
+    {
+      "root": 27,
+      "floor": 64,
+      "retained_count": 2,
+      "R": 54
+    },
+    {
+      "root": 27,
+      "floor": 128,
+      "retained_count": 3,
+      "R": 108
+    }
+  ],
+  "periodic_overlap_witness": {
+    "root": 4,
+    "distinct_parents": [
+      8,
+      1
+    ],
+    "common_start": 8,
+    "path": [
+      8,
+      4,
+      2,
+      1
+    ]
+  }
+}

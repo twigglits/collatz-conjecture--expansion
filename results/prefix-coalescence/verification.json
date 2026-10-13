@@ -1,0 +1,99 @@
+{
+  "verified_at_utc": "2026-10-12T18:45:01.853783+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reflected-coalescence-ih2gmwf1/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.84,
+      "log": "results/prefix-coalescence/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/ReflectedCoalescence.lean",
+      "source_sha256": "ac52f82a70675354012d2277a81c88b845cd6baf2f83fdf18724b3d1e03dc2aa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-reflected-coalescence-ih2gmwf1/ReflectedCoalescence.olean",
+        "lean/ReflectedCoalescence.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.439,
+      "log": "results/prefix-coalescence/ReflectedCoalescence.log",
+      "log_sha256": "2dcf7b74a0db70c272c79bf855aafc096190594fc7af7a8164ad5b3d4d6734fc",
+      "olean_sha256": "c595cc04eb10e8b6b5c3a237e4579f5e3e4ad06468143434a5febd5d49b9515f"
+    }
+  ],
+  "new_kernel_theorems": 7,
+  "prior_hashes_validated": {
+    "results/clocked-minimum/verification.json": 13,
+    "results/density-time-truncation/verification.json": 13
+  },
+  "kernel_scope": [
+    "All-depth endpoint and odd-count reflection between the plus and minus shortcut maps.",
+    "Exact equivalence of reflected adjacent weighted coalescence residues.",
+    "The minus map has the cycle 5,7,10 and its start 5 never reaches 1; the plus start 5 reaches 1."
+  ],
+  "reused_kernel_input": "The separately checked ordinary twelve-step bound of 38 predecessors and its all-depth extension.",
+  "written_scope": [
+    "The full-period shortcut-cycle proportion tends to zero; at depth 6q it is bounded by 390*(19/32)^q.",
+    "Under the prior written density and clock inputs, the initial-interval proportion at ceil(11 log X) tends instead to p_1.",
+    "Whole-period coalescence counts alone do not select the component of one or control that initial interval."
+  ],
+  "finite_scope": {
+    "periods": {
+      "reflected_weight_and_endpoint_identities": 2097170,
+      "reflected_adjacent_mask_comparisons": 2097150
+    },
+    "ordinary_prefix": {
+      "source_cutoff": 65536,
+      "certified_time_rows": 142216,
+      "direct_sources": 4096,
+      "direct_steps": 307751,
+      "maximum_time_on_initial_interval": 339
+    },
+    "shortcut_prefix": {
+      "source_cutoff": 65536,
+      "certified_time_rows": 104146,
+      "direct_sources": 4096,
+      "direct_steps": 201676,
+      "maximum_time_on_initial_interval": 213
+    }
+  },
+  "primary_comparison": "https://oeis.org/A398792",
+  "not_proved": [
+    "That p_1 equals one, absence of divergence, absence of nontrivial plus-map cycles, or full Collatz.",
+    "An asymptotic upper bound on the actual logarithmic-clock initial-interval failures.",
+    "That adjacent coalescence proportions tend to one.",
+    "Positive predecessor density or any component-density theorem for the minus map."
+  ],
+  "sha256": {
+    "lean/ReflectedCoalescence.lean": "ac52f82a70675354012d2277a81c88b845cd6baf2f83fdf18724b3d1e03dc2aa",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "verify_prefix_coalescence.py": "0c4dc8de59c5a24636d748db250fde72e870c2af52cb35161e3c8ac21d6e5cbb",
+    "docs/PREFIX-COALESCENCE-AUDIT.md": "c9ccfc67bf7777fb3d123138926f3658909708142d9ea3df557eec048778355a",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/DENSITY-TIME-TRUNCATION.md": "92b47579632150d2b324d212eec25f821a5ab1b5c9f92968a81b643cb300ac2a",
+    "lean/DensityTimeTruncation.lean": "ce90d44f2c64c70ba9214c39a46d8b7020ded822d1cf8d57a5acb4bbdd7a900d",
+    "results/clocked-minimum/verification.json": "1963e5464d44754c23f365c6904bf71eaf67eb5769001b7663c80fcae7932bcc",
+    "results/density-time-truncation/verification.json": "c2af5fdd6781ea4b2347fbe029e48fc0395ab3dfbec336700eba1f95dc112bde",
+    "results/prefix-coalescence/replay.json": "d663bd467e4a2b10dfb9e611f50c542344a9251f59289d8516c25dd6231d3ce0",
+    "results/prefix-coalescence/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/prefix-coalescence/ReflectedCoalescence.log": "2dcf7b74a0db70c272c79bf855aafc096190594fc7af7a8164ad5b3d4d6734fc"
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "scope": "Exact finite checks through depth 20 and positive cutoff 2^20; terminal samples through 4096.",
+  "counts": {
+    "exact_affine_data_rows": 2097150,
+    "next_bit_moment_identities": 1048575,
+    "complete_period_moment_triples": 20,
+    "positive_source_weight_rows": 2097150,
+    "independent_direct_residue_paths": 41878,
+    "independent_fraction_dualities": 41858,
+    "independent_lifted_data_rows": 384,
+    "known_cycle_plateau_steps": 49152,
+    "independent_first_arrival_paths": 4096,
+    "direct_prearrival_monotonicity_steps": 205771,
+    "strict_prearrival_odd_steps": 101980
+  },
+  "rows": [
+    {
+      "shortcut_depth": 1,
+      "positive_source_cutoff": 2,
+      "principal_integer_mass": 7,
+      "scale_integer_mass": 5,
+      "correction_integer_mass": 1,
+      "mean_V_at_depth_lower": [
+        1,
+        1
+      ],
+      "mean_V_at_depth_upper": [
+        1,
+        1
+      ],
+      "written_rational_upper_bound": [
+        929,
+        480
+      ],
+      "display_only_mean_interval": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "shortcut_depth": 2,
+      "positive_source_cutoff": 4,
+      "principal_integer_mass": 49,
+      "scale_integer_mass": 25,
+      "correction_integer_mass": 17,
+      "mean_V_at_depth_lower": [
+        516037457302869,
+        562949953421312
+      ],
+      "mean_V_at_depth_upper": [
+        1032074914605739,
+        1125899906842624
+      ],
+      "written_rational_upper_bound": [
+        123577,
+        76800
+      ],
+      "display_only_mean_interval": [
+        0.9166666666666661,
+        0.916666666666667
+      ]
+    },
+    {
+      "shortcut_depth": 3,
+      "positive_source_cutoff": 8,
+      "principal_integer_mass": 343,
+      "scale_integer_mass": 125,
+      "correction_integer_mass": 219,
+      "mean_V_at_depth_lower": [
+        1857064667774349,
+        2251799813685248
+      ],
+      "mean_V_at_depth_upper": [
+        1857064667774353,
+        2251799813685248
+      ],
+      "written_rational_upper_bound": [
+        16476581,
+        12288000
+      ],
+      "display_only_mean_interval": [
+        0.8247023809523797,
+        0.8247023809523815
+      ]
+    },
+    {
+      "shortcut_depth": 4,
+      "positive_source_cutoff": 16,
+      "principal_integer_mass": 2401,
+      "scale_integer_mass": 625,
+      "correction_integer_mass": 2533,
+      "mean_V_at_depth_lower": [
+        3209956693697695,
+        4503599627370496
+      ],
+      "mean_V_at_depth_upper": [
+        1604978346848853,
+        2251799813685248
+      ],
+      "written_rational_upper_bound": [
+        2201926993,
+        1966080000
+      ],
+      "display_only_mean_interval": [
+        0.7127535658785644,
+        0.7127535658785669
+      ]
+    },
+    {
+      "shortcut_depth": 5,
+      "positive_source_cutoff": 32,
+      "principal_integer_mass": 16807,
+      "scale_integer_mass": 3125,
+      "correction_integer_mass": 27731,
+      "mean_V_at_depth_lower": [
+        2770482669931061,
+        4503599627370496
+      ],
+      "mean_V_at_depth_upper": [
+        1385241334965537,
+        2251799813685248
+      ],
+      "written_rational_upper_bound": [
+        294943993229,
+        314572800000
+      ],
+      "display_only_mean_interval": [
+        0.6151707298964884,
+        0.6151707298964912
+      ]
+    },
+    {
+      "shortcut_depth": 6,
+      "positive_source_cutoff": 64,
+      "principal_integer_mass": 117649,
+      "scale_integer_mass": 15625,
+      "correction_integer_mass": 294117,
+      "mean_V_at_depth_lower": [
+        9461091071320993,
+        18014398509481984
+      ],
+      "mean_V_at_depth_upper": [
+        4730545535660525,
+        9007199254740992
+      ],
+      "written_rational_upper_bound": [
+        39597444798937,
+        50331648000000
+      ],
+      "display_only_mean_interval": [
+        0.5251960572728027,
+        0.5251960572728059
+      ]
+    },
+    {
+      "shortcut_depth": 7,
+      "positive_source_cutoff": 128,
+      "principal_integer_mass": 823543,
+      "scale_integer_mass": 78125,
+      "correction_integer_mass": 3058819,
+      "mean_V_at_depth_lower": [
+        2021890799491739,
+        4503599627370496
+      ],
+      "mean_V_at_depth_upper": [
+        1010945399745877,
+        2251799813685248
+      ],
+      "written_rational_upper_bound": [
+        5328092138467061,
+        8053063680000000
+      ],
+      "display_only_mean_interval": [
+        0.4489499437746989,
+        0.4489499437747022
+      ]
+    },
+    {
+      "shortcut_depth": 8,
+      "positive_source_cutoff": 256,
+      "principal_integer_mass": 5764801,
+      "scale_integer_mass": 390625,
+      "correction_integer_mass": 31411733,
+      "mean_V_at_depth_lower": [
+        27613879536513709,
+        72057594037927936
+      ],
+      "mean_V_at_depth_upper": [
+        6903469884128489,
+        18014398509481984
+      ],
+      "written_rational_upper_bound": [
+        718514143689174433,
+        1288490188800000000
+      ],
+      "display_only_mean_interval": [
+        0.38321956075828706,
+        0.3832195607582905
+      ]
+    },
+    {
+      "shortcut_depth": 9,
+      "positive_source_cutoff": 512,
+      "principal_integer_mass": 40353607,
+      "scale_integer_mass": 1953125,
+      "correction_integer_mass": 319882131,
+      "mean_V_at_depth_lower": [
+        47280000862913937,
+        144115188075855872
+      ],
+      "mean_V_at_depth_upper": [
+        47280000862914439,
+        144115188075855872
+      ],
+      "written_rational_upper_bound": [
+        97103837059488155549,
+        206158430208000000000
+      ],
+      "display_only_mean_interval": [
+        0.328070909764402,
+        0.3280709097644055
+      ]
+    },
+    {
+      "shortcut_depth": 10,
+      "positive_source_cutoff": 1024,
+      "principal_integer_mass": 282475249,
+      "scale_integer_mass": 9765625,
+      "correction_integer_mass": 3239174917,
+      "mean_V_at_depth_lower": [
+        40583734486747003,
+        144115188075855872
+      ],
+      "mean_V_at_depth_upper": [
+        81167468973495019,
+        288230376151711744
+      ],
+      "written_rational_upper_bound": [
+        13150737086047712425897,
+        32985348833280000000000
+      ],
+      "display_only_mean_interval": [
+        0.2816062278278783,
+        0.28160622782788186
+      ]
+    },
+    {
+      "shortcut_depth": 11,
+      "positive_source_cutoff": 2048,
+      "principal_integer_mass": 1977326743,
+      "scale_integer_mass": 48828125,
+      "correction_integer_mass": 32674224419,
+      "mean_V_at_depth_lower": [
+        139878358960992567,
+        576460752303423488
+      ],
+      "mean_V_at_depth_upper": [
+        139878358960994603,
+        576460752303423488
+      ],
+      "written_rational_upper_bound": [
+        1784632055081620754967941,
+        5277655813324800000000000
+      ],
+      "display_only_mean_interval": [
+        0.24265027307074458,
+        0.24265027307074813
+      ]
+    },
+    {
+      "shortcut_depth": 12,
+      "positive_source_cutoff": 4096,
+      "principal_integer_mass": 13841287201,
+      "scale_integer_mass": 244140625,
+      "correction_integer_mass": 328719570933,
+      "mean_V_at_depth_lower": [
+        241787425730398155,
+        1152921504606846976
+      ],
+      "mean_V_at_depth_upper": [
+        241787425730402237,
+        1152921504606846976
+      ],
+      "written_rational_upper_bound": [
+        242662091695757052192537073,
+        844424930131968000000000000
+      ],
+      "display_only_mean_interval": [
+        0.20971716180526018,
+        0.20971716180526373
+      ]
+    },
+    {
+      "shortcut_depth": 13,
+      "positive_source_cutoff": 8192,
+      "principal_integer_mass": 96889010407,
+      "scale_integer_mass": 1220703125,
+      "correction_integer_mass": 3301036996531,
+      "mean_V_at_depth_lower": [
+        419074933885141635,
+        2305843009213693952
+      ],
+      "mean_V_at_depth_upper": [
+        104768733471287453,
+        576460752303423488
+      ],
+      "written_rational_upper_bound": [
+        33058072836882458125224823469,
+        135107988821114880000000000000
+      ],
+      "display_only_mean_interval": [
+        0.18174478150099588,
+        0.18174478150099943
+      ]
+    },
+    {
+      "shortcut_depth": 14,
+      "positive_source_cutoff": 16384,
+      "principal_integer_mass": 678223072849,
+      "scale_integer_mass": 6103515625,
+      "correction_integer_mass": 33107258975717,
+      "mean_V_at_depth_lower": [
+        363923238025392693,
+        2305843009213693952
+      ],
+      "mean_V_at_depth_upper": [
+        363923238025400877,
+        2305843009213693952
+      ],
+      "written_rational_upper_bound": [
+        4511713673281808910601287169657,
+        21617278211378380800000000000000
+      ],
+      "display_only_mean_interval": [
+        0.15782654611403604,
+        0.1578265461140396
+      ]
+    },
+    {
+      "shortcut_depth": 15,
+      "positive_source_cutoff": 32768,
+      "principal_integer_mass": 4747561509943,
+      "scale_integer_mass": 30517578125,
+      "correction_integer_mass": 331750812830019,
+      "mean_V_at_depth_lower": [
+        1266329191495079729,
+        9223372036854775808
+      ],
+      "mean_V_at_depth_upper": [
+        39572787234222265,
+        288230376151711744
+      ],
+      "written_rational_upper_bound": [
+        616820453725750701978528478419221,
+        3458764513820540928000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.13729568605007778,
+        0.13729568605008133
+      ]
+    },
+    {
+      "shortcut_depth": 16,
+      "positive_source_cutoff": 65536,
+      "principal_integer_mass": 33232930569601,
+      "scale_integer_mass": 152587890625,
+      "correction_integer_mass": 3322255689810133,
+      "mean_V_at_depth_lower": [
+        2206224928357004771,
+        18446744073709551616
+      ],
+      "mean_V_at_depth_upper": [
+        2206224928357070289,
+        18446744073709551616
+      ],
+      "written_rational_upper_bound": [
+        84468204388686117894947110325550913,
+        553402322211286548480000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.11959969301581705,
+        0.1195996930158206
+      ]
+    },
+    {
+      "shortcut_depth": 17,
+      "positive_source_cutoff": 131072,
+      "principal_integer_mass": 232630513987207,
+      "scale_integer_mass": 762939453125,
+      "correction_integer_mass": 33255789828670931,
+      "mean_V_at_depth_lower": [
+        3848024419604508101,
+        36893488147419103232
+      ],
+      "mean_V_at_depth_upper": [
+        1924012209802319577,
+        18446744073709551616
+      ],
+      "written_rational_upper_bound": [
+        11585335222326795196725163257656844989,
+        88544371553805847756800000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.104300910887812,
+        0.10430091088781555
+      ]
+    },
+    {
+      "shortcut_depth": 18,
+      "positive_source_cutoff": 262144,
+      "principal_integer_mass": 1628413597910449,
+      "scale_integer_mass": 3814697265625,
+      "correction_integer_mass": 332790528800696517,
+      "mean_V_at_depth_lower": [
+        1679306677595770361,
+        18446744073709551616
+      ],
+      "mean_V_at_depth_upper": [
+        419826669398958973,
+        4611686018427387904
+      ],
+      "written_rational_upper_bound": [
+        1591359489053871902586712538978367174217,
+        14167099448608935641088000000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.09103539740593744,
+        0.091035397405941
+      ]
+    },
+    {
+      "shortcut_depth": 19,
+      "positive_source_cutoff": 524288,
+      "principal_integer_mass": 11398895185373143,
+      "scale_integer_mass": 19073486328125,
+      "correction_integer_mass": 3329533701604875619,
+      "mean_V_at_depth_lower": [
+        2933330312475566677,
+        36893488147419103232
+      ],
+      "mean_V_at_depth_upper": [
+        11733321249902790975,
+        147573952589676412928
+      ],
+      "written_rational_upper_bound": [
+        218895119896784752785651660239017375252901,
+        2266735911777429702574080000000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.07950807743508982,
+        0.07950807743509337
+      ]
+    },
+    {
+      "shortcut_depth": 20,
+      "positive_source_cutoff": 1048576,
+      "principal_integer_mass": 79792266297612001,
+      "scale_integer_mass": 95367431640625,
+      "correction_integer_mass": 33306735911234129333,
+      "mean_V_at_depth_lower": [
+        10252500440606803339,
+        147573952589676412928
+      ],
+      "mean_V_at_depth_upper": [
+        80097659692244747,
+        1152921504606846976
+      ],
+      "written_rational_upper_bound": [
+        30149228090298335854416709416817521151511953,
+        362677745884388752411852800000000000000000000
+      ],
+      "display_only_mean_interval": [
+        0.06947364531946555,
+        0.0694736453194691
+      ]
+    }
+  ],
+  "rational_enclosure_precision": 281474976710656,
+  "no_asymptotic_error_inferred_from_samples": true
+}

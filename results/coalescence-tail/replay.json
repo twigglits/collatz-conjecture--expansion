@@ -1,0 +1,914 @@
+{
+  "scope": "Finite exact checks through depth 20, with direct trajectory samples and separate affine residue recursion.",
+  "counts": {
+    "affine_parity_flip_pairs": 1048575,
+    "pointwise_gap_bounds": 2097150,
+    "independent_direct_pair_paths": 48151,
+    "independent_lifted_pair_paths": 456,
+    "local_stopped_mass_identities": 1048574,
+    "balanced_child_persistence": 826010
+  },
+  "rows": [
+    {
+      "shortcut_depth": 1,
+      "residue_period": 2,
+      "stopped_gap_mass_by_initial_parity": [
+        1,
+        1
+      ],
+      "stopped_survivors_by_initial_parity": [
+        1,
+        1
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        0,
+        0
+      ],
+      "unmerged_proportion": [
+        1,
+        1
+      ],
+      "harmonic_lower_bound": [
+        1,
+        1
+      ],
+      "written_random_walk_lower_bound": [
+        1,
+        1
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        1,
+        1
+      ],
+      "stopped_gap_histogram": {
+        "1": 2
+      }
+    },
+    {
+      "shortcut_depth": 2,
+      "residue_period": 4,
+      "stopped_gap_mass_by_initial_parity": [
+        2,
+        2
+      ],
+      "stopped_survivors_by_initial_parity": [
+        2,
+        1
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        0,
+        0
+      ],
+      "unmerged_proportion": [
+        1,
+        1
+      ],
+      "harmonic_lower_bound": [
+        1,
+        2
+      ],
+      "written_random_walk_lower_bound": [
+        1,
+        2
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        2,
+        2
+      ],
+      "stopped_gap_histogram": {
+        "0": 1,
+        "1": 2,
+        "2": 1
+      }
+    },
+    {
+      "shortcut_depth": 3,
+      "residue_period": 8,
+      "stopped_gap_mass_by_initial_parity": [
+        4,
+        4
+      ],
+      "stopped_survivors_by_initial_parity": [
+        3,
+        2
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        1,
+        0
+      ],
+      "unmerged_proportion": [
+        7,
+        8
+      ],
+      "harmonic_lower_bound": [
+        1,
+        3
+      ],
+      "written_random_walk_lower_bound": [
+        1,
+        2
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        4,
+        6
+      ],
+      "stopped_gap_histogram": {
+        "0": 3,
+        "1": 3,
+        "2": 1,
+        "3": 1
+      }
+    },
+    {
+      "shortcut_depth": 4,
+      "residue_period": 16,
+      "stopped_gap_mass_by_initial_parity": [
+        8,
+        8
+      ],
+      "stopped_survivors_by_initial_parity": [
+        5,
+        4
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        3,
+        0
+      ],
+      "unmerged_proportion": [
+        13,
+        16
+      ],
+      "harmonic_lower_bound": [
+        1,
+        4
+      ],
+      "written_random_walk_lower_bound": [
+        3,
+        8
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        8,
+        12
+      ],
+      "stopped_gap_histogram": {
+        "0": 7,
+        "1": 4,
+        "2": 4,
+        "4": 1
+      }
+    },
+    {
+      "shortcut_depth": 5,
+      "residue_period": 32,
+      "stopped_gap_mass_by_initial_parity": [
+        16,
+        16
+      ],
+      "stopped_survivors_by_initial_parity": [
+        9,
+        7
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        7,
+        1
+      ],
+      "unmerged_proportion": [
+        3,
+        4
+      ],
+      "harmonic_lower_bound": [
+        1,
+        5
+      ],
+      "written_random_walk_lower_bound": [
+        3,
+        8
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        16,
+        26
+      ],
+      "stopped_gap_histogram": {
+        "0": 16,
+        "1": 7,
+        "2": 4,
+        "3": 4,
+        "5": 1
+      }
+    },
+    {
+      "shortcut_depth": 6,
+      "residue_period": 64,
+      "stopped_gap_mass_by_initial_parity": [
+        32,
+        32
+      ],
+      "stopped_survivors_by_initial_parity": [
+        16,
+        13
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        15,
+        3
+      ],
+      "unmerged_proportion": [
+        23,
+        32
+      ],
+      "harmonic_lower_bound": [
+        1,
+        6
+      ],
+      "written_random_walk_lower_bound": [
+        5,
+        16
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        32,
+        54
+      ],
+      "stopped_gap_histogram": {
+        "0": 35,
+        "1": 11,
+        "2": 7,
+        "3": 7,
+        "4": 3,
+        "6": 1
+      }
+    },
+    {
+      "shortcut_depth": 7,
+      "residue_period": 128,
+      "stopped_gap_mass_by_initial_parity": [
+        64,
+        64
+      ],
+      "stopped_survivors_by_initial_parity": [
+        29,
+        24
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        31,
+        8
+      ],
+      "unmerged_proportion": [
+        89,
+        128
+      ],
+      "harmonic_lower_bound": [
+        1,
+        7
+      ],
+      "written_random_walk_lower_bound": [
+        5,
+        16
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        66,
+        110
+      ],
+      "stopped_gap_histogram": {
+        "0": 75,
+        "1": 16,
+        "2": 15,
+        "3": 12,
+        "4": 6,
+        "5": 3,
+        "7": 1
+      }
+    },
+    {
+      "shortcut_depth": 8,
+      "residue_period": 256,
+      "stopped_gap_mass_by_initial_parity": [
+        128,
+        128
+      ],
+      "stopped_survivors_by_initial_parity": [
+        54,
+        45
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        63,
+        19
+      ],
+      "unmerged_proportion": [
+        87,
+        128
+      ],
+      "harmonic_lower_bound": [
+        1,
+        8
+      ],
+      "written_random_walk_lower_bound": [
+        35,
+        128
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        136,
+        226
+      ],
+      "stopped_gap_histogram": {
+        "0": 157,
+        "1": 27,
+        "2": 25,
+        "3": 25,
+        "4": 12,
+        "5": 6,
+        "6": 3,
+        "8": 1
+      }
+    },
+    {
+      "shortcut_depth": 9,
+      "residue_period": 512,
+      "stopped_gap_mass_by_initial_parity": [
+        256,
+        256
+      ],
+      "stopped_survivors_by_initial_parity": [
+        101,
+        86
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        128,
+        42
+      ],
+      "unmerged_proportion": [
+        171,
+        256
+      ],
+      "harmonic_lower_bound": [
+        1,
+        9
+      ],
+      "written_random_walk_lower_bound": [
+        35,
+        128
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        278,
+        468
+      ],
+      "stopped_gap_histogram": {
+        "0": 325,
+        "1": 44,
+        "2": 51,
+        "3": 44,
+        "4": 22,
+        "5": 17,
+        "6": 4,
+        "7": 4,
+        "9": 1
+      }
+    },
+    {
+      "shortcut_depth": 10,
+      "residue_period": 1024,
+      "stopped_gap_mass_by_initial_parity": [
+        512,
+        512
+      ],
+      "stopped_survivors_by_initial_parity": [
+        190,
+        165
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        260,
+        91
+      ],
+      "unmerged_proportion": [
+        673,
+        1024
+      ],
+      "harmonic_lower_bound": [
+        1,
+        10
+      ],
+      "written_random_walk_lower_bound": [
+        63,
+        256
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        568,
+        960
+      ],
+      "stopped_gap_histogram": {
+        "0": 669,
+        "1": 77,
+        "2": 91,
+        "3": 82,
+        "4": 47,
+        "5": 34,
+        "6": 13,
+        "7": 7,
+        "8": 3,
+        "10": 1
+      }
+    },
+    {
+      "shortcut_depth": 11,
+      "residue_period": 2048,
+      "stopped_gap_mass_by_initial_parity": [
+        1024,
+        1024
+      ],
+      "stopped_survivors_by_initial_parity": [
+        360,
+        316
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        527,
+        194
+      ],
+      "unmerged_proportion": [
+        1327,
+        2048
+      ],
+      "harmonic_lower_bound": [
+        1,
+        11
+      ],
+      "written_random_walk_lower_bound": [
+        63,
+        256
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        1164,
+        1970
+      ],
+      "stopped_gap_histogram": {
+        "0": 1372,
+        "1": 132,
+        "2": 167,
+        "3": 156,
+        "4": 92,
+        "5": 71,
+        "6": 31,
+        "7": 17,
+        "8": 6,
+        "9": 3,
+        "11": 1
+      }
+    },
+    {
+      "shortcut_depth": 12,
+      "residue_period": 4096,
+      "stopped_gap_mass_by_initial_parity": [
+        2048,
+        2048
+      ],
+      "stopped_survivors_by_initial_parity": [
+        686,
+        606
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        1067,
+        409
+      ],
+      "unmerged_proportion": [
+        655,
+        1024
+      ],
+      "harmonic_lower_bound": [
+        1,
+        12
+      ],
+      "written_random_walk_lower_bound": [
+        231,
+        1024
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        2378,
+        4032
+      ],
+      "stopped_gap_histogram": {
+        "0": 2804,
+        "1": 221,
+        "2": 321,
+        "3": 288,
+        "4": 180,
+        "5": 153,
+        "6": 60,
+        "7": 43,
+        "8": 17,
+        "9": 5,
+        "10": 3,
+        "12": 1
+      }
+    },
+    {
+      "shortcut_depth": 13,
+      "residue_period": 8192,
+      "stopped_gap_mass_by_initial_parity": [
+        4096,
+        4096
+      ],
+      "stopped_survivors_by_initial_parity": [
+        1314,
+        1167
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        2157,
+        855
+      ],
+      "unmerged_proportion": [
+        1295,
+        2048
+      ],
+      "harmonic_lower_bound": [
+        1,
+        13
+      ],
+      "written_random_walk_lower_bound": [
+        231,
+        1024
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        4858,
+        8242
+      ],
+      "stopped_gap_histogram": {
+        "0": 5711,
+        "1": 378,
+        "2": 610,
+        "3": 539,
+        "4": 349,
+        "5": 308,
+        "6": 141,
+        "7": 93,
+        "8": 39,
+        "9": 15,
+        "10": 4,
+        "11": 4,
+        "13": 1
+      }
+    },
+    {
+      "shortcut_depth": 14,
+      "residue_period": 16384,
+      "stopped_gap_mass_by_initial_parity": [
+        8192,
+        8192
+      ],
+      "stopped_survivors_by_initial_parity": [
+        2526,
+        2258
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        4354,
+        1776
+      ],
+      "unmerged_proportion": [
+        5127,
+        8192
+      ],
+      "harmonic_lower_bound": [
+        1,
+        14
+      ],
+      "written_random_walk_lower_bound": [
+        429,
+        2048
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        9910,
+        16828
+      ],
+      "stopped_gap_histogram": {
+        "0": 11600,
+        "1": 679,
+        "2": 1120,
+        "3": 1015,
+        "4": 699,
+        "5": 608,
+        "6": 304,
+        "7": 216,
+        "8": 80,
+        "9": 40,
+        "10": 12,
+        "11": 6,
+        "12": 4,
+        "14": 1
+      }
+    },
+    {
+      "shortcut_depth": 15,
+      "residue_period": 32768,
+      "stopped_gap_mass_by_initial_parity": [
+        16384,
+        16384
+      ],
+      "stopped_survivors_by_initial_parity": [
+        4869,
+        4379
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        8779,
+        3671
+      ],
+      "unmerged_proportion": [
+        10159,
+        16384
+      ],
+      "harmonic_lower_bound": [
+        1,
+        15
+      ],
+      "written_random_walk_lower_bound": [
+        429,
+        2048
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        20206,
+        34332
+      ],
+      "stopped_gap_histogram": {
+        "0": 23520,
+        "1": 1244,
+        "2": 2031,
+        "3": 1941,
+        "4": 1370,
+        "5": 1194,
+        "6": 682,
+        "7": 438,
+        "8": 206,
+        "9": 79,
+        "10": 39,
+        "11": 12,
+        "12": 8,
+        "13": 3,
+        "15": 1
+      }
+    },
+    {
+      "shortcut_depth": 16,
+      "residue_period": 65536,
+      "stopped_gap_mass_by_initial_parity": [
+        32768,
+        32768
+      ],
+      "stopped_survivors_by_initial_parity": [
+        9408,
+        8489
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        17685,
+        7556
+      ],
+      "unmerged_proportion": [
+        40295,
+        65536
+      ],
+      "harmonic_lower_bound": [
+        1,
+        16
+      ],
+      "written_random_walk_lower_bound": [
+        6435,
+        32768
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        41152,
+        69984
+      ],
+      "stopped_gap_histogram": {
+        "0": 47639,
+        "1": 2253,
+        "2": 3721,
+        "3": 3681,
+        "4": 2719,
+        "5": 2355,
+        "6": 1430,
+        "7": 934,
+        "8": 459,
+        "9": 192,
+        "10": 96,
+        "11": 33,
+        "12": 12,
+        "13": 8,
+        "14": 3,
+        "16": 1
+      }
+    },
+    {
+      "shortcut_depth": 17,
+      "residue_period": 131072,
+      "stopped_gap_mass_by_initial_parity": [
+        65536,
+        65536
+      ],
+      "stopped_survivors_by_initial_parity": [
+        18208,
+        16490
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        35602,
+        15503
+      ],
+      "unmerged_proportion": [
+        79967,
+        131072
+      ],
+      "harmonic_lower_bound": [
+        1,
+        17
+      ],
+      "written_random_walk_lower_bound": [
+        6435,
+        32768
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        83774,
+        142486
+      ],
+      "stopped_gap_histogram": {
+        "0": 96374,
+        "1": 4069,
+        "2": 6897,
+        "3": 6964,
+        "4": 5328,
+        "5": 4687,
+        "6": 2949,
+        "7": 1985,
+        "8": 996,
+        "9": 465,
+        "10": 213,
+        "11": 88,
+        "12": 28,
+        "13": 19,
+        "14": 5,
+        "15": 4,
+        "17": 1
+      }
+    },
+    {
+      "shortcut_depth": 18,
+      "residue_period": 262144,
+      "stopped_gap_mass_by_initial_parity": [
+        131072,
+        131072
+      ],
+      "stopped_survivors_by_initial_parity": [
+        35288,
+        32101
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        71630,
+        31728
+      ],
+      "unmerged_proportion": [
+        79393,
+        131072
+      ],
+      "harmonic_lower_bound": [
+        1,
+        18
+      ],
+      "written_random_walk_lower_bound": [
+        12155,
+        65536
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        170432,
+        289876
+      ],
+      "stopped_gap_histogram": {
+        "0": 194755,
+        "1": 7415,
+        "2": 12740,
+        "3": 13238,
+        "4": 10419,
+        "5": 9239,
+        "6": 6147,
+        "7": 4102,
+        "8": 2186,
+        "9": 1048,
+        "10": 509,
+        "11": 204,
+        "12": 76,
+        "13": 39,
+        "14": 16,
+        "15": 7,
+        "16": 3,
+        "18": 1
+      }
+    },
+    {
+      "shortcut_depth": 19,
+      "residue_period": 524288,
+      "stopped_gap_mass_by_initial_parity": [
+        262144,
+        262144
+      ],
+      "stopped_survivors_by_initial_parity": [
+        68504,
+        62590
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        144048,
+        64792
+      ],
+      "unmerged_proportion": [
+        39431,
+        65536
+      ],
+      "harmonic_lower_bound": [
+        1,
+        19
+      ],
+      "written_random_walk_lower_bound": [
+        12155,
+        65536
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        346540,
+        589290
+      ],
+      "stopped_gap_histogram": {
+        "0": 393194,
+        "1": 13589,
+        "2": 23586,
+        "3": 25186,
+        "4": 20287,
+        "5": 18242,
+        "6": 12681,
+        "7": 8468,
+        "8": 4692,
+        "9": 2345,
+        "10": 1198,
+        "11": 474,
+        "12": 193,
+        "13": 89,
+        "14": 35,
+        "15": 19,
+        "16": 6,
+        "17": 3,
+        "19": 1
+      }
+    },
+    {
+      "shortcut_depth": 20,
+      "residue_period": 1048576,
+      "stopped_gap_mass_by_initial_parity": [
+        524288,
+        524288
+      ],
+      "stopped_survivors_by_initial_parity": [
+        133209,
+        122214
+      ],
+      "balanced_coalescence_by_initial_parity": [
+        289565,
+        132078
+      ],
+      "unmerged_proportion": [
+        626933,
+        1048576
+      ],
+      "harmonic_lower_bound": [
+        1,
+        20
+      ],
+      "written_random_walk_lower_bound": [
+        46189,
+        262144
+      ],
+      "unstopped_absolute_gap_mass_by_initial_parity": [
+        704154,
+        1197124
+      ],
+      "stopped_gap_histogram": {
+        "0": 793153,
+        "1": 25031,
+        "2": 43849,
+        "3": 47856,
+        "4": 39518,
+        "5": 35999,
+        "6": 25796,
+        "7": 17523,
+        "8": 9973,
+        "9": 5227,
+        "10": 2667,
+        "11": 1154,
+        "12": 472,
+        "13": 206,
+        "14": 79,
+        "15": 46,
+        "16": 19,
+        "17": 4,
+        "18": 3,
+        "20": 1
+      }
+    }
+  ],
+  "why_the_gap_must_be_stopped": {
+    "depth": 3,
+    "residue": 1,
+    "signed_gaps": [
+      1,
+      0,
+      1
+    ]
+  }
+}

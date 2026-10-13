@@ -1,16 +1,166 @@
 # Collatz project memory
 
-Last updated: 2026-10-12, after completing the external predecessor-density replay and deriving written fixed-target density consequences.
+Last updated: 2026-10-13, after sharper coalescence energy caps and a proof that the cap-plus-tail certificate cannot give bounded energy.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
 modules and all three public theorem audits, with standard axioms only.
-There is no live replay to resume. Upper natural density one of convergence
-would now suffice; it remains unproved. The new fixed-target density
-deductions are written analysis, not new Lean certificates. The preceding
+There is no live external replay to resume. Upper natural density one of
+convergence would now suffice; it remains unproved. A further written
+argument gives decay of target predecessor densities within each fixed
+basin, but does not apply to a divergent forward orbit. Its finite fibre
+and graph inputs have twelve new kernel proofs. The latest written
+argument strengthens predecessor-density convergence to a supremum over
+all targets, including moving targets, using eleven new kernel passage
+lemmas. Uniform convergence does not make moving-target densities small;
+a hypothetical divergent component can still carry positive mass to a
+late target. The analytic density limits and rates remain written,
+not kernel checked. The latest branch audit shows that a divergent orbit
+would have summable unused-branch density ratios. A relative lower bound
+of order 1/log(target) would exclude divergence but is unproved; an
+absolute lower bound of order 1/target is summable by the existing
+packing result and gives no contradiction by this argument. Exact finite
+branch counts passed, without certifying asymptotic ratios. The latest
+comparison-map audit now gives a concrete obstruction to deducing the
+missing relative bound from those general properties alone. Its altered
+odd branch allows half the starts to escape, with an explicit r_a>=1/(2a)
+bound and diffuse first passage. Fourteen kernel theorems verify its
+escaping family. This is not the Collatz map: its odd-parent arithmetic
+and its behavior at multiples of three differ. The preceding
 operator result still leaves decay of the constant starting function open.
 The 128 existing finite-horizon contractions remain that route's full
 certified scope. See the last entry for provenance and the remaining gaps.
+
+The latest actual-Collatz arithmetic gives at most 38 distinct predecessors
+at twelve ordinary steps, attained at target 364, and all-depth bounds.
+Seventeen kernel theorems passed. Its written clock consequence is a
+necessary lower bound about 3.29889 log X for hitting one target from a
+fixed positive fraction of starts through X. It is not a sufficient clock.
+The written density-spectrum argument identifies every positive
+accumulation value of r_a with a divergent component's mass. Uniform
+finite-time approximation with vanishing error remains unproved.
+
+The newest clock result, conditional on the existing WRITTEN first-passage
+mixing premise, gives tau_M(n)/log n -> kappa=3/log(4/3) in natural density,
+approximately 10.42818. Here tau_M is first attainment of the actual global
+minimum; it does not identify that minimum with one. Twenty-two kernel
+theorems check minimum attainment and exact clock transfer, and independent
+finite checks passed. The asymptotic statement is not kernel formalized.
+For each fixed target, clock c log n captures zero limiting density when
+c<kappa and its full predecessor density when c>kappa. The uniform
+truncation defect at c log X tends to the largest component mass below
+kappa and the largest divergent-component mass above it. Neither mass is
+determined; the critical clock is also undetermined. In particular the
+fixed clock 11 log X captures the one-target density p_1. Proving this
+finite-clock proportion tends to one would imply full Collatz via external
+PLD, but p_1=1 remains unproved. Nontrivial cycles and escape remain open.
+
+The newest audit shows why full-period coalescence counts do not supply
+that missing initial-interval estimate. Seven kernel lemmas prove exact
+reflection between the plus and minus shortcut maps and identical
+adjacent weighted coalescence counts at every depth, although the minus
+map has the separate cycle 5,7,10. The earlier fibre bound gives an
+unconditional written limit zero for cycle entry at depth k averaged over
+1..2^k; the conditional logarithmic-clock limit on 1..X remains p_1>0.
+The actual interval occupies a vanishing fraction of its parity period.
+This is a limitation of the tested route, not evidence that p_1=1 or a
+counterexample to Collatz. Fresh builds and exact finite replay passed.
+
+The latest comparison strengthens the earlier altered-map obstruction:
+swapping only O(log X) odd inputs through X preserves even halving, the
+known cycle, allowed odd-image congruences, at most two parents, and
+zero predecessor density at multiples of three. Kernel basin inclusions
+inherit external PLD at every unit target, giving positive lower density
+of both convergence and escape for this DIFFERENT map. A written early
+coupling preserves the conditional large-floor passage estimates and
+fixed-depth parity laws. Twenty main kernel theorem roots passed fresh
+builds. The exact odd-parent values change at the swapped images; the
+actual Collatz conjecture is still unresolved. See the last entry.
+
+The latest actual-map calculation assigns loss W/(3n+1) at each odd
+input and retains weight W*3n/(3n+1). Eighteen main kernel roots check
+finite conservation, affine product identities, and geometric cycle
+repetition. The written packing bound makes infinite remaining weight
+positive exactly on divergent orbits. Conditional written passage
+mixing gives a total-variation limit of the whole loss distribution,
+including an infinity atom d. Its exact mass identity is
+  d + sum_(N positive odd) B_N*D_N/(3N+1) = 1,
+with weighted first-hit means D_N and cycle factors B_N. External PLD
+makes d=0 equivalent to universal eventual periodicity, but d=0 is
+unproved and additional cycles are still allowed. Under the prior
+written clock theorem, the mean remaining weight at c log X tends to
+one for c<3/log(4/3) and to d for larger c. Exact finite clock means,
+including c=11, do not determine d. See the newest entry for scope.
+
+The newest actual-map result proves that the stopped absolute difference
+of adjacent odd counts has mean one over every full parity period, even
+after conditioning on either initial input parity. Twenty-three audited
+kernel roots yield an unmerged fraction at least 1/H at every depth H.
+Thus whole-period balanced-coalescence errors cannot be summable; the
+fair-bit fusion time has infinite mean. A stronger central-binomial
+lower bound and a conditional dyadic criterion for d=0 are written.
+Summability of the ACTUAL infinite-weight refinement changes remains
+unproved and is not disproved by this lower bound on a larger finite-time
+exception set. No external coalescence-density theorem was adopted.
+
+The latest follow-up now proves that the actual eventual-unbalanced
+even-pair fractions B_k are themselves nonsummable, using positive lower
+density of the known basin from the replayed external theorem. It uses
+no natural-passage premise. Eighteen kernel roots prove grade transport,
+a strict pre-arrival contraction, and a three-odd-step cap for balanced
+descendants of one. Written counting shows that uninterrupted balanced
+refinements from any convergent root occupy zero limiting fraction.
+If full Collatz holds, almost every binary path still has infinitely
+many unweighted grade defects, although its infinite weights are all
+zero. Thus the unweighted sufficient criterion has a false premise;
+the actual WEIGHTED refinement criterion remains open. See the last
+entry for the external dependency, finite scope, and verification.
+
+The newest follow-up gives a quantitative unconditional mean bound for
+the auxiliary V: mean(V_T, n<=X) <= (14/3)*X^(-log_2(8/7)) for every
+T>=ceil(log_2 X), and the same bound for V_infinity. Thirteen new kernel
+roots prove the finite affine identities and all-depth moments; the
+source split, real power bound, and limit identification are WRITTEN.
+No external PLD or passage assumption is used for this bound. Auxiliary
+dyadic amplitudes are consequently summable almost surely. The exact
+duality V_T*W_T=(3/4)^a does NOT give an upper bound on the escape weight.
+Under the prior written natural component law and replayed PLD, any
+divergent orbit would force infinite squared dyadic variation of W_infinity
+almost surely. No upper bound proving finite such variation is established.
+Fresh local builds and finite checks through depth 20 passed. Neither
+escape nor other cycles are excluded; see the newest entry for details.
+
+The newest actual-weight audit defines time-matched binary refinements
+H_(s,k)=2^k*W_(s+k)(floor(2^k*x))/floor(2^k*x). Twenty-one kernel roots
+give exact child formulas, reciprocal affine moments, and a fixed-offset
+family of individual jumps >=27/512 at arbitrarily fine levels. A WRITTEN
+tail makes E_s=sum_k integral|H_(s,k+1)-H_(s,k)|^2 finite for each s,
+with E_s<=3s/2+23/4. Exact finite rational checks plus that written tail
+give E_0<1/7 and E_16>1/4: the energies do not contract monotonically.
+The required bounded subsequence as s tends to infinity remains unproved.
+A WRITTEN real-scaling rigidity argument now removes the natural-passage
+premise from the sufficient limiting-energy criterion. Binary stabilization
+of a Collatz-invariant indicator gives a measurable limit invariant under
+both x->2x and x->3x, hence a constant zero-or-one limit and natural density.
+The positive gap of W_infinity converts finite squared variation into
+such stabilization for the divergence indicator. Replayed PLD then excludes
+escape if that finite-energy premise holds. No finite-energy premise is
+established for W_infinity, and other positive cycles remain open.
+
+The latest coalescence refinement improves the WRITTEN all-offset bound
+to E_s <= (28401483/52428800)*s+6 <= 0.542s+6. Seventeen new kernel
+roots give exact source-annulus transport, later equality of refinement
+data, and the cutoff ceil(121s/50); independent direct counts through
+depth twenty supply its constants. The strongest levelwise combination
+of full-period noncoalescence caps and the existing geometric tail has
+an upper-bound certificate that grows at least harmonically (using the
+kernel tail), and at square-root order (using the written walk bound).
+These are NOT lower bounds on E_s. Thus deeper counts alone cannot
+prove bounded energy; the actual weighted contribution of unmerged
+pairs still needs control. The even pair 6,7 first has equal odd counts
+at positive time eleven but never merges at a common clock, and a
+whole residue class has the same finite absorption-without-fusion defect.
+The bounded subsequence and all other full-Collatz gaps remain open.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -2183,3 +2333,1727 @@ is compatible with that bound. Nontrivial cycles also remain open.
 The actual bounded weighted survivor functions remain another route;
 global contraction on the previously studied weighted space is already
 ruled out. No staging, commits, or Git writes were performed.
+
+## 2026-10-12: first-passage atoms and density flow inside a fixed basin
+
+The full proof/disproof goal remains active and unresolved. The preceding
+turn was progress: it completed the external 389-module proof replay and
+added written fixed-target density results. This turn strengthens the
+density argument, without finding a complete proof or counterexample.
+There is no blocker and no live compiler left to poll at the end of this
+entry. The completed verifier session was 88164.
+
+New `docs/PREDECESSOR-DENSITY-FLOW.md` proves, under the written uniform
+first-passage Proposition 4.1 and its early-valuation estimates, that
+
+  for each fixed a>0, sup {r_b : b>R and b reaches a} tends to zero
+  as R tends to infinity.
+
+Here r_b is the already established written natural density of the
+ordinary predecessor basin P_b. The threshold depends on the fixed root
+and finite first-hit paths. It is not a bound uniform over all targets
+or all roots. The proof has three steps:
+
+1. At most 2^(k+1)-1 distinct positive starts can hit any fixed positive
+   target by k shortcut steps. This is now kernel checked for all k and
+   all targets, using an exact list of inverse predecessors. No factor
+   depending on the target's magnitude is present.
+2. For each fixed floor x, F_x(n)=SyracusePass_x(oddpart(n)), including
+   an infinity mark, has a limiting law nu_x for uniform positive starts.
+   The exact identity F_x(n)=F_x(Pass_u(n)) for u>=x allows the same
+   scale telescope. Its error at an odd source scale Y>=x^alpha is
+   O((log Y)^(-c)). On the early-valuation good event at Y=x^alpha,
+   T_x<=n0 and total valuation <=3n0, so entry uses <=3n0 shortcut steps.
+   The finite fibre bound makes every atom of that base passage law
+   O(x^(-c)). Thus max_z nu_x({z})=O((log x)^(-c)), including infinity.
+3. Fix a, choose a large x>=a, and if a is periodic include its whole
+   finite cycle below x. Let Q_x be the finite union of paths from each
+   z<=x that actually reaches a, stopped at its first hit of a. It does
+   not assume that all z reach a. If b in P_a lies above max Q_x, no
+   source reaching b can visit any z<=x before b; otherwise that retained
+   path would contain b. Nor can it visit a before b, since b is outside
+   a's cycle. Therefore P_b is contained in one atom of F_x, namely
+   F_x(b). This gives r_b<=max_z nu_x({z}), proving the fixed-basin limit.
+
+The new limit applies to every simple infinite inverse chain and in
+particular to the doubling ray: r_(2^j a)->0 for each fixed a. This
+removes the explicit remainder from a finite branch partition. For a
+nonperiodic ordinary root,
+
+  r_a = r_(2a) + 1_(a mod 6 = 4) r_((a-1)/3).
+
+For an odd nonperiodic a, telescope along its doubling chain:
+
+  r_a = r_(2^K a) + sum_(1<=k<K, 3 divides 2^k a-1) r_((2^k a-1)/3).
+
+Letting K tend to infinity now proves the countable inverse Syracuse
+flow identity, with no assumed interchange of a density limit and an
+arbitrary infinite union. Nonperiodicity is essential: the ordinary
+root 4 has parents 8 and 1 whose basins overlap (witness start 8), and
+the Syracuse self-parent 1 cannot precede a first hit of 1.
+
+New `lean/BoundedHitFibres.lean` has twelve checked theorems. In addition
+to the finite fibre bound and exact inverse-list membership, it proves
+first-hit uniqueness/recursion, uniqueness of hit times at a nonperiodic
+ordinary root, disjointness of distinct immediate predecessor basins
+there, ordinary predecessor arithmetic, and the one-step decomposition.
+These use only propext, Classical.choice, Quot.sound (some use a subset),
+with no native evaluation, sorry, warnings, or extra axioms in the final
+build. Compiler: the local Lean4.33.1 at commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+
+New `verify_predecessor_flow.py` accepts optional --reuse-build-dir. In
+the completed run it copied three dependency objects from
+`/tmp/collatz-killed-operator-build` only after checking compiler version,
+source/object/log hashes, and successful records. The new module was
+compiled afresh, in an isolated temporary directory. The older cache has
+no compilation command fields, so reused records use null for that field
+rather than inventing executed commands. Default reproduction rebuilds
+all four modules sequentially. No external PLD modules were rebuilt.
+
+The independent Python replay passed these exact finite scopes:
+
+- 288 complete bounded-time fibres: targets 1..32, depths 0..8; 135168
+  forward-simulated sources, using the earlier kernel inequality
+  n<=2^k U^k(n) for a complete source bound.
+- 4096 ordinary trajectories followed through their first repeated
+  state, all ending in the known cycle; 311850 ordinary steps.
+- 47463 terminal halving marks, 1298432 doubling-tail identities,
+  and 491520 finite inverse-branch partitions.
+- 89680 finite-basin first-passage transport checks, using retained
+  first-hit paths at roots 1,5,27 and floors 32,64,128.
+
+Records: `results/predecessor-density-flow/verification.json` and
+`results/predecessor-density-flow/replay.json`, plus four Lean logs.
+The density-law arguments and infinite branch sum are written analysis;
+the finite checks do not prove those limiting statements. PLD is used
+only for positivity and the comparison with a hypothetical divergent
+component, and retains the preceding entry's external trust scope.
+The preceding written-review record's 12 dependency hashes were checked;
+its DENSITY-TO-POINTWISE hash was updated with explicit provenance for
+the appended follow-up link, while Sections 1-5 and their evidence were
+left unchanged. ATTEMPT and README now link the new result.
+
+NEXT: (fixed-basin decay) and (r_(a_j) increasing to lambda>0 along a
+divergent forward orbit) do not contradict one another. Later a_j leave
+every earlier P_(a_J), since a return would create a cycle. Changing the
+root with j loses the fixed-basin threshold. The next density question
+is what additional control on moving targets or conditional first-passage
+laws could bridge that distinction. A weaker statistical reformulation
+alone would not prove p_1=1. Nontrivial cycles and divergent orbits both
+remain unexcluded. No staging, commits, or Git writes were performed.
+
+## 2026-10-12: approximation uniform over every predecessor target
+
+The full proof/disproof goal remains active and unresolved. There is no
+blocker or live compiler to resume. The completed verifier session was
+41536; its final record reports passed at
+2026-10-12T15:52:39.109292+00:00. No positive counterexample was found.
+
+New `docs/UNIFORM-PREDECESSOR-APPROXIMATION.md` proves, conditional on
+the earlier written uniform first-passage estimates, that
+
+  sup_(a>=1) |R_X(a)-r_a| = O((log X)^(-c)),
+  R_X(a) = #{1<=n<=X: n reaches a}/floor(X).
+
+This constructs the limits directly and strengthens the earlier
+fixed-target density statement. The constants are independent of a, so
+targets may vary with X. The result does not assert that r_a is small
+when a varies. It is uniform convergence of the target-indexed function,
+not total variation convergence of whole orbit-value sets.
+
+The exact argument works for any passage predicate. Let F_H(n) be the
+first ordinary odd state <=H, or infinity if no entry occurs. If n
+reaches a, either the landing itself reaches a or F_H(n)=F_H(a). Thus
+for any source law with passage law q,
+
+  0 <= P(n reaches a) - sum_(odd b<=H) q(b) 1_(b reaches a)
+    <= q(F_H(a)) <= maxatom(q).
+
+This includes even and cyclic targets and nonentry. It assumes no
+independence between landing and future behavior. The earlier flow
+note's Section 2 supplies nu_H, with TV error O((log Y)^(-c)) for odd
+source intervals [Y,2Y), Y>=H^alpha, alpha=1.001, and maximum atom
+delta_H=O((log H)^(-c)), including infinity. Choosing H=floor(Y^(1/alpha))
+gives a target-uniform Cauchy estimate for every larger source scale Z.
+Dyadic mixing and initial valuations transfer it to positive sources.
+The initial-halving discrepancy for any single target lies among the
+starts 2^j a and is bounded uniformly by 1+floor(log_2 X) counts.
+
+For each fixed H this also gives the finite-mixture formula
+
+  0 <= r_a - sum_(odd b<=H) nu_H(b) 1_(b reaches a)
+    <= nu_H(F_H(a)) <= delta_H, uniformly in a.
+
+The mixture retains the actual seed orbits. Certifying all seeds up to
+one tested floor gives a bound outside their finite orbit union, but
+does not certify arbitrarily large floors or yield a numerical analytic
+error constant. No general decay along divergent orbits follows.
+
+New `lean/PassageApproximation.lean` imports only CollatzContradiction.
+It constructs a noncomputable first-passage mark and checks eleven
+theorems: first-entry existence and uniqueness; finite/nonentry mark
+characterizations; reachability transitivity; suffix transport; nonentry
+after a hit; landing-hit inclusion; the passage comparison; early-hit
+mark equality; and its odd-floor specialization. Standard axioms only
+(propext, Classical.choice, Quot.sound, or subsets), without sorry,
+native evaluation, extra axioms, or warnings. The analytic convergence
+and rates are not Lean theorems. The noncomputable mark does not decide
+whether an arbitrary orbit ever enters.
+
+New `verify_uniform_predecessor_approximation.py` compiled the new module
+afresh with Lean4.33.1, commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6, in an isolated temporary
+directory. Only CollatzContradiction was reused from the validated
+`/tmp/collatz-killed-operator-build` cache, checking compiler version and
+source, object, and log hashes. Default reproduction builds both modules
+sequentially. No external PLD modules were rebuilt.
+
+The independent exact Python replay followed all 2048 original source
+orbits through their first repeat, obtaining a closed universe of 4457
+reachable targets (maximum value 1276936). It checked source cutoffs
+32,128,512,2048 and ten predicates, including empty and partial-entry
+sets. Across those 40 population/predicate comparisons it passed:
+
+- 17828 initial-halving target bounds;
+- 27200 landing-orbit inclusion checks;
+- 1469630 early-hit passage-mark equalities;
+- 178280 target histogram comparisons.
+
+Both finite-population target vectors vanish outside the complete closed
+universe, so those comparisons cover every possible target for the
+represented populations. This is a finite replay, not an asymptotic or
+universal convergence certificate. Records and two Lean logs are under
+`results/uniform-predecessor-approximation/`; the verification record
+has 11 dependency hashes. It also revalidated all 14 hashes in the
+preceding flow record and all 12 in the density written-review record.
+README and ATTEMPT link the new result; prior analytic notes and their
+records were not modified in this turn.
+
+NEXT: uniformity alone does not bridge the remaining gap. In a hypothetical
+divergent component of density lambda>0, choose a forward target a_(j_X)
+beyond all meeting points of its finitely many starts <=X and with
+a_(j_X)>X. Then R_X(a_(j_X)) equals that component's proportion up to X,
+so both it and r_(a_(j_X)) can tend to lambda. First-passage uniformity
+therefore supplies no smallness at such targets. A separate estimate
+must rule out the possible divergent seed orbits in the finite mixture,
+or establish r_1=p_1=1; nontrivial cycles also remain unexcluded.
+No staging, commits, or Git writes were performed.
+
+## 2026-10-12: unused branch mass and the reciprocal-density barrier
+
+The full proof/disproof goal remains active and unresolved. The previous
+turn was progress: its passage comparison and uniform-density deduction
+were saved and verified within their stated scopes. This turn examined
+whether the inverse density flow could force mass toward a finite cycle.
+No complete proof, positive counterexample, or external blocker was found.
+
+New `docs/DENSITY-BRANCH-LEAKAGE.md` makes the remaining density comparison
+precise. On a hypothetical divergent Syracuse orbit b_j, discard the first
+state if needed so that all b_j are odd and not divisible by three. Put
+v_j=3b_j+1 and u_j=2v_j. The exact nonperiodic parent partition gives
+r_(v_j)=r_(b_j)+r_(u_j); the following halving segment can add further
+branches, so r_(b_(j+1))>=r_(b_j)+r_(u_j). All these densities are positive
+by the already replayed external PLD theorem. Since r_(b_j) increases to
+the component density lambda, the written consequences are
+
+  sum_j r_(u_j) <= lambda-r_(b_0),
+  sum_j rho_j <= (lambda-r_(b_0))/r_(b_0),
+  product_(j<N)(1+rho_j) <= lambda/r_(b_0),
+  rho_j = r_(u_j)/r_(b_j).
+
+Thus a divergent component would require summable relative increases.
+A bound rho(b)>=kappa/(1+log b), for all sufficiently large nonperiodic
+odd b not divisible by three, would exclude divergence: Syr(b)<=2b
+gives log b_j<=log b_0+j log 2, making those contributions nonsummable.
+The bound is not proved. In particular divergence would force
+liminf_j (1+log b_j) rho_j=0. This condition does not address cycles,
+where the nonperiodic parent partition fails.
+
+The finite-path packing bound supplies an obstruction to a tempting
+weaker route. With sigma=H_2(log_3 2)<19/20 and s>sigma,
+
+  sum_(j: b_j>=R) b_j^(-s)
+    <= 256 R^(sigma-s)/(1-2^(sigma-s))  (integer R>=1).
+
+This is a dyadic sum of the existing bound for distinct orbit values,
+valid on any hypothetical divergent orbit. In particular sum_j 1/u_j is
+finite. Even granting a target-uniform absolute lower bound r_a>=c/a
+would therefore give only summable lower contributions at unused branches.
+A scalar sequence d_(j+1)=d_j+c/u_j stays bounded on a sufficiently late
+tail, illustrating that these inequalities alone do not contradict one
+another. That sequence is not an actual Collatz density construction.
+The same summability issue affects relative polynomial bounds with an
+exponent s>sigma. A nonsummable cumulative relative estimate is needed.
+
+A current primary-source search found and inspected Renato Augusto
+Tavares, arXiv:2608.27617v1 (27 August 2026),
+`https://arxiv.org/html/2608.27617`, on Wirsching's predecessor-density
+program. It describes the c/a lower bound as the program's target and
+leaves its condition (star 3), approached by Conjecture 2, open. Its new
+theorems were not adopted as inputs or replayed here. Even the proposed
+stronger lower bound would not close the above summation argument.
+The existing written joint-mixing adaptation was also reread; no new
+gap or new verification claim resulted, and those sources were unchanged.
+
+New `verify_density_branch_leakage.py` builds the complete ordinary
+forward graph of sources 1..524288, then aggregates distinct-source
+weights through its acyclic part. The only remaining cycle is {1,2,4}.
+The graph contains 1137753 vertices, maximum value 24648077896. A separate
+direct replay for all starts 1..4096 took 311850 ordinary steps and
+matched all 1137753 graph target counts, including zeros. The exact
+parent partition was checked for all 1137750 noncycle vertices at
+cutoffs 4096,8192,65536,524288: 4551000 checks in total.
+
+The fixed example b=3077, v=9232, u=18464 has counts at X=524288:
+206048 used-branch sources, 39 unused-branch sources, and 206088 sources
+reaching v (including v itself). The exact finite ratio is 39/206048,
+below 1/1000. At X=65536 the two branch counts are 25511 and 6; at
+X=8192 they are 3263 and 0. The example converges. These observations
+show finite branch imbalance, not an asymptotic upper bound on r_u/r_b,
+nor a disproof of every possible logarithmic balance constant.
+
+Verifier session 80826 finished successfully; the final record is
+`results/density-branch-leakage/verification.json`, dated
+2026-10-12T16:18:31.609227+00:00, with 11 dependency hashes. It revalidated
+the preceding flow, uniform approximation, and finite-path packing
+records (14,11,12 hashes respectively). No new Lean theorem or Lean
+compilation is claimed. The old nonperiodic partition supplies the
+kernel input; density limits, the logarithmic criterion, and the
+summability argument remain written deductions. There is no live
+process to resume. README and ATTEMPT now link this audit.
+
+NEXT: an absolute predecessor-density improvement alone is not the
+missing step. Investigate arithmetic or conditional information that
+forces a nonsummable total of relative unused-branch masses, or a
+different direct route to r_1=1. Do not replace actual natural-density
+ratios by the recorded finite ratios without error bounds. Divergent
+orbits and nontrivial positive cycles remain unexcluded. No staging,
+commits, or Git writes were performed.
+
+## 2026-10-12: an explicit density countermodel with ordinary even halving
+
+The full Collatz proof/disproof goal remains active and unresolved. The
+previous branch-density turn was progress, and this turn tests which
+properties can force its missing relative inequality. No actual Collatz
+counterexample, complete proof, or external blocker was found. There is
+no live process to resume; verifier session 92289 finished successfully.
+
+New `docs/DENSITY-COUNTERMODEL.md` gives an explicitly DIFFERENT map F.
+Its even branch is n/2, and F(1)=4, F(4)=2, F(2)=1. Its odd branch is
+changed; for example F(3)=14, whereas ordinary Collatz C(3)=10. Keep
+this distinction prominent. This is a counterexample only to a proposed
+deduction from general density/passage/packing properties.
+
+Odd states are g_m=4m-3 and d_m=4m-1. For non-power m, their odd index
+map removes the highest binary one, m -> m-2^floor(log_2 m). At powers,
+the g-index halves toward one, whereas the d-index doubles forever.
+Ordinary odd steps insert powers of two so that every target still has
+at most one odd parent in addition to its even parent. The exact clocks
+and special g-index-one handling are in the source and note.
+
+Every start whose odd part is 1 mod 4 reaches the known cycle; every
+start whose odd part is 3 mod 4 escapes. Both sets have density 1/2.
+The escaping spine b_k=4*2^k-1 obeys F(b_k)=2*b_(k+1) and F^2(b_k)=b_(k+1).
+The minimum law is p_1=1/2 and p_(b_k)=2^(-k-2), with no other atoms.
+
+The written predecessor densities are explicit. For odd targets:
+
+  r_(g_(2^k)) = 2^(-k-1),
+  r_(d_(2^k)) = 1/2 - 2^(-k-2),
+  r_(4m-c) = 2^(-k-2) for 2^k < m < 2^(k+1), c in {1,3}.
+
+For a=2^v q with q odd and q's index in binary level k:
+
+  r_(2q)=r_q; r_4=1/2;
+  r_(2^v)=2^(1-v) for v>=3;
+  r_(2^v q)=2^(-k-v) for v>=2 and q!=1.
+
+These come from single residue classes or their complements among odd
+source indices, with at most one excluded source. The even-target formulas
+use a residue characterization of all possible incoming odd parents,
+not an assumed exchange of an infinite union with a density limit.
+Conditioning on initial valuations gives the same natural densities.
+In particular every target has r_a>=1/(2a), and the target-uniform
+finite-count error is <=8*(1+floor(log_2 X))/X.
+
+First odd passage below H>=7 is explicitly periodic among odd sources
+above H. For type c, use h=floor((H+c)/4), q=2^floor(log_2 h), Q=2q,
+and z=m mod Q. A nonzero residue lands at z if z<=h, else z-q; zero
+lands at q in the g component and never enters in the d component.
+Convert indices back with 4z-c. A period P<=4H gives a limiting law
+with maximum atom <=8/H, including infinity, and TV error <=4H/Y for
+uniform odd sources in integer intervals [Y,2Y), Y>H. Full positive
+sources have the same limit because even halving changes no passage mark.
+This is stronger stabilisation than the earlier written Collatz input,
+yet escape has density 1/2 in this comparison map.
+
+Every orbit has at most ten distinct values per dyadic band: the odd
+levels strictly descend before the terminal cycle or escaping spine,
+each ordinary descent spike is <4 times its odd start, and a halving
+block contributes at most one even value per band. The explicit spine
+adds at most two values per band. Thus an arbitrary length-L integer
+interval contains <=10*(log_2 L+2) distinct orbit values. Also r_a<=8/a
+outside the escaping odd spine and its doubled targets; only finitely
+many of those can reach a fixed target. This proves decay inside each
+fixed predecessor basin while r_(b_k) increases to 1/2 along escape.
+
+At merge 2*b_(k+1), the unused even parent is u_k=4*b_(k+1). Its density
+is 2^(-k-3), and r_(u_k)/r_(b_k)=1/(b_k-1). Hence even the global lower
+bound r_a>=1/(2a) coexists with summable relative branch contributions
+and failure of any positive logarithmic relative lower bound along this
+spine. This map does not preserve the actual Collatz odd-parent congruence
+or r_a=0 at multiples of three, so it is not a countermodel to all of the
+project's arithmetic statements.
+
+New `lean/DensityCountermodel.lean` has fourteen kernel theorems: even
+halving, the three known cycle edges, a positive spine bound, its one-
+and two-step identities, iteration addition and both parity formulas,
+nonarrival at one, a power lower bound, unboundedness, and the explicit
+disagreement with C at 3. All report only standard axioms (or none).
+No native evaluation, sorry, warnings, or extra axioms remain. The
+density, passage, orbit classification, parent classification, and packing
+arguments are written, not claimed as additional kernel proofs.
+
+New `verify_density_countermodel.py` compiled the module afresh using
+Lean4.33.1, compiler commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Only CollatzContradiction was reused after checking the cached compiler
+and source/object/log hashes. Default reproduction builds both modules
+sequentially. The finite replay passed:
+
+- 512 inverse-parent targets and 393984 forward source checks;
+- 8192 classified sources and 8437760 exact target-membership comparisons;
+- 8192 rational density-formula targets, with parent flow checked at
+  the 8189 noncycle targets;
+- 129 explicit spine parameters;
+- 504 first-passage residue classes and 1152 interval spot checks;
+- the recorded rational finite-density and total-variation bounds.
+
+The direct traces terminate at the known cycle or a symbolic escaping
+tail proved by the new Lean module. No timeout is treated as escape or
+nonentry. Records and two Lean logs are under `results/density-countermodel/`.
+The final record passed at 2026-10-12T16:53:27.940017+00:00 and has nine
+dependency hashes. A notation-only accidental comma in the earlier
+branch note's subscript was removed; that record and the new record
+track the corresponding hash updates with explicit provenance. No
+mathematical statement or executable check changed in that correction.
+
+NEXT: focus on the actual 3n+1 odd-parent arithmetic, including the
+zero-density multiples-of-three property and unit preservation after
+odd steps, rather than deriving the relative inequality from the general
+properties refuted here. The comparison-map formulas cannot be imported
+as formulas for actual Collatz densities. Both divergent ordinary Collatz
+orbits and nontrivial cycles remain unexcluded. No staging, commits, or
+Git writes were performed.
+
+## 2026-10-12: actual inverse congruences and the finite-clock gap
+
+The follow-up examined the actual odd-parent restrictions and the sibling
+map b -> 4b+1. No relative density lower bound was obtained. Smaller-source
+coalescence and bidirectional ranks were checked against the existing
+sections 9–14 and 20–24 of APERIODIC-ATTEMPT; do not restart the excluded
+fixed-horizon or finite-affine searches. No new external theorem was
+adopted from this turn's literature searches.
+
+New files:
+
+- `docs/DENSITY-TIME-TRUNCATION.md`
+- `lean/DensityTimeTruncation.lean`
+- `verify_density_time_truncation.py`
+- `results/density-time-truncation/{verification,replay}.json` and two Lean logs.
+
+For ordinary C, the exact two-step parents of a are 4a, and at most one
+additional source: (2a-1)/3 if a%3=2, or 2*((a-1)/3) if a%6=4.
+These optional cases are mutually exclusive. The recursive inverse-list
+length f_k(a), at time 2k, is periodic modulo 2*3^k. Under a shift by
+2*3^k*q, its primary child shifts by 2*3^(k-1)*(12q), and its optional
+child by 2*3^(k-1)*(2q). This supports the kernel induction.
+
+Kernel evaluation of all 1458 residues proves f_6(a)<=38 for every a.
+The target 364 attains 38 with a separately checked duplicate-free list.
+Composition gives, for every k and target a,
+  # {n : C^(2k)(n)=a} <= 2^(k mod 6) * 38^(k/6).
+The exact formal cardinality statement bounds every finite distinct
+source list; the inverse enumeration supplies a finite cover. Seventeen
+kernel theorems passed with only standard axioms. The finite certificates
+use `decide`, not `native_decide`. No added axiom or admitted proof.
+
+Written clock corollary: at j=12q+s, 0<=s<12, the exact-time fibre has
+at most 2^ceil(s/2)*38^q sources. Summing over j<=T gives fewer than
+195*38^(T/12) sources reaching one target by T, uniformly in the target.
+A fraction p>0 among starts through X therefore requires
+  T >= (12/log 38)*log(p*X/195),
+with coefficient approximately 3.29889093291 for the natural logarithm.
+This is a necessary lower bound, not a sufficient time to converge or
+reach a growing set. Improving the finite block maximum alone would only
+improve this lower bound; it would not solve the missing termination step.
+
+The new written density result uses the previously established written
+uniform target approximation delta_X=sup_a|R_X(a)-r_a| -> 0, the written
+component law, and external PLD positivity. For epsilon>0 choose delta_X
+<epsilon. Then every target with r_a>=epsilon lies on one of the finitely
+many complete forward orbits of starts 1..X. Outside finitely many prefix
+values these form finitely many divergent tails; cyclic parts are finite.
+On each divergent tail r_a tends to its component mass lambda_C. Hence
+the positive accumulation values of r_a as a->infinity are exactly the
+divergent component masses. In particular,
+  lim_A sup_(a>A) r_a = lambda_div,
+where lambda_div is the largest divergent component density, or zero
+if none exist. Positivity and summability of all component masses make
+a nonzero supremum a maximum. Global r_a -> 0 would exclude divergence
+but allow other cycles. It has not been proved.
+
+Let R_(X,T) count sources hitting a by time T, and
+Delta_X(T)=sup_a(R_X(a)-R_(X,T)(a)). At fixed X, this defect is eventually
+exactly d_X, the largest sampled fraction in one divergent component.
+The lower bound holds for EVERY finite T: a late common target beyond
+all sampled T-prefixes receives every source from that component.
+For the upper bound, eventually the finite orbit sets of all sampled
+cyclic sources have been covered. A missed target then belongs to just
+one divergent component. The threshold is not supplied as a usable bound.
+
+Thus the two iterated limits are
+  lim_X lim_T Delta_X(T) = lambda_div,
+  lim_T lim_X Delta_X(T) = lambda_* = max_C lambda_C.
+For fixed T, the finite-fibre bound makes sup_a R_(X,T)(a) -> 0,
+which proves the second equality. If full Collatz were true, the two
+limits would be 0 and 1. A clock below (1-eta)*(12/log38)*log X leaves
+defect tending to lambda_*. Existence of ANY clock with Delta_X(T(X))->0
+is equivalent to no divergent positive orbit under the density inputs
+and PLD. This is not a construction of that clock or a proof of its
+existence. It does not exclude nontrivial cycles.
+
+The verifier passed at 2026-10-12T17:26:43.837589+00:00, with thirteen
+artifact/dependency hashes. It validated eleven hashes from the uniform
+predecessor record and twelve from the written density record. Only the
+CollatzContradiction dependency was reused after matching compiler and
+source/object/log hashes; the new module was compiled afresh in 7.51s.
+The compiler is the pinned Lean 4.33.1, commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. The replay passed:
+
+- 2184 residue fibres by ordinary one-step inversion, 28632 source entries;
+- 546 residue lifts, including quotients above 2^65;
+- 455 complete forward fibres at roots 0..64, times 0,2,...,12;
+- 349511 forward source enumerations, with 3961386 ordinary steps;
+- 95 all-depth composition checks through 36 ordinary steps;
+- 4096 complete known-cycle paths, with 311850 distinct path entries
+  counted separately per source;
+- 93224 target comparisons across 24 finite-clock populations.
+
+The sample cutoffs are 256,1024,4096 and their complete orbit-cover
+times are 127,178,237. Their eventual defect is zero; no divergent sample
+is asserted. The density limits, the spectrum, and the interchange-of-
+limits analysis remain WRITTEN, not Lean theorems. The external PLD
+source was not rebuilt. No current verifier or Lean process is live.
+
+NEXT: the remaining task needs an upper estimate on the mass persisting
+beyond a finite clock, or a relative unused-branch estimate, or a new
+arithmetic argument. The target-uniform density limit alone supplies
+neither; interpreting its finite source sample as finite-time support
+would already assume away divergence. Nontrivial cycles remain a second
+unresolved case. The full goal stays active. No Git writes were made.
+
+## 2026-10-12: a typical logarithmic clock for the actual global minimum
+
+The follow-up retained passage times while telescoping the existing
+WRITTEN natural-density passage laws. It gives a new written consequence
+conditional on the same unformalized Proposition 4.1, not an independent
+validation of that proposition and not a proof of Collatz. No novelty is
+claimed. New files are:
+
+- `docs/CLOCKED-MINIMUM.md`
+- `lean/ClockedMinimum.lean`
+- `verify_clocked_minimum.py`
+- `results/clocked-minimum/{verification,replay}.json` and two Lean logs.
+
+For each positive n, M(n)=min_t C^t(n) exists and is attained at some
+finite time tau_M(n), even if n diverges afterward. Every finite population
+therefore has a finite common minimum-attainment clock T_B. Its existence
+uses well-ordering, not convergence; no computable bound is supplied.
+First ODD passage is a strict record low in the ordinary path, so entry
+at time i with landing b gives M(n)=M(b), tau_M(n)=i+tau_M(b). Do not
+claim that every previous ordinary state exceeds the floor: at source
+85 and floor 31, odd landing 1 occurs at time 9, but even 16 is already below
+the floor at time 5. Those earlier values still exceed the landing.
+
+The first version of the argument used n0=floor(log x/(10 log2)), the
+existing entry bound by n0 Syracuse steps, and the upper valuation tail
+S_n0 <=(201/100)n0 outside a power-small event. Its Chernoff certificate
+is the exact inequality
+  101^100 * 201^201 < 100^100 * 202^201.
+With r=202/201, the tail is at most q^(n0/100), where q is the ratio of
+the two sides. Ordinary passage time is at most
+L(x)=301 log x/(1000 log2). A test on the landing's remaining minimum
+time uses g(infinity)=0, with source nonentry already charged to the
+exceptional event. Nonentry is NOT inferred to imply a late minimum.
+
+For alpha=1001/1000, descend Y_i=Y^(alpha^-i), shared floors
+x_i=Y^(alpha^(-i-2)), until Y_J in [B,B^alpha). Clock sums give
+E(Y,K log Y+T_B) <= C (log B)^(-c), where
+  K=301000/(1001 log2)=433.817389917660... <435.
+The rational checks use log2>53056/76545>693/1000. This proves the
+coarse 435 log n upper clock in natural density. The later sharper
+argument in Section 6 retains the clock spent by BOTH sources:
+
+Put d=log(4/3), kappa=3/d=10.428178490346623.... For each fixed eta>0,
+the ordinary first odd passage time from U_y to floor x is within
+eta log x of kappa log(y/x), except with probability O_eta(x^-c_eta),
+uniformly for y in [x^alpha,x^(alpha^2)]. Tao's Proposition 1.9 and
+Lemma 2.2 were rechecked at https://arxiv.org/html/1909.03562v7.
+Uniform residues mod 2^(3n0) give the required valuation law; a union
+of Chernoff bounds gives |S_j-2j|<=h log x for every j<=n0 outside
+a power-small event. Until first Syracuse entry k, exact logarithms give
+  log N_j = log n - d*j - (S_j-2j)*log2 + e_j,
+  0<=e_j<=j/(3x),
+because all previous ODD states exceed x. Compare j=k and k-1 to
+bound k, then use ordinary time k+S_k. Choose h in terms of eta.
+No stochastic assertion after this first passage is needed.
+
+Couple landing marks using their TV distance, then lift to full source
+marginals by conditional distributions given each mark. When marks
+match and both clocks are good,
+  tau_M(n)-tau_M(m)=I_x(n)-I_x(m),
+so centered times tau_M(U_y)-kappa log y and tau_M(U_z)-kappa log z
+differ by at most 2 eta log x. No independence or new joint clock/landing
+mixing claim is used. For D_y(w)=P(|tau_M(U_y)-kappa log y|>w), this gives
+  D_y(w+2 eta log x)<=D_z(w)+C_eta(log x)^(-c).
+At the final scale the centered times are bounded by the finite constant
+W_B=T_B+kappa*alpha*log B. Summing clocks gives
+  D_Y(W_B+2 eta log Y/(alpha*(alpha-1)))<=C_eta(log B)^(-c).
+Fix eta sufficiently small for a requested epsilon, then let Y->infinity
+first and B->infinity second. Odd dyadic decomposition and the initial
+even-halving identity prove the written conclusion
+  #{2<=n<=X: |tau_M(n)/log n-kappa|>epsilon}=o(X).
+The initial even valuation a contributes only the fixed centered shift
+a*(1-kappa log2); truncate large a before taking the density limit.
+
+For a fixed positive target a, first hitting time tau_a on its actual
+predecessors differs from tau_M by bounded constants depending on a:
+  tau_M(n)-tau_M(a) <= tau_a(n) <= tau_M(n)+V_a.
+Here V_a is the largest first hitting time of a from the finitely many
+m<=a that actually reach it. If a is visited before the minimum the upper
+bound is immediate; otherwise begin at that minimum. Thus a fixed target's
+density captured by c log n, or the population clock c log X, tends to
+zero for 0<=c<kappa and to r_a for c>kappa. Finite target profiles follow.
+The case c=kappa and an effective convergence rate are NOT determined.
+
+For Delta_X(T)=sup_a(R_X(a)-R_(X,T)(a)), the written conclusion is now
+  Delta_X(floor(c log X)) -> lambda_*   if 0<=c<kappa,
+  Delta_X(floor(c log X)) -> lambda_div if c>kappa.
+Above kappa, choose an intermediate minimum clock and cover the finitely
+many cyclic tails from minima<=B. Divergent targets receive at most the
+largest sampled divergent-component fraction d_X, and a late common
+target always gives the lower bound d_X. Below kappa, each FIXED target's
+clocked proportion tends to zero; choose fixed targets with r_a arbitrarily
+close to lambda_*, and use sup_a R_X(a)->lambda_* for the upper bound.
+This avoids claiming a uniform vanishing bound on clocked proportions.
+
+Since log(4/3)>2/7, kappa<10.5<11. Hence the computable finite-clock
+proportion of starts through X reaching 1 by floor(11 log X) tends to p_1.
+External PLD makes full Collatz equivalent to this specific limit being 1.
+It remains unknown: a typical minimum clock does not force the minimum
+to be 1, and the optimal uniform defect may still be lambda_div>0.
+
+The Lean module has 22 kernel theorems, including minimum existence,
+finite-population clocks, strict record entry, exact first-minimum suffix
+transport, uniqueness, and the equality s+j=t+i for two sources meeting
+at record times i,j with first minimum times s,t. It also proves finite
+minimum-time equivalence with hitting 1 for an ALREADY CONVERGENT start.
+The analytic concentration, real logarithms, infinite sums, and all density
+limits remain WRITTEN. Only standard axioms or none are reported; no
+native evaluation, sorry, warnings, or extra axioms were introduced.
+
+Final verification passed at 2026-10-12T18:11:02.855342+00:00. The new
+module compiled afresh in 1.541s with pinned Lean 4.33.1, compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Only CollatzContradiction was
+reused after validating compiler/source/object/log hashes. The manifest
+has 13 artifact/dependency hashes, all revalidated, and validates 13 prior
+time-truncation hashes and 12 prior written-density hashes. Finite replay:
+
+- 8192 complete known-cycle trajectories, with 684579 distinct path entries
+  counted separately per source;
+- 57344 first-record/minimum-time checks and 57344 coupled clock checks;
+- 436408 target-before-or-after comparisons;
+- 480 exact one-sided and 640 exact centered probability inequalities;
+- 129 rational geometric clock sums and 771 ordinary budget comparisons;
+- 8192 nonentry marks at the empty floor 0, not inferred from timeouts.
+
+The exact finite maximum minimum times at cutoffs 64, 256, 1024, 4096, 8192
+are 112, 127, 178, 237, 261; all those sources reach the known cycle. These
+finite data do not certify an asymptotic error, rate, or divergent orbit.
+The external PLD source was not rebuilt. The final verifier exited 0;
+there is no live build to resume. README and ATTEMPT now link the result.
+
+NEXT: the finite clock is now concrete, but its limiting convergence
+fraction p_1 remains unidentified. Further work must constrain component
+mass or use new 3n+1 arithmetic; merely improving the logarithmic time
+coefficient, or treating attainment of a minimum as convergence to 1,
+cannot settle the goal. Nontrivial cycles remain a separate obstruction
+when studying divergence alone. The full goal stays active. No staging,
+commits, or Git writes were performed.
+
+## 2026-10-12: reflected coalescence and the actual source interval
+
+The preceding clock turn is classified as progress: it supplied a
+conditional written typical minimum clock and 22 exact kernel lemmas,
+while leaving the convergence density p_1 unknown. This turn tested
+whether complete-period adjacent coalescence could constrain that mass.
+It found an exact limitation of the proposed statistic, not the missing
+density estimate. The full Collatz goal remains active and unresolved.
+
+New artifacts:
+
+- docs/PREFIX-COALESCENCE-AUDIT.md
+- lean/ReflectedCoalescence.lean
+- verify_prefix_coalescence.py
+- results/prefix-coalescence/verification.json and replay.json
+- results/prefix-coalescence/CollatzAffine.log and ReflectedCoalescence.log
+
+Let U_+ be the shortcut map and U_- its odd-offset-minus counterpart;
+both halve even inputs and fix zero. Let w count odd inputs in k steps.
+The kernel induction proves, whenever n+m=2^k*q,
+  U_-^k(n)+U_+^k(m)=3^(w_-(k,n))*q,
+  w_-(k,n)=w_+(k,m).
+The current states have equal parity until the remaining factor of two
+is exhausted, and the odd +/-1 offsets cancel in their sum. Specializing
+to n=r, m=2^k-r gives reflection of endpoints and odd counts on the full
+residue interval. The bijection r -> 2^k-1-r therefore identifies the
+adjacent weighted coalescence masks of the two maps at EVERY depth.
+Both endpoint agreement and equal odd counts are required for the
+all-progression identity supplied by CollatzAffine.affine.
+
+The kernel also proves that U_- traps 5 in the cycle 5,7,10 and never
+reaches 1, whereas U_+^4(5)=1. Identical whole-period coalescence counts
+alone do not select the basin containing one. This does not rule out
+all coalescence methods and does not transfer external plus-map PLD to
+the minus map. The counts through k=20 match OEIS A398792, which already
+records the sign symmetry; no novelty is claimed. Primary comparison:
+https://oeis.org/A398792. The first twenty counts are
+  0,0,1,3,8,18,39,82,170,351,721,1476,3012,6130,12450,25241,
+  51105,103358,208840,421643.
+
+For F_X(k)=X^-1 #{1<=n<=X: U_+^k(n) in {1,2}}, every shortcut step
+uses at most two ordinary steps. The earlier ordinary finite-hit bound
+<195*38^(T/12) per target therefore implies the WRITTEN unconditional
+bound
+  F_(2^(6q))(6q) <= 390*(19/32)^q -> 0.
+The same argument extends to every k=6q+s, 0<=s<6, with an absolute
+constant factor. This counting consequence of a previous kernel bound
+is not a new Lean theorem about real limits.
+
+In contrast, the preceding WRITTEN density and clock arguments give
+  F_X(ceil(11 log X)) -> p_1 > 0.
+Sandwich ordinary first hits of 1 by floor(11 log X) below this shortcut
+cycle-entry fraction, and eventual hits of 1 above it; positivity uses
+external PLD. The parity period at this clock is between
+X^(11 log2) and 2*X^(11 log2), so the actual source interval occupies
+Theta(X^(1-11 log2)), with exponent approximately -6.62462. Averaging over
+that whole period does not estimate the much shorter initial interval.
+The required estimate remains
+  #{n<=X: U_+^ceil(11 log X)(n)>2}=o(X).
+Together with existing inputs it would settle Collatz, but this turn
+does not prove it. No existence of a divergent orbit is inferred.
+
+Fresh verification passed at 2026-10-12T18:45:01.853783+00:00 with
+pinned Lean 4.33.1, compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. CollatzAffine compiled afresh
+in 1.840s and ReflectedCoalescence in 0.439s. All seven new theorem
+reports use standard axioms or none, with no native evaluation, sorry,
+warnings, or extra axioms. The final record contains 12 artifact hashes,
+all independently revalidated, and validates 13 hashes from each of the
+clocked-minimum and time-truncation records. The verifier exited 0;
+there is no live build or verification job to resume.
+
+Independent exact finite replay checked:
+
+- 2097170 reflected endpoint/odd-count identities;
+- 2097150 reflected adjacent mask comparisons, through depth 20;
+- ordinary first-one times for starts through 65536, with 142216 stored
+  time rows checked by the exact step and strict decrement;
+- shortcut first-{1,2} times for those starts, with 104146 such rows;
+- independent direct trajectories for 4096 starts in both maps,
+  totaling 307751 ordinary and 201676 shortcut steps;
+- clocks at thirteen populations X=2^j, j=4..16, decided using exact
+  rational upper/lower bounds on log 2 rather than floating point.
+
+At X=65536, the ordinary floor clock is 121 and captures 41607 sources;
+the shortcut ceiling clock is 122 and captures 62444. The largest entry
+times in that finite interval are respectively 339 and 213. These are
+finite known-cycle data, not certified asymptotic errors or rates.
+
+The external PLD explicit coefficient construction was read locally:
+b=2^80, choose a large target-dependent seed r>=16^b, m=132*r*C+1,
+eta=9*(2/3)/(16*3^m), and c_a=eta/(32*r). It supplies no established
+relative sibling-density estimate. No external source was rebuilt.
+The public natural-density page advertises a 599-file Lean package at
+https://www.proofatlas.ai/formalizations/natural-density-log-time-collatz/.
+That package was NOT downloaded, replayed, or adopted. Our passage
+premise and analytic consequences remain explicitly WRITTEN.
+
+NEXT: retain the initial-interval location and actual 3n+1 arithmetic
+when seeking control of p_1 or component masses. Do not replace the
+needed initial-interval estimate by a full parity-period average, or
+infer a density zero-one law from 2-adic Haar ergodicity. Neither this
+audit nor the known coalescence sequence establishes density one.
+README and ATTEMPT link the audit and its reproduction command. No
+staging, commits, or Git writes were performed.
+
+## 2026-10-12: sparse odd-output swaps retain the density inputs
+
+The preceding coalescence turn is classified as progress: seven kernel
+lemmas and exact finite data ruled out a specific inference from full
+parity periods to the needed source interval. This turn tried to derive
+the missing relative branch bound using actual inverse congruences.
+The new evidence is a stronger comparison map: the residue restrictions,
+unit-target positivity, zero density at multiples of three, and the
+existing passage inputs still do not force convergence. The exact odd
+parent formula at EVERY target remains an essential available distinction.
+The full goal is active, with neither a proof nor a counterexample for C.
+
+New artifacts:
+
+- docs/SPARSE-COLLATZ-PERTURBATION.md
+- lean/SparseCollatzPerturbation.lean
+- verify_sparse_collatz_perturbation.py
+- results/sparse-collatz-perturbation/verification.json and replay.json
+- results/sparse-collatz-perturbation/CollatzContradiction.log and
+  SparseCollatzPerturbation.log
+
+Define A_j=(4^(3j+8)-1)/3, so A_0=21845 and A_(j+1)=64*A_j+21.
+Let B_j=(2*A_(j+1)-1)/3; B_0=932067. We have A_j=5 mod12,
+B_j=3 mod4, and A_j<B_j<A_(j+1). For t>=0, let pi_t exchange
+A_j and B_j for j>=t and fix everything else. The altered map is
+F_t(n)=C(pi_t(n)). Its changed input set has at most
+2*(1+floor(log_64 X)) members through X. It agrees with C below A_t.
+The Lean definition uses classical choice of a unique index; a finite
+geometric search computes it, separately checked in Python.
+
+The ordinary formulas are F_t(A_j)=2*A_(j+1), F_t(B_j)=4^(3j+8).
+Even halving and 1,4,2 remain unchanged. The kernel proves
+  F_t^(2k)(A_t)=A_(t+k),
+  F_t^(2k+1)(A_t)=2*A_(t+k+1),
+and never-one for this path or any source that reaches A_t. The displayed
+values tend to infinity. By contrast C(A_t)=4^(3t+8), so A_t itself
+is an explicitly convergent actual-Collatz start. This is NOT a positive
+counterexample to C. The F_0 replay preserves every checked trajectory
+from 1..64, whose largest ordinary state is 9232<A_0. Any prescribed
+finite collection of trajectories is preserved by choosing a larger t.
+
+The exact inverse formula, also kernel checked, is
+  F_t(n)=a iff n=2a OR (a=4 mod6 AND n=pi_t((a-1)/3)).
+Hence the allowed ordinary odd images, their uniqueness, and the
+two-parent maximum remain exactly as for C. The shortcut odd parent
+is pi_t((2a-1)/3), allowed precisely when a=2 mod3. Nevertheless its
+VALUE differs at swapped images. For 3|a the kernel proves
+  F_t^k(n)=a iff n=2^k*a.
+The predecessor density there is zero by written dyadic counting.
+
+Unit-target PLD is inherited by an exact inclusion, without the written
+natural-density premise. Under the ORIGINAL C, the set of all powers
+of two and all A_j, B_j, 2*A_j is forward invariant. Every c>1 with
+c=1 mod12 lies outside it. Thus original paths reaching c avoid every
+modified input before that hit and have the SAME hitting time under F_t.
+For any positive unit a, choose e in 6..11 with 2^e*a=4 mod9 and
+c=(2^e*a-1)/3. Then c>1, c=1 mod12, and F_t^(e+1)(c)=a by one
+unchanged odd step and e halvings. The kernel proves
+  P_c^C subset P_a^(F_t).
+External PLD at this original unit c proves positive lower density at
+every modified-map unit a. At a=1 it gives positive lower density of
+convergence; at a=A_t it gives positive lower density of escape. No
+exact fraction is asserted. Existence of modified-map natural densities
+uses the additional written passage theory, not PLD alone.
+
+WRITTEN stability of the large-floor passage input: sample odd n from
+[y,2y), with x^alpha<=y<=x^(alpha^2), alpha=1.001. On the old-map
+good event, first odd passage below x takes at most T=4*n0 ordinary
+steps, n0=floor(log x/(10 log2)); its failure probability is O(x^-c0).
+Until the first modified input the two paths coincide, and a modified
+odd value <=x is already a landing, before its changed outgoing step.
+Any discrepancy therefore hits a modified input above x by old time T.
+All old states lie below B=2*y*4^T, with log B=O(log x). Only O(log x)
+modified inputs lie there. At most 2^(T+1)-1 positive sources hit any
+one target by T, and 2^T<=x^(2/5). Thus the coupling error is
+  O(x^-c0)+O((log x)*x^(2/5-alpha))
+  = O(x^-c0)+O(x^(-3/5)).
+This transfers nonentry and uniform TV stabilization, with constants
+independent of t. The clocks coincide on the coupled good event too.
+It compares GROWING floors and nearby source scales, not fixed-small-
+floor limiting laws or eventual basin probabilities. The asymptotic
+claim remains WRITTEN and conditional on the existing C passage input.
+
+For each FIXED shortcut depth k, only O_k(log X) sources through X
+can encounter a modified input, using the same inverse-fibre union
+bound and the old upper envelope 2^k X. Thus all fixed-length shortcut
+parity words retain density 2^-k. This is not infinite-path randomness.
+Orbit packing with the old sigma<1 also persists in writing: an F_t
+path is a C prefix followed by either the explicit geometric escape or
+halving into the known cycle. The additional distinct values contribute
+O(1+log L) in any length-L interval.
+
+With target densities r'_a supplied by the transferred passage theory,
+the escaping odd spine satisfies the exact nonperiodic partition
+  r'_(A_(j+1))=r'_(A_j)+r'_(4*A_(j+1)).
+The unused/used ratios are summable, while log A_j=O(j+1). Consequently
+a uniform lower ratio kappa/log A_j with kappa>0 fails in this system.
+Such a relative bound cannot follow from the shared density, passage,
+packing, and inverse-congruence properties alone. Every odd step on
+the explicit escaping tail uses a modified input: sparsity among source
+integers gives no control of concentration along an individual orbit.
+
+Final verification passed at 2026-10-12T19:23:30.975017+00:00. The
+new module contains 44 theorem declarations, with 20 main theorem roots
+explicitly audited. Fresh sequential builds used Lean 4.33.1, compiler
+commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6:
+CollatzContradiction 0.486s, SparseCollatzPerturbation 0.886s.
+Only propext, Classical.choice, Quot.sound (or subsets) occur. No native
+evaluation, sorry, warning, or new axiom is present. The final manifest
+has 12 artifact/dependency hashes. The verifier also revalidated all
+389 source/object/log triples from the COMPLETED external PLD replay
+without rebuilding it, and the preceding audit's 12 artifact hashes.
+All verifier processes are terminal with exit 0; nothing is live to resume.
+The record's later written_scope_review adds the explicit odd-step
+growth-bound limitation and refreshes only the note's hash; compiled
+and finite-check artifacts are unchanged and were not rerun for that edit.
+
+Exact finite scope:
+
+- 384 large-index swap cases, 3072 support cutoffs through 1024 bits,
+  and 768 explicit escaping-path states;
+- 1048592 forward sources, compared against inverse formulas at 65536
+  ordinary targets and 32768 shortcut targets;
+- 16404 safe-ancestor paths, 18196 safe-target occurrences, and 252473
+  unchanged safe-prefix states;
+- classification of starts through 262144, using 568838 state rows
+  checked by strict time decrease to either one or a proved spine;
+- independent direct traces for 4096 sources, totaling 307751 steps;
+- 786432 source-step comparisons for shortcut prefix coupling and
+  exact finite histogram/union-bound inequalities.
+
+At cutoffs 64,1024,16384,65536,262144 the classified escaping counts
+are 0,0,1,26,123, respectively. These are finite altered-map data, not
+estimates of its eventual density and not exceptional actual-Collatz
+starts. No timeout is treated as an infinite orbit.
+
+The public natural-density page and the 2026 Wirsching-program preprint
+were read as scope checks; neither supplied a new adopted theorem.
+The 599-file external natural-density package is still NOT downloaded
+or replayed, and our analytic passage premise remains written.
+
+NEXT: an actual-Collatz exclusion must use the exact odd-parent values
+or an equally strong property that this sparse perturbation violates.
+Do not infer the relative logarithmic branch lower bound from the shared
+properties, finite parity statistics, or positivity alone. The original
+map's upper odd-step growth bound is also violated at the upward swaps;
+this construction does not test an argument that uses that bound in an
+essential way. No p_1=1 estimate was obtained. README and ATTEMPT link
+the result. No staging, commits, or Git writes were performed.
+
+## 2026-10-12: weighted loss accounting for the actual Collatz formula
+
+The preceding turn made progress: the sparse-perturbation record's twelve
+hashes were revalidated before continuing. Its comparison-map result is
+not an actual counterexample. This turn returned to C(n)=3n+1 for odd n
+and derived an exact finite accounting identity, then a conditional
+weighted escape diagnostic. The full goal remains ACTIVE and unresolved.
+
+New artifacts:
+
+- docs/WEIGHTED-DISSIPATION.md
+- lean/WeightedDissipation.lean
+- verify_weighted_dissipation.py
+- results/weighted-dissipation/verification.json and replay.json
+- results/weighted-dissipation/CollatzContradiction.log and
+  WeightedDissipation.log
+
+Write x_j=C^j(n), W_0=1, and multiply W by 3*x_j/(3*x_j+1) at each
+odd input, leaving it unchanged at even inputs. The exact loss then is
+ell_j=W_j/(3*x_j+1) at odd inputs, zero otherwise. For EVERY finite
+prefix, including repeated cycle traversals,
+  W_T + sum_(j<T) ell_j = 1,
+  W_T = n*3^(odd inputs)/(2^(even inputs)*C^T(n)).
+The Lean module defines integer numerator A, denominator B, and a
+common-denominator loss L, proves A+L=B, positive denominators/numerators,
+concatenation, and the affine identity with recursively defined slope
+products. Reading those products as powers of three/two is written.
+Positive returns necessarily include an odd input, have A<B, and their
+weights repeat geometrically. The known ordinary cycle has A=3,B=4.
+There are nineteen theorem declarations and eighteen audited main roots.
+
+WRITTEN, using the existing finite-path packing estimate: W_infinity
+exists by monotonicity. It is zero on every eventually periodic orbit
+and satisfies exp(-8192/3)<=W_infinity<=1 on every divergent orbit.
+The latter uses the reciprocal sum over DISTINCT odd orbit values.
+Do not apply that packing estimate to infinitely repeated cycle visits.
+
+Define mu_n on positive odd targets plus a separate infinity symbol by
+putting every loss ell_j at x_j and placing W_infinity at infinity.
+Finite telescoping plus monotone summation makes this a probability
+measure. At any time i,
+  mu_n = prefix_loss_measure + W_i(n)*mu_(C^i(n)),
+so TV(mu_n,mu_(C^i(n)))<=1-W_i(n). For first ODD passage below H,
+the prefix loss is <=(8192/3)*H^(-1/20), independently of its duration.
+Only prior odd inputs need exceed H; intermediate even values may not.
+
+CONDITIONAL WRITTEN on local natural passage Proposition 4.1: the
+natural averages X^-1 sum_(n<=X) mu_n converge in TV at a logarithmic
+rate to a countably additive probability measure mu. The nearby-scale
+coupling and telescope work for probability-valued observables. A fixed
+reference mu_n may have INFINITE support, but its finite heads are tight;
+completeness in TV therefore still preserves mass one. Initial halving
+does not change mu_n. No new external density premise is adopted.
+
+For odd N, w_N(n) is its first-hit weight, zero when unreachable.
+B_N=1 for nonperiodic N, and B_N=1/(1-beta_N) on a cycle, where beta_N
+is its full-cycle weight. Exact pointwise geometric summation gives
+  mu_n(N)=B_N*w_N(n)/(3N+1).
+The TV limit supplies natural weighted means D_N=mean(w_N); partial
+summation gives the same logarithmic means. In particular
+  d + sum_(N positive odd) B_N*D_N/(3N+1) = 1,
+  d = mean(W_infinity).
+The series interchange uses TV, not only individual-coordinate limits.
+At N=1, B_1=4 and the charge is D_1, not D_1/4. Positivity gives
+D_1>0 and hence d<1. If Lambda_div is the TOTAL density of divergent
+starts, exp(-8192/3)*Lambda_div <= d <= Lambda_div. External PLD means
+any divergent orbit forces Lambda_div>0. Thus d=0 is equivalent to
+universal eventual periodicity, but d=0 remains UNPROVED. This does
+not exclude additional cycles or establish full Collatz.
+
+CONDITIONAL WRITTEN on the prior ordinary clock theorem, with
+kappa=3/log(4/3): mean W_floor(c log X) tends to 1 for c<kappa and to
+d for c>kappa, for both population and individual log clocks. The
+critical coefficient and an effective error remain undetermined.
+Below the clock, omit early hits of finitely many small odd targets and
+the minimum-law tail; a repeated prefix without a small hit would be a
+cycle entirely above the floor and belongs to that tail. This cycle
+exception is required before using distinct-prefix packing. Above the
+clock, first reach the global minimum in time c' log n, kappa<c'<c;
+W_t(m)->W_infinity(m) uniformly over the FINITE set m<=H, without
+classifying those orbits. Tightness of minima then finishes the limit.
+
+For fixed T, C^j(n)>=n/2^j gives
+  1-W_T(n)<=(2^T-1)/(3n),
+so lim_T lim_X mean(W_T)=1 while lim_X lim_T mean(W_T)=d<1.
+This noncommutation persists even if all positive starts converge.
+
+Verification passed at 2026-10-12T19:53:36.591815+00:00. Fresh sequential
+Lean 4.33.1 builds (compiler commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6)
+took 0.488s for CollatzContradiction and 0.268s for the new module.
+The eighteen audited roots use only standard propext, Classical.choice,
+and Quot.sound, or subsets. No native computation, sorry, new axiom,
+or warning occurred. Fifteen artifact/dependency hashes are recorded.
+Prior records' 12 finite-path, 13 clocked-minimum, and 12 density-law
+hashes were checked. The completed 389-module external PLD build was
+not rerun. The later written-scope review refreshes only the new note's
+hash after adding sample counts and the consequence d<1; builds and
+finite replay are unchanged. All jobs are terminal with exit zero.
+
+Independent exact rational checks:
+
+- 2048 complete paths to the known cycle, 138104 forward prefixes;
+- 1092 reverse integer recursions, 1019 concatenations;
+- 4352 geometric cycle repetitions with visit multiplicity;
+- 106345 full-measure cocycle coordinate comparisons;
+- 5120 passage TV/product inequalities, 2196 first-hit charge coordinates,
+  and 28 finite charge partitions;
+- 436800 source-clock pairs at cutoffs 64,256,1024,4096,16384,65536,
+  including 1920 independent direct Fraction comparisons.
+
+At X=65536, coefficients 4,8,11,16 give ordinary clocks44,88,121,177
+and mean weights approximately .92162543,.57855998,.38637200,.11060250.
+The finite means have exact rational enclosures of width <=2^-48.
+The clocks' floors are bounded by rational atanh-series intervals for
+log 2. None of these finite intervals bounds the asymptotic error or
+determines d. Sample infinite measures only use completely verified
+paths into 1,4,2; no timeout was classified as escape.
+
+External context reviewed, NOT adopted: Lucas Valbuena's public
+collatz-two-coordinate-obstruction README and paper/tao-basin-densities.tex
+describe uniform reciprocal predecessor bounds, stationary traces,
+an occupation lower bound with divergent excess, and an inverse-path
+clock. The manuscript explicitly leaves the occupation upper bound open.
+The source downloaded to /tmp/collatz-tao-basin-densities.tex has SHA256
+fa4e6c790002bdbb32c1679eb0b833574e110f0462f16a0e2303594137822850.
+Its claimed formal bundles were not downloaded, replayed, or imported.
+The local proof above uses only the already recorded written premises
+and the previously replayed target-dependent PLD theorem. Do not treat
+the public uniform c/N claim or its claimed audits as a new local input.
+
+NEXT: a concrete remaining target is to prove mean W_floor(11 log X)
+goes to zero for the ACTUAL map, or prove the full charge series equals
+one. Both are open, and finite decay at chosen clocks is insufficient.
+The conservation identity alone cannot force loss of all weight: the
+packing estimate explains precisely how an escaping path could retain
+a positive product. Seek an actual-map estimate on this finite mean,
+not another claim that identifying the infinity atom removes it. README
+and ATTEMPT link the result. No staging, commits, or Git writes occurred.
+
+## 2026-10-12: stopped odd-count mass and the coalescence tail
+
+The preceding goal turn made progress: all fifteen weighted-dissipation
+hashes were revalidated before this follow-up. This turn tested a concrete
+route to the missing mean d=0, using exact balanced adjacent coalescence
+and dyadic refinement. It produced an unconditional all-depth lower
+bound that prevents the simplest summable-error argument. Full Collatz
+remains unresolved and the goal remains ACTIVE.
+
+New artifacts:
+
+- docs/COALESCENCE-TAIL.md
+- lean/CoalescenceTail.lean
+- verify_coalescence_tail.py
+- results/coalescence-tail/verification.json and replay.json
+- results/coalescence-tail/CollatzAffine.log and CoalescenceTail.log
+
+For the ACTUAL shortcut map, Delta_H(r)=wt H r-wt H(r+1). Adding
+the next source bit 2^H preserves the first H odd counts and flips
+both time-H endpoint parities, since the affine slopes 3^wt are odd.
+Thus the next gap either holds for both children, or is Delta_H+1
+and Delta_H-1 with equal multiplicity. This remains valid at the
+boundary r=2^H-1: the affine theorem permits r+1=2^H.
+
+Define G_H=abs(Delta_H) until its first zero at time >=1, and keep
+G zero thereafter. Delta_1 is always +/-1. The two children of every
+depth-H node, H>=1, have G-values summing to twice the parent's value.
+The kernel proves ALL-DEPTH identities
+  sum_(r<2^H) G_H(r) = 2^H,
+  sum_(s<2^(H-1)) G_H(2s+e) = 2^(H-1), e=0,1.
+Also 0<=G_H<=H, and balanced coalescence (equal endpoint AND equal
+odd count) forces G_H=0. Consequently the full-period unmerged
+fraction is at least 1/H, separately for each initial parity. These
+are universal integer theorems, not finite-count extrapolations.
+The kernel also verifies odd-count periodicity, balanced periodicity,
+and persistence of balanced coalescence with time.
+
+Stopping is essential. For the actual pair (1,2), the signed odd-count
+gaps at depths 1,2,3 are [1,0,1]. The raw absolute gap can reactivate
+and does not have conserved mean. G stays zero after depth two.
+
+WRITTEN: the coherent uniform-bit/Haar law gives a balanced fusion
+time T with P(T>H)=1-p_H. The harmonic tail implies E T=infinity,
+also conditioned on the first bit. This does NOT say P(T=infinity)>0,
+does not use a uniform probability on all positive integers, and does
+not imply any actual positive orbit escapes. It remains compatible
+with p_H tending to one; no external theorem asserting that limit is
+adopted here.
+
+WRITTEN stronger bound: orient the initial gap to +1 and generate
+active increments and holding bits with two independent fair-coin
+stacks. Activity is determined before the next bit, and active input
+orientation preserves conditional fairness. At most H-1 active steps
+have occurred by depth H. Survival of a simple walk for H-1 steps
+therefore ensures G_H>0. Reflection/telescoping gives
+  1-p_H^(e) >= P(G_H>0|e)
+             >= binom(H-1,floor((H-1)/2))/2^(H-1), e=0,1,
+of order H^(-1/2). This coupling and binomial formula are NOT Lean
+formalized. Python only checks their finite instances through H=20.
+
+WRITTEN sufficient criterion for d=0: write w(n)=W_infinity(n),
+f(n)=w(n)/n and h_k(x)=2^k*f(floor(2^k*x)) for 1<=x<2. The weight
+cocycle gives f(n)=3^(wt H n)/2^H * f(U^H n), so balanced adjacent
+starts have equal f. Since w(2n)=w(n), even dyadic children exactly
+retain the parent's h-value. Odd children also do so when (2n,2n+1)
+eventually balance. Let B_k be the fraction of n in [2^k,2^(k+1))
+whose even pair never balances. The actual changed-cell measure is
+at most B_k/2. If sum B_k is finite, Borel--Cantelli makes h_k
+eventually EXACTLY constant almost everywhere. Its limit has countable
+range. Existence of the prior conditional natural mean d of w gives,
+by partial summation, integral_a^b h_k -> d*log(b/a). Bounded convergence
+identifies that limit with d/x. For d>0 the latter cannot have countable
+range almost everywhere; hence summability would force d=0.
+
+No such summability was proved. At any finite depth H<=k+1 the dyadic
+even-input interval samples whole even residue periods exactly, giving
+B_k<=1-p_H^(0). Each such upper-bound VALUE is at least 1/(k+1), so
+these certificates cannot be summable over k. This is NOT a lower
+bound on B_k or on the actual weight-change measure. Pairs unmerged
+at H can balance later, and zero infinite weights can agree without
+balanced coalescence. H>k+1 returns to the proper-source-subinterval
+problem in the earlier audit. Even proving d=0 would leave additional
+cycle exclusion before full Collatz.
+
+Verification passed at 2026-10-12T20:35:20.537311+00:00. Fresh sequential
+Lean 4.33.1 builds used compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6, taking 0.382s for the affine
+import and 0.516s for the new module. Twenty-three main roots were
+audited; their dependencies are propext/Quot.sound or subsets, with
+orbit_snoc using no axioms. No warnings, native computation, sorry,
+or added axiom occurred. Twelve new artifact/dependency hashes are
+recorded. The previous coalescence record's 12 hashes and weighted
+record's 15 hashes were validated. No external replay was restarted.
+
+Independent finite checks:
+
+- 1,048,575 affine parity-flip pairs;
+- 1,048,574 local stopped-mass identities;
+- 2,097,150 pointwise gap bounds over all periods through depth 20;
+- 826,010 balanced child-persistence checks;
+- 48,151 direct integer pair paths, without affine recursion;
+- 456 direct lifted paths at nonzero quotients 1,3,29,2^20.
+
+At depth 20, each parity half has 524288 residues and stopped-gap
+mass 524288. Positive stopped gaps occur for 133209 even and 122214
+odd representatives; balanced counts are 289565 even and 132078 odd,
+total 421643 as in the earlier independent enumeration. The complete
+unmerged fraction is 626933/1048576. The written walk lower bound is
+46189/262144, while the kernel harmonic bound is 1/20. All jobs are
+terminal with exit zero.
+
+NEXT: seek a bound on ACTUAL weighted dyadic changes (or an equivalent
+finite-clock mean on the actual source interval), not a summable claim
+for whole-period noncoalescence. The lower bound above closes that
+specific shortcut but does not determine d. The original targets of
+zero escaping mass and other-cycle exclusion remain open. README and
+ATTEMPT link the new proof and reproduction command. No staging,
+commits, or Git writes were performed.
+
+## 2026-10-12: actual dyadic coalescence defects inside the known basin
+
+The preceding goal turn made progress, with 23 audited kernel roots for
+the complete-period tail. Its twelve hashes and all fifteen weighted-loss
+hashes were revalidated before this follow-up. This turn strengthened
+the route audit: under the already replayed positive-lower-density theorem
+at one, the ACTUAL eventual-unbalanced dyadic fractions B_k are themselves
+nonsummable. The weighted refinement criterion remains open. Full Collatz
+is unresolved and the goal remains ACTIVE.
+
+New artifacts:
+
+- docs/DYADIC-COALESCENCE-DEFECTS.md
+- lean/DyadicCoalescenceDefects.lean
+- verify_dyadic_coalescence_defects.py
+- results/dyadic-coalescence-defects/verification.json and replay.json
+- seven fresh local build logs in that results directory
+
+For a start known to reach one, define its arrival grade g(n)=t-2a,
+where t is shortcut arrival time and a its odd count. The earlier grade
+theorem makes this independent of the chosen arrival. Define the auxiliary
+V(n)=2^g(n)/n on this basin and zero outside it. V is NOT W_infinity:
+W_infinity vanishes on the entire known basin, while V is positive there.
+Even steps preserve V. At an odd input before FIRST arrival, n>=3, so
+  V(n)=(3n+1)/(4n)*V(U n) <=(5/6)*V(U n).
+Thus 0<V(n)<=(5/6)^a<=1. The new kernel module proves the integer
+strict prefix envelope
+  3^(wt t n)*2^t*U^t(n) <=10^(wt t n)*n,
+for positive prefixes avoiding one before time t. This avoidance cannot
+be omitted: the odd input one does not have the strict factor 5/6.
+
+The existing dyadic envelope, now specialized in a new kernel theorem,
+gives t<=L+2A for any arrival from n<=2^L with a<=A. The kernel also
+proves that endpoint plus the complete parity word determine the source,
+and checks word length, binary entries, and odd count.
+
+WRITTEN counting: encode the arrival length t and its at most A
+one-positions, padded by zeros, using positions 1..t. With t<=L+2A,
+this is an injection into (L+2A+1)^(A+1) tuples. Hence the number of
+sources <=2^L with at most A odd inputs before first arrival is at most
+that polynomial. No classification of other starts is used. This also
+proves the natural mean of V is zero, by first fixing A and letting the
+source cutoff grow, then letting A grow.
+
+A binary refinement is called safe in the Lean module if it goes to
+2n, or to 2n+1 when (2n,2n+1) eventually balances at a common time
+and odd count. Kernel grade transport proves: a safe child of a
+convergent root converges, with grade increased by one. Consequently
+an uninterrupted safe descendant n of a fixed convergent root m at
+depth k has grade g(m)+k and lies in [2^k*m,2^k*(m+1)). Thus
+  V(n)>c_m=2^g(m)/(m+1)>0.
+Choose A_m with (5/6)^(A_m+1)<=c_m. Its first-arrival odd count is
+at most A_m, uniformly in depth. The tuple bound then shows there
+are only polynomially many safe descendants versus 2^k binary choices.
+The probability of remaining safe forever from any convergent root
+is zero. The count and probability limits are written, not Lean formalized.
+
+At root one c_1=1/2 and A_1=3. A separate KERNEL theorem proves the
+stronger finite statement: n<2^(k+1), g(n)=k, and a FIRST arrival imply
+a<=3. The proof yields 6^a<2*5^a, while 2*5^a<=6^a for a>=4.
+Thus uninterrupted safe descendants from one number at most (k+8)^4
+at depth k; their fraction is bounded by min(1,(k+8)^4/2^k).
+This does not assert that an unsafe child fails to converge.
+
+WRITTEN actual-interval consequence: let n_k(x)=floor(2^k*x) for
+uniform x in [1,2), and let D_k be the event that the next bit is 1
+AND the pair (2n_k,2n_k+1) never balances. Its measure is B_k/2,
+where B_k is the fraction defined in the previous coalescence-tail note.
+On S={only finitely many D_k}, all sufficiently late refinements are
+safe. If such a path later visits a convergent prefix, it is then a
+forever-safe chain from a convergent root. Section 3 makes each such
+binary cylinder event null; the countable union over prefixes is null.
+Thus on S the known-basin indicators of n_k tend to zero almost surely.
+Dominated convergence gives
+  limsup q_k <= P(D_k infinitely often),
+where q_k is the known-basin fraction in [2^k,2^(k+1)). Positive lower
+natural density delta at one implies limsup q_k>=delta. The replayed
+external PLD theorem supplies delta>0, so the first Borel--Cantelli
+lemma yields sum B_k=infinity. This uses NO natural-passage premise,
+no natural-density existence, and no external coalescence-density-one
+claim. If full Collatz holds, q_k=1 and the defects occur infinitely
+often almost everywhere, while all actual infinite weights are zero.
+
+This rules out the unweighted summability premise itself, not merely
+the preceding whole-period upper-bound method. The prior implication
+from sum B_k finite to d=0 remains logically valid but has a false
+premise under the replayed input. The smaller actual weighted-change
+sets could still be summable. A forward pointer in COALESCENCE-TAIL.md
+and its document-only hash review record this development; no earlier
+kernel theorem or finite replay changed.
+
+Verification passed at 2026-10-12T21:00:26.609704+00:00. Fresh sequential
+Lean 4.33.1 builds used compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Build times were 0.346s
+CollatzPacking, 0.478s CollatzContradiction, 0.197s FirstPassagePacking,
+0.212s FinitePathPacking, 0.923s EqualWeightFibres, 0.628s
+CoalescenceGrades, and 0.298s DyadicCoalescenceDefects. Eighteen main
+roots use standard propext/Classical.choice/Quot.sound or subsets;
+grade_one has no axioms. No warnings, native computation, sorry, or
+added axiom occurred. Twenty-two artifact/dependency hashes are recorded.
+The prior records' 16 grade, 12 tail, and 15 weighted-loss hashes were
+checked. All 389 external PLD module source/object/log hashes and its
+lake manifest were revalidated. The completed external package and
+its third-party caches were not rebuilt; this is the same adopted PLD
+input, used only at one. All jobs are terminal with exit zero.
+
+Finite checks:
+
+- 524288 complete first-arrival integer bounds;
+- 262144 doubling-grade identities and 311 leading-grade odd caps;
+- 190 non-root safe descendants of one in the census;
+- 4096 independent direct first-arrival paths and 205771 prefix bounds;
+- 142 independently reversed parity-word certificates;
+- 96 finite low-odd-count bounds and 944 direct Fraction comparisons;
+- 379 safe leaf checks across roots 1,3,5,13,27 through depth 12.
+
+At binary depth 18, there are 19 uninterrupted safe descendants of one
+among 262144 possibilities. This finite count is not extrapolated to
+an all-depth exact formula; the proved written bound is polynomial.
+The auxiliary V mean there is approximately 0.00429495; exact rational
+enclosures have width at most 2^-48. These values are NOT estimates of
+d or W_infinity. All sampled starts explicitly reach one.
+
+NEXT: actual weighted defects must exclude the many grade defects inside
+the known basin. The unweighted Borel--Cantelli proxy is now ruled out.
+Seek an actual-weight or finite-clock estimate that uses this distinction;
+do not infer positive escaping mass from persistent unweighted defects.
+Both zero escaping mass and other-cycle exclusion remain open. README
+and ATTEMPT link the result and reproduction command. No staging,
+commits, or Git writes were performed.
+
+## 2026-10-12: quantitative auxiliary grade-weight moments
+
+The preceding turn is classified as progress: it ruled out the actual
+unweighted dyadic summability premise, with eighteen audited kernel roots.
+This turn first returned to the weighted occupation and inverse-density
+approaches. The exact inverse recursion still did not supply a uniform
+upper bound over growing targets or a sharp logarithmic occupation bound.
+The cached public basin manuscript was reviewed as context only: its
+claimed inverse-linear floor, Green trace, and occupation assertions were
+not replayed or adopted. No uniform C/N upper bound was proved or refuted.
+The substantive new result is instead an unconditional power bound for
+the auxiliary grade weight; it does not bound the remaining escape mass.
+
+Added:
+
+- docs/GRADE-WEIGHT-MOMENTS.md;
+- lean/GradeWeightMoments.lean;
+- verify_grade_weight_moments.py;
+- results/grade-weight-moments/verification.json and replay.json;
+- three fresh local Lean build logs in that result directory.
+
+For the shortcut path x_t=U^t(n), with a_t odd inputs, define
+  V_t(n)=2^t*x_t/(4^a_t*n).
+An even step preserves V_t; an odd input x multiplies it by
+(3x+1)/(4x)<=1. At x!=1 this is at most 5/6. Positive infinite paths
+have infinitely many odd inputs, so the WRITTEN limit is the previously
+defined arrival-grade V on the known basin, and zero on every orbit
+never reaching one, including hypothetical other cycles and divergence.
+Once one is reached the shortcut cycle preserves V_t exactly.
+
+KERNEL integer moments: with 2^t*x_t=3^a_t*n+b_t, put
+E_t=4^(t-a_t), P_t=3^a_t*E_t, Q_t=b_t*E_t. The new module defines
+these recursively without rational arithmetic and proves their identities,
+periodicity, envelope, and cross-multiplied monotonicity. The two next-bit
+children sum to (7P,5E,7Q+2^t E). Over 0<=n<2^t it proves exactly
+  sum P_t=7^t, sum E_t=5^t, 3*sum Q_t+7^t=10^t.
+Periodicity permits the positive representatives 1..2^t instead.
+All thirteen audited roots use standard propext/Quot.sound, with
+Classical.choice also in the child and moment roots. No native evaluation,
+warnings, sorry, or new axioms occur in the successful fresh builds.
+
+WRITTEN quantitative deduction: V_t=P_t/4^t+Q_t/(4^t*n). If
+c_t=Q_t/4^t then 0<=c_t/n<=1 and
+sum c_t=((5/2)^t-(7/4)^t)/3 over the positive period. Split sources
+at the real Y=(8/5)^t. The correction sum is at most Y+(sum c_t)/Y.
+Consequently the mean of V_t on 1..2^t is at most
+  (7/8)^t+(4/5)^t+(1/3)*(25/32)^t <= (7/3)*(7/8)^t.
+Nonnegativity and monotonicity then give, for every integer X>=1,
+  mean_(n<=X) V_T(n) <= (14/3)*X^(-eta),
+  eta=log_2(8/7)=0.192645...,
+whenever T>=ceil(log_2 X). The same bound holds for V_infinity.
+This controls the actual initial interval, is uniform over all later
+times, and uses no passage/density assumption or external PLD. The real
+source split, powers, and limits are written, not additional kernel claims.
+The associated dyadic amplitudes V(floor(2^k*x)) are summable for almost
+every x in [1,2), by the integral bound and Tonelli. Their normalized
+refinements have finite total amplitude variation; this does NOT imply
+summability of the sets on which their exact values change.
+
+The shortcut correction weight satisfies W_t=n*3^a_t/(2^t*x_t), hence
+  V_t*W_t=(3/4)^a_t.
+Small V_t gives no upper bound on W_t. V is positive on every convergent
+start and can have zero mean even if full Collatz holds. Do not call the
+new power bound a decay theorem for escape or for nonconvergent density.
+
+A further WRITTEN criterion uses the actual escape refinements
+h_k=2^k*W_infinity(floor(2^k*x))/floor(2^k*x). Under the prior natural
+component law and external PLD, existence of a divergent orbit makes
+the natural density lambda of divergence lie strictly between zero and
+one. For any set E of natural density lambda, its dyadic-prefix indicators
+converge weakly against L1 tests to lambda. Testing the set of paths with
+only finitely many visits shows that set is null when lambda>0; apply the
+same argument to the complement when lambda<1. Thus almost every binary
+path switches between divergent and nondivergent prefixes infinitely
+often. The uniform positive gap for W_infinity gives a squared h-increment
+at least exp(-16384/3)/4 at every such switch. Therefore any divergent
+orbit would force sum_k |h_(k+1)-h_k|^2=infinity almost everywhere.
+A finite integrated squared-variation bound would exclude divergence,
+but NO such bound is proved. The unconditional amplitude estimate above
+is for V, not W. This criterion also leaves other cycles untouched.
+
+Verification passed at 2026-10-12T21:35:23.422954+00:00 with pinned
+Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Fresh
+sequential build times were 0.372s CollatzAffine, 0.476s CoalescenceTail,
+and 0.354s GradeWeightMoments. Fourteen new artifact/dependency hashes
+were independently revalidated. The verifier also revalidated 22 dyadic,
+12 coalescence-tail, and 15 weighted-dissipation hashes. It did not
+rebuild external PLD or third-party modules; none is needed for the new
+unconditional bound. All verification jobs have exited zero.
+
+Independent finite replay checked:
+
+- 2097150 affine data rows and the same number of positive-source weights;
+- 1048575 paired next-bit moment identities;
+- all twenty complete-period moment triples through depth 20;
+- 41878 direct residue paths and 41858 exact Fraction dualities;
+- 384 nonzero-quotient lifted data rows;
+- 4096 first-arrival paths, 205771 monotonicity steps, and 101980 strict
+  pre-arrival odd steps;
+- 49152 known-cycle plateau steps.
+
+At depth 20 and cutoff 1048576, the finite mean V_20 is enclosed between
+0.06947364531946555 and 0.0694736453194691, with exact rational endpoints
+and width below 2^-48. This is a finite-time auxiliary mean, not the
+terminal V mean and not an escape estimate. The all-depth rate follows
+from the identities and source split, not extrapolation of this number.
+
+NEXT: return to actual W_infinity, or another estimate controlling p_1.
+The auxiliary moment contraction has factor 7/8; its exact duality does
+not transfer that contraction to W. A finite integrated squared-variation
+bound is sufficient for excluding escape under the existing conditional
+inputs, but no upper bound is currently available. Sharp occupation
+control, vanishing escape mass, and exclusion of other cycles remain open.
+The goal stays active. README and ATTEMPT include the result and command.
+No staging, commits, credentials, installations, or Git writes occurred.
+
+## 2026-10-13: actual escape-weight refinements and real-scaling rigidity
+
+The previous turn is classified as progress: thirteen kernel roots and
+the written initial-interval power bound quantified the auxiliary V, while
+explicitly leaving the actual W uncontrolled. This turn returned to W.
+It obtains finite-offset energy bounds, disproves two overly strong
+contraction ideas, and removes an analytic premise from the sufficient
+limiting-energy criterion. The needed bound itself is still unproved.
+The full positive-integer Collatz goal remains active.
+
+Added docs/ESCAPE-WEIGHT-REFINEMENTS.md,
+lean/EscapeWeightRefinements.lean, verify_escape_weight_refinements.py,
+and results/escape-weight-refinements/{verification,replay}.json with
+three fresh local build logs. README and ATTEMPT include the new note
+and reproduction command. Older checked source files and manifests were
+not modified.
+
+For shortcut x_t=U^t(n), odd count a_t, write
+W_t(n)=n*3^a_t/(2^t*x_t), f_t=W_t/n. Define, for x in [1,2),
+  n_k=floor(2^k*x),
+  H_(s,k)(x)=2^k*f_(s+k)(n_k)=3^a_(s+k)/(2^s*x_(s+k)).
+The integer offset s is fixed while k indexes binary refinement.
+KERNEL even/odd path formulas yield the following WRITTEN rational
+relations: the even child equals the parent exactly; the odd child is
+3*2^k*f_(s+k)(3n_k+2). Both values lie in [0,1]. They are not a
+martingale. With parent a and odd child b, the conditional squared
+increment is (b-a)^2/2=(b^2-a^2)/2-a*(b-a); the drift has both signs.
+
+KERNEL reciprocal affine moments: 2^t*x_t=3^a_t*n+b_t. Define
+D_t=3^(t-a_t), Q_t=b_t*D_t recursively with integers. The two next-bit
+children sum to (4D_t,6Q_t+2^t D_t). At every depth, over one period,
+  sum D_t=4^t, 2*sum Q_t+6^t=8^t.
+The scaled affine identity and periodicity are proved as well. Thus,
+WRITTEN, c_t=b_t/3^a_t=Q_t/3^t has period 2^t and total
+((8/3)^t-2^t)/2 over that period. Since 1-W_t=c_t/(n+c_t)<=c_t/n,
+the actual-annulus mean L_(s,k) of 1-W_(s+k) satisfies
+  L_(s,k) <= (1/2)*(8/3)^s*(2/3)^k.
+For s>=1 the annulus lies inside one period; for s=0 it is a translated
+whole period. In particular, for EACH FIXED s, H_(s,k)->1/x almost
+everywhere and in L2 as k->infinity. No limit uniform in s follows.
+
+WRITTEN energy: e_(s,k)=integral |H_(s,k+1)-H_(s,k)|^2,
+E_s=sum_k e_(s,k). Compare H_(s,k) with g_k=2^k/n_k. The baseline
+odd-child jump is <=2^(-k-1), and its deficit is <=1-W_(s+k).
+Using the three-term square inequality gives
+  e_(s,k) <= (3/8)*4^-k + (7/4)*(8/3)^s*(2/3)^k,
+  sum_(k>=K) e_(s,k) <= (1/2)*4^-K + (21/4)*(8/3)^s*(2/3)^K.
+Also e_(s,k)<=1/2, since even children do not change. Taking K=3s
+gives E_s<=3s/2+23/4. This is an unconditional fixed-offset bound for
+the ACTUAL W. Its linear dependence on s is insufficient for the needed
+limiting-energy argument.
+
+An actual infinite family rules out uniform decay of individual jumps.
+For j>=1 set
+  n_j=8*(64^j-1)/9, q_j=3n_j+2,
+  k_j=6j-1, t_j=k_j+6=6j+5, A_j=3^(3j-1).
+KERNEL formulas, with the divisible seed constructed for every j, give
+  U^(t_j-2)(n_j)=A_j+1, odd_count=3j+1,
+  U^(t_j-2)(q_j)=1, odd_count=1,
+  2^k_j<=n_j<2^(k_j+1).
+The first five steps from n_j reach 2^(6j-2)+1, then an exact affine
+lift of the known cycle supplies the remaining path. q_j reaches a power
+of two in two steps and halves to one. No long-term convergence claim is
+made for ALL n_j. Only the stated finite trajectories are used.
+
+At s=6 the odd child of n_j has normalized value 27/64. The parent is
+9A/(16(A+1)) for even j, and 27A/(16(3A+5)) for odd j. A kernel
+two-step bound for odd A>=9 yields, after written rational division,
+  parent-minus-odd-child >= 27/512,
+and the difference tends to 9/64. Thus maximum individual jumps do not
+vanish even at fixed offset six. Their exhibited half-cells have summable
+length, so this does NOT refute a uniform INTEGRATED energy bound.
+
+The energies themselves are not nonincreasing in s. Exact finite rational
+enclosures through k=12, combined with the WRITTEN tail bound for s=0,
+prove E_0<1/7 and E_16>1/4. The certified upper/lower values used are
+approximately 0.129820327955 and 0.258372418074. The latter is already
+a finite partial sum; the former includes every later level via the
+geometric tail. This disproves monotone energy contraction, not a larger
+uniform bound or a bounded subsequence.
+
+WRITTEN real-scaling rigidity removes the prior natural-passage premise
+from the escape criterion. Let a(n) in {0,1} be U-invariant, and suppose
+a(floor(2^k*x)) converges a.e. on [1,2). Its bounded measurable limit A
+extends to all positive x with A(2x)=A(x). There is L1 convergence on
+compact subintervals. Even-child invariance gives
+||a(2*floor(2^k*x)+1)-a(floor(2^k*x))||_1
+ =2||a_(k+1)-a_k||_1 ->0.
+By the exact odd rule the first label is a(3*floor(2^k*x)+2).
+Map each parent cell linearly with slope one into its corresponding
+third cell. This map S_k has disjoint images, uniformly tends to 3x,
+and has bounded pullback of L1 errors. Continuous approximation of A
+therefore gives A(x)=A(3x) almost everywhere. In log_2 coordinates A
+is periodic and invariant under irrational rotation log_2(3); Fourier
+uniqueness makes it constant zero or one. L1 control of partial annuli,
+not just complete annuli, then gives ordinary natural density zero or one.
+
+Apply this to the divergence indicator. The previous WRITTEN packing
+bound gives W_infinity>=exp(-8192/3) on divergence and W_infinity=0
+elsewhere. A binary switch of the indicator costs at least
+exp(-16384/3)/4 in squared normalized W increment. Thus finite squared
+variation almost everywhere gives indicator stabilization. The rigidity
+argument supplies density zero or one WITHOUT the natural-passage law.
+If a divergent orbit existed, replayed PLD would give positive lower
+density both to its predecessors at a unit target and to the known basin
+of one, excluding both zero and one. Finite limiting energy would
+therefore exclude escape using PLD and packing alone. The same rigidity
+can be used for the indicator of failure to reach one, but no summability
+bound for that stronger indicator is proved either.
+
+For each fixed k, H_(s,k)->h_k=2^k*W_infinity(n_k)/n_k as s->infinity.
+Fatou shows that liminf_(s->infinity) E_s<infinity would suffice for
+finite integrated limiting energy. It is enough to find a bounded
+subsequence at offsets tending to infinity; a supremum bound over all s
+is stronger than needed. NEITHER is proved. Other positive cycles remain
+unexcluded even if escape were removed.
+
+The primary operator papers were reviewed at
+https://arxiv.org/html/2106.11859v9 and
+https://arxiv.org/html/2303.03203v1 . Their unweighted coefficient operator
+does not equal the weighted 1/2,3/2 operator for f_t. The Hardy fixed-point
+argument cannot be applied to f_infinity merely because f_infinity<=1/n.
+Nonzero W_infinity is itself not square summable along a doubling ray.
+No new operator theorem or other external result was adopted or replayed.
+
+Exploratory prototypes /tmp/collatz_escape_energy.cpp and
+/tmp/collatz_escape_energy_sample.cpp produced floating-point energy
+data in the corresponding .csv files. The first enumerated through
+level 19; the second used a fixed pseudorandom seed at larger levels
+through 60. These estimates motivated investigating bounded energy, but
+are NOT certificates for any uniform bound or asymptotic behavior.
+Both prototype jobs exited zero. The exact new verifier supersedes their
+finite scope for all quantitative claims made in the note.
+
+Fresh verification passed at 2026-10-13T00:20:50.567988+00:00 with
+Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Sequential
+builds took 0.360s CollatzAffine, 0.447s CoalescenceTail, and 0.492s
+EscapeWeightRefinements. All twenty-one audited roots use only standard
+propext/Classical.choice/Quot.sound or subsets, with no warnings, native
+evaluation, sorry, or new axioms. Sixteen artifact/dependency hashes were
+independently revalidated. Prior 14 grade-weight, 15 weighted-dissipation,
+and 22 dyadic-defect hashes were revalidated. The external PLD record is
+hashed and reused; its already replayed 389 modules and third-party
+caches were not rebuilt this turn. All verification jobs are terminal.
+
+Exact finite replay checked 524286 reciprocal affine rows, 262143 paired
+moment identities, all eighteen complete-period moment pairs, 18825
+independent direct paths, and 258 nonzero quotient lifts. It checked
+128 jump-family members and 4092 independent two-step bounds. Energy
+checks cover offsets 0,4,8,16,32,48,64 through level 12, with 114681
+weight enclosures, 57337 binary energy cells, 665 independent Fraction
+cells, and 91 mean-loss bounds. Enclosures use scale 2^60, not floats;
+floating-point numbers are display-only. The all-depth tail and rigidity
+argument remain written, not additional Lean claims.
+
+NEXT: pursue a bounded subsequence of E_s at arbitrarily late offsets,
+or a direct limiting-energy bound. Do not infer it from finiteness at
+each fixed offset or from exploratory O(1)-sized samples. A martingale
+argument, monotone contraction in s, and uniformly small individual
+jumps are unavailable as stated. The exact drift term in the energy
+identity is a possible next quantity to control on average. No escape
+exclusion, other-cycle exclusion, staging, commits, installations,
+credentials, or Git writes occurred. The goal remains active.
+
+## 2026-10-13: coalescence energy caps and their unavoidable growth
+
+The preceding completed refinement turn is progress: it gave twenty-one
+kernel roots, actual-weight bounds, and a stronger written rigidity
+criterion. The intervening drift, time-average, and weighted-operator
+investigations did not establish the needed bounded subsequence. The
+current milestone is progress: it supplies a sharper valid energy bound
+and proves that a proposed method of improving it cannot remove its
+growth. Full positive-integer Collatz remains unresolved and active.
+
+Added docs/COALESCENCE-ENERGY-CAPS.md, lean/CoalescenceEnergyCaps.lean,
+verify_coalescence_energy_caps.py, and results/coalescence-energy-caps
+with verification/replay JSON and four fresh local build logs. README
+and ATTEMPT include the result and reproduction command. Prior checked
+modules, notes, and manifests were preserved.
+
+Write p_H^(0) for balanced coalescence of even adjacent residues at
+depth H, and q_H=(1-p_H^(0))/2. KERNEL persistence, refinement data
+equality, and exact repeated-period counts on every dyadic source
+annulus give the WRITTEN energy cap
+  e_(s,k) <= q_H for every s>=0 and 1<=H<=k+1.
+The depth is limited by the actual source period, not by the potentially
+much longer evaluation time. The even child equals the parent; balanced
+pairs have exactly equal odd-child data as well. Other jumps have square
+at most one. No infinite-time fusion assumption is used.
+
+A new independent direct census through depth twenty, without the old
+high-bit lift recursion, reproduces all prior parity-conditioned counts:
+  p_20^(0)=289565/524288, q_20=234723/1048576,
+  sum_(H=1..19)q_H=699653/131072.
+These are Python finite checks, not kernel evaluations of a million
+residues. All-depth source transport is separately kernel proved.
+
+KERNEL J(s)=ceil(121s/50) satisfies 121s<=50J<121s+50 and
+  2^(3s+J(s)) <= 3^(s+J(s)).
+The proof uses 2^271<=3^171 and fifty exact remainder cases, all kernel
+decide, without native_decide. It follows WRITTEN that
+(8/3)^s*(2/3)^J<=1. Split the energy at K=19+J, sum the first nineteen
+caps, use q_20 for the next J levels, and apply the prior geometric tail:
+  E_s <= (699653/131072)+(234723/1048576)*J(s)+T_19,
+  T_19=(1/2)*4^-19+(21/4)*(2/3)^19.
+The exact additive constant after bounding J is approximately 5.5641463,
+giving E_s <= (28401483/52428800)*s+6 <= 0.542*s+6.
+This improves the earlier 1.5*s+5.75 bound for sufficiently large s,
+but is still insufficient for the limiting-energy criterion.
+
+The WRITTEN obstruction concerns the strongest levelwise certificate
+from these two estimates, not the actual energy:
+  B_s=sum_k min(q_(k+1), (3/8)*4^-k+(7/4)*(8/3)^s*(2/3)^k).
+For k<=2s the tail expression exceeds 1/2, so the minimum is q_(k+1).
+The old kernel harmonic bound gives B_s >= (1/2)*sum_(j<=2s+1)1/j.
+The old WRITTEN walk comparison sharpens this to
+  B_s >= (2s+1)*binomial(2s,s)/4^s-1/2 ~ 2*sqrt(s/pi).
+The central-binomial finite-sum identity is written and independently
+checked on 257 finite cases. Thus B_s and its Cesaro means diverge even
+if exact coalescence counts at EVERY depth were available. This does
+NOT show E_s diverges. Actual unmerged weights can be small or zero.
+Next work must retain those weights, or add information beyond these
+caps and this tail; deeper full-period counts alone cannot suffice.
+
+For any fixed H, the same argument bounds limsup E_s/s by (121/50)*q_H.
+If an additional theorem establishes p_H^(0)->1, this would imply
+E_s=o(s), still insufficient. That coalescence limit was not adopted.
+The cited Said Duran/Gao pages at Zenodo records 23003524 and 23003500
+were inaccessible through the web tool; no source was downloaded or
+replayed and no external result was added. The already cached basin
+manuscript remains unadopted. The unrelated OpenAI multiplicative
+two-point-correlation result was not used.
+
+KERNEL even-pair obstruction: the first POSITIVE time of equal odd
+counts for 6,7 is eleven; the endpoints are then 2,1 and both counts
+are five. The pair never has equal endpoints at a common clock, hence
+is never balanced, although both starts reach one. For every q>=0,
+the pair 2048q+6,2048q+7 has its first positive count equality at eleven
+with endpoints 243q+2,243q+1 and counts five. Its stopped gap is zero
+but its noncoalescence indicator is one. This one residue class is
+1/1024 of even inputs modulo 2048. Eternal nonfusion is asserted only
+for q=0. Equal-count absorption cannot replace actual fusion in a cap.
+
+WRITTEN exact drift formulation: the ordinary partial-sum limit
+  D_s=lim_m sum_(k<m) integral H_(s,k)*(H_(s,k+1)-H_(s,k))
+exists, since the finite energy identity telescopes and fixed-offset
+H_(s,k)->1/x in L2. It satisfies E_s=1/2-W_s(1)^2-2D_s.
+Absolute convergence of the drift series is not asserted. A lower bound
+on D_s along arbitrarily late offsets, or bounded Cesaro energy means,
+would suffice for the existing bounded-subsequence criterion; both
+remain unproved. Other positive cycles remain a separate open gap.
+
+Fresh verification passed at 2026-10-13T07:39:26.462211+00:00 on pinned
+Lean 4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Builds
+were sequential: CollatzAffine 0.370s, CoalescenceTail 0.444s,
+EscapeWeightRefinements 0.495s, CoalescenceEnergyCaps 0.221s. All seventeen
+new roots have standard axioms only, with no native evaluator, sorry,
+warnings, or added axioms. The new record has sixteen artifact hashes;
+twelve coalescence-tail and sixteen actual-refinement hashes were also
+revalidated. Subsequent note-only formula-formatting corrections and a
+non-strict decimal comparison did not change code or theorem statements;
+the record explicitly refreshes that one documentation digest.
+
+Finite checks: 20,971,540 exact shortcut updates; 2,097,150 adjacent
+residue comparisons; 4,103 first-return lifts including 2048-bit inputs;
+4,096 base-pair clocks; 24,570 independent rational refinement cells at
+offsets 0,7,16,32,64,128 and levels 0..11; 1,024 cutoff instances; and
+257 walk-tail sum identities. All jobs exited zero. No installation,
+credentials, staging, commits, or other Git writes occurred.
+
+Exploratory follow-up after this certificate (NOT incorporated into its
+verified scope): /tmp/collatz-first-count-return-moments.json contains
+exact finite prefix-tree moments of endpoint separation at the first
+positive equality of odd counts. Through depth twenty, conditioning on
+an initial even input, the returned mass is 391079/524288, absolute
+distance moment 364626/524288, and squared-distance moment
+2700594/524288. The latter already exceeds one. Initial-odd values are
+402074/524288, 740776/524288, and 4593136/524288 respectively.
+
+A second exploratory state aggregation in
+/tmp/collatz-count-return-state-moments.json matched those prefix data.
+Until count equality, orient the lower-count endpoint as x and write
+the higher-count endpoint as y=3^d*x+c, d>=1. The two fair endpoint
+parities give these transitions:
+  c even: (d,c/2), (d,(3c+1-3^d)/2);
+  c odd:  (d+1,(3c+1)/2), (d-1,(c-3^(d-1))/2).
+Initial states are (1,2) for an even pair and (1,-1) after swapping an
+odd pair. At d=0 the signed offset is the return separation. The tested
+invariant c<=3^d-1 gives c<=0 at return. The aggregated finite even
+absolute-distance numerator already exceeds its probability denominator
+at depth 27: 68790693/67108864. This calculation stopped both branches at
+its planned 400000-state threshold and exited 0; their last recorded
+moment rows are at depth 28.
+It is not a verified all-depth moment or contraction result. Retaining
+only unweighted separation moments looks inadequate for the desired
+energy bound; any further use needs an exact bridge and actual weights.
+
+Potential next algebraic input: U(n)+1=3^(n mod 2)*(floor(n/2)+1).
+If y+1<=P*(x+1), then floor(y/2)+1<=P*(floor(x/2)+1).
+Together these preserve y+1<=3^d*(x+1) while the count difference d
+stays nonnegative, proving the observed endpoint order at first return.
+This was derived on paper only in this follow-up, not added as a new
+kernel theorem or used to claim an energy estimate. The missing weighted
+cancellation, escape exclusion, and remaining-cycle exclusion are open.

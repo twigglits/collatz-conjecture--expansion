@@ -1,0 +1,521 @@
+{
+  "complete_periods": {
+    "counts": {
+      "reflected_weight_and_endpoint_identities": 2097170,
+      "reflected_adjacent_mask_comparisons": 2097150
+    },
+    "periods": [
+      {
+        "shortcut_depth": 1,
+        "period": 2,
+        "coalescing_adjacent_residues": 0,
+        "coalescing_adjacent_proportion": [
+          0,
+          1
+        ],
+        "full_positive_period_cycle_sources": 2,
+        "full_positive_period_cycle_proportion": [
+          1,
+          1
+        ]
+      },
+      {
+        "shortcut_depth": 2,
+        "period": 4,
+        "coalescing_adjacent_residues": 0,
+        "coalescing_adjacent_proportion": [
+          0,
+          1
+        ],
+        "full_positive_period_cycle_sources": 3,
+        "full_positive_period_cycle_proportion": [
+          3,
+          4
+        ]
+      },
+      {
+        "shortcut_depth": 3,
+        "period": 8,
+        "coalescing_adjacent_residues": 1,
+        "coalescing_adjacent_proportion": [
+          1,
+          8
+        ],
+        "full_positive_period_cycle_sources": 5,
+        "full_positive_period_cycle_proportion": [
+          5,
+          8
+        ]
+      },
+      {
+        "shortcut_depth": 4,
+        "period": 16,
+        "coalescing_adjacent_residues": 3,
+        "coalescing_adjacent_proportion": [
+          3,
+          16
+        ],
+        "full_positive_period_cycle_sources": 8,
+        "full_positive_period_cycle_proportion": [
+          1,
+          2
+        ]
+      },
+      {
+        "shortcut_depth": 5,
+        "period": 32,
+        "coalescing_adjacent_residues": 8,
+        "coalescing_adjacent_proportion": [
+          1,
+          4
+        ],
+        "full_positive_period_cycle_sources": 12,
+        "full_positive_period_cycle_proportion": [
+          3,
+          8
+        ]
+      },
+      {
+        "shortcut_depth": 6,
+        "period": 64,
+        "coalescing_adjacent_residues": 18,
+        "coalescing_adjacent_proportion": [
+          9,
+          32
+        ],
+        "full_positive_period_cycle_sources": 17,
+        "full_positive_period_cycle_proportion": [
+          17,
+          64
+        ]
+      },
+      {
+        "shortcut_depth": 7,
+        "period": 128,
+        "coalescing_adjacent_residues": 39,
+        "coalescing_adjacent_proportion": [
+          39,
+          128
+        ],
+        "full_positive_period_cycle_sources": 23,
+        "full_positive_period_cycle_proportion": [
+          23,
+          128
+        ]
+      },
+      {
+        "shortcut_depth": 8,
+        "period": 256,
+        "coalescing_adjacent_residues": 82,
+        "coalescing_adjacent_proportion": [
+          41,
+          128
+        ],
+        "full_positive_period_cycle_sources": 31,
+        "full_positive_period_cycle_proportion": [
+          31,
+          256
+        ]
+      },
+      {
+        "shortcut_depth": 9,
+        "period": 512,
+        "coalescing_adjacent_residues": 170,
+        "coalescing_adjacent_proportion": [
+          85,
+          256
+        ],
+        "full_positive_period_cycle_sources": 43,
+        "full_positive_period_cycle_proportion": [
+          43,
+          512
+        ]
+      },
+      {
+        "shortcut_depth": 10,
+        "period": 1024,
+        "coalescing_adjacent_residues": 351,
+        "coalescing_adjacent_proportion": [
+          351,
+          1024
+        ],
+        "full_positive_period_cycle_sources": 61,
+        "full_positive_period_cycle_proportion": [
+          61,
+          1024
+        ]
+      },
+      {
+        "shortcut_depth": 11,
+        "period": 2048,
+        "coalescing_adjacent_residues": 721,
+        "coalescing_adjacent_proportion": [
+          721,
+          2048
+        ],
+        "full_positive_period_cycle_sources": 85,
+        "full_positive_period_cycle_proportion": [
+          85,
+          2048
+        ]
+      },
+      {
+        "shortcut_depth": 12,
+        "period": 4096,
+        "coalescing_adjacent_residues": 1476,
+        "coalescing_adjacent_proportion": [
+          369,
+          1024
+        ],
+        "full_positive_period_cycle_sources": 116,
+        "full_positive_period_cycle_proportion": [
+          29,
+          1024
+        ]
+      },
+      {
+        "shortcut_depth": 13,
+        "period": 8192,
+        "coalescing_adjacent_residues": 3012,
+        "coalescing_adjacent_proportion": [
+          753,
+          2048
+        ],
+        "full_positive_period_cycle_sources": 155,
+        "full_positive_period_cycle_proportion": [
+          155,
+          8192
+        ]
+      },
+      {
+        "shortcut_depth": 14,
+        "period": 16384,
+        "coalescing_adjacent_residues": 6130,
+        "coalescing_adjacent_proportion": [
+          3065,
+          8192
+        ],
+        "full_positive_period_cycle_sources": 205,
+        "full_positive_period_cycle_proportion": [
+          205,
+          16384
+        ]
+      },
+      {
+        "shortcut_depth": 15,
+        "period": 32768,
+        "coalescing_adjacent_residues": 12450,
+        "coalescing_adjacent_proportion": [
+          6225,
+          16384
+        ],
+        "full_positive_period_cycle_sources": 273,
+        "full_positive_period_cycle_proportion": [
+          273,
+          32768
+        ]
+      },
+      {
+        "shortcut_depth": 16,
+        "period": 65536,
+        "coalescing_adjacent_residues": 25241,
+        "coalescing_adjacent_proportion": [
+          25241,
+          65536
+        ],
+        "full_positive_period_cycle_sources": 364,
+        "full_positive_period_cycle_proportion": [
+          91,
+          16384
+        ]
+      },
+      {
+        "shortcut_depth": 17,
+        "period": 131072,
+        "coalescing_adjacent_residues": 51105,
+        "coalescing_adjacent_proportion": [
+          51105,
+          131072
+        ],
+        "full_positive_period_cycle_sources": 484,
+        "full_positive_period_cycle_proportion": [
+          121,
+          32768
+        ]
+      },
+      {
+        "shortcut_depth": 18,
+        "period": 262144,
+        "coalescing_adjacent_residues": 103358,
+        "coalescing_adjacent_proportion": [
+          51679,
+          131072
+        ],
+        "full_positive_period_cycle_sources": 643,
+        "full_positive_period_cycle_proportion": [
+          643,
+          262144
+        ]
+      },
+      {
+        "shortcut_depth": 19,
+        "period": 524288,
+        "coalescing_adjacent_residues": 208840,
+        "coalescing_adjacent_proportion": [
+          26105,
+          65536
+        ],
+        "full_positive_period_cycle_sources": 854,
+        "full_positive_period_cycle_proportion": [
+          427,
+          262144
+        ]
+      },
+      {
+        "shortcut_depth": 20,
+        "period": 1048576,
+        "coalescing_adjacent_residues": 421643,
+        "coalescing_adjacent_proportion": [
+          421643,
+          1048576
+        ],
+        "full_positive_period_cycle_sources": 1136,
+        "full_positive_period_cycle_proportion": [
+          71,
+          65536
+        ]
+      }
+    ],
+    "decay_bound_arithmetic": [
+      {
+        "q": 0,
+        "shortcut_depth": 0,
+        "written_full_period_upper_bound": [
+          390,
+          1
+        ]
+      },
+      {
+        "q": 6,
+        "shortcut_depth": 36,
+        "written_full_period_upper_bound": [
+          9173946795,
+          536870912
+        ]
+      },
+      {
+        "q": 12,
+        "shortcut_depth": 72,
+        "written_full_period_upper_bound": [
+          431596409217901395,
+          576460752303423488
+        ]
+      },
+      {
+        "q": 24,
+        "shortcut_depth": 144,
+        "written_full_period_upper_bound": [
+          955258771537365129454677579194595,
+          664613997892457936451903530140172288
+        ]
+      },
+      {
+        "q": 48,
+        "shortcut_depth": 288,
+        "written_full_period_upper_bound": [
+          4679586259482440756774480468508771139932534449116754912866036995,
+          883423532389192164791648750371459257913741948437809479060803100646309888
+        ]
+      },
+      {
+        "q": 96,
+        "shortcut_depth": 576,
+        "written_full_period_upper_bound": [
+          112300141333009545403074815427652249830139180867299666751136888277022036163263948344516490617504369023437114877076712598505795,
+          1560874275157996115690798614896583152874299071332485575429578479812685869409882810060153051531745985579913465560703311447723987839644142653145088
+        ]
+      }
+    ],
+    "minus_cycle": [
+      5,
+      7,
+      10
+    ],
+    "plus5_first_one_time": 4,
+    "published_sequence_comparison": "https://oeis.org/A398792",
+    "scope": "Exhaustive finite arithmetic through depth 20; the all-depth reflection is separately kernel proved, and the decay limit is written."
+  },
+  "initial_intervals": {
+    "ordinary_first_one": {
+      "source_cutoff": 65536,
+      "certified_time_rows": 142216,
+      "direct_sources": 4096,
+      "direct_steps": 307751,
+      "maximum_time_on_initial_interval": 339
+    },
+    "shortcut_first_cycle_entry": {
+      "source_cutoff": 65536,
+      "certified_time_rows": 104146,
+      "direct_sources": 4096,
+      "direct_steps": 201676,
+      "maximum_time_on_initial_interval": 213
+    },
+    "log_two_enclosure": {
+      "positive_series_terms": 24,
+      "lower": [
+        9443662622785393135066238615529291327296,
+        13624325233720948163518982443619506174725
+      ],
+      "upper": [
+        29380283715332334197983861603998305670257,
+        42386789616020727619836834269038463654700
+      ]
+    },
+    "populations": [
+      {
+        "source_cutoff": 16,
+        "ordinary_clock_floor_11_log_X": 30,
+        "shortcut_clock_ceil_11_log_X": 31,
+        "ordinary_one_hits_within_clock": 16,
+        "shortcut_cycle_hits_within_clock": 16,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          134217728
+        ]
+      },
+      {
+        "source_cutoff": 32,
+        "ordinary_clock_floor_11_log_X": 38,
+        "shortcut_clock_ceil_11_log_X": 39,
+        "ordinary_one_hits_within_clock": 30,
+        "shortcut_cycle_hits_within_clock": 30,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          17179869184
+        ]
+      },
+      {
+        "source_cutoff": 64,
+        "ordinary_clock_floor_11_log_X": 45,
+        "shortcut_clock_ceil_11_log_X": 46,
+        "ordinary_one_hits_within_clock": 56,
+        "shortcut_cycle_hits_within_clock": 56,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          1099511627776
+        ]
+      },
+      {
+        "source_cutoff": 128,
+        "ordinary_clock_floor_11_log_X": 53,
+        "shortcut_clock_ceil_11_log_X": 54,
+        "ordinary_one_hits_within_clock": 102,
+        "shortcut_cycle_hits_within_clock": 103,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          140737488355328
+        ]
+      },
+      {
+        "source_cutoff": 256,
+        "ordinary_clock_floor_11_log_X": 60,
+        "shortcut_clock_ceil_11_log_X": 61,
+        "ordinary_one_hits_within_clock": 186,
+        "shortcut_cycle_hits_within_clock": 204,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          9007199254740992
+        ]
+      },
+      {
+        "source_cutoff": 512,
+        "ordinary_clock_floor_11_log_X": 68,
+        "shortcut_clock_ceil_11_log_X": 69,
+        "ordinary_one_hits_within_clock": 355,
+        "shortcut_cycle_hits_within_clock": 435,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          1152921504606846976
+        ]
+      },
+      {
+        "source_cutoff": 1024,
+        "ordinary_clock_floor_11_log_X": 76,
+        "shortcut_clock_ceil_11_log_X": 77,
+        "ordinary_one_hits_within_clock": 690,
+        "shortcut_cycle_hits_within_clock": 926,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          147573952589676412928
+        ]
+      },
+      {
+        "source_cutoff": 2048,
+        "ordinary_clock_floor_11_log_X": 83,
+        "shortcut_clock_ceil_11_log_X": 84,
+        "ordinary_one_hits_within_clock": 1337,
+        "shortcut_cycle_hits_within_clock": 1882,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          9444732965739290427392
+        ]
+      },
+      {
+        "source_cutoff": 4096,
+        "ordinary_clock_floor_11_log_X": 91,
+        "shortcut_clock_ceil_11_log_X": 92,
+        "ordinary_one_hits_within_clock": 2613,
+        "shortcut_cycle_hits_within_clock": 3805,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          1208925819614629174706176
+        ]
+      },
+      {
+        "source_cutoff": 8192,
+        "ordinary_clock_floor_11_log_X": 99,
+        "shortcut_clock_ceil_11_log_X": 100,
+        "ordinary_one_hits_within_clock": 5204,
+        "shortcut_cycle_hits_within_clock": 7676,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          154742504910672534362390528
+        ]
+      },
+      {
+        "source_cutoff": 16384,
+        "ordinary_clock_floor_11_log_X": 106,
+        "shortcut_clock_ceil_11_log_X": 107,
+        "ordinary_one_hits_within_clock": 10390,
+        "shortcut_cycle_hits_within_clock": 15393,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          9903520314283042199192993792
+        ]
+      },
+      {
+        "source_cutoff": 32768,
+        "ordinary_clock_floor_11_log_X": 114,
+        "shortcut_clock_ceil_11_log_X": 115,
+        "ordinary_one_hits_within_clock": 20864,
+        "shortcut_cycle_hits_within_clock": 31186,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          1267650600228229401496703205376
+        ]
+      },
+      {
+        "source_cutoff": 65536,
+        "ordinary_clock_floor_11_log_X": 121,
+        "shortcut_clock_ceil_11_log_X": 122,
+        "ordinary_one_hits_within_clock": 41607,
+        "shortcut_cycle_hits_within_clock": 62444,
+        "source_fraction_of_shortcut_parity_period": [
+          1,
+          81129638414606681695789005144064
+        ]
+      }
+    ],
+    "scope": "Finite known-cycle populations only. No asymptotic density or error rate is inferred."
+  }
+}

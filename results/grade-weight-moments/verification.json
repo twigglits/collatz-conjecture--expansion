@@ -1,0 +1,119 @@
+{
+  "verified_at_utc": "2026-10-12T21:35:23.422954+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 13,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-grade-weight-57oyrv14/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.372,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/grade-weight-moments/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-grade-weight-57oyrv14/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.476,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/grade-weight-moments/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/GradeWeightMoments.lean",
+      "source_sha256": "4a370ea7ea6c18e851fa02e7ef35cfdec00997a701044de37c272d2ee53e07d6",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-grade-weight-57oyrv14/GradeWeightMoments.olean",
+        "lean/GradeWeightMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.354,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/grade-weight-moments/GradeWeightMoments.log",
+      "log_sha256": "a8a8190f01ccbcadf2afa9fe1aa38aa5c1f9a5f1f484e3278be49ca59d51a291",
+      "olean_sha256": "039f4b325264b25e7a49a68576fe3220c86c36949ccf8408a95896f6cc9ba850"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/dyadic-coalescence-defects/verification.json": 22,
+    "results/coalescence-tail/verification.json": 12,
+    "results/weighted-dissipation/verification.json": 15
+  },
+  "kernel_scope": [
+    "Exact scaled affine principal and correction identities for actual shortcut trajectories.",
+    "The auxiliary grade weight is bounded by one and decreases at every step, in integer form.",
+    "All-depth periodicity, paired next-bit recursions, and exact masses 7^t, 5^t, (10^t-7^t)/3."
+  ],
+  "written_scope": [
+    "The auxiliary limit is arrival-grade weight on the known basin and zero on every orbit never reaching one.",
+    "Explicit rational finite-time mean bound and a uniform O(X^(-log_2(8/7))) initial-interval bound.",
+    "Unconditional summability of auxiliary dyadic amplitudes and finite total amplitude variation.",
+    "Conditional on the prior density law and external PLD, any divergent orbit forces infinite escape-weight dyadic squared variation almost everywhere."
+  ],
+  "finite_scope": {
+    "exact_affine_data_rows": 2097150,
+    "next_bit_moment_identities": 1048575,
+    "complete_period_moment_triples": 20,
+    "positive_source_weight_rows": 2097150,
+    "independent_direct_residue_paths": 41878,
+    "independent_fraction_dualities": 41858,
+    "independent_lifted_data_rows": 384,
+    "known_cycle_plateau_steps": 49152,
+    "independent_first_arrival_paths": 4096,
+    "direct_prearrival_monotonicity_steps": 205771,
+    "strict_prearrival_odd_steps": 101980
+  },
+  "external_dependencies": {
+    "unconditional_grade_weight_bound": [],
+    "conditional_escape_variation_interpretation": [
+      "Previously written natural-density/component law.",
+      "Previously replayed target-dependent predecessor positive lower density."
+    ],
+    "new_external_theorems_adopted": false,
+    "external_modules_rebuilt": false
+  },
+  "not_proved": [
+    "Any upper bound implying finite squared variation for the actual escape weight.",
+    "A sharp logarithmic occupation upper bound or uniform decay of all moving-target densities.",
+    "Vanishing escape mass, exclusion of other cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/GradeWeightMoments.lean": "4a370ea7ea6c18e851fa02e7ef35cfdec00997a701044de37c272d2ee53e07d6",
+    "verify_grade_weight_moments.py": "c7d1ca4752a4ea15b17a1b1d47fd3a7d41be467e8c914f8a338cc1359d90ef52",
+    "docs/GRADE-WEIGHT-MOMENTS.md": "2df6e896521cd5c1713d5306f72c2fd6a6668084c22080d4f0b8ae69f4b2cb90",
+    "docs/DYADIC-COALESCENCE-DEFECTS.md": "bc6e37d36ce8e45600d8c6b31f699409444bd69fec4de2275fa40981c374187d",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "results/dyadic-coalescence-defects/verification.json": "f84d3f9b16d6fe8e9e7d5a6a0ff1bb8b16a3d0953e836dede88e64fa44abdec8",
+    "results/coalescence-tail/verification.json": "37916a2d845b7e3443c9d72d8533e16157430fd956e262781f2f14a20e054133",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/grade-weight-moments/replay.json": "c46825ed2f16501a77df6900b552cab8feba3a8a7a02afa0b506433bbab1e988",
+    "results/grade-weight-moments/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/grade-weight-moments/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/grade-weight-moments/GradeWeightMoments.log": "a8a8190f01ccbcadf2afa9fe1aa38aa5c1f9a5f1f484e3278be49ca59d51a291"
+  }
+}

@@ -314,3 +314,10 @@ The [written-review record](../results/density-to-pointwise/written-review.json)
 identifies the source versions and the separate written, kernel-replayed,
 and previously computed evidence used here. Section 5 is also written
 analysis; no new kernel certificate is claimed for (11)–(13).
+
+A [subsequent first-passage and flow argument](PREDECESSOR-DENSITY-FLOW.md)
+proves, under these written analytic inputs, that \(r_b\to0\) uniformly
+as \(b\to\infty\) within each fixed predecessor basin \(P_a\). It also
+justifies the infinite inverse-branch density sum at a nonperiodic odd
+root. That basin-specific limit does not give decay along a divergent
+forward orbit, whose later states leave every fixed earlier basin.

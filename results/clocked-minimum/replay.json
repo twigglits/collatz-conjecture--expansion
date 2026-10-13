@@ -1,0 +1,517 @@
+{
+  "scope": "Exact finite ordinary Collatz trajectories and rational inequalities; no numerical certification of a density error or asymptotic time bound.",
+  "counts": {
+    "complete_known_cycle_sources": 8192,
+    "distinct_path_entries_with_source_multiplicity": 684579,
+    "nonentry_marks_checked": 8192,
+    "record_entry_and_minimum_clock_checks": 57344,
+    "target_before_or_after_checks": 436408,
+    "coupled_clock_checks_against_group_representative": 57344,
+    "exact_probability_clock_transfer_checks": 480,
+    "exact_centered_probability_clock_checks": 640,
+    "exact_scale_clock_sums": 129,
+    "ordinary_clock_budget_checks": 771
+  },
+  "floors": [
+    {
+      "floor": 0,
+      "finite_landing_groups": 0,
+      "nonentry_sources": 8192,
+      "ordinary_prefix_values_compared_with_landing": 0
+    },
+    {
+      "floor": 1,
+      "finite_landing_groups": 1,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 676384
+    },
+    {
+      "floor": 3,
+      "finite_landing_groups": 2,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 676300
+    },
+    {
+      "floor": 7,
+      "finite_landing_groups": 4,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 621217
+    },
+    {
+      "floor": 31,
+      "finite_landing_groups": 16,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 484729
+    },
+    {
+      "floor": 127,
+      "finite_landing_groups": 64,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 285107
+    },
+    {
+      "floor": 511,
+      "finite_landing_groups": 256,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 185127
+    },
+    {
+      "floor": 2047,
+      "finite_landing_groups": 1024,
+      "nonentry_sources": 0,
+      "ordinary_prefix_values_compared_with_landing": 81598
+    }
+  ],
+  "even_below_floor_before_odd_landing_witness": {
+    "source": 85,
+    "floor": 31,
+    "ordinary_landing_time": 9,
+    "landing": 1,
+    "earlier_time": 5,
+    "earlier_value": 16
+  },
+  "probability_clock_transfers": [
+    {
+      "source_odd_interval": [
+        128,
+        256
+      ],
+      "reference_odd_interval": [
+        64,
+        128
+      ],
+      "floor": 0,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -27,
+        32
+      ]
+    },
+    {
+      "source_odd_interval": [
+        128,
+        256
+      ],
+      "reference_odd_interval": [
+        64,
+        128
+      ],
+      "floor": 1,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        0,
+        1
+      ]
+    },
+    {
+      "source_odd_interval": [
+        128,
+        256
+      ],
+      "reference_odd_interval": [
+        64,
+        128
+      ],
+      "floor": 7,
+      "total_variation": [
+        3,
+        64
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -3,
+        64
+      ]
+    },
+    {
+      "source_odd_interval": [
+        128,
+        256
+      ],
+      "reference_odd_interval": [
+        64,
+        128
+      ],
+      "floor": 31,
+      "total_variation": [
+        5,
+        32
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -5,
+        32
+      ]
+    },
+    {
+      "source_odd_interval": [
+        128,
+        256
+      ],
+      "reference_odd_interval": [
+        64,
+        128
+      ],
+      "floor": 127,
+      "total_variation": [
+        41,
+        64
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -41,
+        64
+      ]
+    },
+    {
+      "source_odd_interval": [
+        256,
+        512
+      ],
+      "reference_odd_interval": [
+        128,
+        256
+      ],
+      "floor": 0,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -121,
+        128
+      ]
+    },
+    {
+      "source_odd_interval": [
+        256,
+        512
+      ],
+      "reference_odd_interval": [
+        128,
+        256
+      ],
+      "floor": 1,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -7,
+        128
+      ]
+    },
+    {
+      "source_odd_interval": [
+        256,
+        512
+      ],
+      "reference_odd_interval": [
+        128,
+        256
+      ],
+      "floor": 7,
+      "total_variation": [
+        3,
+        64
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -9,
+        128
+      ]
+    },
+    {
+      "source_odd_interval": [
+        256,
+        512
+      ],
+      "reference_odd_interval": [
+        128,
+        256
+      ],
+      "floor": 31,
+      "total_variation": [
+        5,
+        64
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -5,
+        64
+      ]
+    },
+    {
+      "source_odd_interval": [
+        256,
+        512
+      ],
+      "reference_odd_interval": [
+        128,
+        256
+      ],
+      "floor": 127,
+      "total_variation": [
+        41,
+        128
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -41,
+        128
+      ]
+    },
+    {
+      "source_odd_interval": [
+        1024,
+        2048
+      ],
+      "reference_odd_interval": [
+        512,
+        1024
+      ],
+      "floor": 0,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -483,
+        512
+      ]
+    },
+    {
+      "source_odd_interval": [
+        1024,
+        2048
+      ],
+      "reference_odd_interval": [
+        512,
+        1024
+      ],
+      "floor": 1,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -205,
+        512
+      ]
+    },
+    {
+      "source_odd_interval": [
+        1024,
+        2048
+      ],
+      "reference_odd_interval": [
+        512,
+        1024
+      ],
+      "floor": 7,
+      "total_variation": [
+        5,
+        512
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -93,
+        256
+      ]
+    },
+    {
+      "source_odd_interval": [
+        1024,
+        2048
+      ],
+      "reference_odd_interval": [
+        512,
+        1024
+      ],
+      "floor": 31,
+      "total_variation": [
+        11,
+        256
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -149,
+        512
+      ]
+    },
+    {
+      "source_odd_interval": [
+        1024,
+        2048
+      ],
+      "reference_odd_interval": [
+        512,
+        1024
+      ],
+      "floor": 127,
+      "total_variation": [
+        29,
+        256
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -19,
+        64
+      ]
+    },
+    {
+      "source_odd_interval": [
+        4096,
+        8192
+      ],
+      "reference_odd_interval": [
+        2048,
+        4096
+      ],
+      "floor": 0,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -1969,
+        2048
+      ]
+    },
+    {
+      "source_odd_interval": [
+        4096,
+        8192
+      ],
+      "reference_odd_interval": [
+        2048,
+        4096
+      ],
+      "floor": 1,
+      "total_variation": [
+        0,
+        1
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -1143,
+        2048
+      ]
+    },
+    {
+      "source_odd_interval": [
+        4096,
+        8192
+      ],
+      "reference_odd_interval": [
+        2048,
+        4096
+      ],
+      "floor": 7,
+      "total_variation": [
+        9,
+        2048
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -1073,
+        2048
+      ]
+    },
+    {
+      "source_odd_interval": [
+        4096,
+        8192
+      ],
+      "reference_odd_interval": [
+        2048,
+        4096
+      ],
+      "floor": 31,
+      "total_variation": [
+        3,
+        128
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -865,
+        2048
+      ]
+    },
+    {
+      "source_odd_interval": [
+        4096,
+        8192
+      ],
+      "reference_odd_interval": [
+        2048,
+        4096
+      ],
+      "floor": 127,
+      "total_variation": [
+        43,
+        1024
+      ],
+      "clock_pairs_checked": 24,
+      "maximum_lhs_minus_rhs": [
+        -677,
+        2048
+      ]
+    }
+  ],
+  "exact_arithmetic": {
+    "log_two_positive_partial_sum": [
+      53056,
+      76545
+    ],
+    "chernoff_factor": [
+      8758052445214736248012157388060650264925973262822460268538244271890458289793460381912055595056905495058205379553204484056282189749878624764906123675972706974428168323685746284391054585169101131209025861127626766563221412824602296121946021918661046522447876468481696516156945142209402453910382481151908707304565301507567113413937506577688981036743491814736200524156250406559182780983267650279829146685990019295680795068705900012000164433717363101418564827204040201,
+      8779865855173300486978303030990571811821624167087653709763155593257813058119917925305132281082484195275451308794837619797604522209521738412503103883392457697115015065868338904121307194377113897190499863243444663820566787629628424187456279067985895091827853439795200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    ],
+    "scale_clock_coefficient_upper_bound": [
+      43000000,
+      99099
+    ]
+  },
+  "finite_population_minimum_clocks": [
+    {
+      "source_cutoff": 64,
+      "exact_maximum_minimum_time": 112,
+      "least_maximizing_source": 54
+    },
+    {
+      "source_cutoff": 256,
+      "exact_maximum_minimum_time": 127,
+      "least_maximizing_source": 231
+    },
+    {
+      "source_cutoff": 1024,
+      "exact_maximum_minimum_time": 178,
+      "least_maximizing_source": 871
+    },
+    {
+      "source_cutoff": 4096,
+      "exact_maximum_minimum_time": 237,
+      "least_maximizing_source": 3711
+    },
+    {
+      "source_cutoff": 8192,
+      "exact_maximum_minimum_time": 261,
+      "least_maximizing_source": 6171
+    }
+  ],
+  "minimum_scope": "All sampled paths end in the verified 1,4,2 cycle, so their global minimum and first attainment are determined exactly."
+}

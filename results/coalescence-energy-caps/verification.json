@@ -1,0 +1,132 @@
+{
+  "verified_at_utc": "2026-10-13T07:39:26.462211+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 17,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-energy-caps-2w5tcrlt/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.37,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-energy-caps/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-energy-caps-2w5tcrlt/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.444,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-energy-caps/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-energy-caps-2w5tcrlt/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.495,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-energy-caps/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CoalescenceEnergyCaps.lean",
+      "source_sha256": "5610654f78e3bbe3a57bebf745d06e90024f0e2aa173bfcf1276cc040cd4c0d0",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-energy-caps-2w5tcrlt/CoalescenceEnergyCaps.olean",
+        "lean/CoalescenceEnergyCaps.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.221,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/coalescence-energy-caps/CoalescenceEnergyCaps.log",
+      "log_sha256": "f7256d97e2a69822918aa29fd92ca54c7146d0381a4648c98a7f827cfdda1932",
+      "olean_sha256": "4a8686ddb464557700a4bce601a4781e7533dd03911a79354b503aef8d5d2cb0"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/coalescence-tail/verification.json": 12,
+    "results/escape-weight-refinements/verification.json": 16
+  },
+  "kernel_scope": [
+    "Balanced coalescence persists and annihilates the later refinement cross product.",
+    "Exact periodic even-pair counts on dyadic source annuli at every eligible depth.",
+    "All-offset integer cutoff inequality for ceil(121*s/50).",
+    "An even-input residue class reaches equal odd counts without merging at time eleven.",
+    "The base pair 6,7 is never balanced, although both starts reach the known cycle."
+  ],
+  "written_scope": [
+    "Each level energy is at most half its full-period even-pair noncoalescence fraction.",
+    "Direct finite counts and the prior written tail give E_s <= (28401483/52428800)*s+6.",
+    "The cap-plus-tail upper-bound certificate must diverge, at least harmonically by the kernel tail and at square-root order by the written walk comparison.",
+    "These certificate lower bounds are not lower bounds on the actual energies.",
+    "The exact signed drift identity exists as an ordinary partial-sum limit, without a claim of absolute convergence."
+  ],
+  "finite_scope": {
+    "direct_shortcut_updates": 20971540,
+    "direct_adjacent_residue_comparisons": 2097150,
+    "independent_lifted_first_returns": 4103,
+    "base_pair_nonfusion_times": 4096,
+    "independent_rational_refinement_cells": 24570,
+    "finite_cutoff_inequalities": 1024,
+    "finite_walk_tail_sum_identities": 257
+  },
+  "external_scope": "No new external result adopted; no coalescence-density-one premise or passage premise used.",
+  "not_proved": [
+    "A bounded subsequence of E_s, or a bounded sequence of its Cesaro means.",
+    "No divergent orbit, exclusion of other positive cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CoalescenceEnergyCaps.lean": "5610654f78e3bbe3a57bebf745d06e90024f0e2aa173bfcf1276cc040cd4c0d0",
+    "verify_coalescence_energy_caps.py": "aa0abf3457d96703b2c0968019c321fa2d17cdfd2915057e79c21f67ab37c007",
+    "docs/COALESCENCE-ENERGY-CAPS.md": "05cfbe0216f05f1256de0b714651ef4de1b342c52e2bed3f4be202f95f901500",
+    "docs/ESCAPE-WEIGHT-REFINEMENTS.md": "48bb99c11db620a7054489a5f4af7bdf192d8b6c8735ebdf9e1effe78871bbb9",
+    "docs/COALESCENCE-TAIL.md": "83d64bc37dda190237a9d762428126e83b7ea102d69c0cf766146327df6445f5",
+    "results/coalescence-tail/verification.json": "37916a2d845b7e3443c9d72d8533e16157430fd956e262781f2f14a20e054133",
+    "results/escape-weight-refinements/verification.json": "e495d6e0b2647cd06b175533041cac209b3c3f0fedc5f54437deae34dc0a5f42",
+    "results/coalescence-tail/replay.json": "ab8f0e129d8bc8b3e89489595e08f27b47834aa77818e0de550c8f2fe8384860",
+    "results/coalescence-energy-caps/replay.json": "75b7540965193bcbe2a6dfa4db5564609f854463f73ffbd1e125b98a4e511ad4",
+    "results/coalescence-energy-caps/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/coalescence-energy-caps/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/coalescence-energy-caps/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/coalescence-energy-caps/CoalescenceEnergyCaps.log": "f7256d97e2a69822918aa29fd92ca54c7146d0381a4648c98a7f827cfdda1932"
+  },
+  "documentation_refresh": {
+    "at_utc": "2026-10-13T07:43:33.523213+00:00",
+    "file": "docs/COALESCENCE-ENERGY-CAPS.md",
+    "scope": "Formula spacing, non-strict decimal comparison at s=0, and clarification that the first count return is at positive time; checked source and finite replay unchanged."
+  }
+}

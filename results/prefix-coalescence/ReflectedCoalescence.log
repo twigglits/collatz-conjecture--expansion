@@ -1,0 +1,7 @@
+'ReflectedCoalescence.reflected_pair' depends on axioms: [propext, Quot.sound]
+'ReflectedCoalescence.reflected_residue' depends on axioms: [propext, Quot.sound]
+'ReflectedCoalescence.reflected_adjacent_coalescence' depends on axioms: [propext, Quot.sound]
+'ReflectedCoalescence.minus_cycle_closed' does not depend on any axioms
+'ReflectedCoalescence.minus_cycle_trapped' does not depend on any axioms
+'ReflectedCoalescence.minus5_no_one' depends on axioms: [propext, Quot.sound]
+'ReflectedCoalescence.plus5_hits_one' does not depend on any axioms

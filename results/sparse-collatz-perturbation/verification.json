@@ -1,0 +1,175 @@
+{
+  "verified_at_utc": "2026-10-12T19:23:30.975017+00:00",
+  "status": "passed",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-sparse-perturbation-qzv5i9ry/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.486,
+      "log": "results/sparse-collatz-perturbation/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/SparseCollatzPerturbation.lean",
+      "source_sha256": "34394952ef699a68696b7588f1bf62451b63572de3890d438f8a97e5a2a24621",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-sparse-perturbation-qzv5i9ry/SparseCollatzPerturbation.olean",
+        "lean/SparseCollatzPerturbation.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.886,
+      "log": "results/sparse-collatz-perturbation/SparseCollatzPerturbation.log",
+      "log_sha256": "8558ba531dac6d31cf53c90e21a4df1070936e994020daf6c6cd750db5104fd9",
+      "olean_sha256": "7b3c7e6ef3c1e3fe07b530751b9a00287cb689a08089e9a1d0d9f1f5fc4543cc"
+    }
+  ],
+  "audited_kernel_theorems": [
+    "spine_power",
+    "partner_between",
+    "swap_involutive",
+    "swap_parity",
+    "unchanged_below",
+    "step_spine",
+    "step_partner",
+    "escape_even",
+    "escape_odd",
+    "escape_never_one",
+    "differs_from_collatz",
+    "known_cycle",
+    "hits_spine_never_one",
+    "unchanged_prefix",
+    "predecessor_iff",
+    "multiple_three_fibre",
+    "old_trap_closed",
+    "unchanged_safe_basin",
+    "safe_ancestor",
+    "inherited_unit_basin"
+  ],
+  "external_predecessor_input": {
+    "record": "results/predecessor-density-review/verification.json",
+    "record_sha256": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "status": "passed",
+    "finished_at_utc": "2026-10-12T14:44:35.318300+00:00",
+    "revalidated_module_artifact_triples": 389,
+    "recompiled": false,
+    "axiom_lines": [
+      "'CollatzPredecessorDensity.predecessors_positive_lower_density' depends on axioms: [Classical.choice, Quot.sound, propext]",
+      "'CollatzPredecessorDensity.nonconvergence_positive_lower_density_of_counterexample' depends on axioms: [Classical.choice, Quot.sound, propext]",
+      "'CollatzPredecessorDensity.universal_reaches_one_of_arbitrarily_dense_convergence' depends on axioms: [Classical.choice, Quot.sound, propext]"
+    ]
+  },
+  "prior_artifact_hashes_revalidated": 12,
+  "kernel_scope": [
+    "An explicitly altered map with an all-depth escaping path and the unchanged known cycle.",
+    "An involution of odd inputs, exact inverse branches, and pure-doubling fibres at multiples of three.",
+    "Agreement below an arbitrarily large threshold and exact transport of safe original basins.",
+    "Every unit target of the altered map contains a whole original unit-target predecessor basin."
+  ],
+  "written_scope": [
+    "Positive predecessor lower density at every altered-map unit target, inherited from external PLD.",
+    "Positive lower density of both convergence and escape for the altered map.",
+    "A logarithmically sparse set of changed inputs; zero predecessor density at multiples of three.",
+    "Conditional stability of the large-floor first-passage estimates under the sparse changes.",
+    "Fixed-depth parity frequencies and finite-path packing persist, with the stated scopes."
+  ],
+  "finite_scope": {
+    "structure": {
+      "large_index_swap_cases": 384,
+      "sparse_support_cutoffs": 3072,
+      "escaping_path_states": 768,
+      "unchanged_base_sources": 64
+    },
+    "inverse": {
+      "enumerated_sources": 1048592,
+      "ordinary_targets": 65536,
+      "shortcut_targets": 32768,
+      "changed_sources_in_enumeration": [
+        21845,
+        932067
+      ],
+      "scope": "Forward enumeration agrees with both exact inverse formulas over these cutoffs; the universal formulas are kernel results."
+    },
+    "safe_ancestors": {
+      "safe_ancestor_paths": 16404,
+      "safe_target_occurrences": 18196,
+      "unchanged_safe_prefix_states": 252473
+    },
+    "classification": {
+      "source_cutoff": 262144,
+      "checked_state_rows": 568838,
+      "direct_sources": 4096,
+      "direct_steps": 307751,
+      "populations": [
+        {
+          "cutoff": 64,
+          "proved_escape_sources": 0,
+          "proved_one_sources": 64
+        },
+        {
+          "cutoff": 1024,
+          "proved_escape_sources": 0,
+          "proved_one_sources": 1024
+        },
+        {
+          "cutoff": 16384,
+          "proved_escape_sources": 1,
+          "proved_one_sources": 16383
+        },
+        {
+          "cutoff": 65536,
+          "proved_escape_sources": 26,
+          "proved_one_sources": 65510
+        },
+        {
+          "cutoff": 262144,
+          "proved_escape_sources": 123,
+          "proved_one_sources": 262021
+        }
+      ],
+      "scope": "Finite exact classification using a proved infinite tail; no density value is inferred."
+    },
+    "prefix_source_steps": 786432
+  },
+  "not_proved": [
+    "A positive-integer counterexample or complete proof for the ACTUAL Collatz map.",
+    "Density one of actual Collatz convergence, or an estimate excluding its divergent components.",
+    "An unconditional or kernel-checked natural-density first-passage theorem.",
+    "An exact asymptotic convergence or escape fraction for the altered map."
+  ],
+  "sha256": {
+    "lean/SparseCollatzPerturbation.lean": "34394952ef699a68696b7588f1bf62451b63572de3890d438f8a97e5a2a24621",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "verify_sparse_collatz_perturbation.py": "a40290ecf9e4aa63240d51ec5a16d388691c8ccde6b4ed83caecd60ba94235f0",
+    "docs/SPARSE-COLLATZ-PERTURBATION.md": "430eebbead0ba5c9e02c29aff8f8a812ea5fe88f63cffa8da4d6775780f6a0e3",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "docs/PREDECESSOR-DENSITY-REVIEW.md": "1d24f741749586b15418c25376fbfa28ec817b466ea07d0a9503e614fbdc35f5",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "results/prefix-coalescence/verification.json": "5953349ef1799d83f64cebd0eb8e6f09f3ba9398edf7f8db716fc439401dfba3",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/sparse-collatz-perturbation/replay.json": "a174c7646581ec380042e0ba1a6feff30d2fac68c46ec73db33e741de40b57a3",
+    "results/sparse-collatz-perturbation/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/sparse-collatz-perturbation/SparseCollatzPerturbation.log": "8558ba531dac6d31cf53c90e21a4df1070936e994020daf6c6cd750db5104fd9"
+  },
+  "written_scope_review": {
+    "reviewed_at_utc": "2026-10-12T19:29:39.257801+00:00",
+    "change": "Explicitly records that upward swaps also violate the original odd-step growth bound.",
+    "compiled_and_finite_artifacts_changed": false,
+    "verification_rerun": false
+  }
+}

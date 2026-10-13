@@ -1,0 +1,165 @@
+{
+  "structure": {
+    "counts": {
+      "large_index_swap_cases": 384,
+      "sparse_support_cutoffs": 3072,
+      "escaping_path_states": 768,
+      "unchanged_base_sources": 64
+    },
+    "base_maximum_state": 9232,
+    "base_direct_steps": 1696,
+    "first_spine": [
+      21845,
+      1398101,
+      89478485,
+      5726623061
+    ],
+    "first_partners": [
+      932067,
+      59652323,
+      3817748707,
+      244335917283
+    ]
+  },
+  "inverse": {
+    "enumerated_sources": 1048592,
+    "ordinary_targets": 65536,
+    "shortcut_targets": 32768,
+    "changed_sources_in_enumeration": [
+      21845,
+      932067
+    ],
+    "scope": "Forward enumeration agrees with both exact inverse formulas over these cutoffs; the universal formulas are kernel results."
+  },
+  "safe_ancestors": {
+    "safe_ancestor_paths": 16404,
+    "safe_target_occurrences": 18196,
+    "unchanged_safe_prefix_states": 252473
+  },
+  "classification": {
+    "source_cutoff": 262144,
+    "checked_state_rows": 568838,
+    "direct_sources": 4096,
+    "direct_steps": 307751,
+    "populations": [
+      {
+        "cutoff": 64,
+        "proved_escape_sources": 0,
+        "proved_one_sources": 64
+      },
+      {
+        "cutoff": 1024,
+        "proved_escape_sources": 0,
+        "proved_one_sources": 1024
+      },
+      {
+        "cutoff": 16384,
+        "proved_escape_sources": 1,
+        "proved_one_sources": 16383
+      },
+      {
+        "cutoff": 65536,
+        "proved_escape_sources": 26,
+        "proved_one_sources": 65510
+      },
+      {
+        "cutoff": 262144,
+        "proved_escape_sources": 123,
+        "proved_one_sources": 262021
+      }
+    ],
+    "scope": "Finite exact classification using a proved infinite tail; no density value is inferred."
+  },
+  "prefix_coupling": {
+    "source_cutoff": 65536,
+    "depth": 12,
+    "checked_source_steps": 786432,
+    "rows": [
+      {
+        "depth": 1,
+        "sources_with_old_prefix_modification": 1,
+        "histogram_l1_count": 0,
+        "inverse_fibre_union_bound": 1,
+        "modified_inputs_below_envelope": 1
+      },
+      {
+        "depth": 2,
+        "sources_with_old_prefix_modification": 3,
+        "histogram_l1_count": 2,
+        "inverse_fibre_union_bound": 3,
+        "modified_inputs_below_envelope": 1
+      },
+      {
+        "depth": 3,
+        "sources_with_old_prefix_modification": 4,
+        "histogram_l1_count": 6,
+        "inverse_fibre_union_bound": 7,
+        "modified_inputs_below_envelope": 1
+      },
+      {
+        "depth": 4,
+        "sources_with_old_prefix_modification": 7,
+        "histogram_l1_count": 8,
+        "inverse_fibre_union_bound": 30,
+        "modified_inputs_below_envelope": 2
+      },
+      {
+        "depth": 5,
+        "sources_with_old_prefix_modification": 9,
+        "histogram_l1_count": 14,
+        "inverse_fibre_union_bound": 93,
+        "modified_inputs_below_envelope": 3
+      },
+      {
+        "depth": 6,
+        "sources_with_old_prefix_modification": 10,
+        "histogram_l1_count": 18,
+        "inverse_fibre_union_bound": 189,
+        "modified_inputs_below_envelope": 3
+      },
+      {
+        "depth": 7,
+        "sources_with_old_prefix_modification": 13,
+        "histogram_l1_count": 20,
+        "inverse_fibre_union_bound": 381,
+        "modified_inputs_below_envelope": 3
+      },
+      {
+        "depth": 8,
+        "sources_with_old_prefix_modification": 15,
+        "histogram_l1_count": 26,
+        "inverse_fibre_union_bound": 765,
+        "modified_inputs_below_envelope": 3
+      },
+      {
+        "depth": 9,
+        "sources_with_old_prefix_modification": 15,
+        "histogram_l1_count": 30,
+        "inverse_fibre_union_bound": 1533,
+        "modified_inputs_below_envelope": 3
+      },
+      {
+        "depth": 10,
+        "sources_with_old_prefix_modification": 16,
+        "histogram_l1_count": 30,
+        "inverse_fibre_union_bound": 4092,
+        "modified_inputs_below_envelope": 4
+      },
+      {
+        "depth": 11,
+        "sources_with_old_prefix_modification": 17,
+        "histogram_l1_count": 32,
+        "inverse_fibre_union_bound": 10235,
+        "modified_inputs_below_envelope": 5
+      },
+      {
+        "depth": 12,
+        "sources_with_old_prefix_modification": 20,
+        "histogram_l1_count": 34,
+        "inverse_fibre_union_bound": 20475,
+        "modified_inputs_below_envelope": 5
+      }
+    ],
+    "scope": "Exact finite prefix coupling; the growing-floor asymptotic and fixed-depth limits are written arguments."
+  }
+}

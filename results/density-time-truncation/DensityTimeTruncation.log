@@ -1,0 +1,17 @@
+'DensityTimeTruncation.two_step_predecessor_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityTimeTruncation.mem_parentsTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityTimeTruncation.parentsTwo_length' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.mem_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityTimeTruncation.fibre_length' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.count_binary_bound' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.count_shift' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.count_residue' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.twelve_step_residue_bound' does not depend on any axioms
+'DensityTimeTruncation.twelve_step_bound' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.twelve_step_witness' does not depend on any axioms
+'DensityTimeTruncation.twelve_step_witness_nodup' does not depend on any axioms
+'DensityTimeTruncation.count_composition_bound' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.repeated_block_bound' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.all_depth_bound' depends on axioms: [propext, Quot.sound]
+'DensityTimeTruncation.nodup_length_le_of_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityTimeTruncation.distinct_fibre_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
