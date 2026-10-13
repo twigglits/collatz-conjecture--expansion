@@ -1717,6 +1717,34 @@ The bound still allows a positive single
 column along a divergent moving target; the actual-gradient criterion
 and full Collatz remain unproved.
 
+The [return-slope tilt argument](docs/RETURN-SLOPE-TILT.md) now identifies
+the critical first moment under the coherent binary residue law.
+Weighting by one endpoint's affine slope changes its next odd probability
+to `3/4`. Tilted holding times remain finite, so the embedded biased
+count-gap walk computes the exact stopped slope mass. At fresh odd
+separation, the common returned slope has mean exactly `1/2`, conditional
+on either initial parity. At even separation the return takes one step
+and its unconditioned mean slope is one.
+
+For odd separation, the endpoint initially odd has returned correction
+of mean at most `5/4`; the initially even endpoint has infinite mean
+correction. The returned separation also has infinite mean. The latter
+comes from the exact Green occupation of every positive gap level,
+not an extrapolation of finite experiments. Already the first nonfused
+return from an even adjacent source forces `K*_beta` to fail Haar `L1`
+for every `beta>=1`. Thus the allowed separation range `beta<1` is sharp;
+this does not determine the optimal separate density exponent `p`.
+
+Below one, fractional gap roots improve the fresh correction bound to
+`E b_tau^eta<=72/(1-eta)` for `1/2<=eta<1`. Occupation coefficient and
+separation tails improve to `O((log u)^2/u)`, and weighted clock truncation
+to `O_beta(H^(-(1-beta)/2)(1+log H)^(1+beta))`. Nine kernel arithmetic
+roots, 419,328 direct fresh-return paths, and exact tilted holding and
+fractional-power checks passed. The probability and infinite analysis
+remain written and use no external analytic theorem. These results
+do not establish actual-gradient control, exclude escape or additional
+cycles, or settle Collatz.
+
 ## Reproduction
 
 ```sh

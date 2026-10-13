@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-13, after independently strengthening the integer return bound to K*_(0,H)(n)<=350 C_star n G_n sqrt(H), uniformly in the target after normalization. Ten new kernel roots and exact finite checks passed. This quantitative Cesaro result uses no external analytic theorem; actual-gradient control and Collatz remain unresolved.
+Last updated: 2026-10-14 local time, after the return-slope tilt argument proved WRITTEN exact slope means and infinite first separation moments, sharpening the below-one correction and occupation tails. Nine new kernel arithmetic roots and exact finite checks passed. The Haar separation range beta<1 is sharp for L1; actual-gradient control and Collatz remain unresolved.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
@@ -272,6 +272,21 @@ For the unweighted density, a complementary power above six could now
 suffice; neither that actual-gradient estimate nor the required ordinary
 integer sampling bound is proved. The temporal criterion Q and both
 parts of full Collatz remain unresolved. See the last dated entry.
+
+The newest return-slope argument proves WRITTEN exact mean slope 1/2
+for every odd fresh separation, conditional on either initial parity;
+the even-separation one-step mean is one. For odd separation, the
+initially odd endpoint's correction has mean at most 5/4, while the
+initially even correction and returned separation have infinite means.
+The first even-source nonfused return already forces K*_beta outside
+Haar L1 for beta>=1. Below one, the improved fresh correction budget is
+72/(1-eta), and occupation tails are O((log u)^2/u). Weighted clock
+truncation improves to O_beta(H^(-(1-beta)/2)(1+log H)^(1+beta)).
+Nine kernel arithmetic roots and exact finite checks passed; all
+infinite stopping and probability arguments remain written. No external
+analytic theorem is needed. The optimal density p exponent, actual
+gradient estimate, escape exclusion, and other-cycle exclusion remain
+open. See the last dated entry for verification and the precise law.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
