@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T13:12:22.152977+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 13,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.422,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.353,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.453,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.499,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/IntegerReturnCesaro.lean",
+      "source_sha256": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/IntegerReturnCesaro.olean",
+        "lean/IntegerReturnCesaro.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.178,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/IntegerReturnCesaro.log",
+      "log_sha256": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+      "olean_sha256": "8e0a78ba1284e1ba1de4eee7b6259571982a4dc95fef70fecbe60e6ad456dfc7"
+    },
+    {
+      "source": "lean/AnnulusTimeBudgets.lean",
+      "source_sha256": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/AnnulusTimeBudgets.olean",
+        "lean/AnnulusTimeBudgets.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.168,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/AnnulusTimeBudgets.log",
+      "log_sha256": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+      "olean_sha256": "fcf488c5c9b42b9c8ba36e6aeb43254f547d8a46459ea8c22991786b0969a82f"
+    },
+    {
+      "source": "lean/GradientClockObstruction.lean",
+      "source_sha256": "5b6bda40c9542b6f7990ee52079ae8286413d4c29e022ca94b2a1b63600b3025",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/GradientClockObstruction.olean",
+        "lean/GradientClockObstruction.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.231,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/GradientClockObstruction.log",
+      "log_sha256": "9f58f1baa17216d67c80d693bb5cb586e9986d8d2c586de70f55143a0b2ee035",
+      "olean_sha256": "ae20f266b8d06b458d722652ce0f522510acefdfb3990050d5b7aaf3d19d500c"
+    },
+    {
+      "source": "lean/SignedArrivalWindows.lean",
+      "source_sha256": "0a17657c29f3e724d44618224ecd1c938c6a806f1b7f37c22e2a23a95e6e0473",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/SignedArrivalWindows.olean",
+        "lean/SignedArrivalWindows.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.207,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/SignedArrivalWindows.log",
+      "log_sha256": "c03d9f4acaa044a5fdef02aa4f292a06d62fff5aefbf328db3008510d53ba7f2",
+      "olean_sha256": "2f1e11a2f73e7418aefbfd973a0c9bf0540c5b4d65987563058439170cf7874f"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.621,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.353,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/PrearrivalDeficitTransfer.lean",
+      "source_sha256": "70f59fa249a991ab746b8772845bbbd5b60cc6f31063ef82b82fa77b4c51a56f",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-transfer-e075_4ol/PrearrivalDeficitTransfer.olean",
+        "lean/PrearrivalDeficitTransfer.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.319,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/prearrival-deficit-transfer/PrearrivalDeficitTransfer.log",
+      "log_sha256": "691681e4338c099a35d03a9fe26482f0779d29607148b02c3d1fb262de708336",
+      "olean_sha256": "a794e226a51db311ea956684a5102a013492e54091dfeb83f510bd6743fd335e"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/signed-arrival-windows/verification.json": 34,
+    "results/reversal-persistence/verification.json": 14
+  },
+  "finite_scope": {
+    "finite_lifetime_clock_bounds": 16384,
+    "independent_first_arrival_steps": 90684,
+    "independent_first_arrivals": 1113,
+    "independent_deficit_sum_checks": 1038,
+    "certified_deficit_recursion_links": 27239,
+    "exact_doubling_deficits": 8192,
+    "exact_unit_doubling_transfers": 2731,
+    "finite_prefix_deficit_clock_bounds": 43249,
+    "exact_odd_deficit_and_clock_identities": 8191,
+    "finite_one_trajectory_upper_bounds": 4095,
+    "exact_prearrival_cost_terms": 148020,
+    "authenticated_prearrival_band_comparisons": 12,
+    "exact_omitted_prefix_bounds": 25,
+    "direct_clone_endpoint_identities": 25,
+    "clone_current_reversal_terms": 1025,
+    "exact_clone_limit_error_bounds": 25,
+    "exact_finite_prefix_clone_error_bounds": 1050,
+    "finite_small_suffix_loss_obstructions": 9,
+    "exact_complete_future_charge_counterexamples": 1
+  },
+  "floating_scope": "None in verification decisions.",
+  "kernel_scope": [
+    "Parametric affine clone endpoints, counts, seeds and source bands.",
+    "Current count reversal and finite no-arrival conditions at large endpoints.",
+    "Doubling a unit into one modulo nine and finite halving clock comparison.",
+    "The five-step target-ten suffix and a uniform parent-retention lower bound.",
+    "Every positive orbit reaches a unit modulo three, without assuming convergence."
+  ],
+  "written_scope": [
+    "Exact lifetime-deficit recursion and its linear-clock implication.",
+    "Uniform pointwise prearrival cost is equivalent to uniform lifetime deficit on the known unit basin, with explicit constants.",
+    "The unrestricted finite-prefix prearrival supremum is finite exactly when universal convergence and a uniform known-unit lifetime deficit both hold; neither condition is proved.",
+    "An infinite affine family has positive prearrival cost but vanishing parent losses during that interval.",
+    "A finite 404-bit convergent witness exceeds the complete future parent-loss budget with multiplier one."
+  ],
+  "external_scope": "None. No external analytic theorem, packing hypothesis or universal convergence premise is used.",
+  "not_proved": [
+    "Finiteness or infinitude of either supremum D_star or H_star.",
+    "Uniform pointwise or averaged prearrival bounds.",
+    "Failure of every multiplier when all future parent losses are available for prearrival cost.",
+    "Universal convergence of the constructed parent family.",
+    "Reversed drift, Q, escape exclusion, additional-cycle exclusion or full Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/IntegerReturnCesaro.lean": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+    "lean/AnnulusTimeBudgets.lean": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+    "lean/GradientClockObstruction.lean": "5b6bda40c9542b6f7990ee52079ae8286413d4c29e022ca94b2a1b63600b3025",
+    "lean/SignedArrivalWindows.lean": "0a17657c29f3e724d44618224ecd1c938c6a806f1b7f37c22e2a23a95e6e0473",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/PrearrivalDeficitTransfer.lean": "70f59fa249a991ab746b8772845bbbd5b60cc6f31063ef82b82fa77b4c51a56f",
+    "verify_prearrival_deficit_transfer.py": "9440a72d6799441d99dc0e0d4bda637d67747d830af1651b7cee28a27749ea84",
+    "verify_signed_arrival_windows.py": "11502aab26d3d547fe2215058d1703378eb261de2e928430fcc9c8f9f598f13b",
+    "verify_gradient_clock_obstruction.py": "83c9ce9e78a8d814b743b851d744faa3e0e086627113078c0e7b9ed933138e0a",
+    "verify_known_basin_nonfusion_trace.py": "d47d5eb772ea53766df3d83f172c36498531d1484c251da8776aca927ddec814",
+    "verify_dyadic_coalescence_defects.py": "9c9196a579e2e8a0b1afd7e403771dd93ef6bcf1f2e52e326de7e1559b6cf88f",
+    "verify_annulus_time_budgets.py": "791ef6cc9a308d391c02ac01cadf79a2c8f174f80cce3a37729aa5cae378aca7",
+    "docs/PREARRIVAL-DEFICIT-TRANSFER.md": "48b2b4914af05edd39c3e318f927b950f613d421f361e66abe9c77b5b231cf3a",
+    "docs/SIGNED-ARRIVAL-WINDOWS.md": "32ec0d9492bc09218c74b348a797f3e175e66bce9c29ce926d14b677a04aa305",
+    "docs/REVERSAL-PERSISTENCE.md": "5777bd39fd2c1ba3a149918864ff3d9a702fd2b85ace3256c3ec44cf5313fe11",
+    "results/signed-arrival-windows/verification.json": "7e4adc7a2c83b4fee5ae7ba5239ba0d73ad8540c6b12b69e404089f92e00bcf4",
+    "results/reversal-persistence/verification.json": "c87b25512d937d5127f73b5c4cb72915090ccdcfa7a98ccf73090cd80dda12ea",
+    "results/signed-arrival-windows/replay.json": "50778d6a32296ef2fc66463af9182fbf79875f0f09fc1655a5763f52f4c502a4",
+    "results/prearrival-deficit-transfer/replay.json": "0a1721c6cacf79772ba0ce817fb05642a24fbe1acf39f3b7904d94c4c651e0bc",
+    "results/prearrival-deficit-transfer/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/prearrival-deficit-transfer/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/prearrival-deficit-transfer/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/prearrival-deficit-transfer/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/prearrival-deficit-transfer/IntegerReturnCesaro.log": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+    "results/prearrival-deficit-transfer/AnnulusTimeBudgets.log": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+    "results/prearrival-deficit-transfer/GradientClockObstruction.log": "9f58f1baa17216d67c80d693bb5cb586e9986d8d2c586de70f55143a0b2ee035",
+    "results/prearrival-deficit-transfer/SignedArrivalWindows.log": "c03d9f4acaa044a5fdef02aa4f292a06d62fff5aefbf328db3008510d53ba7f2",
+    "results/prearrival-deficit-transfer/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/prearrival-deficit-transfer/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/prearrival-deficit-transfer/PrearrivalDeficitTransfer.log": "691681e4338c099a35d03a9fe26482f0779d29607148b02c3d1fb262de708336"
+  }
+}

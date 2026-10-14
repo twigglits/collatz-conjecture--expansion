@@ -1,0 +1,10 @@
+'CensoredDeficitClock.cell_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.cell_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.censored_sum_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.censored_sum_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.stopped_is_shorter_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.cell_truncation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.one_odd_loss_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.positive_density_forces_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.bad_mass_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CensoredDeficitClock.integer_clock_above_transition' does not depend on any axioms

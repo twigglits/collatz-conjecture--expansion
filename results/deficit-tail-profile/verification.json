@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T14:34:11.434720+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/DeficitLimitLaw.lean",
+      "source_sha256": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-tail-profile-6sefccve/DeficitLimitLaw.olean",
+        "lean/DeficitLimitLaw.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 2.226,
+      "log": "results/deficit-tail-profile/DeficitLimitLaw.log",
+      "log_sha256": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+      "olean_sha256": "061792d57ef29d4e7372c035741d5a2fdbd50790dd4144f46b1ca08654962eb2"
+    },
+    {
+      "source": "lean/DeficitClockMoment.lean",
+      "source_sha256": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-tail-profile-6sefccve/DeficitClockMoment.olean",
+        "lean/DeficitClockMoment.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.286,
+      "log": "results/deficit-tail-profile/DeficitClockMoment.log",
+      "log_sha256": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+      "olean_sha256": "c63523093cb66683416e6e42d73b799f299f85b54e9fa0677a9570f063ef3d5f"
+    },
+    {
+      "source": "lean/DeficitTailProfile.lean",
+      "source_sha256": "5d8410d601af2c65821920d889272ef75ec44ad53e11ab21901e379e159cdbd7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-tail-profile-6sefccve/DeficitTailProfile.olean",
+        "lean/DeficitTailProfile.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.313,
+      "log": "results/deficit-tail-profile/DeficitTailProfile.log",
+      "log_sha256": "41ecb9ece48962b3e3890d792856f5e9237ef956a62b027eeddff4d4c5edd868",
+      "olean_sha256": "685e140715780968df2a438e82723b0a17a6ccf68ea6dfc2903a61546818b43d"
+    }
+  ],
+  "kernel_theorems_audited": 8,
+  "prior_hashes_validated": {
+    "results/deficit-clock-moment/verification.json": 18,
+    "results/deficit-limit-law/verification.json": 14,
+    "results/prearrival-deficit-transfer/verification.json": 35,
+    "results/signed-arrival-windows/verification.json": 34
+  },
+  "finite_scope": {
+    "independent_known_first_arrivals": 4095,
+    "independent_shortcut_steps": 205759,
+    "exact_all_cutoff_loss_age_identities": 213949,
+    "exact_profile_shape_and_cap_checks": 213949,
+    "exact_scalar_excess_tail_bounds": 32760,
+    "exact_uniform_integrability_splits": 196560,
+    "certified_deficit_recursion_links": 6476,
+    "independent_loss_terms": 205759,
+    "exact_whole_profile_halving_invariances": 2047,
+    "authenticated_prior_clock_tail_comparisons": 72,
+    "exact_cutoffs_after_landing": 398224,
+    "exact_cutoffs_before_landing": 885470,
+    "exact_whole_profile_landing_bounds": 24570,
+    "exact_whole_profile_common_landing_comparisons": 24570,
+    "common_landings_with_loss_on_both_prefixes": 22623,
+    "exact_sparse_prearrival_tail_bounds": 8184,
+    "exact_prearrival_support_checks": 1023,
+    "exact_sparse_band_and_prefix_transfers": 80,
+    "authenticated_prior_prearrival_band_comparisons": 10,
+    "exact_prearrival_cost_terms": 28723,
+    "exact_zero_prearrival_cost_off_nonfusion": 508
+  },
+  "kernel_scope": [
+    "Finite rational loss-age tails equal shorter prefix deficits.",
+    "Cutoff cases, simultaneous common-tail comparison, scalar-tail and sparse-support inequalities."
+  ],
+  "written_scope": [
+    "Joint convergence of the global minimum, the entire deficit tail profile in c_0, and terminal weight.",
+    "Uniform vanishing of profile tails in probability, not in mean.",
+    "The limiting deficit law's first moment equals the weighted remaining-clock series as an extended value, possibly infinite.",
+    "Equivalence of source-deficit uniform integrability, uniform mean clock-tail decay, and convergence of source means to the finite common moment.",
+    "Under these unproved equivalent conditions, the known-child prearrival mean tends to zero."
+  ],
+  "analytic_scope": "The sequence-space and density deductions use the earlier local WRITTEN first-passage, packing and coalescence arguments. No external reciprocal density floor or new external build is used.",
+  "floating_scope": "No floating-point verification decisions; aggregate intervals use exact directed integer rounding at scale 2^96.",
+  "not_proved": [
+    "Finiteness of the limiting mean, bounded source means, uniform integrability or uniform mean tail decay.",
+    "A bound for negative arrival advances, postarrival drift or unknown-child pairs.",
+    "A new arrival-clock bound, escape exclusion, other-cycle exclusion or full Collatz."
+  ],
+  "sha256": {
+    "lean/DeficitLimitLaw.lean": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+    "lean/DeficitClockMoment.lean": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+    "lean/DeficitTailProfile.lean": "5d8410d601af2c65821920d889272ef75ec44ad53e11ab21901e379e159cdbd7",
+    "verify_deficit_tail_profile.py": "eb8c24b6a179dc0f35f648eb6fc4b89c0a77b3ec1af47427c7aa4dadf5f49ed6",
+    "verify_deficit_limit_law.py": "cba7d5029e5068933ef47567e8fa42df74df7137a08a276fbee9c7ff32f7563d",
+    "verify_prearrival_deficit_transfer.py": "9440a72d6799441d99dc0e0d4bda637d67747d830af1651b7cee28a27749ea84",
+    "docs/DEFICIT-TAIL-PROFILE.md": "9a332efb8458939c344cde8199177bae2b3208cd872d53db5258e83b0d71701d",
+    "docs/DEFICIT-CLOCK-MOMENT.md": "29e01bc2955948fef9841ac69f04949b6ddd298adf8fab83f8fa1855808e9045",
+    "docs/DEFICIT-LIMIT-LAW.md": "9c1f674e155ffe8cd8cf6dfac14e9107005745f536b0a258965c48ad81a8fc0f",
+    "docs/PREARRIVAL-DEFICIT-TRANSFER.md": "48b2b4914af05edd39c3e318f927b950f613d421f361e66abe9c77b5b231cf3a",
+    "docs/SIGNED-ARRIVAL-WINDOWS.md": "32ec0d9492bc09218c74b348a797f3e175e66bce9c29ce926d14b677a04aa305",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "results/deficit-clock-moment/verification.json": "5c25d1fd59e1246f5afd65cbe4f6faf863511b46b17fa2f15bef3c76649e7b25",
+    "results/deficit-limit-law/verification.json": "fc00d51815eb295c05d7a141d3f36066eec17a74a2d1e1d0dfdb90aec0feec83",
+    "results/prearrival-deficit-transfer/verification.json": "945d79a4b3132ff060557933003daa290823388cf065596464e7bdf4a145210c",
+    "results/signed-arrival-windows/verification.json": "7e4adc7a2c83b4fee5ae7ba5239ba0d73ad8540c6b12b69e404089f92e00bcf4",
+    "results/deficit-clock-moment/replay.json": "b154f16f743032a40083fbef71d1ba8b3a4c30c22640f56e20b96f9e91dab3a4",
+    "results/signed-arrival-windows/replay.json": "50778d6a32296ef2fc66463af9182fbf79875f0f09fc1655a5763f52f4c502a4",
+    "results/deficit-tail-profile/replay.json": "07b45eee4933eee28911c93aeaad20915a69756f8686206cc0cc6b8046b7fd37",
+    "results/deficit-tail-profile/DeficitLimitLaw.log": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+    "results/deficit-tail-profile/DeficitClockMoment.log": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+    "results/deficit-tail-profile/DeficitTailProfile.log": "41ecb9ece48962b3e3890d792856f5e9237ef956a62b027eeddff4d4c5edd868"
+  }
+}

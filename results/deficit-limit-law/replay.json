@@ -1,0 +1,838 @@
+{
+  "scope": "Exact finite rational computations; all sampled trajectories independently reached one.",
+  "global_minimum_scope": "No unknown orbit minimum is inferred from finite fuel.",
+  "counts": {
+    "independent_known_first_arrivals": 4095,
+    "independent_shortcut_steps": 205759,
+    "exact_prefix_splice_and_increment_checks": 209854,
+    "exact_finite_product_loss_bounds": 209854,
+    "exact_initial_halving_invariances": 2047,
+    "certified_deficit_recursion_links": 25970,
+    "exact_odd_passage_record_checks": 24570,
+    "exact_common_landing_comparisons": 24570,
+    "exact_maximal_couplings_and_marginals": 25,
+    "exact_truncated_moment_transport_checks": 400,
+    "exact_coupled_clock_failure_union_bounds": 100,
+    "exact_glued_five_link_chain_bounds": 766,
+    "exact_enclosed_band_deficits": 16383
+  },
+  "couplings": {
+    "rows": [
+      {
+        "larger_odd_band": [
+          128,
+          256
+        ],
+        "smaller_odd_band": [
+          64,
+          128
+        ],
+        "floor": 1,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 64,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          128,
+          256
+        ],
+        "smaller_odd_band": [
+          64,
+          128
+        ],
+        "floor": 3,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 64,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          128,
+          256
+        ],
+        "smaller_odd_band": [
+          64,
+          128
+        ],
+        "floor": 7,
+        "landing_total_variation": [
+          3,
+          64
+        ],
+        "coupling_edges": 64,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          128,
+          256
+        ],
+        "smaller_odd_band": [
+          64,
+          128
+        ],
+        "floor": 31,
+        "landing_total_variation": [
+          5,
+          32
+        ],
+        "coupling_edges": 64,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          128,
+          256
+        ],
+        "smaller_odd_band": [
+          64,
+          128
+        ],
+        "floor": 127,
+        "landing_total_variation": [
+          41,
+          64
+        ],
+        "coupling_edges": 64,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          256,
+          512
+        ],
+        "smaller_odd_band": [
+          128,
+          256
+        ],
+        "floor": 1,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 128,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          256,
+          512
+        ],
+        "smaller_odd_band": [
+          128,
+          256
+        ],
+        "floor": 3,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 128,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          256,
+          512
+        ],
+        "smaller_odd_band": [
+          128,
+          256
+        ],
+        "floor": 7,
+        "landing_total_variation": [
+          3,
+          64
+        ],
+        "coupling_edges": 128,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          256,
+          512
+        ],
+        "smaller_odd_band": [
+          128,
+          256
+        ],
+        "floor": 31,
+        "landing_total_variation": [
+          5,
+          64
+        ],
+        "coupling_edges": 128,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          256,
+          512
+        ],
+        "smaller_odd_band": [
+          128,
+          256
+        ],
+        "floor": 127,
+        "landing_total_variation": [
+          41,
+          128
+        ],
+        "coupling_edges": 128,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          512,
+          1024
+        ],
+        "smaller_odd_band": [
+          256,
+          512
+        ],
+        "floor": 1,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 256,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          512,
+          1024
+        ],
+        "smaller_odd_band": [
+          256,
+          512
+        ],
+        "floor": 3,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 256,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          512,
+          1024
+        ],
+        "smaller_odd_band": [
+          256,
+          512
+        ],
+        "floor": 7,
+        "landing_total_variation": [
+          5,
+          128
+        ],
+        "coupling_edges": 256,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          512,
+          1024
+        ],
+        "smaller_odd_band": [
+          256,
+          512
+        ],
+        "floor": 31,
+        "landing_total_variation": [
+          1,
+          16
+        ],
+        "coupling_edges": 256,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          512,
+          1024
+        ],
+        "smaller_odd_band": [
+          256,
+          512
+        ],
+        "floor": 127,
+        "landing_total_variation": [
+          15,
+          64
+        ],
+        "coupling_edges": 256,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          1024,
+          2048
+        ],
+        "smaller_odd_band": [
+          512,
+          1024
+        ],
+        "floor": 1,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 512,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          1024,
+          2048
+        ],
+        "smaller_odd_band": [
+          512,
+          1024
+        ],
+        "floor": 3,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 512,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          1024,
+          2048
+        ],
+        "smaller_odd_band": [
+          512,
+          1024
+        ],
+        "floor": 7,
+        "landing_total_variation": [
+          5,
+          512
+        ],
+        "coupling_edges": 512,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          1024,
+          2048
+        ],
+        "smaller_odd_band": [
+          512,
+          1024
+        ],
+        "floor": 31,
+        "landing_total_variation": [
+          11,
+          256
+        ],
+        "coupling_edges": 512,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          1024,
+          2048
+        ],
+        "smaller_odd_band": [
+          512,
+          1024
+        ],
+        "floor": 127,
+        "landing_total_variation": [
+          29,
+          256
+        ],
+        "coupling_edges": 512,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          2048,
+          4096
+        ],
+        "smaller_odd_band": [
+          1024,
+          2048
+        ],
+        "floor": 1,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 1024,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          2048,
+          4096
+        ],
+        "smaller_odd_band": [
+          1024,
+          2048
+        ],
+        "floor": 3,
+        "landing_total_variation": [
+          0,
+          1
+        ],
+        "coupling_edges": 1024,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          2048,
+          4096
+        ],
+        "smaller_odd_band": [
+          1024,
+          2048
+        ],
+        "floor": 7,
+        "landing_total_variation": [
+          3,
+          512
+        ],
+        "coupling_edges": 1024,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          2048,
+          4096
+        ],
+        "smaller_odd_band": [
+          1024,
+          2048
+        ],
+        "floor": 31,
+        "landing_total_variation": [
+          15,
+          512
+        ],
+        "coupling_edges": 1024,
+        "truncated_moment_checks": 16
+      },
+      {
+        "larger_odd_band": [
+          2048,
+          4096
+        ],
+        "smaller_odd_band": [
+          1024,
+          2048
+        ],
+        "floor": 127,
+        "landing_total_variation": [
+          91,
+          1024
+        ],
+        "coupling_edges": 1024,
+        "truncated_moment_checks": 16
+      }
+    ],
+    "five_link_chain": {
+      "source_count": 1024,
+      "good": 766,
+      "bad": 258,
+      "base_minimum_clock": 75,
+      "failure_union_bound": [
+        189,
+        512
+      ]
+    }
+  },
+  "finite_bands": [
+    {
+      "level": 0,
+      "source_interval": [
+        1,
+        2
+      ],
+      "mean_deficit": {
+        "lower": [
+          0,
+          1
+        ],
+        "upper": [
+          0,
+          1
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          0,
+          1
+        ],
+        "upper": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "level": 1,
+      "source_interval": [
+        2,
+        4
+      ],
+      "mean_deficit": {
+        "lower": [
+          45061017429987842006328121753,
+          158456325028528675187087900672
+        ],
+        "upper": [
+          22530508714993921003164060877,
+          79228162514264337593543950336
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          25628453663305585141099119247,
+          158456325028528675187087900672
+        ],
+        "upper": [
+          1601778353956599071318694953,
+          9903520314283042199192993792
+        ]
+      }
+    },
+    {
+      "level": 2,
+      "source_interval": [
+        4,
+        8
+      ],
+      "mean_deficit": {
+        "lower": [
+          37800044451968504843540157861,
+          79228162514264337593543950336
+        ],
+        "upper": [
+          75600088903937009687080315723,
+          158456325028528675187087900672
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          8349241800999518363735085971,
+          19807040628566084398385987584
+        ],
+        "upper": [
+          66793934407996146909880687769,
+          158456325028528675187087900672
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "source_interval": [
+        8,
+        16
+      ],
+      "mean_deficit": {
+        "lower": [
+          51479950330795658097549961949,
+          79228162514264337593543950336
+        ],
+        "upper": [
+          205919801323182632390199847799,
+          316912650057057350374175801344
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          25613512652677287455040872879,
+          39614081257132168796771975168
+        ],
+        "upper": [
+          204908101221418299640326983035,
+          316912650057057350374175801344
+        ]
+      }
+    },
+    {
+      "level": 4,
+      "source_interval": [
+        16,
+        32
+      ],
+      "mean_deficit": {
+        "lower": [
+          361009705096963103544697410263,
+          316912650057057350374175801344
+        ],
+        "upper": [
+          1444038820387852414178789641065,
+          1267650600228229401496703205376
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          3877146151004011840674114578141,
+          1267650600228229401496703205376
+        ],
+        "upper": [
+          1938573075502005920337057289077,
+          633825300114114700748351602688
+        ]
+      }
+    },
+    {
+      "level": 5,
+      "source_interval": [
+        32,
+        64
+      ],
+      "mean_deficit": {
+        "lower": [
+          1793108158598717631877360474495,
+          1267650600228229401496703205376
+        ],
+        "upper": [
+          1793108158598717631877360474509,
+          1267650600228229401496703205376
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          9280670412060769909169606420857,
+          2535301200456458802993406410752
+        ],
+        "upper": [
+          9280670412060769909169606420885,
+          2535301200456458802993406410752
+        ]
+      }
+    },
+    {
+      "level": 6,
+      "source_interval": [
+        64,
+        128
+      ],
+      "mean_deficit": {
+        "lower": [
+          7807904061084608009257541210935,
+          5070602400912917605986812821504
+        ],
+        "upper": [
+          3903952030542304004628770605497,
+          2535301200456458802993406410752
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          19988510244711311810447358279077,
+          5070602400912917605986812821504
+        ],
+        "upper": [
+          624640945147228494076479946223,
+          158456325028528675187087900672
+        ]
+      }
+    },
+    {
+      "level": 7,
+      "source_interval": [
+        128,
+        256
+      ],
+      "mean_deficit": {
+        "lower": [
+          16528467778029436447902826366627,
+          10141204801825835211973625643008
+        ],
+        "upper": [
+          8264233889014718223951413183375,
+          5070602400912917605986812821504
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          5326918815267452638719380457251,
+          1267650600228229401496703205376
+        ],
+        "upper": [
+          42615350522139621109755043658131,
+          10141204801825835211973625643008
+        ]
+      }
+    },
+    {
+      "level": 8,
+      "source_interval": [
+        256,
+        512
+      ],
+      "mean_deficit": {
+        "lower": [
+          2125097984711074952858034637863,
+          1267650600228229401496703205376
+        ],
+        "upper": [
+          17000783877688599622864277103029,
+          10141204801825835211973625643008
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          89385686280800611177833104612777,
+          20282409603651670423947251286016
+        ],
+        "upper": [
+          89385686280800611177833104613027,
+          20282409603651670423947251286016
+        ]
+      }
+    },
+    {
+      "level": 9,
+      "source_interval": [
+        512,
+        1024
+      ],
+      "mean_deficit": {
+        "lower": [
+          8850480981105388121921847431089,
+          5070602400912917605986812821504
+        ],
+        "upper": [
+          35401923924421552487687389724609,
+          20282409603651670423947251286016
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          191853278429572016464702073884407,
+          40564819207303340847894502572032
+        ],
+        "upper": [
+          191853278429572016464702073884913,
+          40564819207303340847894502572032
+        ]
+      }
+    },
+    {
+      "level": 10,
+      "source_interval": [
+        1024,
+        2048
+      ],
+      "mean_deficit": {
+        "lower": [
+          37027034639112279508590043251553,
+          20282409603651670423947251286016
+        ],
+        "upper": [
+          148108138556449118034360173007229,
+          81129638414606681695789005144064
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          416611033732754469098678823421911,
+          81129638414606681695789005144064
+        ],
+        "upper": [
+          26038189608297154318667426463933,
+          5070602400912917605986812821504
+        ]
+      }
+    },
+    {
+      "level": 11,
+      "source_interval": [
+        2048,
+        4096
+      ],
+      "mean_deficit": {
+        "lower": [
+          151533367678127985045541283073743,
+          81129638414606681695789005144064
+        ],
+        "upper": [
+          303066735356255970091082566149527,
+          162259276829213363391578010288128
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          6758347178289035482136749063605,
+          1267650600228229401496703205376
+        ],
+        "upper": [
+          865068438820996541713503880143481,
+          162259276829213363391578010288128
+        ]
+      }
+    },
+    {
+      "level": 12,
+      "source_interval": [
+        4096,
+        8192
+      ],
+      "mean_deficit": {
+        "lower": [
+          152252693840301147035462712789153,
+          81129638414606681695789005144064
+        ],
+        "upper": [
+          152252693840301147035462712790175,
+          81129638414606681695789005144064
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          1734768542032823666845743502293171,
+          324518553658426726783156020576256
+        ],
+        "upper": [
+          1734768542032823666845743502297259,
+          324518553658426726783156020576256
+        ]
+      }
+    },
+    {
+      "level": 13,
+      "source_interval": [
+        8192,
+        16384
+      ],
+      "mean_deficit": {
+        "lower": [
+          151958328239641264446670554125775,
+          81129638414606681695789005144064
+        ],
+        "upper": [
+          75979164119820632223335277063399,
+          40564819207303340847894502572032
+        ]
+      },
+      "mean_squared_deficit": {
+        "lower": [
+          3456406263890478892313373373349631,
+          649037107316853453566312041152512
+        ],
+        "upper": [
+          3456406263890478892313373373357815,
+          649037107316853453566312041152512
+        ]
+      }
+    }
+  ]
+}

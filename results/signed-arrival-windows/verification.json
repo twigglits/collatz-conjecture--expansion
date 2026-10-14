@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T12:34:25.994528+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 11,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.236,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.425,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.554,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.6,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/IntegerReturnCesaro.lean",
+      "source_sha256": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/IntegerReturnCesaro.olean",
+        "lean/IntegerReturnCesaro.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.217,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/IntegerReturnCesaro.log",
+      "log_sha256": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+      "olean_sha256": "8e0a78ba1284e1ba1de4eee7b6259571982a4dc95fef70fecbe60e6ad456dfc7"
+    },
+    {
+      "source": "lean/AnnulusTimeBudgets.lean",
+      "source_sha256": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/AnnulusTimeBudgets.olean",
+        "lean/AnnulusTimeBudgets.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.213,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/AnnulusTimeBudgets.log",
+      "log_sha256": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+      "olean_sha256": "fcf488c5c9b42b9c8ba36e6aeb43254f547d8a46459ea8c22991786b0969a82f"
+    },
+    {
+      "source": "lean/GradientClockObstruction.lean",
+      "source_sha256": "5b6bda40c9542b6f7990ee52079ae8286413d4c29e022ca94b2a1b63600b3025",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/GradientClockObstruction.olean",
+        "lean/GradientClockObstruction.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.25,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/GradientClockObstruction.log",
+      "log_sha256": "9f58f1baa17216d67c80d693bb5cb586e9986d8d2c586de70f55143a0b2ee035",
+      "olean_sha256": "ae20f266b8d06b458d722652ce0f522510acefdfb3990050d5b7aaf3d19d500c"
+    },
+    {
+      "source": "lean/SignedArrivalWindows.lean",
+      "source_sha256": "0a17657c29f3e724d44618224ecd1c938c6a806f1b7f37c22e2a23a95e6e0473",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-signed-arrival-mhdlkmj4/SignedArrivalWindows.olean",
+        "lean/SignedArrivalWindows.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.253,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/signed-arrival-windows/SignedArrivalWindows.log",
+      "log_sha256": "c03d9f4acaa044a5fdef02aa4f292a06d62fff5aefbf328db3008510d53ba7f2",
+      "olean_sha256": "2f1e11a2f73e7418aefbfd973a0c9bf0540c5b4d65987563058439170cf7874f"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/gradient-clock-obstruction/verification.json": 30,
+    "results/annulus-time-budgets/verification.json": 24,
+    "results/finite-path-packing/verification.json": 12,
+    "results/count-return-clock/verification.json": 11,
+    "results/return-correction-moments/verification.json": 21
+  },
+  "finite_scope": {
+    "certified_first_arrival_links": 104145,
+    "independent_first_arrival_replays": 2053,
+    "certified_sources_and_first_hit_weights": 65536,
+    "certified_pair_first_hit_floors": 65534,
+    "pre_tail_signed_cost_terms": 2139918,
+    "signed_known_cycle_tail_ratios": 393204,
+    "oriented_cell_window_bounds": 163835,
+    "exact_prearrival_partitions_and_tail_bounds": 32767,
+    "pairs_with_independently_certified_arrivals": 32767,
+    "exact_precycle_cost_terms": 372,
+    "exact_cycle_tail_ratio_checks": 28,
+    "independent_full_rational_sums": 7,
+    "pairs_with_certified_known_cycle_entry": 7,
+    "independent_exact_signed_sum_comparisons": 7,
+    "authenticated_clock_band_comparisons": 15,
+    "authenticated_all_time_annulus_enclosure_comparisons": 30,
+    "upward_clock_holder_bounds": 75,
+    "upward_arrival_window_terms": 289075,
+    "negative_window_current_reversals": 99796,
+    "positive_clock_margin_prefixes": 9
+  },
+  "floating_scope": "None in verification decisions.",
+  "kernel_scope": [
+    "Odd first-arrival transfer and known-cycle continuation.",
+    "A late parent with positive downward gap has reversed current count order.",
+    "Oriented clock windows, prearrival partition and denominator-cleared finite product bound.",
+    "The positive clock increment sum pays for mean remaining-clock growth."
+  ],
+  "written_scope": [
+    "Oriented profile windows and the reversed-negative lower bound from negative arrival advances.",
+    "Conditional on universal convergence, upward accumulated-gradient pth moments have cumulative growth at least K^((p+1)/2), p>1.",
+    "Reversed cost is comparable, up to fixed constants and nonfusion slack, to prearrival cost plus the negative clock advance."
+  ],
+  "external_scope": "No external analytic theorem or external source replay is used.",
+  "not_proved": [
+    "Universal convergence or a counterexample.",
+    "Unconditional infinite upward moment divergence.",
+    "Boundedness or unboundedness of downward powers or reversed budgets on all source bands.",
+    "A uniform bound for prearrival cost or negative clock advances.",
+    "Integer image sampling, Q, escape exclusion or additional-cycle exclusion."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/IntegerReturnCesaro.lean": "e30dc4709fa123bf6c1aee3d20fccbac54105f3773a7433c0dd5274a1c516ce3",
+    "lean/AnnulusTimeBudgets.lean": "2290a21dd3b3113c3f39f1d44209e4aa4e3dd45d8e66353554aa24df76845db0",
+    "lean/GradientClockObstruction.lean": "5b6bda40c9542b6f7990ee52079ae8286413d4c29e022ca94b2a1b63600b3025",
+    "lean/SignedArrivalWindows.lean": "0a17657c29f3e724d44618224ecd1c938c6a806f1b7f37c22e2a23a95e6e0473",
+    "verify_signed_arrival_windows.py": "11502aab26d3d547fe2215058d1703378eb261de2e928430fcc9c8f9f598f13b",
+    "verify_gradient_clock_obstruction.py": "83c9ce9e78a8d814b743b851d744faa3e0e086627113078c0e7b9ed933138e0a",
+    "verify_known_basin_nonfusion_trace.py": "d47d5eb772ea53766df3d83f172c36498531d1484c251da8776aca927ddec814",
+    "verify_dyadic_coalescence_defects.py": "9c9196a579e2e8a0b1afd7e403771dd93ef6bcf1f2e52e326de7e1559b6cf88f",
+    "verify_annulus_time_budgets.py": "791ef6cc9a308d391c02ac01cadf79a2c8f174f80cce3a37729aa5cae378aca7",
+    "docs/SIGNED-ARRIVAL-WINDOWS.md": "32ec0d9492bc09218c74b348a797f3e175e66bce9c29ce926d14b677a04aa305",
+    "docs/CONDITIONAL-GRADIENT-POWER-OBSTRUCTION.md": "b33830fedd945defd58da2e93f795450748e4c0a499bddabdfae485d67c8edd4",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "docs/COUNT-RETURN-CLOCK.md": "d8999680bfa33a761d957b8779876664178de383c6a46f1cb11163e354d15c39",
+    "docs/RETURN-CORRECTION-MOMENTS.md": "877c97513342f1265da6d6af3d57fcb7cc24b4515e438561ae26a68adc9597fc",
+    "results/gradient-clock-obstruction/verification.json": "9fead37e7999edfea8377e4e6fc3545fdb9042f873be6e19cb01bbcac20fc0ad",
+    "results/annulus-time-budgets/verification.json": "3844ac401d5e3adf61812ecff0152da94f1d9306e1b4df999a83d0b9f52d3101",
+    "results/finite-path-packing/verification.json": "47e9b90a87bfd59213c44789b4860b93e931ff368fc5c5485e14a4f28cc0012b",
+    "results/count-return-clock/verification.json": "8a3349a498ef03877af2c4bf8db5a2bade3c51f8d5b16712cc06345605a683f2",
+    "results/return-correction-moments/verification.json": "0d1a0a06278dc5c1ad318aa4f04b6794d37d0c805688d959945954534690aeeb",
+    "results/annulus-time-budgets/replay.json": "56ebf1514155ef13f27a7777fc0d2af4214e566673943be035c46fe9b5043c8f",
+    "results/gradient-clock-obstruction/replay.json": "0022a9cfe24d91cfecec97f5abcd0e1a5780ebedb20f8067879a95b1440bf0ed",
+    "results/signed-arrival-windows/replay.json": "50778d6a32296ef2fc66463af9182fbf79875f0f09fc1655a5763f52f4c502a4",
+    "results/signed-arrival-windows/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/signed-arrival-windows/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/signed-arrival-windows/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/signed-arrival-windows/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/signed-arrival-windows/IntegerReturnCesaro.log": "f275e98c070c3120938234bd9c89a609f8396d6a3687f4df5846c150f6f085cb",
+    "results/signed-arrival-windows/AnnulusTimeBudgets.log": "efeee072be7b563fdb30eca89e9b9df5fc8556b0f3be157499810b912bbfd76a",
+    "results/signed-arrival-windows/GradientClockObstruction.log": "9f58f1baa17216d67c80d693bb5cb586e9986d8d2c586de70f55143a0b2ee035",
+    "results/signed-arrival-windows/SignedArrivalWindows.log": "c03d9f4acaa044a5fdef02aa4f292a06d62fff5aefbf328db3008510d53ba7f2"
+  }
+}

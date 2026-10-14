@@ -1,0 +1,8 @@
+'ReturnAffineBudget.augmented_snoc' depends on axioms: [propext, Quot.sound]
+'ReturnAffineBudget.augmented_lift' depends on axioms: [propext, Quot.sound]
+'ReturnAffineBudget.numerator_append' depends on axioms: [propext, Quot.sound]
+'ReturnAffineBudget.augmented_append' depends on axioms: [propext, Quot.sound]
+'ReturnAffineBudget.power_count_children' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAffineBudget.power_count_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAffineBudget.finite_drift_budget' depends on axioms: [propext, Quot.sound]
+'ReturnAffineBudget.augmented_fibre_rank' depends on axioms: [propext, Quot.sound]

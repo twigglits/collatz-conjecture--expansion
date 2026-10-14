@@ -1,0 +1,288 @@
+{
+  "status": "passed",
+  "counts": {
+    "affine_modular_and_reversal_checks": 19530,
+    "seeded_offset_and_low_marginal_checks": 39060,
+    "cleared_inverse_congruence_checks": 175770,
+    "exact_joint_low_marginal_checks": 270,
+    "conditional_pair_convolution_identities": 168,
+    "even_length_head_removal_checks": 6660,
+    "ordinary_passage_steps": 76328,
+    "independent_first_odd_passages": 2688,
+    "bounded_prefix_weight_steps": 23340,
+    "bounded_prefixes": 285,
+    "matched_clock_all_cutoff_checks": 12797,
+    "before_landing_checks": 3582,
+    "after_landing_checks": 9215,
+    "exact_landing_boundary_checks": 95,
+    "distinct_matched_clock_pairs": 95
+  },
+  "seeded_finite_laws": [
+    {
+      "random_word_length": 1,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 9,
+      "smoothing_modulus": 3,
+      "retained_mass": [
+        31,
+        32
+      ],
+      "omitted_mass": [
+        1,
+        32
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          31,
+          24
+        ],
+        "1": [
+          31,
+          24
+        ],
+        "2": [
+          31,
+          24
+        ]
+      }
+    },
+    {
+      "random_word_length": 2,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 27,
+      "smoothing_modulus": 9,
+      "retained_mass": [
+        961,
+        1024
+      ],
+      "omitted_mass": [
+        63,
+        1024
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          961,
+          768
+        ],
+        "1": [
+          961,
+          768
+        ],
+        "2": [
+          961,
+          768
+        ]
+      }
+    },
+    {
+      "random_word_length": 3,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 81,
+      "smoothing_modulus": 9,
+      "retained_mass": [
+        29791,
+        32768
+      ],
+      "omitted_mass": [
+        2977,
+        32768
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          6605,
+          4608
+        ],
+        "1": [
+          6605,
+          4608
+        ],
+        "2": [
+          6605,
+          4608
+        ]
+      }
+    },
+    {
+      "random_word_length": 4,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 243,
+      "smoothing_modulus": 9,
+      "retained_mass": [
+        923521,
+        1048576
+      ],
+      "omitted_mass": [
+        125055,
+        1048576
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          9734003,
+          7077888
+        ],
+        "1": [
+          9734003,
+          7077888
+        ],
+        "2": [
+          9734003,
+          7077888
+        ]
+      }
+    },
+    {
+      "random_word_length": 5,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 729,
+      "smoothing_modulus": 9,
+      "retained_mass": [
+        28629151,
+        33554432
+      ],
+      "omitted_mass": [
+        4925281,
+        33554432
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          437712187,
+          339738624
+        ],
+        "1": [
+          437712187,
+          339738624
+        ],
+        "2": [
+          437712187,
+          339738624
+        ]
+      }
+    },
+    {
+      "random_word_length": 6,
+      "valuation_cutoff": 5,
+      "ambient_modulus": 2187,
+      "smoothing_modulus": 9,
+      "retained_mass": [
+        887503681,
+        1073741824
+      ],
+      "omitted_mass": [
+        186238143,
+        1073741824
+      ],
+      "truncated_joint_L1_oscillation": {
+        "0": [
+          78952403009,
+          65229815808
+        ],
+        "1": [
+          78952403009,
+          65229815808
+        ],
+        "2": [
+          78952403009,
+          65229815808
+        ]
+      }
+    }
+  ],
+  "finite_passage_rows": [
+    {
+      "odd_source_interval": [
+        256,
+        512
+      ],
+      "floor": 64,
+      "sources": 128,
+      "distinct_matched_pairs": 2,
+      "exact_finite_total_variation": {
+        "1": {
+          "marked": [
+            21,
+            32
+          ],
+          "unmarked": [
+            1223,
+            5504
+          ]
+        },
+        "2": {
+          "marked": [
+            83,
+            128
+          ],
+          "unmarked": [
+            147,
+            688
+          ]
+        }
+      },
+      "scope": "Finite identities and exact finite laws only; these small scales are not an asymptotic rate test."
+    },
+    {
+      "odd_source_interval": [
+        1024,
+        2048
+      ],
+      "floor": 256,
+      "sources": 512,
+      "distinct_matched_pairs": 17,
+      "exact_finite_total_variation": {
+        "1": {
+          "marked": [
+            2273,
+            3648
+          ],
+          "unmarked": [
+            4121,
+            21888
+          ]
+        },
+        "2": {
+          "marked": [
+            81,
+            128
+          ],
+          "unmarked": [
+            8147,
+            43776
+          ]
+        }
+      },
+      "scope": "Finite identities and exact finite laws only; these small scales are not an asymptotic rate test."
+    },
+    {
+      "odd_source_interval": [
+        4096,
+        8192
+      ],
+      "floor": 1024,
+      "sources": 2048,
+      "distinct_matched_pairs": 76,
+      "exact_finite_total_variation": {
+        "1": {
+          "marked": [
+            221463,
+            349696
+          ],
+          "unmarked": [
+            263285,
+            1398784
+          ]
+        },
+        "2": {
+          "marked": [
+            879023,
+            1398784
+          ],
+          "unmarked": [
+            239267,
+            1398784
+          ]
+        }
+      },
+      "scope": "Finite identities and exact finite laws only; these small scales are not an asymptotic rate test."
+    }
+  ]
+}

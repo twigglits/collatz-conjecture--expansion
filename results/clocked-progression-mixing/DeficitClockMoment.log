@@ -1,0 +1,7 @@
+'DeficitClockMoment.loss_age_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.normalized_loss_age' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.total_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.total_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.total_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.weighted_total_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitClockMoment.capped_moment_split' depends on axioms: [propext, Classical.choice, Quot.sound]

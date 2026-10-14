@@ -1,0 +1,6 @@
+'AnnulusTimeBudgets.cycle_step' does not depend on any axioms
+'AnnulusTimeBudgets.cycle_two_steps' does not depend on any axioms
+'AnnulusTimeBudgets.cycle_continuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AnnulusTimeBudgets.cycle_count_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AnnulusTimeBudgets.cycle_weight_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AnnulusTimeBudgets.quadratic_geometric_identity' depends on axioms: [propext, Classical.choice, Quot.sound]

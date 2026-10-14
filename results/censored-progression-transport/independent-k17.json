@@ -1,0 +1,17 @@
+{
+  "binary_exponent": 17,
+  "X": 131072,
+  "Y": 393218,
+  "ordinary_clock": 136,
+  "scale": "18446744073709551616",
+  "prefix_sum_lower": "13000918412565460381830603",
+  "prefix_sum_upper": "13000918412565460421319376",
+  "progression_sum_lower": "4339684008622128089337679",
+  "progression_sum_upper": "4339684008622128102501207",
+  "correction_sum_lower": "2293560877394399979434",
+  "correction_sum_upper": "2293560877394400110596",
+  "ordinary_steps": 41339617,
+  "odd_steps": 13876677,
+  "alive_at_cutoff": 150471,
+  "progression_sources": 131072
+}

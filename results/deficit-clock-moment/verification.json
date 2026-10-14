@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T14:10:41.497887+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/DeficitLimitLaw.lean",
+      "source_sha256": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clock-moment-xnh2gw3f/DeficitLimitLaw.olean",
+        "lean/DeficitLimitLaw.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.347,
+      "log": "results/deficit-clock-moment/DeficitLimitLaw.log",
+      "log_sha256": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+      "olean_sha256": "061792d57ef29d4e7372c035741d5a2fdbd50790dd4144f46b1ca08654962eb2"
+    },
+    {
+      "source": "lean/DeficitClockMoment.lean",
+      "source_sha256": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clock-moment-xnh2gw3f/DeficitClockMoment.olean",
+        "lean/DeficitClockMoment.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.286,
+      "log": "results/deficit-clock-moment/DeficitClockMoment.log",
+      "log_sha256": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+      "olean_sha256": "c63523093cb66683416e6e42d73b799f299f85b54e9fa0677a9570f063ef3d5f"
+    }
+  ],
+  "kernel_theorems_audited": 7,
+  "prior_hashes_validated": {
+    "results/deficit-limit-law/verification.json": 14,
+    "results/prearrival-deficit-transfer/verification.json": 35,
+    "results/weighted-dissipation/verification.json": 15
+  },
+  "finite_scope": {
+    "independent_known_first_arrivals": 8191,
+    "independent_shortcut_steps": 452032,
+    "exact_loss_age_moments": 8191,
+    "exact_off_by_one_diagnostics": 8191,
+    "exact_loss_probability_masses": 8191,
+    "independent_exact_capped_moment_decompositions": 6144,
+    "certified_deficit_recursion_links": 13025,
+    "exact_odd_loss_and_remaining_clock_identities": 224339,
+    "authenticated_prior_band_mean_comparisons": 13,
+    "finite_progression_and_prefix_mean_transfers": 11
+  },
+  "kernel_scope": [
+    "Finite rational loss-age summation identity, including the T-1-j coefficient.",
+    "Nonnegative sums, weighted comparison and the capped moment/tail split."
+  ],
+  "written_scope": [
+    "The known-basin lifetime deficit is the remaining-clock moment of the existing weight-loss measure.",
+    "The limiting weighted clock series is a lower bound for liminf source means.",
+    "Uniform vanishing of clock-moment tails is equivalent to convergence of source moments to the finite limiting moment.",
+    "A bounded prefix mean would bound known-child prearrival means by 46A+1.",
+    "With the separately external reciprocal weighted-density floor, a bounded mean would force a summable quadratic-normalized stopping-clock series and tau(v)=o(v^2) on the known basin."
+  ],
+  "analytic_scope": "Density conclusions depend on the previous WRITTEN first-passage and packing arguments. The optional reciprocal floor remains an external premise; no new external source audit or Lean replay was performed.",
+  "literature_scope": "Inselmann arXiv:2402.03276v3 was consulted as primary-source context only; none of its claims is a proof input here.",
+  "floating_scope": "None in verification decisions; all recorded intervals use exact directed integer rounding at scale 2^96.",
+  "not_proved": [
+    "A finite limiting clock moment, bounded source means, uniform integrability or the required uniform tail estimate.",
+    "Equality between this moment series and the first moment of the separate deficit limiting law.",
+    "A stopping-time bound without the bounded-mean and stated external-floor hypotheses.",
+    "Negative arrival advances, postarrival drift, escape exclusion, other-cycle exclusion or full Collatz."
+  ],
+  "sha256": {
+    "lean/DeficitLimitLaw.lean": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+    "lean/DeficitClockMoment.lean": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+    "verify_deficit_clock_moment.py": "803feac8a1ce9f0b3e9dae8b8be0353b3e6d56d9faf444a59de42a0f640817d0",
+    "verify_deficit_limit_law.py": "cba7d5029e5068933ef47567e8fa42df74df7137a08a276fbee9c7ff32f7563d",
+    "verify_prearrival_deficit_transfer.py": "9440a72d6799441d99dc0e0d4bda637d67747d830af1651b7cee28a27749ea84",
+    "docs/DEFICIT-CLOCK-MOMENT.md": "29e01bc2955948fef9841ac69f04949b6ddd298adf8fab83f8fa1855808e9045",
+    "docs/DEFICIT-LIMIT-LAW.md": "9c1f674e155ffe8cd8cf6dfac14e9107005745f536b0a258965c48ad81a8fc0f",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/PREARRIVAL-DEFICIT-TRANSFER.md": "48b2b4914af05edd39c3e318f927b950f613d421f361e66abe9c77b5b231cf3a",
+    "docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md": "6d31e50d1c2324a9b25bf7e51964b8594f67a602746cca2d5250575b7747e0e1",
+    "results/deficit-limit-law/verification.json": "fc00d51815eb295c05d7a141d3f36066eec17a74a2d1e1d0dfdb90aec0feec83",
+    "results/prearrival-deficit-transfer/verification.json": "945d79a4b3132ff060557933003daa290823388cf065596464e7bdf4a145210c",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/deficit-limit-law/replay.json": "47b2c2ae8369155857559e89c1ca2e7be6b6828a4eadb324d426ae76b5d98385",
+    "results/signed-arrival-windows/replay.json": "50778d6a32296ef2fc66463af9182fbf79875f0f09fc1655a5763f52f4c502a4",
+    "results/deficit-clock-moment/replay.json": "b154f16f743032a40083fbef71d1ba8b3a4c30c22640f56e20b96f9e91dab3a4",
+    "results/deficit-clock-moment/DeficitLimitLaw.log": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+    "results/deficit-clock-moment/DeficitClockMoment.log": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596"
+  }
+}

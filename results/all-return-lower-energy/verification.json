@@ -1,0 +1,371 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T10:35:33.279231+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 13,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.184,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.314,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.743,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.731,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.159,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.64,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.47,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.824,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.634,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    },
+    {
+      "source": "lean/BinaryImageEnergy.lean",
+      "source_sha256": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/BinaryImageEnergy.olean",
+        "lean/BinaryImageEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.678,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/BinaryImageEnergy.log",
+      "log_sha256": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+      "olean_sha256": "4d0a65b1b4cada4350345d83b9414edc2cf765758120561d4abb103dace027f8"
+    },
+    {
+      "source": "lean/ReturnAffineBudget.lean",
+      "source_sha256": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnAffineBudget.olean",
+        "lean/ReturnAffineBudget.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.517,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnAffineBudget.log",
+      "log_sha256": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+      "olean_sha256": "066daa029c06c89730b625f81537d6e3b3a64d880575803fda79960e2108120d"
+    },
+    {
+      "source": "lean/ReturnSlopeTilt.lean",
+      "source_sha256": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnSlopeTilt.olean",
+        "lean/ReturnSlopeTilt.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.698,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnSlopeTilt.log",
+      "log_sha256": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+      "olean_sha256": "cbe198207a879f3633b3456b9052f2fa48a63d8bd47508758054e4e6bd091f75"
+    },
+    {
+      "source": "lean/LowerReturnEnergy.lean",
+      "source_sha256": "cd054d7c582e18c038446c3d391bb34dd2561488007471fcd41627b3fae1535a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/LowerReturnEnergy.olean",
+        "lean/LowerReturnEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.649,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/LowerReturnEnergy.log",
+      "log_sha256": "9c0bd11a736bc942e1b94fa6b876032f425bd87af823ed7dfd00981d21306d2a",
+      "olean_sha256": "75d993502354fc8e62720f04b69e96415e79374e3cb85a7f3e65f08c149bf73a"
+    },
+    {
+      "source": "lean/ReturnSlopeOccupation.lean",
+      "source_sha256": "2d8e2b137d5b2f72caf82ecfb26da430e1ae73e3b74f3bdf1124bcbed12cf138",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnSlopeOccupation.olean",
+        "lean/ReturnSlopeOccupation.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.665,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnSlopeOccupation.log",
+      "log_sha256": "bdeb2dbdd8315967b07d921e357f5116b2445513f93ecc3a037f3869d87e86e3",
+      "olean_sha256": "b9c20cda2d4f4b378603b6d3ac0a068ef850a892d46461e3386d7a96a0cdd09f"
+    },
+    {
+      "source": "lean/ReturnAncestralOverlap.lean",
+      "source_sha256": "07fe51fea1ce236b6c3b0f0b88e26406bbee81cfdd433c7dc3477ce13ee02d95",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/ReturnAncestralOverlap.olean",
+        "lean/ReturnAncestralOverlap.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.637,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/ReturnAncestralOverlap.log",
+      "log_sha256": "2f8f310b4e733dad1b35128e9b3ff04452e6ae1e7ec8262010ebab65f17fcc15",
+      "olean_sha256": "5cae64f3f199d879427960ba241f8049f8cfd54fe2c8dca87900e9d72e233d07"
+    },
+    {
+      "source": "lean/AllReturnLowerEnergy.lean",
+      "source_sha256": "39168e63b0f4d199a6e9b62c70214f8c519a4817e82cefe27e4755b6524be64c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-all-return-lower-yembmdyw/AllReturnLowerEnergy.olean",
+        "lean/AllReturnLowerEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.302,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/all-return-lower-energy/AllReturnLowerEnergy.log",
+      "log_sha256": "06ad38adb84d5d8a7ec418c1fd14076f693ad9626d93336b8a1b30e746436bd4",
+      "olean_sha256": "a6b14754547ce66d79264674be72c7b3a81234524bfafd9943a7329584e0af5a"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/lower-return-energy/verification.json": 34,
+    "results/return-ancestral-overlap/verification.json": 27,
+    "results/return-slope-tilt/verification.json": 22
+  },
+  "finite_scope": {
+    "exact_restart_and_age_series_pairs": 129,
+    "finite_fair_green_row_values": 10416,
+    "finite_mixed_drift_telescoping_identities": 129,
+    "actual_common_parity_paths_with_formal_minimum": 18423,
+    "common_block_mean_occupation_and_mixed_bounds": 99,
+    "actual_positive_gap_restart_paths": 39936,
+    "conditional_positive_gap_restart_budgets": 39,
+    "direct_fresh_return_paths": 279552,
+    "independent_suffix_age_and_entropy_checks": 5717,
+    "conditional_partial_fast_clock_tail_bounds": 96,
+    "conditional_partial_fresh_mixed_drift_bounds": 72,
+    "conditional_entropy_age_and_clipped_moment_budgets": 24,
+    "direct_all_return_paths": 69888,
+    "actual_equal_count_formal_minimum_identities": 93309,
+    "even_source_all_return_path_visits": 14164,
+    "capped_actual_group_mixed_drift_bounds": 18,
+    "all_return_lower_fibre_injection_bounds": 2545,
+    "complete_all_return_component_energy_bounds": 88,
+    "independent_positive_all_return_pair_products": 1113,
+    "independent_full_energy_three_way_decompositions": 2,
+    "compatible_nested_lower_image_pairs": 81
+  },
+  "floating_scope": "None in verification decisions.",
+  "kernel_scope": [
+    "Actual correction-age recurrence and finite Green cap.",
+    "All-depth correction/age geometric sums with explicit remainders.",
+    "Exact common-block mean and occupation recurrences.",
+    "Finite mixed-drift telescoping and energy constants."
+  ],
+  "written_scope": [
+    "The initially odd correction has E[b_F log2_+ b_F] <= 480.",
+    "A summable group-start mixed moment P log2(D+1).",
+    "All nonfused lower formal endpoints, including common-parity returns, have total mean <= 2100000+281000000*C_star.",
+    "The complete clock/count component squared norms sum to at most 4200000+562000000*C_star.",
+    "Only disjoint-source cross-component terms remain in the lower-density L2 decomposition after reusing the nested-source budget."
+  ],
+  "external_scope": "None. Earlier local written stopping and occupation arguments are reused.",
+  "not_proved": [
+    "A full L2 bound for the lower-image density or the original fixed-endpoint density.",
+    "Ordinary-integer sampling at infinite cutoff, actual-gradient control, Q, escape or other-cycle exclusion, or Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "lean/BinaryImageEnergy.lean": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+    "lean/ReturnAffineBudget.lean": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+    "lean/ReturnSlopeTilt.lean": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+    "lean/LowerReturnEnergy.lean": "cd054d7c582e18c038446c3d391bb34dd2561488007471fcd41627b3fae1535a",
+    "lean/ReturnSlopeOccupation.lean": "2d8e2b137d5b2f72caf82ecfb26da430e1ae73e3b74f3bdf1124bcbed12cf138",
+    "lean/ReturnAncestralOverlap.lean": "07fe51fea1ce236b6c3b0f0b88e26406bbee81cfdd433c7dc3477ce13ee02d95",
+    "lean/AllReturnLowerEnergy.lean": "39168e63b0f4d199a6e9b62c70214f8c519a4817e82cefe27e4755b6524be64c",
+    "verify_all_return_lower_energy.py": "f82097a62907f5c584bd42f6c4c433e0ed958910d9e4b6cb62b0659da75e2698",
+    "verify_lower_return_energy.py": "e41f7e5ae902094409be1ab067cff48b936987f2ead84163ceff752f614fd25a",
+    "verify_return_affine_budget.py": "af437c04aa6d7369670418fa5979888cdec70299bbab50ac336f8311cbf1e2e5",
+    "verify_return_slope_occupation.py": "7055feb3edfaac253157ae74bb23bc594458b0381e96af2d607cba69b474a524",
+    "docs/ALL-RETURN-LOWER-ENERGY.md": "d278a8ae8663d1c5368b423fe5f19f97d5a2cf580d8dc6b20f9955fb9395f5b3",
+    "results/lower-return-energy/verification.json": "5e9368bb1803eb9c20c8e86e7a41283bd80b52686f591503e4c9af3da66daded",
+    "results/return-ancestral-overlap/verification.json": "d3b49f9bc4f0569d9f272d9b84e22e510083598d81c80147fcecf67e4f63acdd",
+    "results/return-slope-tilt/verification.json": "7163da25f45142bdba20dcf8cf11bb15f05afe9c8002ea328b52eba8f8f59956",
+    "results/all-return-lower-energy/replay.json": "b6ac9ee360c78c14a9c376b791a0a2b8e075afe43a04841e0f231da90d7d4118",
+    "results/all-return-lower-energy/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/all-return-lower-energy/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/all-return-lower-energy/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/all-return-lower-energy/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/all-return-lower-energy/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/all-return-lower-energy/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/all-return-lower-energy/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/all-return-lower-energy/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/all-return-lower-energy/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+    "results/all-return-lower-energy/BinaryImageEnergy.log": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+    "results/all-return-lower-energy/ReturnAffineBudget.log": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+    "results/all-return-lower-energy/ReturnSlopeTilt.log": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+    "results/all-return-lower-energy/LowerReturnEnergy.log": "9c0bd11a736bc942e1b94fa6b876032f425bd87af823ed7dfd00981d21306d2a",
+    "results/all-return-lower-energy/ReturnSlopeOccupation.log": "bdeb2dbdd8315967b07d921e357f5116b2445513f93ecc3a037f3869d87e86e3",
+    "results/all-return-lower-energy/ReturnAncestralOverlap.log": "2f8f310b4e733dad1b35128e9b3ff04452e6ae1e7ec8262010ebab65f17fcc15",
+    "results/all-return-lower-energy/AllReturnLowerEnergy.log": "06ad38adb84d5d8a7ec418c1fd14076f693ad9626d93336b8a1b30e746436bd4"
+  }
+}

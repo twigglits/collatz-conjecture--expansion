@@ -1,0 +1,13 @@
+'AllReturnLowerEnergy.correction_age_snoc' does not depend on any axioms
+'AllReturnLowerEnergy.correction_age_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.fair_green_cap' depends on axioms: [propext]
+'AllReturnLowerEnergy.restart_cost_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.age_cost_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.correction_cost_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.entropy_and_clip_constants' does not depend on any axioms
+'AllReturnLowerEnergy.common_mass_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.common_occupation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AllReturnLowerEnergy.grouped_mixed_drift' depends on axioms: [propext, Quot.sound]
+'AllReturnLowerEnergy.mixed_drift_budget' depends on axioms: [propext, Quot.sound]
+'AllReturnLowerEnergy.all_return_budget' depends on axioms: [propext, Quot.sound]
+'AllReturnLowerEnergy.all_component_budget' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T11:23:30.762339+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 8,
+  "builds": [
+    {
+      "source": "CollatzPacking.lean",
+      "source_sha256": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/CollatzPacking.olean",
+        "CollatzPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.715,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/CollatzPacking.log",
+      "log_sha256": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+      "olean_sha256": "51ba308d24d89138f6e50ff326d85d3f5f671483aea8f50d7d011cc5f05a2036"
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.688,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/FirstPassagePacking.lean",
+      "source_sha256": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/FirstPassagePacking.olean",
+        "lean/FirstPassagePacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.307,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/FirstPassagePacking.log",
+      "log_sha256": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+      "olean_sha256": "31480253b60dcea76cc2f9ab095b2e46f073e6c131b82929f3a1bb1df7ff1594"
+    },
+    {
+      "source": "lean/FinitePathPacking.lean",
+      "source_sha256": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/FinitePathPacking.olean",
+        "lean/FinitePathPacking.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.335,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/FinitePathPacking.log",
+      "log_sha256": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+      "olean_sha256": "294da06788658ebb49e17e02151a83be3eae6efeda04c6019fb8e5b24379c4f1"
+    },
+    {
+      "source": "lean/EqualWeightFibres.lean",
+      "source_sha256": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/EqualWeightFibres.olean",
+        "lean/EqualWeightFibres.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.41,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/EqualWeightFibres.log",
+      "log_sha256": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+      "olean_sha256": "3bb02f6b0c9268e6ee29afa12c504e34c1294f4352c82ae70f7c03f0ff676b4d"
+    },
+    {
+      "source": "lean/CoalescenceGrades.lean",
+      "source_sha256": "1eb22548b49b6bdbe4ba18aab0c862f133e56a8d5eb47b1d384c40d5afc2c5f5",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/CoalescenceGrades.olean",
+        "lean/CoalescenceGrades.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.012,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/CoalescenceGrades.log",
+      "log_sha256": "292f8e2c885a1dc5412b947320b3dad0216fe1d646bc936dc021dd00a084bc88",
+      "olean_sha256": "ea41999d5e4e1d58cb4ecfe48fc795c16e8739709aee94acd0048bee1676c10d"
+    },
+    {
+      "source": "lean/DyadicCoalescenceDefects.lean",
+      "source_sha256": "b1beb303a3a17e593b43f34221fc7ddff16a3760a7b1a1015e3dc0e3559857e3",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/DyadicCoalescenceDefects.olean",
+        "lean/DyadicCoalescenceDefects.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.498,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/DyadicCoalescenceDefects.log",
+      "log_sha256": "b86a83b487d4f1db9a5a8aa4afce890797a23f29f48283f2b27dba3464cdd160",
+      "olean_sha256": "e1956212872756b879d785835e6c6979b4977a348a4d62ab851445d746ce3533"
+    },
+    {
+      "source": "lean/KnownBasinNonfusionTrace.lean",
+      "source_sha256": "3f77ae3c7636fd0c80f30b44aea5be5c965a36582edcea5366e3512b2559ff77",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-known-basin-trace-v6mfe016/KnownBasinNonfusionTrace.olean",
+        "lean/KnownBasinNonfusionTrace.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.259,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/known-basin-nonfusion-trace/KnownBasinNonfusionTrace.log",
+      "log_sha256": "8c5154a5e13134617d4f8b835c19fb80a0cd6bf678ad8db11f6cf4d64e08ec33",
+      "olean_sha256": "3bdf4e750f3f248a9a606fd12385f78cbe6ea515da2d070ee1776434a2b70a77"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/dyadic-coalescence-defects/verification.json": 22,
+    "results/weighted-dissipation/verification.json": 15,
+    "results/harmonic-return-trace/verification.json": 14,
+    "results/annulus-time-budgets/verification.json": 24,
+    "results/lower-return-clock-moments/verification.json": 45
+  },
+  "external_input": {
+    "reused_completed_replay": true,
+    "retained_project_object_hashes_revalidated": 389,
+    "retained_project_build_log_hashes_revalidated": 389,
+    "recorded_source_hashes_matched_to_retained_archive_inventory": 389,
+    "live_project_source_hashes_revalidated": 0,
+    "temporary_project_source_files_missing": 389,
+    "new_external_source_replay": false,
+    "full_third_party_source_rebuild": false,
+    "premise_used": "Positive lower natural density of predecessors of 1 only.",
+    "natural_passage_or_density_one_premise_used": false
+  },
+  "finite_scope": {
+    "certified_first_arrival_links": 208385,
+    "independent_first_arrival_replays": 2054,
+    "certified_sources_and_first_hit_weights": 131072,
+    "independent_paired_steps": 5380352,
+    "grade_vs_direct_pair_classifications": 65535,
+    "exact_all_future_source_green_identities": 131070,
+    "harmonic_band_lower_bounds": 16,
+    "independent_exact_harmonic_sums": 8,
+    "inverse_source_forward_and_mask_checks": 142799,
+    "independent_exhaustive_inverse_layers": 18,
+    "independent_finite_green_sums": 129
+  },
+  "floating_scope": "None in verification decisions.",
+  "kernel_scope": [
+    "Unmarked binary tails from a known visit stay balanced and in the known basin.",
+    "Defective parents have known even children and never-balanced adjacent pairs.",
+    "Grade classification given both arrivals, and the finite linear Green identity."
+  ],
+  "written_scope": [
+    "Known-basin defective parents have divergent harmonic mass, using external PLD at one.",
+    "Simple-path packing gives a uniform positive first-hit weight.",
+    "The full nonfusion integer Green traces at 1 and 2 diverge even on the selected known-basin even sources.",
+    "The prior square-root upper bound remains compatible with this divergence."
+  ],
+  "not_proved": [
+    "Divergence or finiteness of either selected equal-count return trace.",
+    "A quantitative lower growth rate in clock H, or the critical discount range.",
+    "An actual-gradient power estimate, Q, escape or other-cycle exclusion, or Collatz."
+  ],
+  "sha256": {
+    "CollatzPacking.lean": "25d2cb4c6d8cd7e59f483ea6857b4efdd52b34eb1ea246f457dcc98220b190c7",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/FirstPassagePacking.lean": "d9f4925df9e61708bc9c2180e16e6de56b1753b1db8f7df90180572bb85ffc68",
+    "lean/FinitePathPacking.lean": "631298dfbb72f9341a96b04d4ebfc7583606bd0131e50265ea7ad197f6f99e14",
+    "lean/EqualWeightFibres.lean": "12ce483fdebd92f18c36cd79f71c0e613c751b82e12ac494c22ea388067fa234",
+    "lean/CoalescenceGrades.lean": "1eb22548b49b6bdbe4ba18aab0c862f133e56a8d5eb47b1d384c40d5afc2c5f5",
+    "lean/DyadicCoalescenceDefects.lean": "b1beb303a3a17e593b43f34221fc7ddff16a3760a7b1a1015e3dc0e3559857e3",
+    "lean/KnownBasinNonfusionTrace.lean": "3f77ae3c7636fd0c80f30b44aea5be5c965a36582edcea5366e3512b2559ff77",
+    "verify_known_basin_nonfusion_trace.py": "d47d5eb772ea53766df3d83f172c36498531d1484c251da8776aca927ddec814",
+    "verify_dyadic_coalescence_defects.py": "9c9196a579e2e8a0b1afd7e403771dd93ef6bcf1f2e52e326de7e1559b6cf88f",
+    "docs/KNOWN-BASIN-NONFUSION-TRACE.md": "68e955a824ada69a9ead397bad592604eda2787a4e75e25b4815dc72f74d6a42",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/DYADIC-COALESCENCE-DEFECTS.md": "bc6e37d36ce8e45600d8c6b31f699409444bd69fec4de2275fa40981c374187d",
+    "docs/HARMONIC-RETURN-TRACE.md": "840de478dd9557f1f51ca9593189dbf9e45cb14b0a794b1e9e8f6fe9662ae409",
+    "results/dyadic-coalescence-defects/verification.json": "f84d3f9b16d6fe8e9e7d5a6a0ff1bb8b16a3d0953e836dede88e64fa44abdec8",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/harmonic-return-trace/verification.json": "3b50864a47445699478ca5030d7d80a4335de2f7f930631116efbbc323e8560b",
+    "results/annulus-time-budgets/verification.json": "3844ac401d5e3adf61812ecff0152da94f1d9306e1b4df999a83d0b9f52d3101",
+    "results/lower-return-clock-moments/verification.json": "4249be10ed24d2689bbc4292b1d11570687229f575ff65d69b0b1d9e9786c081",
+    "results/predecessor-density-review/verification.json": "fa39ce531d0cf5d3e6f11f8de159a50709bca37536bea7762e2c5d22562e3582",
+    "results/predecessor-density-review/archive-authentication.json": "83b6804a96e9f27ada98b4c8c9d5054633e0e9b857509bf5d88981f283f59c67",
+    "results/known-basin-nonfusion-trace/replay.json": "2793862a496877b45ac8a89a59a934a4f197848b4fc038f1b04f255e88930a91",
+    "results/known-basin-nonfusion-trace/CollatzPacking.log": "15de2b09d1af955720b2737efa100a3e5d44cebdd9098550fd9eb394bdf62192",
+    "results/known-basin-nonfusion-trace/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/known-basin-nonfusion-trace/FirstPassagePacking.log": "9b6e781be0641f485d69eaea8a3151d8d972af000a4de85eb35888c719b59ca1",
+    "results/known-basin-nonfusion-trace/FinitePathPacking.log": "730bdb3268cf0895c9f1ab6d7d8b7d53bd13cf67961c973265a4c2ad1283d9d1",
+    "results/known-basin-nonfusion-trace/EqualWeightFibres.log": "f0e5b791755a5bf4cc3887baf8a368775b543ddc36db1d7eddbb5b5842032c33",
+    "results/known-basin-nonfusion-trace/CoalescenceGrades.log": "292f8e2c885a1dc5412b947320b3dad0216fe1d646bc936dc021dd00a084bc88",
+    "results/known-basin-nonfusion-trace/DyadicCoalescenceDefects.log": "b86a83b487d4f1db9a5a8aa4afce890797a23f29f48283f2b27dba3464cdd160",
+    "results/known-basin-nonfusion-trace/KnownBasinNonfusionTrace.log": "8c5154a5e13134617d4f8b835c19fb80a0cd6bf678ad8db11f6cf4d64e08ec33"
+  }
+}

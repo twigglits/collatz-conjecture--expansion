@@ -1,0 +1,11 @@
+'SignedArrivalWindows.first_arrival_odd' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.cycle_after_arrival' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.prearrival_endpoint' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.gap_forces_reversal' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.late_parent_reversal' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.signed_window_length' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.prearrival_partition' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.finite_gap_floor' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.finite_negative_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedArrivalWindows.positive_clock_budget' depends on axioms: [propext, Quot.sound]
+'SignedArrivalWindows.first_arrival_tail_constant' does not depend on any axioms

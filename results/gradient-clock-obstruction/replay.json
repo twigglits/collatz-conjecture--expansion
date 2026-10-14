@@ -1,0 +1,3712 @@
+{
+  "first_arrival_clocks": {
+    "maximum_certified_source": 65536,
+    "minimum_first_hit_weight": [
+      1840049047529878113,
+      2305843009213693952
+    ],
+    "bands": [
+      {
+        "level": 0,
+        "interval": [
+          1,
+          2
+        ],
+        "mean_remaining_first_arrival": [
+          0,
+          1
+        ],
+        "odd_count_sum": 0,
+        "nonfused_edges_at_prefix": 1,
+        "eta": [
+          1,
+          1
+        ],
+        "full_period_nonfusion_count": 2,
+        "mean_positive_clock_increment": [
+          4,
+          1
+        ],
+        "mean_negative_clock_increment": [
+          0,
+          1
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            4,
+            1
+          ],
+          "2": [
+            16,
+            1
+          ],
+          "4": [
+            256,
+            1
+          ],
+          "8": [
+            65536,
+            1
+          ],
+          "12": [
+            16777216,
+            1
+          ]
+        }
+      },
+      {
+        "level": 1,
+        "interval": [
+          2,
+          4
+        ],
+        "mean_remaining_first_arrival": [
+          2,
+          1
+        ],
+        "odd_count_sum": 1,
+        "nonfused_edges_at_prefix": 2,
+        "eta": [
+          1,
+          1
+        ],
+        "full_period_nonfusion_count": 4,
+        "mean_positive_clock_increment": [
+          7,
+          2
+        ],
+        "mean_negative_clock_increment": [
+          0,
+          1
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            7,
+            2
+          ],
+          "2": [
+            29,
+            2
+          ],
+          "4": [
+            641,
+            2
+          ],
+          "8": [
+            390881,
+            2
+          ],
+          "12": [
+            244144721,
+            2
+          ]
+        }
+      },
+      {
+        "level": 2,
+        "interval": [
+          4,
+          8
+        ],
+        "mean_remaining_first_arrival": [
+          15,
+          4
+        ],
+        "odd_count_sum": 4,
+        "nonfused_edges_at_prefix": 3,
+        "eta": [
+          3,
+          4
+        ],
+        "full_period_nonfusion_count": 7,
+        "mean_positive_clock_increment": [
+          15,
+          4
+        ],
+        "mean_negative_clock_increment": [
+          0,
+          1
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            15,
+            4
+          ],
+          "2": [
+            125,
+            4
+          ],
+          "4": [
+            10625,
+            4
+          ],
+          "8": [
+            100390625,
+            4
+          ],
+          "12": [
+            1000244140625,
+            4
+          ]
+        }
+      },
+      {
+        "level": 3,
+        "interval": [
+          8,
+          16
+        ],
+        "mean_remaining_first_arrival": [
+          45,
+          8
+        ],
+        "odd_count_sum": 12,
+        "nonfused_edges_at_prefix": 5,
+        "eta": [
+          5,
+          8
+        ],
+        "full_period_nonfusion_count": 13,
+        "mean_positive_clock_increment": [
+          129,
+          8
+        ],
+        "mean_negative_clock_increment": [
+          0,
+          1
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            129,
+            8
+          ],
+          "2": [
+            6849,
+            8
+          ],
+          "4": [
+            23284113,
+            8
+          ],
+          "8": [
+            290642084091873,
+            8
+          ],
+          "12": [
+            3841054388643371838033,
+            8
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "interval": [
+          16,
+          32
+        ],
+        "mean_remaining_first_arrival": [
+          219,
+          16
+        ],
+        "odd_count_sum": 32,
+        "nonfused_edges_at_prefix": 9,
+        "eta": [
+          9,
+          16
+        ],
+        "full_period_nonfusion_count": 24,
+        "mean_positive_clock_increment": [
+          87,
+          8
+        ],
+        "mean_negative_clock_increment": [
+          0,
+          1
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            87,
+            8
+          ],
+          "2": [
+            3677,
+            8
+          ],
+          "4": [
+            11676449,
+            8
+          ],
+          "8": [
+            145321882747169,
+            8
+          ],
+          "12": [
+            1920527217722728186289,
+            8
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "interval": [
+          32,
+          64
+        ],
+        "mean_remaining_first_arrival": [
+          153,
+          8
+        ],
+        "odd_count_sum": 80,
+        "nonfused_edges_at_prefix": 17,
+        "eta": [
+          17,
+          32
+        ],
+        "full_period_nonfusion_count": 46,
+        "mean_positive_clock_increment": [
+          421,
+          32
+        ],
+        "mean_negative_clock_increment": [
+          75,
+          32
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            31,
+            2
+          ],
+          "2": [
+            11007,
+            16
+          ],
+          "4": [
+            29619219,
+            16
+          ],
+          "8": [
+            311880285479619,
+            16
+          ],
+          "12": [
+            4145818684773766298019,
+            16
+          ]
+        }
+      },
+      {
+        "level": 6,
+        "interval": [
+          64,
+          128
+        ],
+        "mean_remaining_first_arrival": [
+          785,
+          32
+        ],
+        "odd_count_sum": 192,
+        "nonfused_edges_at_prefix": 33,
+        "eta": [
+          33,
+          64
+        ],
+        "full_period_nonfusion_count": 89,
+        "mean_positive_clock_increment": [
+          101,
+          8
+        ],
+        "mean_negative_clock_increment": [
+          227,
+          64
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            1035,
+            64
+          ],
+          "2": [
+            48007,
+            64
+          ],
+          "4": [
+            149941915,
+            64
+          ],
+          "8": [
+            2312293486756555,
+            64
+          ],
+          "12": [
+            43952869149875626561195,
+            64
+          ]
+        }
+      },
+      {
+        "level": 7,
+        "interval": [
+          128,
+          256
+        ],
+        "mean_remaining_first_arrival": [
+          3721,
+          128
+        ],
+        "odd_count_sum": 448,
+        "nonfused_edges_at_prefix": 65,
+        "eta": [
+          65,
+          128
+        ],
+        "full_period_nonfusion_count": 174,
+        "mean_positive_clock_increment": [
+          1409,
+          128
+        ],
+        "mean_negative_clock_increment": [
+          589,
+          128
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            999,
+            64
+          ],
+          "2": [
+            46919,
+            64
+          ],
+          "4": [
+            151207853,
+            64
+          ],
+          "8": [
+            2540042289736733,
+            64
+          ],
+          "12": [
+            54579219814279243701413,
+            64
+          ]
+        }
+      },
+      {
+        "level": 8,
+        "interval": [
+          256,
+          512
+        ],
+        "mean_remaining_first_arrival": [
+          4131,
+          128
+        ],
+        "odd_count_sum": 1024,
+        "nonfused_edges_at_prefix": 128,
+        "eta": [
+          1,
+          2
+        ],
+        "full_period_nonfusion_count": 342,
+        "mean_positive_clock_increment": [
+          185,
+          16
+        ],
+        "mean_negative_clock_increment": [
+          133,
+          32
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            503,
+            32
+          ],
+          "2": [
+            46583,
+            64
+          ],
+          "4": [
+            78726553,
+            32
+          ],
+          "8": [
+            2179306272592903,
+            32
+          ],
+          "12": [
+            109982849049942057387703,
+            32
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "interval": [
+          512,
+          1024
+        ],
+        "mean_remaining_first_arrival": [
+          4605,
+          128
+        ],
+        "odd_count_sum": 2304,
+        "nonfused_edges_at_prefix": 252,
+        "eta": [
+          63,
+          128
+        ],
+        "full_period_nonfusion_count": 673,
+        "mean_positive_clock_increment": [
+          6459,
+          512
+        ],
+        "mean_negative_clock_increment": [
+          1095,
+          256
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            8649,
+            512
+          ],
+          "2": [
+            439547,
+            512
+          ],
+          "4": [
+            1817782691,
+            512
+          ],
+          "8": [
+            67296346827984851,
+            512
+          ],
+          "12": [
+            3772282028463154583959811,
+            512
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "interval": [
+          1024,
+          2048
+        ],
+        "mean_remaining_first_arrival": [
+          41109,
+          1024
+        ],
+        "odd_count_sum": 5120,
+        "nonfused_edges_at_prefix": 497,
+        "eta": [
+          497,
+          1024
+        ],
+        "full_period_nonfusion_count": 1327,
+        "mean_positive_clock_increment": [
+          12767,
+          1024
+        ],
+        "mean_negative_clock_increment": [
+          4165,
+          1024
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            4233,
+            256
+          ],
+          "2": [
+            444695,
+            512
+          ],
+          "4": [
+            1936858043,
+            512
+          ],
+          "8": [
+            78903900262956803,
+            512
+          ],
+          "12": [
+            5140199324720896063441163,
+            512
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "interval": [
+          2048,
+          4096
+        ],
+        "mean_remaining_first_arrival": [
+          22705,
+          512
+        ],
+        "odd_count_sum": 11264,
+        "nonfused_edges_at_prefix": 981,
+        "eta": [
+          981,
+          2048
+        ],
+        "full_period_nonfusion_count": 2620,
+        "mean_positive_clock_increment": [
+          24973,
+          2048
+        ],
+        "mean_negative_clock_increment": [
+          2373,
+          512
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            34465,
+            2048
+          ],
+          "2": [
+            1873237,
+            2048
+          ],
+          "4": [
+            9171399589,
+            2048
+          ],
+          "8": [
+            664082272124855509,
+            2048
+          ],
+          "12": [
+            125846236878099652276685029,
+            2048
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "interval": [
+          4096,
+          8192
+        ],
+        "mean_remaining_first_arrival": [
+          197121,
+          4096
+        ],
+        "odd_count_sum": 24576,
+        "nonfused_edges_at_prefix": 1939,
+        "eta": [
+          1939,
+          4096
+        ],
+        "full_period_nonfusion_count": 5180,
+        "mean_positive_clock_increment": [
+          48471,
+          4096
+        ],
+        "mean_negative_clock_increment": [
+          10193,
+          2048
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            68857,
+            4096
+          ],
+          "2": [
+            3802063,
+            4096
+          ],
+          "4": [
+            19697689735,
+            4096
+          ],
+          "8": [
+            1643207152248570775,
+            4096
+          ],
+          "12": [
+            309789981293582443007493415,
+            4096
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "interval": [
+          8192,
+          16384
+        ],
+        "mean_remaining_first_arrival": [
+          422327,
+          8192
+        ],
+        "odd_count_sum": 53248,
+        "nonfused_edges_at_prefix": 3838,
+        "eta": [
+          1919,
+          4096
+        ],
+        "full_period_nonfusion_count": 10254,
+        "mean_positive_clock_increment": [
+          2967,
+          256
+        ],
+        "mean_negative_clock_increment": [
+          9993,
+          2048
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            33729,
+            2048
+          ],
+          "2": [
+            3830221,
+            4096
+          ],
+          "4": [
+            21842226637,
+            4096
+          ],
+          "8": [
+            2192752123178333797,
+            4096
+          ],
+          "12": [
+            449062300451556804458538157,
+            4096
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "interval": [
+          16384,
+          32768
+        ],
+        "mean_remaining_first_arrival": [
+          449813,
+          8192
+        ],
+        "odd_count_sum": 114688,
+        "nonfused_edges_at_prefix": 7605,
+        "eta": [
+          7605,
+          16384
+        ],
+        "full_period_nonfusion_count": 20318,
+        "mean_positive_clock_increment": [
+          49243,
+          4096
+        ],
+        "mean_negative_clock_increment": [
+          18955,
+          4096
+        ],
+        "clock_increment_power_means": {
+          "1": [
+            34099,
+            2048
+          ],
+          "2": [
+            501595,
+            512
+          ],
+          "4": [
+            25472481623,
+            4096
+          ],
+          "8": [
+            4108982089832911343,
+            4096
+          ],
+          "12": [
+            1792588196132294877646376963,
+            4096
+          ]
+        }
+      },
+      {
+        "level": 15,
+        "interval": [
+          32768,
+          65536
+        ],
+        "mean_remaining_first_arrival": [
+          480101,
+          8192
+        ],
+        "odd_count_sum": 245760
+      }
+    ]
+  },
+  "profile_windows": {
+    "sampled_cells": 553,
+    "witnesses": [
+      {
+        "level": 3,
+        "parent": 13,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 66,
+        "window_length": 50,
+        "lower_energy_from_clock_gap": [
+          225,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1275452458221268653136961787097,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            1275452458221268653136961787165,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 3,
+        "parent": 15,
+        "remaining_parent_arrival": 9,
+        "remaining_odd_child_arrival": 63,
+        "window_length": 42,
+        "lower_energy_from_clock_gap": [
+          189,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            859582477234525874243904536379,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            214895619308631468560976134111,
+            19807040628566084398385987584
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "parent": 16,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 13,
+        "window_length": 1,
+        "lower_energy_from_clock_gap": [
+          9,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            339367756935313018540199387349,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            10605242404228531829381230855,
+            2475880078570760549798248448
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "parent": 20,
+        "remaining_parent_arrival": 2,
+        "remaining_odd_child_arrival": 64,
+        "window_length": 50,
+        "lower_energy_from_clock_gap": [
+          225,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2267370379007770622938240122075,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            2267370379007770622938240122141,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "parent": 21,
+        "remaining_parent_arrival": 2,
+        "remaining_odd_child_arrival": 15,
+        "window_length": 1,
+        "lower_energy_from_clock_gap": [
+          9,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            192331721676574879992694596043,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            24041465209571859999086824507,
+            9903520314283042199192993792
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "parent": 23,
+        "remaining_parent_arrival": 7,
+        "remaining_odd_child_arrival": 61,
+        "window_length": 42,
+        "lower_energy_from_clock_gap": [
+          189,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            764069259912556602186660986041,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            1528138519825113204373321972145,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "parent": 32,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 13,
+        "window_length": 1,
+        "lower_energy_from_clock_gap": [
+          9,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            85441032852495151443069762195,
+            19807040628566084398385987584
+          ],
+          "upper": [
+            341764131409980605772279048791,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "parent": 35,
+        "remaining_parent_arrival": 5,
+        "remaining_odd_child_arrival": 59,
+        "window_length": 42,
+        "lower_energy_from_clock_gap": [
+          189,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2716678569040159992997035741711,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            679169642260039998249258935443,
+            19807040628566084398385987584
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "parent": 36,
+        "remaining_parent_arrival": 10,
+        "remaining_odd_child_arrival": 67,
+        "window_length": 45,
+        "lower_energy_from_clock_gap": [
+          405,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2663667577291593258891434903881,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            1331833788645796629445717451975,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "parent": 45,
+        "remaining_parent_arrival": 7,
+        "remaining_odd_child_arrival": 53,
+        "window_length": 34,
+        "lower_energy_from_clock_gap": [
+          153,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1408787768152928147590199698287,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            704393884076464073795099849171,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 512,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 16,
+        "window_length": 4,
+        "lower_energy_from_clock_gap": [
+          9,
+          64
+        ],
+        "certified_full_energy": {
+          "lower": [
+            330455168748343269005383770897,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            41306896093542908625672971363,
+            4951760157141521099596496896
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 707,
+        "remaining_parent_arrival": 72,
+        "remaining_odd_child_arrival": 15,
+        "window_length": 45,
+        "lower_energy_from_clock_gap": [
+          405,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1895995447328593422602761405779,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            1895995447328593422602761405853,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 768,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 88,
+        "window_length": 72,
+        "lower_energy_from_clock_gap": [
+          81,
+          32
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2436074847519086719168737215185,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            2436074847519086719168737215275,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 832,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 104,
+        "window_length": 88,
+        "lower_energy_from_clock_gap": [
+          99,
+          32
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1338729281125955204178602188427,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            20917645017593050065290659195,
+            618970019642690137449562112
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 853,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 85,
+        "window_length": 69,
+        "lower_energy_from_clock_gap": [
+          621,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1823385205966098457526342638905,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            113961575372881153595396414937,
+            4951760157141521099596496896
+          ]
+        }
+      },
+      {
+        "level": 9,
+        "parent": 1023,
+        "remaining_parent_arrival": 33,
+        "remaining_odd_child_arrival": 90,
+        "window_length": 45,
+        "lower_energy_from_clock_gap": [
+          405,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            956744262224486806228749497991,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            956744262224486806228749498083,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "parent": 1024,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 89,
+        "window_length": 77,
+        "lower_energy_from_clock_gap": [
+          693,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2887784398744672785338472227313,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            5775568797489345570676944454717,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "parent": 1365,
+        "remaining_parent_arrival": 2,
+        "remaining_odd_child_arrival": 64,
+        "window_length": 50,
+        "lower_energy_from_clock_gap": [
+          225,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            566754321589703384874228501447,
+            19807040628566084398385987584
+          ],
+          "upper": [
+            1133508643179406769748457002927,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "parent": 1459,
+        "remaining_parent_arrival": 15,
+        "remaining_odd_child_arrival": 126,
+        "window_length": 99,
+        "lower_energy_from_clock_gap": [
+          891,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            3928884920244071917688908236041,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            3928884920244071917688908236169,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "parent": 1536,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 61,
+        "window_length": 45,
+        "lower_energy_from_clock_gap": [
+          405,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1661142708420312633972576916369,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            103821419276269539623286057277,
+            4951760157141521099596496896
+          ]
+        }
+      },
+      {
+        "level": 10,
+        "parent": 1875,
+        "remaining_parent_arrival": 101,
+        "remaining_odd_child_arrival": 31,
+        "window_length": 58,
+        "lower_energy_from_clock_gap": [
+          261,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            10905135486321369589466956469,
+            618970019642690137449562112
+          ],
+          "upper": [
+            1395857342249135307451770428135,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "parent": 2048,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 62,
+        "window_length": 50,
+        "lower_energy_from_clock_gap": [
+          225,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            4030252721166966968549639693767,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            4030252721166966968549639693831,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "parent": 2323,
+        "remaining_parent_arrival": 105,
+        "remaining_odd_child_arrival": 29,
+        "window_length": 64,
+        "lower_energy_from_clock_gap": [
+          9,
+          4
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1976967901220680482577572927351,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            3953935802441360965155145854809,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "parent": 3072,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 23,
+        "window_length": 7,
+        "lower_energy_from_clock_gap": [
+          63,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            397295832415681153222871913717,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            198647916207840576611435956869,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "parent": 3413,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 104,
+        "window_length": 88,
+        "lower_energy_from_clock_gap": [
+          99,
+          32
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1204606217198932279188562872009,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            602303108599466139594281436031,
+            19807040628566084398385987584
+          ]
+        }
+      },
+      {
+        "level": 11,
+        "parent": 3981,
+        "remaining_parent_arrival": 9,
+        "remaining_odd_child_arrival": 147,
+        "window_length": 126,
+        "lower_energy_from_clock_gap": [
+          567,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2599897793298907002314762840571,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            162493612081181687644672677545,
+            4951760157141521099596496896
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "parent": 4096,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 24,
+        "window_length": 12,
+        "lower_energy_from_clock_gap": [
+          27,
+          64
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1169430837825495604954890603797,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            1169430837825495604954890603819,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "parent": 4645,
+        "remaining_parent_arrival": 105,
+        "remaining_odd_child_arrival": 13,
+        "window_length": 80,
+        "lower_energy_from_clock_gap": [
+          45,
+          16
+        ],
+        "certified_full_energy": {
+          "lower": [
+            2440127376324251266838755225927,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            4880254752648502533677510451961,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "parent": 5461,
+        "remaining_parent_arrival": 2,
+        "remaining_odd_child_arrival": 26,
+        "window_length": 12,
+        "lower_energy_from_clock_gap": [
+          27,
+          64
+        ],
+        "certified_full_energy": {
+          "lower": [
+            657831879096101899373924441425,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            657831879096101899373924441449,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "parent": 6067,
+        "remaining_parent_arrival": 7,
+        "remaining_odd_child_arrival": 145,
+        "window_length": 126,
+        "lower_energy_from_clock_gap": [
+          567,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            4541014143229143123829175335151,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            2270507071614571561914587667649,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 12,
+        "parent": 6144,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 23,
+        "window_length": 7,
+        "lower_energy_from_clock_gap": [
+          63,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            24831672038610656043739048519,
+            4951760157141521099596496896
+          ],
+          "upper": [
+            397306752617770496699824776325,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 8192,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 24,
+        "window_length": 12,
+        "lower_energy_from_clock_gap": [
+          27,
+          64
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1169478870310122161016436908753,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            1169478870310122161016436908775,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 12288,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 50,
+        "window_length": 34,
+        "lower_energy_from_clock_gap": [
+          153,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            318105013428112291699613834335,
+            19807040628566084398385987584
+          ],
+          "upper": [
+            1272420053712449166798455337389,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 13653,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 104,
+        "window_length": 88,
+        "lower_energy_from_clock_gap": [
+          99,
+          32
+        ],
+        "certified_full_energy": {
+          "lower": [
+            301166169276588182492264935595,
+            9903520314283042199192993792
+          ],
+          "upper": [
+            1204664677106352729969059742433,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 15843,
+        "remaining_parent_arrival": 25,
+        "remaining_odd_child_arrival": 166,
+        "window_length": 129,
+        "lower_energy_from_clock_gap": [
+          1161,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1364756107879535124033317994781,
+            39614081257132168796771975168
+          ],
+          "upper": [
+            1364756107879535124033317994865,
+            39614081257132168796771975168
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 15927,
+        "remaining_parent_arrival": 147,
+        "remaining_odd_child_arrival": 39,
+        "window_length": 96,
+        "lower_energy_from_clock_gap": [
+          27,
+          8
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1959618814283210066111757247167,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            489904703570802516527939311829,
+            19807040628566084398385987584
+          ]
+        }
+      },
+      {
+        "level": 13,
+        "parent": 16383,
+        "remaining_parent_arrival": 90,
+        "remaining_odd_child_arrival": 71,
+        "window_length": 7,
+        "lower_energy_from_clock_gap": [
+          63,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            54812297713603356184993965393,
+            19807040628566084398385987584
+          ],
+          "upper": [
+            6851537214200419523124245677,
+            2475880078570760549798248448
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "parent": 16384,
+        "remaining_parent_arrival": 0,
+        "remaining_odd_child_arrival": 51,
+        "window_length": 39,
+        "lower_energy_from_clock_gap": [
+          351,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            3159344006825124984687372330599,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            789836001706281246171843082663,
+            19807040628566084398385987584
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "parent": 21845,
+        "remaining_parent_arrival": 2,
+        "remaining_odd_child_arrival": 53,
+        "window_length": 39,
+        "lower_energy_from_clock_gap": [
+          351,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            13883936036729156222246971015,
+            618970019642690137449562112
+          ],
+          "upper": [
+            1777143812701331996447612289975,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "parent": 23352,
+        "remaining_parent_arrival": 126,
+        "remaining_odd_child_arrival": 15,
+        "window_length": 99,
+        "lower_energy_from_clock_gap": [
+          891,
+          256
+        ],
+        "certified_full_energy": {
+          "lower": [
+            3928884920244071917688908236041,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            3928884920244071917688908236169,
+            79228162514264337593543950336
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "parent": 24576,
+        "remaining_parent_arrival": 4,
+        "remaining_odd_child_arrival": 50,
+        "window_length": 34,
+        "lower_energy_from_clock_gap": [
+          153,
+          128
+        ],
+        "certified_full_energy": {
+          "lower": [
+            1272424454121278120922589275311,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            39763264191289941278830914855,
+            2475880078570760549798248448
+          ]
+        }
+      },
+      {
+        "level": 14,
+        "parent": 28047,
+        "remaining_parent_arrival": 12,
+        "remaining_odd_child_arrival": 188,
+        "window_length": 164,
+        "lower_energy_from_clock_gap": [
+          369,
+          64
+        ],
+        "certified_full_energy": {
+          "lower": [
+            4441074456870745420409665992421,
+            79228162514264337593543950336
+          ],
+          "upper": [
+            4441074456870745420409665992611,
+            79228162514264337593543950336
+          ]
+        }
+      }
+    ],
+    "scope": "Complete future sums only for these sampled cells; their cycle tails are certified."
+  },
+  "finite_moment_budgets": {
+    "rows": [
+      {
+        "K": 1,
+        "Q_K": [
+          1,
+          1
+        ],
+        "mean_remaining_arrival": [
+          2,
+          1
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              4,
+              1
+            ],
+            "exact_clock_increment_power_sum": [
+              4,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2124257872238115553,
+                9223372036854775808
+              ],
+              "upper": [
+                4248515744476231107,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              16,
+              1
+            ],
+            "exact_clock_increment_power_sum": [
+              16,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                122310785299960247,
+                2305843009213693952
+              ],
+              "upper": [
+                978486282399681977,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              256,
+              1
+            ],
+            "exact_clock_increment_power_sum": [
+              256,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                25951338648669573,
+                9223372036854775808
+              ],
+              "upper": [
+                51902677297339147,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              65536,
+              1
+            ],
+            "exact_clock_increment_power_sum": [
+              65536,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                146035956256967,
+                18446744073709551616
+              ],
+              "upper": [
+                18254494532121,
+                2305843009213693952
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              16777216,
+              1
+            ],
+            "exact_clock_increment_power_sum": [
+              16777216,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                25680877209,
+                1152921504606846976
+              ],
+              "upper": [
+                410894035345,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 2,
+        "Q_K": [
+          2,
+          1
+        ],
+        "mean_remaining_arrival": [
+          15,
+          4
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              15,
+              2
+            ],
+            "exact_clock_increment_power_sum": [
+              15,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                7000839554200013519,
+                18446744073709551616
+              ],
+              "upper": [
+                7000839554200013521,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              225,
+              8
+            ],
+            "exact_clock_increment_power_sum": [
+              61,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1527817592396440087,
+                18446744073709551616
+              ],
+              "upper": [
+                1527817592396440089,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              50625,
+              128
+            ],
+            "exact_clock_increment_power_sum": [
+              1153,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2519059879535065,
+                576460752303423488
+              ],
+              "upper": [
+                40304958072561041,
+                9223372036854775808
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              2562890625,
+              32768
+            ],
+            "exact_clock_increment_power_sum": [
+              521953,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                234513879916337,
+                18446744073709551616
+              ],
+              "upper": [
+                234513879916339,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              129746337890625,
+              8388608
+            ],
+            "exact_clock_increment_power_sum": [
+              277699153,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                342460014249,
+                9223372036854775808
+              ],
+              "upper": [
+                171230007125,
+                4611686018427387904
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 3,
+        "Q_K": [
+          11,
+          4
+        ],
+        "mean_remaining_arrival": [
+          45,
+          8
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              45,
+              4
+            ],
+            "exact_clock_increment_power_sum": [
+              45,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                16684184445886310129,
+                18446744073709551616
+              ],
+              "upper": [
+                4171046111471577533,
+                4611686018427387904
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              2025,
+              44
+            ],
+            "exact_clock_increment_power_sum": [
+              247,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                7746008854049402459,
+                9223372036854775808
+              ],
+              "upper": [
+                15492017708098804921,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              4100625,
+              5324
+            ],
+            "exact_clock_increment_power_sum": [
+              12931,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                18993434075660585547,
+                9223372036854775808
+              ],
+              "upper": [
+                37986868151321171097,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              16815125390625,
+              77948684
+            ],
+            "exact_clock_increment_power_sum": [
+              101434531,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                154748697882864876501,
+                9223372036854775808
+              ],
+              "upper": [
+                309497395765729753005,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              68952523554931640625,
+              1141246682444
+            ],
+            "exact_clock_increment_power_sum": [
+              1000799538931,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1267703887586660318329,
+                9223372036854775808
+              ],
+              "upper": [
+                2535407775173320636661,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 4,
+        "Q_K": [
+          27,
+          8
+        ],
+        "mean_remaining_arrival": [
+          219,
+          16
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              219,
+              8
+            ],
+            "exact_clock_increment_power_sum": [
+              219,
+              8
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2581845290861179839,
+                576460752303423488
+              ],
+              "upper": [
+                20654762326889438713,
+                4611686018427387904
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              5329,
+              24
+            ],
+            "exact_clock_increment_power_sum": [
+              7343,
+              8
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                221921308972741434075,
+                4611686018427387904
+              ],
+              "upper": [
+                55480327243185358519,
+                1152921504606846976
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              28398241,
+              1944
+            ],
+            "exact_clock_increment_power_sum": [
+              23309975,
+              8
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                186860103413967191778275,
+                18446744073709551616
+              ],
+              "upper": [
+                186860103413967191778279,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              806460091894081,
+              12754584
+            ],
+            "exact_clock_increment_power_sum": [
+              290642286960935,
+              8
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2711113615066435234956991267,
+                4611686018427387904
+              ],
+              "upper": [
+                2711113615066435234956991269,
+                4611686018427387904
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              22902048046490258711521,
+              83682825624
+            ],
+            "exact_clock_increment_power_sum": [
+              3841054390644970915895,
+              8
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                88095226572302338076384777475575,
+                2305843009213693952
+              ],
+              "upper": [
+                704761812578418704611078220257133,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 5,
+        "Q_K": [
+          63,
+          16
+        ],
+        "mean_remaining_arrival": [
+          153,
+          8
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              153,
+              4
+            ],
+            "exact_clock_increment_power_sum": [
+              153,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                149965599760830628779,
+                18446744073709551616
+              ],
+              "upper": [
+                9372849985051914299,
+                1152921504606846976
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              2601,
+              7
+            ],
+            "exact_clock_increment_power_sum": [
+              2755,
+              2
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2293478677017722360929,
+                18446744073709551616
+              ],
+              "upper": [
+                1146739338508861180467,
+                9223372036854775808
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              12027024,
+              343
+            ],
+            "exact_clock_increment_power_sum": [
+              4373303,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                560100031424848007655807,
+                9223372036854775808
+              ],
+              "upper": [
+                1120200062849696015311619,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              257154322305024,
+              823543
+            ],
+            "exact_clock_increment_power_sum": [
+              54495521213513,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                551659668111800335389844116967,
+                18446744073709551616
+              ],
+              "upper": [
+                34478729256987520961865257319,
+                1152921504606846976
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              5498313255228904833024,
+              1977326743
+            ],
+            "exact_clock_increment_power_sum": [
+              720197701045962387773,
+              1
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                351709083815033842777442691637168289,
+                18446744073709551616
+              ],
+              "upper": [
+                351709083815033842777442691760672235,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 6,
+        "Q_K": [
+          143,
+          32
+        ],
+        "mean_remaining_arrival": [
+          785,
+          32
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              785,
+              16
+            ],
+            "exact_clock_increment_power_sum": [
+              215,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                61940388883546486541,
+                4611686018427387904
+              ],
+              "upper": [
+                123880777767092973085,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              616225,
+              1144
+            ],
+            "exact_clock_increment_power_sum": [
+              33047,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                4414897056579643977439,
+                18446744073709551616
+              ],
+              "upper": [
+                4414897056579643977445,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              379733250625,
+              5848414
+            ],
+            "exact_clock_increment_power_sum": [
+              99592067,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                723160824333628835490143,
+                4611686018427387904
+              ],
+              "upper": [
+                1446321648667257670980289,
+                9223372036854775808
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              1153578733041832503125000,
+              1222791080775407
+            ],
+            "exact_clock_increment_power_sum": [
+              1183808624895827,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1316292453601670937817777562761,
+                9223372036854775808
+              ],
+              "upper": [
+                2632584907203341875635555126065,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              7008835234397506408294987531250000000,
+              511324276025564512546607
+            ],
+            "exact_clock_increment_power_sum": [
+              15668981901509164502387,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                3084558541731191987496023410005703045,
+                18446744073709551616
+              ],
+              "upper": [
+                3084558541731191987496023410917049733,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 7,
+        "Q_K": [
+          319,
+          64
+        ],
+        "mean_remaining_arrival": [
+          3721,
+          128
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              3721,
+              64
+            ],
+            "exact_clock_increment_power_sum": [
+              4475,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                357747060016072466307,
+                18446744073709551616
+              ],
+              "upper": [
+                178873530008036233157,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              13845841,
+              20416
+            ],
+            "exact_clock_increment_power_sum": [
+              180195,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                3532849947209013844173,
+                9223372036854775808
+              ],
+              "upper": [
+                7065699894418027688353,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              191707312997281,
+              2077552576
+            ],
+            "exact_clock_increment_power_sum": [
+              548310183,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                6371750023962344856734737,
+                18446744073709551616
+              ],
+              "upper": [
+                796468752995293107091843,
+                2305843009213693952
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              36751693856637464631913392961,
+              21513682519189237696
+            ],
+            "exact_clock_increment_power_sum": [
+              7047527986339863,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                656310580621163093568237126755,
+                576460752303423488
+              ],
+              "upper": [
+                21001938579877218994183588059305,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              7045568477354647704120453346932251277539041,
+              222780660707798417124524257216
+            ],
+            "exact_clock_increment_power_sum": [
+              106628796755912284570743,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                69234617810594030853953349449617695057,
+                9223372036854775808
+              ],
+              "upper": [
+                138469235621188061707906698928228146019,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 8,
+        "Q_K": [
+          703,
+          128
+        ],
+        "mean_remaining_arrival": [
+          4131,
+          128
+        ],
+        "positive_clock_margin": [
+          0,
+          1
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              4131,
+              64
+            ],
+            "exact_clock_increment_power_sum": [
+              2737,
+              32
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                230980647451545078093,
+                9223372036854775808
+              ],
+              "upper": [
+                230980647451545078097,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              17065161,
+              22496
+            ],
+            "exact_clock_increment_power_sum": [
+              113557,
+              32
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                9468158934344458218023,
+                18446744073709551616
+              ],
+              "upper": [
+                9468158934344458218031,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              291219719955921,
+              2779431416
+            ],
+            "exact_clock_increment_power_sum": [
+              174879509,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1133844297246954551607101,
+                2305843009213693952
+              ],
+              "upper": [
+                566922148623477275803551,
+                1152921504606846976
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              169617850582410103852365916482,
+              84856922099409044287
+            ],
+            "exact_clock_increment_power_sum": [
+              2396892569019149,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                16097530726180273997316634134863,
+                9223372036854775808
+              ],
+              "upper": [
+                32195061452360547994633268274563,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              0,
+              1
+            ],
+            "clock_increment_lower_bound": [
+              790337007138155554131757897083567804918238752,
+              20725669823644750928281706704447
+            ],
+            "exact_clock_increment_power_sum": [
+              40302004142547882068039,
+              16
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                212200492326132715665377808557300456265,
+                18446744073709551616
+              ],
+              "upper": [
+                13262530770383294729086113037621794689,
+                1152921504606846976
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 9,
+        "Q_K": [
+          767,
+          128
+        ],
+        "mean_remaining_arrival": [
+          4605,
+          128
+        ],
+        "positive_clock_margin": [
+          3,
+          64
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              27,
+              16384
+            ],
+            "clock_increment_lower_bound": [
+              4605,
+              64
+            ],
+            "exact_clock_increment_power_sum": [
+              405,
+              4
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                565762999094024277153,
+                18446744073709551616
+              ],
+              "upper": [
+                282881499547012138581,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              729,
+              1608515584
+            ],
+            "clock_increment_lower_bound": [
+              21206025,
+              24544
+            ],
+            "exact_clock_increment_power_sum": [
+              273697,
+              64
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                11687161277890983627259,
+                18446744073709551616
+              ],
+              "upper": [
+                2921790319472745906817,
+                4611686018427387904
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              531441,
+              15503720847700393984
+            ],
+            "clock_increment_lower_bound": [
+              449695496300625,
+              3609741304
+            ],
+            "exact_clock_increment_power_sum": [
+              428485571,
+              32
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1398547679099251023782597,
+                2305843009213693952
+              ],
+              "upper": [
+                11188381432794008190260785,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              282429536481,
+              1440314306364554720819762282205527670784
+            ],
+            "clock_increment_lower_bound": [
+              404452078786130866120750781250,
+              156159190002240263423
+            ],
+            "exact_clock_increment_power_sum": [
+              6973091410631201,
+              32
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                596609597999664873126762582383,
+                288230376151711744
+              ],
+              "upper": [
+                2386438391998659492507050329901,
+                1152921504606846976
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              150094635296999121,
+              133806930703742103199361972765484998534093754395184106307584
+            ],
+            "clock_increment_lower_bound": [
+              2910084452792777663138579361506511257812500000,
+              54044188917657187198918747824383
+            ],
+            "exact_clock_increment_power_sum": [
+              190586857335037821523781,
+              32
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                240263026701595704112184622739062911995,
+                18446744073709551616
+              ],
+              "upper": [
+                240263026701595704112184622790692332409,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 10,
+        "Q_K": [
+          415,
+          64
+        ],
+        "mean_remaining_arrival": [
+          41109,
+          1024
+        ],
+        "positive_clock_margin": [
+          1269,
+          512
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              11421,
+              131072
+            ],
+            "clock_increment_lower_bound": [
+              41109,
+              512
+            ],
+            "exact_clock_increment_power_sum": [
+              60489,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                681419465681840731283,
+                18446744073709551616
+              ],
+              "upper": [
+                681419465681840731293,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              130439241,
+              111400714240
+            ],
+            "clock_increment_lower_bound": [
+              1689949881,
+              1699840
+            ],
+            "exact_clock_increment_power_sum": [
+              2629123,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                14474091041391845298129,
+                18446744073709551616
+              ],
+              "upper": [
+                14474091041391845298139,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              17014395592656081,
+              80471866254227931136000
+            ],
+            "clock_increment_lower_bound": [
+              2855930600291914161,
+              18736316416000
+            ],
+            "exact_clock_increment_power_sum": [
+              8673551827,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                7326568566247507735356097,
+                9223372036854775808
+              ],
+              "upper": [
+                3663284283123753867678051,
+                4611686018427387904
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              289489657383394673813220346278561,
+              41991005035186163333186756507838510530560000000
+            ],
+            "clock_increment_lower_bound": [
+              8156339593683733170031667077392333921,
+              2276336944199929692160000000
+            ],
+            "exact_clock_increment_power_sum": [
+              178865809398084067,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                58972523384360830119131804430301,
+                18446744073709551616
+              ],
+              "upper": [
+                29486261692180415059565902219917,
+                9223372036854775808
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              4925491550703549256029689052036713300509896579441,
+              21911316164764479863217311136959167238626007790590432483737600000000000
+            ],
+            "clock_increment_lower_bound": [
+              23293939831973891311849708843014999088730187824380555281,
+              276559691269118339860378786201600000000000
+            ],
+            "exact_clock_increment_power_sum": [
+              6821671745823759728340307,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                128238869327146956905290361828814498047,
+                4611686018427387904
+              ],
+              "upper": [
+                512955477308587827621161447431841012219,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 11,
+        "Q_K": [
+          7137,
+          1024
+        ],
+        "mean_remaining_arrival": [
+          22705,
+          512
+        ],
+        "positive_clock_margin": [
+          647,
+          128
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              5823,
+              32768
+            ],
+            "clock_increment_lower_bound": [
+              22705,
+              256
+            ],
+            "exact_clock_increment_power_sum": [
+              68955,
+              512
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                397569909999890969119,
+                9223372036854775808
+              ],
+              "upper": [
+                795139819999781938249,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              3767481,
+              831520768
+            ],
+            "clock_increment_lower_bound": [
+              515517025,
+              456768
+            ],
+            "exact_clock_increment_power_sum": [
+              1536909,
+              256
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                8679918445525606933641,
+                9223372036854775808
+              ],
+              "upper": [
+                17359836891051213867293,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              1577101453929,
+              535450627518496768
+            ],
+            "clock_increment_lower_bound": [
+              265757803064850625,
+              1454142881412
+            ],
+            "exact_clock_increment_power_sum": [
+              5305204935,
+              256
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                18914453105735135799148807,
+                18446744073709551616
+              ],
+              "upper": [
+                9457226552867567899574409,
+                9223372036854775808
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              276360999553885078837449,
+              222030222642960850462679564988448768
+            ],
+            "clock_increment_lower_bound": [
+              4520141432950779408035798628025000000,
+              943213215944265051839174433
+            ],
+            "exact_clock_increment_power_sum": [
+              128884854830520435,
+              256
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                101664500740043798951950449420311,
+                18446744073709551616
+              ],
+              "upper": [
+                101664500740043798951950449436565,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              48427703800633764246124400772598569,
+              92067162187011948557446065670162265743909574586400768
+            ],
+            "clock_increment_lower_bound": [
+              307523291331431664545916935061142986874000324000000000000,
+              2447218033672330220315194006644077464817313
+            ],
+            "exact_clock_increment_power_sum": [
+              5980935535272327895890735,
+              256
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                687235610667068995060030231695407141887,
+                9223372036854775808
+              ],
+              "upper": [
+                1374471221334137990120060463692644484599,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 12,
+        "Q_K": [
+          15255,
+          2048
+        ],
+        "mean_remaining_arrival": [
+          197121,
+          4096
+        ],
+        "positive_clock_margin": [
+          14061,
+          2048
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              126549,
+              524288
+            ],
+            "clock_increment_lower_bound": [
+              197121,
+              2048
+            ],
+            "exact_clock_increment_power_sum": [
+              310285,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                455166277477009947867,
+                9223372036854775808
+              ],
+              "upper": [
+                455166277477009947873,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              593135163,
+              75833016320
+            ],
+            "clock_increment_lower_bound": [
+              4317409849,
+              3471360
+            ],
+            "exact_clock_increment_power_sum": [
+              14168509,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                5096794564295346487333,
+                4611686018427387904
+              ],
+              "upper": [
+                637099320536918310917,
+                576460752303423488
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              13029974873593947,
+              1586482029183107072000
+            ],
+            "clock_increment_lower_bound": [
+              18640027804242202801,
+              89759736576000
+            ],
+            "exact_clock_increment_power_sum": [
+              51613039069,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                24287957527472275944396969,
+                18446744073709551616
+              ],
+              "upper": [
+                24287957527472275944396981,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              6288157229869985003745934631067,
+              694366579267742277626541846843883520000000
+            ],
+            "clock_increment_lower_bound": [
+              347450636542922396305752020204812245601,
+              60013008438473083822560000000
+            ],
+            "exact_clock_increment_power_sum": [
+              1695161110769018989,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                194163142550403954479584768002609,
+                18446744073709551616
+              ],
+              "upper": [
+                97081571275201977239792384016693,
+                9223372036854775808
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              3034612248385704510292812114878645252437383387,
+              303908230622849414920196009451523827862465668133683200000000000
+            ],
+            "clock_increment_lower_bound": [
+              6476489525761725423933453302857755224307330809767662128401,
+              40124462473068672820372571208221100000000000
+            ],
+            "exact_clock_increment_power_sum": [
+              173693721160278275443810909,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2437212083710914889227650043988743221319,
+                9223372036854775808
+              ],
+              "upper": [
+                4874424167421829778455300089055808659969,
+                18446744073709551616
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 13,
+        "Q_K": [
+          32449,
+          4096
+        ],
+        "mean_remaining_arrival": [
+          422327,
+          8192
+        ],
+        "positive_clock_margin": [
+          32939,
+          4096
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              296451,
+              1048576
+            ],
+            "clock_increment_lower_bound": [
+              422327,
+              4096
+            ],
+            "exact_clock_increment_power_sum": [
+              689427,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                513182902950630050859,
+                9223372036854775808
+              ],
+              "upper": [
+                1026365805901260101731,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              87883195401,
+              8710462111744
+            ],
+            "clock_increment_lower_bound": [
+              178360094929,
+              132911104
+            ],
+            "exact_clock_increment_power_sum": [
+              32139081,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                23511269216514641761443,
+                18446744073709551616
+              ],
+              "upper": [
+                1469454326032165110091,
+                1152921504606846976
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              7723456033890347550801,
+              601068213340806924608733184
+            ],
+            "clock_increment_lower_bound": [
+              31812323463081891515041,
+              139947098992021504
+            ],
+            "exact_clock_increment_power_sum": [
+              122923767873,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                29955301027474572555373345,
+                18446744073709551616
+              ],
+              "upper": [
+                14977650513737286277686679,
+                9223372036854775808
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              59651773107437217415194233626083339275741601,
+              2862126946418833958016398761673353977276229845740683264
+            ],
+            "clock_increment_lower_bound": [
+              1012023924119750631099725549634201710329231681,
+              155156212661830136108364575947362304
+            ],
+            "exact_clock_increment_power_sum": [
+              5033529373786608753,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                72157735697757715205403515059887,
+                4611686018427387904
+              ],
+              "upper": [
+                144315471395515430410807030143187,
+                9223372036854775808
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              460717846938893944101258253129677562722693817146996896643296572401,
+              13628687186577354181164594016476263934744440224620632312110963771545965515918802944
+            ],
+            "clock_increment_lower_bound": [
+              32194832426474950795846760996980558554000187681648685504266585213921,
+              172018216175638659717699011704254732282406024578863104
+            ],
+            "exact_clock_increment_power_sum": [
+              657177423614138993895115233,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2198885260218562147759817493500734093799,
+                4611686018427387904
+              ],
+              "upper": [
+                4397770520437124295519634988018602654319,
+                9223372036854775808
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 14,
+        "Q_K": [
+          537,
+          64
+        ],
+        "mean_remaining_arrival": [
+          449813,
+          8192
+        ],
+        "positive_clock_margin": [
+          37397,
+          4096
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              336573,
+              1048576
+            ],
+            "clock_increment_lower_bound": [
+              449813,
+              4096
+            ],
+            "exact_clock_increment_power_sum": [
+              756885,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1140905168384654556769,
+                18446744073709551616
+              ],
+              "upper": [
+                1140905168384654556783,
+                18446744073709551616
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              37760461443,
+              3075196583936
+            ],
+            "clock_increment_lower_bound": [
+              202331734969,
+              140771328
+            ],
+            "exact_clock_increment_power_sum": [
+              17984651,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                26761764331774715170505,
+                18446744073709551616
+              ],
+              "upper": [
+                26761764331774715170519,
+                18446744073709551616
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              475284149462763214083,
+              26449582677241316513939456
+            ],
+            "clock_increment_lower_bound": [
+              40938130975565657430961,
+              166273380696195072
+            ],
+            "exact_clock_increment_power_sum": [
+              72382997255,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                2332977384628437332351391,
+                1152921504606846976
+              ],
+              "upper": [
+                18663819077027498658811135,
+                9223372036854775808
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              75298340910180747334012244347476163176963,
+              1956638997816251300030688014003415773492034400157696
+            ],
+            "clock_increment_lower_bound": [
+              1675930567772568366616646844563151398481383521,
+              231974242778314924927477471481167872
+            ],
+            "exact_clock_increment_power_sum": [
+              3613140748482471275,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                279581778701054787217446329200721,
+                9223372036854775808
+              ],
+              "upper": [
+                559163557402109574434892658490805,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              11929369305150814729180906187674902750554138066829123394256643,
+              144744671947870936912948357437767687347423725132316308770134824168282480705536
+            ],
+            "clock_increment_lower_bound": [
+              68609465089427520384129347260435867059417093992295736774273820593681,
+              323635984829675179154741944347661026634181166520860672
+            ],
+            "exact_clock_increment_power_sum": [
+              553119862032847899176826695,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1004543950298319599832974105455283938103,
+                576460752303423488
+              ],
+              "upper": [
+                16072703204773113597327585690938311685553,
+                9223372036854775808
+              ]
+            }
+          }
+        }
+      },
+      {
+        "K": 15,
+        "Q_K": [
+          145077,
+          16384
+        ],
+        "mean_remaining_arrival": [
+          480101,
+          8192
+        ],
+        "positive_clock_margin": [
+          22435,
+          2048
+        ],
+        "power_budgets": {
+          "1": {
+            "lower_bound_from_clocks": [
+              201915,
+              524288
+            ],
+            "clock_increment_lower_bound": [
+              480101,
+              4096
+            ],
+            "exact_clock_increment_power_sum": [
+              825083,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1257007275515088226131,
+                18446744073709551616
+              ],
+              "upper": [
+                628503637757544113073,
+                9223372036854775808
+              ]
+            }
+          },
+          "2": {
+            "lower_bound_from_clocks": [
+              13589889075,
+              811329388544
+            ],
+            "clock_increment_lower_bound": [
+              230496970201,
+              148558848
+            ],
+            "exact_clock_increment_power_sum": [
+              19991031,
+              2048
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                30120102614586575778795,
+                18446744073709551616
+              ],
+              "upper": [
+                15060051307293287889405,
+                9223372036854775808
+              ]
+            }
+          },
+          "4": {
+            "lower_bound_from_clocks": [
+              61561695023601451875,
+              1942905991367763307790336
+            ],
+            "clock_increment_lower_bound": [
+              53128853271840681980401,
+              195422998692578112
+            ],
+            "exact_clock_increment_power_sum": [
+              170238476133,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                11297595607159521292065293,
+                4611686018427387904
+              ],
+              "upper": [
+                45190382428638085168261187,
+                18446744073709551616
+              ]
+            }
+          },
+          "8": {
+            "lower_bound_from_clocks": [
+              1263280764726305254776294926869313671875,
+              11141943385450814991375304097456777821341976887296
+            ],
+            "clock_increment_lower_bound": [
+              11290700199923105354441214398702051789392483204,
+              1352664102060082273245466558738601853
+            ],
+            "exact_clock_increment_power_sum": [
+              11335263586797853893,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                1055820041647289485543185385062933,
+                18446744073709551616
+              ],
+              "upper": [
+                1055820041647289485543185385226409,
+                18446744073709551616
+              ]
+            }
+          },
+          "12": {
+            "lower_bound_from_clocks": [
+              25923235055754274248245550845046110578203859722012451171875,
+              63895475620617794976037965675798003045501613926778144537042482453184249856
+            ],
+            "clock_increment_lower_bound": [
+              153564660290062571024119565010171701638838402989541503700122073519309824,
+              599217143609289409392060429085346703525433164965047604973
+            ],
+            "exact_clock_increment_power_sum": [
+              2898827920197990676000030353,
+              4096
+            ],
+            "authenticated_sum_of_moments": {
+              "lower": [
+                153000395357753216046474075045493408369477,
+                18446744073709551616
+              ],
+              "upper": [
+                19125049419719152005809259384762125580919,
+                2305843009213693952
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "energy_source": "results/annulus-time-budgets/replay.json",
+    "reuse_scope": "Previously certified complete finite-annulus energy moments; authenticated here, not recomputed for every cell."
+  },
+  "counts": {
+    "certified_first_arrival_links": 104145,
+    "independent_first_arrival_replays": 2053,
+    "certified_sources_and_first_hit_weights": 65536,
+    "finite_three_quarters_first_hit_floors": 65536,
+    "arrival_remaining_clock_lower_bounds": 65535,
+    "actual_band_vs_even_residue_masks": 32767,
+    "exact_parity_means_and_arrival_mean_bounds": 16,
+    "fused_edges_with_equal_arrival_clocks": 17392,
+    "exact_clock_telescope_prefixes": 15,
+    "exact_precycle_cost_terms": 23996,
+    "exact_cycle_tail_ratio_checks": 2212,
+    "pairs_with_certified_known_cycle_entry": 553,
+    "complete_cell_energy_vs_arrival_gap_checks": 553,
+    "independent_actual_profile_window_terms": 7192,
+    "finite_clock_increment_moment_lower_bounds": 75,
+    "finite_holder_moment_lower_bounds": 75,
+    "nonzero_finite_clock_margins": 7
+  },
+  "infinite_scope": "None. Universal convergence is an explicit hypothesis of the written infinite theorem."
+}

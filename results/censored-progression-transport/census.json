@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T15:32:28.880166+00:00",
+  "independent_python_seconds": 10.364,
+  "independent_method": "Direct exact affine weights, directed rounding at every alive ordinary clock.",
+  "independent_interval_containment": true,
+  "comparisons": [
+    {
+      "binary_exponent": 17,
+      "clock": 136,
+      "delta_lower": [
+        1192744165297916772090455873,
+        475371392937225254819613114368
+      ],
+      "delta_upper": [
+        1192744165298023109141847087,
+        475371392937225254819613114368
+      ],
+      "correction_lower": [
+        286695109674299997289,
+        2305843009213693952
+      ],
+      "correction_upper": [
+        2293560877394400111633,
+        18446744073709551616
+      ],
+      "delta_X_over_T_lower": [
+        1192744165297916772090455873,
+        493244243159962727779139584
+      ],
+      "delta_X_over_correction_upper": [
+        1192744165297916772090455873,
+        450934710543635611548052497
+      ],
+      "strictly_rejected_T_over_X_multiplier": 2
+    },
+    {
+      "binary_exponent": 20,
+      "clock": 160,
+      "delta_lower": [
+        21057229312035027268453221017,
+        15211816874145309734993836113920
+      ],
+      "delta_upper": [
+        21057229312039832623529983471,
+        15211816874145309734993836113920
+      ],
+      "correction_lower": [
+        3178519754951036363133,
+        18446744073709551616
+      ],
+      "correction_upper": [
+        3178519754951037415201,
+        18446744073709551616
+      ],
+      "delta_X_over_T_lower": [
+        21057229312035027268453221017,
+        2321139049399613912199987200
+      ],
+      "delta_X_over_correction_upper": [
+        42114458624070054536906442034,
+        4999382474371063464060120865
+      ],
+      "strictly_rejected_T_over_X_multiplier": 9
+    },
+    {
+      "binary_exponent": 17,
+      "clock": 136,
+      "delta_lower": [
+        1192744165297967345005104975,
+        475371392937225254819613114368
+      ],
+      "delta_upper": [
+        1192744165297972521009408855,
+        475371392937225254819613114368
+      ],
+      "correction_lower": [
+        1146780438697199989717,
+        9223372036854775808
+      ],
+      "correction_upper": [
+        573390219348600027649,
+        4611686018427387904
+      ],
+      "delta_X_over_T_lower": [
+        1192744165297967345005104975,
+        493244243159962727779139584
+      ],
+      "delta_X_over_correction_upper": [
+        1192744165297967345005104975,
+        450934710543635611344168964
+      ],
+      "strictly_rejected_T_over_X_multiplier": 2
+    }
+  ],
+  "sha256": {
+    "censored_progression_census.rs": "6c5e1c96b901618a3d92cbe4aeedacea3124134770a544a2ea8c0c9ec860b6d1",
+    "verify_censored_progression_transport.py": "7e31871f205eb497a3970274c66de3633ee1e74ecdf8a7453996af361ad3f988",
+    "results/censored-progression-transport/native-k17-provenance.json": "532941ea776d804bf365288286e1de41d891c5e69ec67b195c70e68f48a04195",
+    "results/censored-progression-transport/native-k17.json": "d8a69e8a50457694a5f8b555147d2d2347aa922ece2fb395a4d5a9a3a6968481",
+    "results/censored-progression-transport/native-k20-provenance.json": "aa28cc1feee72ea01ad9324e650bbe9dc14cf3fe26f6f69fdb2d4ad77a72d7bf",
+    "results/censored-progression-transport/native-k20.json": "d09caea6774e4caec2d53265ea70d61bfbf9abd17f7295d7d13402ad62104232",
+    "results/censored-progression-transport/independent-k17.json": "79fca6256b487edb4cdf64e6e4ca9d87ae964edbea6db84b30931afd7192407c"
+  }
+}

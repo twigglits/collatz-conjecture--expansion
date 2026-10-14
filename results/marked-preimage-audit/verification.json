@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T16:50:39.811090+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-marked-preimage-6ixajz67/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.05,
+      "log": "results/marked-preimage-audit/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-marked-preimage-6ixajz67/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.461,
+      "log": "results/marked-preimage-audit/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285"
+    },
+    {
+      "source": "lean/MarkedPreimageAudit.lean",
+      "source_sha256": "48d5c46d14dd53ce27d3bc10e8075c667e44842fc968c3dec44668d176967991",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-marked-preimage-6ixajz67/MarkedPreimageAudit.olean",
+        "lean/MarkedPreimageAudit.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.868,
+      "log": "results/marked-preimage-audit/MarkedPreimageAudit.log",
+      "log_sha256": "49697d8dd4ad8cc383d8e25871b5c59b606f4cdc51b02b56c24c5291979ed0fa",
+      "olean_sha256": "5261eca61c0a488011030584f951950f5f3f20ba1f7df4067522d3f51b05b8dc"
+    }
+  ],
+  "kernel_theorems_audited": 11,
+  "prior_hashes_validated": {
+    "results/cutoff-descent/verification.json": 12,
+    "results/clocked-progression-mixing/verification.json": 15
+  },
+  "finite_replay_counts": {
+    "forward_source_prefixes": 18374,
+    "forward_syracuse_steps": 100830,
+    "selected_forward_sources": 248,
+    "tail_source_prefixes": 9088,
+    "inverse_integrality_tests": 34573,
+    "inverse_source_residue_tests": 103719,
+    "exact_suffix_envelope_checks": 3918,
+    "ordinary_mark_replay_steps": 20591,
+    "inverse_word_and_mark_checks": 1096,
+    "complete_forward_inverse_marked_law_agreements": 52,
+    "fixed_sum_residue_reassembly_terms": 3464,
+    "complete_grouped_marked_law_agreements": 52,
+    "boundary_source_injection_checks": 208,
+    "actual_interval_membership_changes": 1
+  },
+  "kernel_scope": "Positive-word affine equations iff actual odd-integer chains; unique inversion; exact ordinary clocks and first-odd-passage splice; interval boundary localization and rational envelope gate; a closed counterexample to deleting the prefix passage condition.",
+  "written_audit_scope": [
+    "The ordinary-clock mark is a bounded function of length, total valuation and intermediate endpoint in the preimage formula.",
+    "The existing asymptotic intermediate-height window ensures no earlier crossing; a finite explicit envelope explains why.",
+    "Uniform-source interval replacement counts boundary sources injectively at each word length, avoiding a factor equal to the number of words.",
+    "Fixed-total residue grouping and source-class normalization preserve arbitrary bounded marked tests."
+  ],
+  "external_source_review": {
+    "url": "https://arxiv.org/html/1909.03562v7",
+    "checked_date": "2026-10-14",
+    "sections": [
+      "2",
+      "5",
+      "6",
+      "7"
+    ],
+    "scope": "Published inversion and event-equivalence arguments, collision factorization and paired product structure. The uniform-source marked extension remains a local written deduction."
+  },
+  "audit_conclusion": "No contradiction found in the retained-clock bridge. The prefix passage condition is necessary and is supplied by the existing height window. This is not a complete formalization or independent peer review of analytic mixing.",
+  "finite_scope_limit": "Exact finite marked distributions on selected good sources and inverse pairs. Every word satisfying the finite prefix condition is enumerated, without unreported truncation. Small integer parameters do not test the unspecified asymptotic regime. No floating-point proof decisions.",
+  "not_proved": [
+    "Uniform tilted Fourier decay or joint/fixed-endpoint mixing in Lean.",
+    "Effective large-scale good-event or mixing constants.",
+    "The all-source zero limit, exclusion of divergent or additional periodic orbits, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "lean/MarkedPreimageAudit.lean": "48d5c46d14dd53ce27d3bc10e8075c667e44842fc968c3dec44668d176967991",
+    "verify_marked_preimage_audit.py": "42d2e6c753f6762dad462a61c25b9caf76e8c629c39aacb7014aeb74e49cfbd3",
+    "docs/MARKED-PREIMAGE-AUDIT.md": "385757906ac924b90861467a925f6180e070e147df4fb8c418b3d7435111e3c1",
+    "docs/CLOCKED-PROGRESSION-MIXING.md": "2fde7200d9225783fe0c5924ec205aef71b9366d95beb8bdbc6882e3108dc60e",
+    "docs/MINIMUM-LOG-MOMENTS.md": "b4b172f83ed6973f631a77b2298a8802d3b0a0a6b540414abe31207e2ddc76db",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "results/cutoff-descent/verification.json": "02bc7a3b957d504dea9cbf0a5ac9c9f030800adfb3f874edaae005fc732e6c59",
+    "results/clocked-progression-mixing/verification.json": "8dabd67a91233c11be6410c78e88894998a78b45031eafe7b0e263b0540e4040",
+    "results/marked-preimage-audit/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+    "results/marked-preimage-audit/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/marked-preimage-audit/MarkedPreimageAudit.log": "49697d8dd4ad8cc383d8e25871b5c59b606f4cdc51b02b56c24c5291979ed0fa",
+    "results/marked-preimage-audit/replay.json": "0b5a2c411cb134aeb057b8525cd37922383daae842dd0e9d6421173080ab1ef7"
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "status": "passed",
+  "counts": {
+    "direct_ordinary_steps": 26624,
+    "direct_source_prefixes": 1024,
+    "cell_deficit_increment_checks": 25600,
+    "even_cell_transport_checks": 6400,
+    "odd_cell_transport_and_correction_checks": 6400,
+    "even_and_odd_deficit_transport_checks": 6400,
+    "two_sided_population_residual_bounds": 700,
+    "exact_both_parity_population_identities": 644,
+    "exact_clocked_unroll_and_cost_checks": 360,
+    "timed_tree_node_residual_checks": 1692,
+    "stopped_sign_mean_and_second_moment_checks": 117,
+    "branch_clock_sign_balance_checks": 1635,
+    "bounded_isometry_paths": 16384,
+    "bounded_stopping_fixed_time_isometries": 16,
+    "exact_critical_clock_log_brackets": 5,
+    "ideal_chain_exact_dp_transitions": 242943
+  },
+  "actual_prefixes": {
+    "maximum_source": 1024,
+    "ordinary_horizon": 26,
+    "population_cutoffs": [
+      3,
+      4,
+      7,
+      8,
+      15,
+      16,
+      31,
+      32,
+      63,
+      64,
+      95,
+      96,
+      127,
+      128
+    ],
+    "tested_population_clocks": [
+      0,
+      24
+    ],
+    "alive_at_horizon": 771,
+    "future_arrivals_used": false,
+    "scope": "All prefixes generated independently through a fixed ordinary clock; alive is not nonconvergent."
+  },
+  "clocked_cutoff_trees": [
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 0,
+      "terminal_states_and_clocks": 1,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 1,
+      "terminal_states_and_clocks": 2,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          20633,
+          113256
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 2,
+      "terminal_states_and_clocks": 3,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          139172023,
+          342284800
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 3,
+      "terminal_states_and_clocks": 4,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          2093219754961,
+          3680246169600
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 4,
+      "terminal_states_and_clocks": 6,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          3805988374940963,
+          5892743253196800
+        ]
+      }
+    },
+    {
+      "start": 8,
+      "floor": 3,
+      "depth": 5,
+      "terminal_states_and_clocks": 9,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          755020999061051201621,
+          1019260300650400972800
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 0,
+      "terminal_states_and_clocks": 1,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 1,
+      "terminal_states_and_clocks": 2,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          2678083,
+          26378240
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 2,
+      "terminal_states_and_clocks": 3,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          233732004214439,
+          1009679595724800
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 3,
+      "terminal_states_and_clocks": 4,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          414763205174849838127,
+          1056707399106173337600
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 4,
+      "terminal_states_and_clocks": 5,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          5072612381053117623139222177,
+          9446355484547304482301542400
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "depth": 5,
+      "terminal_states_and_clocks": 8,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          241265467377735446692420972638888873893746219260839,
+          386411888431927988977268877155690130553923698688000
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 0,
+      "terminal_states_and_clocks": 1,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 1,
+      "terminal_states_and_clocks": 2,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          2678083,
+          26378240
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 2,
+      "terminal_states_and_clocks": 3,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          12887290193749,
+          91789054156800
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 3,
+      "terminal_states_and_clocks": 4,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          236288116465862044937,
+          1248836017125477580800
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 4,
+      "terminal_states_and_clocks": 5,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          412240076121465467864161757,
+          1889271096909460896460308480
+        ]
+      }
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "depth": 5,
+      "terminal_states_and_clocks": 7,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          89984276905031666724981116595616892412641679343799,
+          386411888431927988977268877155690130553923698688000
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 0,
+      "terminal_states_and_clocks": 1,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 1,
+      "terminal_states_and_clocks": 2,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          53237609614357001,
+          910406027884953600
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 2,
+      "terminal_states_and_clocks": 3,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          28966571580510500020600609,
+          223774063526971099260518400
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 3,
+      "terminal_states_and_clocks": 4,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          2309995635777663189240828993266174999880326622527,
+          10478631646467539041498749539210440572615593164800
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 4,
+      "terminal_states_and_clocks": 5,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          2617224171160875001816196386648341896575588145298511815875182073078272567,
+          7826644456962011948029366890307169468380743337962243051455346070192128000
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "depth": 5,
+      "terminal_states_and_clocks": 6,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          29273416953623616196013039964489999452319675577899436168901009190609089370331189464667522856165059489,
+          65091950570096895445145262887721902798132589993020068568162018431089541770775886551305129130721280000
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 0,
+      "terminal_states_and_clocks": 1,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 1,
+      "terminal_states_and_clocks": 2,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          53237609614357001,
+          910406027884953600
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 2,
+      "terminal_states_and_clocks": 3,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          28966571580510500020600609,
+          223774063526971099260518400
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 3,
+      "terminal_states_and_clocks": 4,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          23825696055468760204298485267530034515926525312051,
+          136222211404078007539483744009735727444002711142400
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 4,
+      "terminal_states_and_clocks": 5,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          1821651345273529407622839090667576853606704788085470174025519448011560247,
+          7826644456962011948029366890307169468380743337962243051455346070192128000
+        ]
+      }
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "depth": 5,
+      "terminal_states_and_clocks": 6,
+      "sampled_clocks": [
+        0,
+        1,
+        2,
+        8,
+        16,
+        24
+      ],
+      "finite_observed_error_occupation": {
+        "fraction": [
+          17778310929325359919038896613412996062957060829273023823564682762424418089029157031547901529951885789,
+          65091950570096895445145262887721902798132589993020068568162018431089541770775886551305129130721280000
+        ]
+      }
+    }
+  ],
+  "stopped_sign_trees": [
+    {
+      "start": 8,
+      "floor": 3,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 47,
+      "expected_stopped_steps": [
+        1421,
+        256
+      ]
+    },
+    {
+      "start": 16,
+      "floor": 3,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 45,
+      "expected_stopped_steps": [
+        16079,
+        2048
+      ]
+    },
+    {
+      "start": 16,
+      "floor": 8,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 36,
+      "expected_stopped_steps": [
+        7895,
+        2048
+      ]
+    },
+    {
+      "start": 32,
+      "floor": 3,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 49,
+      "expected_stopped_steps": [
+        19569,
+        2048
+      ]
+    },
+    {
+      "start": 32,
+      "floor": 8,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 41,
+      "expected_stopped_steps": [
+        3477,
+        512
+      ]
+    },
+    {
+      "start": 32,
+      "floor": 16,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 42,
+      "expected_stopped_steps": [
+        8545,
+        2048
+      ]
+    },
+    {
+      "start": 64,
+      "floor": 3,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 47,
+      "expected_stopped_steps": [
+        1373,
+        128
+      ]
+    },
+    {
+      "start": 64,
+      "floor": 8,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 40,
+      "expected_stopped_steps": [
+        18219,
+        2048
+      ]
+    },
+    {
+      "start": 64,
+      "floor": 16,
+      "maximum_depth": 12,
+      "terminal_states_with_marks": 40,
+      "expected_stopped_steps": [
+        459,
+        64
+      ]
+    }
+  ],
+  "ideal_chain_illustration": {
+    "chain": "Ideal real cutoffs n/2 and 3n/2 with equal probabilities, floor 1, branch clocks 1 and 2.",
+    "method": "All contributing words grouped exactly by length and upper-branch count; integer comparisons decide first absorption.",
+    "critical_clock_method": "48-term rational atanh brackets for log 2 and log(4/3); both endpoints have the same floor.",
+    "limitation": "Illustration only; not actual Collatz trajectories, the rounded cutoff chain, or a Gaussian-limit proof.",
+    "rows": [
+      {
+        "source_floor_ratio": "2^8",
+        "ordinary_clock": 57,
+        "probability_absorbed_by_clock": [
+          38858105219,
+          68719476736
+        ],
+        "remaining_probability": [
+          29861371517,
+          68719476736
+        ],
+        "expected_positive_remaining_clock": [
+          211897563679,
+          17179869184
+        ],
+        "squared_payoff_divided_by_k": [
+          44900577493095860015041,
+          2361183241434822606848
+        ]
+      },
+      {
+        "source_floor_ratio": "2^16",
+        "ordinary_clock": 115,
+        "probability_absorbed_by_clock": [
+          42142623894117120491887,
+          75557863725914323419136
+        ],
+        "remaining_probability": [
+          33415239831797202927249,
+          75557863725914323419136
+        ],
+        "expected_positive_remaining_clock": [
+          719621384959428408020301,
+          37778931862957161709568
+        ],
+        "squared_payoff_divided_by_k": [
+          517854937690925854577474281549537176222028130601,
+          22835963083295358096932575511191922182123945984
+        ]
+      },
+      {
+        "source_floor_ratio": "2^32",
+        "ordinary_clock": 231,
+        "probability_absorbed_by_clock": [
+          6146983892572292487494150060911351121150639625,
+          11417981541647679048466287755595961091061972992
+        ],
+        "remaining_probability": [
+          5270997649075386560972137694684609969911333367,
+          11417981541647679048466287755595961091061972992
+        ],
+        "expected_positive_remaining_clock": [
+          162549510021690201760782493707335384439591840865,
+          5708990770823839524233143877797980545530986496
+        ],
+        "squared_payoff_divided_by_k": [
+          26422343208291563336503127989834352283011238722573294895099251001773136206264320875079483948225,
+          1042962419883256876169444192465601618458351817556959360325703910069443225478828393565899456512
+        ]
+      },
+      {
+        "source_floor_ratio": "2^64",
+        "ordinary_clock": 462,
+        "probability_absorbed_by_clock": [
+          68794630668051242979052417447127517520447875253739781880934206649433935465320517654839315969,
+          130370302485407109521180524058200202307293977194619920040712988758680403184853549195737432064
+        ],
+        "remaining_probability": [
+          61575671817355866542128106611072684786846101940880138159778782109246467719533031540898116095,
+          130370302485407109521180524058200202307293977194619920040712988758680403184853549195737432064
+        ],
+        "expected_positive_remaining_clock": [
+          168310454759063482934649755478250742335782862852988284932028237690103907108928736180311671465,
+          4074071952668972172536891376818756322102936787331872501272280898708762599526673412366794752
+        ],
+        "squared_payoff_divided_by_k": [
+          28328409181202755431281676475948059697854601092934596667556480526525148464685730802248319871099475489671956278682907930930829013845036604761176509170465887233768459971735346502095246225,
+          1062275985633534197379176413104937254659186235454063846398888276400807119721704485478325004530458571337778658972493002030693158675305414478819039957533174703887662541670786438063456256
+        ]
+      },
+      {
+        "source_floor_ratio": "2^128",
+        "ordinary_clock": 925,
+        "probability_absorbed_by_clock": [
+          17804446332831086633924786689737551970066647924866107977647689476810279998508446593075991163154894122192270489154749812783934595468757874265948816477581928820429458985597913552591172825,
+          33992831540273094316133645219357992149093959534530043084764424844825827831094543535306400144974674282808917087119776064982181077609773263322209278641061590524405201333465166018030600192
+        ],
+        "remaining_probability": [
+          16188385207442007682208858529620440179027311609663935107116735368015547832586096942230408981819780160616646597965026252198246482141015389056260462163479661703975742347867252465439427367,
+          33992831540273094316133645219357992149093959534530043084764424844825827831094543535306400144974674282808917087119776064982181077609773263322209278641061590524405201333465166018030600192
+        ],
+        "expected_positive_remaining_clock": [
+          8122154697142644143907654846542755757051488049792167751476369593290656704584575636752172752886974916716377471449356196900454219449442942624920351767643303650967752748962996223609687493435,
+          135971326161092377264534580877431968596375838138120172339057699379303311324378174141225600579898697131235668348479104259928724310439093053288837114564246362097620805333860664072122400768
+        ],
+        "squared_payoff_divided_by_k": [
+          65969396924316317415898552843995263512192682205016055294865085558972976154315068886855311152028779246258434926948438097611162944104795567077230355803766435814780489697510691232663584803263753224829308368678344444143450000598073280817101037877446812479351819227400968281879869179238487702596571474247831036438847331328573106975498567413329904572425654908203431661053168099225,
+          2366489796864789032480357565728828726290717497082983937916449656405258806369911394088430697987024401491549182072567647944966567194643054087496217699862727559530896885323550201467965814495433630889456121746591136618847867145529671430941221247948819903224909668395221348996168804894354162721862128794536784391099950472185019186030884950180952280079066183529036357120894697472
+        ]
+      }
+    ]
+  }
+}

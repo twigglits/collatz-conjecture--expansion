@@ -1,0 +1,12 @@
+'GradientClockObstruction.first_arrival_unique' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.first_arrival_even' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.arrival_clock_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientClockObstruction.arrival_remaining_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientClockObstruction.weight_children_sum' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.weight_mass' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.weight_band_mass' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.first_arrival_eq_of_prefix' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.fused_child_arrival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GradientClockObstruction.clock_telescope' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.profile_window' depends on axioms: [propext, Quot.sound]
+'GradientClockObstruction.finite_profile_constants' does not depend on any axioms

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "counts": {
+    "bounded_fraction_prefixes": 4290,
+    "fraction_weight_steps": 273403,
+    "exact_even_transport_checks": 132096,
+    "exact_odd_transport_and_correction_checks": 132096,
+    "alive_child_checks": 71541,
+    "arrived_child_checks": 60555,
+    "exact_population_transport_checks": 42
+  }
+}

@@ -1,0 +1,8 @@
+'KnownBasinNonfusionTrace.known_double' depends on axioms: [propext, Quot.sound]
+'KnownBasinNonfusionTrace.same_grade_mate' depends on axioms: [propext, Quot.sound]
+'KnownBasinNonfusionTrace.unmarked_known_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KnownBasinNonfusionTrace.unmarked_known_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KnownBasinNonfusionTrace.defect_even_known' depends on axioms: [propext, Quot.sound]
+'KnownBasinNonfusionTrace.defect_never_fused' does not depend on any axioms
+'KnownBasinNonfusionTrace.grade_detects_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KnownBasinNonfusionTrace.linear_green_identity' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,24 @@
+{
+  "source": "censored_progression_census.rs",
+  "source_sha256": "6c5e1c96b901618a3d92cbe4aeedacea3124134770a544a2ea8c0c9ec860b6d1",
+  "rustc_version": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "compile_command": [
+    "rustc",
+    "-O",
+    "-C",
+    "overflow-checks=yes",
+    "censored_progression_census.rs",
+    "-o",
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-progression-rust-t037geek/census"
+  ],
+  "binary_sha256": "0b8327b1355b07a737b7b8499ee7fa84b75dcbec113f9aa32ad09a606af96f44",
+  "run_command": [
+    "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-progression-rust-t037geek/census",
+    "17"
+  ],
+  "verified_at_utc": "2026-10-14T15:32:16.650218+00:00",
+  "fresh_native_run": true,
+  "returncode": 0,
+  "elapsed_seconds": 0.787,
+  "census_sha256": "d8a69e8a50457694a5f8b555147d2d2347aa922ece2fb395a4d5a9a3a6968481"
+}

@@ -1,0 +1,8 @@
+'DeficitTailProfile.age_tail_is_shorter_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.age_tail_is_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.cutoff_in_tail' depends on axioms: [propext, Quot.sound]
+'DeficitTailProfile.cutoff_in_front' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.simultaneous_common_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.scalar_tail_below_clock_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.tail_uniform_integrability_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DeficitTailProfile.sparse_support_split' depends on axioms: [propext, Classical.choice, Quot.sound]

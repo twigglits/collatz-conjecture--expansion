@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T13:46:26.924291+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 10,
+  "builds": [
+    {
+      "source": "lean/DeficitLimitLaw.lean",
+      "source_sha256": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-deficit-law-iwp9hkjx/DeficitLimitLaw.olean",
+        "lean/DeficitLimitLaw.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.888,
+      "log": "results/deficit-limit-law/DeficitLimitLaw.log",
+      "log_sha256": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+      "olean_sha256": "061792d57ef29d4e7372c035741d5a2fdbd50790dd4144f46b1ca08654962eb2"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/prearrival-deficit-transfer/verification.json": 35,
+    "results/clocked-minimum/verification.json": 13,
+    "results/finite-path-packing/verification.json": 12,
+    "results/natural-density/verification.json": 2
+  },
+  "finite_scope": {
+    "independent_known_first_arrivals": 4095,
+    "independent_shortcut_steps": 205759,
+    "exact_prefix_splice_and_increment_checks": 209854,
+    "exact_finite_product_loss_bounds": 209854,
+    "exact_initial_halving_invariances": 2047,
+    "certified_deficit_recursion_links": 25970,
+    "exact_odd_passage_record_checks": 24570,
+    "exact_common_landing_comparisons": 24570,
+    "exact_maximal_couplings_and_marginals": 25,
+    "exact_truncated_moment_transport_checks": 400,
+    "exact_coupled_clock_failure_union_bounds": 100,
+    "exact_glued_five_link_chain_bounds": 766,
+    "exact_enclosed_band_deficits": 16383
+  },
+  "kernel_scope": [
+    "Rational finite-list deficit concatenation, scaling, range and prefix bounds.",
+    "Nonnegative splice increments, common-tail and terminal-weight comparisons.",
+    "Finite telescoping of deficit differences and clock inequalities."
+  ],
+  "written_scope": [
+    "Joint limiting law of global minimum, deficit to first minimum, and terminal weight under uniform integer sampling.",
+    "Uniform tightness on all integer bands; restriction to the known basin yields lifetime-deficit tightness.",
+    "Uniform tightness of prearrival cost on pairs whose child 3n+2 is known to converge."
+  ],
+  "analytic_dependencies": [
+    "Local WRITTEN natural first-passage stabilization; not a published natural-density theorem of Tao.",
+    "Early marginal passage-clock bound from local valuation estimates.",
+    "Local WRITTEN finite simple-path packing and its reciprocal tail bound.",
+    "Finite-marginal gluing, geometric scale sums, tightness and weak convergence; these are written."
+  ],
+  "external_scope": "Tao arXiv:1909.03562v7 was reread as a primary source. No new external Lean build or source archive audit.",
+  "floating_scope": "None in verification decisions. A separate terminal floating scout below 2^26 is recorded only in the written note and memory.",
+  "not_proved": [
+    "Kernel verification of the infinite analytic statements or their analytic premises.",
+    "A uniform first moment, uniform integrability, pointwise bounded deficit or a numerical limiting mean.",
+    "An effective bound on finite-population minimum clocks T_B.",
+    "A mean bound for prearrival cost, the negative arrival advance, postarrival reversed drift, or criterion Q.",
+    "Exclusion of escape or other cycles, or universal Collatz convergence."
+  ],
+  "sha256": {
+    "lean/DeficitLimitLaw.lean": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+    "verify_deficit_limit_law.py": "cba7d5029e5068933ef47567e8fa42df74df7137a08a276fbee9c7ff32f7563d",
+    "verify_prearrival_deficit_transfer.py": "9440a72d6799441d99dc0e0d4bda637d67747d830af1651b7cee28a27749ea84",
+    "docs/DEFICIT-LIMIT-LAW.md": "9c1f674e155ffe8cd8cf6dfac14e9107005745f536b0a258965c48ad81a8fc0f",
+    "docs/PREARRIVAL-DEFICIT-TRANSFER.md": "48b2b4914af05edd39c3e318f927b950f613d421f361e66abe9c77b5b231cf3a",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "results/prearrival-deficit-transfer/verification.json": "945d79a4b3132ff060557933003daa290823388cf065596464e7bdf4a145210c",
+    "results/clocked-minimum/verification.json": "1963e5464d44754c23f365c6904bf71eaf67eb5769001b7663c80fcae7932bcc",
+    "results/finite-path-packing/verification.json": "47e9b90a87bfd59213c44789b4860b93e931ff368fc5c5485e14a4f28cc0012b",
+    "results/natural-density/verification.json": "8c31e1977c4ca2e85d4bd7534e472d2c9851d3bf874dc3b3ae541773255ef3ef",
+    "results/deficit-limit-law/replay.json": "47b2c2ae8369155857559e89c1ca2e7be6b6828a4eadb324d426ae76b5d98385",
+    "results/deficit-limit-law/DeficitLimitLaw.log": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e"
+  }
+}

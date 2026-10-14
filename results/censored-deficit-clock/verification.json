@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T15:00:47.670099+00:00",
+  "collatz_status": "unresolved",
+  "map_scope": "Ordinary Collatz; all clocks in the new note and replay are ordinary.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/DeficitLimitLaw.lean",
+      "source_sha256": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-clock-1aurt_jn/DeficitLimitLaw.olean",
+        "lean/DeficitLimitLaw.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 3.111,
+      "log": "results/censored-deficit-clock/DeficitLimitLaw.log",
+      "log_sha256": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+      "olean_sha256": "061792d57ef29d4e7372c035741d5a2fdbd50790dd4144f46b1ca08654962eb2"
+    },
+    {
+      "source": "lean/DeficitClockMoment.lean",
+      "source_sha256": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-clock-1aurt_jn/DeficitClockMoment.olean",
+        "lean/DeficitClockMoment.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.461,
+      "log": "results/censored-deficit-clock/DeficitClockMoment.log",
+      "log_sha256": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+      "olean_sha256": "c63523093cb66683416e6e42d73b799f299f85b54e9fa0677a9570f063ef3d5f"
+    },
+    {
+      "source": "lean/CensoredDeficitClock.lean",
+      "source_sha256": "5ebf59b5e98ebbbd26300182dd4b5139de11fe1d4a79db909759d3e16af889fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-clock-1aurt_jn/CensoredDeficitClock.olean",
+        "lean/CensoredDeficitClock.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.446,
+      "log": "results/censored-deficit-clock/CensoredDeficitClock.log",
+      "log_sha256": "9bac67f5f435c016a7d1917aafa3ff8b8a2a78f87fb73652e801f639d7ae9fc4",
+      "olean_sha256": "c5019aad0220d2f0870ec0e86488ae5e2f0038f48a262a0d58c6ef8cfd465961"
+    }
+  ],
+  "kernel_theorems_audited": 10,
+  "prior_hashes_validated": {
+    "results/weighted-dissipation/verification.json": 15,
+    "results/clocked-minimum/verification.json": 13,
+    "results/deficit-tail-profile/verification.json": 22,
+    "results/known-basin-nonfusion-trace/verification.json": 31
+  },
+  "finite_scope": {
+    "independent_complete_first_arrivals": 16384,
+    "exact_ordinary_shortcut_clock_and_deficit_comparisons": 16384,
+    "independent_bounded_prefix_computations": 16384,
+    "independent_every_clock_censor_and_cycle_checks": 28800,
+    "exact_population_source_clock_checks": 218240,
+    "independent_ordinary_weight_steps": 1467643,
+    "certified_deficit_recursion_links": 25970,
+    "alive_at_cutoff_not_classified_as_nonconvergent": 5541,
+    "exact_population_accounting_enclosures": 50,
+    "authenticated_prior_weight_mean_comparisons": 25
+  },
+  "kernel_scope": [
+    "Finite censored-cell accounting, bounds and a finite stopped-prefix identity.",
+    "Positive odd-step loss, a positive-density/loss comparison, mass partition and the exact 8k-clock comparison."
+  ],
+  "written_scope": [
+    "The censored instantaneous mean at c log X tends to zero below kappa and to b=1-r_B-d above it.",
+    "The integrated deficit mean divided by log X tends locally uniformly in c to b(c-kappa)_+, including at the critical coefficient.",
+    "Zero b is equivalent to natural density one of the basin of one.",
+    "With external positive predecessor density, vanishing of the all-source mean A_(8k)/(k 2^k) is equivalent to full positive-integer Collatz."
+  ],
+  "analytic_scope": "The clock and total-variation inputs remain the earlier local WRITTEN arguments. Bounded integration needs no lifetime-deficit uniform integrability.",
+  "external_scope": "Only the pointwise equivalence uses external predecessor-density positivity. Prior local records and their retained provenance are authenticated; no new external build or missing-source replay is claimed.",
+  "literature_scope": "Inselmann arXiv:2402.03276v3 was rechecked as context: its mean-clock upper conclusion assumes O(log n) total stopping times. It is not an input to the new argument.",
+  "floating_scope": "No floating-point verification decisions. Population intervals use directed integer rounding at scale 2^96; all replay clocks are exact integers.",
+  "not_proved": [
+    "The required all-source zero limit, b=0, or any effective asymptotic error bound.",
+    "Uniform integrability or a finite limiting mean of the known-basin lifetime deficit.",
+    "A direct bound for the rare-pair prearrival cost, negative arrival advances, or postarrival drift.",
+    "Escape exclusion, exclusion of other positive cycles, or full Collatz."
+  ],
+  "sha256": {
+    "lean/DeficitLimitLaw.lean": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+    "lean/DeficitClockMoment.lean": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+    "lean/CensoredDeficitClock.lean": "5ebf59b5e98ebbbd26300182dd4b5139de11fe1d4a79db909759d3e16af889fa",
+    "verify_censored_deficit_clock.py": "646722a2f94764ad2db75d58913ad0b96778910bb717d4547d326e67581759f8",
+    "verify_prearrival_deficit_transfer.py": "9440a72d6799441d99dc0e0d4bda637d67747d830af1651b7cee28a27749ea84",
+    "verify_weighted_dissipation.py": "3fcca87bb94055b7213e9449f90461e6d2c3b40758b2143db637687f2f26c714",
+    "docs/CENSORED-DEFICIT-CLOCK.md": "59bfd62590dec516fffb78b6f08a408dc87dff679e29304074128a4b41b2f8f4",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/DEFICIT-TAIL-PROFILE.md": "9a332efb8458939c344cde8199177bae2b3208cd872d53db5258e83b0d71701d",
+    "docs/PREDECESSOR-DENSITY-REVIEW.md": "1d24f741749586b15418c25376fbfa28ec817b466ea07d0a9503e614fbdc35f5",
+    "results/weighted-dissipation/verification.json": "17923c5c90422881992bd24b646073267797073869eb426acfba9443a00bd58d",
+    "results/clocked-minimum/verification.json": "1963e5464d44754c23f365c6904bf71eaf67eb5769001b7663c80fcae7932bcc",
+    "results/deficit-tail-profile/verification.json": "75b5208da42424e6a79fa8e781053bf8e9bdd0232e043648822d4a7572d156a6",
+    "results/known-basin-nonfusion-trace/verification.json": "8720d5583c8bcb6294628721b8d10a28d8463572e7bd45eb94bcfab63ec03522",
+    "results/weighted-dissipation/replay.json": "0c7a865f292a00d547cc920fae64823f5558634c5b14d1dd0f19072212b5461c",
+    "results/censored-deficit-clock/replay.json": "ba4dc890a4ac3dacba6afd2523a91adc1526e2bbf2e4558dadba0d50208c448c",
+    "results/censored-deficit-clock/DeficitLimitLaw.log": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+    "results/censored-deficit-clock/DeficitClockMoment.log": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+    "results/censored-deficit-clock/CensoredDeficitClock.log": "9bac67f5f435c016a7d1917aafa3ff8b8a2a78f87fb73652e801f639d7ae9fc4"
+  }
+}

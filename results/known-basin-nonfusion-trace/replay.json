@@ -1,0 +1,935 @@
+{
+  "finite_source_census": {
+    "maximum_certified_endpoint": 131072,
+    "rows": [
+      {
+        "level": 0,
+        "parent_interval": [
+          1,
+          2
+        ],
+        "known_basin_defective_parents": 0,
+        "defective_fraction": [
+          0,
+          1
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            0,
+            1
+          ],
+          "upper": [
+            0,
+            1
+          ]
+        },
+        "complete_target_one_subseries": [
+          0,
+          1
+        ],
+        "complete_target_two_subseries": [
+          0,
+          1
+        ],
+        "cumulative_target_one_subseries": [
+          0,
+          1
+        ]
+      },
+      {
+        "level": 1,
+        "parent_interval": [
+          2,
+          4
+        ],
+        "known_basin_defective_parents": 1,
+        "defective_fraction": [
+          1,
+          2
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            402975273204876391568725,
+            1208925819614629174706176
+          ],
+          "upper": [
+            201487636602438195784363,
+            604462909807314587353088
+          ]
+        },
+        "complete_target_one_subseries": [
+          9,
+          16
+        ],
+        "complete_target_two_subseries": [
+          9,
+          8
+        ],
+        "cumulative_target_one_subseries": [
+          9,
+          16
+        ]
+      },
+      {
+        "level": 2,
+        "parent_interval": [
+          4,
+          8
+        ],
+        "known_basin_defective_parents": 2,
+        "defective_fraction": [
+          1,
+          2
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            544016618826583128617779,
+            1208925819614629174706176
+          ],
+          "upper": [
+            136004154706645782154445,
+            302231454903657293676544
+          ]
+        },
+        "complete_target_one_subseries": [
+          7,
+          8
+        ],
+        "complete_target_two_subseries": [
+          7,
+          4
+        ],
+        "cumulative_target_one_subseries": [
+          23,
+          16
+        ]
+      },
+      {
+        "level": 3,
+        "parent_interval": [
+          8,
+          16
+        ],
+        "known_basin_defective_parents": 4,
+        "defective_fraction": [
+          1,
+          2
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            425448894210532959560057,
+            1208925819614629174706176
+          ],
+          "upper": [
+            106362223552633239890015,
+            302231454903657293676544
+          ]
+        },
+        "complete_target_one_subseries": [
+          1331,
+          2048
+        ],
+        "complete_target_two_subseries": [
+          1331,
+          1024
+        ],
+        "cumulative_target_one_subseries": [
+          4275,
+          2048
+        ]
+      },
+      {
+        "level": 4,
+        "parent_interval": [
+          16,
+          32
+        ],
+        "known_basin_defective_parents": 8,
+        "defective_fraction": [
+          1,
+          2
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            111249161565070577660447,
+            302231454903657293676544
+          ],
+          "upper": [
+            444996646260282310641795,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          5485,
+          8192
+        ],
+        "complete_target_two_subseries": [
+          5485,
+          4096
+        ],
+        "cumulative_target_one_subseries": [
+          22585,
+          8192
+        ]
+      },
+      {
+        "level": 5,
+        "parent_interval": [
+          32,
+          64
+        ],
+        "known_basin_defective_parents": 16,
+        "defective_fraction": [
+          1,
+          2
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            420812189592593219692017,
+            1208925819614629174706176
+          ],
+          "upper": [
+            821898807798033632211,
+            2361183241434822606848
+          ]
+        },
+        "complete_target_one_subseries": [
+          727698005491588233403,
+          1180591620717411303424
+        ],
+        "complete_target_two_subseries": [
+          727698005491588233403,
+          590295810358705651712
+        ],
+        "cumulative_target_one_subseries": [
+          3982539528184793102523,
+          1180591620717411303424
+        ]
+      },
+      {
+        "level": 6,
+        "parent_interval": [
+          64,
+          128
+        ],
+        "known_basin_defective_parents": 31,
+        "defective_fraction": [
+          31,
+          64
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            415136149567054560606773,
+            1208925819614629174706176
+          ],
+          "upper": [
+            415136149567054560606803,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          708832409416095440525,
+          1180591620717411303424
+        ],
+        "complete_target_two_subseries": [
+          708832409416095440525,
+          590295810358705651712
+        ],
+        "cumulative_target_one_subseries": [
+          586421492200111067881,
+          147573952589676412928
+        ]
+      },
+      {
+        "level": 7,
+        "parent_interval": [
+          128,
+          256
+        ],
+        "known_basin_defective_parents": 60,
+        "defective_fraction": [
+          15,
+          32
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            1538504165162596806913,
+            4722366482869645213696
+          ],
+          "upper": [
+            393857066281624782569787,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          5350872028950254227739,
+          9444732965739290427392
+        ],
+        "complete_target_two_subseries": [
+          5350872028950254227739,
+          4722366482869645213696
+        ],
+        "cumulative_target_one_subseries": [
+          42881847529757362572123,
+          9444732965739290427392
+        ]
+      },
+      {
+        "level": 8,
+        "parent_interval": [
+          256,
+          512
+        ],
+        "known_basin_defective_parents": 120,
+        "defective_fraction": [
+          15,
+          32
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            197968531227122156729923,
+            604462909807314587353088
+          ],
+          "upper": [
+            395937062454244313459965,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          687875493890555395754471,
+          1208925819614629174706176
+        ],
+        "complete_target_two_subseries": [
+          687875493890555395754471,
+          604462909807314587353088
+        ],
+        "cumulative_target_one_subseries": [
+          6176751977699497804986215,
+          1208925819614629174706176
+        ]
+      },
+      {
+        "level": 9,
+        "parent_interval": [
+          512,
+          1024
+        ],
+        "known_basin_defective_parents": 234,
+        "defective_fraction": [
+          117,
+          256
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            384800427643726144097573,
+            1208925819614629174706176
+          ],
+          "upper": [
+            192400213821863072048903,
+            604462909807314587353088
+          ]
+        },
+        "complete_target_one_subseries": [
+          1366204557604603828926549245,
+          2475880078570760549798248448
+        ],
+        "complete_target_two_subseries": [
+          1366204557604603828926549245,
+          1237940039285380274899124224
+        ],
+        "cumulative_target_one_subseries": [
+          14016192607933175333538317565,
+          2475880078570760549798248448
+        ]
+      },
+      {
+        "level": 10,
+        "parent_interval": [
+          1024,
+          2048
+        ],
+        "known_basin_defective_parents": 447,
+        "defective_fraction": [
+          447,
+          1024
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            183895979187302338782849,
+            604462909807314587353088
+          ],
+          "upper": [
+            5746749349603198086971,
+            18889465931478580854784
+          ]
+        },
+        "complete_target_one_subseries": [
+          5464652637065726206703444419275643,
+          10384593717069655257060992658440192
+        ],
+        "complete_target_two_subseries": [
+          5464652637065726206703444419275643,
+          5192296858534827628530496329220096
+        ],
+        "cumulative_target_one_subseries": [
+          64252825357290275240864543935425403,
+          10384593717069655257060992658440192
+        ]
+      },
+      {
+        "level": 11,
+        "parent_interval": [
+          2048,
+          4096
+        ],
+        "known_basin_defective_parents": 877,
+        "defective_fraction": [
+          877,
+          2048
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            179552731407340981894711,
+            604462909807314587353088
+          ],
+          "upper": [
+            179552731407340981895149,
+            604462909807314587353088
+          ]
+        },
+        "complete_target_one_subseries": [
+          21285861744876995926752384909816851,
+          41538374868278621028243970633760768
+        ],
+        "complete_target_two_subseries": [
+          21285861744876995926752384909816851,
+          20769187434139310514121985316880384
+        ],
+        "cumulative_target_one_subseries": [
+          278297163174038096890210560651518463,
+          41538374868278621028243970633760768
+        ]
+      },
+      {
+        "level": 12,
+        "parent_interval": [
+          4096,
+          8192
+        ],
+        "known_basin_defective_parents": 1744,
+        "defective_fraction": [
+          109,
+          256
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            357106445814216941884705,
+            1208925819614629174706176
+          ],
+          "upper": [
+            22319152863388558867903,
+            75557863725914323419136
+          ]
+        },
+        "complete_target_one_subseries": [
+          725846792791051438865912184823899253048977227,
+          1427247692705959881058285969449495136382746624
+        ],
+        "complete_target_two_subseries": [
+          725846792791051438865912184823899253048977227,
+          713623846352979940529142984724747568191373312
+        ],
+        "cumulative_target_one_subseries": [
+          10288064508007604898078181469240669263650465611,
+          1427247692705959881058285969449495136382746624
+        ]
+      },
+      {
+        "level": 13,
+        "parent_interval": [
+          8192,
+          16384
+        ],
+        "known_basin_defective_parents": 3417,
+        "defective_fraction": [
+          3417,
+          8192
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            349929073018578999312215,
+            1208925819614629174706176
+          ],
+          "upper": [
+            349929073018578999315631,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          23285121572605899016635153953172404388767780081033,
+          46768052394588893382517914646921056628989841375232
+        ],
+        "complete_target_two_subseries": [
+          23285121572605899016635153953172404388767780081033,
+          23384026197294446691258957323460528314494920687616
+        ],
+        "cumulative_target_one_subseries": [
+          360404419370999096316861004337250654820066237222281,
+          46768052394588893382517914646921056628989841375232
+        ]
+      },
+      {
+        "level": 14,
+        "parent_interval": [
+          16384,
+          32768
+        ],
+        "known_basin_defective_parents": 6674,
+        "defective_fraction": [
+          3337,
+          8192
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            171047096271015378669965,
+            604462909807314587353088
+          ],
+          "upper": [
+            342094192542030757346603,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          11658216120453935179181329522025094813028892568265067,
+          23945242826029513411849172299223580994042798784118784
+        ],
+        "complete_target_two_subseries": [
+          11658216120453935179181329522025094813028892568265067,
+          11972621413014756705924586149611790497021399392059392
+        ],
+        "cumulative_target_one_subseries": [
+          196185278838405472493414163742697430080902806026072939,
+          23945242826029513411849172299223580994042798784118784
+        ]
+      },
+      {
+        "level": 15,
+        "parent_interval": [
+          32768,
+          65536
+        ],
+        "known_basin_defective_parents": 13171,
+        "defective_fraction": [
+          13171,
+          32768
+        ],
+        "harmonic_mass_enclosure": {
+          "lower": [
+            337505571227829791193361,
+            1208925819614629174706176
+          ],
+          "upper": [
+            337505571227829791206531,
+            1208925819614629174706176
+          ]
+        },
+        "complete_target_one_subseries": [
+          368057432988357624107038760895048118039004282507387927,
+          766247770432944429179173513575154591809369561091801088
+        ],
+        "complete_target_two_subseries": [
+          368057432988357624107038760895048118039004282507387927,
+          383123885216472214589586756787577295904684780545900544
+        ],
+        "cumulative_target_one_subseries": [
+          6645986355817332743896292000661365880627894075341721975,
+          766247770432944429179173513575154591809369561091801088
+        ]
+      }
+    ],
+    "minimum_first_hit_weight_on_selected_parents": [
+      1840049047529878113,
+      2305843009213693952
+    ],
+    "scope": "Finite source sets, every future visit certified by exact cycle tails. No asymptotic inference."
+  },
+  "finite_inverse_traces": [
+    {
+      "target": 1,
+      "rows": [
+        {
+          "H": 0,
+          "last_layer_sources": 1,
+          "Z_H": [
+            1,
+            1
+          ],
+          "even_source_Z_H": [
+            0,
+            1
+          ],
+          "finite_census_defect_subseries_through_H": [
+            0,
+            1
+          ]
+        },
+        {
+          "H": 1,
+          "last_layer_sources": 1,
+          "Z_H": [
+            3,
+            2
+          ],
+          "even_source_Z_H": [
+            1,
+            2
+          ],
+          "finite_census_defect_subseries_through_H": [
+            0,
+            1
+          ]
+        },
+        {
+          "H": 2,
+          "last_layer_sources": 2,
+          "Z_H": [
+            5,
+            2
+          ],
+          "even_source_Z_H": [
+            3,
+            4
+          ],
+          "finite_census_defect_subseries_through_H": [
+            0,
+            1
+          ]
+        },
+        {
+          "H": 4,
+          "last_layer_sources": 4,
+          "Z_H": [
+            61,
+            16
+          ],
+          "even_source_Z_H": [
+            21,
+            16
+          ],
+          "finite_census_defect_subseries_through_H": [
+            3,
+            16
+          ]
+        },
+        {
+          "H": 8,
+          "last_layer_sources": 14,
+          "Z_H": [
+            779,
+            128
+          ],
+          "even_source_Z_H": [
+            561,
+            256
+          ],
+          "finite_census_defect_subseries_through_H": [
+            273,
+            256
+          ]
+        },
+        {
+          "H": 12,
+          "last_layer_sources": 50,
+          "Z_H": [
+            17021,
+            2048
+          ],
+          "even_source_Z_H": [
+            12243,
+            4096
+          ],
+          "finite_census_defect_subseries_through_H": [
+            7635,
+            4096
+          ]
+        },
+        {
+          "H": 16,
+          "last_layer_sources": 157,
+          "Z_H": [
+            691027,
+            65536
+          ],
+          "even_source_Z_H": [
+            125439,
+            32768
+          ],
+          "finite_census_defect_subseries_through_H": [
+            88575,
+            32768
+          ]
+        },
+        {
+          "H": 20,
+          "last_layer_sources": 488,
+          "Z_H": [
+            1618523,
+            131072
+          ],
+          "even_source_Z_H": [
+            4793097,
+            1048576
+          ],
+          "finite_census_defect_subseries_through_H": [
+            903339,
+            262144
+          ]
+        },
+        {
+          "H": 24,
+          "last_layer_sources": 1534,
+          "Z_H": [
+            232819429,
+            16777216
+          ],
+          "even_source_Z_H": [
+            5444265,
+            1048576
+          ],
+          "finite_census_defect_subseries_through_H": [
+            34103565,
+            8388608
+          ]
+        },
+        {
+          "H": 28,
+          "last_layer_sources": 4843,
+          "Z_H": [
+            4064974549,
+            268435456
+          ],
+          "even_source_Z_H": [
+            1534178523,
+            268435456
+          ],
+          "finite_census_defect_subseries_through_H": [
+            1230237423,
+            268435456
+          ]
+        },
+        {
+          "H": 32,
+          "last_layer_sources": 15290,
+          "Z_H": [
+            17448416503,
+            1073741824
+          ],
+          "even_source_Z_H": [
+            13221224439,
+            2147483648
+          ],
+          "finite_census_defect_subseries_through_H": [
+            21505703175,
+            4294967296
+          ]
+        }
+      ]
+    },
+    {
+      "target": 2,
+      "rows": [
+        {
+          "H": 0,
+          "last_layer_sources": 1,
+          "Z_H": [
+            1,
+            1
+          ],
+          "even_source_Z_H": [
+            1,
+            1
+          ],
+          "finite_census_defect_subseries_through_H": [
+            0,
+            1
+          ]
+        },
+        {
+          "H": 1,
+          "last_layer_sources": 2,
+          "Z_H": [
+            3,
+            1
+          ],
+          "even_source_Z_H": [
+            3,
+            2
+          ],
+          "finite_census_defect_subseries_through_H": [
+            0,
+            1
+          ]
+        },
+        {
+          "H": 2,
+          "last_layer_sources": 2,
+          "Z_H": [
+            4,
+            1
+          ],
+          "even_source_Z_H": [
+            5,
+            2
+          ],
+          "finite_census_defect_subseries_through_H": [
+            1,
+            4
+          ]
+        },
+        {
+          "H": 4,
+          "last_layer_sources": 5,
+          "Z_H": [
+            53,
+            8
+          ],
+          "even_source_Z_H": [
+            49,
+            16
+          ],
+          "finite_census_defect_subseries_through_H": [
+            13,
+            16
+          ]
+        },
+        {
+          "H": 8,
+          "last_layer_sources": 18,
+          "Z_H": [
+            2851,
+            256
+          ],
+          "even_source_Z_H": [
+            1225,
+            256
+          ],
+          "finite_census_defect_subseries_through_H": [
+            649,
+            256
+          ]
+        },
+        {
+          "H": 12,
+          "last_layer_sources": 67,
+          "Z_H": [
+            64825,
+            4096
+          ],
+          "even_source_Z_H": [
+            26161,
+            4096
+          ],
+          "finite_census_defect_subseries_through_H": [
+            16945,
+            4096
+          ]
+        },
+        {
+          "H": 16,
+          "last_layer_sources": 208,
+          "Z_H": [
+            1312999,
+            65536
+          ],
+          "even_source_Z_H": [
+            263729,
+            32768
+          ],
+          "finite_census_defect_subseries_through_H": [
+            380001,
+            65536
+          ]
+        },
+        {
+          "H": 20,
+          "last_layer_sources": 649,
+          "Z_H": [
+            12306473,
+            524288
+          ],
+          "even_source_Z_H": [
+            2482585,
+            262144
+          ],
+          "finite_census_defect_subseries_through_H": [
+            7570557,
+            1048576
+          ]
+        },
+        {
+          "H": 24,
+          "last_layer_sources": 2039,
+          "Z_H": [
+            110851087,
+            4194304
+          ],
+          "even_source_Z_H": [
+            2795875,
+            262144
+          ],
+          "finite_census_defect_subseries_through_H": [
+            141106833,
+            16777216
+          ]
+        },
+        {
+          "H": 28,
+          "last_layer_sources": 6458,
+          "Z_H": [
+            1935778765,
+            67108864
+          ],
+          "even_source_Z_H": [
+            1564966739,
+            134217728
+          ],
+          "finite_census_defect_subseries_through_H": [
+            2520422703,
+            268435456
+          ]
+        },
+        {
+          "H": 32,
+          "last_layer_sources": 20374,
+          "Z_H": [
+            16652118755,
+            536870912
+          ],
+          "even_source_Z_H": [
+            53772161509,
+            4294967296
+          ],
+          "finite_census_defect_subseries_through_H": [
+            43844056299,
+            4294967296
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "certified_first_arrival_links": 208385,
+    "independent_first_arrival_replays": 2054,
+    "certified_sources_and_first_hit_weights": 131072,
+    "independent_paired_steps": 5380352,
+    "grade_vs_direct_pair_classifications": 65535,
+    "exact_all_future_source_green_identities": 131070,
+    "harmonic_band_lower_bounds": 16,
+    "independent_exact_harmonic_sums": 8,
+    "inverse_source_forward_and_mask_checks": 142799,
+    "independent_exhaustive_inverse_layers": 18,
+    "independent_finite_green_sums": 129
+  },
+  "harmonic_enclosure_precision": 1208925819614629174706176,
+  "infinite_scope": "None. Divergence uses the written measure and packing argument and external PLD."
+}

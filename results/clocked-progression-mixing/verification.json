@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T16:04:59.284994+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/DeficitLimitLaw.lean",
+      "source_sha256": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clocked-progression-ilqcnhs8/DeficitLimitLaw.olean",
+        "lean/DeficitLimitLaw.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.337,
+      "log": "results/clocked-progression-mixing/DeficitLimitLaw.log",
+      "log_sha256": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+      "olean_sha256": "061792d57ef29d4e7372c035741d5a2fdbd50790dd4144f46b1ca08654962eb2"
+    },
+    {
+      "source": "lean/DeficitClockMoment.lean",
+      "source_sha256": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clocked-progression-ilqcnhs8/DeficitClockMoment.olean",
+        "lean/DeficitClockMoment.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.279,
+      "log": "results/clocked-progression-mixing/DeficitClockMoment.log",
+      "log_sha256": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+      "olean_sha256": "c63523093cb66683416e6e42d73b799f299f85b54e9fa0677a9570f063ef3d5f"
+    },
+    {
+      "source": "lean/ClockedProgressionMixing.lean",
+      "source_sha256": "3e388a39872c16563b8acb68bac2558a17a96c49d66a94abfd9967e5a5c357f4",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-clocked-progression-ilqcnhs8/ClockedProgressionMixing.olean",
+        "lean/ClockedProgressionMixing.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.301,
+      "log": "results/clocked-progression-mixing/ClockedProgressionMixing.log",
+      "log_sha256": "9a1ea4c97695a7ae5d986cd758b187153280dbbc8ecfd2ed6e40ca7649b554a2",
+      "olean_sha256": "092b16afc8419bcca1ebb3cca940c6c6f9c0e05050b88785b08cf7fafc065f58"
+    }
+  ],
+  "kernel_theorems_audited": 10,
+  "prior_hashes_validated": {
+    "results/censored-progression-transport/verification.json": 16
+  },
+  "finite_replay_counts": {
+    "affine_modular_and_reversal_checks": 19530,
+    "seeded_offset_and_low_marginal_checks": 39060,
+    "cleared_inverse_congruence_checks": 175770,
+    "exact_joint_low_marginal_checks": 270,
+    "conditional_pair_convolution_identities": 168,
+    "even_length_head_removal_checks": 6660,
+    "ordinary_passage_steps": 76328,
+    "independent_first_odd_passages": 2688,
+    "bounded_prefix_weight_steps": 23340,
+    "bounded_prefixes": 285,
+    "matched_clock_all_cutoff_checks": 12797,
+    "before_landing_checks": 3582,
+    "after_landing_checks": 9215,
+    "exact_landing_boundary_checks": 95,
+    "distinct_matched_clock_pairs": 95
+  },
+  "kernel_scope": "Finite inverse residue and seed arithmetic, matched-clock window and cell bounds, finite coupling-mean inequalities, and neutral bulk algebra. No analytic decay or mixing theorem is kernel formalized.",
+  "written_scope": [
+    "Conditioning one endpoint valuation preserves the paired Fourier bound and joint fine-scale mixing.",
+    "Same-scale uniform source classes 1 and 2 modulo three have joint first-passage landing/ordinary-clock laws within O_R((log y)^(-R)), for every fixed R.",
+    "For every R, the progression deficit error is O_R(t/(log X)^R), uniformly over finite t; the analogous cell and survivor errors are O_R((log X)^(-R)).",
+    "At t=8k, X=2^k, the absolute deficit discrepancy tends to zero faster than any fixed inverse power of k."
+  ],
+  "analytic_provenance": "Local WRITTEN extension of the joint-mixing and uniform-preimage portions of the natural-density note, using Tao's published Fourier-decay/collision and valuation inputs. The same-scale comparison does not use the renewal lemma or its irrationality input.",
+  "external_source": {
+    "url": "https://arxiv.org/html/1909.03562v7",
+    "title": "Almost all orbits of the Collatz map attain almost bounded values",
+    "author": "Terence Tao",
+    "version_date": "2026-07-16",
+    "rechecked_date": "2026-10-14",
+    "sections": [
+      "5",
+      "6",
+      "7.1"
+    ],
+    "scope": "Published inputs and proof structure only; the new marked progression assertion is a local written deduction, not a theorem attributed to Tao."
+  },
+  "finite_scope_limit": "Exact arithmetic only. Truncated geometric laws retain and report their omitted mass. Finite convolutions and trajectory laws do not verify the asymptotic bound or provide effective constants. No fresh external Lean replay.",
+  "not_proved": [
+    "Effective values of the progression-error constants or thresholds.",
+    "Any O(t/X) error estimate.",
+    "The all-source zero limit, b=0, escape or other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "lean/DeficitLimitLaw.lean": "ef07acbbaa01b1ea245e4a43f21ccf6159c6b711bb70e659f35d9ceb5a880ec8",
+    "lean/DeficitClockMoment.lean": "7f33ecc4f3046017ad56c62bd5d5237a12635110f4da8f50eb7365d5bbc1c38a",
+    "lean/ClockedProgressionMixing.lean": "3e388a39872c16563b8acb68bac2558a17a96c49d66a94abfd9967e5a5c357f4",
+    "verify_clocked_progression_mixing.py": "b2875351ef6188b4f30492c72fdb0539cd8c35bd9ee3e314070ab5aaa9229efb",
+    "docs/CLOCKED-PROGRESSION-MIXING.md": "2fde7200d9225783fe0c5924ec205aef71b9366d95beb8bdbc6882e3108dc60e",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "docs/CENSORED-PROGRESSION-TRANSPORT.md": "1878531e833de2b9874882db2c8c2f74ed83ce6a3918846a42cd88f567f9cc73",
+    "docs/WEIGHTED-DISSIPATION.md": "6e3cba758a6efb7041c55d588fd6500d35afdda1db8fb9f8892da3bf0e8bf837",
+    "docs/FINITE-PATH-PACKING.md": "3ad747b350aaaed21267c1ad7626bf64cc45fcec30978d43522fd35b96a177aa",
+    "results/censored-progression-transport/verification.json": "40b4f8e03a0dead2126b77921a439f2f82974e82b98a8e9dc13868c6bf372614",
+    "results/natural-density/verification.json": "8c31e1977c4ca2e85d4bd7534e472d2c9851d3bf874dc3b3ae541773255ef3ef",
+    "results/clocked-progression-mixing/ClockedProgressionMixing.log": "9a1ea4c97695a7ae5d986cd758b187153280dbbc8ecfd2ed6e40ca7649b554a2",
+    "results/clocked-progression-mixing/DeficitClockMoment.log": "6b436ef44e0ae05f8adf1e4a068de15cd3a83e08021547f92a7418b34abef596",
+    "results/clocked-progression-mixing/DeficitLimitLaw.log": "8942e179ff3ce2ad0492639b89e9ecc3232a00c9e4e8ac50037b74a455e1c57e",
+    "results/clocked-progression-mixing/replay.json": "7719f8a1ddb71cd4a6bb7fd2cbddff13ab0bdac56a10f6c8d248511f748f505e"
+  },
+  "documentation_review": {
+    "reviewed_at_utc": "2026-10-14T16:10:07.637124+00:00",
+    "change": "Clarified that the final dyadic decomposition uses positive-integer blocks; no mathematical claim or executable source changed.",
+    "finite_replay_reused": true
+  }
+}

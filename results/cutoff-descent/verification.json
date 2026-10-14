@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T16:32:38.766012+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-cutoff-descent-gggtt6kr/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.483,
+      "log": "results/cutoff-descent/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CutoffDescent.lean",
+      "source_sha256": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-cutoff-descent-gggtt6kr/CutoffDescent.olean",
+        "lean/CutoffDescent.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.467,
+      "log": "results/cutoff-descent/CutoffDescent.log",
+      "log_sha256": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+      "olean_sha256": "12594a4bbb7188bee9b41bd90538fae7aad5acee56e34c4f749d27db21afa1de"
+    }
+  ],
+  "kernel_theorems_audited": 16,
+  "prior_hashes_validated": {
+    "results/clocked-progression-mixing/verification.json": 15,
+    "results/censored-progression-transport/verification.json": 16
+  },
+  "finite_replay_counts": {
+    "direct_ordinary_prefixes": 6146,
+    "direct_ordinary_steps": 798980,
+    "finite_even_survival_identities": 2377728,
+    "finite_killed_odd_survival_identities": 2377728,
+    "shifted_population_splits_and_bounds": 1800,
+    "nontrivial_killed_boundary_cases": 1565,
+    "first_odd_strict_records": 516,
+    "record_threshold_transfer_checks": 167700,
+    "record_finite_minimum_equalities": 33540,
+    "cutoff_product_and_reciprocal_checks": 99998,
+    "cutoff_boundary_overshoot_checks": 698623,
+    "auxiliary_distribution_recursion_agreements": 195,
+    "exact_finite_unroll_and_budget_checks": 195,
+    "auxiliary_active_state_expansions": 2063
+  },
+  "kernel_scope": "Actual noncomputable floor-survival predicate, even/odd implications and finite population bounds; exact cutoff product, reciprocal drift cross-multiplication and overshoot; finite rational stopping, potential and tangent-drift inequalities. No infinite survival instance is asserted.",
+  "written_scope": [
+    "The preceding same-scale marked coupling compares global-minimum laws, with every fixed inverse-logarithmic power and constants uniform in the minimum threshold.",
+    "The auxiliary fair cutoff chain has negative logarithmic drift and finite expected absorption time, independently of actual orbit termination.",
+    "Convex logarithmic potentials give sup_N Pr_(n<=N)(minimum(n)>H) <= C_r (log H)^(-r) for every fixed r>0.",
+    "Every fixed logarithmic power of the global minimum is uniformly integrable; using the earlier written minimum law, its source moments converge."
+  ],
+  "analytic_dependencies": {
+    "tail_and_moments": "The local WRITTEN same-scale progression-mixing extension using Tao's published Fourier/collision and valuation inputs; exact first-odd-record property; written real convexity, probability telescoping and limit arguments.",
+    "moment_limit_identification_only": "Earlier WRITTEN existence of the global-minimum limiting law.",
+    "external_predecessor_density_used": false,
+    "new_external_theorem_claimed": false
+  },
+  "finite_scope_limit": "Exact bounded-prefix and auxiliary-chain checks only. No floating-point proof decisions, infinite-orbit decisions, effective analytic constants, fresh external Lean replay, or asymptotic mixing certification.",
+  "not_proved": [
+    "The analytic mixing premise in Lean.",
+    "Effective constants or thresholds.",
+    "Uniform integrability of lifetime deficit or arrival clocks.",
+    "Positive power moments of the minimum value itself.",
+    "Minimum one almost surely, the all-source zero limit, escape or other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CutoffDescent.lean": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+    "verify_cutoff_descent.py": "84518ce1dc8ef7f0e32e5a10ab9be0dd7440a43208e2853d574869f7b189328c",
+    "docs/MINIMUM-LOG-MOMENTS.md": "b4b172f83ed6973f631a77b2298a8802d3b0a0a6b540414abe31207e2ddc76db",
+    "docs/CLOCKED-PROGRESSION-MIXING.md": "2fde7200d9225783fe0c5924ec205aef71b9366d95beb8bdbc6882e3108dc60e",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/NATURAL-DENSITY-ALMOST-BOUNDED.md": "88b732dceb8ad7efc6d64560c5bdda77c837a0809e99a656461fdc820cd72be2",
+    "results/clocked-progression-mixing/verification.json": "8dabd67a91233c11be6410c78e88894998a78b45031eafe7b0e263b0540e4040",
+    "results/censored-progression-transport/verification.json": "40b4f8e03a0dead2126b77921a439f2f82974e82b98a8e9dc13868c6bf372614",
+    "results/cutoff-descent/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/cutoff-descent/CutoffDescent.log": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+    "results/cutoff-descent/replay.json": "2169f8c95a9f0349726f8f05a54f974ce6234cd4d96f53dbfc44ded0f33400ea"
+  }
+}

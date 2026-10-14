@@ -1,0 +1,517 @@
+{
+  "status": "passed",
+  "counts": {
+    "direct_ordinary_prefixes": 6146,
+    "direct_ordinary_steps": 798980,
+    "finite_even_survival_identities": 2377728,
+    "finite_killed_odd_survival_identities": 2377728,
+    "shifted_population_splits_and_bounds": 1800,
+    "nontrivial_killed_boundary_cases": 1565,
+    "first_odd_strict_records": 516,
+    "record_threshold_transfer_checks": 167700,
+    "record_finite_minimum_equalities": 33540,
+    "cutoff_product_and_reciprocal_checks": 99998,
+    "cutoff_boundary_overshoot_checks": 698623,
+    "auxiliary_distribution_recursion_agreements": 195,
+    "exact_finite_unroll_and_budget_checks": 195,
+    "auxiliary_active_state_expansions": 2063
+  },
+  "bounded_actual_prefixes": {
+    "extent": 2048,
+    "maximum_source": 6146,
+    "maximum_clock": 130,
+    "floors": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "finite_live_counts": [
+      {
+        "floor": 1,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 1208
+      },
+      {
+        "floor": 2,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 1124
+      },
+      {
+        "floor": 3,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 1124
+      },
+      {
+        "floor": 4,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 1095
+      },
+      {
+        "floor": 8,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 976
+      },
+      {
+        "floor": 16,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 903
+      },
+      {
+        "floor": 64,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 211
+      },
+      {
+        "floor": 256,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 72
+      },
+      {
+        "floor": 1024,
+        "ordinary_horizon": 128,
+        "sources": 6146,
+        "finite_live_prefixes": 29
+      }
+    ],
+    "killed_boundary_examples": [
+      {
+        "floor": 3,
+        "tail_horizon": 0,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 3,
+        "tail_horizon": 1,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 3,
+        "tail_horizon": 2,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 3,
+        "tail_horizon": 3,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 4,
+        "tail_horizon": 0,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 4,
+        "tail_horizon": 1,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 4,
+        "tail_horizon": 2,
+        "source": 3,
+        "child": 5
+      },
+      {
+        "floor": 8,
+        "tail_horizon": 0,
+        "source": 7,
+        "child": 11
+      },
+      {
+        "floor": 8,
+        "tail_horizon": 1,
+        "source": 7,
+        "child": 11
+      },
+      {
+        "floor": 8,
+        "tail_horizon": 2,
+        "source": 7,
+        "child": 11
+      },
+      {
+        "floor": 8,
+        "tail_horizon": 3,
+        "source": 7,
+        "child": 11
+      },
+      {
+        "floor": 8,
+        "tail_horizon": 4,
+        "source": 7,
+        "child": 11
+      }
+    ],
+    "population_clock_convention": "Left clock t+2; even right clock t+1; killed odd right clock t. The upper bound uses right clock t for both.",
+    "limitation": "A live finite prefix is not an infinite-survival instance. No future arrival decision is used."
+  },
+  "record_minimum_transfer": [
+    {
+      "floor": 8,
+      "odd_sources": 12,
+      "longest_checked_passage_clock": 106,
+      "tail_horizon": 64,
+      "thresholds_include_above_passage_floor": true
+    },
+    {
+      "floor": 16,
+      "odd_sources": 24,
+      "longest_checked_passage_clock": 107,
+      "tail_horizon": 64,
+      "thresholds_include_above_passage_floor": true
+    },
+    {
+      "floor": 64,
+      "odd_sources": 96,
+      "longest_checked_passage_clock": 108,
+      "tail_horizon": 64,
+      "thresholds_include_above_passage_floor": true
+    },
+    {
+      "floor": 256,
+      "odd_sources": 384,
+      "longest_checked_passage_clock": 137,
+      "tail_horizon": 64,
+      "thresholds_include_above_passage_floor": true
+    }
+  ],
+  "auxiliary_cutoff_chains": [
+    {
+      "floor": 3,
+      "start_cutoff": 4,
+      "depth": 12,
+      "terminal_states": 21,
+      "survival_probability": [
+        197,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          698306066975297079717889,
+          1336788677183259396096000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        2,
+        1
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 3,
+      "start_cutoff": 10,
+      "depth": 12,
+      "terminal_states": 41,
+      "survival_probability": [
+        399,
+        2048
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          260207748340304978830498194166667067927691331,
+          389028053004789337058048661140273248776192000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        2,
+        1
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 3,
+      "start_cutoff": 100,
+      "depth": 12,
+      "terminal_states": 65,
+      "survival_probability": [
+        2957,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          7746164282837184063085373005417490703951110659798391066601469226724776101232794141362226279619395079996754499,
+          20217559898359765988433191273389310662543869696332483852675900787211456373239726043996439508839562509263616000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        2,
+        1
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 8,
+      "start_cutoff": 9,
+      "depth": 12,
+      "terminal_states": 32,
+      "survival_probability": [
+        25,
+        512
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          379744748571996467053255092926713807021,
+          1786376090023140108176093037034890362880
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        4
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 8,
+      "start_cutoff": 25,
+      "depth": 12,
+      "terminal_states": 62,
+      "survival_probability": [
+        13,
+        64
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          57868727826705111058126445231679336788152480810903075189607268322314061919,
+          216815007325615255908956840605241428700826622074328026299129129700089856000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        4
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 8,
+      "start_cutoff": 255,
+      "depth": 12,
+      "terminal_states": 30,
+      "survival_probability": [
+        193,
+        256
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          26850494074549785962850398086402763668286458907839995053754055467176722990288058470496308804580205626198659530386323,
+          180022839961087638561382531459597997128101003811223674723078316020641737939437687657049725806728559100777103278694400
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        4
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 17,
+      "start_cutoff": 18,
+      "depth": 12,
+      "terminal_states": 42,
+      "survival_probability": [
+        99,
+        2048
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          304722832202157922419108871575006714612100985107384187069447,
+          2822388244005042019462114519115142970673972768349420438528000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        6,
+        17
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 17,
+      "start_cutoff": 52,
+      "depth": 12,
+      "terminal_states": 55,
+      "survival_probability": [
+        883,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          1014376118381305334295180577530547008991180465516586475432733544654249021742917505086068794230263,
+          7310505028350693465684544454931205145783723759791001134899783963154608769081522668252510455808000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        6,
+        17
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 17,
+      "start_cutoff": 534,
+      "depth": 12,
+      "terminal_states": 68,
+      "survival_probability": [
+        3145,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          377907539963697347236802043041875850184161591307391860308637370635109832094370786108731921387568632967504214552308690047575557667138048219087303450776516710511103558686170655196040708971364930223390680210192667097,
+          4917449521229744236125815378692183232831733072299144045764235466093919176477996513533990778393205393988020904259252285834480345467000697101292672935962344658092577990007971205391165252386943311810614693254433996800
+        ]
+      },
+      "reciprocal_upper_bound": [
+        6,
+        17
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 64,
+      "start_cutoff": 65,
+      "depth": 12,
+      "terminal_states": 31,
+      "survival_probability": [
+        113,
+        2048
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          5047956523757298893115614510245590586835798333254635751246992979,
+          172710900940537270350415637148551167039261136153853390855140966400
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        32
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 64,
+      "start_cutoff": 193,
+      "depth": 12,
+      "terminal_states": 58,
+      "survival_probability": [
+        979,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          1220989295489521507170924632755975884456981148873957887406872767842473913350954425447191140386533633382866660976104803890455161509906369565535312275439,
+          32670187875298850124876102294509903560427019758027979612534116517261286954576936809102996444366600513621401680131379175953219332611033805770148935270400
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        32
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 64,
+      "start_cutoff": 1991,
+      "depth": 12,
+      "terminal_states": 73,
+      "survival_probability": [
+        787,
+        1024
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          166305506722022412573023053430334448377579853681281368560707287084811243438785448160897133652066536163721595693253525777412546845217608638980339066955528866639776880516939787696177490556393243959867034237325051980175563872900885341740538184331390139596926842028635227,
+          8123874851552299735996898010183300870456846453140015503380934764030767430735112899275999799378543403892220622067801625224772707449705563728751135152598278609325955518159466728919066037124135214914663674657104235654748068717423089332847807408512854278370411608694784000
+        ]
+      },
+      "reciprocal_upper_bound": [
+        3,
+        32
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 257,
+      "start_cutoff": 258,
+      "depth": 12,
+      "terminal_states": 34,
+      "survival_probability": [
+        113,
+        2048
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          379142654284651101357813539820536892829807994935593320861930411430313933845424539865848181102645969,
+          51428870367675454134753317862555629171654861788341019398543143006267493143441424293376836543110348800
+        ]
+      },
+      "reciprocal_upper_bound": [
+        6,
+        257
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 257,
+      "start_cutoff": 772,
+      "depth": 12,
+      "terminal_states": 48,
+      "survival_probability": [
+        979,
+        4096
+      ],
+      "reciprocal_occupation": {
+        "fraction": [
+          730890690428710678642138977386427285915758543626921969930885942215992629892482332235347193969270677249496359772982242147561000284365735265322083013090029296301787277572503670303,
+          78557625692572890428093734963568036218453040232921282644654910238223503027615554410814637040338567584916553682247218654461309950325999020507952931276013583014231279998238300815360
+        ]
+      },
+      "reciprocal_upper_bound": [
+        6,
+        257
+      ],
+      "all_exact_checks_passed": true
+    },
+    {
+      "floor": 257,
+      "start_cutoff": 7974,
+      "depth": 12,
+      "terminal_states": 81,
+      "survival_probability": [
+        787,
+        1024
+      ],
+      "reciprocal_occupation": {
+        "sign": 1,
+        "numerator_denominator_bits": [
+          1335,
+          1342
+        ],
+        "numerator_sha256": "457f9b2485963f39fb2f52074df538a248fcffdb600bb4daebbea064219e0282",
+        "denominator_sha256": "4cf7e82a8c0316d260c0c939f7f5254d581366bd76da5e8d13a2b6bb6706c538"
+      },
+      "reciprocal_upper_bound": [
+        6,
+        257
+      ],
+      "all_exact_checks_passed": true
+    }
+  ]
+}

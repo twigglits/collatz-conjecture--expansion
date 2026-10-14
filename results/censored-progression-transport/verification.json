@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T15:36:43.849288+00:00",
+  "collatz_status": "unresolved",
+  "map_scope": "Ordinary Collatz and clocks stopped at first arrival at one.",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-progression-lean-lytd8wox/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.48,
+      "log": "results/censored-progression-transport/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CensoredProgressionCertificates.lean",
+      "source_sha256": "0511463f181a8d34969124479077f8bf75762d3167cd2c14e76216cf33f826b4",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-censored-progression-lean-lytd8wox/CensoredProgressionCertificates.olean",
+        "lean/CensoredProgressionCertificates.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.206,
+      "log": "results/censored-progression-transport/CensoredProgressionCertificates.log",
+      "log_sha256": "e0e61195c72e96026dd0a2c7641a70a697aca2918537cf5cd553e3bccdc1a8c7",
+      "olean_sha256": "34e94adb2dcb1c852783220b2dfabf38e18c6d71fd42712a6b2ca5fe7f650b93"
+    }
+  ],
+  "kernel_theorems_audited": 11,
+  "prior_hashes_validated": {
+    "results/censored-deficit-clock/verification.json": 20
+  },
+  "census_stage_reused_after_authentication": true,
+  "census_verified_at_utc": "2026-10-14T15:32:28.880166+00:00",
+  "native_scope": "Checked-overflow Rust finite censuses through 393218 and 3145730 at ordinary clocks 136 and 160; not kernel certified.",
+  "independent_scope": "Python unbounded integers reconstruct exact affine weights through 393218 at clock 136; direct intervals lie inside native intervals and all step/alive counts match. No full independent replay at the larger cutoff.",
+  "finite_replay_counts": {
+    "bounded_fraction_prefixes": 4290,
+    "fraction_weight_steps": 273403,
+    "exact_even_transport_checks": 132096,
+    "exact_odd_transport_and_correction_checks": 132096,
+    "alive_child_checks": 71541,
+    "arrived_child_checks": 60555,
+    "exact_population_transport_checks": 42
+  },
+  "kernel_scope": "Finite stopped-weight transport and bounds for actual ordinary-map recursion; finite population parity splitting; three closed integer comparisons of recorded census endpoints. The census endpoints themselves are not kernel derived.",
+  "written_scope": "The summed correction is at most (t+1) H_X/6. The exact population recurrence separates progression sampling error from the positive affine correction.",
+  "external_scope": "No external theorem or asymptotic input is needed for this transport or its finite counterbounds. The earlier proposed zero-limit criterion retains its separate written and external assumptions.",
+  "floating_scope": "No floating-point verification decisions; interval scale 2^64 and all comparisons are exact integers or Fractions.",
+  "not_proved": [
+    "Failure of every constant in an O(t/X) or O(t log X/X) progression estimate.",
+    "Failure of every constant multiple of the explicit correction.",
+    "Any effective asymptotic bound on the progression sampling error or the all-source censored mean.",
+    "The all-source zero limit, escape exclusion, other-cycle exclusion, or full Collatz."
+  ],
+  "sha256": {
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CensoredProgressionCertificates.lean": "0511463f181a8d34969124479077f8bf75762d3167cd2c14e76216cf33f826b4",
+    "verify_censored_progression_transport.py": "7e31871f205eb497a3970274c66de3633ee1e74ecdf8a7453996af361ad3f988",
+    "censored_progression_census.rs": "6c5e1c96b901618a3d92cbe4aeedacea3124134770a544a2ea8c0c9ec860b6d1",
+    "docs/CENSORED-PROGRESSION-TRANSPORT.md": "1878531e833de2b9874882db2c8c2f74ed83ce6a3918846a42cd88f567f9cc73",
+    "docs/CENSORED-DEFICIT-CLOCK.md": "59bfd62590dec516fffb78b6f08a408dc87dff679e29304074128a4b41b2f8f4",
+    "results/censored-deficit-clock/verification.json": "49811f18c10a062e7e7f29ddf6cb2958f95db592360c68fe7497b69ce1e6dc70",
+    "results/censored-progression-transport/CensoredProgressionCertificates.log": "e0e61195c72e96026dd0a2c7641a70a697aca2918537cf5cd553e3bccdc1a8c7",
+    "results/censored-progression-transport/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/censored-progression-transport/census.json": "59deeef7de315350c1d8fd0eec46ebd335608f68bcdf5dfc0cd3ac7452b09c36",
+    "results/censored-progression-transport/independent-k17.json": "79fca6256b487edb4cdf64e6e4ca9d87ae964edbea6db84b30931afd7192407c",
+    "results/censored-progression-transport/native-k17-provenance.json": "532941ea776d804bf365288286e1de41d891c5e69ec67b195c70e68f48a04195",
+    "results/censored-progression-transport/native-k17.json": "d8a69e8a50457694a5f8b555147d2d2347aa922ece2fb395a4d5a9a3a6968481",
+    "results/censored-progression-transport/native-k20-provenance.json": "aa28cc1feee72ea01ad9324e650bbe9dc14cf3fe26f6f69fdb2d4ad77a72d7bf",
+    "results/censored-progression-transport/native-k20.json": "d09caea6774e4caec2d53265ea70d61bfbf9abd17f7295d7d13402ad62104232",
+    "results/censored-progression-transport/replay.json": "78c1b2c4eee4288c2b98e6f185105b4c3289554178d76dcd2d8e7e4ce61381b9"
+  }
+}

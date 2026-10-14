@@ -1,0 +1,12 @@
+'ReturnAncestralOverlap.clock_potential_curvature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.geometric_second_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.holding_second_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.second_cost_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.second_clock_series_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.second_clock_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.zero_log_square_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.group_square_constants' depends on axioms: [propext, Quot.sound]
+'ReturnAncestralOverlap.square_drift_budget' depends on axioms: [propext, Quot.sound]
+'ReturnAncestralOverlap.mixed_occupation_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnAncestralOverlap.log_count_decay' does not depend on any axioms
+'ReturnAncestralOverlap.comparable_energy_constants' depends on axioms: [propext, Quot.sound]

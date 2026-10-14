@@ -1,0 +1,7 @@
+'LowerReturnClockMoments.lower_augmented_le_first' depends on axioms: [propext]
+'LowerReturnClockMoments.lower_augmented_lift' depends on axioms: [propext, Quot.sound]
+'LowerReturnClockMoments.selected_endpoint_count' depends on axioms: [propext, Quot.sound]
+'LowerReturnClockMoments.group_duration_budget' depends on axioms: [propext, Quot.sound]
+'LowerReturnClockMoments.clocked_minimum_budget' depends on axioms: [propext, Quot.sound]
+'LowerReturnClockMoments.power_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerReturnClockMoments.atypical_window' depends on axioms: [propext, Quot.sound]

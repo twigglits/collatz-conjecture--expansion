@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T17:19:56.371477+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-critical-clock-rpfnln8s/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.757,
+      "log": "results/critical-clock-window/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CutoffDescent.lean",
+      "source_sha256": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-critical-clock-rpfnln8s/CutoffDescent.olean",
+        "lean/CutoffDescent.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.061,
+      "log": "results/critical-clock-window/CutoffDescent.log",
+      "log_sha256": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+      "olean_sha256": "12594a4bbb7188bee9b41bd90538fae7aad5acee56e34c4f749d27db21afa1de"
+    },
+    {
+      "source": "lean/CriticalClockWindow.lean",
+      "source_sha256": "a50a7d88c53e7f32a20a8a18d53c5e91b7c8855ff2e6edeaf28cc9a89c787bba",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-critical-clock-rpfnln8s/CriticalClockWindow.olean",
+        "lean/CriticalClockWindow.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.036,
+      "log": "results/critical-clock-window/CriticalClockWindow.log",
+      "log_sha256": "477d68536a17fc3bf28473328c73274a9eb64b356f5e9bc9b79627c953fef4f4",
+      "olean_sha256": "3d184da8b8b0be8fd3a8d6f6aaddd2dde0a2d89e29bd17101af46698df08eb2e"
+    }
+  ],
+  "kernel_theorems_audited": 15,
+  "prior_hashes_validated": {
+    "results/cutoff-descent/verification.json": 12,
+    "results/marked-preimage-audit/verification.json": 14,
+    "results/clocked-progression-mixing/verification.json": 15,
+    "results/censored-deficit-clock/verification.json": 20
+  },
+  "finite_replay_counts": {
+    "direct_ordinary_steps": 26624,
+    "direct_source_prefixes": 1024,
+    "cell_deficit_increment_checks": 25600,
+    "even_cell_transport_checks": 6400,
+    "odd_cell_transport_and_correction_checks": 6400,
+    "even_and_odd_deficit_transport_checks": 6400,
+    "two_sided_population_residual_bounds": 700,
+    "exact_both_parity_population_identities": 644,
+    "exact_clocked_unroll_and_cost_checks": 360,
+    "timed_tree_node_residual_checks": 1692,
+    "stopped_sign_mean_and_second_moment_checks": 117,
+    "branch_clock_sign_balance_checks": 1635,
+    "bounded_isometry_paths": 16384,
+    "bounded_stopping_fixed_time_isometries": 16,
+    "exact_critical_clock_log_brackets": 5,
+    "ideal_chain_exact_dp_transitions": 242943
+  },
+  "kernel_scope": "Actual censored cell bounds, deficit increments and even/odd transport; even population transport; fair-coefficient error bound; finite clocked upper/lower unrolling and cost majorant; clock algebra and stopped-sign mean/second moments.",
+  "written_scope": [
+    "For T=floor(kappa log N+u sqrt(log N)), mean censored cell tends to b Phi(u/sigma).",
+    "The mean censored deficit divided by sqrt(log N) tends to b [u Phi(u/sigma)+sigma phi(u/sigma)].",
+    "kappa=3/log(4/3), sigma^2=2 (log 6)^2/[log(4/3)]^3; b is the unknown nonconvergent lost-weight mass.",
+    "The moving cutoff floor exp((log N)^(1/4)), summable recurrence errors, stopped-sign CLT, and uniform super-logarithmic boundary settling justify these deductions."
+  ],
+  "analytic_dependencies": {
+    "critical_order_upper_bound": "Local WRITTEN uniform-in-time progression mixing plus the written cutoff drift, potentials and stopping estimates.",
+    "limit_identification": "Additionally the earlier WRITTEN minimum-clock concentration, minimum tightness and limiting mean nonconvergent lost weight.",
+    "external_predecessor_density": "Used only to turn the unproved zero-amplitude criterion into full pointwise Collatz, as in the earlier censored-clock note.",
+    "external_source_replayed": false
+  },
+  "finite_scope_limit": "Exact rational bounded-prefix and finite auxiliary-chain checks. The ideal multiplicative chain is separately labeled. No floating-point proof decisions, future arrival decisions, or finite certification of analytic mixing or asymptotic normality.",
+  "not_proved": [
+    "The local analytic mixing premise or Gaussian limit in Lean.",
+    "Effective asymptotic constants or convergence rates.",
+    "Uniform integrability of lifetime deficit or arrival clocks.",
+    "Zero nonconvergent lost-weight mass, either critical zero limit, or full Collatz."
+  ],
+  "sha256": {
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CutoffDescent.lean": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+    "lean/CriticalClockWindow.lean": "a50a7d88c53e7f32a20a8a18d53c5e91b7c8855ff2e6edeaf28cc9a89c787bba",
+    "verify_critical_clock_window.py": "c69883d4e41ada0f94b9d20acf029e049e5f8af8c629acb67d238de06264937f",
+    "docs/CRITICAL-CLOCK-WINDOW.md": "c919be5a997bb2cfe65bb4b428603fe569aa9ec4cfb3e80bdda1f8820089f633",
+    "docs/CENSORED-DEFICIT-CLOCK.md": "59bfd62590dec516fffb78b6f08a408dc87dff679e29304074128a4b41b2f8f4",
+    "docs/CLOCKED-MINIMUM.md": "4abe5ef874afb7fb35bd9c6c5b0b5ea8a3f4fc1936d914d1fd419946a232077b",
+    "docs/CLOCKED-PROGRESSION-MIXING.md": "2fde7200d9225783fe0c5924ec205aef71b9366d95beb8bdbc6882e3108dc60e",
+    "docs/MINIMUM-LOG-MOMENTS.md": "b4b172f83ed6973f631a77b2298a8802d3b0a0a6b540414abe31207e2ddc76db",
+    "results/cutoff-descent/verification.json": "02bc7a3b957d504dea9cbf0a5ac9c9f030800adfb3f874edaae005fc732e6c59",
+    "results/marked-preimage-audit/verification.json": "1188725bf481a1c1754150e2267652d16e93fb97127dda9ddb04f7ff4d9ef138",
+    "results/clocked-progression-mixing/verification.json": "8dabd67a91233c11be6410c78e88894998a78b45031eafe7b0e263b0540e4040",
+    "results/censored-deficit-clock/verification.json": "49811f18c10a062e7e7f29ddf6cb2958f95db592360c68fe7497b69ce1e6dc70",
+    "results/critical-clock-window/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/critical-clock-window/CriticalClockWindow.log": "477d68536a17fc3bf28473328c73274a9eb64b356f5e9bc9b79627c953fef4f4",
+    "results/critical-clock-window/CutoffDescent.log": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+    "results/critical-clock-window/replay.json": "6d0066bfeff76ef05b2a4d264a6e4627fea03c4dd1adb258a736dcfff7a1e9e8"
+  },
+  "documentation_review": {
+    "reviewed_at_utc": "2026-10-14T17:24:55.971077+00:00",
+    "files": [
+      "docs/CRITICAL-CLOCK-WINDOW.md"
+    ],
+    "changes": "Distinguish the potential psi from the Gaussian density; state that fixed progression exponent R=4 suffices; document exact completed verification counts and the separate ideal-chain illustration.",
+    "proof_sources_and_verifier_unchanged": true,
+    "completed_checks_reused": true
+  }
+}

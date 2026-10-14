@@ -1,0 +1,1399 @@
+{
+  "status": "passed",
+  "counts": {
+    "forward_source_prefixes": 18374,
+    "forward_syracuse_steps": 100830,
+    "selected_forward_sources": 248,
+    "tail_source_prefixes": 9088,
+    "inverse_integrality_tests": 34573,
+    "inverse_source_residue_tests": 103719,
+    "exact_suffix_envelope_checks": 3918,
+    "ordinary_mark_replay_steps": 20591,
+    "inverse_word_and_mark_checks": 1096,
+    "complete_forward_inverse_marked_law_agreements": 52,
+    "fixed_sum_residue_reassembly_terms": 3464,
+    "complete_grouped_marked_law_agreements": 52,
+    "boundary_source_injection_checks": 208,
+    "actual_interval_membership_changes": 1
+  },
+  "ungated_witness": {
+    "floor": 16,
+    "odd_states": [
+      19,
+      29,
+      11,
+      17,
+      13
+    ],
+    "valuation_word": [
+      1,
+      3,
+      1,
+      2
+    ],
+    "ordinary_clocks": [
+      0,
+      2,
+      6,
+      8,
+      11
+    ],
+    "actual_first_clock": 6,
+    "ungated_splice_clock": 11,
+    "scope": "Refutes omitting the prefix first-passage condition, not the existing height-buffered argument."
+  },
+  "finite_populations": [
+    {
+      "floor": 32,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          512,
+          1
+        ],
+        [
+          1024,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        256,
+        512
+      ],
+      "eligible_tail_endpoints": 5,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        32768
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        256
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 256,
+          "selected_sources": 6,
+          "unshifted_pair_count": 6,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            32
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 86,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            43
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 85,
+          "selected_sources": 1,
+          "unshifted_pair_count": 1,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            85
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 85,
+          "selected_sources": 2,
+          "unshifted_pair_count": 2,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 32,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          512,
+          1
+        ],
+        [
+          1024,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        256,
+        512
+      ],
+      "eligible_tail_endpoints": 8,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        32768
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        256
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 256,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            32
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 86,
+          "selected_sources": 2,
+          "unshifted_pair_count": 2,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            43
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 85,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            85
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 85,
+          "selected_sources": 0,
+          "unshifted_pair_count": 0,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            85
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 32,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          2048,
+          1
+        ],
+        [
+          4096,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        1024,
+        2048
+      ],
+      "eligible_tail_endpoints": 5,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        65536
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        1024
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 1024,
+          "selected_sources": 9,
+          "unshifted_pair_count": 9,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            256
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 342,
+          "selected_sources": 2,
+          "unshifted_pair_count": 2,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            2,
+            57
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 341,
+          "selected_sources": 4,
+          "unshifted_pair_count": 4,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            341
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 341,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            341
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 32,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          2048,
+          1
+        ],
+        [
+          4096,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        1024,
+        2048
+      ],
+      "eligible_tail_endpoints": 12,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        65536
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        1024
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 1024,
+          "selected_sources": 13,
+          "unshifted_pair_count": 13,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            256
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 342,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            2,
+            57
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 341,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            341
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 341,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            341
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 64,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          1024,
+          1
+        ],
+        [
+          2048,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        512,
+        1024
+      ],
+      "eligible_tail_endpoints": 10,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        65536
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        512
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 512,
+          "selected_sources": 14,
+          "unshifted_pair_count": 14,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            64
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 170,
+          "selected_sources": 4,
+          "unshifted_pair_count": 4,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            85
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 171,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            57
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 171,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 1,
+          "source_layer_bound": [
+            4,
+            171
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 64,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          1024,
+          1
+        ],
+        [
+          2048,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        512,
+        1024
+      ],
+      "eligible_tail_endpoints": 17,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        65536
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        512
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 512,
+          "selected_sources": 15,
+          "unshifted_pair_count": 15,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            64
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 170,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            85
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 171,
+          "selected_sources": 4,
+          "unshifted_pair_count": 4,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            57
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 171,
+          "selected_sources": 8,
+          "unshifted_pair_count": 8,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 1,
+          "source_layer_bound": [
+            4,
+            171
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 64,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          4096,
+          1
+        ],
+        [
+          8192,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        2048,
+        4096
+      ],
+      "eligible_tail_endpoints": 10,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        131072
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        2048
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 2048,
+          "selected_sources": 15,
+          "unshifted_pair_count": 15,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            512
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 682,
+          "selected_sources": 6,
+          "unshifted_pair_count": 6,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            6,
+            341
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 683,
+          "selected_sources": 6,
+          "unshifted_pair_count": 6,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            683
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 683,
+          "selected_sources": 3,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            683
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 64,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          4096,
+          1
+        ],
+        [
+          8192,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        2048,
+        4096
+      ],
+      "eligible_tail_endpoints": 23,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        131072
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        2048
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 2048,
+          "selected_sources": 28,
+          "unshifted_pair_count": 28,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            512
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 682,
+          "selected_sources": 9,
+          "unshifted_pair_count": 9,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            6,
+            341
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 683,
+          "selected_sources": 8,
+          "unshifted_pair_count": 8,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            683
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 683,
+          "selected_sources": 11,
+          "unshifted_pair_count": 11,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            683
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 128,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          2048,
+          1
+        ],
+        [
+          4096,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        1024,
+        2048
+      ],
+      "eligible_tail_endpoints": 21,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        131072
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        1024
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 1024,
+          "selected_sources": 23,
+          "unshifted_pair_count": 23,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            128
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 342,
+          "selected_sources": 7,
+          "unshifted_pair_count": 7,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            171
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 341,
+          "selected_sources": 9,
+          "unshifted_pair_count": 9,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            341
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 341,
+          "selected_sources": 7,
+          "unshifted_pair_count": 7,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            341
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 128,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          2048,
+          1
+        ],
+        [
+          4096,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        1024,
+        2048
+      ],
+      "eligible_tail_endpoints": 33,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        131072
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        1024
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 1024,
+          "selected_sources": 27,
+          "unshifted_pair_count": 27,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 6,
+          "source_layer_bound": [
+            3,
+            128
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 342,
+          "selected_sources": 12,
+          "unshifted_pair_count": 12,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            4,
+            171
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 341,
+          "selected_sources": 5,
+          "unshifted_pair_count": 5,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            341
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 341,
+          "selected_sources": 10,
+          "unshifted_pair_count": 10,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 2,
+          "source_layer_bound": [
+            8,
+            341
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 128,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          8192,
+          1
+        ],
+        [
+          16384,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        4096,
+        8192
+      ],
+      "eligible_tail_endpoints": 21,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        262144
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        4096
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 4096,
+          "selected_sources": 31,
+          "unshifted_pair_count": 31,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            1024
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 1366,
+          "selected_sources": 10,
+          "unshifted_pair_count": 10,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            6,
+            683
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 1365,
+          "selected_sources": 10,
+          "unshifted_pair_count": 10,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            455
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 1365,
+          "selected_sources": 11,
+          "unshifted_pair_count": 11,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            455
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 128,
+      "prefix_tolerance": 2,
+      "tail_syracuse_length": 2,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          8192,
+          1
+        ],
+        [
+          16384,
+          1
+        ]
+      ],
+      "intermediate_interval": [
+        4096,
+        8192
+      ],
+      "eligible_tail_endpoints": 47,
+      "complete_good_word_counts": {
+        "1": 4,
+        "2": 14,
+        "3": 47,
+        "4": 155
+      },
+      "relative_offset_bound": [
+        179,
+        262144
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        4096
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 4096,
+          "selected_sources": 60,
+          "unshifted_pair_count": 60,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 9,
+          "source_layer_bound": [
+            9,
+            1024
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 1366,
+          "selected_sources": 21,
+          "unshifted_pair_count": 21,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            6,
+            683
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 1365,
+          "selected_sources": 20,
+          "unshifted_pair_count": 20,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            455
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 1365,
+          "selected_sources": 19,
+          "unshifted_pair_count": 19,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            4,
+            455
+          ]
+        }
+      ]
+    },
+    {
+      "floor": 32,
+      "prefix_tolerance": 1,
+      "tail_syracuse_length": 1,
+      "prefix_lengths": [
+        1,
+        4
+      ],
+      "source_interval": [
+        [
+          5455,
+          6
+        ],
+        [
+          5455,
+          3
+        ]
+      ],
+      "intermediate_interval": [
+        256,
+        512
+      ],
+      "eligible_tail_endpoints": 5,
+      "complete_good_word_counts": {
+        "1": 3,
+        "2": 8,
+        "3": 21,
+        "4": 55
+      },
+      "relative_offset_bound": [
+        259,
+        32768
+      ],
+      "coarse_relative_offset_bound": [
+        81,
+        256
+      ],
+      "classes": [
+        {
+          "source_class": "all",
+          "normalizing_sources": 454,
+          "selected_sources": 2,
+          "unshifted_pair_count": 3,
+          "complete_marked_L1_error": [
+            1,
+            454
+          ],
+          "changed_pairs": 1,
+          "single_length_boundary_sources": 11,
+          "source_layer_bound": [
+            22,
+            227
+          ]
+        },
+        {
+          "source_class": "0",
+          "normalizing_sources": 151,
+          "selected_sources": 0,
+          "unshifted_pair_count": 1,
+          "complete_marked_L1_error": [
+            1,
+            151
+          ],
+          "changed_pairs": 1,
+          "single_length_boundary_sources": 4,
+          "source_layer_bound": [
+            16,
+            151
+          ]
+        },
+        {
+          "source_class": "1",
+          "normalizing_sources": 151,
+          "selected_sources": 1,
+          "unshifted_pair_count": 1,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 3,
+          "source_layer_bound": [
+            12,
+            151
+          ]
+        },
+        {
+          "source_class": "2",
+          "normalizing_sources": 152,
+          "selected_sources": 1,
+          "unshifted_pair_count": 1,
+          "complete_marked_L1_error": [
+            0,
+            1
+          ],
+          "changed_pairs": 0,
+          "single_length_boundary_sources": 4,
+          "source_layer_bound": [
+            2,
+            19
+          ]
+        }
+      ]
+    }
+  ]
+}

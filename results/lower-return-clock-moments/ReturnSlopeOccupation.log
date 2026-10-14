@@ -1,0 +1,13 @@
+'ReturnSlopeOccupation.numerator_cap' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.common_step' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.returned_right_bound' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.returned_left_bound' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.returned_separation_cap' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.logarithmic_step_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnSlopeOccupation.logarithmic_constants' does not depend on any axioms
+'ReturnSlopeOccupation.tilted_tail_shift' depends on axioms: [propext]
+'ReturnSlopeOccupation.inward_green_source' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.tilted_clock_budget' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.macro_drift_budget' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.macro_mass_budget' depends on axioms: [propext, Quot.sound]
+'ReturnSlopeOccupation.occupation_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
