@@ -1745,6 +1745,76 @@ remain written and use no external analytic theorem. These results
 do not establish actual-gradient control, exclude escape or additional
 cycles, or settle Collatz.
 
+The [slope occupation argument](docs/RETURN-SLOPE-OCCUPATION.md) now
+controls cumulative slopes over all count returns, including every
+one-step return and terminal fusion. For initially adjacent inputs,
+`E sum_j Lambda_j<=44` and `E sum_j Lambda_j h_j<=70`, where `h_j` is
+the length since the preceding return. These are weighted budgets;
+they do not bound the unweighted physical fusion clock.
+
+Under the slope tilt, an odd-separation excursion returns with
+probability one half. Conditional on returning, its mean clock is at
+most 27. Grouping the consecutive returns at even separation and using
+`log_2(D+1)` gives a contracting killed drift. This avoids the large
+unweighted cycle-count constant. For the even-source image columns it
+proves `sum_i ||p_i F_i||_2^2<=44` and the same diagonal sum weighted
+by excursion length is at most 70. It does not bound the squared norm
+of their sum: actual overlapping columns have positive cross terms.
+
+Thirteen kernel arithmetic roots and exact finite checks passed,
+including all returns on 69,888 finite paths and a direct computation
+of truncated image-density norms with their cross terms. The infinite
+probability and logarithmic arguments remain written. The needed
+overlap estimate, actual forward-loss pairing, temporal criterion Q,
+and both parts of Collatz remain unresolved.
+
+The [comparable-source overlap argument](docs/RETURN-ANCESTRAL-OVERLAP.md)
+now bounds all cross terms whose binary source prefixes are nested.
+Under the slope tilt, a fresh odd-separation clock conditioned on returning
+has second moment at most 6369. A squared logarithmic drift then gives
+`E sum_j Lambda_j log_2(D_j+1)<=12383` for adjacent inputs, including
+all one-step returns; fusion contributes zero logarithmic cost.
+
+Under the original binary law, the mean remaining fusion count from any
+fresh separation D is at most `C_star+100 log_2(D+1)+2`, where
+`C_star=540*2^5180`. For a nested pair of source prefixes, bound their
+image intersection by the shallower slope and apply this restart estimate.
+The total diagonal plus nested-source cross energy is at most
+`88 C_star+2476820`. Thus the full return density belongs to Haar `L2`
+if and only if its disjoint-source cross sum is finite. Finiteness or
+divergence of that remaining sum is unproved.
+
+Twelve kernel arithmetic roots, nine fresh sequential builds and exact
+finite checks passed. The energy decomposition was checked independently
+by binary source paths and prefix lookup through clock sixteen, with
+full pair enumeration through clock twelve. Probability, logarithmic
+moments and infinite energy arguments remain written. No external
+analytic theorem is used. This does not establish an actual-gradient
+bound, criterion Q, escape exclusion or exclusion of additional cycles.
+
+The [lower-endpoint energy argument](docs/LOWER-RETURN-ENERGY.md)
+now controls some disjoint-source collisions after changing the endpoint
+label and grouping returns. Although the initially even correction has
+infinite mean, clipping it at the returned slope times the initial
+separation gives mean at most `12 log_2(D+1)`. The proof uses a
+fractional moment of the reciprocal-slope perpetuity under the tilt.
+
+The smaller formal endpoint consequently has finite total mean
+coefficient over nonfused ends of odd-separation excursions, bounded by
+`4100+36000 C_star`. Selecting the smaller actual endpoint of an even
+source pair preserves distinct source inputs in the full binary period.
+Quotient injection then bounds the sum of the ENTIRE squared image norms
+at each fixed clock and common odd count by `8200+72000 C_star`.
+This includes cross terms between disjoint sources within each component.
+
+Eleven kernel arithmetic roots, thirteen fresh builds and exact finite
+checks passed; the probability and infinite energy arguments remain
+written. The squared pairwise gradient is invariant under the endpoint
+relabeling, but the one-endpoint density changes. Products between
+different clock/count components and the omitted one-step returns remain
+uncontrolled in this bound. No full `L2` estimate, actual-gradient
+criterion Q, or exclusion of escape or additional cycles follows.
+
 ## Reproduction
 
 ```sh
@@ -1835,6 +1905,12 @@ python3 verify_annulus_time_budgets.py
 python3 verify_return_affine_budget.py
 python3 verify_two_coordinate_review.py
 python3 verify_active_gap_potential.py
+python3 verify_integer_return_cesaro.py
+python3 verify_harmonic_return_trace.py
+python3 verify_return_slope_tilt.py
+python3 verify_return_slope_occupation.py
+python3 verify_return_ancestral_overlap.py
+python3 verify_lower_return_energy.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

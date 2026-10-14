@@ -1,0 +1,11 @@
+'LowerReturnEnergy.lower_formal_identity' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.lower_endpoint_augmented' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.selected_even_source_injective' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.selected_even_source_in_period' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.lower_continuation_bound' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.root_chord_endpoints' does not depend on any axioms
+'LowerReturnEnergy.geometric_numerator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LowerReturnEnergy.grouped_minimum_drift' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.grouped_minimum_budget' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.lower_budget_constants' depends on axioms: [propext, Quot.sound]
+'LowerReturnEnergy.component_energy_budget' depends on axioms: [propext, Quot.sound]

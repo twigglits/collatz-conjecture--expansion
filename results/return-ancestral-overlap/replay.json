@@ -1,0 +1,183 @@
+{
+  "counts": {
+    "exact_geometric_second_moment_identity_pairs": 257,
+    "finite_inward_clock_potential_checks": 2016,
+    "finite_killed_clock_second_moment_budgets": 63,
+    "finite_group_square_drift_budgets": 129,
+    "exact_logarithmic_restart_tail_checks": 8,
+    "direct_zero_gap_second_moment_paths": 8188,
+    "zero_gap_square_and_total_log_cost_bounds": 44,
+    "direct_fresh_second_clock_paths": 17408,
+    "partial_slope_clock_square_bounds": 16,
+    "direct_all_return_paths": 69888,
+    "direct_nonfused_logarithmic_return_costs": 66510,
+    "capped_actual_group_square_drift_checks": 18,
+    "actual_binary_ancestor_pairs": 3778,
+    "independent_positive_column_pair_products": 840,
+    "independent_full_pair_energy_decompositions": 2,
+    "exact_source_path_and_prefix_overlap_identifications": 3,
+    "actual_source_path_image_intersections": 777,
+    "compatible_binary_ancestor_pairs": 129
+  },
+  "logarithm_precision": 1099511627776,
+  "logarithm_method": "Authenticated positive atanh series and rational remainder from the preceding verifier.",
+  "fresh_clock_square_checks": [
+    {
+      "D": 1,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 54,
+      "partial_slope_times_clock_square": "72585/8192"
+    },
+    {
+      "D": 1,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 45,
+      "partial_slope_times_clock_square": "9399/2048"
+    },
+    {
+      "D": 1,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 686,
+      "partial_slope_times_clock_square": "19192887/1048576"
+    },
+    {
+      "D": 1,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 606,
+      "partial_slope_times_clock_square": "226929/32768"
+    },
+    {
+      "D": 3,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 56,
+      "partial_slope_times_clock_square": "4377/2048"
+    },
+    {
+      "D": 3,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 54,
+      "partial_slope_times_clock_square": "61995/8192"
+    },
+    {
+      "D": 3,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 718,
+      "partial_slope_times_clock_square": "3789165/524288"
+    },
+    {
+      "D": 3,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 712,
+      "partial_slope_times_clock_square": "21340947/2097152"
+    },
+    {
+      "D": 9,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 56,
+      "partial_slope_times_clock_square": "18891/2048"
+    },
+    {
+      "D": 9,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 48,
+      "partial_slope_times_clock_square": "21/8"
+    },
+    {
+      "D": 9,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 721,
+      "partial_slope_times_clock_square": "27780345/2097152"
+    },
+    {
+      "D": 9,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 652,
+      "partial_slope_times_clock_square": "2814519/524288"
+    },
+    {
+      "D": 31,
+      "H": 8,
+      "first_parity": 0,
+      "unresolved": 43,
+      "partial_slope_times_clock_square": "33249/8192"
+    },
+    {
+      "D": 31,
+      "H": 8,
+      "first_parity": 1,
+      "unresolved": 53,
+      "partial_slope_times_clock_square": "93789/8192"
+    },
+    {
+      "D": 31,
+      "H": 12,
+      "first_parity": 0,
+      "unresolved": 590,
+      "partial_slope_times_clock_square": "3754659/524288"
+    },
+    {
+      "D": 31,
+      "H": 12,
+      "first_parity": 1,
+      "unresolved": 667,
+      "partial_slope_times_clock_square": "34472241/2097152"
+    }
+  ],
+  "overlap_trees": [
+    {
+      "H": 8,
+      "population": 256,
+      "unmerged_at_cap": 174,
+      "columns": 7,
+      "slope_log_cost_interval": [
+        "32563950797535951/72057594037927936",
+        "32563950797540649/72057594037927936"
+      ],
+      "diagonal_energy": "99/8192",
+      "nested_source_cross_energy": "0",
+      "disjoint_source_cross_energy": "333/32768",
+      "full_squared_norm": "729/32768"
+    },
+    {
+      "H": 12,
+      "population": 4096,
+      "unmerged_at_cap": 2620,
+      "columns": 166,
+      "slope_log_cost_interval": [
+        "13905852473567421093/18446744073709551616",
+        "13905852473570129733/18446744073709551616"
+      ],
+      "diagonal_energy": "1049013/16777216",
+      "nested_source_cross_energy": "15705/1048576",
+      "disjoint_source_cross_energy": "963729/4194304",
+      "full_squared_norm": "5155209/16777216"
+    },
+    {
+      "H": 16,
+      "population": 65536,
+      "unmerged_at_cap": 40295,
+      "columns": 2552,
+      "slope_log_cost_interval": [
+        "2385071138401037852577/2361183241434822606848",
+        "4770142276803062666907/4722366482869645213696"
+      ],
+      "diagonal_energy": "461042127/4294967296",
+      "nested_source_cross_energy": "8819973/536870912",
+      "disjoint_source_cross_energy": "822142611/1073741824",
+      "full_squared_norm": "3820172355/4294967296"
+    }
+  ],
+  "infinite_scope": "None. The infinite clock moments, logarithmic occupation, restart bound and comparable-source energy are written."
+}

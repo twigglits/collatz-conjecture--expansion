@@ -1,6 +1,6 @@
 # Collatz project memory
 
-Last updated: 2026-10-14 local time, after the return-slope tilt argument proved WRITTEN exact slope means and infinite first separation moments, sharpening the below-one correction and occupation tails. Nine new kernel arithmetic roots and exact finite checks passed. The Haar separation range beta<1 is sharp for L1; actual-gradient control and Collatz remain unresolved.
+Last updated: 2026-10-14 local time, after the WRITTEN smaller-endpoint coefficient and complete component-energy budgets for grouped returns. Eleven new kernel arithmetic roots and exact finite checks passed. Cross-component overlaps, omitted one-step returns, actual-gradient control and Collatz remain unresolved.
 
 **Current status: active following the user's resumption.** Collatz remains
 unresolved. The external predecessor-density replay has passed all 389
@@ -287,6 +287,44 @@ infinite stopping and probability arguments remain written. No external
 analytic theorem is needed. The optimal density p exponent, actual
 gradient estimate, escape exclusion, and other-cycle exclusion remain
 open. See the last dated entry for verification and the precise law.
+
+The newest occupation argument proves WRITTEN bounds of 44 for the
+expected sum of cumulative slopes over every count return, and 70 for
+the sum weighted by each return's excursion length, from adjacent inputs.
+Terminal fusion and all one-step returns are included. The conditional
+tilted odd-separation return clock has mean at most 27; grouping the
+even-separation returns gives a killed logarithmic drift. This yields
+finite total individual-column squared Haar mass, but does NOT bound
+the cross terms in the squared norm of the full return density.
+Thirteen new kernel arithmetic roots and exact finite checks passed.
+No external analytic theorem is needed. The earlier infinite first
+separation moment remains valid; these are different weighted budgets.
+The actual forward-gradient estimate and Collatz remain unresolved.
+
+The newest overlap argument proves WRITTEN finite total cross energy
+for nested binary source prefixes. The return-conditioned tilted clock
+has second moment at most 6369; squared logarithmic drift gives
+E sum_j Lambda_j log_2(D_j+1)<=12383. An original-law restart from
+separation D has mean fusion count at most C_star+100 log_2(D+1)+2.
+Consequently the diagonal plus nested-source cross energy is at most
+88 C_star+2476820, with C_star=540*2^5180. The complementary overlaps
+between disjoint binary source cylinders remain uncontrolled. Twelve
+new kernel arithmetic roots and exact finite energy decompositions
+passed; the infinite arguments remain written. No external analytic
+theorem is used, and no full L2 or actual-gradient bound is established.
+
+The newest lower-endpoint argument proves WRITTEN finite total mean
+coefficient over nonfused ends of odd-separation excursions. Clipping
+the initially even correction at lambda*D costs at most 12log_2(D+1),
+despite its infinite untruncated mean. Grouped minimum drift gives
+coefficient budget 4100+36000C_star, and quotient injection bounds the
+sum of ENTIRE fixed-clock, fixed-count lower-image squared norms by
+8200+72000C_star. Eleven kernel arithmetic roots and exact finite checks
+passed. These norms include internal disjoint-source cross terms.
+Changing endpoint labels preserves pairwise squared gradients but
+changes the density; grouping omits the intervening one-step returns.
+Cross-component overlaps and a complete actual-gradient estimate remain
+open. No full L2, escape or additional-cycle exclusion is established.
 
 This file records continuity, not an additional mathematical proof. Check
 current source files and their verification manifests before relying on a
@@ -6480,3 +6518,461 @@ All work is terminal. No agents, installations, credentials, staging,
 commits, or other Git writes were used. The user committed the preceding
 milestones during the turn; their index and changes were preserved.
 The unbounded Collatz goal remains active.
+
+## 2026-10-14: summable cumulative slopes over all count returns
+
+This goal turn is progress. A new WRITTEN argument proves, for adjacent
+inputs under the coherent binary residue law,
+  E sum_(1<=j<=N) Lambda_j <=44,
+  E sum_(1<=j<=N) Lambda_j h_j <=70.
+Here S_j is the jth positive equal-count return, Lambda_j=3^a_j/2^S_j
+is the CUMULATIVE slope, h_j=S_j-S_(j-1), and N is first balanced
+fusion. The terminal fusion and every one-step return are included.
+This does not improve E N or the unweighted physical fusion clock.
+Collatz, the actual-gradient estimate and Q remain unresolved.
+
+Files:
+  docs/RETURN-SLOPE-OCCUPATION.md
+  lean/ReturnSlopeOccupation.lean
+  verify_return_slope_occupation.py
+  results/return-slope-occupation/verification.json
+  results/return-slope-occupation/replay.json and eight build logs.
+README and ATTEMPT link the result. Earlier authenticated notes were
+not modified; the previous critical first-moment result remains valid.
+
+RETURN-CONDITIONED TILT:
+Fix one endpoint and tilt the entire binary law by its slope martingale.
+At a fresh odd separation, its next parity is odd with probability 3/4.
+That positive signed count excursion returns with probability 1/3;
+the initially even case, probability 1/4, returns with probability one.
+Total tilted return probability is therefore 1/2, at EVERY such prefix.
+
+Condition on a return. The harmonic factor 3^-k changes the outward
+3/4 active walk to inward 3/4. In the initially even case it already
+has inward probability 3/4. Holds preserve k, so their return-probability
+factor cancels under conditioning. Their tilted tail remains
+min(1,2^v(k)(3/4)^h), where v(k)=v_2(3^k-1).
+Hence expected wait, including the next active step, is <=3v(k)+4:
+split the tail at 3v(k), using (27/32)^v<=1, then sum the geometric tail.
+
+The inward walk's finite Green row from one on [0,K] is
+4(3^(K-k)-1)/(3^K-1), increasing to 4*3^-k at each k>=1.
+Using v(k)<2k and adding the initial departure yields
+  E_tilt[tau | return] <=1+4 sum_(k>=1)3^-k(6k+4)=27.
+Thus the ORIGINAL fresh E[lambda_tau*tau]<=27/2 for odd D, including
+either conditional initial parity. For even D the unconditioned mean
+is one because tau=1. All unbounded change-of-measure identities sum
+nonnegative finite return cylinders, without a UI assumption.
+
+GROUPED DRIFT AND ALL RETURNS:
+At equal counts with D>0, exactly v_2(D) consecutive one-step returns
+occur before D becomes odd. Common parity gives D'=D/2 or 3D/2 with
+tilted probabilities 1/4,3/4, and removes one factor two each step.
+There is no fusion during those positive-separation steps.
+
+Set ell(D)=log_2(D+1). The polynomial identity
+  (3D+2)^3(D+2)+18D^2+28D+11=27(D+1)^4
+and 3^5<2^8 give E_tilt ell(D')<=ell(D)+1/5. Since v_2(D)<=ell(D),
+the odd separation Dbar after that run satisfies
+  E_tilt ell(Dbar)<=6 ell(D)/5.
+
+New kernel arithmetic gives numerator(t,n)+2^t<=3^t, and at EQUAL
+counts D_next+1<=(3/2)^tau(D+1). This is not a bound at intermediate
+opposite-parity steps. The tilted returned clock bound therefore gives
+  E_tilt[ell(D_next) 1_return | Dbar] <=ell(Dbar)/2+81/10.
+Fusion contributes ell(0)=0.
+
+Group each complete zero-gap run with the following odd-separation
+excursion. Stop on fusion or a tilted excursion that never returns.
+Let q_j be the mass starting a nonfused group and l_j its ell(D) mass.
+Then q_0=1, l_0=ell(D_0),
+  q_(j+1)<=q_j/2,  l_(j+1)<=3 l_j/5+81 q_j/10.
+Finite telescoping yields
+  sum q_j<=2, sum l_j<=(5/2)ell(D_0)+81/2.
+Each group supplies expected return count <=ell(D)+1/2 and returned
+excursion-length cost <=ell(D)+27/2, including a terminal fusion.
+Tilted occupation equals original slope-weighted occupation by Tonelli.
+This gives general bounds
+  (5/2)log_2(D_0+1)+83/2,
+  (5/2)log_2(D_0+1)+135/2,
+and 44,70 for D_0=1. No use of the huge earlier E N constant is needed.
+
+IMAGE CONSEQUENCE / PRECISE REMAINING OVERLAP:
+For each even-source nonfused prefix, p_i=2^-t_i and
+F_i=3^a_i 1_(z=x_i mod3^a_i). Its individual squared Haar norm is
+  ||p_i F_i||_2^2=p_i^2 3^a_i=p_i Lambda_i.
+Therefore sum_i ||p_i F_i||_2^2<=44 and the same sum with weight h_i
+is <=70. Excursions of age greater than L contribute diagonal mass
+at most 70/L. The age h_i is NOT the total source clock t_i.
+This is NOT an L2 bound for K*_0=sum_i p_i F_i; cross terms are missing.
+Actual prefixes (t,r,a,x)=(6,48,2,8) and (7,74,3,17) have disjoint
+binary sources but nested ternary images and cross inner product
+9/8192. The finite verifier includes all cross terms in truncated norms.
+
+VERIFICATION:
+Final record passed 2026-10-13T22:33:13.602180+00:00 (2026-10-14 local).
+Eight fresh sequential builds took 3.246 seconds on pinned Lean 4.33.1
+commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Thirteen audited
+roots use only standard axioms; no warnings, admissions or native
+computation. Twenty-three hashes record the new sources and artifacts.
+The prior slope-tilt 22 hashes and occupation 29 hashes were authenticated.
+All probability, logarithmic, infinite Green and occupation steps remain
+written. No external analytic theorem or compiled library is used.
+
+Exact finite checks passed:
+2,016 inward Green values, 128 conditioned active-transition pairs,
+512 partial clock budgets, 1,089 tail-shift comparisons, 1,025
+logarithmic polynomial values, 516 rational grouped-drift budgets;
+209,664 conditioned holding paths, 1,152 direction-ratio checks,
+144 bounded wait means; 1,536 zero-gap paths and 132 logarithmic
+drift checks; 174,578 affine correction cap pairs; 26,112 fresh
+return paths, 17,486 equal-count separation caps and 24 conditional
+clock budgets; 69,888 all-return paths through clocks 8,12,16,
+93,309 completed return/age contributions and 18 grouped-drift pairs.
+Three exact column-diagonal identity pairs, 1,597 ternary cylinder
+energy terms, one independent whole-period energy calculation, and
+three positive overlap witnesses passed. Logs use 32 positive atanh
+terms plus an explicit remainder and outward rounding to precision
+2^40. No floating-point value decides any check.
+
+At H=16 the all-source partial slope sum, INCLUDING fusion, is
+3396379515/4294967296; the age-weighted sum is 211291431/67108864.
+The even-source NONFUSED diagonal squared mass is
+461042127/4294967296, whereas the full truncated squared norm is
+3820172355/4294967296. These are finite values, not limit estimates.
+Unfinished paths remain unfinished.
+
+EXPLORATION AND NEXT ACTION:
+A separate floating exploratory census measured full future squared
+gradients on the fixed return progression x=9q+8, 2^k<=q<2^(k+1),
+3<=k<=13. Every tested trajectory reached the known cycle; its tail
+was then summed geometrically. Mean gradient costs stayed around
+6.5--9.3, while sixth norms grew roughly 18--40. These are exploratory
+displays only, not exact certificates or a uniform norm claim; the
+finite data neither prove nor refute the desired gradient estimate.
+
+The new exact slope budget controls individual image columns but not
+their overlap. A next useful target is the cross sum, or a direct
+estimate retaining correlations of those columns with actual future
+losses. Do not promote the diagonal bound to Haar L2, an ordinary
+integer sampling theorem, or Q. Escape and other positive cycles
+remain unexcluded.
+
+All jobs are terminal. No agents, installations, credentials, staging,
+commits, or other Git writes were used. Preserve the user's concurrent
+index and source changes. The unbounded Collatz goal remains active.
+
+## 2026-10-14: finite energy from nested binary source prefixes
+
+This goal turn is progress. The new WRITTEN argument controls all
+return-column cross terms from nested binary source prefixes, leaving
+exactly the disjoint-source cross sum unresolved in the Haar L2
+decomposition. It does not prove Q, bound actual forward gradients,
+exclude escape or other positive cycles, or solve Collatz.
+
+Files:
+  docs/RETURN-ANCESTRAL-OVERLAP.md
+  lean/ReturnAncestralOverlap.lean
+  verify_return_ancestral_overlap.py
+  results/return-ancestral-overlap/verification.json
+  results/return-ancestral-overlap/replay.json and nine build logs.
+README and ATTEMPT link the result. Existing authenticated research
+notes were not changed. The previous slope and separation results
+retain their stated scope.
+
+SECOND CLOCK MOMENT:
+Condition the endpoint slope tilt on a fresh odd-separation return.
+The absolute active gap is the inward-3/4 walk. At each finite prefix
+with gap k, W includes the next active step and is stochastically
+bounded by 3v(k)+G, with v(k)=v_2(3^k-1)<2k, E G=4, E G^2=28.
+Consequently E W<=6k+4 and E W^2<=36k^2+48k+28.
+
+Set V(k)=6k^2+20k. Its inward-walk curvature is 6k+4; bounded
+active-block stopping gives mean remaining physical clock <=V(k).
+In the square expansion, bound the next-state potential by V(k+1)
+before multiplying by W. This avoids assuming duration/direction
+independence. The per-visit cost is
+  c2(k)=72k^3+468k^2+616k+236.
+The Green row 4*3^-k gives 4 sum_k 3^-k c2(k)=6316.
+Add the initial departure and the earlier mean remaining clock 26:
+  E_tilt[tau^2 | return]<=1+52+6316=6369.
+Apply the expansion at finite active-block cutoffs first; the bounds
+there are finite and monotone convergence supplies the full moment.
+
+SLOPE-WEIGHTED LOGARITHMIC OCCUPATION:
+For the grouped return chain, ell(D)=log_2(D+1), q is surviving
+mass, l its ell mass, and m its ell^2 mass. Initially q=l=m=1.
+The preceding result gives sum q<=2 and sum l<=43.
+
+On a zero-gap common step, delta=ell(D')-ell(D) has mean <=1/5,
+and mean square <=13/25 under tilted parity probabilities 1/4,3/4.
+After v=v_2(D)<=ell(D) steps, with L=ell(D),
+  E ell(Dbar)^2<=36L^2/25+12L/25.
+The odd excursion returns with probability 1/2 and satisfies
+ell(Dnext)<=ell(Dbar)+(3/5)tau. Its two clock moments yield
+  m_next<=18m/25+492l/25+57321q/50.
+Finite telescoping gives
+  sum m<=(50+984*43+57321*2)/14=78502/7<11215.
+
+The one-step returns in a group have total mean logarithmic cost
+<=11L^2/10+L/10. Odd-return costs are the next group-start logs;
+their sum is <=42, and fusion contributes zero. Therefore
+  E_tilt sum_(all completed returns) ell(D_j)<=61914/5<12383.
+Summing the finite return-cylinder likelihood ratios gives
+  E_original sum_(j=1..N) Lambda_j ell(D_j)<=12383.
+This is cumulative slope, and the law is the coherent binary residue
+law, not a fixed finite interval of integers followed forever.
+
+ORIGINAL-LAW RESTART AND NESTED OVERLAPS:
+For arbitrary D, the earlier killed fourth-root drift gives a
+return-count hitting tail <=D^(1/4)q^n/400 for entry into D<=400^4,
+where q=399/400. The kernel inequality 2*399^400<400^400 and
+n0=ceil(100log_2(D+1)) make the tail after n0 sum to at most one.
+Uniform compact-state attempts cost at most C_star=540*2^5180.
+Thus at every fresh finite prefix,
+  E_original N<=C_star+100log_2(D+1)+2.
+
+For a proper binary ancestor i of j, a_i<=a_j, and
+  p_i p_j integral F_i F_j<=Lambda_i p_j.
+The continuation prefix has conditional probability p_j/p_i.
+Sum over future returns using the restart bound, then over ancestors
+using the preceding total slope 44 and the new logarithmic bound:
+  diagonal+2*nested_cross_sum<=88C_star+2476820.
+Any two binary cylinders are nested or disjoint. Hence full K*_0
+belongs to Haar L2 iff the remaining disjoint-source cross sum is
+finite. Neither that finiteness nor its failure is proved here.
+Full L2 is not asserted necessary for Collatz or sufficient by itself.
+
+VERIFICATION:
+Final record passed 2026-10-13T23:03:05.536117+00:00 (14 October local).
+Nine fresh sequential builds took 3.517 seconds on pinned Lean 4.33.1
+commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Twelve audited
+arithmetic roots use standard axioms only; no warnings, admissions
+or native computation. Twenty-seven source/artifact hashes were
+recorded. Prior slope-occupation, occupation-density and correction
+records authenticated 23, 29 and 21 hashes respectively.
+The infinite probability, logarithm and energy steps remain written;
+no external analytic theorem or compiled library is used.
+
+Exact finite checks passed:
+257 geometric second-moment identity pairs; 2,016 finite inward-clock
+potential values and 63 killed second-moment budgets; 129 group-square
+telescoping budgets; eight logarithmic restart tail comparisons through
+D=2^128; 8,188 actual zero-gap paths and 44 square/total-log bounds;
+17,408 fresh odd-separation paths with 16 partial second-clock bounds.
+All-return trees use 69,888 paths through clocks 8,12,16, with 66,510
+nonfused logarithmic costs and 18 capped group-square drift checks.
+The overlap audit counts 3,778 binary ancestor pairs, of which 129
+have compatible images, and 777 source-path image intersections.
+Three exact path/prefix identifications and two independent all-pair
+decompositions passed, with 840 positive finite pair products.
+Logarithms use the authenticated rational enclosure at precision
+2^40; no floating-point value decides a check. Unfinished paths remain
+unfinished, and finite sums are not extrapolated.
+
+At H=16, the even-source nonfused energy splits as
+  diagonal = 461042127/4294967296,
+  nested-source cross = 8819973/536870912,
+  disjoint-source cross = 822142611/1073741824,
+  full squared norm = 3820172355/4294967296.
+The cross terms here already include their factor two.
+
+LOCAL CLONE AND EXPLORATION:
+The user-provided clone was reconfirmed clean at
+a7275d5a73814d3d9a400c6fe6577de9542b03a3. The existing source review
+is docs/LOCAL-OBSTRUCTION-REPO-REVIEW.md. Its external stationary
+majorant supplies uniform full-image Lp for p<2, but not the selected
+return cross correlations. No new external Lean replay was performed.
+
+A separate exact exploratory tree through H=22 gave full return
+squared norm 8824364377245/4398046511104, about 2.00643.
+For the FULL binary-image density b_t=L^t1, algebra gives
+  ||b_(t+1)||_2^2=||b_t||_2^2+
+    (1/2) integral b_t(y)b_t(3y+1) dmu_3.
+Finite computations through 22 kept the correlation <=1; no uniform
+correlation bound, linear energy theorem, or limiting growth law was
+proved or adopted from those computations. The external Fourier
+total-exponent selection still does not cover our paired return masks.
+
+NEXT ACTION:
+Study the disjoint-source cross sum or an estimate retaining its
+correlation with actual forward losses. The nested-source estimate
+does not bridge Haar integration to an infinite cutoff on actual
+integer intervals. The actual-gradient criterion Q, escape and other
+cycles remain unresolved.
+
+All processes are terminal. No agents, installations, credentials,
+staging, commits or other Git writes were used. The user's existing
+index and concurrent changes were preserved. The full goal stays active.
+
+## 2026-10-14: lower-endpoint coefficient and grouped component energy
+
+This goal turn is progress. The new WRITTEN argument controls the
+complete fixed-clock, fixed-count image energies of smaller endpoints
+at grouped returns. It includes internal cross terms from disjoint
+binary sources. The endpoint convention and the selected return set
+differ from K*_0; no full norm, Q or Collatz conclusion is established.
+
+Files:
+  docs/LOWER-RETURN-ENERGY.md
+  lean/LowerReturnEnergy.lean
+  verify_lower_return_energy.py
+  results/lower-return-energy/verification.json
+  results/lower-return-energy/replay.json and thirteen build logs.
+README and ATTEMPT link the result. Earlier authenticated notes and
+verification records were preserved.
+
+FORMAL MINIMUM:
+At an equal-count prefix, the two formal images of starting values
+one and two are Lambda+B0 and 2Lambda+B1. Put
+  P=min(Lambda+B0,2Lambda+B1).
+Their separation is the actual positive integer D. Their ordering is
+also the ordering of the actual endpoints: the latter add the same
+Lambda*(n-1). The formal values are P and P+D, although they need not
+be iterates of the ordinary integers one and two.
+
+At a fresh equal-count return,
+  Pnext=lambda*P+min(b_lower,lambda*D+b_higher).
+The kernel lower_formal_identity checks
+  2^t min(U^t(n),U^t(n+1))+3^a=3^a*n+lowerAugmented(t,n).
+If endpoint n+e is the smaller one, its augmented coefficient is at
+most lowerAugmented. For even sources, choosing e in {0,1} preserves
+distinct source inputs and keeps them inside the same full period.
+
+CLIPPED SLOW CORRECTION:
+At odd separation, label the initially odd endpoint F and initially
+even endpoint S. The existing conditional laws are
+  E lambda=1/2, E b_F<=5/4, E b_S=infinity.
+The new estimate is instead
+  E min(b_S,lambda*D)<=12log_2(D+1).
+
+Condition on the first parity and use the S endpoint slope tilt.
+Its first multiplier is 1/2; subsequent parity bits are iid with
+odd probability 3/4. S has inward active probability 3/4, so its
+return has tilted probability one. Let
+  R_h=(1/3) sum_(j=1..h) 1_odd(j) product_(i<j) m_i^-1,
+where m_i=3^epsilon_i/2. Then b_S/lambda=2 R_(tau-1).
+For 1/2<=eta<1, subadditivity gives
+  E_tilt R_infty^eta <= 3^(1-eta)/(4(1-r_(1-eta))),
+  r_u=(2^-u+(3/2)^u)/2.
+The kernel root comparisons give r_(1/2)<31/32; convexity gives
+1-r_u>=u/16 for 0<=u<=1/2.
+
+The finite-cylinder change of measure, including the initial factor
+one half, therefore gives
+  E min(b_S,lambda D)
+  <=(3/8)(2/3)^eta D^(1-eta)/(1-r_(1-eta))
+  <=6 D^(1-eta)/(1-eta).
+For odd D>=3 choose eta=1-1/log_2(D+1), obtaining 12log_2(D+1).
+For D=1 the bound E lambda=1/2 is enough. No first moment of the
+reciprocal-slope perpetuity or optional-stopping equality is assumed.
+
+GROUPED MINIMUM BUDGET:
+If the lower endpoint is F, bound the extra minimum by b_F.
+If it is S, use b_F+min(b_S,lambda D). The two initial parity cases
+have probability one half. Consequently
+  E Pnext<=P/2+5/4+6ell(D), ell(D)=log_2(D+1), D odd.
+For the first adjacent return a simpler selection of F gives the
+sharper all-source bound E Pnext<=2 (conditional bounds 7/4 and 9/4).
+
+Before an odd-separation excursion there are v=v_2(D) one-step
+returns. Under the ORIGINAL fair law, E Pbar=P+v/4, while D has
+constant mean and Jensen gives E ell(Dbar)<=ell(D). Since v<=ell(D),
+  E P_group_next<=P/2+49ell(D)/8+5/4.
+Kill the process at fusion. If q,l,p are group-start probability,
+logarithmic separation mass and formal-minimum mass, then
+  8p_next<=4p+49l+10q.
+The old return-count and fourth-root budgets give
+  sum q<=C_star, sum l<=328+2880C_star.
+The latter follows from log_2(D+1)<=8D^(1/4), with harmless slack.
+Finite telescoping yields
+  sum p<=4020+(70565/2)C_star<4100+36000C_star.
+Nonfused grouped returns are exactly the next group starts.
+This does NOT sum the coefficient over every intervening one-step
+return; that would require an additional mixed moment with v_2(D).
+
+COMPONENT ENERGY:
+For even-source, nonfused grouped-return prefixes, let y be the
+smaller endpoint and form kappa_low_(t,a) from every prefix with that
+fixed physical clock t and common count a. Distinct even sources give
+distinct chosen endpoints r+e in [0,2^t). Existing quotient injection
+and the new coefficient comparison yield
+  ||kappa_low_(t,a)||_2^2
+       <=2 sum_(i at t,a) 2^-t C_lower_i
+       <=2 sum_(i at t,a) 2^-t P_i.
+Hence sum_(t,a)||kappa_low_(t,a)||_2^2<=8200+72000C_star.
+Unlike an individual-column diagonal bound, this includes every
+disjoint-source collision INSIDE each component.
+
+Products BETWEEN different components remain missing. The squared
+pair gradient is unchanged by relabeling the smaller endpoint first,
+but the one-endpoint sampling density is changed. No argument here
+allows omitting the one-step returns from the whole energy transport.
+Neither the original all-return K*_0 nor the sum of these new
+components has a proved full L2 bound.
+
+VERIFICATION:
+Final record passed 2026-10-13T23:33:51.847484+00:00 (14 October local).
+Thirteen fresh sequential builds took 4.972 seconds on pinned Lean
+4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Eleven roots use standard axioms only; no warnings, admissions or
+native computation. Thirty-four hashes record sources and artifacts.
+Prior affine-budget, slope-tilt and correction records authenticated
+28, 22 and 21 hashes respectively.
+
+Exact finite checks passed:
+65,536 minimum-continuation inequalities; 2,860 geometric identities;
+129 finite grouped telescoping checks; four fractional chord/clipping
+comparisons; 4,352 independently enumerated tilted perpetuity words;
+8,188 zero-gap paths and 44 mean/logarithmic drift groups.
+Fresh return trees used 419,328 actual paths, retaining unresolved
+ones, with 300,141 clipping/formal identities and 36 conditional
+partial budgets. Grouped trees used 69,888 paths through 8,12,16,
+93,309 equal-count formal identities, 10,068 even-source grouped
+path visits and 18 capped grouped drift checks.
+The image audit checked 1,501 quotient fibres and 88 whole component
+energy bounds. Two independent full pair decompositions counted 799
+positive column products. Powers use precision 2^48 and logarithms
+2^40; no float decides a check. Infinite analysis remains written.
+
+At H=16, the even-source lower grouped density has 1,486 columns in
+58 clock/count components. Its exact finite values are
+  minimum coefficient cost = 945335273/4294967296,
+  selected endpoint augmented cost = 43888745/268435456,
+  column diagonal = 243856827/4294967296,
+  sum of entire component norms squared = 246148317/4294967296,
+  internal disjoint-source cross energy = 1145745/2147483648,
+  cross-component energy = 198196641/1073741824,
+  full truncated squared norm = 1038934881/4294967296.
+The finite cross terms include their factor two; no limit was inferred.
+
+OTHER EXPLORATIONS / NEXT ACTION:
+An exact backward correlation recursion for the full image law b_t
+was explored using J_t(k,c)=integral b_t(x)b_t(3^k x+c).
+For k>=1, c divisible by three gives 2^-t. Otherwise the next value
+is one quarter times the (k,2c) and (k+1,3^k+2c) values; for c=2
+mod3 add three quarters times (k-1,(2c-1)/3) and
+(k,3^(k-1)+(2c-1)/3). At k=0 use translation symmetry and the
+three mixed/even branches, plus the both-odd branch when 3 divides c.
+The scout matched J_18(1,1)=381080939/536870912, about 0.709819.
+It was deliberately stopped when its state count exceeded 3.5 million,
+and is terminal. No all-depth correlation bound was proved or adopted.
+
+Grouping the full image law by count rather than clock still suggests
+Sigma_a=2rho^S_a, as recorded earlier. That lead alone does not control
+selection by paired return histories. A proposed real-interval
+disjointness shortcut is FALSE: first-odd words 1100 (t=4,a=2,N=5)
+and 10001 (t=5,a=2,N=19) have the same image residue 2 mod9 and
+nested real image intervals [5/16,14/16), [19/32,28/32).
+Thus prefix-free words with fixed count do not suffice for that
+disjointness assertion.
+
+The next useful targets are the cross-component sum for these lower
+images, a justified treatment of the intervening common-parity returns,
+or a direct estimate of the actual gradient pairing. Do not promote
+componentwise square summability to the squared norm of their sum.
+Q, escape exclusion, additional cycles and full Collatz remain open.
+
+All processes are terminal. No agents, installs, credentials, staging,
+commits or other Git writes were used. Preserve the user's concurrent
+index and changes. The unbounded Collatz goal remains active.

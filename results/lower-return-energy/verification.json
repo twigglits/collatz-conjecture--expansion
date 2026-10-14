@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-13T23:33:51.847484+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "kernel_theorems_audited": 11,
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.356,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.438,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.491,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.285,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.523,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.344,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.596,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.342,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.272,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    },
+    {
+      "source": "lean/BinaryImageEnergy.lean",
+      "source_sha256": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/BinaryImageEnergy.olean",
+        "lean/BinaryImageEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.329,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/BinaryImageEnergy.log",
+      "log_sha256": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+      "olean_sha256": "4d0a65b1b4cada4350345d83b9414edc2cf765758120561d4abb103dace027f8"
+    },
+    {
+      "source": "lean/ReturnAffineBudget.lean",
+      "source_sha256": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/ReturnAffineBudget.olean",
+        "lean/ReturnAffineBudget.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.278,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/ReturnAffineBudget.log",
+      "log_sha256": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+      "olean_sha256": "066daa029c06c89730b625f81537d6e3b3a64d880575803fda79960e2108120d"
+    },
+    {
+      "source": "lean/ReturnSlopeTilt.lean",
+      "source_sha256": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/ReturnSlopeTilt.olean",
+        "lean/ReturnSlopeTilt.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.371,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/ReturnSlopeTilt.log",
+      "log_sha256": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+      "olean_sha256": "cbe198207a879f3633b3456b9052f2fa48a63d8bd47508758054e4e6bd091f75"
+    },
+    {
+      "source": "lean/LowerReturnEnergy.lean",
+      "source_sha256": "cd054d7c582e18c038446c3d391bb34dd2561488007471fcd41627b3fae1535a",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-lower-return-energy-yhy71jqr/LowerReturnEnergy.olean",
+        "lean/LowerReturnEnergy.lean"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.347,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "log": "results/lower-return-energy/LowerReturnEnergy.log",
+      "log_sha256": "9c0bd11a736bc942e1b94fa6b876032f425bd87af823ed7dfd00981d21306d2a",
+      "olean_sha256": "75d993502354fc8e62720f04b69e96415e79374e3cb85a7f3e65f08c149bf73a"
+    }
+  ],
+  "prior_hashes_validated": {
+    "results/return-affine-budget/verification.json": 28,
+    "results/return-slope-tilt/verification.json": 22,
+    "results/return-correction-moments/verification.json": 21
+  },
+  "finite_scope": {
+    "integer_minimum_continuation_bounds": 65536,
+    "exact_geometric_identity_checks": 2860,
+    "finite_group_minimum_telescoping_checks": 129,
+    "reciprocal_moment_chord_and_clipping_checks": 4,
+    "direct_tilted_perpetuity_words": 4352,
+    "direct_zero_gap_minimum_paths": 8188,
+    "zero_gap_mean_and_logarithmic_drift_groups": 44,
+    "direct_fresh_return_paths": 419328,
+    "returned_clipping_and_formal_minimum_identities": 300141,
+    "fresh_conditional_clipping_and_fast_budgets": 36,
+    "direct_all_grouped_paths": 69888,
+    "actual_equal_count_lower_formal_identities": 93309,
+    "even_source_grouped_return_path_visits": 10068,
+    "capped_actual_group_minimum_drift_checks": 18,
+    "exact_lower_image_fibre_rank_checks": 1501,
+    "entire_clock_count_component_energy_bounds": 88,
+    "independent_positive_lower_column_products": 799,
+    "independent_full_lower_energy_decompositions": 2
+  },
+  "floating_scope": "None in verification decisions.",
+  "kernel_scope": [
+    "Exact smaller formal endpoint and selected endpoint coefficient.",
+    "Injectivity and full-period retention of chosen endpoints of even sources.",
+    "Minimum continuation, geometric sums, root comparisons and finite grouped drift arithmetic."
+  ],
+  "written_scope": [
+    "The fresh clipped initially even correction has mean at most 12 log2(D+1).",
+    "The minimum formal coefficient summed over nonfused grouped returns has mean at most 4100+36000*C_star.",
+    "The sum of complete fixed-clock, fixed-count squared norms of the lower grouped-return image components is at most 8200+72000*C_star."
+  ],
+  "external_scope": "None. Earlier local written slope-tilt and occupation arguments are reused.",
+  "not_proved": [
+    "A full L2 norm bound for the sum of these components.",
+    "The same coefficient budget over every intervening one-step return, or the original fixed-endpoint density.",
+    "A complete actual-gradient transport, Q, escape exclusion, exclusion of additional cycles, or Collatz."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "lean/BinaryImageEnergy.lean": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+    "lean/ReturnAffineBudget.lean": "6dff84e8bca7c9e37bcff2c7b7beee8339f08b72db9d6e8079ab73fc1ee76a30",
+    "lean/ReturnSlopeTilt.lean": "785d2f61a99bd023080886c639f674a4530c7f9fc475e76537e8492d4dbcd0ba",
+    "lean/LowerReturnEnergy.lean": "cd054d7c582e18c038446c3d391bb34dd2561488007471fcd41627b3fae1535a",
+    "verify_lower_return_energy.py": "e41f7e5ae902094409be1ab067cff48b936987f2ead84163ceff752f614fd25a",
+    "verify_return_affine_budget.py": "af437c04aa6d7369670418fa5979888cdec70299bbab50ac336f8311cbf1e2e5",
+    "verify_return_slope_occupation.py": "7055feb3edfaac253157ae74bb23bc594458b0381e96af2d607cba69b474a524",
+    "docs/LOWER-RETURN-ENERGY.md": "677fe2ed3b7b66793a8a8fd06e3e059453c42617aa0c21fb90a1a3186b2a69db",
+    "results/return-affine-budget/verification.json": "b308580cda5d382c2b0a73dd71618f995e9a5fb8b9e54a5aa643d204cf9704db",
+    "results/return-slope-tilt/verification.json": "7163da25f45142bdba20dcf8cf11bb15f05afe9c8002ea328b52eba8f8f59956",
+    "results/return-correction-moments/verification.json": "0d1a0a06278dc5c1ad318aa4f04b6794d37d0c805688d959945954534690aeeb",
+    "results/lower-return-energy/replay.json": "1883259852ecec9e5751b5db1febf6bd6a9d9add350dba80378d83a2ac8d49ad",
+    "results/lower-return-energy/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/lower-return-energy/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/lower-return-energy/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/lower-return-energy/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/lower-return-energy/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/lower-return-energy/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/lower-return-energy/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/lower-return-energy/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/lower-return-energy/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+    "results/lower-return-energy/BinaryImageEnergy.log": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+    "results/lower-return-energy/ReturnAffineBudget.log": "9498626343e1f716d7a651ba005bc495d7aa617c1db88204a643f7e4c6b509a8",
+    "results/lower-return-energy/ReturnSlopeTilt.log": "4e1534e01b2b5d8df8a718ae7a890f4ead22ec7271df2ffb8b1f7d9d712c3571",
+    "results/lower-return-energy/LowerReturnEnergy.log": "9c0bd11a736bc942e1b94fa6b876032f425bd87af823ed7dfd00981d21306d2a"
+  }
+}
