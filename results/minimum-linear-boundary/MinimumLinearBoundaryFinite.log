@@ -1,0 +1,3 @@
+'MinimumLinearBoundaryFinite.closed_prefix_tail_zero' depends on axioms: [propext, Quot.sound]
+'MinimumLinearBoundaryFinite.closed_prefix_tail_stays_zero' depends on axioms: [propext, Quot.sound]
+'MinimumLinearBoundaryFinite.all_late_signed_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5381 @@
+{
+  "status": "passed",
+  "counts": {
+    "cutoff_size_and_rank_checks": 66181,
+    "dyadic_potential_upper_checks": 66180,
+    "three_step_rank_and_potential_drift_checks": 66178,
+    "large_dyadic_arithmetic_checks": 645,
+    "literal_certificate_edge_checks": 10971,
+    "independent_closed_witness_steps": 32768,
+    "independent_closed_witness_sources": 256,
+    "short_clock_formula_and_lower_checks": 12288,
+    "exact_leading_coefficient_checks": 257,
+    "exact_leading_profile_rounding_checks": 66045,
+    "parity_word_and_affine_correction_checks": 32767,
+    "rational_word_majorant_checks": 120,
+    "parity_residue_shortcut_steps": 425986,
+    "actual_prefix_population_values": 9451,
+    "actual_prefix_census_ordinary_steps": 2687392,
+    "clock_tree_active_states": 9724,
+    "clock_tree_terminal_states": 3145,
+    "actual_normalized_prefix_majorant_checks": 637,
+    "independent_clocked_tree_comparisons": 78,
+    "longer_arithmetic_cutoff_tree_checks": 8,
+    "ideal_exact_tilted_state_checks": 20743
+  },
+  "dyadic_potential": {
+    "continuous_cutoff_range": [
+      1,
+      65536
+    ],
+    "large_cutoffs": [
+      {
+        "base": "2^128",
+        "offsets": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "base": "2^256",
+        "offsets": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "base": "2^512",
+        "offsets": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "base": "2^1024",
+        "offsets": [
+          -2,
+          -1,
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "scope": "Auxiliary cutoff arithmetic only; no Collatz orbit census at these large dyadic cutoffs."
+  },
+  "closed_collatz_witness": {
+    "certified_sources": 256,
+    "floor": 4,
+    "clock": 128,
+    "maximum_supplied_floor_hit": 125,
+    "tail_sum": 0,
+    "all_clock_terminal_lower_bound": [
+      103,
+      2
+    ],
+    "scope": "The supplied finite paths are also checked in Lean; persistence and signed cancellation for all later clocks are generic kernel consequences."
+  },
+  "boundary_profile_and_finite_parity": {
+    "leading_coefficient": "3/7 + (-3/4)^T/14",
+    "even_majorant": [
+      17,
+      24
+    ],
+    "odd_majorant": [
+      49,
+      40
+    ],
+    "contraction": [
+      29,
+      30
+    ],
+    "parity_rows": [
+      {
+        "shortcut_length": 0,
+        "all_residue_words_checked": 1,
+        "mean_rational_word_majorant": [
+          1,
+          1
+        ]
+      },
+      {
+        "shortcut_length": 1,
+        "all_residue_words_checked": 2,
+        "mean_rational_word_majorant": [
+          29,
+          30
+        ]
+      },
+      {
+        "shortcut_length": 2,
+        "all_residue_words_checked": 4,
+        "mean_rational_word_majorant": [
+          841,
+          900
+        ]
+      },
+      {
+        "shortcut_length": 3,
+        "all_residue_words_checked": 8,
+        "mean_rational_word_majorant": [
+          24389,
+          27000
+        ]
+      },
+      {
+        "shortcut_length": 4,
+        "all_residue_words_checked": 16,
+        "mean_rational_word_majorant": [
+          707281,
+          810000
+        ]
+      },
+      {
+        "shortcut_length": 5,
+        "all_residue_words_checked": 32,
+        "mean_rational_word_majorant": [
+          20511149,
+          24300000
+        ]
+      },
+      {
+        "shortcut_length": 6,
+        "all_residue_words_checked": 64,
+        "mean_rational_word_majorant": [
+          594823321,
+          729000000
+        ]
+      },
+      {
+        "shortcut_length": 7,
+        "all_residue_words_checked": 128,
+        "mean_rational_word_majorant": [
+          17249876309,
+          21870000000
+        ]
+      },
+      {
+        "shortcut_length": 8,
+        "all_residue_words_checked": 256,
+        "mean_rational_word_majorant": [
+          500246412961,
+          656100000000
+        ]
+      },
+      {
+        "shortcut_length": 9,
+        "all_residue_words_checked": 512,
+        "mean_rational_word_majorant": [
+          14507145975869,
+          19683000000000
+        ]
+      },
+      {
+        "shortcut_length": 10,
+        "all_residue_words_checked": 1024,
+        "mean_rational_word_majorant": [
+          420707233300201,
+          590490000000000
+        ]
+      },
+      {
+        "shortcut_length": 11,
+        "all_residue_words_checked": 2048,
+        "mean_rational_word_majorant": [
+          12200509765705829,
+          17714700000000000
+        ]
+      },
+      {
+        "shortcut_length": 12,
+        "all_residue_words_checked": 4096,
+        "mean_rational_word_majorant": [
+          353814783205469041,
+          531441000000000000
+        ]
+      },
+      {
+        "shortcut_length": 13,
+        "all_residue_words_checked": 8192,
+        "mean_rational_word_majorant": [
+          10260628712958602189,
+          15943230000000000000
+        ]
+      },
+      {
+        "shortcut_length": 14,
+        "all_residue_words_checked": 16384,
+        "mean_rational_word_majorant": [
+          297558232675799463481,
+          478296900000000000000
+        ]
+      }
+    ],
+    "scope": "Exact finite checks of the written uniform boundary profile and elementary finite-parity mean bound; their all-scale and limiting assembly is not newly kernel formalized."
+  },
+  "rounded_cutoff_trees": {
+    "actual_prefix_census": {
+      "maximum_source": 83981,
+      "ordinary_horizon": 32,
+      "scope": "Direct ordinary Collatz prefixes for every source, independent of the cutoff recurrence."
+    },
+    "rows": [
+      {
+        "floor": 3,
+        "initial_clock": 2,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          3,
+          2
+        ],
+        "terminal_tail_mean": [
+          30,
+          11
+        ],
+        "signed_residual_occupation": [
+          -27,
+          22
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -27,
+          22
+        ],
+        "terminal_cutoff_mean": [
+          15,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          39,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          4
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -17,
+          22
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 4,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          7,
+          8
+        ],
+        "terminal_tail_mean": [
+          181,
+          68
+        ],
+        "signed_residual_occupation": [
+          -243,
+          136
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -243,
+          136
+        ],
+        "terminal_cutoff_mean": [
+          29,
+          4
+        ],
+        "expected_active_steps": [
+          2,
+          1
+        ],
+        "expected_rounding_loss": [
+          3,
+          4
+        ],
+        "clock_boundary_probability": [
+          3,
+          4
+        ],
+        "terminal_dyadic_potential": [
+          71,
+          8
+        ],
+        "leading_boundary_profile": [
+          231,
+          64
+        ],
+        "profile_error_occupation": [
+          5,
+          16
+        ],
+        "terminal_profile_difference": [
+          -691,
+          1088
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 8,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          7,
+          8
+        ],
+        "terminal_tail_mean": [
+          514047,
+          217360
+        ],
+        "signed_residual_occupation": [
+          -323857,
+          217360
+        ],
+        "positive_residual_occupation": [
+          91,
+          748
+        ],
+        "negative_residual_occupation": [
+          -5955109,
+          3695120
+        ],
+        "terminal_cutoff_mean": [
+          221,
+          32
+        ],
+        "expected_active_steps": [
+          55,
+          16
+        ],
+        "expected_rounding_loss": [
+          35,
+          32
+        ],
+        "clock_boundary_probability": [
+          13,
+          32
+        ],
+        "terminal_dyadic_potential": [
+          973,
+          128
+        ],
+        "leading_boundary_profile": [
+          57111,
+          16384
+        ],
+        "profile_error_occupation": [
+          961,
+          2048
+        ],
+        "terminal_profile_difference": [
+          -145027327,
+          222576640
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 16,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          5323966445051,
+          2598620344320
+        ],
+        "signed_residual_occupation": [
+          -5323966445051,
+          2598620344320
+        ],
+        "positive_residual_occupation": [
+          130301,
+          3015936
+        ],
+        "negative_residual_occupation": [
+          -277248121176721,
+          132529637560320
+        ],
+        "terminal_cutoff_mean": [
+          6755,
+          1024
+        ],
+        "expected_active_steps": [
+          2543,
+          512
+        ],
+        "expected_rounding_loss": [
+          1437,
+          1024
+        ],
+        "clock_boundary_probability": [
+          197,
+          1024
+        ],
+        "terminal_dyadic_potential": [
+          26457,
+          4096
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          1073741824
+        ],
+        "profile_error_occupation": [
+          80942497,
+          134217728
+        ],
+        "terminal_profile_difference": [
+          -533024081587236181,
+          681212731541422080
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 24,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          2554939110196796827574400458427208732243,
+          1325769085221977216381295859732300492800
+        ],
+        "signed_residual_occupation": [
+          -2554939110196796827574400458427208732243,
+          1325769085221977216381295859732300492800
+        ],
+        "positive_residual_occupation": [
+          1940111,
+          57805440
+        ],
+        "negative_residual_occupation": [
+          -44190405204167085053110614156111072481571,
+          22538074448773612678482029615449108377600
+        ],
+        "terminal_cutoff_mean": [
+          104471,
+          16384
+        ],
+        "expected_active_steps": [
+          47333,
+          8192
+        ],
+        "expected_rounding_loss": [
+          26601,
+          16384
+        ],
+        "clock_boundary_probability": [
+          1885,
+          16384
+        ],
+        "terminal_dyadic_potential": [
+          385279,
+          65536
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          70368744177664
+        ],
+        "profile_error_occupation": [
+          6117736239937,
+          8796093022208
+        ],
+        "terminal_profile_difference": [
+          -18369310192164477833196406175175719871799459258913,
+          22776539452304916179259124734601735725682733875200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 32,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          6094877986589365478927600838708367953900146756364656796892879137260677863292357089511069667116927337170277761757,
+          3295717093679721212239225466463404646626254838060625298434889832910815560257509043370833825222163421213805772800
+        ],
+        "signed_residual_occupation": [
+          -6094877986589365478927600838708367953900146756364656796892879137260677863292357089511069667116927337170277761757,
+          3295717093679721212239225466463404646626254838060625298434889832910815560257509043370833825222163421213805772800
+        ],
+        "positive_residual_occupation": [
+          897060041,
+          44394577920
+        ],
+        "negative_residual_occupation": [
+          -18484418905342418379892734169153909540047261592586831265525286219115133651198346177480745919579330004838129021591,
+          9887151281039163636717676399390213939878764514181875895304669498732446680772527130112501475666490263641417318400
+        ],
+        "terminal_cutoff_mean": [
+          819227,
+          131072
+        ],
+        "expected_active_steps": [
+          1640151,
+          262144
+        ],
+        "expected_rounding_loss": [
+          229349,
+          131072
+        ],
+        "clock_boundary_probability": [
+          19013,
+          262144
+        ],
+        "terminal_dyadic_potential": [
+          1452085,
+          262144
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          4611686018427387904
+        ],
+        "profile_error_occupation": [
+          432306219162809569,
+          576460752303423488
+        ],
+        "terminal_profile_difference": [
+          -751337465886595363738335401481197855268682351648575963698337038297525193296863556280072632606720254284465142991233878459967,
+          905919816590244537917756691637162735236748880923658350213637876333750868223610795500926520293105397022769178743808406323200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 2,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          19,
+          4
+        ],
+        "terminal_tail_mean": [
+          158,
+          23
+        ],
+        "signed_residual_occupation": [
+          -195,
+          92
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -195,
+          92
+        ],
+        "terminal_cutoff_mean": [
+          31,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          51,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          2
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -35,
+          92
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 4,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          7,
+          2
+        ],
+        "terminal_tail_mean": [
+          20161,
+          3080
+        ],
+        "signed_residual_occupation": [
+          -9381,
+          3080
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -9381,
+          3080
+        ],
+        "terminal_cutoff_mean": [
+          121,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          7,
+          8
+        ],
+        "terminal_dyadic_potential": [
+          375,
+          32
+        ],
+        "leading_boundary_profile": [
+          231,
+          32
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          -3671,
+          12320
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 8,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          23,
+          8
+        ],
+        "terminal_tail_mean": [
+          544831,
+          91520
+        ],
+        "signed_residual_occupation": [
+          -281711,
+          91520
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -281711,
+          91520
+        ],
+        "terminal_cutoff_mean": [
+          239,
+          16
+        ],
+        "expected_active_steps": [
+          17,
+          4
+        ],
+        "expected_rounding_loss": [
+          17,
+          16
+        ],
+        "clock_boundary_probability": [
+          11,
+          16
+        ],
+        "terminal_dyadic_potential": [
+          161,
+          16
+        ],
+        "leading_boundary_profile": [
+          57111,
+          8192
+        ],
+        "profile_error_occupation": [
+          961,
+          2048
+        ],
+        "terminal_profile_difference": [
+          -3216721,
+          5857280
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 16,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          5,
+          16
+        ],
+        "terminal_tail_mean": [
+          95587185212098739,
+          17363386616576000
+        ],
+        "signed_residual_occupation": [
+          -90161126894418739,
+          17363386616576000
+        ],
+        "positive_residual_occupation": [
+          337,
+          2992
+        ],
+        "negative_residual_occupation": [
+          -92116829197154739,
+          17363386616576000
+        ],
+        "terminal_cutoff_mean": [
+          14557,
+          1024
+        ],
+        "expected_active_steps": [
+          3537,
+          512
+        ],
+        "expected_rounding_loss": [
+          1827,
+          1024
+        ],
+        "clock_boundary_probability": [
+          85,
+          256
+        ],
+        "terminal_dyadic_potential": [
+          16751,
+          2048
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          536870912
+        ],
+        "profile_error_occupation": [
+          101822753,
+          134217728
+        ],
+        "terminal_profile_difference": [
+          -2753138156059775449709,
+          4551707621215698944000
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 24,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          1328802671993843611587854251540869594506678110777568393,
+          255162485321219753473720903998787853057187635675545600
+        ],
+        "signed_residual_occupation": [
+          -1328802671993843611587854251540869594506678110777568393,
+          255162485321219753473720903998787853057187635675545600
+        ],
+        "positive_residual_occupation": [
+          490459,
+          6702080
+        ],
+        "negative_residual_occupation": [
+          -14822230418370305132976125759948419090687192133806982003,
+          2806787338533417288210929943986666383629063992431001600
+        ],
+        "terminal_cutoff_mean": [
+          226289,
+          16384
+        ],
+        "expected_active_steps": [
+          34441,
+          4096
+        ],
+        "expected_rounding_loss": [
+          35855,
+          16384
+        ],
+        "clock_boundary_probability": [
+          3471,
+          16384
+        ],
+        "terminal_dyadic_potential": [
+          232531,
+          32768
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          35184372088832
+        ],
+        "profile_error_occupation": [
+          8246366674625,
+          8796093022208
+        ],
+        "terminal_profile_difference": [
+          -390755824126770617726076021124050760059962925952226023120414611,
+          547957264810359447999406839053174726261337256481015609478348800
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 32,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          2638072994061456455459470829909960633723454098236777075988833549277615440334141264429613020099834194034494012649144871911,
+          524853261097622776584323344720246096666756016104429138473220399824913738277435128793250953983356497917063144656548659200
+        ],
+        "signed_residual_occupation": [
+          -2638072994061456455459470829909960633723454098236777075988833549277615440334141264429613020099834194034494012649144871911,
+          524853261097622776584323344720246096666756016104429138473220399824913738277435128793250953983356497917063144656548659200
+        ],
+        "positive_residual_occupation": [
+          3358842697040583388423,
+          37809869130889512222720
+        ],
+        "negative_residual_occupation": [
+          -18167353902120090404539699480446310499206431382041904039107112152850611219019911252476210967674809227253898396556226397429497,
+          3551682017847613329146116073721905336143937960978671980048282445615191266923403516543929205605373421404766299890864776806400
+        ],
+        "terminal_cutoff_mean": [
+          14219967,
+          1048576
+        ],
+        "expected_active_steps": [
+          4908685,
+          524288
+        ],
+        "expected_rounding_loss": [
+          2557249,
+          1048576
+        ],
+        "clock_boundary_probability": [
+          148201,
+          1048576
+        ],
+        "terminal_dyadic_potential": [
+          26984399,
+          4194304
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          2305843009213693952
+        ],
+        "profile_error_occupation": [
+          602106532444090465,
+          576460752303423488
+        ],
+        "terminal_profile_difference": [
+          -453854145980694729329402427040135329196449092094020344523374413294112539424685480522270913935248771860970466702071084582250260690789,
+          577082263452989155526242138076874561089375155092421752445935869196300449772207936749711562977105174236896851626699172735142277939200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -39,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 2,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          171,
+          16
+        ],
+        "terminal_tail_mean": [
+          11091,
+          752
+        ],
+        "signed_residual_occupation": [
+          -1527,
+          376
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1527,
+          376
+        ],
+        "terminal_cutoff_mean": [
+          63,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          63,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -1,
+          752
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 4,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          131,
+          16
+        ],
+        "terminal_tail_mean": [
+          251635,
+          17963
+        ],
+        "signed_residual_occupation": [
+          -1673007,
+          287408
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1673007,
+          287408
+        ],
+        "terminal_cutoff_mean": [
+          249,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          59,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          16
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          -15515,
+          287408
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 8,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          107,
+          16
+        ],
+        "terminal_tail_mean": [
+          46928545,
+          3549728
+        ],
+        "signed_residual_occupation": [
+          -23189739,
+          3549728
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -23189739,
+          3549728
+        ],
+        "terminal_cutoff_mean": [
+          497,
+          16
+        ],
+        "expected_active_steps": [
+          37,
+          8
+        ],
+        "expected_rounding_loss": [
+          15,
+          16
+        ],
+        "clock_boundary_probability": [
+          13,
+          16
+        ],
+        "terminal_dyadic_potential": [
+          103,
+          8
+        ],
+        "leading_boundary_profile": [
+          57111,
+          4096
+        ],
+        "profile_error_occupation": [
+          101,
+          256
+        ],
+        "terminal_profile_difference": [
+          -149151095,
+          454365184
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 16,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          3,
+          1
+        ],
+        "terminal_tail_mean": [
+          1299461668096331857120873,
+          104858189207319923020800
+        ],
+        "signed_residual_occupation": [
+          -984887100474372088058473,
+          104858189207319923020800
+        ],
+        "positive_residual_occupation": [
+          1263,
+          11968
+        ],
+        "negative_residual_occupation": [
+          -995952933777250184881273,
+          104858189207319923020800
+        ],
+        "terminal_cutoff_mean": [
+          15379,
+          512
+        ],
+        "expected_active_steps": [
+          1055,
+          128
+        ],
+        "expected_rounding_loss": [
+          1005,
+          512
+        ],
+        "clock_boundary_probability": [
+          567,
+          1024
+        ],
+        "terminal_dyadic_potential": [
+          42569,
+          4096
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          268435456
+        ],
+        "profile_error_occupation": [
+          14272661,
+          16777216
+        ],
+        "terminal_profile_difference": [
+          -13576710375337447445649994163,
+          27487945151563673900364595200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 24,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          3994919675797665726234734590013012848574244362333428408910309176349851,
+          333182985549969006432214908172624190715353412653860890807688090583040
+        ],
+        "signed_residual_occupation": [
+          -3391025514488346902076345068950131502902666301898305544321374512168091,
+          333182985549969006432214908172624190715353412653860890807688090583040
+        ],
+        "positive_residual_occupation": [
+          11671729921,
+          49250234880
+        ],
+        "negative_residual_occupation": [
+          -4830764805549443432168284520474481857705896343056320407333153135455439,
+          463842979883290185425240362357967010603727299969100455830310871203840
+        ],
+        "terminal_cutoff_mean": [
+          964159,
+          32768
+        ],
+        "expected_active_steps": [
+          21635,
+          2048
+        ],
+        "expected_rounding_loss": [
+          84417,
+          32768
+        ],
+        "clock_boundary_probability": [
+          747,
+          2048
+        ],
+        "terminal_dyadic_potential": [
+          1148717,
+          131072
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          17592186044416
+        ],
+        "profile_error_occupation": [
+          1214228761269,
+          1099511627776
+        ],
+        "terminal_profile_difference": [
+          -111274882170657536997294403164541749441415960157931923383134426938694536025073,
+          178876253315094682054997083930633002702613719053790636769055921802855296532480
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 32,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          267720252065756025931058453201464589153009567902047029367189330378615260671882867852776532292444407788940466847754287012391529627905387735474488458027443,
+          22840866301539256832693966865336016535144875322826800540697639531550161853433595742578009739278688599077865223925802615678581790672805867766188867584000
+        ],
+        "signed_residual_occupation": [
+          -226321181894216122921800638258043059183059481379423453387174858727680592312534475569353889640001784703111836129388769771474100132310927100148271135531443,
+          22840866301539256832693966865336016535144875322826800540697639531550161853433595742578009739278688599077865223925802615678581790672805867766188867584000
+        ],
+        "positive_residual_occupation": [
+          47215743658876149574687,
+          79845300723227700756480
+        ],
+        "negative_residual_occupation": [
+          -239827906503826240393619134714231242657795726366126873486108398709329819677482770543332718831822870288328853787792284402123558936492480350886413571341043,
+          22840866301539256832693966865336016535144875322826800540697639531550161853433595742578009739278688599077865223925802615678581790672805867766188867584000
+        ],
+        "terminal_cutoff_mean": [
+          30436237,
+          1048576
+        ],
+        "expected_active_steps": [
+          6360489,
+          524288
+        ],
+        "expected_rounding_loss": [
+          3118195,
+          1048576
+        ],
+        "clock_boundary_probability": [
+          255839,
+          1048576
+        ],
+        "terminal_dyadic_potential": [
+          1005147,
+          131072
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          1152921504606846976
+        ],
+        "profile_error_occupation": [
+          92086397553273045,
+          72057594037927936
+        ],
+        "terminal_profile_difference": [
+          -1122982652865985626040383465531213756524332267429012245459764211810051028361325059178975259488599075427069582510279368476426425691161839332905692865746523962616077,
+          1569612380438713320905042100210013233109799586136616809513783660998475285504064624352918184943543266604919790308112623438252250217613104617802908173320872525824000
+        ],
+        "all_clock_kernel_lower_bound": [
+          -18,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 2,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          701,
+          32
+        ],
+        "terminal_tail_mean": [
+          91009,
+          3040
+        ],
+        "signed_residual_occupation": [
+          -12207,
+          1520
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -12207,
+          1520
+        ],
+        "terminal_cutoff_mean": [
+          127,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          75,
+          4
+        ],
+        "leading_boundary_profile": [
+          30,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          569,
+          3040
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 4,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          549,
+          32
+        ],
+        "terminal_tail_mean": [
+          4431021,
+          154583
+        ],
+        "signed_residual_occupation": [
+          -56926605,
+          4946656
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -56926605,
+          4946656
+        ],
+        "terminal_cutoff_mean": [
+          505,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          71,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          8
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          50811,
+          309166
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 8,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          215,
+          16
+        ],
+        "terminal_tail_mean": [
+          12922677927,
+          468923648
+        ],
+        "signed_residual_occupation": [
+          -6621516407,
+          468923648
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -6621516407,
+          468923648
+        ],
+        "terminal_cutoff_mean": [
+          2017,
+          32
+        ],
+        "expected_active_steps": [
+          155,
+          32
+        ],
+        "expected_rounding_loss": [
+          31,
+          32
+        ],
+        "clock_boundary_probability": [
+          57,
+          64
+        ],
+        "terminal_dyadic_potential": [
+          505,
+          32
+        ],
+        "leading_boundary_profile": [
+          57111,
+          2048
+        ],
+        "profile_error_occupation": [
+          207,
+          512
+        ],
+        "terminal_profile_difference": [
+          285994977,
+          3751389184
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 16,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          469,
+          64
+        ],
+        "terminal_tail_mean": [
+          4124616454261919211897222979,
+          156518798875596296226447360
+        ],
+        "signed_residual_occupation": [
+          -2977627131251690103612788419,
+          156518798875596296226447360
+        ],
+        "positive_residual_occupation": [
+          3669,
+          47872
+        ],
+        "negative_residual_occupation": [
+          -2989623025993388023291407139,
+          156518798875596296226447360
+        ],
+        "terminal_cutoff_mean": [
+          127001,
+          2048
+        ],
+        "expected_active_steps": [
+          2341,
+          256
+        ],
+        "expected_rounding_loss": [
+          4071,
+          2048
+        ],
+        "clock_boundary_probability": [
+          173,
+          256
+        ],
+        "terminal_dyadic_potential": [
+          105671,
+          8192
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          134217728
+        ],
+        "profile_error_occupation": [
+          27995019,
+          33554432
+        ],
+        "terminal_profile_difference": [
+          -738192327950578732912728041039,
+          2564404000777769717374113546240
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 24,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          171,
+          32
+        ],
+        "terminal_tail_mean": [
+          71785454503735815047981912447628818022322635293511611997911714959,
+          2789328494627437850738549465432972719482576251985700352159907840
+        ],
+        "signed_residual_occupation": [
+          -56879980360570444033097788741721370052587618446963025741057207439,
+          2789328494627437850738549465432972719482576251985700352159907840
+        ],
+        "positive_residual_occupation": [
+          24038163893,
+          214702473216
+        ],
+        "negative_residual_occupation": [
+          -57192274553091523077427994708039423816749060914578339882095069759,
+          2789328494627437850738549465432972719482576251985700352159907840
+        ],
+        "terminal_cutoff_mean": [
+          2005313,
+          32768
+        ],
+        "expected_active_steps": [
+          200411,
+          16384
+        ],
+        "expected_rounding_loss": [
+          91839,
+          32768
+        ],
+        "clock_boundary_probability": [
+          31,
+          64
+        ],
+        "terminal_dyadic_potential": [
+          354429,
+          32768
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          8796093022208
+        ],
+        "profile_error_occupation": [
+          2637024384363,
+          2199023255552
+        ],
+        "terminal_profile_difference": [
+          -46631576409443715441998412879344258086443694799986241393219638453174027,
+          93594333298638728696832807816507033673733180032069047438925680743546880
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 32,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          77,
+          16
+        ],
+        "terminal_tail_mean": [
+          35802198353830827353417747025215683510116318074810806879897671682475257752317965046443974687485598490091234876652837368899201002819572826447921675643395007811369,
+          1412230383151588181294847195132657093194557222885370711356017905220663637709391985287361855365682400233998035331266527761700536069884456117891889379432778956800
+        ],
+        "signed_residual_occupation": [
+          -29005839634913809230936294898639771249117511439674960331496835513600813995841516117248545758538251938965119331621117204046017172983253881380566958004874759081769,
+          1412230383151588181294847195132657093194557222885370711356017905220663637709391985287361855365682400233998035331266527761700536069884456117891889379432778956800
+        ],
+        "positive_residual_occupation": [
+          2025033006859923470980937713,
+          4612686901749304864163758080
+        ],
+        "negative_residual_occupation": [
+          -325884110213747913960265151423190825154461254048167605094605677872777578475650270188165807897945997674964735798930396362128233305746174070771202144325024047918739,
+          15534534214667469994243319146459228025140129451739077824916196957427300014803311838160980409022506402573978388643931805378705896768729017296810783173760568524800
+        ],
+        "terminal_cutoff_mean": [
+          127201327,
+          2097152
+        ],
+        "expected_active_steps": [
+          15160229,
+          1048576
+        ],
+        "expected_rounding_loss": [
+          7016401,
+          2097152
+        ],
+        "clock_boundary_probability": [
+          729783,
+          2097152
+        ],
+        "terminal_dyadic_potential": [
+          77618581,
+          8388608
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          576460752303423488
+        ],
+        "profile_error_occupation": [
+          206354791675439947,
+          144115188075855872
+        ],
+        "terminal_profile_difference": [
+          -62656777851460064411030952891151107739854340911325222544280629811193413354576621926424858168971716883709978994148461553580079808405040833540912670089567819242702541877841,
+          97047732960857930385943802182593481549648758999891999393765643451410847798051694861659717294615808475644868945216676207935678140253153752401484565573016330397647949004800
+        ],
+        "all_clock_kernel_lower_bound": [
+          -21,
+          2
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 2,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          2817,
+          64
+        ],
+        "terminal_tail_mean": [
+          733821,
+          12224
+        ],
+        "signed_residual_occupation": [
+          -97887,
+          6112
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -97887,
+          6112
+        ],
+        "terminal_cutoff_mean": [
+          255,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          87,
+          4
+        ],
+        "leading_boundary_profile": [
+          60,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          3437,
+          12224
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 4,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          1111,
+          32
+        ],
+        "terminal_tail_mean": [
+          4731539251,
+          82013120
+        ],
+        "signed_residual_occupation": [
+          -1884146241,
+          82013120
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1884146241,
+          82013120
+        ],
+        "terminal_cutoff_mean": [
+          1017,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          83,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          4
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          26036491,
+          82013120
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 8,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          3399,
+          128
+        ],
+        "terminal_tail_mean": [
+          6299619396477,
+          113358333760
+        ],
+        "signed_residual_occupation": [
+          -6578848535919,
+          226716667520
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -6578848535919,
+          226716667520
+        ],
+        "terminal_cutoff_mean": [
+          8129,
+          64
+        ],
+        "expected_active_steps": [
+          39,
+          8
+        ],
+        "expected_rounding_loss": [
+          63,
+          64
+        ],
+        "clock_boundary_probability": [
+          63,
+          64
+        ],
+        "terminal_dyadic_potential": [
+          2407,
+          128
+        ],
+        "leading_boundary_profile": [
+          57111,
+          1024
+        ],
+        "profile_error_occupation": [
+          105,
+          256
+        ],
+        "terminal_profile_difference": [
+          381452543817,
+          1813733340160
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 16,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          2119,
+          128
+        ],
+        "terminal_tail_mean": [
+          2879911705013682762065116853569,
+          53340940229586838819031275520
+        ],
+        "signed_residual_occupation": [
+          -1996869108556694391303185034609,
+          53340940229586838819031275520
+        ],
+        "positive_residual_occupation": [
+          25,
+          704
+        ],
+        "negative_residual_occupation": [
+          -1998763318081892787568065406609,
+          53340940229586838819031275520
+        ],
+        "terminal_cutoff_mean": [
+          129101,
+          1024
+        ],
+        "expected_active_steps": [
+          9897,
+          1024
+        ],
+        "expected_rounding_loss": [
+          1971,
+          1024
+        ],
+        "clock_boundary_probability": [
+          841,
+          1024
+        ],
+        "terminal_dyadic_potential": [
+          16023,
+          1024
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          67108864
+        ],
+        "profile_error_occupation": [
+          7098331,
+          8388608
+        ],
+        "terminal_profile_difference": [
+          -195669819453985433478020205459653,
+          1747875929443101534422016836239360
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 24,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          425,
+          32
+        ],
+        "terminal_tail_mean": [
+          1890113514625771223636938482860871653320129681858616833868963975002723549,
+          35470965893423949434774096056161874316686843745326201720067895177216000
+        ],
+        "signed_residual_occupation": [
+          -1419014748853734395206345019614971760051632538366003217274312242180323549,
+          35470965893423949434774096056161874316686843745326201720067895177216000
+        ],
+        "positive_residual_occupation": [
+          1955323703138291,
+          9701717754516480
+        ],
+        "negative_residual_occupation": [
+          -1201165989154252529795032052270002150787445925132615178622971643834439523489,
+          29874913715871712945342447304674533124432058691930265049160250103525376000
+        ],
+        "terminal_cutoff_mean": [
+          4100107,
+          32768
+        ],
+        "expected_active_steps": [
+          440891,
+          32768
+        ],
+        "expected_rounding_loss": [
+          94197,
+          32768
+        ],
+        "clock_boundary_probability": [
+          40503,
+          65536
+        ],
+        "terminal_dyadic_potential": [
+          1725339,
+          131072
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          4398046511104
+        ],
+        "profile_error_occupation": [
+          681911018427,
+          549755813888
+        ],
+        "terminal_profile_difference": [
+          -1617315770387455577659000526133681077299092540268489036300019049606727342343953,
+          4760832452180852633922263365911807171007260654988693413737204896428088885248000
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 3,
+        "initial_clock": 32,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          183,
+          16
+        ],
+        "terminal_tail_mean": [
+          4024866929464603542937323205061913149916503369772179423450559410405947551829971647924285207528444196760410076215352923265739313408364679883465574979932341186054182052409525205213954139506152617671447,
+          76172365410610588144657655003871084530515042900619862244443429353398963357144924768556574894314132671353947359711689489173521700185601578694064878279633308148597426224617554788044550506080423116800
+        ],
+        "signed_residual_occupation": [
+          -3153645500080744941032801275955137620598737566596339749029737687176446908432626570883919382174726304331799303288650474733317158962491861827152207934609035224104598989965461922325694593092857778273047,
+          76172365410610588144657655003871084530515042900619862244443429353398963357144924768556574894314132671353947359711689489173521700185601578694064878279633308148597426224617554788044550506080423116800
+        ],
+        "positive_residual_occupation": [
+          51972737647619988603171041,
+          51054203248578659680911360
+        ],
+        "negative_residual_occupation": [
+          -464214053828917694409941228174023228535174994983087462193181348611732889899297166208847031330582298330294510678102690538744939502594348638266957397003226804545443540404273325732636455546633696846898579,
+          10943429830657721163449149768889479144217327830055720209118372683771651068976487525082627926483130393784517104011912723277929284259998093472380654179507318604015163567603388704549067089373554121113600
+        ],
+        "terminal_cutoff_mean": [
+          260859557,
+          2097152
+        ],
+        "expected_active_steps": [
+          17158463,
+          1048576
+        ],
+        "expected_rounding_loss": [
+          7575899,
+          2097152
+        ],
+        "clock_boundary_probability": [
+          938063,
+          2097152
+        ],
+        "terminal_dyadic_potential": [
+          46691115,
+          4194304
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          288230376151711744
+        ],
+        "profile_error_occupation": [
+          55909480548531099,
+          36028797018963968
+        ],
+        "terminal_profile_difference": [
+          -305776738928524522259517032979863922419725472229105346552579262433419273775668946535157364822699468731942666989313380019824874101546639569743195029106026851738405883258633155932804637184359762816166839441101,
+          654315636595068174945259890715354122917227246588398572935819373589869948118479639626661716593707712348140639900934508689814443542886951821153958083026491602741032507809010295844279112429271332864996776345600
+        ],
+        "all_clock_kernel_lower_bound": [
+          9,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 2,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          3,
+          2
+        ],
+        "terminal_tail_mean": [
+          28,
+          11
+        ],
+        "signed_residual_occupation": [
+          -23,
+          22
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -23,
+          22
+        ],
+        "terminal_cutoff_mean": [
+          15,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          2
+        ],
+        "terminal_dyadic_potential": [
+          39,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          4
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -21,
+          22
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 4,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          7,
+          8
+        ],
+        "terminal_tail_mean": [
+          40,
+          17
+        ],
+        "signed_residual_occupation": [
+          -201,
+          136
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -201,
+          136
+        ],
+        "terminal_cutoff_mean": [
+          15,
+          2
+        ],
+        "expected_active_steps": [
+          3,
+          2
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          2
+        ],
+        "terminal_dyadic_potential": [
+          151,
+          16
+        ],
+        "leading_boundary_profile": [
+          231,
+          64
+        ],
+        "profile_error_occupation": [
+          7,
+          32
+        ],
+        "terminal_profile_difference": [
+          -1129,
+          1088
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 8,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          7,
+          8
+        ],
+        "terminal_tail_mean": [
+          164497,
+          86944
+        ],
+        "signed_residual_occupation": [
+          -88421,
+          86944
+        ],
+        "positive_residual_occupation": [
+          135,
+          748
+        ],
+        "negative_residual_occupation": [
+          -1769917,
+          1478048
+        ],
+        "terminal_cutoff_mean": [
+          117,
+          16
+        ],
+        "expected_active_steps": [
+          19,
+          8
+        ],
+        "expected_rounding_loss": [
+          11,
+          16
+        ],
+        "clock_boundary_probability": [
+          1,
+          4
+        ],
+        "terminal_dyadic_potential": [
+          139,
+          16
+        ],
+        "leading_boundary_profile": [
+          57111,
+          16384
+        ],
+        "profile_error_occupation": [
+          1199,
+          4096
+        ],
+        "terminal_profile_difference": [
+          -57917391,
+          44515328
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 16,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          611458491571,
+          371231477760
+        ],
+        "signed_residual_occupation": [
+          -611458491571,
+          371231477760
+        ],
+        "positive_residual_occupation": [
+          223319,
+          7539840
+        ],
+        "negative_residual_occupation": [
+          -222216014936959,
+          132529637560320
+        ],
+        "terminal_cutoff_mean": [
+          909,
+          128
+        ],
+        "expected_active_steps": [
+          859,
+          256
+        ],
+        "expected_rounding_loss": [
+          115,
+          128
+        ],
+        "clock_boundary_probability": [
+          65,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          16393,
+          2048
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          1073741824
+        ],
+        "profile_error_occupation": [
+          104017583,
+          268435456
+        ],
+        "terminal_profile_difference": [
+          -136212817854280991,
+          97316104505917440
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 24,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          6838314026031835097424081007665361677781,
+          4397673063175339059216005778624216268800
+        ],
+        "signed_residual_occupation": [
+          -6838314026031835097424081007665361677781,
+          4397673063175339059216005778624216268800
+        ],
+        "positive_residual_occupation": [
+          202879,
+          15079680
+        ],
+        "negative_residual_occupation": [
+          -627043585476709493081349748475689281311,
+          399788460288667187201455070784019660800
+        ],
+        "terminal_cutoff_mean": [
+          114251,
+          16384
+        ],
+        "expected_active_steps": [
+          31683,
+          8192
+        ],
+        "expected_rounding_loss": [
+          16821,
+          16384
+        ],
+        "clock_boundary_probability": [
+          77,
+          1024
+        ],
+        "terminal_dyadic_potential": [
+          251265,
+          32768
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          70368744177664
+        ],
+        "profile_error_occupation": [
+          7739242148623,
+          17592186044416
+        ],
+        "terminal_profile_difference": [
+          -13544818073928733532846186767497193260888842345437,
+          9443930992419111586522076109469012374063572582400
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 32,
+        "initial_cutoff": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          17406933606640482067969485580897570649736844452623201308033210827564296382472256360028679658701161489791632259,
+          11618274125780450806953791303631273724886914822775412332907954757617446158369597097664514072463560826840678400
+        ],
+        "signed_residual_occupation": [
+          -17406933606640482067969485580897570649736844452623201308033210827564296382472256360028679658701161489791632259,
+          11618274125780450806953791303631273724886914822775412332907954757617446158369597097664514072463560826840678400
+        ],
+        "positive_residual_occupation": [
+          52520504447,
+          5015600758784
+        ],
+        "negative_residual_occupation": [
+          -403157651254080073024681429858279195777654846088486795365771486347271490115407461904988474884071302166869407557,
+          267220304892950368559937199983519295672399040923834483656882959425201261642500733246283823666661899017335603200
+        ],
+        "terminal_cutoff_mean": [
+          3614581,
+          524288
+        ],
+        "expected_active_steps": [
+          546807,
+          131072
+        ],
+        "expected_rounding_loss": [
+          579723,
+          524288
+        ],
+        "clock_boundary_probability": [
+          3013,
+          65536
+        ],
+        "terminal_dyadic_potential": [
+          978639,
+          131072
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          4611686018427387904
+        ],
+        "profile_error_occupation": [
+          546544399827063663,
+          1152921504606846976
+        ],
+        "terminal_profile_difference": [
+          -4650976354211265964079787995958782689459289655033693705472340822105254296603144606274168043640183246024226856107547913979,
+          3193606873996161708288213954067553708237657629578114043056302736781730440271248397770598778941617145791195694749030809600
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 2,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          9,
+          2
+        ],
+        "terminal_tail_mean": [
+          601,
+          92
+        ],
+        "signed_residual_occupation": [
+          -187,
+          92
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -187,
+          92
+        ],
+        "terminal_cutoff_mean": [
+          31,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          51,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          2
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -33,
+          46
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 4,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          13,
+          4
+        ],
+        "terminal_tail_mean": [
+          941,
+          154
+        ],
+        "signed_residual_occupation": [
+          -881,
+          308
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -881,
+          308
+        ],
+        "terminal_cutoff_mean": [
+          61,
+          4
+        ],
+        "expected_active_steps": [
+          2,
+          1
+        ],
+        "expected_rounding_loss": [
+          3,
+          4
+        ],
+        "clock_boundary_probability": [
+          3,
+          4
+        ],
+        "terminal_dyadic_potential": [
+          12,
+          1
+        ],
+        "leading_boundary_profile": [
+          231,
+          32
+        ],
+        "profile_error_occupation": [
+          5,
+          16
+        ],
+        "terminal_profile_difference": [
+          -1961,
+          2464
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 8,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          23,
+          8
+        ],
+        "terminal_tail_mean": [
+          104045,
+          18304
+        ],
+        "signed_residual_occupation": [
+          -51421,
+          18304
+        ],
+        "positive_residual_occupation": [
+          25,
+          748
+        ],
+        "negative_residual_occupation": [
+          -884557,
+          311168
+        ],
+        "terminal_cutoff_mean": [
+          483,
+          32
+        ],
+        "expected_active_steps": [
+          61,
+          16
+        ],
+        "expected_rounding_loss": [
+          29,
+          32
+        ],
+        "clock_boundary_probability": [
+          15,
+          32
+        ],
+        "terminal_dyadic_potential": [
+          21,
+          2
+        ],
+        "leading_boundary_profile": [
+          57111,
+          8192
+        ],
+        "profile_error_occupation": [
+          409,
+          1024
+        ],
+        "terminal_profile_difference": [
+          -1040097,
+          1171456
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 16,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          5,
+          16
+        ],
+        "terminal_tail_mean": [
+          178606913238811977,
+          34726773233152000
+        ],
+        "signed_residual_occupation": [
+          -167754796603451977,
+          34726773233152000
+        ],
+        "positive_residual_occupation": [
+          607,
+          5984
+        ],
+        "negative_residual_occupation": [
+          -171277382056747977,
+          34726773233152000
+        ],
+        "terminal_cutoff_mean": [
+          1863,
+          128
+        ],
+        "expected_active_steps": [
+          1497,
+          256
+        ],
+        "expected_rounding_loss": [
+          185,
+          128
+        ],
+        "clock_boundary_probability": [
+          139,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          37689,
+          4096
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          536870912
+        ],
+        "profile_error_occupation": [
+          41159273,
+          67108864
+        ],
+        "terminal_profile_difference": [
+          -5061823433150764335281,
+          4551707621215698944000
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 24,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          1343512675136809116986747711299058617604268868076845139,
+          274950596427763326192091096553795890641214431911608320
+        ],
+        "signed_residual_occupation": [
+          -1343512675136809116986747711299058617604268868076845139,
+          274950596427763326192091096553795890641214431911608320
+        ],
+        "positive_residual_occupation": [
+          873330331,
+          12787568640
+        ],
+        "negative_residual_occupation": [
+          -28608100452439593136234797995675665710760390045643045807,
+          5773962524983029850033913027629713703465503070143774720
+        ],
+        "terminal_cutoff_mean": [
+          233357,
+          16384
+        ],
+        "expected_active_steps": [
+          115509,
+          16384
+        ],
+        "expected_rounding_loss": [
+          28787,
+          16384
+        ],
+        "clock_boundary_probability": [
+          5667,
+          32768
+        ],
+        "terminal_dyadic_potential": [
+          137351,
+          16384
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          35184372088832
+        ],
+        "profile_error_occupation": [
+          3309830999305,
+          4398046511104
+        ],
+        "terminal_profile_difference": [
+          -89995401697196693992068922484065930555974552265562990258994451,
+          73806488729558619526450717096958228435200528423973531072593920
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 32,
+        "initial_cutoff": 16,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "terminal_tail_mean": [
+          666029696628062671170430331881836938587099421676027527060358398511196075045095624305534076047646472466767926364503617669,
+          141031998730313603231841987186732794682563691402210550814232692469959814026929847532880358383282868487918327985943347200
+        ],
+        "signed_residual_occupation": [
+          -666029696628062671170430331881836938587099421676027527060358398511196075045095624305534076047646472466767926364503617669,
+          141031998730313603231841987186732794682563691402210550814232692469959814026929847532880358383282868487918327985943347200
+        ],
+        "positive_residual_occupation": [
+          306981269613962994595,
+          3240845925504815333376
+        ],
+        "negative_residual_occupation": [
+          -4597422728162606752941328447824304563256914116877262066453182839753406573743163551088209280327240161173392724851485058919123,
+          954363535408032153069874727292620821616908499718758797359912629944218061520234278255001385179675171057743325480878630502400
+        ],
+        "terminal_cutoff_mean": [
+          1841419,
+          131072
+        ],
+        "expected_active_steps": [
+          2045021,
+          262144
+        ],
+        "expected_rounding_loss": [
+          255733,
+          131072
+        ],
+        "clock_boundary_probability": [
+          29101,
+          262144
+        ],
+        "terminal_dyadic_potential": [
+          16543753,
+          2097152
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          2305843009213693952
+        ],
+        "profile_error_occupation": [
+          240675053257823145,
+          288230376151711744
+        ],
+        "terminal_profile_difference": [
+          -403081011559009256539012607592718269260980183858058015937971666469732739271717328531355404300012652508214947849986021079550986023037,
+          310132644984939750248796795293014219905174403076879717300877099772161466204111748321273561055723188875611233187137650653579863654400
+        ],
+        "all_clock_kernel_lower_bound": [
+          -41,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 2,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          169,
+          16
+        ],
+        "terminal_tail_mean": [
+          10965,
+          752
+        ],
+        "signed_residual_occupation": [
+          -1511,
+          376
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1511,
+          376
+        ],
+        "terminal_cutoff_mean": [
+          63,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          63,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -127,
+          752
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 4,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          129,
+          16
+        ],
+        "terminal_tail_mean": [
+          498007,
+          35926
+        ],
+        "signed_residual_occupation": [
+          -1666829,
+          287408
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1666829,
+          287408
+        ],
+        "terminal_cutoff_mean": [
+          249,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          7,
+          8
+        ],
+        "terminal_dyadic_potential": [
+          59,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          16
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          -57619,
+          287408
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 8,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          105,
+          16
+        ],
+        "terminal_tail_mean": [
+          92065245,
+          7099456
+        ],
+        "signed_residual_occupation": [
+          -45475065,
+          7099456
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -45475065,
+          7099456
+        ],
+        "terminal_cutoff_mean": [
+          249,
+          8
+        ],
+        "expected_active_steps": [
+          71,
+          16
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          25,
+          32
+        ],
+        "terminal_dyadic_potential": [
+          209,
+          16
+        ],
+        "leading_boundary_profile": [
+          57111,
+          4096
+        ],
+        "profile_error_occupation": [
+          377,
+          1024
+        ],
+        "terminal_profile_difference": [
+          -275809507,
+          454365184
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 16,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          21,
+          8
+        ],
+        "terminal_tail_mean": [
+          16980521877513171719947,
+          1398109189430932306944
+        ],
+        "signed_residual_occupation": [
+          -13310485255256974414219,
+          1398109189430932306944
+        ],
+        "positive_residual_occupation": [
+          1215,
+          23936
+        ],
+        "negative_residual_occupation": [
+          -13381453782377570284579,
+          1398109189430932306944
+        ],
+        "terminal_cutoff_mean": [
+          15497,
+          512
+        ],
+        "expected_active_steps": [
+          3883,
+          512
+        ],
+        "expected_rounding_loss": [
+          887,
+          512
+        ],
+        "clock_boundary_probability": [
+          489,
+          1024
+        ],
+        "terminal_dyadic_potential": [
+          45235,
+          4096
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          268435456
+        ],
+        "profile_error_occupation": [
+          50623257,
+          67108864
+        ],
+        "terminal_profile_difference": [
+          -306949359571354884493308365,
+          366505935354182318671527936
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 24,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          1375050863745043548738157884459826895682288412280580790884962909808977,
+          117064292220259380638345778547138229170259307148653826499998518312960
+        ],
+        "signed_residual_occupation": [
+          -1162871834095823421331156160843138855311193418073645730353715595366737,
+          117064292220259380638345778547138229170259307148653826499998518312960
+        ],
+        "positive_residual_occupation": [
+          1197815629,
+          5150351360
+        ],
+        "negative_residual_occupation": [
+          -84496918273413903759451918959384347018870216774873654085927091853152651,
+          8311564747638416025322550276846814271088410807554421681499894800220160
+        ],
+        "terminal_cutoff_mean": [
+          487145,
+          16384
+        ],
+        "expected_active_steps": [
+          39347,
+          4096
+        ],
+        "expected_rounding_loss": [
+          37143,
+          16384
+        ],
+        "clock_boundary_probability": [
+          5107,
+          16384
+        ],
+        "terminal_dyadic_potential": [
+          1269021,
+          131072
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          17592186044416
+        ],
+        "profile_error_occupation": [
+          4274026476473,
+          4398046511104
+        ],
+        "terminal_profile_difference": [
+          -62764268711360008326329372826216229728520363819015917622677962754433421983181,
+          62848413326925158559863840299952136084702117505385899405343972525327536619520
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 32,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          296824156049144906749615668910159122271906384490991298270063845942368998162677152352395873320691593623332292999296547771964769587396491205736757788844463,
+          25886315141744491077053162447380818739830858699203707279457324802423516767224741841588411037849180412288247253782576297769059362762513316801680716595200
+        ],
+        "signed_residual_occupation": [
+          -249905209854733016672456811974281388305962953098684578826047444737976374022082307764516878314589954126059844851815628232258349492389435819033711490015663,
+          25886315141744491077053162447380818739830858699203707279457324802423516767224741841588411037849180412288247253782576297769059362762513316801680716595200
+        ],
+        "positive_residual_occupation": [
+          47373476984080013254907,
+          79845300723227700756480
+        ],
+        "negative_residual_occupation": [
+          -265263969148795339980938322141127528810474835051576972976072379065560676747550179549975309118916294922390576811553841200323234117532367200899643462079343,
+          25886315141744491077053162447380818739830858699203707279457324802423516767224741841588411037849180412288247253782576297769059362762513316801680716595200
+        ],
+        "terminal_cutoff_mean": [
+          3853111,
+          131072
+        ],
+        "expected_active_steps": [
+          5739077,
+          524288
+        ],
+        "expected_rounding_loss": [
+          341193,
+          131072
+        ],
+        "clock_boundary_probability": [
+          206401,
+          1048576
+        ],
+        "terminal_dyadic_potential": [
+          36819799,
+          4194304
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          1152921504606846976
+        ],
+        "profile_error_occupation": [
+          322426877323630681,
+          288230376151711744
+        ],
+        "terminal_profile_difference": [
+          -2009121495457379545743628598957675205953661307010230407392656540241367010592768573573588452616127686582338056483603550193201630130759686747156664679229289428809007,
+          1778894031163875097025714380238014997524439530954832384115621482464938656904606574266640609602682368818909095682527639896685883579961518566843295929763655529267200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -19,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 2,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          699,
+          32
+        ],
+        "terminal_tail_mean": [
+          18151,
+          608
+        ],
+        "signed_residual_occupation": [
+          -2435,
+          304
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -2435,
+          304
+        ],
+        "terminal_cutoff_mean": [
+          127,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          75,
+          4
+        ],
+        "leading_boundary_profile": [
+          30,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          63,
+          608
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 4,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          545,
+          32
+        ],
+        "terminal_tail_mean": [
+          70565441,
+          2473328
+        ],
+        "signed_residual_occupation": [
+          -56883147,
+          4946656
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -56883147,
+          4946656
+        ],
+        "terminal_cutoff_mean": [
+          505,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          71,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          8
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          75593,
+          2473328
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 8,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          107,
+          8
+        ],
+        "terminal_tail_mean": [
+          188745401,
+          6895936
+        ],
+        "signed_residual_occupation": [
+          -96512257,
+          6895936
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -96512257,
+          6895936
+        ],
+        "terminal_cutoff_mean": [
+          1009,
+          16
+        ],
+        "expected_active_steps": [
+          19,
+          4
+        ],
+        "expected_rounding_loss": [
+          15,
+          16
+        ],
+        "clock_boundary_probability": [
+          7,
+          8
+        ],
+        "terminal_dyadic_potential": [
+          127,
+          8
+        ],
+        "leading_boundary_profile": [
+          57111,
+          2048
+        ],
+        "profile_error_occupation": [
+          25,
+          64
+        ],
+        "terminal_profile_difference": [
+          -27601107,
+          220669952
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 16,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          457,
+          64
+        ],
+        "terminal_tail_mean": [
+          583508202577718231721338399,
+          22359828410799470889492480
+        ],
+        "signed_residual_occupation": [
+          -423845052831853259901056159,
+          22359828410799470889492480
+        ],
+        "positive_residual_occupation": [
+          2097,
+          23936
+        ],
+        "negative_residual_occupation": [
+          -425803966609320108599889119,
+          22359828410799470889492480
+        ],
+        "terminal_cutoff_mean": [
+          63661,
+          1024
+        ],
+        "expected_active_steps": [
+          8935,
+          1024
+        ],
+        "expected_rounding_loss": [
+          1875,
+          1024
+        ],
+        "clock_boundary_probability": [
+          1261,
+          2048
+        ],
+        "terminal_dyadic_potential": [
+          27287,
+          2048
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          134217728
+        ],
+        "profile_error_occupation": [
+          6418845,
+          8388608
+        ],
+        "terminal_profile_difference": [
+          -224542634242923765130399050349,
+          366343428682538531053444792320
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 24,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          169,
+          32
+        ],
+        "terminal_tail_mean": [
+          1692457038202767915032365440618651244695842480515397753739681037,
+          66412583205415186922346415843642207606728005999659532194283520
+        ],
+        "signed_residual_occupation": [
+          -1341715583149168959098723431944415835772810198829695849338621197,
+          66412583205415186922346415843642207606728005999659532194283520
+        ],
+        "positive_residual_occupation": [
+          3668950603,
+          25160446080
+        ],
+        "negative_residual_occupation": [
+          -28379400199652305855218064359530756161850709241724210302593531409,
+          1394664247313718925369274732716486359741288125992850176079953920
+        ],
+        "terminal_cutoff_mean": [
+          2012497,
+          32768
+        ],
+        "expected_active_steps": [
+          2959,
+          256
+        ],
+        "expected_rounding_loss": [
+          84655,
+          32768
+        ],
+        "clock_boundary_probability": [
+          7191,
+          16384
+        ],
+        "terminal_dyadic_potential": [
+          751541,
+          65536
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          8796093022208
+        ],
+        "profile_error_occupation": [
+          606896974013,
+          549755813888
+        ],
+        "terminal_profile_difference": [
+          -3767117314679862181297489270944832082137424264408864131349918896200587,
+          4456873014220891842706324181738430174939675239622335592329794321121280
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 32,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          19,
+          4
+        ],
+        "terminal_tail_mean": [
+          11822245022248310494139934364533245996498845065808332335336721553611951686693654031909828711354810027513941351305949148293600489085036106052131963663942314549977,
+          470743461050529393764949065044219031064852407628456903785339301740221212569797328429120618455227466744666011777088842587233512023294818705963963126477592985600
+        ],
+        "signed_residual_occupation": [
+          -9586213582258295873756426305573205598940796129573162042356359870345900926987116721871505773692479560476777795364777146004241306974385717198803138813173747868377,
+          470743461050529393764949065044219031064852407628456903785339301740221212569797328429120618455227466744666011777088842587233512023294818705963963126477592985600
+        ],
+        "positive_residual_occupation": [
+          5168741834102681672992097,
+          10982587861307868724199424
+        ],
+        "negative_residual_occupation": [
+          -107885358419554153583375746425942808660249910289035751885691234609423246779512168921147446035517038339313830821188462721592350207518602062524398413830169820956947,
+          5178178071555823331414439715486409341713376483913025941638732319142433338267770612720326803007502134191326129547977268459568632256243005765603594391253522841600
+        ],
+        "terminal_cutoff_mean": [
+          15974119,
+          262144
+        ],
+        "expected_active_steps": [
+          7108633,
+          524288
+        ],
+        "expected_rounding_loss": [
+          803097,
+          262144
+        ],
+        "clock_boundary_probability": [
+          332469,
+          1048576
+        ],
+        "terminal_dyadic_potential": [
+          42369193,
+          4194304
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          576460752303423488
+        ],
+        "profile_error_occupation": [
+          47239842472186845,
+          36028797018963968
+        ],
+        "terminal_profile_difference": [
+          -32474594890368496785492331344497911506808644166354874387852050314389335325360549487282996530581114999994234748411447742488344548839165732409239779208617053580374751096503,
+          32349244320285976795314600727531160516549586333297333131255214483803615932683898287219905764871936158548289648405558735978559380084384584133828188524338776799215983001600
+        ],
+        "all_clock_kernel_lower_bound": [
+          -23,
+          2
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 2,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          2815,
+          64
+        ],
+        "terminal_tail_mean": [
+          733311,
+          12224
+        ],
+        "signed_residual_occupation": [
+          -97823,
+          6112
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -97823,
+          6112
+        ],
+        "terminal_cutoff_mean": [
+          255,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          87,
+          4
+        ],
+        "leading_boundary_profile": [
+          60,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          2927,
+          12224
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 4,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          1109,
+          32
+        ],
+        "terminal_tail_mean": [
+          4726091509,
+          82013120
+        ],
+        "signed_residual_occupation": [
+          -1883824319,
+          82013120
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -1883824319,
+          82013120
+        ],
+        "terminal_cutoff_mean": [
+          1017,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          83,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          4
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          20588749,
+          82013120
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 8,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          3395,
+          128
+        ],
+        "terminal_tail_mean": [
+          1572587562587,
+          28339583440
+        ],
+        "signed_residual_occupation": [
+          -6567395139521,
+          226716667520
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -6567395139521,
+          226716667520
+        ],
+        "terminal_cutoff_mean": [
+          4065,
+          32
+        ],
+        "expected_active_steps": [
+          155,
+          32
+        ],
+        "expected_rounding_loss": [
+          31,
+          32
+        ],
+        "clock_boundary_probability": [
+          31,
+          32
+        ],
+        "terminal_dyadic_potential": [
+          4823,
+          256
+        ],
+        "leading_boundary_profile": [
+          57111,
+          1024
+        ],
+        "profile_error_occupation": [
+          207,
+          512
+        ],
+        "terminal_profile_difference": [
+          222518861963,
+          1813733340160
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 16,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          2107,
+          128
+        ],
+        "terminal_tail_mean": [
+          2872304964250581251122259909631,
+          53340940229586838819031275520
+        ],
+        "signed_residual_occupation": [
+          -1994263080940116646499612272751,
+          53340940229586838819031275520
+        ],
+        "positive_residual_occupation": [
+          975,
+          23936
+        ],
+        "negative_residual_occupation": [
+          -33939409461723351717658575890767,
+          906795983902976259923531683840
+        ],
+        "terminal_cutoff_mean": [
+          258349,
+          2048
+        ],
+        "expected_active_steps": [
+          2421,
+          256
+        ],
+        "expected_rounding_loss": [
+          3795,
+          2048
+        ],
+        "clock_boundary_probability": [
+          381,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          8117,
+          512
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          67108864
+        ],
+        "profile_error_occupation": [
+          13664019,
+          16777216
+        ],
+        "terminal_profile_difference": [
+          -500419060206459460047863723495817,
+          1747875929443101534422016836239360
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 24,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          53,
+          4
+        ],
+        "terminal_tail_mean": [
+          3265251953245379221667549995160784066505187787124547982745985223756087767,
+          61483007548601512353608433164013915482257195825232082981451018307174400
+        ],
+        "signed_residual_occupation": [
+          -2450602103226409182982238255737599686365279942440222883241759231186026967,
+          61483007548601512353608433164013915482257195825232082981451018307174400
+        ],
+        "positive_residual_occupation": [
+          234031579209411703,
+          1102115136913072128
+        ],
+        "negative_residual_occupation": [
+          -2720299581155099450919816259452148087143357949734875672987545606968168475636757,
+          67887753927946880496996177255142409071959410171542334297711752335251064422400
+        ],
+        "terminal_cutoff_mean": [
+          4104557,
+          32768
+        ],
+        "expected_active_steps": [
+          426931,
+          32768
+        ],
+        "expected_rounding_loss": [
+          89747,
+          32768
+        ],
+        "clock_boundary_probability": [
+          36195,
+          65536
+        ],
+        "terminal_dyadic_potential": [
+          1778899,
+          131072
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          4398046511104
+        ],
+        "profile_error_occupation": [
+          1299781424627,
+          1099511627776
+        ],
+        "terminal_profile_difference": [
+          -2376487528094913003044534519907655198698473364091070936547202683305047289771887,
+          4126054791890072282732628250456899548206292567656867625238910910237677033881600
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 4,
+        "initial_clock": 32,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          365,
+          32
+        ],
+        "terminal_tail_mean": [
+          1335779986536522323732122015855822021821178550125125310464143708523159664507312944279325931182448843819353455629289394033274526498923298574918977661941301402853953512120076997478885304863760166988179,
+          25390788470203529381552551667957028176838347633539954081481143117799654452381641589518858298104710890451315786570563163057840566728533859564688292759877769382865808741539184929348183502026807705600
+        ],
+        "signed_residual_occupation": [
+          -1046166305548263316723788223393187169179116147430060209222249419835757355909834844898876453719691985225143134938718907954646032534675959239259251822648945595830640381161895669378507586793766891596179,
+          25390788470203529381552551667957028176838347633539954081481143117799654452381641589518858298104710890451315786570563163057840566728533859564688292759877769382865808741539184929348183502026807705600
+        ],
+        "positive_residual_occupation": [
+          1000549911478282698637162923,
+          1009738686471889047022469120
+        ],
+        "negative_residual_occupation": [
+          -461741520652881640763149756702320647307347738795837687461210256759383708384721474656829159156011695157195693855467702815444165898583143534143095934417316454225266547841194506424259473074628078865550589,
+          10943429830657721163449149768889479144217327830055720209118372683771651068976487525082627926483130393784517104011912723277929284259998093472380654179507318604015163567603388704549067089373554121113600
+        ],
+        "terminal_cutoff_mean": [
+          65329267,
+          524288
+        ],
+        "expected_active_steps": [
+          16438785,
+          1048576
+        ],
+        "expected_rounding_loss": [
+          1779597,
+          524288
+        ],
+        "clock_boundary_probability": [
+          875369,
+          2097152
+        ],
+        "terminal_dyadic_potential": [
+          98862717,
+          8388608
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          288230376151711744
+        ],
+        "profile_error_occupation": [
+          105077829368350931,
+          72057594037927936
+        ],
+        "terminal_profile_difference": [
+          -172514932403541161284569270961009136826218015457145853441965369477956646439899415662430963004915032204418333108826052597605458406483601937125015505519894567666016147759199562975800616978866733583090542872507,
+          218105212198356058315086630238451374305742415529466190978606457863289982706159879875553905531235904116046879966978169563271481180962317273717986027675497200913677502603003431948093037476423777621665592115200
+        ],
+        "all_clock_kernel_lower_bound": [
+          8,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 2,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          6,
+          1
+        ],
+        "terminal_tail_mean": [
+          496,
+          47
+        ],
+        "signed_residual_occupation": [
+          -214,
+          47
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -214,
+          47
+        ],
+        "terminal_cutoff_mean": [
+          63,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          2
+        ],
+        "terminal_dyadic_potential": [
+          63,
+          4
+        ],
+        "leading_boundary_profile": [
+          15,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -789,
+          188
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 4,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          119,
+          32
+        ],
+        "terminal_tail_mean": [
+          15335,
+          1633
+        ],
+        "signed_residual_occupation": [
+          -296393,
+          52256
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -296393,
+          52256
+        ],
+        "terminal_cutoff_mean": [
+          63,
+          2
+        ],
+        "expected_active_steps": [
+          3,
+          2
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          2
+        ],
+        "terminal_dyadic_potential": [
+          31,
+          2
+        ],
+        "leading_boundary_profile": [
+          231,
+          16
+        ],
+        "profile_error_occupation": [
+          7,
+          32
+        ],
+        "terminal_profile_difference": [
+          -252295,
+          52256
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 8,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          97,
+          32
+        ],
+        "terminal_tail_mean": [
+          30668725,
+          3549728
+        ],
+        "signed_residual_occupation": [
+          -4977153,
+          887432
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -4977153,
+          887432
+        ],
+        "terminal_cutoff_mean": [
+          63,
+          2
+        ],
+        "expected_active_steps": [
+          5,
+          2
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          5,
+          16
+        ],
+        "terminal_dyadic_potential": [
+          235,
+          16
+        ],
+        "leading_boundary_profile": [
+          57111,
+          4096
+        ],
+        "profile_error_occupation": [
+          871,
+          4096
+        ],
+        "terminal_profile_difference": [
+          -144565635,
+          28397824
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 16,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          30855780371345601043,
+          3901627475110041600
+        ],
+        "signed_residual_occupation": [
+          -23784080572708650643,
+          3901627475110041600
+        ],
+        "positive_residual_occupation": [
+          123,
+          752
+        ],
+        "negative_residual_occupation": [
+          -1147845548132215025021,
+          183376491330171955200
+        ],
+        "terminal_cutoff_mean": [
+          15977,
+          512
+        ],
+        "expected_active_steps": [
+          947,
+          256
+        ],
+        "expected_rounding_loss": [
+          407,
+          512
+        ],
+        "clock_boundary_probability": [
+          79,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          14343,
+          1024
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          268435456
+        ],
+        "profile_error_occupation": [
+          92286055,
+          268435456
+        ],
+        "terminal_profile_difference": [
+          -175311138637758253636819,
+          31962132276101460787200
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 24,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          548636894230772069343822671199142115740132760027116774245853143877,
+          71633887293573973317326306840166946098181514491738124724015267840
+        ],
+        "signed_residual_occupation": [
+          -418800473511169242706168740051339525937178765010841423183575470917,
+          71633887293573973317326306840166946098181514491738124724015267840
+        ],
+        "positive_residual_occupation": [
+          1139611,
+          2107280
+        ],
+        "negative_residual_occupation": [
+          -344344509911833518241423861571362946366711714944103603678980243482995,
+          53911663577143772318619778527909643633491407806482112667293890576384
+        ],
+        "terminal_cutoff_mean": [
+          508183,
+          16384
+        ],
+        "expected_active_steps": [
+          17811,
+          4096
+        ],
+        "expected_rounding_loss": [
+          16105,
+          16384
+        ],
+        "clock_boundary_probability": [
+          1519,
+          16384
+        ],
+        "terminal_dyadic_potential": [
+          888115,
+          65536
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          17592186044416
+        ],
+        "profile_error_occupation": [
+          7438533655495,
+          17592186044416
+        ],
+        "terminal_profile_difference": [
+          -6772054713382860455492545102884246774625935375514114200060370356960247433,
+          1201817200043945962323019992339758330749548475835020733929744535849533440
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 32,
+        "initial_cutoff": 32,
+        "actual_prefix_tail_mean": [
+          29,
+          16
+        ],
+        "terminal_tail_mean": [
+          6246071263129833219875088862152815418311135069660468485169223397666563275016793128580004186307008728050503766662366494979869282024502878567,
+          827513682491406279478384441177699530975239400146277555748829346823801417555916232693124922395677912107687925985387564969353747618594816000
+        ],
+        "signed_residual_occupation": [
+          -4746202713614159338320517062518235018418513656895340415374470206548423205696694956823715264464842512355319400813851533472915614465799774567,
+          827513682491406279478384441177699530975239400146277555748829346823801417555916232693124922395677912107687925985387564969353747618594816000
+        ],
+        "positive_residual_occupation": [
+          325719341725858489,
+          500675122991898624
+        ],
+        "negative_residual_occupation": [
+          -58130052594842762092527115196983496772678297317136860805861581452044178596157265034895216707473844942547371315668676449955926962540762256237,
+          9102650507405469074262228852954694840727633401609053113237122815061815593115078559624374146352457033184567185839263214662891223804542976000
+        ],
+        "terminal_cutoff_mean": [
+          1012911,
+          32768
+        ],
+        "expected_active_steps": [
+          1247603,
+          262144
+        ],
+        "expected_rounding_loss": [
+          35665,
+          32768
+        ],
+        "clock_boundary_probability": [
+          4135,
+          65536
+        ],
+        "terminal_dyadic_potential": [
+          13943497,
+          1048576
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          1152921504606846976
+        ],
+        "profile_error_occupation": [
+          538914859484170023,
+          1152921504606846976
+        ],
+        "terminal_profile_difference": [
+          -40510730041562936054528399304056769460792909503965559983718801343611813082302637959214028020635847640256421982704480091685505899007718192216853865711,
+          7108288406586235542817394227546910420106384418797839436160077669786537125602200941464995091463949208504164144562616330856899176553805232390275072000
+        ],
+        "all_clock_kernel_lower_bound": [
+          -31,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 2,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          18,
+          1
+        ],
+        "terminal_tail_mean": [
+          2497,
+          95
+        ],
+        "signed_residual_occupation": [
+          -787,
+          95
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -787,
+          95
+        ],
+        "terminal_cutoff_mean": [
+          127,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          75,
+          4
+        ],
+        "leading_boundary_profile": [
+          30,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -1317,
+          380
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 4,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          53,
+          4
+        ],
+        "terminal_tail_mean": [
+          165998,
+          6721
+        ],
+        "signed_residual_occupation": [
+          -307779,
+          26884
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -307779,
+          26884
+        ],
+        "terminal_cutoff_mean": [
+          253,
+          4
+        ],
+        "expected_active_steps": [
+          2,
+          1
+        ],
+        "expected_rounding_loss": [
+          3,
+          4
+        ],
+        "clock_boundary_probability": [
+          3,
+          4
+        ],
+        "terminal_dyadic_potential": [
+          18,
+          1
+        ],
+        "leading_boundary_profile": [
+          231,
+          8
+        ],
+        "profile_error_occupation": [
+          5,
+          16
+        ],
+        "terminal_profile_difference": [
+          -415529,
+          107536
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 8,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          317,
+          32
+        ],
+        "terminal_tail_mean": [
+          2560331,
+          107749
+        ],
+        "signed_residual_occupation": [
+          -47774159,
+          3447968
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -47774159,
+          3447968
+        ],
+        "terminal_cutoff_mean": [
+          253,
+          4
+        ],
+        "expected_active_steps": [
+          61,
+          16
+        ],
+        "expected_rounding_loss": [
+          3,
+          4
+        ],
+        "clock_boundary_probability": [
+          5,
+          8
+        ],
+        "terminal_dyadic_potential": [
+          133,
+          8
+        ],
+        "leading_boundary_profile": [
+          57111,
+          2048
+        ],
+        "profile_error_occupation": [
+          319,
+          1024
+        ],
+        "terminal_profile_difference": [
+          -841351389,
+          220669952
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 16,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          171,
+          32
+        ],
+        "terminal_tail_mean": [
+          15099817285343238845543,
+          665629566884956861440
+        ],
+        "signed_residual_occupation": [
+          -11542859287301750617223,
+          665629566884956861440
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -11542859287301750617223,
+          665629566884956861440
+        ],
+        "terminal_cutoff_mean": [
+          32123,
+          512
+        ],
+        "expected_active_steps": [
+          1609,
+          256
+        ],
+        "expected_rounding_loss": [
+          645,
+          512
+        ],
+        "clock_boundary_probability": [
+          79,
+          256
+        ],
+        "terminal_dyadic_potential": [
+          31129,
+          2048
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          134217728
+        ],
+        "profile_error_occupation": [
+          35462251,
+          67108864
+        ],
+        "terminal_profile_difference": [
+          -371747794750618602085712669,
+          87245398590745065742663680
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 24,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          19,
+          4
+        ],
+        "terminal_tail_mean": [
+          6866668252660113847480856097134204974284268105221687723773,
+          312570652889296126133341332746609340573380509020887654400
+        ],
+        "signed_residual_occupation": [
+          -5381957651435957248347484766587810606560710687372471365373,
+          312570652889296126133341332746609340573380509020887654400
+        ],
+        "positive_residual_occupation": [
+          1167235277,
+          3763602080
+        ],
+        "negative_residual_occupation": [
+          -257508188455754288651396310331730155335599864411726812782451,
+          14690820685796917928267042639090639006948883923981719756800
+        ],
+        "terminal_cutoff_mean": [
+          2044025,
+          32768
+        ],
+        "expected_active_steps": [
+          15717,
+          2048
+        ],
+        "expected_rounding_loss": [
+          53127,
+          32768
+        ],
+        "clock_boundary_probability": [
+          101,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          933345,
+          65536
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          8796093022208
+        ],
+        "profile_error_occupation": [
+          3043922514507,
+          4398046511104
+        ],
+        "terminal_profile_difference": [
+          -1601807370434011730710916187942910538146308095044379285144969298073,
+          335620182962223692550547989837935243162698793602136364134537625600
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 32,
+        "initial_cutoff": 64,
+        "actual_prefix_tail_mean": [
+          19,
+          4
+        ],
+        "terminal_tail_mean": [
+          950421010862740074334601288125584578096312235182328722828123677950752630290327814962728417770283787578883763358711371843811208587012627330551466915707,
+          43899429293417463614687763048724352732439979403714070735926975822959330438642789658257978483349531789289314355669562280554628280898702007750791004160
+        ],
+        "signed_residual_occupation": [
+          -741898721719007122164834413644143902617222333014686886832470542791695810706774564086003019974373511579759520169280951011176724252743792793735209645947,
+          43899429293417463614687763048724352732439979403714070735926975822959330438642789658257978483349531789289314355669562280554628280898702007750791004160
+        ],
+        "positive_residual_occupation": [
+          933447548296327107503378045,
+          1624619989737711732222313472
+        ],
+        "negative_residual_occupation": [
+          -13260247166212657333171470898792808570471330361993594273460565555837085983169636935918281151174692809066489038308004766883397373716649892345020772052741,
+          758832992071930442482459904127949525803605358264200365578166296368296997582253935521316485212184763786286719576573862278158574569820420419692244500480
+        ],
+        "terminal_cutoff_mean": [
+          32578245,
+          524288
+        ],
+        "expected_active_steps": [
+          1126911,
+          131072
+        ],
+        "expected_rounding_loss": [
+          976187,
+          524288
+        ],
+        "clock_boundary_probability": [
+          36271,
+          262144
+        ],
+        "terminal_dyadic_potential": [
+          14292045,
+          1048576
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          576460752303423488
+        ],
+        "profile_error_occupation": [
+          229600270549537835,
+          288230376151711744
+        ],
+        "terminal_profile_difference": [
+          -30061762713959806756538007021347571607096547631556471084914939524187682774654022545662896228205167094097356386838025862645071239682254778420485527481259987211261,
+          6033491620105356617611324401461387184147134394299696471866784428921376325504899718669601085345853426301118983675650629683753766652692051588453948191942398443520
+        ],
+        "all_clock_kernel_lower_bound": [
+          -47,
+          2
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 2,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          673,
+          16
+        ],
+        "terminal_tail_mean": [
+          177879,
+          3056
+        ],
+        "signed_residual_occupation": [
+          -6167,
+          382
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -6167,
+          382
+        ],
+        "terminal_cutoff_mean": [
+          255,
+          2
+        ],
+        "expected_active_steps": [
+          1,
+          1
+        ],
+        "expected_rounding_loss": [
+          1,
+          2
+        ],
+        "clock_boundary_probability": [
+          1,
+          1
+        ],
+        "terminal_dyadic_potential": [
+          87,
+          4
+        ],
+        "leading_boundary_profile": [
+          60,
+          1
+        ],
+        "profile_error_occupation": [
+          1,
+          4
+        ],
+        "terminal_profile_difference": [
+          -4717,
+          3056
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 4,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          515,
+          16
+        ],
+        "terminal_tail_mean": [
+          71159654,
+          1281455
+        ],
+        "signed_residual_occupation": [
+          -478605139,
+          20503280
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -478605139,
+          20503280
+        ],
+        "terminal_cutoff_mean": [
+          1017,
+          8
+        ],
+        "expected_active_steps": [
+          9,
+          4
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          7,
+          8
+        ],
+        "terminal_dyadic_potential": [
+          83,
+          4
+        ],
+        "leading_boundary_profile": [
+          231,
+          4
+        ],
+        "profile_error_occupation": [
+          3,
+          8
+        ],
+        "terminal_profile_difference": [
+          -18910613,
+          10251640
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 8,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          2985,
+          128
+        ],
+        "terminal_tail_mean": [
+          174699444639,
+          3334068640
+        ],
+        "signed_residual_occupation": [
+          -387791688231,
+          13336274560
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -387791688231,
+          13336274560
+        ],
+        "terminal_cutoff_mean": [
+          1017,
+          8
+        ],
+        "expected_active_steps": [
+          71,
+          16
+        ],
+        "expected_rounding_loss": [
+          7,
+          8
+        ],
+        "clock_boundary_probability": [
+          25,
+          32
+        ],
+        "terminal_dyadic_potential": [
+          613,
+          32
+        ],
+        "leading_boundary_profile": [
+          57111,
+          1024
+        ],
+        "profile_error_occupation": [
+          377,
+          1024
+        ],
+        "terminal_profile_difference": [
+          -160356545491,
+          53345098240
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 16,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          897,
+          64
+        ],
+        "terminal_tail_mean": [
+          6082548922692915239647409425,
+          119867281414801884986587136
+        ],
+        "signed_residual_occupation": [
+          -4402534056613582570382274097,
+          119867281414801884986587136
+        ],
+        "positive_residual_occupation": [
+          0,
+          1
+        ],
+        "negative_residual_occupation": [
+          -4402534056613582570382274097,
+          119867281414801884986587136
+        ],
+        "terminal_cutoff_mean": [
+          129549,
+          1024
+        ],
+        "expected_active_steps": [
+          4065,
+          512
+        ],
+        "expected_rounding_loss": [
+          1523,
+          1024
+        ],
+        "clock_boundary_probability": [
+          277,
+          512
+        ],
+        "terminal_dyadic_potential": [
+          69769,
+          4096
+        ],
+        "leading_boundary_profile": [
+          3687550071,
+          67108864
+        ],
+        "profile_error_occupation": [
+          43683357,
+          67108864
+        ],
+        "terminal_profile_difference": [
+          -6979357524102063727064402899499,
+          1963905538700114083620243636224
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 24,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          777,
+          64
+        ],
+        "terminal_tail_mean": [
+          3067835163859138658297009895348715238665540572101790213998844712930054309,
+          61483007548601512353608433164013915482257195825232082981451018307174400
+        ],
+        "signed_residual_occupation": [
+          -2321393025339398422378982511466858796013761804036081956552165943794515109,
+          61483007548601512353608433164013915482257195825232082981451018307174400
+        ],
+        "positive_residual_occupation": [
+          3969546329459,
+          11789107155392
+        ],
+        "negative_residual_occupation": [
+          -862024517151457511001608634836149946035614322541290334259576406321704336074813,
+          22629251309315626832332059085047469690653136723847444765903917445083688140800
+        ],
+        "terminal_cutoff_mean": [
+          4031,
+          32
+        ],
+        "expected_active_steps": [
+          166779,
+          16384
+        ],
+        "expected_rounding_loss": [
+          65,
+          32
+        ],
+        "clock_boundary_probability": [
+          11335,
+          32768
+        ],
+        "terminal_dyadic_potential": [
+          510117,
+          32768
+        ],
+        "leading_boundary_profile": [
+          241304612828631,
+          4398046511104
+        ],
+        "profile_error_occupation": [
+          3853336294717,
+          4398046511104
+        ],
+        "terminal_profile_difference": [
+          -8443732364706777096316356914417520786191351209981238898363055812894122559420937,
+          2063027395945036141366314125228449774103146283828433812619455455118838516940800
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "initial_clock": 32,
+        "initial_cutoff": 128,
+        "actual_prefix_tail_mean": [
+          709,
+          64
+        ],
+        "terminal_tail_mean": [
+          119672725961197721050020807713986142192842986647300980938295795575139899642587132564021271885413756328202389220118388227066024227963210354789162876339556015933629557776647327957576771639234513,
+          2422754838407606454536039468793483591404742352316545056327261722621434875606316630411403146918755270070375161275101043556472893426629249994632673096431546586616949163920871485100604489728000
+        ],
+        "signed_residual_occupation": [
+          -92833145016963455795863745473758331781812325275544255236170349304224316411260906142744946398454420601954014386617659478916972955471333194692372794693150288903763667820086423536696637526466513,
+          2422754838407606454536039468793483591404742352316545056327261722621434875606316630411403146918755270070375161275101043556472893426629249994632673096431546586616949163920871485100604489728000
+        ],
+        "positive_residual_occupation": [
+          4426669798520917118680899,
+          3828051494457493361628416
+        ],
+        "negative_residual_occupation": [
+          -41218582601422035158569594981984108774284714496460039974729446770279223392512933562946489117899407945118772064229920351005285917450641282838705151426862103421826101221877018115330830253223419103,
+          1044207335353678381905033011049991427895443953848430919277049802449838431386322467707314756321983521400331694509568549772839817066877206747686682104561996578831905089649895610078360535072768000
+        ],
+        "terminal_cutoff_mean": [
+          65833655,
+          524288
+        ],
+        "expected_active_steps": [
+          6140141,
+          524288
+        ],
+        "expected_rounding_loss": [
+          1275209,
+          524288
+        ],
+        "clock_boundary_probability": [
+          128885,
+          524288
+        ],
+        "terminal_dyadic_potential": [
+          61001127,
+          4194304
+        ],
+        "leading_boundary_profile": [
+          15811759637492308791,
+          288230376151711744
+        ],
+        "profile_error_occupation": [
+          301297214196674653,
+          288230376151711744
+        ],
+        "terminal_profile_difference": [
+          -5883661390461211386286669353954529595243438886531351792039929907169656937682961247935280541603368553514749320248682794568558626820248859909905252421340765468317066206698945618589600216657830179402870831,
+          1331923558039863608303462447594652749183487373120725869649416572402135830953338636625650629310404742909428343824292434069826893616366848543226304829725766002204189176106839828521734086811203575742464000
+        ],
+        "all_clock_kernel_lower_bound": [
+          -4,
+          1
+        ]
+      }
+    ],
+    "longer_cutoff_trees": [
+      {
+        "floor": 4,
+        "clock": 8,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          7,
+          8
+        ],
+        "terminal_cutoff_mean": [
+          1009,
+          16
+        ],
+        "terminal_tail_mean": [
+          188745401,
+          6895936
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 16,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          1261,
+          2048
+        ],
+        "terminal_cutoff_mean": [
+          63661,
+          1024
+        ],
+        "terminal_tail_mean": [
+          583508202577718231721338399,
+          22359828410799470889492480
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 24,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          7191,
+          16384
+        ],
+        "terminal_cutoff_mean": [
+          2012497,
+          32768
+        ],
+        "terminal_tail_mean": [
+          1692457038202767915032365440618651244695842480515397753739681037,
+          66412583205415186922346415843642207606728005999659532194283520
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 32,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          332469,
+          1048576
+        ],
+        "terminal_cutoff_mean": [
+          15974119,
+          262144
+        ],
+        "terminal_tail_mean": [
+          11822245022248310494139934364533245996498845065808332335336721553611951686693654031909828711354810027513941351305949148293600489085036106052131963663942314549977,
+          470743461050529393764949065044219031064852407628456903785339301740221212569797328429120618455227466744666011777088842587233512023294818705963963126477592985600
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 40,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          7752147,
+          33554432
+        ],
+        "terminal_cutoff_mean": [
+          1016590827,
+          16777216
+        ],
+        "terminal_tail_mean": [
+          111475039596158970461769203417234239438836179925905611426717094955491621767383159025419214039749071967772258845738708958579135032096678085359767969708211680587349791960181397411747908001905267785941328519391004787912301778453434011395718783419625713167862667468066205139919018271747557653406230719718153222444844241036151973176719906641834368276631678254946749525808963608177331513466014359660381861247349408882070089,
+          4480418201038163588476288454496454617491194176234116409892141301708445841997765444949887228668301088671999830655796381731364939271802365661542421291363805487248186840852559836259022078013231921196811800181800258622539746297886370858761194062947932624897281755213464102483175834681402316007993336590743347238281794190692172308097422756215890050154264871908820041924713599032411828770713567712997256178775481122816000
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 48,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          177680817,
+          1073741824
+        ],
+        "terminal_cutoff_mean": [
+          4048977757,
+          67108864
+        ],
+        "terminal_tail_mean": [
+          9871329894340918103184187810238009343127963347444710412794931855493312712435136090251558927500499159500655936352436640238658779963615825286895450402629221045310805408665426636576056871767102287064690760271196809379664296411239005886812304588733376039519675138190051781058314301536309733413888924833890629974601716923735449566997041715522734609902512038443123226873495580411149562299175529323008101227585948751982726500060208570084969823921666975290076718166173423762110528257152944789143081519361212693738377383924540428408205231011679924862575235843895466908645246336608749287467090458961618769375764992116273605271840142785810691487482079625266192879102834022766848523584212312961956782059405538824204264767927329603087677254945411054098463231854643789023231486415460607436619561220775632015171450318478017214190562885068888943421325596028986335921416587174287680670402631818076147789560505278391542257225022797931906726896158980747058323108489517025115813766883316635865844955256102051000526024720402948618962725569928303085471890166758864041041277292506645061677984895310642216012965449144957765799758606429049016674104490953353710883712829504873840428325285582951855914052446425257303344913424281860311311,
+          399645892797161692970286854454007560899483436341354432898825580363224540095409180785135924928991757418661659315158797492053696429740150503706908249192556733780061256000516826789749567034914600352966200613680577773559296049624693800755214985424208012513103559842447586036608422181568697851844505695672406270745394687118141643846724720765344889456600684164831286488790393585781006453087899293354593238888084806233675769490236591748156441873072354940898041292641669872531094735658890873853599010711879288286002167538743395692221894807826913276173207648206534935749581797816059149933775803913609604064522449152574474130045128877826530984715650358922683147549815244309463845620437376453007935801041146779024765281370036130520712614934618934156920325321483448782270106833994578351322783941040777208069111803320730703377163422846699103050500078887836359688032072080547876952505033152403047248438529796152547695782667344587138437269808432564177084528109528221847401538939373737866497621830751830367069362794207247733837939735133865105570851570687305008959590044160661642740484149372485671076423457359514348732080081679280102922284811920767758689598130785283299889162597868522228107232312360087128376747676934340608000
+        ]
+      },
+      {
+        "floor": 4,
+        "clock": 56,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          4145780009,
+          34359738368
+        ],
+        "terminal_cutoff_mean": [
+          516612722477,
+          8589934592
+        ],
+        "terminal_tail_mean": {
+          "encoding": "outward_rational_interval",
+          "lower": [
+            24565059756686,
+            1000000000000
+          ],
+          "upper": [
+            24565059756687,
+            1000000000000
+          ],
+          "exact_binary_sha256": "39828af12a0bb06208159ebf65b6122e6eb3b007434b87b2763df167a73e73af",
+          "exact_numerator_bits": 10457,
+          "exact_denominator_bits": 10452
+        }
+      },
+      {
+        "floor": 4,
+        "clock": 64,
+        "initial_cutoff": 64,
+        "clock_boundary_probability": [
+          23813681309,
+          274877906944
+        ],
+        "terminal_cutoff_mean": [
+          32986741682661,
+          549755813888
+        ],
+        "terminal_tail_mean": {
+          "encoding": "outward_rational_interval",
+          "lower": [
+            24460948231782,
+            1000000000000
+          ],
+          "upper": [
+            24460948231783,
+            1000000000000
+          ],
+          "exact_binary_sha256": "3114c9fed4b8f1cc749276ddb254b86dedcf0138726d2e20ba21801d2e84caa6",
+          "exact_numerator_bits": 27132,
+          "exact_denominator_bits": 27127
+        }
+      }
+    ],
+    "memoized_exact_cutoff_states": 58063,
+    "longer_tree_scope": "Cutoff averaging and proved clock-zero/one arithmetic only; no census of long Collatz trajectories at the largest leaf cutoffs."
+  },
+  "ideal_size_tilt": {
+    "rows": [
+      {
+        "initial_cutoff": 16,
+        "floor": 1,
+        "clock": 32,
+        "fair_clock_boundary_probability": [
+          92355,
+          262144
+        ],
+        "size_tilted_clock_boundary_probability": [
+          266175944937,
+          274877906944
+        ],
+        "terminal_cutoff_mean": [
+          16,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 16,
+        "floor": 1,
+        "clock": 64,
+        "fair_clock_boundary_probability": [
+          62559531467,
+          549755813888
+        ],
+        "size_tilted_clock_boundary_probability": [
+          289366059814184021905305,
+          302231454903657293676544
+        ],
+        "terminal_cutoff_mean": [
+          16,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 16,
+        "floor": 1,
+        "clock": 128,
+        "fair_clock_boundary_probability": [
+          2247245126549114559479,
+          151115727451828646838272
+        ],
+        "size_tilted_clock_boundary_probability": [
+          87033930356555207521853176291527635821970060349,
+          91343852333181432387730302044767688728495783936
+        ],
+        "terminal_cutoff_mean": [
+          16,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 16,
+        "floor": 1,
+        "clock": 256,
+        "fair_clock_boundary_probability": [
+          156623204275655802223933237533575518207579599,
+          365375409332725729550921208179070754913983135744
+        ],
+        "size_tilted_clock_boundary_probability": [
+          127111853698494782279203744512062970057523041935242620717632291735747375412181582998293211538533,
+          133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433536
+        ],
+        "terminal_cutoff_mean": [
+          16,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 256,
+        "floor": 1,
+        "clock": 32,
+        "fair_clock_boundary_probability": [
+          1653819,
+          2097152
+        ],
+        "size_tilted_clock_boundary_probability": [
+          4395275803035,
+          4398046511104
+        ],
+        "terminal_cutoff_mean": [
+          256,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 256,
+        "floor": 1,
+        "clock": 64,
+        "fair_clock_boundary_probability": [
+          1594283488213,
+          4398046511104
+        ],
+        "size_tilted_clock_boundary_probability": [
+          19306849604719899911965479,
+          19342813113834066795298816
+        ],
+        "terminal_cutoff_mean": [
+          256,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 256,
+        "floor": 1,
+        "clock": 128,
+        "fair_clock_boundary_probability": [
+          75899118940411978330397,
+          1208925819614629174706176
+        ],
+        "size_tilted_clock_boundary_probability": [
+          2914939470829424140210449038207160307434725683305,
+          2923003274661805836407369665432566039311865085952
+        ],
+        "terminal_cutoff_mean": [
+          256,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 256,
+        "floor": 1,
+        "clock": 256,
+        "fair_clock_boundary_probability": [
+          435653787287895731401336053244120573374095843,
+          182687704666362864775460604089535377456991567872
+        ],
+        "size_tilted_clock_boundary_probability": [
+          133107813060662595749032167029344731797003013234853959244704010845345255000778926981961107608319,
+          133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433536
+        ],
+        "terminal_cutoff_mean": [
+          256,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 65536,
+        "floor": 1,
+        "clock": 32,
+        "fair_clock_boundary_probability": [
+          4180085,
+          4194304
+        ],
+        "size_tilted_clock_boundary_probability": [
+          70368741096885,
+          70368744177664
+        ],
+        "terminal_cutoff_mean": [
+          65536,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 65536,
+        "floor": 1,
+        "clock": 64,
+        "fair_clock_boundary_probability": [
+          30452082257601,
+          35184372088832
+        ],
+        "size_tilted_clock_boundary_probability": [
+          1237938099306158610742743729,
+          1237940039285380274899124224
+        ],
+        "terminal_cutoff_mean": [
+          65536,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 65536,
+        "floor": 1,
+        "clock": 128,
+        "fair_clock_boundary_probability": [
+          109554396740754317553367,
+          302231454903657293676544
+        ],
+        "size_tilted_clock_boundary_probability": [
+          2922981645332773198086251696848671262076323658403,
+          2923003274661805836407369665432566039311865085952
+        ],
+        "terminal_cutoff_mean": [
+          65536,
+          1
+        ]
+      },
+      {
+        "initial_cutoff": 65536,
+        "floor": 1,
+        "clock": 256,
+        "fair_clock_boundary_probability": [
+          72828209380666130737409129538695820403458717049,
+          2923003274661805836407369665432566039311865085952
+        ],
+        "size_tilted_clock_boundary_probability": [
+          4271926097824208456272036232059298604950866369491313403971004933199493156689096703654185281710071,
+          4271974071841820164790043412339104229205409044713305539894083215644439451561281100045924173873152
+        ],
+        "terminal_cutoff_mean": [
+          65536,
+          1
+        ]
+      }
+    ],
+    "fair_branch_probabilities": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "tilted_branch_probabilities": [
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "scope": "Ideal unrounded real cutoff chain, not actual Collatz or the rounded integer chain; exact rational change-of-measure checks."
+  }
+}

@@ -1,0 +1,485 @@
+{
+  "status": "passed",
+  "counts": {
+    "complete_shell_sources": 65535,
+    "complete_shell_ordinary_steps": 1966082,
+    "independent_even_shortcut_steps": 664455,
+    "independent_final_odd_steps": 22021,
+    "independent_exact_clock_comparisons": 65535,
+    "finite_suffix_cap_edges": 1970655,
+    "finite_cap_telescope_checks": 65626,
+    "prefix_root_shell_bounds": 16,
+    "prefix_weighted_shell_budget_checks": 16,
+    "independent_odd_shortcut_pairs": 642089,
+    "extra_prefix_ordinary_steps": 4572,
+    "extra_prefix_comparisons": 90,
+    "finite_cycle_cap_comparisons": 10,
+    "independent_convergence_path_comparisons": 4096,
+    "verified_convergent_sources": 4096,
+    "witnessed_zero_global_cap_edges": 320039,
+    "explicit_eventual_cycle_witnesses": 4096,
+    "convergence_ordinary_steps": 307751,
+    "convergence_even_shortcut_steps": 103791,
+    "convergence_odd_shortcut_pairs": 101980,
+    "consecutive_shell_envelope_checks": 257,
+    "large_index_envelope_checks": 3
+  },
+  "finite_shells": {
+    "complete_source_interval": [
+      2,
+      65536
+    ],
+    "clock_rule": "2*(k+1) on 2^k < n <= 2^(k+1)",
+    "rows": [
+      {
+        "shell": [
+          2,
+          2
+        ],
+        "ordinary_clock": 2,
+        "finite_no_descent_sources": 0,
+        "root_count_upper_bound": [
+          131,
+          30
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          0,
+          1
+        ],
+        "sum_of_finite_orbit_caps": 3
+      },
+      {
+        "shell": [
+          3,
+          4
+        ],
+        "ordinary_clock": 4,
+        "finite_no_descent_sources": 1,
+        "root_count_upper_bound": [
+          1907,
+          225
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          1,
+          2
+        ],
+        "sum_of_finite_orbit_caps": 6
+      },
+      {
+        "shell": [
+          5,
+          8
+        ],
+        "ordinary_clock": 6,
+        "finite_no_descent_sources": 1,
+        "root_count_upper_bound": [
+          107681,
+          6750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          3,
+          4
+        ],
+        "sum_of_finite_orbit_caps": 23
+      },
+      {
+        "shell": [
+          9,
+          16
+        ],
+        "ordinary_clock": 8,
+        "finite_no_descent_sources": 1,
+        "root_count_upper_bound": [
+          1515812,
+          50625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          7,
+          8
+        ],
+        "sum_of_finite_orbit_caps": 120
+      },
+      {
+        "shell": [
+          17,
+          32
+        ],
+        "ordinary_clock": 10,
+        "finite_no_descent_sources": 2,
+        "root_count_upper_bound": [
+          85841471,
+          1518750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          1,
+          1
+        ],
+        "sum_of_finite_orbit_caps": 543
+      },
+      {
+        "shell": [
+          33,
+          64
+        ],
+        "ordinary_clock": 12,
+        "finite_no_descent_sources": 3,
+        "root_count_upper_bound": [
+          1223818517,
+          11390625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          35,
+          32
+        ],
+        "sum_of_finite_orbit_caps": 1615
+      },
+      {
+        "shell": [
+          65,
+          128
+        ],
+        "ordinary_clock": 14,
+        "finite_no_descent_sources": 5,
+        "root_count_upper_bound": [
+          70195520861,
+          341718750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          75,
+          64
+        ],
+        "sum_of_finite_orbit_caps": 8342
+      },
+      {
+        "shell": [
+          129,
+          256
+        ],
+        "ordinary_clock": 16,
+        "finite_no_descent_sources": 10,
+        "root_count_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          5,
+          4
+        ],
+        "sum_of_finite_orbit_caps": 36829
+      },
+      {
+        "shell": [
+          257,
+          512
+        ],
+        "ordinary_clock": 18,
+        "finite_no_descent_sources": 14,
+        "root_count_upper_bound": [
+          58374574137851,
+          76886718750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          167,
+          128
+        ],
+        "sum_of_finite_orbit_caps": 127045
+      },
+      {
+        "shell": [
+          513,
+          1024
+        ],
+        "ordinary_clock": 20,
+        "finite_no_descent_sources": 27,
+        "root_count_upper_bound": [
+          844297718553527,
+          576650390625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          695,
+          512
+        ],
+        "sum_of_finite_orbit_caps": 475669
+      },
+      {
+        "shell": [
+          1025,
+          2048
+        ],
+        "ordinary_clock": 22,
+        "finite_no_descent_sources": 44,
+        "root_count_upper_bound": [
+          48897186377276441,
+          17299511718750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          717,
+          512
+        ],
+        "sum_of_finite_orbit_caps": 2050390
+      },
+      {
+        "shell": [
+          2049,
+          4096
+        ],
+        "ordinary_clock": 24,
+        "finite_no_descent_sources": 78,
+        "root_count_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          1473,
+          1024
+        ],
+        "sum_of_finite_orbit_caps": 8772394
+      },
+      {
+        "shell": [
+          4097,
+          8192
+        ],
+        "ordinary_clock": 26,
+        "finite_no_descent_sources": 129,
+        "root_count_upper_bound": [
+          41067815387723080631,
+          3892390136718750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          6021,
+          4096
+        ],
+        "sum_of_finite_orbit_caps": 32112443
+      },
+      {
+        "shell": [
+          8193,
+          16384
+        ],
+        "ordinary_clock": 28,
+        "finite_no_descent_sources": 266,
+        "root_count_upper_bound": [
+          595320815833776661337,
+          29192926025390625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          3077,
+          2048
+        ],
+        "sum_of_finite_orbit_caps": 129390803
+      },
+      {
+        "shell": [
+          16385,
+          32768
+        ],
+        "ordinary_clock": 30,
+        "finite_no_descent_sources": 469,
+        "root_count_upper_bound": [
+          34523323398748450654421,
+          875787780761718750
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          25085,
+          16384
+        ],
+        "sum_of_finite_orbit_caps": 553530176
+      },
+      {
+        "shell": [
+          32769,
+          65536
+        ],
+        "ordinary_clock": 32,
+        "finite_no_descent_sources": 843,
+        "root_count_upper_bound": [
+          500545494627540400700042,
+          6568408355712890625
+        ],
+        "weighted_prefix_root_count_through_shell": [
+          51013,
+          32768
+        ],
+        "sum_of_finite_orbit_caps": 2181781619
+      }
+    ],
+    "scope": "These are finite no-descent counts, which bound the unknown global root counts from above. Positive finite caps are not global cap values."
+  },
+  "extra_prefixes": {
+    "sources": [
+      1,
+      2,
+      3,
+      7,
+      27,
+      97,
+      837799,
+      2147483647,
+      9223372036854775807
+    ],
+    "clocks": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "rows": [
+      {
+        "source": 1,
+        "ordinary_clock": 0,
+        "prefix_minimum": 1,
+        "endpoint": 1,
+        "finite_cap_sum": 0,
+        "positive_finite_cap_edges": 0
+      },
+      {
+        "source": 1,
+        "ordinary_clock": 1,
+        "prefix_minimum": 1,
+        "endpoint": 4,
+        "finite_cap_sum": 3,
+        "positive_finite_cap_edges": 1
+      },
+      {
+        "source": 1,
+        "ordinary_clock": 2,
+        "prefix_minimum": 1,
+        "endpoint": 2,
+        "finite_cap_sum": 1,
+        "positive_finite_cap_edges": 1
+      },
+      {
+        "source": 1,
+        "ordinary_clock": 3,
+        "prefix_minimum": 1,
+        "endpoint": 1,
+        "finite_cap_sum": 0,
+        "positive_finite_cap_edges": 0
+      },
+      {
+        "source": 27,
+        "ordinary_clock": 32,
+        "prefix_minimum": 27,
+        "endpoint": 526,
+        "finite_cap_sum": 499,
+        "positive_finite_cap_edges": 8
+      },
+      {
+        "source": 27,
+        "ordinary_clock": 128,
+        "prefix_minimum": 1,
+        "endpoint": 2,
+        "finite_cap_sum": 1,
+        "positive_finite_cap_edges": 1
+      },
+      {
+        "source": 27,
+        "ordinary_clock": 256,
+        "prefix_minimum": 1,
+        "endpoint": 4,
+        "finite_cap_sum": 3,
+        "positive_finite_cap_edges": 1
+      },
+      {
+        "source": 9223372036854775807,
+        "ordinary_clock": 32,
+        "prefix_minimum": 9223372036854775807,
+        "endpoint": 6058287395472553279487,
+        "finite_cap_sum": 6049064023435698503680,
+        "positive_finite_cap_edges": 16
+      },
+      {
+        "source": 9223372036854775807,
+        "ordinary_clock": 128,
+        "prefix_minimum": 9223372036854775807,
+        "endpoint": 1716841910146256242328924544640,
+        "finite_cap_sum": 1716841910137032870292069768833,
+        "positive_finite_cap_edges": 63
+      },
+      {
+        "source": 9223372036854775807,
+        "ordinary_clock": 256,
+        "prefix_minimum": 9223372036854775807,
+        "endpoint": 67443620618961785301362,
+        "finite_cap_sum": 67434397246924930525555,
+        "positive_finite_cap_edges": 22
+      }
+    ],
+    "scope": "Exact finite prefixes. A cap of three at source one, clock one, coexists with identically zero global caps."
+  },
+  "convergence_witnesses": {
+    "complete_source_interval": [
+      1,
+      4096
+    ],
+    "fuel_per_source": 10000,
+    "longest_first_arrival": {
+      "source": 3711,
+      "ordinary_steps": 237
+    },
+    "rows": [
+      {
+        "source": 1,
+        "first_arrival_at_one": 0,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 2,
+        "first_arrival_at_one": 1,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 3,
+        "first_arrival_at_one": 7,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 7,
+        "first_arrival_at_one": 16,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 27,
+        "first_arrival_at_one": 111,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 97,
+        "first_arrival_at_one": 118,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      },
+      {
+        "source": 4096,
+        "first_arrival_at_one": 12,
+        "global_minimum": 1,
+        "eventual_cycle_period": 3
+      }
+    ],
+    "scope": "Independent Python convergence witnesses only, not kernel certificates for this interval. The first arrival supplies an attainment witness; it does not evaluate Lean's noncomputable chosen minimumClock."
+  },
+  "envelopes": {
+    "consecutive_indices": [
+      0,
+      256
+    ],
+    "extra_indices": [
+      512,
+      1024,
+      4096
+    ],
+    "scope": "Exact rational constants and finite envelope identities only, not source counts at these larger indices."
+  }
+}

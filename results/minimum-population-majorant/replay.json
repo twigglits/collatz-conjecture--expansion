@@ -1,0 +1,1156 @@
+{
+  "status": "passed",
+  "counts": {
+    "full_period_sources": 131071,
+    "full_period_shortcut_steps": 1966082,
+    "pointwise_square_comparisons": 131071,
+    "full_period_weight_mass_checks": 17,
+    "full_period_numerator_mass_checks": 17,
+    "binomial_mass_cross_checks": 17,
+    "large_index_scale_and_correction_checks": 261,
+    "population_time_major_ordinary_steps": 2097152,
+    "independent_prefix_minimum_comparisons": 1114112,
+    "population_source_major_ordinary_steps": 2097152,
+    "pointwise_shortcut_steps": 2883468,
+    "actual_prefix_word_majorant_checks": 196590,
+    "adaptive_population_integer_bounds": 262144,
+    "adaptive_population_gauge_bounds": 262144,
+    "dyadic_population_sharp_bounds": 68,
+    "prefix_profile_green_depth_checks": 216,
+    "prefix_profile_absolute_tail_windows": 576
+  },
+  "periods": {
+    "depths": [
+      0,
+      16
+    ],
+    "rows": [
+      {
+        "shortcut_depth": 0,
+        "period": 1,
+        "integer_weight_mass": 1,
+        "mean_affine_correction": [
+          0,
+          1
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          1,
+          1
+        ]
+      },
+      {
+        "shortcut_depth": 1,
+        "period": 2,
+        "integer_weight_mass": 232,
+        "mean_affine_correction": [
+          1,
+          4
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          131,
+          60
+        ]
+      },
+      {
+        "shortcut_depth": 2,
+        "period": 4,
+        "integer_weight_mass": 53824,
+        "mean_affine_correction": [
+          1,
+          2
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          1907,
+          450
+        ]
+      },
+      {
+        "shortcut_depth": 4,
+        "period": 16,
+        "integer_weight_mass": 2897022976,
+        "mean_affine_correction": [
+          1,
+          1
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          757906,
+          50625
+        ]
+      },
+      {
+        "shortcut_depth": 8,
+        "period": 256,
+        "integer_weight_mass": 8392742123471896576,
+        "mean_affine_correction": [
+          2,
+          1
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          505372194211,
+          2562890625
+        ]
+      },
+      {
+        "shortcut_depth": 12,
+        "period": 4096,
+        "integer_weight_mass": 24313966763341113270967730176,
+        "mean_affine_correction": [
+          3,
+          1
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          354204022219140916,
+          129746337890625
+        ]
+      },
+      {
+        "shortcut_depth": 16,
+        "period": 65536,
+        "integer_weight_mass": 70438120351099559671412028074440523776,
+        "mean_affine_correction": [
+          4,
+          1
+        ],
+        "dyadic_tail_mean_upper_bound": [
+          250272747313770200350021,
+          6568408355712890625
+        ]
+      }
+    ],
+    "scope": "Complete residue periods and actual shortcut computations. Large-index checks concern only exact integer/rational constants, not source censuses."
+  },
+  "populations": {
+    "maximum_complete_source": 65536,
+    "maximum_ordinary_clock": 32,
+    "floors": [
+      0,
+      1,
+      16,
+      64
+    ],
+    "selected_rows": [
+      {
+        "floor": 0,
+        "cutoff": 1,
+        "ordinary_clock": 0,
+        "actual_prefix_tail_mean": [
+          1,
+          1
+        ],
+        "general_upper_bound": [
+          2,
+          1
+        ],
+        "dyadic_upper_bound": [
+          1,
+          1
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 1,
+        "ordinary_clock": 0,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          2,
+          1
+        ],
+        "dyadic_upper_bound": [
+          1,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 1,
+        "ordinary_clock": 0,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          2,
+          1
+        ],
+        "dyadic_upper_bound": [
+          1,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 1,
+        "ordinary_clock": 0,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          2,
+          1
+        ],
+        "dyadic_upper_bound": [
+          1,
+          1
+        ]
+      },
+      {
+        "floor": 0,
+        "cutoff": 2,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          1,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": [
+          131,
+          60
+        ]
+      },
+      {
+        "floor": 0,
+        "cutoff": 3,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          5,
+          3
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 1,
+        "cutoff": 2,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": [
+          131,
+          60
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 3,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          1,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 16,
+        "cutoff": 2,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": [
+          131,
+          60
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 3,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 64,
+        "cutoff": 2,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": [
+          131,
+          60
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 3,
+        "ordinary_clock": 2,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          131,
+          30
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 0,
+        "cutoff": 16,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          59,
+          16
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": [
+          757906,
+          50625
+        ]
+      },
+      {
+        "floor": 0,
+        "cutoff": 31,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          232,
+          31
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 1,
+        "cutoff": 16,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          25,
+          8
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": [
+          757906,
+          50625
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 31,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          221,
+          31
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 16,
+        "cutoff": 16,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": [
+          757906,
+          50625
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 31,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          97,
+          31
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 64,
+        "cutoff": 16,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": [
+          757906,
+          50625
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 31,
+        "ordinary_clock": 8,
+        "actual_prefix_tail_mean": [
+          0,
+          1
+        ],
+        "general_upper_bound": [
+          1515812,
+          50625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 0,
+        "cutoff": 256,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          2267,
+          64
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": [
+          505372194211,
+          2562890625
+        ]
+      },
+      {
+        "floor": 0,
+        "cutoff": 511,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          34626,
+          511
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 1,
+        "cutoff": 256,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          563,
+          16
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": [
+          505372194211,
+          2562890625
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 511,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          34547,
+          511
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 16,
+        "cutoff": 256,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          2109,
+          64
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": [
+          505372194211,
+          2562890625
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 511,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          4795,
+          73
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 64,
+        "cutoff": 256,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          5963,
+          256
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": [
+          505372194211,
+          2562890625
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 511,
+        "ordinary_clock": 16,
+        "actual_prefix_tail_mean": [
+          27981,
+          511
+        ],
+        "general_upper_bound": [
+          1010744388422,
+          2562890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 0,
+        "cutoff": 4096,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          699135,
+          2048
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": [
+          354204022219140916,
+          129746337890625
+        ]
+      },
+      {
+        "floor": 0,
+        "cutoff": 8191,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          5618405,
+          8191
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 1,
+        "cutoff": 4096,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          1397901,
+          4096
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": [
+          354204022219140916,
+          129746337890625
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 8191,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          5617957,
+          8191
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 16,
+        "cutoff": 4096,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          696557,
+          2048
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": [
+          354204022219140916,
+          129746337890625
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 8191,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          5610512,
+          8191
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 64,
+        "cutoff": 4096,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          679287,
+          2048
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": [
+          354204022219140916,
+          129746337890625
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 8191,
+        "ordinary_clock": 24,
+        "actual_prefix_tail_mean": [
+          5557156,
+          8191
+        ],
+        "general_upper_bound": [
+          708408044438281832,
+          129746337890625
+        ],
+        "dyadic_upper_bound": null
+      },
+      {
+        "floor": 0,
+        "cutoff": 65536,
+        "ordinary_clock": 32,
+        "actual_prefix_tail_mean": [
+          253014129,
+          65536
+        ],
+        "general_upper_bound": [
+          500545494627540400700042,
+          6568408355712890625
+        ],
+        "dyadic_upper_bound": [
+          250272747313770200350021,
+          6568408355712890625
+        ]
+      },
+      {
+        "floor": 1,
+        "cutoff": 65536,
+        "ordinary_clock": 32,
+        "actual_prefix_tail_mean": [
+          253011931,
+          65536
+        ],
+        "general_upper_bound": [
+          500545494627540400700042,
+          6568408355712890625
+        ],
+        "dyadic_upper_bound": [
+          250272747313770200350021,
+          6568408355712890625
+        ]
+      },
+      {
+        "floor": 16,
+        "cutoff": 65536,
+        "ordinary_clock": 32,
+        "actual_prefix_tail_mean": [
+          126488519,
+          32768
+        ],
+        "general_upper_bound": [
+          500545494627540400700042,
+          6568408355712890625
+        ],
+        "dyadic_upper_bound": [
+          250272747313770200350021,
+          6568408355712890625
+        ]
+      },
+      {
+        "floor": 64,
+        "cutoff": 65536,
+        "ordinary_clock": 32,
+        "actual_prefix_tail_mean": [
+          252697831,
+          65536
+        ],
+        "general_upper_bound": [
+          500545494627540400700042,
+          6568408355712890625
+        ],
+        "dyadic_upper_bound": [
+          250272747313770200350021,
+          6568408355712890625
+        ]
+      }
+    ],
+    "scope": "Actual finite-prefix minima at every even clock through32 are compared in two traversal orders for all65536 positive sources. The population clock is2 floor(log2 N). No uncomputed global minimum is assigned."
+  },
+  "finite_green_checks": {
+    "rows": [
+      {
+        "floor": 1,
+        "root": 1,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 2,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 3,
+        "mean": [
+          1,
+          1
+        ],
+        "depth8_terminal": [
+          99933049,
+          388200960
+        ],
+        "depth8_signed_occupation": [
+          288267911,
+          388200960
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 8,
+        "mean": [
+          3,
+          2
+        ],
+        "depth8_terminal": [
+          4438894768003,
+          4823875696640
+        ],
+        "depth8_signed_occupation": [
+          2796918776957,
+          4823875696640
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 17,
+        "mean": [
+          55,
+          17
+        ],
+        "depth8_terminal": [
+          66583732482803707710531,
+          27094431482363493248000
+        ],
+        "depth8_signed_occupation": [
+          21074722313078182209469,
+          27094431482363493248000
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 64,
+        "mean": [
+          321,
+          32
+        ],
+        "depth8_terminal": [
+          367003528997206926924271,
+          41731425122822511498240
+        ],
+        "depth8_signed_occupation": [
+          51614829266106391542449,
+          41731425122822511498240
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 255,
+        "mean": [
+          9728,
+          255
+        ],
+        "depth8_terminal": [
+          331554558619,
+          11278535840
+        ],
+        "depth8_signed_occupation": [
+          1006847368147,
+          115041065568
+        ]
+      },
+      {
+        "floor": 1,
+        "root": 1024,
+        "mean": [
+          27361,
+          256
+        ],
+        "depth8_terminal": [
+          2230970303313280691066787,
+          22994112541292857000960
+        ],
+        "depth8_signed_occupation": [
+          226615295289507826133473,
+          22994112541292857000960
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 1,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 2,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 3,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 8,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 17,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          2205039450819,
+          2792906462720
+        ],
+        "depth8_signed_occupation": [
+          -2205039450819,
+          2792906462720
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 64,
+        "mean": [
+          419,
+          64
+        ],
+        "depth8_terminal": [
+          37254568616828211881,
+          6152355170694753280
+        ],
+        "depth8_signed_occupation": [
+          3024131641314000999,
+          6152355170694753280
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 255,
+        "mean": [
+          9058,
+          255
+        ],
+        "depth8_terminal": [
+          76712590137941,
+          2887305175040
+        ],
+        "depth8_signed_occupation": [
+          1318299958067473,
+          147252563927040
+        ]
+      },
+      {
+        "floor": 16,
+        "root": 1024,
+        "mean": [
+          53965,
+          512
+        ],
+        "depth8_terminal": [
+          544401180465471607499239,
+          5748528135323214250240
+        ],
+        "depth8_signed_occupation": [
+          122991861032796070213247,
+          11497056270646428500480
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 1,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 2,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 3,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 8,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 17,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 64,
+        "mean": [
+          0,
+          1
+        ],
+        "depth8_terminal": [
+          0,
+          1
+        ],
+        "depth8_signed_occupation": [
+          0,
+          1
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 255,
+        "mean": [
+          428,
+          17
+        ],
+        "depth8_terminal": [
+          396308714425641,
+          20211136225280
+        ],
+        "depth8_signed_occupation": [
+          1913118159183943,
+          343589315829760
+        ]
+      },
+      {
+        "floor": 64,
+        "root": 1024,
+        "mean": [
+          49029,
+          512
+        ],
+        "depth8_terminal": [
+          124131852938076462282959,
+          1437132033830803562560
+        ],
+        "depth8_signed_occupation": [
+          107900590349926862185613,
+          11497056270646428500480
+        ]
+      }
+    ],
+    "scope": "Finite Green bounds are independently compared forward and backward for computable adaptive PREFIX profiles. These values are not substituted for the actual global-minimum residual in the universal Lean theorems."
+  }
+}

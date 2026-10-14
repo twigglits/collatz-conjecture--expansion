@@ -1,0 +1,474 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T21:10:53.643080+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.36,
+      "log": "results/minimum-root-spine/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/CoalescenceTail.lean",
+      "source_sha256": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CoalescenceTail.olean",
+        "lean/CoalescenceTail.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.443,
+      "log": "results/minimum-root-spine/CoalescenceTail.log",
+      "log_sha256": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+      "olean_sha256": "f81485c157cdb0e1ade7e7e241257dbca9e234c45f302c8492da612765f1ba32"
+    },
+    {
+      "source": "lean/EscapeWeightRefinements.lean",
+      "source_sha256": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/EscapeWeightRefinements.olean",
+        "lean/EscapeWeightRefinements.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.483,
+      "log": "results/minimum-root-spine/EscapeWeightRefinements.log",
+      "log_sha256": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+      "olean_sha256": "34b0c06aed281c2154853a1076f09df814b0670c3ccb4c0b0a7b47690384a331"
+    },
+    {
+      "source": "lean/CountReturnControl.lean",
+      "source_sha256": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CountReturnControl.olean",
+        "lean/CountReturnControl.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.287,
+      "log": "results/minimum-root-spine/CountReturnControl.log",
+      "log_sha256": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+      "olean_sha256": "7998a6f9674b6855894fbf5a3149e82c2afa0c63e6d928d7e01a5e48fd36fe86"
+    },
+    {
+      "source": "lean/CountReturnClock.lean",
+      "source_sha256": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CountReturnClock.olean",
+        "lean/CountReturnClock.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.527,
+      "log": "results/minimum-root-spine/CountReturnClock.log",
+      "log_sha256": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+      "olean_sha256": "7d54613ff73594d2d8e44dbc365d7ea71d60b26456dca2880144b308423cf482"
+    },
+    {
+      "source": "lean/ReturnCorrectionMoments.lean",
+      "source_sha256": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/ReturnCorrectionMoments.olean",
+        "lean/ReturnCorrectionMoments.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.341,
+      "log": "results/minimum-root-spine/ReturnCorrectionMoments.log",
+      "log_sha256": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+      "olean_sha256": "c03fb90f71d0e58e6b948d2c89fb2084f52dc6d5c00da3b9d84ddc0cb43d8b7e"
+    },
+    {
+      "source": "lean/OrderedWeightDrift.lean",
+      "source_sha256": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/OrderedWeightDrift.olean",
+        "lean/OrderedWeightDrift.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.619,
+      "log": "results/minimum-root-spine/OrderedWeightDrift.log",
+      "log_sha256": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+      "olean_sha256": "dc71fa2fcc31f6691bb5cd5cf72fbaf53584ba567b08067e891d5115dba9b86e"
+    },
+    {
+      "source": "lean/ReversalPersistence.lean",
+      "source_sha256": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/ReversalPersistence.olean",
+        "lean/ReversalPersistence.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.346,
+      "log": "results/minimum-root-spine/ReversalPersistence.log",
+      "log_sha256": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+      "olean_sha256": "85c7183d8274c4e95a016730928476aa4f57f24a001bf452a7bc13e26aac3387"
+    },
+    {
+      "source": "lean/ReturnImageBounds.lean",
+      "source_sha256": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/ReturnImageBounds.olean",
+        "lean/ReturnImageBounds.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.276,
+      "log": "results/minimum-root-spine/ReturnImageBounds.log",
+      "log_sha256": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+      "olean_sha256": "116ea5682832686cab2497b430b576c245039577233bd407730c3eac1091c274"
+    },
+    {
+      "source": "lean/BinaryImageEnergy.lean",
+      "source_sha256": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/BinaryImageEnergy.olean",
+        "lean/BinaryImageEnergy.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.324,
+      "log": "results/minimum-root-spine/BinaryImageEnergy.log",
+      "log_sha256": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+      "olean_sha256": "4d0a65b1b4cada4350345d83b9414edc2cf765758120561d4abb103dace027f8"
+    },
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.481,
+      "log": "results/minimum-root-spine/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.235,
+      "log": "results/minimum-root-spine/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285"
+    },
+    {
+      "source": "lean/DensityCountermodel.lean",
+      "source_sha256": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/DensityCountermodel.olean",
+        "lean/DensityCountermodel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.238,
+      "log": "results/minimum-root-spine/DensityCountermodel.log",
+      "log_sha256": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+      "olean_sha256": "27e04775bc0bfe33bb3901ed4a036a6c6a67092334fffcc8fe113613728547e7"
+    },
+    {
+      "source": "lean/MinimumTailRigidity.lean",
+      "source_sha256": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumTailRigidity.olean",
+        "lean/MinimumTailRigidity.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.258,
+      "log": "results/minimum-root-spine/MinimumTailRigidity.log",
+      "log_sha256": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+      "olean_sha256": "f67fa2c3dc6a05771a8f7bb07a866b4dc8db9999f97be7d4609779a79d944f83"
+    },
+    {
+      "source": "lean/MinimumCapTransport.lean",
+      "source_sha256": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumCapTransport.olean",
+        "lean/MinimumCapTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.308,
+      "log": "results/minimum-root-spine/MinimumCapTransport.log",
+      "log_sha256": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+      "olean_sha256": "1e0569299ffa3d80265b4cbae993b9163dc59cb3865263c6bbfdcd2426f484e9"
+    },
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.46,
+      "log": "results/minimum-root-spine/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CutoffDescent.lean",
+      "source_sha256": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/CutoffDescent.olean",
+        "lean/CutoffDescent.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.475,
+      "log": "results/minimum-root-spine/CutoffDescent.log",
+      "log_sha256": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+      "olean_sha256": "12594a4bbb7188bee9b41bd90538fae7aad5acee56e34c4f749d27db21afa1de"
+    },
+    {
+      "source": "lean/MinimumLinearBoundary.lean",
+      "source_sha256": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumLinearBoundary.olean",
+        "lean/MinimumLinearBoundary.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.039,
+      "log": "results/minimum-root-spine/MinimumLinearBoundary.log",
+      "log_sha256": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+      "olean_sha256": "2706e13e35107916726c98bd5ebf9e4a7e7acd60bc51be2b7292ac21ecc339f1"
+    },
+    {
+      "source": "lean/MinimumGreenKernel.lean",
+      "source_sha256": "c7ce918534b05db352d395bcdb72cb38db56789b1b2227d886157df67462fe9e",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumGreenKernel.olean",
+        "lean/MinimumGreenKernel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.77,
+      "log": "results/minimum-root-spine/MinimumGreenKernel.log",
+      "log_sha256": "5bdd5e34426ae93512e3701ebd846c70a3f1469d8f2e26cfe5f5f84686ce5a3e",
+      "olean_sha256": "49f4454fd5ed06874457b2d90a1e40a30299cf7e8057279f963f0fbb491fa9d4"
+    },
+    {
+      "source": "lean/MinimumClockBarrier.lean",
+      "source_sha256": "876d8bd6620aa387c8fe6d836f9a27ee95afaff326c5b2ae70a42753cde438a9",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumClockBarrier.olean",
+        "lean/MinimumClockBarrier.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.854,
+      "log": "results/minimum-root-spine/MinimumClockBarrier.log",
+      "log_sha256": "d271b57c268f5eba05412e1055a02c00f2c62d5fff30fbcbea6bd1af91800deb",
+      "olean_sha256": "3d96a2c4cdf575bba0f8c65bdc0027b8e750bee3567709c7e7f5afacf77e0fb5"
+    },
+    {
+      "source": "lean/MinimumPopulationMajorant.lean",
+      "source_sha256": "11ee1bb944908a334a34583175794a653241e04e68f881b95d57acc6593b0431",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumPopulationMajorant.olean",
+        "lean/MinimumPopulationMajorant.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.622,
+      "log": "results/minimum-root-spine/MinimumPopulationMajorant.log",
+      "log_sha256": "3ed22c481085fc70676f9b467ac9c7a29ad6e8790ee2ae160b6974ba1dad978c",
+      "olean_sha256": "727950b17329b4ee1c3436f419fe970681aa47cfdb2baece1087c939748fe6ce"
+    },
+    {
+      "source": "lean/MinimumRootSpine.lean",
+      "source_sha256": "6d1eb44f094491dda6e26165f89d98cc56cb90c776927f3cf0c08d0a131e1b29",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-root-spine-w47f5zox/MinimumRootSpine.olean",
+        "lean/MinimumRootSpine.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.724,
+      "log": "results/minimum-root-spine/MinimumRootSpine.log",
+      "log_sha256": "7947e679808c484b695993fcbf6eb78c340e82d340f0b91126e0814f6de3dc2a",
+      "olean_sha256": "2a352d52401b0afa4598b7d85e772a262b4459ad4ffa18cf4866098e88b7dae3"
+    }
+  ],
+  "kernel_theorems_audited": 52,
+  "prior_hashes_validated": {
+    "results/minimum-population-majorant/verification.json": 47
+  },
+  "finite_replay_counts": {
+    "complete_shell_sources": 65535,
+    "complete_shell_ordinary_steps": 1966082,
+    "independent_even_shortcut_steps": 664455,
+    "independent_final_odd_steps": 22021,
+    "independent_exact_clock_comparisons": 65535,
+    "finite_suffix_cap_edges": 1970655,
+    "finite_cap_telescope_checks": 65626,
+    "prefix_root_shell_bounds": 16,
+    "prefix_weighted_shell_budget_checks": 16,
+    "independent_odd_shortcut_pairs": 642089,
+    "extra_prefix_ordinary_steps": 4572,
+    "extra_prefix_comparisons": 90,
+    "finite_cycle_cap_comparisons": 10,
+    "independent_convergence_path_comparisons": 4096,
+    "verified_convergent_sources": 4096,
+    "witnessed_zero_global_cap_edges": 320039,
+    "explicit_eventual_cycle_witnesses": 4096,
+    "convergence_ordinary_steps": 307751,
+    "convergence_even_shortcut_steps": 103791,
+    "convergence_odd_shortcut_pairs": 101980,
+    "consecutive_shell_envelope_checks": 257,
+    "large_index_envelope_checks": 3
+  },
+  "kernel_scope": "Actual global minimum Bellman/parity transport; positive cap support and exact orbit telescoping; successive attained self-minima at strictly increasing ordinary clocks; their monotonicity, conditional spacing/growth/residues, and upper growth; bounded tail minima or cumulative caps iff eventual repetition; zero global caps for convergent sources; finite caps telescope to the terminal value; finite-prefix and actual-global root shell bounds; finite weighted shell budget at most 118.",
+  "written_scope": [
+    "Partition and comparison convert the weighted shell bounds into the convergent reciprocal sum over all positive self-minimal integers, at most 119 including one.",
+    "The root count has sublinear power growth with exponent log2(29/15)."
+  ],
+  "external_dependency": "None. No novelty claim.",
+  "finite_scope_limit": "Finite no-descent counts overapproximate global root counts. Global minima equal to one are assigned only after an explicit convergence witness. No uncomputed global root, cap, or residual is assigned a numerical value.",
+  "not_proved": [
+    "Bounded actual cap accumulation for every orbit, absence of nontrivial cycles, or exclusion of a nonrepeating orbit.",
+    "A uniform subunit minimum-tail budget or an independently small actual positive residual.",
+    "The full Collatz conjecture or a counterexample."
+  ],
+  "sha256": {
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/CoalescenceTail.lean": "73118829f11ba39ec0fdcc1316ea8f81e5b4f695268da840b5e617e154999690",
+    "lean/EscapeWeightRefinements.lean": "83853d5ceb5ec9988f15fe9d275d3d44a8b4341f24f2547068ce40a258c5f708",
+    "lean/CountReturnControl.lean": "a063aa60ac69b48d981a91da3f600c548f4c1a69d367d89c491ce6da0ffe9225",
+    "lean/CountReturnClock.lean": "0ec05ef26c25a7836ba6bd26be1e8d8cf6df88082b79d90cd51625d9341fa4a8",
+    "lean/ReturnCorrectionMoments.lean": "5dceed03d7287d53fc8fff119ee913a54f463f408f44462d15e70eb4b4b784fa",
+    "lean/OrderedWeightDrift.lean": "149f35e7094d0ccfb8678a5fd3289e8fc50a81565a5fac54e8700729f4a1d086",
+    "lean/ReversalPersistence.lean": "5e9f8017947716b0fd556ed9a671ce33ee6963ccfc8d806c4129923a9cb57001",
+    "lean/ReturnImageBounds.lean": "25552ef1e63d0acdf41f1b9e53846afe6588a5b97ea24280f4858c5413caa799",
+    "lean/BinaryImageEnergy.lean": "c480bc7ab0b76f47795663ae301ed68367c52d055c152c5760d1818eef78d665",
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "lean/DensityCountermodel.lean": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+    "lean/MinimumTailRigidity.lean": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+    "lean/MinimumCapTransport.lean": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CutoffDescent.lean": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+    "lean/MinimumLinearBoundary.lean": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+    "lean/MinimumGreenKernel.lean": "c7ce918534b05db352d395bcdb72cb38db56789b1b2227d886157df67462fe9e",
+    "lean/MinimumClockBarrier.lean": "876d8bd6620aa387c8fe6d836f9a27ee95afaff326c5b2ae70a42753cde438a9",
+    "lean/MinimumPopulationMajorant.lean": "11ee1bb944908a334a34583175794a653241e04e68f881b95d57acc6593b0431",
+    "lean/MinimumRootSpine.lean": "6d1eb44f094491dda6e26165f89d98cc56cb90c776927f3cf0c08d0a131e1b29",
+    "verify_minimum_root_spine.py": "a554f15bde6c32491d6b3ed28b38d624e0f6304ce8a098cdccbd5a93ea78c4aa",
+    "docs/MINIMUM-ROOT-SPINE.md": "0c968ab951e6e2140505b56ccfc9b441806975631c84495724167f5c138c69a9",
+    "results/minimum-population-majorant/verification.json": "db4a0031ef73b545c76a31285eb878cde50e02088005817b16bad8a094d51ba5",
+    "results/minimum-root-spine/BinaryImageEnergy.log": "53e4d1526eb97793e10c6cc60cc0b5dca7a94a4c7763d63bf1b84aab78b61b1f",
+    "results/minimum-root-spine/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/minimum-root-spine/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+    "results/minimum-root-spine/CoalescenceTail.log": "28ec9a9497b4fe4d1fa09c12ee3bf2d2f2d53d78a7b830e498d7fb0e6f9d6c01",
+    "results/minimum-root-spine/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/minimum-root-spine/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/minimum-root-spine/CountReturnClock.log": "33a5d0709e87e6653d6ca2efeccd6b77858c82488d70ad015b199c167cafe5d9",
+    "results/minimum-root-spine/CountReturnControl.log": "b7596b30d0c8a7a8fafb8eeb3b82d22031bed76c55aab4f9f371afe0e31eb2ac",
+    "results/minimum-root-spine/CutoffDescent.log": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+    "results/minimum-root-spine/DensityCountermodel.log": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+    "results/minimum-root-spine/EscapeWeightRefinements.log": "df6982cc3ce9f2704126f67fabd15b4e275797702761fc3347bf2bb169627c0f",
+    "results/minimum-root-spine/MinimumCapTransport.log": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+    "results/minimum-root-spine/MinimumClockBarrier.log": "d271b57c268f5eba05412e1055a02c00f2c62d5fff30fbcbea6bd1af91800deb",
+    "results/minimum-root-spine/MinimumGreenKernel.log": "5bdd5e34426ae93512e3701ebd846c70a3f1469d8f2e26cfe5f5f84686ce5a3e",
+    "results/minimum-root-spine/MinimumLinearBoundary.log": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+    "results/minimum-root-spine/MinimumPopulationMajorant.log": "3ed22c481085fc70676f9b467ac9c7a29ad6e8790ee2ae160b6974ba1dad978c",
+    "results/minimum-root-spine/MinimumRootSpine.log": "7947e679808c484b695993fcbf6eb78c340e82d340f0b91126e0814f6de3dc2a",
+    "results/minimum-root-spine/MinimumTailRigidity.log": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+    "results/minimum-root-spine/OrderedWeightDrift.log": "e207dcce929af3ca9852a2c3fa623164c8dc5e2f121e31aed43e718aafd84709",
+    "results/minimum-root-spine/ReturnCorrectionMoments.log": "ebbeaf0f111b99e6bcbb0086bd023e5f1ccd1244c353c5759f5fcef30ddb1dfc",
+    "results/minimum-root-spine/ReturnImageBounds.log": "1820afe67c50e0920827d6127223ede4769260cfb27e1e7d19923ee8265a5ef3",
+    "results/minimum-root-spine/ReversalPersistence.log": "eabfb9278a6ba247c47b56a20dfc0a9213aa411640dc94f7828cf10006228575",
+    "results/minimum-root-spine/replay.json": "eed59471f6321b65b1919984e858f490177ba9fcdc30f0d9ef021bfe261e3db0"
+  },
+  "documentation_reviewed_at_utc": "2026-10-14T21:12:44.418201+00:00",
+  "documentation_review_scope": "Clarified the hypothetical larger-cycle case; added the written root-index counting corollary and exact completed verification counts. All tested source, verifier, log, and replay hashes are unchanged."
+}

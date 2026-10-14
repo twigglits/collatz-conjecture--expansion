@@ -1,0 +1,276 @@
+{
+  "status": "passed",
+  "counts": {
+    "all_odd_source_pairs": 4243,
+    "source_path_ordinary_steps": 422592,
+    "target_path_ordinary_steps": 271552,
+    "independent_initial_shortcut_pairs": 75520,
+    "all_odd_affine_endpoint_checks": 4243,
+    "finite_all_odd_transport_checks": 33944,
+    "finite_root_ancestor_implications": 10428,
+    "branch_source_paths": 8192,
+    "branch_ordinary_steps": 636520,
+    "independent_branch_path_comparisons": 8192,
+    "independent_suffix_record_comparisons": 49152,
+    "finite_successor_edges": 86587,
+    "finite_contracting_parent_checks": 56014,
+    "finite_off_path_parent_checks": 3368,
+    "off_path_parent_divisible_by_three": 2118,
+    "off_path_parent_unit_modulo_three": 1250,
+    "distinct_finite_off_path_parent_triples": 235,
+    "saturation_arithmetic_comparisons": 49532,
+    "excluded_next_power_arithmetic_comparisons": 49536,
+    "saturation_equality_cases": 16511,
+    "ancestor_height_barrier_comparisons": 41538,
+    "kernel_convergence_witnesses_replayed": 3,
+    "kernel_witness_ordinary_steps": 221
+  },
+  "all_odd_transport": {
+    "complete_parameter_range": {
+      "odd_steps": [
+        0,
+        32
+      ],
+      "quotients": [
+        1,
+        128
+      ],
+      "positive_sources_only": true
+    },
+    "extra_odd_steps": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "extra_quotients": [
+      1,
+      2,
+      3,
+      17
+    ],
+    "suffix_clocks": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "rows": [
+      {
+        "odd_steps": 1,
+        "quotient": 2,
+        "source_bits": 2,
+        "target_bits": 3,
+        "prefix_minimum_through_block_equals_source": true,
+        "target_prefix_minimum_64_bits": 1
+      },
+      {
+        "odd_steps": 4,
+        "quotient": 2,
+        "source_bits": 5,
+        "target_bits": 8,
+        "prefix_minimum_through_block_equals_source": true,
+        "target_prefix_minimum_64_bits": 7
+      },
+      {
+        "odd_steps": 16,
+        "quotient": 17,
+        "source_bits": 21,
+        "target_bits": 30,
+        "prefix_minimum_through_block_equals_source": true,
+        "target_prefix_minimum_64_bits": 14
+      },
+      {
+        "odd_steps": 32,
+        "quotient": 128,
+        "source_bits": 39,
+        "target_bits": 58,
+        "prefix_minimum_through_block_equals_source": true,
+        "target_prefix_minimum_64_bits": 53
+      },
+      {
+        "odd_steps": 1024,
+        "quotient": 2,
+        "source_bits": 1025,
+        "target_bits": 1625,
+        "prefix_minimum_through_block_equals_source": true,
+        "target_prefix_minimum_64_bits": 1616
+      }
+    ],
+    "scope": "Exact finite-prefix transport and conditional finite no-descent ancestry; not global-root assignments or an interval convergence claim."
+  },
+  "finite_branches": {
+    "complete_source_interval": [
+      1,
+      8192
+    ],
+    "maximum_ordinary_clock": 128,
+    "clocks": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "rows": [
+      {
+        "source": 27,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 26,
+        "next_clock": 44
+      },
+      {
+        "source": 31,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 21,
+        "next_clock": 39
+      },
+      {
+        "source": 41,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 24,
+        "next_clock": 42
+      },
+      {
+        "source": 47,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 19,
+        "next_clock": 37
+      },
+      {
+        "source": 47,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 719,
+        "next_suffix_minimum": 911,
+        "new_parent": 607,
+        "earlier_clock": 53,
+        "next_clock": 63
+      },
+      {
+        "source": 54,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 27,
+        "next_clock": 45
+      },
+      {
+        "source": 55,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 27,
+        "next_clock": 45
+      },
+      {
+        "source": 62,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 22,
+        "next_clock": 40
+      },
+      {
+        "source": 63,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 22,
+        "next_clock": 40
+      },
+      {
+        "source": 71,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 17,
+        "next_clock": 35
+      },
+      {
+        "source": 71,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 719,
+        "next_suffix_minimum": 911,
+        "new_parent": 607,
+        "earlier_clock": 51,
+        "next_clock": 61
+      },
+      {
+        "source": 73,
+        "terminal_clock": 64,
+        "earlier_suffix_minimum": 155,
+        "next_suffix_minimum": 167,
+        "new_parent": 111,
+        "earlier_clock": 30,
+        "next_clock": 48
+      }
+    ],
+    "scope": "Simple finite prefixes stopped at one or the stated horizon. Their increasing suffix-record minima are finite-horizon analogues, not unknown global root sequences."
+  },
+  "power_arithmetic": {
+    "indices": [
+      0,
+      128
+    ],
+    "quotients": [
+      1,
+      128
+    ],
+    "height_barrier_depths": [
+      0,
+      128
+    ],
+    "height_barrier_quotients": "The exact threshold and its positive neighbours",
+    "scope": "Exact integer compatibility checks for the two inequalities used by the kernel proof. No numerical least counterexample is assumed or exhibited."
+  },
+  "kernel_example": {
+    "finite_source": 27,
+    "terminal_clock": 64,
+    "first_suffix_minimum": 155,
+    "next_suffix_minimum": 167,
+    "parent_absent_from_prefix": 111,
+    "parent_path": [
+      111,
+      334,
+      167
+    ],
+    "convergence_witnesses": [
+      {
+        "source": 155,
+        "first_arrival_at_one": 85
+      },
+      {
+        "source": 167,
+        "first_arrival_at_one": 67
+      },
+      {
+        "source": 111,
+        "first_arrival_at_one": 69
+      }
+    ],
+    "scope": "The kernel proves the finite prefix data, absence of 111 through clock64, and all three arrivals at one. Python additionally checks first-arrival minimality."
+  }
+}

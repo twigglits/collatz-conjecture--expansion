@@ -1,0 +1,1197 @@
+{
+  "status": "passed",
+  "counts": {
+    "low_cell_integer_inequalities": 22554,
+    "exact_gauge_and_contraction_checks": 66696,
+    "high_cell_integer_inequalities": 44142,
+    "large_dyadic_and_breakpoint_arithmetic_checks": 1161,
+    "geometric_sum_checks": 257,
+    "time_major_ordinary_steps": 464492,
+    "independent_prefix_minimum_comparisons": 248835,
+    "source_major_ordinary_steps": 464492,
+    "actual_variable_clock_mean_majorant_checks": 49767,
+    "forward_backward_tree_depth_comparisons": 468,
+    "active_state_residual_checks": 3621,
+    "absolute_tail_window_checks": 3276,
+    "independent_recursive_states": 15954,
+    "cutoff_profile_trees": 36
+  },
+  "arithmetic": {
+    "continuous_cutoff_range": [
+      2,
+      65536
+    ],
+    "large_exponents": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "large_centers": [
+      "2^k",
+      "floor(4*2^k/3)",
+      "2^(k+1)"
+    ],
+    "offsets": [
+      -1,
+      0,
+      1
+    ],
+    "largest_observed_ratio": [
+      51054485030089771779512267418408302434750546201961506665654143048796079928762273529689207559563740229998112341883475713575096294343294320787968670301610651323286081732661797818469830366753890729924675558392141638350034793785259458338591323393594935354391545034422508700145017846528239430573241197613279654969274,
+      51264215895823708635414019690667021987005976849504775765806478143480101383868691320010700783106549022022752474743325672492364882406911140180876992304023371135060144274990807551292182956288677839730704155169574145080345969581325665033644222022559233797748787296887859381424956300123132432928882446664507916462695
+    ],
+    "at_cutoff": "239692417981642121030574025438536631149063597192307543031240108210310234407334617510277969763210048028160151839828524476878386358419222163323796574185965499170357191233153980368402959468328125492604110602780007691784200909789950508631884147387769649551134014246115064319929661251306288406447141772832298849621",
+    "scope": "Exact auxiliary cutoff arithmetic, not Collatz orbit checks at enormous cutoffs."
+  },
+  "cutoff_trees": {
+    "prefix_census": {
+      "maximum_actual_source": 16589,
+      "maximum_ordinary_clock": 28,
+      "queried_cutoffs": 208,
+      "floors": [
+        1,
+        4,
+        16
+      ],
+      "clock_rule": "T(N)=2*floor(log2(N)) for N>=1",
+      "scope": "Actual finite PREFIX minima, recomputed in two traversal orders. No global minimum is assigned to an unresolved prefix."
+    },
+    "rows": [
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 1,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          14297,
+          750
+        ],
+        "terminal": [
+          159407749437677983,
+          13436928000000000
+        ],
+        "signed_occupation": [
+          96735930050322017,
+          13436928000000000
+        ],
+        "absolute_occupation": [
+          96735930050322017,
+          13436928000000000
+        ],
+        "survival_probability": [
+          813,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 115
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 1,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          114376,
+          21375
+        ],
+        "terminal": [
+          483926712640242541,
+          127650816000000000
+        ],
+        "signed_occupation": [
+          199123099327757459,
+          127650816000000000
+        ],
+        "absolute_occupation": [
+          573813861547698103,
+          20155392000000000
+        ],
+        "survival_probability": [
+          813,
+          4096
+        ],
+        "negative_active_states": 46,
+        "positive_active_states": 69
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 1,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          15,
+          7
+        ],
+        "terminal": [
+          108845467404306247328596601171897973083091263,
+          137394647748961192382483973079911322102333440
+        ],
+        "signed_occupation": [
+          185571634914896307776726198285054859993337537,
+          137394647748961192382483973079911322102333440
+        ],
+        "absolute_occupation": [
+          18877056233765339583205182421502984444244793513654933,
+          9677318109173848878109194840004485987719918542848000
+        ],
+        "survival_probability": [
+          813,
+          4096
+        ],
+        "negative_active_states": 39,
+        "positive_active_states": 67
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 1,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          707281,
+          9000
+        ],
+        "terminal": [
+          36536554075529621244979,
+          544195584000000000000
+        ],
+        "signed_occupation": [
+          6230023351926378755021,
+          544195584000000000000
+        ],
+        "absolute_occupation": [
+          6230023351926378755021,
+          544195584000000000000
+        ],
+        "survival_probability": [
+          1123,
+          2048
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 135
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 1,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          12023777,
+          256500
+        ],
+        "terminal": [
+          21569556361406074968479,
+          861643008000000000000
+        ],
+        "signed_occupation": [
+          18821100097857925031521,
+          861643008000000000000
+        ],
+        "absolute_occupation": [
+          51162355880482002624277,
+          287214336000000000000
+        ],
+        "survival_probability": [
+          1123,
+          2048
+        ],
+        "negative_active_states": 60,
+        "positive_active_states": 75
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 1,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          221,
+          31
+        ],
+        "terminal": [
+          5409806116279584489589488538653812478920157282288648968717,
+          1314306335860436373827519892068631948753138013052306841600
+        ],
+        "signed_occupation": [
+          3959926149048042562535733917706434639610278230116506256883,
+          1314306335860436373827519892068631948753138013052306841600
+        ],
+        "absolute_occupation": [
+          64879493996677643855616491397577745112926376974914986299946064953911955710784125358644497,
+          13938420101575529969836756621802649392235810037236685005482208094076653881776226890956800
+        ],
+        "survival_probability": [
+          1123,
+          2048
+        ],
+        "negative_active_states": 43,
+        "positive_active_states": 85
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 1,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          594823321,
+          3796875
+        ],
+        "terminal": [
+          939778336434074253628807,
+          6802444800000000000000
+        ],
+        "signed_occupation": [
+          125901415165644146371193,
+          6802444800000000000000
+        ],
+        "absolute_occupation": [
+          125901415165644146371193,
+          6802444800000000000000
+        ],
+        "survival_probability": [
+          2999,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 126
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 1,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          9517173136,
+          216421875
+        ],
+        "terminal": [
+          4411233938467473796742299,
+          96934838400000000000000
+        ],
+        "signed_occupation": [
+          -148514932068600196742299,
+          96934838400000000000000
+        ],
+        "absolute_occupation": [
+          31095644398871271944769349,
+          96934838400000000000000
+        ],
+        "survival_probability": [
+          2999,
+          4096
+        ],
+        "negative_active_states": 51,
+        "positive_active_states": 75
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 1,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          321,
+          32
+        ],
+        "terminal": [
+          24804994194183478145182809639915212558242747720913457,
+          3083913408351324259792425397325814840412807403110400
+        ],
+        "signed_occupation": [
+          6130512183340743335859957627009367559648226541537743,
+          3083913408351324259792425397325814840412807403110400
+        ],
+        "absolute_occupation": [
+          14093015055285404290199957393936563607285769547962476149336914341532997789253367636362113,
+          2714780687013701987308523818385750146447215665401016442284092806360201395724084407500800
+        ],
+        "survival_probability": [
+          2999,
+          4096
+        ],
+        "negative_active_states": 47,
+        "positive_active_states": 72
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 1,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          607500000
+        ],
+        "terminal": [
+          269040545404107011609459123,
+          979552051200000000000000
+        ],
+        "signed_occupation": [
+          25406769962895182310540877,
+          979552051200000000000000
+        ],
+        "absolute_occupation": [
+          25406769962895182310540877,
+          979552051200000000000000
+        ],
+        "survival_probability": [
+          3503,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 120
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 1,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          1154250000
+        ],
+        "terminal": [
+          149256073136115621019568633,
+          1550957414400000000000000
+        ],
+        "signed_occupation": [
+          96116689669719540580431367,
+          1550957414400000000000000
+        ],
+        "absolute_occupation": [
+          448823121273768621023889281,
+          516985804800000000000000
+        ],
+        "survival_probability": [
+          3503,
+          4096
+        ],
+        "negative_active_states": 47,
+        "positive_active_states": 73
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 1,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          2694,
+          127
+        ],
+        "terminal": [
+          756909040591407529162426067975266760979652992341956327897,
+          51341493519507425794689296038496768862671245595164262400
+        ],
+        "signed_occupation": [
+          42186535386444248887264852894851416671620405605944069262681,
+          6520369676977443075925540596889089645559248190585861324800
+        ],
+        "absolute_occupation": [
+          16963281397356967311886656789478047462784360454498311987518493959441446158498380708217164219091706609,
+          1745713925505171369636576490227941743271488063721750764281715631559608433535592474402311756797542400
+        ],
+        "survival_probability": [
+          3503,
+          4096
+        ],
+        "negative_active_states": 39,
+        "positive_active_states": 76
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 4,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          14297,
+          750
+        ],
+        "terminal": [
+          121548713607661193,
+          13436928000000000
+        ],
+        "signed_occupation": [
+          134594965880338807,
+          13436928000000000
+        ],
+        "absolute_occupation": [
+          134594965880338807,
+          13436928000000000
+        ],
+        "survival_probability": [
+          357,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 99
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 4,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          114376,
+          21375
+        ],
+        "terminal": [
+          1127910744376654733,
+          382952448000000000
+        ],
+        "signed_occupation": [
+          921238691527345267,
+          382952448000000000
+        ],
+        "absolute_occupation": [
+          41148093612867769,
+          1575936000000000
+        ],
+        "survival_probability": [
+          357,
+          4096
+        ],
+        "negative_active_states": 46,
+        "positive_active_states": 53
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 4,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          1,
+          1
+        ],
+        "terminal": [
+          6745126232276799958762090937109869692113083,
+          11776684092768102204212911978278113323057152
+        ],
+        "signed_occupation": [
+          5031557860491302245450821041168243630944069,
+          11776684092768102204212911978278113323057152
+        ],
+        "absolute_occupation": [
+          222195995503146208334914547912313638738746815497507,
+          155842525394487955959161059761111202919125960949760
+        ],
+        "survival_probability": [
+          357,
+          4096
+        ],
+        "negative_active_states": 42,
+        "positive_active_states": 57
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 4,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          707281,
+          9000
+        ],
+        "terminal": [
+          35248339708470310944979,
+          544195584000000000000
+        ],
+        "signed_occupation": [
+          7518237718985689055021,
+          544195584000000000000
+        ],
+        "absolute_occupation": [
+          7518237718985689055021,
+          544195584000000000000
+        ],
+        "survival_probability": [
+          409,
+          1024
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 122
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 4,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          12023777,
+          256500
+        ],
+        "terminal": [
+          20927996912473576968479,
+          861643008000000000000
+        ],
+        "signed_occupation": [
+          19462659546790423031521,
+          861643008000000000000
+        ],
+        "absolute_occupation": [
+          51052389960417555024277,
+          287214336000000000000
+        ],
+        "survival_probability": [
+          409,
+          1024
+        ],
+        "negative_active_states": 60,
+        "positive_active_states": 62
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 4,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          210,
+          31
+        ],
+        "terminal": [
+          98543639930506444848034473117809112426235893806770096229,
+          25834031171703909067862798861299890884582565367121510400
+        ],
+        "signed_occupation": [
+          76461087361681326256842551426480470985452452228569167771,
+          25834031171703909067862798861299890884582565367121510400
+        ],
+        "absolute_occupation": [
+          21558182045579918387173590708933473279353317008604701821931005625837869689064109301678077,
+          4520568681592063774001110255719778181265668120184870812588824246727563421116614126796800
+        ],
+        "survival_probability": [
+          409,
+          1024
+        ],
+        "negative_active_states": 41,
+        "positive_active_states": 81
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 4,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          594823321,
+          3796875
+        ],
+        "terminal": [
+          924966266153830357378807,
+          6802444800000000000000
+        ],
+        "signed_occupation": [
+          140713485445888042621193,
+          6802444800000000000000
+        ],
+        "absolute_occupation": [
+          140713485445888042621193,
+          6802444800000000000000
+        ],
+        "survival_probability": [
+          2259,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 115
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 4,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          9517173136,
+          216421875
+        ],
+        "terminal": [
+          4331654926323542461742299,
+          96934838400000000000000
+        ],
+        "signed_occupation": [
+          -68935919924668861742299,
+          96934838400000000000000
+        ],
+        "absolute_occupation": [
+          31111256037601764509769349,
+          96934838400000000000000
+        ],
+        "survival_probability": [
+          2259,
+          4096
+        ],
+        "negative_active_states": 51,
+        "positive_active_states": 64
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 4,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          317,
+          32
+        ],
+        "terminal": [
+          12262973120614921487931999270122991991823963794794701,
+          1586012610009252476464675918624704775069443807313920
+        ],
+        "signed_occupation": [
+          3448464297289235857046196548752989686207713921408819,
+          1586012610009252476464675918624704775069443807313920
+        ],
+        "absolute_occupation": [
+          6107632303686048155356449988515625599198554126794840917107305740901409850944892564243913,
+          1152333017394157575893683755423179659863062807070874795288075517970627357626725483315200
+        ],
+        "survival_probability": [
+          2259,
+          4096
+        ],
+        "negative_active_states": 46,
+        "positive_active_states": 69
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 4,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          607500000
+        ],
+        "terminal": [
+          267612306451560244409459123,
+          979552051200000000000000
+        ],
+        "signed_occupation": [
+          26835008915441949510540877,
+          979552051200000000000000
+        ],
+        "absolute_occupation": [
+          26835008915441949510540877,
+          979552051200000000000000
+        ],
+        "survival_probability": [
+          1489,
+          2048
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 111
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 4,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          1154250000
+        ],
+        "terminal": [
+          148316923330633431019568633,
+          1550957414400000000000000
+        ],
+        "signed_occupation": [
+          5108202077642196346338493,
+          81629337600000000000000
+        ],
+        "absolute_occupation": [
+          448904246032050029423889281,
+          516985804800000000000000
+        ],
+        "survival_probability": [
+          1489,
+          2048
+        ],
+        "negative_active_states": 47,
+        "positive_active_states": 64
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 4,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          2670,
+          127
+        ],
+        "terminal": [
+          92703503599434099911826338626054825800459356357403092593,
+          6417686689938428224336162004812096107833905699395532800
+        ],
+        "signed_occupation": [
+          5361878505007472670175607547339333731258189959995879816689,
+          815046209622180384490692574611136205694906023823232665600
+        ],
+        "absolute_occupation": [
+          51427206193624941629839541287640391620149739094394322792232687908978293254306071151133941751653501431579,
+          5179969645455219746554131590628860137722322957078364955314920707745248124408486769670259560357507686400
+        ],
+        "survival_probability": [
+          1489,
+          2048
+        ],
+        "negative_active_states": 38,
+        "positive_active_states": 73
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 16,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          0,
+          1
+        ],
+        "terminal": [
+          0,
+          1
+        ],
+        "signed_occupation": [
+          0,
+          1
+        ],
+        "absolute_occupation": [
+          0,
+          1
+        ],
+        "survival_probability": [
+          0,
+          1
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 0
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 16,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          0,
+          1
+        ],
+        "terminal": [
+          0,
+          1
+        ],
+        "signed_occupation": [
+          0,
+          1
+        ],
+        "absolute_occupation": [
+          0,
+          1
+        ],
+        "survival_probability": [
+          0,
+          1
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 0
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 16,
+        "initial_cutoff": 7,
+        "depth": 12,
+        "initial_value": [
+          0,
+          1
+        ],
+        "terminal": [
+          0,
+          1
+        ],
+        "signed_occupation": [
+          0,
+          1
+        ],
+        "absolute_occupation": [
+          0,
+          1
+        ],
+        "survival_probability": [
+          0,
+          1
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 0
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 16,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          707281,
+          9000
+        ],
+        "terminal": [
+          22806117175103058465469,
+          544195584000000000000
+        ],
+        "signed_occupation": [
+          19960460252352941534531,
+          544195584000000000000
+        ],
+        "absolute_occupation": [
+          19960460252352941534531,
+          544195584000000000000
+        ],
+        "survival_probability": [
+          219,
+          2048
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 86
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 16,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          12023777,
+          256500
+        ],
+        "terminal": [
+          3519833000119066214791,
+          215410752000000000000
+        ],
+        "signed_occupation": [
+          6577831114696933785209,
+          215410752000000000000
+        ],
+        "absolute_occupation": [
+          31933090853716233306179,
+          215410752000000000000
+        ],
+        "survival_probability": [
+          219,
+          2048
+        ],
+        "negative_active_states": 42,
+        "positive_active_states": 44
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 16,
+        "initial_cutoff": 31,
+        "depth": 12,
+        "initial_value": [
+          97,
+          31
+        ],
+        "terminal": [
+          30685020201559634207323525965513236743413036056823467,
+          15026955159572007372553842809049880364074488577228800
+        ],
+        "signed_occupation": [
+          16334807233230195313248175727320259879658750781602133,
+          15026955159572007372553842809049880364074488577228800
+        ],
+        "absolute_occupation": [
+          24479607599256707866732735605408696500447081291335393211479072537629914272651776462737,
+          9122997775657595704049366175500806845578145546353235522296634511231583210500421222400
+        ],
+        "survival_probability": [
+          219,
+          2048
+        ],
+        "negative_active_states": 28,
+        "positive_active_states": 58
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 16,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          594823321,
+          3796875
+        ],
+        "terminal": [
+          803616403681840836208807,
+          6802444800000000000000
+        ],
+        "signed_occupation": [
+          262063347917877563791193,
+          6802444800000000000000
+        ],
+        "absolute_occupation": [
+          262063347917877563791193,
+          6802444800000000000000
+        ],
+        "survival_probability": [
+          1113,
+          4096
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 87
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 16,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          9517173136,
+          216421875
+        ],
+        "terminal": [
+          3904994382645099028982299,
+          96934838400000000000000
+        ],
+        "signed_occupation": [
+          357724623753774571017701,
+          96934838400000000000000
+        ],
+        "absolute_occupation": [
+          29208889110767783337076849,
+          96934838400000000000000
+        ],
+        "survival_probability": [
+          1113,
+          4096
+        ],
+        "negative_active_states": 39,
+        "positive_active_states": 48
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 16,
+        "initial_cutoff": 64,
+        "depth": 12,
+        "initial_value": [
+          419,
+          64
+        ],
+        "terminal": [
+          106521154811057459038774242562151831852085731108336029,
+          18503480450107945558754552383954889042476844418662400
+        ],
+        "signed_occupation": [
+          14618818760742997041196967576552832347879859695094371,
+          18503480450107945558754552383954889042476844418662400
+        ],
+        "absolute_occupation": [
+          153067511789271772227375425323489163744676028422566995936461149051028744925779323060273,
+          33856012253561202605123161652670356320965512975437341113292486549375584872452169728000
+        ],
+        "survival_probability": [
+          1113,
+          4096
+        ],
+        "negative_active_states": 36,
+        "positive_active_states": 51
+      },
+      {
+        "profile": "gauge_saturated_synthetic",
+        "floor": 16,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          607500000
+        ],
+        "terminal": [
+          254097650936989879685519123,
+          979552051200000000000000
+        ],
+        "signed_occupation": [
+          40349664430012314234480877,
+          979552051200000000000000
+        ],
+        "absolute_occupation": [
+          40349664430012314234480877,
+          979552051200000000000000
+        ],
+        "survival_probability": [
+          929,
+          2048
+        ],
+        "negative_active_states": 0,
+        "positive_active_states": 91
+      },
+      {
+        "profile": "oscillating_synthetic",
+        "floor": 16,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          182610759547,
+          1154250000
+        ],
+        "terminal": [
+          143996381029630681153598633,
+          1550957414400000000000000
+        ],
+        "signed_occupation": [
+          101376381776204480446401367,
+          1550957414400000000000000
+        ],
+        "absolute_occupation": [
+          442675188616588106748279281,
+          516985804800000000000000
+        ],
+        "survival_probability": [
+          929,
+          2048
+        ],
+        "negative_active_states": 37,
+        "positive_active_states": 54
+      },
+      {
+        "profile": "actual_variable_clock_prefix_mean",
+        "floor": 16,
+        "initial_cutoff": 127,
+        "depth": 12,
+        "initial_value": [
+          2301,
+          127
+        ],
+        "terminal": [
+          1200202395453228557153042126197320639681354895697908183,
+          98120388952713666115029710537022014071039169794867200
+        ],
+        "signed_occupation": [
+          73349310757634118972247013918627933137929057944355087959,
+          12461289396994635596608773238201795787021974563948134400
+        ],
+        "absolute_occupation": [
+          1737621636988524163136588758177225345972412435491823123556209360300274403529694439897598880101061241,
+          184709318085402520567900027835959340096146504483269622103734527214305004810617880168958652696576000
+        ],
+        "survival_probability": [
+          929,
+          2048
+        ],
+        "negative_active_states": 32,
+        "positive_active_states": 59
+      }
+    ],
+    "scope": "Exact forward mass propagation and independent memoized backward recurrences. Synthetic profiles are explicitly separate from finite Collatz population means."
+  }
+}

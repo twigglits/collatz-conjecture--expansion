@@ -1,0 +1,373 @@
+{
+  "status": "passed",
+  "counts": {
+    "one_even_inverse_branches": 98298,
+    "inverse_targets": 65536,
+    "reduced_residue_criterion_comparisons": 65536,
+    "strict_one_even_improvements": 10922,
+    "strict_branch_ordinary_steps": 76434,
+    "forward_in_range_endpoints": 202053,
+    "forward_sources": 65536,
+    "forward_shortcut_steps": 196606,
+    "independent_minimum_comparisons": 131072,
+    "progression_union_counts": 17,
+    "modular_lift_levels": 129,
+    "complete_exponent_residues": 8191,
+    "unique_lift_periods": 13,
+    "family_height_factor_comparisons": 12,
+    "exact_family_prefixes": 11,
+    "family_ordinary_steps": 12767,
+    "family_shortcut_steps": 6389,
+    "family_past_all_odd_barrier": 7,
+    "large_index_height_arithmetic": 1538,
+    "kernel_convergence_witnesses_replayed": 4,
+    "kernel_witness_ordinary_steps": 1440
+  },
+  "bounded_even_ancestry": {
+    "complete_target_interval": [
+      1,
+      65536
+    ],
+    "complete_forward_source_interval": [
+      1,
+      65536
+    ],
+    "maximum_even_input_shortcut_steps": 1,
+    "rows": [
+      {
+        "target": 4,
+        "all_odd_minimum": 4,
+        "one_even_minimum": 3,
+        "first_odd_block": 2,
+        "last_odd_block": 0,
+        "ordinary_clock": 5
+      },
+      {
+        "target": 13,
+        "all_odd_minimum": 13,
+        "one_even_minimum": 7,
+        "first_odd_block": 3,
+        "last_odd_block": 0,
+        "ordinary_clock": 7
+      },
+      {
+        "target": 20,
+        "all_odd_minimum": 13,
+        "one_even_minimum": 7,
+        "first_odd_block": 3,
+        "last_odd_block": 1,
+        "ordinary_clock": 9
+      },
+      {
+        "target": 22,
+        "all_odd_minimum": 22,
+        "one_even_minimum": 19,
+        "first_odd_block": 2,
+        "last_odd_block": 0,
+        "ordinary_clock": 5
+      },
+      {
+        "target": 31,
+        "all_odd_minimum": 31,
+        "one_even_minimum": 27,
+        "first_odd_block": 2,
+        "last_odd_block": 0,
+        "ordinary_clock": 5
+      },
+      {
+        "target": 40,
+        "all_odd_minimum": 40,
+        "one_even_minimum": 15,
+        "first_odd_block": 4,
+        "last_odd_block": 0,
+        "ordinary_clock": 9
+      },
+      {
+        "target": 47,
+        "all_odd_minimum": 31,
+        "one_even_minimum": 27,
+        "first_odd_block": 2,
+        "last_odd_block": 1,
+        "ordinary_clock": 7
+      },
+      {
+        "target": 49,
+        "all_odd_minimum": 49,
+        "one_even_minimum": 43,
+        "first_odd_block": 2,
+        "last_odd_block": 0,
+        "ordinary_clock": 5
+      },
+      {
+        "target": 58,
+        "all_odd_minimum": 58,
+        "one_even_minimum": 51,
+        "first_odd_block": 2,
+        "last_odd_block": 0,
+        "ordinary_clock": 5
+      },
+      {
+        "target": 67,
+        "all_odd_minimum": 67,
+        "one_even_minimum": 39,
+        "first_odd_block": 3,
+        "last_odd_block": 0,
+        "ordinary_clock": 7
+      },
+      {
+        "target": 71,
+        "all_odd_minimum": 31,
+        "one_even_minimum": 27,
+        "first_odd_block": 2,
+        "last_odd_block": 2,
+        "ordinary_clock": 9
+      },
+      {
+        "target": 74,
+        "all_odd_minimum": 49,
+        "one_even_minimum": 43,
+        "first_odd_block": 2,
+        "last_odd_block": 1,
+        "ordinary_clock": 7
+      },
+      {
+        "target": 152,
+        "all_odd_minimum": 67,
+        "one_even_minimum": 39,
+        "first_odd_block": 3,
+        "last_odd_block": 2,
+        "ordinary_clock": 11
+      }
+    ],
+    "progression_counts": [
+      {
+        "cutoff": 1,
+        "strict_improvements": 0
+      },
+      {
+        "cutoff": 2,
+        "strict_improvements": 0
+      },
+      {
+        "cutoff": 4,
+        "strict_improvements": 1
+      },
+      {
+        "cutoff": 8,
+        "strict_improvements": 1
+      },
+      {
+        "cutoff": 16,
+        "strict_improvements": 2
+      },
+      {
+        "cutoff": 32,
+        "strict_improvements": 5
+      },
+      {
+        "cutoff": 64,
+        "strict_improvements": 9
+      },
+      {
+        "cutoff": 128,
+        "strict_improvements": 21
+      },
+      {
+        "cutoff": 256,
+        "strict_improvements": 44
+      },
+      {
+        "cutoff": 512,
+        "strict_improvements": 86
+      },
+      {
+        "cutoff": 1024,
+        "strict_improvements": 171
+      },
+      {
+        "cutoff": 2048,
+        "strict_improvements": 341
+      },
+      {
+        "cutoff": 4096,
+        "strict_improvements": 682
+      },
+      {
+        "cutoff": 8192,
+        "strict_improvements": 1365
+      },
+      {
+        "cutoff": 16384,
+        "strict_improvements": 2731
+      },
+      {
+        "cutoff": 32768,
+        "strict_improvements": 5459
+      },
+      {
+        "cutoff": 65536,
+        "strict_improvements": 10922
+      }
+    ],
+    "scope": "Exact minimum among finite predecessor words with zero or at most one even-input shortcut step. These are not global orbit minima or a convergence census."
+  },
+  "lift_family": {
+    "modular_indices": [
+      0,
+      128
+    ],
+    "complete_exponent_period_indices": [
+      0,
+      12
+    ],
+    "exact_source_prefix_indices": [
+      0,
+      10
+    ],
+    "rows": [
+      {
+        "lift_index": 0,
+        "first_odd_block": 3,
+        "last_odd_block": 2,
+        "source_bits": 6,
+        "target_bits": 8,
+        "ordinary_clock": 11,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 0,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 1,
+        "first_odd_block": 5,
+        "last_odd_block": 3,
+        "source_bits": 8,
+        "target_bits": 12,
+        "ordinary_clock": 17,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 0,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 2,
+        "first_odd_block": 13,
+        "last_odd_block": 4,
+        "source_bits": 16,
+        "target_bits": 25,
+        "ordinary_clock": 35,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 0,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 3,
+        "first_odd_block": 21,
+        "last_odd_block": 5,
+        "source_bits": 24,
+        "target_bits": 38,
+        "ordinary_clock": 53,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 0,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 4,
+        "first_odd_block": 53,
+        "last_odd_block": 6,
+        "source_bits": 56,
+        "target_bits": 89,
+        "ordinary_clock": 119,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 1,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 5,
+        "first_odd_block": 117,
+        "last_odd_block": 7,
+        "source_bits": 120,
+        "target_bits": 191,
+        "ordinary_clock": 249,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 1,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 6,
+        "first_odd_block": 245,
+        "last_odd_block": 8,
+        "source_bits": 248,
+        "target_bits": 395,
+        "ordinary_clock": 507,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 2,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 7,
+        "first_odd_block": 501,
+        "last_odd_block": 9,
+        "source_bits": 504,
+        "target_bits": 801,
+        "ordinary_clock": 1021,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 3,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 8,
+        "first_odd_block": 757,
+        "last_odd_block": 10,
+        "source_bits": 760,
+        "target_bits": 1207,
+        "ordinary_clock": 1535,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 5,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 9,
+        "first_odd_block": 1781,
+        "last_odd_block": 11,
+        "source_bits": 1784,
+        "target_bits": 2831,
+        "ordinary_clock": 3585,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 8,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      },
+      {
+        "lift_index": 10,
+        "first_odd_block": 2805,
+        "last_odd_block": 12,
+        "source_bits": 2808,
+        "target_bits": 4455,
+        "ordinary_clock": 5635,
+        "source_is_prefix_minimum": true,
+        "integer_height_factor": 12,
+        "all_odd_ancestors_exceed_source_plus_one": true
+      }
+    ],
+    "scope": "The modular checks at large indices do not construct or traverse sources of exponentially large bit length. All displayed source paths are finite prefixes; no global-minimum claim is inferred."
+  },
+  "convergence_witnesses": {
+    "rows": [
+      {
+        "source": 39,
+        "first_arrival_at_one": 34
+      },
+      {
+        "source": 152,
+        "first_arrival_at_one": 23
+      },
+      {
+        "source": 45035996273704959,
+        "first_arrival_at_one": 751
+      },
+      {
+        "source": 551968206708544316592375437,
+        "first_arrival_at_one": 632
+      }
+    ],
+    "scope": "These four arrivals are kernel proved; first-arrival minimality is separately checked in Python."
+  }
+}

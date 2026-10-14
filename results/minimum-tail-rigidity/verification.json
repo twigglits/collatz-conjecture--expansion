@@ -1,0 +1,155 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T17:45:28.518558+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-tail-8opxu4u0/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 2.435,
+      "log": "results/minimum-tail-rigidity/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-tail-8opxu4u0/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.509,
+      "log": "results/minimum-tail-rigidity/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285"
+    },
+    {
+      "source": "lean/DensityCountermodel.lean",
+      "source_sha256": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-tail-8opxu4u0/DensityCountermodel.olean",
+        "lean/DensityCountermodel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.655,
+      "log": "results/minimum-tail-rigidity/DensityCountermodel.log",
+      "log_sha256": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+      "olean_sha256": "27e04775bc0bfe33bb3901ed4a036a6c6a67092334fffcc8fe113613728547e7"
+    },
+    {
+      "source": "lean/MinimumTailRigidity.lean",
+      "source_sha256": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-minimum-tail-8opxu4u0/MinimumTailRigidity.olean",
+        "lean/MinimumTailRigidity.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.585,
+      "log": "results/minimum-tail-rigidity/MinimumTailRigidity.log",
+      "log_sha256": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+      "olean_sha256": "f67fa2c3dc6a05771a8f7bb07a866b4dc8db9999f97be7d4609779a79d944f83"
+    }
+  ],
+  "kernel_theorems_audited": 19,
+  "prior_hashes_validated": {
+    "results/critical-clock-window/verification.json": 17,
+    "results/cutoff-descent/verification.json": 12,
+    "results/density-countermodel/verification.json": 9
+  },
+  "finite_replay_counts": {
+    "finite_map_minimum_idempotence_checks": 1024,
+    "exhaustive_finite_map_budget_equivalences": 1280,
+    "finite_map_diagonal_witnesses": 640,
+    "finite_map_prefix_budget_implications": 6400,
+    "complete_four_state_maps": 256,
+    "actual_ordinary_collatz_steps": 1048576,
+    "actual_collatz_prefixes": 8192,
+    "actual_prefix_tail_monotonicity_checks": 315,
+    "comparison_map_minimum_classifications": 32768,
+    "comparison_map_direct_steps": 696615,
+    "uniform_finite_atom_majorant_checks": 393248,
+    "explicit_escaping_diagonal_witnesses": 14,
+    "complete_exact_atom_count_comparisons": 83,
+    "exact_dyadic_gauge_mean_checks": 24,
+    "nearly_linear_uniform_tail_checks": 108,
+    "large_dyadic_exact_atom_formulas": 4000,
+    "exact_dyadic_linear_mean_formulas": 68,
+    "exact_rational_square_tail_comparisons": 256,
+    "bounded_first_mean_comparison_checks": 32768
+  },
+  "kernel_scope": "Attained actual Collatz minimum and its idempotence; diagonal lower bound and uniform linear-tail rigidity; finite-prefix sufficient budget and verified-floor implication; the explicitly altered map's all-time spine minimum; finite counting and dyadic-budget arithmetic.",
+  "written_scope": [
+    "Uniform integrability of the actual minimum itself is equivalent to a finite global minimum bound, hence to a finite collection of eventual cycles. A verified floor would select the known cycle.",
+    "In the escaping comparison map, all finite-population minimum atoms are bounded by three times their limiting mass.",
+    "For every nonnegative finite weight w, uniform minimum-level weighted-tail decay in that comparison map is equivalent to summability of w(2^(k+2)-1)/2^(k+2).",
+    "Consequently all powers p<1, all logarithmic powers and weights m/[log_2(m+1)]^q for q>1 have vanishing uniform tails despite positive-density escape.",
+    "A separate map with zero-density escape has uniformly bounded first means and limiting minimum law delta_1, but fails first-moment uniform integrability."
+  ],
+  "external_dependency": "None for the new implications or comparison-map moment deductions. Prior Collatz mixing is context only, not a premise of the rigidity theorem.",
+  "source_review": {
+    "date": "2026-10-14",
+    "urls": [
+      "https://www.proofatlas.ai/formalizations/natural-density-log-time-collatz/",
+      "https://www.proofatlas.ai/proofs/artifact.collatz.predecessors_positive_lower_density.v001.html"
+    ],
+    "scope": "Checked advertised growing-threshold and target-dependent quantifiers; no new external theorem or fresh external Lean replay used."
+  },
+  "finite_scope_limit": "Actual Collatz work uses bounded prefixes only. Comparison-map escape uses the prior all-time kernel formulas, not timeouts. Exact rational gauge checks are finite; infinite moment statements have separate written proofs. No floating-point proof decisions.",
+  "not_proved": [
+    "A uniform linear minimum-tail budget for Collatz, even at one verified floor.",
+    "First-moment uniform integrability of the Collatz minimum.",
+    "Vanishing nonconvergent mass, exclusion of all escapes or additional cycles, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "lean/DensityCountermodel.lean": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+    "lean/MinimumTailRigidity.lean": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+    "verify_minimum_tail_rigidity.py": "8c278587154bd2107e1c772540e8c129099950a8dd58ec30b3f7a87fe543b8ca",
+    "verify_density_countermodel.py": "a053abfb877eb31ea06e4ef1bc43c8691c127c59078c5d059c60b2db83c5ccd3",
+    "docs/MINIMUM-TAIL-RIGIDITY.md": "1ece65a4aa1ffb6d70bd9336dad5797c6cd070721704485e46e93e1ba70ec4d7",
+    "docs/DENSITY-COUNTERMODEL.md": "a8c6e66e6bd4de48ada4317ac10462d14181afa593ce61af4b0106cac93b5991",
+    "docs/MINIMUM-LOG-MOMENTS.md": "b4b172f83ed6973f631a77b2298a8802d3b0a0a6b540414abe31207e2ddc76db",
+    "docs/CRITICAL-CLOCK-WINDOW.md": "c919be5a997bb2cfe65bb4b428603fe569aa9ec4cfb3e80bdda1f8820089f633",
+    "results/critical-clock-window/verification.json": "0af94e6786e13583edd77c41b27f007bacbf65ec2b7a7b2067393076234a6e04",
+    "results/cutoff-descent/verification.json": "02bc7a3b957d504dea9cbf0a5ac9c9f030800adfb3f874edaae005fc732e6c59",
+    "results/density-countermodel/verification.json": "685007541f957a2bd3d066aa7e26d6e31a5e20b5d7cc27d3c2dff3fbad539ff7",
+    "results/minimum-tail-rigidity/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+    "results/minimum-tail-rigidity/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/minimum-tail-rigidity/DensityCountermodel.log": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+    "results/minimum-tail-rigidity/MinimumTailRigidity.log": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+    "results/minimum-tail-rigidity/replay.json": "a6262cc9572ab3dd4239f3e0cdc927c57e669b12155c2da4d99dfda2abc6b952"
+  },
+  "documentation_review": {
+    "reviewed_at_utc": "2026-10-14T17:50:51.728730+00:00",
+    "files": [
+      "docs/MINIMUM-TAIL-RIGIDITY.md"
+    ],
+    "changes": "Add the written dyadic half-budget consequence, clarify the exact dyadic atom-count proof, and record the completed verification scope and the distinction between count formulas and trajectory enumeration.",
+    "proof_sources_and_verifier_unchanged": true,
+    "completed_checks_reused": true
+  }
+}

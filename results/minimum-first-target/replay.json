@@ -1,0 +1,247 @@
+{
+  "status": "passed",
+  "counts": {
+    "half_source_pairs": 4160,
+    "meeting_ordinary_steps": 561600,
+    "independent_meeting_path_comparisons": 8320,
+    "near_floor_arithmetic_checks": 16383,
+    "first_target_family_prefixes": 257,
+    "family_ordinary_steps": 397065,
+    "family_shortcut_steps": 198661,
+    "family_inverse_candidates": 199175,
+    "family_prefix_residue_checks": 397322,
+    "explicit_profile_source_checks": 65536,
+    "first_hit_census_sources": 65536,
+    "first_hit_census_ordinary_steps": 670655,
+    "finite_profile_equality_comparisons": 65536,
+    "census_distinct_targets": 5204,
+    "census_inverse_candidates": 36257,
+    "explicit_profile_first_paths": 4551,
+    "kernel_convergence_witnesses_replayed": 4,
+    "kernel_witness_ordinary_steps": 268
+  },
+  "half_source_meetings": {
+    "complete_parameter_rectangle": {
+      "k": [
+        0,
+        64
+      ],
+      "q": [
+        1,
+        256
+      ]
+    },
+    "filter": "3^k*q=3 mod4",
+    "rows": [
+      {
+        "k": 0,
+        "q": 3,
+        "small_source_bits": 2,
+        "large_source_bits": 3,
+        "small_clock": 3,
+        "large_clock": 4,
+        "large_prefix_minimum_equals_source": false
+      },
+      {
+        "k": 1,
+        "q": 1,
+        "small_source_bits": 1,
+        "large_source_bits": 2,
+        "small_clock": 5,
+        "large_clock": 6,
+        "large_prefix_minimum_equals_source": false
+      },
+      {
+        "k": 1,
+        "q": 9,
+        "small_source_bits": 5,
+        "large_source_bits": 6,
+        "small_clock": 5,
+        "large_clock": 6,
+        "large_prefix_minimum_equals_source": false
+      },
+      {
+        "k": 2,
+        "q": 3,
+        "small_source_bits": 4,
+        "large_source_bits": 5,
+        "small_clock": 7,
+        "large_clock": 8,
+        "large_prefix_minimum_equals_source": false
+      },
+      {
+        "k": 8,
+        "q": 3,
+        "small_source_bits": 10,
+        "large_source_bits": 11,
+        "small_clock": 19,
+        "large_clock": 20,
+        "large_prefix_minimum_equals_source": true
+      },
+      {
+        "k": 64,
+        "q": 255,
+        "small_source_bits": 72,
+        "large_source_bits": 73,
+        "small_clock": 131,
+        "large_clock": 132,
+        "large_prefix_minimum_equals_source": true
+      }
+    ],
+    "scope": "Exact finite coalescence. Some paths descend; neither prefix nor global self-minimality is presumed. Floor tests are integer compatibility checks, not least-counterexample instantiations."
+  },
+  "first_target_family": {
+    "complete_family_index_interval": [
+      0,
+      256
+    ],
+    "rows": [
+      {
+        "h": 0,
+        "first_odd_block": 3,
+        "source_bits": 6,
+        "target_bits": 7,
+        "first_ordinary_hit": 9,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 1
+      },
+      {
+        "h": 1,
+        "first_odd_block": 9,
+        "source_bits": 12,
+        "target_bits": 17,
+        "first_ordinary_hit": 21,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 2
+      },
+      {
+        "h": 2,
+        "first_odd_block": 15,
+        "source_bits": 18,
+        "target_bits": 26,
+        "first_ordinary_hit": 33,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 3
+      },
+      {
+        "h": 3,
+        "first_odd_block": 21,
+        "source_bits": 24,
+        "target_bits": 36,
+        "first_ordinary_hit": 45,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 4
+      },
+      {
+        "h": 8,
+        "first_odd_block": 51,
+        "source_bits": 54,
+        "target_bits": 83,
+        "first_ordinary_hit": 105,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 9
+      },
+      {
+        "h": 16,
+        "first_odd_block": 99,
+        "source_bits": 102,
+        "target_bits": 159,
+        "first_ordinary_hit": 201,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 17
+      },
+      {
+        "h": 64,
+        "first_odd_block": 387,
+        "source_bits": 390,
+        "target_bits": 616,
+        "first_ordinary_hit": 777,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 65
+      },
+      {
+        "h": 128,
+        "first_odd_block": 771,
+        "source_bits": 774,
+        "target_bits": 1224,
+        "first_ordinary_hit": 1545,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 129
+      },
+      {
+        "h": 256,
+        "first_odd_block": 1539,
+        "source_bits": 1542,
+        "target_bits": 2442,
+        "first_ordinary_hit": 3081,
+        "one_even_minimum_equals_original_source": true,
+        "height_ratio_at_least": 257
+      }
+    ],
+    "scope": "First-hit times and complete inverse-word optimization with at most one even input. No convergence claim for the whole parameter family."
+  },
+  "finite_first_hit_census": {
+    "complete_source_interval": [
+      1,
+      65536
+    ],
+    "ordinary_clock_limit": 4096,
+    "outcomes": {
+      "below_source": 60949,
+      "equal_source": 4551,
+      "above_source": 0,
+      "reached_one_before_target": 36,
+      "unfinished_at_cutoff": 0
+    },
+    "rows": [
+      {
+        "source": 27,
+        "first_target": 47,
+        "first_clock": 7,
+        "all_odd_minimum": 31,
+        "one_even_minimum": 27,
+        "comparison": "equal_source"
+      },
+      {
+        "source": 39,
+        "first_target": 101,
+        "first_clock": 9,
+        "all_odd_minimum": 67,
+        "one_even_minimum": 39,
+        "comparison": "equal_source"
+      },
+      {
+        "source": 2559,
+        "first_target": 73811,
+        "first_clock": 21,
+        "all_odd_minimum": 49207,
+        "one_even_minimum": 2559,
+        "comparison": "equal_source"
+      }
+    ],
+    "explicit_profile": "n+1=2^K*q with q odd; K>=2, 3^K*q=3 mod4, n!=2 mod3, n!=4 mod9",
+    "finite_only_equivalence": "On this interval, the first-target inverse minimum equals n exactly for the explicit profile. No universal converse is claimed.",
+    "scope": "Stop at the first target, first one, or cutoff. First-target paths are not assumed to converge, and unfinished paths are retained. These are finite source statistics, not orbit-frequency or density statements."
+  },
+  "kernel_witnesses": {
+    "rows": [
+      {
+        "source": 39,
+        "first_arrival_at_one": 34
+      },
+      {
+        "source": 101,
+        "first_arrival_at_one": 25
+      },
+      {
+        "source": 2559,
+        "first_arrival_at_one": 115
+      },
+      {
+        "source": 73811,
+        "first_arrival_at_one": 94
+      }
+    ],
+    "scope": "Kernel arrival witnesses; first-arrival minimality separately checked in Python."
+  }
+}

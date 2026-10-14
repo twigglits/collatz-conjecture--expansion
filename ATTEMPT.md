@@ -2188,6 +2188,324 @@ or `sum A_floor(kappa log N)=o(N sqrt(log N))` is another equivalent
 criterion for full Collatz. Neither zero limit is proved; no escape or
 additional-cycle exclusion follows.
 
+The [minimum-tail rigidity argument](docs/MINIMUM-TAIL-RIGIDITY.md)
+now identifies a sharp limitation of the moment route. For the actual
+global minimum `m`, idempotence `m(m(n))=m(n)` implies that
+`sup_N mean_(n<=N) m(n)1_(m(n)>H)` is either zero or at least one.
+Indeed, any minimum `a>H` contributes `a` at the source cutoff `N=a`.
+A uniform linear tail budget below one at a verified floor would prove
+full Collatz, with no analytic mixing or external density premise.
+Finite-prefix minima give a separately kernel-checked sufficient version;
+the required budget over every source cutoff remains unproved.
+
+Uniform integrability of the minimum itself would therefore imply a
+finite global bound on minima, hence a finite collection of eventual
+cycles. It would not select the cycle through one without checking the
+resulting floor. Bounded first moments or a finite moment of a limiting
+law are weaker and cannot replace this condition.
+
+The earlier explicitly altered escaping map shows how far sublinear
+moment control can fall short. Its finite-population minimum atoms are
+at most three times their limiting masses `1/(2^(k+2))`, at minima
+`2^(k+2)-1`. Consequently every power below one and even
+`m/[log_2(m+1)]^q` for `q>1` has uniformly vanishing tails, although
+half the map's starts escape and its predecessor densities have a
+reciprocal lower bound. Its unweighted mean minimum through `2^L` is
+exactly `L-1+2^(1-L)`. This is a comparison map, not a Collatz
+counterexample or a disproof of the desired Collatz estimate.
+
+Nineteen finite kernel roots, exhaustive checks of 256 four-state maps,
+8,192 actual Collatz prefixes, and 32,768 comparison-map classifications
+passed. Infinite moment and finite-attractor deductions remain written.
+The new result narrows which stronger estimate could be sufficient;
+it does not establish zero nonconvergent mass or resolve Collatz.
+
+The [minimum-cap transport audit](docs/MINIMUM-CAP-TRANSPORT.md)
+retains the odd source's truncation exactly. For finite prefix minima,
+`m_(t+1)(2n)=m_t(n)` and
+`m_(t+2)(2n+1)=min(2n+1,m_t(3n+2))`. With
+`g_H(y)=y 1_(y>H)`, the resulting nonnegative cap loss decreases as
+the clock advances. Once zero, it stays zero at every later clock.
+Both population parities and this all-future implication are kernel checked.
+
+The cap alone cannot pay the positive progression sampling error or
+the error in the fair population recurrence at all finite clocks.
+A closed actual-Collatz witness has floor1, tail clock4, cutoff3,
+sampling error1 and fair residual1/6, despite zero current and future
+cap losses. The kernel verifies the integer computations and arbitrary
+finite future cap sums. A larger exact Python witness at floor64,
+cutoff65536 and parent clock256 has the same obstruction; all late
+minima through source98306 are independently recomputed. Its tail
+sum33999 also exceeds the sufficient dyadic half budget32768, rejecting
+that particular floor and prescribed clock, not the general criterion.
+
+Twenty-two new kernel roots, 25,800 small and 780 larger exact population
+identities, and 294,918 independent late-minimum comparisons passed.
+Weighted layer-cake summation of bounded threshold errors loses a factor
+of the cutoff; the existing logarithmic comparison alone does not provide
+the needed linear estimate. Past-cap accounting, signed cancellation,
+eventual bounds and estimates for actual infinite minima remain possible.
+The uniform linear-tail budget and full Collatz remain unresolved.
+
+The [linear-boundary analysis](docs/MINIMUM-LINEAR-BOUNDARY.md) now
+identifies the cancellation required by a finite-clock minimum argument.
+For the auxiliary fair cutoff chain, a three-step binary-length drop gives
+a kernel-checked occupation bound `E sigma <=24 bits(N)`. Nevertheless
+the expected terminal cutoff is at least `N-12 bits(N)`. For actual
+prefix-minimum tail means, the terminal contribution is at least
+`3N/8-(9/2)bits(N)-H` at every clock.
+
+At floor4 and cutoff256, this lower bound is51.5. Literal ordinary-step
+certificates prove all 256 sources reach the floor within125 steps, so
+the population tail is zero at every clock>=128. Exact unrolling therefore
+forces signed residual occupation <=-51.5 at every such clock. These
+statements, including all later clocks, are kernel checked. Vanishing
+probability of clock exhaustion does not justify discarding its linear
+terminal contribution.
+
+A further written calculation determines the universal leading term:
+the boundary differs from `[3/7+(-3/4)^T/14]N` by at most
+`H+1+6 bits(N)`. Elementary finite-parity counting, with rational word
+weights17/24 and49/40 and mean contraction29/30, proves
+`F_(T(N))(N)=o(N)` whenever `T(N)->infinity`. Hence at any fixed
+floor>=3 the signed residual occupation divided by N tends to -3/7.
+This leading cancellation is not the missing subunit tail budget.
+
+The same elementary argument gives sublinearity of the global-minimum
+mean. Its clockless cutoff boundary therefore vanishes without using
+the earlier analytic mixing premise. A quantitative signed residual
+bound strong enough to force every minimum below a verified floor is
+still missing. Thirty new kernel roots and independent finite replays
+passed; the leading law and limiting arguments remain written. Collatz
+is unresolved.
+
+The [clockless Green-kernel analysis](docs/MINIMUM-GREEN-KERNEL.md) now
+closes the infinite-sum integrability gap. A rational dyadic weight
+`V(n)=(29/30)^k(2^k+14n)/15`, with `k=floor(log2 n)`, contracts under
+the fair cutoff average by `rho=1704/1711<1`. Elementary parity counting
+gives the written bound `0<=G_H(n)<=3V(n)` for the actual global-minimum
+tail mean, independently of analytic mixing. Thirty-four new kernel
+roots prove the contraction and finite occupation bounds under this
+explicit majorant. The written infinite assembly then gives
+`G_H(N)=E sum_(j<tau) R_H(N_j)` with an integrable absolute sum and tail
+at most `(5133/7)rho^J V(N)` after depth J. The signed truncation error
+is nonnegative and at most `3rho^J V(N)`.
+
+A hypothetical least counterexample A has exactly `G_(A-1)(A)=1`,
+also kernel checked. Hence its positive residual, divided by V, must
+have supremum at least `7/(1711V(A))`. No independent residual bound
+contradicting this requirement is proved. The quantitative expansion
+still grows with N and does not imply the uniform subunit tail budget.
+All 34 roots and independent rational replays passed; Collatz remains
+unresolved.
+
+The [adaptive-clock barrier](docs/MINIMUM-CLOCK-BARRIER.md) rules out
+obtaining the missing budget by adding a fixed number L of ordinary
+steps to the elementary clock `2 floor(log2 N)`. For every fixed floor
+H and shift L, the resulting actual prefix-minimum tail mean is
+unbounded. At `N=2^(5j+2L)` it is at least `2^(j-1)` once
+`H<2^(4j+2L)-1`. A whole residue class supplies the bound: whenever
+`2^T<=6^K`, every source `2^K q-1` retains its source as its minimum
+through ordinary clock T. These are kernel theorems over all indices,
+not extrapolations from finite samples.
+
+Any strict dyadic tail budget must therefore satisfy
+`6^(d-1)<2^(T(2^d))` at all sufficiently large d, also kernel checked
+in its integer form. The written consequence is
+`T(2^d)>(log2 6)(d-1)`; every logarithmic coefficient below `log2 6`
+produces a growing tail mean along dyadic cutoffs. That calculation alone
+does not exclude coefficients at or above the threshold; the next result
+addresses the critical coefficient.
+
+At each fixed cutoff, these finite approximants nevertheless decrease
+and eventually equal the actual global-minimum mean, without assuming
+Collatz. Uniform smallness cannot be inferred from this settling.
+At H64,N1024,T20, four sources alone contribute2556; all four are
+kernel checked to reach one later. Thirty new roots and independent
+replays passed. The obstruction concerns these finite approximants,
+not a disproof of a bound for the actual global residual or of Collatz.
+
+The [critical-clock lift](docs/MINIMUM-CRITICAL-CLOCK-LIFT.md) now forces a
+second growing block. A constructive exponent lift gives
+`K_j=2(a_j+2^j)`, with `2^(j+1)<=K_j<2^(j+2)` and
+`3^(K_j)+7` divisible by `2^(j+3)`. Starting at `N_j=2^(K_j)-1`, the
+orbit has K_j odd shortcut steps, three safe ordinary halvings, and
+j further odd shortcut steps. The kernel proves
+`2^T<=6^(K_j+j) => m_T(N_j)=N_j`. For every fixed floor H<N_j, this
+single source makes the tail sum at cutoff N_j at least N_j.
+
+Thus a strict budget requires `2^(T(N_j))>6^(K_j+j)`. Writing
+`gamma=log2 6`, the real-logarithm consequence is
+`T(N_j)>gamma log2 N_j + gamma log2 log2 N_j - 2 gamma`.
+Every fixed additive shift of the leading critical clock fails; a
+fully integer version is kernel checked at arbitrarily large cutoffs.
+More generally, a log-log correction with coefficient below gamma
+still fails, by the written asymptotic comparison. A larger leading
+coefficient, the full gamma log-log correction with arbitrary constant,
+and estimates for actual global minima remain open. The diagonal bound
+is one for the tail mean; no critical-clock unboundedness is claimed.
+
+Twenty-one new roots passed twelve fresh sequential Lean builds. Exact
+Python independently replayed 186,810 ordinary prefix steps across 13
+selected sources, up to 33,966 bits, and checked modular lifts through
+index 1024 without constructing those enormous sources. The sources
+16383 and 1073741823 are kernel checked to reach 1 at clocks 159 and 449.
+No convergence theorem for the infinite family is asserted.
+
+The [population-majorant proof](docs/MINIMUM-POPULATION-MAJORANT.md)
+now removes the written population premise from the finite Green bounds.
+Put `r=29/15` and `k=floor(log2 N)`. For every floor H and ordinary
+clock T>=2k, the kernel proves `G_H(N)<=F_(H,T)(N)<=2r^k+k/2`.
+At N=2^k the upper bound improves to `r^k+k/4`. The argument retains
+the actual affine correction: its exact complete-period mean is k/4,
+already certified by the binary-image identity. Integer parity weights
+85 and 147, normalized by 120 per step, have mass 232^k over every
+complete period and dominate the capped slope. No probability model
+for an individual orbit is assumed.
+
+These bounds prove `0<=G_H(N)<=3V(N)` universally in the kernel, and
+the same majorant holds for all adaptive prefix shifts. The actual
+global-residual finite truncation and absolute-tail theorems now have
+their population hypothesis discharged. Infinite measure-theoretic
+assembly remains written. The least-counterexample diagnostic still
+requires an independent upper bound on its positive residual; that
+missing estimate has not been supplied. The new upper bound grows with
+N and does not prove the strict subunit budget.
+
+All 36 new roots passed 21 fresh sequential Lean builds. Independent
+Python compared 1,114,112 prefix minima for all 65,536 positive sources
+at every even clock through 32, checked 262,144 population bounds and
+68 sharper dyadic bounds, and verified the exact period identities.
+Finite residual replays use explicitly identified prefix profiles,
+not numerical guesses for unknown global minima. Collatz remains open.
+
+The [minimum-root analysis](docs/MINIMUM-ROOT-SPINE.md) now proves an
+exact global cap criterion. Put `m(n)=min_t C^t(n)` and
+`Delta(n)=m(Cn)-m(n)`. The kernel telescopes the accumulated caps to
+`m(C^T n)-m(n)` and proves that they are bounded in T if and only if
+the orbit eventually repeats. This would eliminate divergence if a
+universal bound were established, but would still leave nontrivial
+cycles to exclude. No such universal bound is proved here.
+
+Starting at `a_0=m(n)`, each successor `a_(k+1)=m(C a_k)` is another
+minimum root, attained on the original orbit at a strictly later clock.
+Equality of consecutive roots is equivalent to a positive-time return.
+For a nonrepeating positive orbit, the kernel proves
+`m(n)+4k<=a_k` and `2^k(a_k+1)<=3^k(m(n)+1)`.
+The successor roots have residues 7,11,23,31,43,47 modulo 48.
+These are forward restrictions on every root; the distinct backward
+restrictions for a least counterexample do not automatically propagate.
+
+The population bound also gives
+`R_k<=2(29/15)^(k+1)+(k+1)/2` for the number of all minimum roots in
+`(2^k,2^(k+1)]`, with a kernel finite budget `sum_(k<K) R_k/2^k<=118`.
+A written comparison yields a reciprocal sum at most 119 over all
+positive roots, including one, and a power lower bound in the root
+index for any nonrepeating orbit. Sparse infinite root sequences remain
+compatible with these estimates; there is no upper bound on their
+ordinary attainment clocks.
+
+Finite-horizon caps have a different endpoint: their total is
+`C^T n-m_T(n)`. The kernel proves that, even from source one, these
+totals repeat 0,3,1 while all global cap totals are zero. The moving
+finite horizon therefore cannot be substituted for the global sum.
+
+All 52 new roots passed 22 fresh sequential Lean builds. Independent
+Python checked all 65,535 sources in 16 dyadic shells through 65,536
+at the prescribed shell clocks, with 1,966,082 ordinary steps and
+65,535 independent exact-clock comparisons. A separate 4,096-source
+convergence replay supplies explicit witnesses for its numerical global
+minimum assignments; it is Python evidence, not a new kernel interval
+certificate. The actual residual estimate and full Collatz remain open.
+
+The [minimum-root predecessor analysis](docs/MINIMUM-ROOT-PREDECESSORS.md)
+adds exact inverse restrictions. A root `b=3^k*q-1` makes
+`2^k*q-1` a root as well. A contracting parent of a later root, if
+smaller than its preceding root on a nonrepeating orbit, lies outside
+that entire orbit. Such a parent can be divisible by three, in which
+case its predecessor basin has density zero; extra roots alone do not
+supply a useful branch-density increment.
+
+For a least counterexample A and its kth attained root a_k, the kernel
+proves `3^(k+1)` does not divide `a_k+1`. If `3^k` divides it, for k>0,
+the kernel forces `A=2^k*q-1`, `a_k=3^k*q-1`, and an actual all-odd
+block reaching a_k in 2k ordinary steps. The first successor either is
+1 modulo 3 or equals `(3A+1)/2`.
+
+This inverse family also has a kernel limitation: if A<2^d and a target
+`3^j*q-1` is at least `3^d-1`, its all-odd ancestor `2^j*q-1` is already
+at least A. This test therefore becomes ineffective at large targets.
+Further ancestry work needs mixed parity words or additional arithmetic.
+The earlier root count also does not close the existing branch-density
+or masked-energy gaps; its per-orbit growth consequence is weaker than
+the older orbit-packing exponent, though it counts a broader set of roots.
+
+All 21 new theorem roots passed 23 fresh sequential builds. Independent
+Python checked 33,944 finite transport identities and finite suffix-record
+branches for all sources through 8,192, without assigning unknown global
+minima. An axiom-free kernel example exhibits an extra parent111 feeding
+the finite suffix minimum167 from the orbit of27; 155,167,111 are also
+kernel checked to reach1 in85,67,69 steps. The new restrictions do not
+exclude all divergent orbits or nontrivial cycles.
+
+The [mixed ancestry analysis](docs/MINIMUM-MIXED-ANCESTRY.md) shows that
+one extra even-input shortcut step can overcome the preceding all-odd
+height barrier by arbitrarily large factors. Two growing odd blocks
+separated by that halving have an exact endpoint, ordinary clock,
+prefix minimum and parity count. Binary lifting supplies an unbounded
+family of actual source-target paths; every all-odd predecessor of
+the constructed large target is above the original source, while the
+mixed path reaches it from that source.
+
+The exact optimization over words with at most one even input also
+has a simple arithmetic description. Reduce the target by all-odd
+inverses as far as possible, to c. A further improvement exists exactly
+when c is 4 modulo 9. The kernel proves the constituent arithmetic
+and excludes a least counterexample in that residue class; the full
+optimization and natural density 1/6 of improved targets are written
+assemblies. That density concerns all targets, not their frequency
+along an unknown orbit.
+
+All 30 new roots passed 26 fresh sequential builds. Independent Python
+compared forward and inverse minima for every target through 65,536,
+finding 10,922 strict improvements, and verified the residue criterion
+and progression counts. A 56-bit kernel example beats the all-odd
+height threshold at clock 119 and is also kernel checked to reach one
+at clock 751. The construction supplies no divergent orbit. A least-
+counterexample contradiction still requires an actual encountered
+target whose mixed predecessor is smaller than that least source;
+neither that occurrence bound nor full Collatz is proved.
+
+The [first-target analysis](docs/MINIMUM-FIRST-TARGET.md) now identifies
+a limitation of that occurrence route under leastness itself. The new
+kernel meeting identity joins `2^(k+1)q-1` to its half-sized source
+`2^k*q-1` whenever `3^k*q=3 mod4`. Consequently, an orbit value
+at most twice a least counterexample A, with maximal initial odd
+shortcut block of length K>=2, must exit that block with exactly one
+even shortcut step. A longer even run would produce a positive
+coalescing source below A.
+
+Combine this with the existing least-source exclusions. Writing
+`A+1=2^K*q` with q odd gives `K>=2`, `3^K*q=3 mod4`, `A!=2 mod3`
+and `A!=4 mod9`. A written argument proves that the first ordinary
+visit to 20 modulo 27 is `(3^(K+1)q-1)/4`, at clock `2K+3`, and
+its smallest predecessor using at most one even shortcut step is
+exactly A. The first target therefore recovers A's existing path;
+it cannot supply the strict smaller-source contradiction. This general
+assembly is written, while its least-source inputs are kernel results.
+
+A parameterized kernel family `n_h=5*2^(6h+3)-1` exhibits the same
+first-target equality with unbounded relative target height. Two
+members, 39 and 2,559, are kernel checked to converge, so their long
+growth and ancestry equality are not counterexamples. The module has
+23 audited roots, verified in 27 fresh sequential builds. Independent
+Python checks every first-target prefix for sources through 65,536:
+60,949 give a smaller predecessor, 4,551 recover the source, and 36
+reach one first. No path remains unfinished at the stated cutoff.
+The equality cases coincide with the displayed arithmetic conditions
+on this finite interval; no universal converse is asserted. A useful
+later visit or longer inverse word remains unforced, and Collatz is open.
+
 ## Reproduction
 
 ```sh
@@ -2299,6 +2617,17 @@ python3 verify_clocked_progression_mixing.py
 python3 verify_cutoff_descent.py
 python3 verify_marked_preimage_audit.py
 python3 verify_critical_clock_window.py
+python3 verify_minimum_tail_rigidity.py
+python3 verify_minimum_cap_transport.py
+python3 verify_minimum_linear_boundary.py
+python3 verify_minimum_green_kernel.py
+python3 verify_minimum_clock_barrier.py
+python3 verify_minimum_critical_clock_lift.py
+python3 verify_minimum_population_majorant.py
+python3 verify_minimum_root_spine.py
+python3 verify_minimum_root_predecessors.py
+python3 verify_minimum_mixed_ancestry.py
+python3 verify_minimum_first_target.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T19:46:20.762332+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.515,
+      "log": "results/minimum-green-kernel/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.351,
+      "log": "results/minimum-green-kernel/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.228,
+      "log": "results/minimum-green-kernel/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285"
+    },
+    {
+      "source": "lean/DensityCountermodel.lean",
+      "source_sha256": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/DensityCountermodel.olean",
+        "lean/DensityCountermodel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.228,
+      "log": "results/minimum-green-kernel/DensityCountermodel.log",
+      "log_sha256": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+      "olean_sha256": "27e04775bc0bfe33bb3901ed4a036a6c6a67092334fffcc8fe113613728547e7"
+    },
+    {
+      "source": "lean/MinimumTailRigidity.lean",
+      "source_sha256": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/MinimumTailRigidity.olean",
+        "lean/MinimumTailRigidity.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.253,
+      "log": "results/minimum-green-kernel/MinimumTailRigidity.log",
+      "log_sha256": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+      "olean_sha256": "f67fa2c3dc6a05771a8f7bb07a866b4dc8db9999f97be7d4609779a79d944f83"
+    },
+    {
+      "source": "lean/MinimumCapTransport.lean",
+      "source_sha256": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/MinimumCapTransport.olean",
+        "lean/MinimumCapTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.303,
+      "log": "results/minimum-green-kernel/MinimumCapTransport.log",
+      "log_sha256": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+      "olean_sha256": "1e0569299ffa3d80265b4cbae993b9163dc59cb3865263c6bbfdcd2426f484e9"
+    },
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.483,
+      "log": "results/minimum-green-kernel/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CutoffDescent.lean",
+      "source_sha256": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/CutoffDescent.olean",
+        "lean/CutoffDescent.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.48,
+      "log": "results/minimum-green-kernel/CutoffDescent.log",
+      "log_sha256": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+      "olean_sha256": "12594a4bbb7188bee9b41bd90538fae7aad5acee56e34c4f749d27db21afa1de"
+    },
+    {
+      "source": "lean/MinimumLinearBoundary.lean",
+      "source_sha256": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/MinimumLinearBoundary.olean",
+        "lean/MinimumLinearBoundary.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.011,
+      "log": "results/minimum-green-kernel/MinimumLinearBoundary.log",
+      "log_sha256": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+      "olean_sha256": "2706e13e35107916726c98bd5ebf9e4a7e7acd60bc51be2b7292ac21ecc339f1"
+    },
+    {
+      "source": "lean/MinimumGreenKernel.lean",
+      "source_sha256": "c7ce918534b05db352d395bcdb72cb38db56789b1b2227d886157df67462fe9e",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-green-kernel-5f4cvs81/MinimumGreenKernel.olean",
+        "lean/MinimumGreenKernel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.814,
+      "log": "results/minimum-green-kernel/MinimumGreenKernel.log",
+      "log_sha256": "5bdd5e34426ae93512e3701ebd846c70a3f1469d8f2e26cfe5f5f84686ce5a3e",
+      "olean_sha256": "49f4454fd5ed06874457b2d90a1e40a30299cf7e8057279f963f0fbb491fa9d4"
+    }
+  ],
+  "kernel_theorems_audited": 34,
+  "prior_hashes_validated": 26,
+  "finite_replay_counts": {
+    "low_cell_integer_inequalities": 22554,
+    "exact_gauge_and_contraction_checks": 66696,
+    "high_cell_integer_inequalities": 44142,
+    "large_dyadic_and_breakpoint_arithmetic_checks": 1161,
+    "geometric_sum_checks": 257,
+    "time_major_ordinary_steps": 464492,
+    "independent_prefix_minimum_comparisons": 248835,
+    "source_major_ordinary_steps": 464492,
+    "actual_variable_clock_mean_majorant_checks": 49767,
+    "forward_backward_tree_depth_comparisons": 468,
+    "active_state_residual_checks": 3621,
+    "absolute_tail_window_checks": 3276,
+    "independent_recursive_states": 15954,
+    "cutoff_profile_trees": 36
+  },
+  "kernel_scope": "All-cutoff rational gauge contraction; finite killed-terminal and occupation bounds; absolute residual tail and signed truncation bounds under an explicit majorant; exact least-counterexample diagonal mean; conditional finite residual diagnostic.",
+  "written_scope": [
+    "Elementary parity counting bounds the actual global-minimum mean by 3V, independently of prior analytic mixing.",
+    "The finite bounds imply almost-sure floor absorption and absolute integrability of the infinite residual occupation, with explicit geometric tails.",
+    "A least counterexample A requires sup over n>=A of max(R_(A-1)(n),0)/V(n) >= 7/(1711*V(A))."
+  ],
+  "external_dependency": "None for the new argument; infinite probabilistic assembly remains written, not formalized in a measure-theory library.",
+  "finite_scope_limit": "Python exact integer/rational checks are independent evidence, not new Lean population certificates. The Collatz census uses only finite prefix minima with T(N)=2*floor(log2 N). Enormous cutoff tests are auxiliary arithmetic. Large fractions use tagged outward enclosures and binary digests for output only.",
+  "not_proved": [
+    "A uniform subunit global-minimum tail budget.",
+    "An independent positive residual bound contradicting the least-counterexample diagnostic.",
+    "Uniform integrability of actual minima, vanishing nonconvergent mass, or full Collatz."
+  ],
+  "sha256": {
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "lean/DensityCountermodel.lean": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+    "lean/MinimumTailRigidity.lean": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+    "lean/MinimumCapTransport.lean": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CutoffDescent.lean": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+    "lean/MinimumLinearBoundary.lean": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+    "lean/MinimumGreenKernel.lean": "c7ce918534b05db352d395bcdb72cb38db56789b1b2227d886157df67462fe9e",
+    "verify_minimum_green_kernel.py": "8e101414933b329f109c20dbfa71a94c47d9972ce4002faf3614333b48baabce",
+    "docs/MINIMUM-GREEN-KERNEL.md": "3c0afac4644ad7abf27ad8e6b2a46ff52140d17b2eab5ce2532b1dcbe661e56e",
+    "results/minimum-linear-boundary/verification.json": "7a3f1421e2372f8f9cabbe77a5e7ef482627734ed00862c4957cf4b8fbd08baf",
+    "results/minimum-green-kernel/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/minimum-green-kernel/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+    "results/minimum-green-kernel/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/minimum-green-kernel/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/minimum-green-kernel/CutoffDescent.log": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+    "results/minimum-green-kernel/DensityCountermodel.log": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+    "results/minimum-green-kernel/MinimumCapTransport.log": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+    "results/minimum-green-kernel/MinimumGreenKernel.log": "5bdd5e34426ae93512e3701ebd846c70a3f1469d8f2e26cfe5f5f84686ce5a3e",
+    "results/minimum-green-kernel/MinimumLinearBoundary.log": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+    "results/minimum-green-kernel/MinimumTailRigidity.log": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+    "results/minimum-green-kernel/replay.json": "8036274cbf770ff360e11040fa802c129bd4177f225eb6b2a83a2c6bb08ca31b"
+  },
+  "documentation_review_at_utc": "2026-10-14T19:50:23.611001+00:00",
+  "documentation_review": "Added completed verification counts, corrected inline math, and repaired two Markdown links; tested code, logs and replay retain their verified hashes."
+}

@@ -1,0 +1,257 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-14T19:15:43.895645+00:00",
+  "collatz_status": "unresolved",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "builds": [
+    {
+      "source": "CollatzContradiction.lean",
+      "source_sha256": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/CollatzContradiction.olean",
+        "CollatzContradiction.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.961,
+      "log": "results/minimum-linear-boundary/CollatzContradiction.log",
+      "log_sha256": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+      "olean_sha256": "1835831a41956684698395b0501a9a80fb940a5be5fe7e0c30b375b0311eb79e"
+    },
+    {
+      "source": "CollatzAffine.lean",
+      "source_sha256": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/CollatzAffine.olean",
+        "CollatzAffine.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.573,
+      "log": "results/minimum-linear-boundary/CollatzAffine.log",
+      "log_sha256": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+      "olean_sha256": "ad724c5b74bc37d176a26decc50040de8474b6b841c5894eb769f4844c8e19a0"
+    },
+    {
+      "source": "lean/ClockedMinimum.lean",
+      "source_sha256": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/ClockedMinimum.olean",
+        "lean/ClockedMinimum.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.344,
+      "log": "results/minimum-linear-boundary/ClockedMinimum.log",
+      "log_sha256": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+      "olean_sha256": "7c315816d2f0ae4676ed2c71f614a462918572d2a743b53d70cc9bb9ff1c9285"
+    },
+    {
+      "source": "lean/DensityCountermodel.lean",
+      "source_sha256": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/DensityCountermodel.olean",
+        "lean/DensityCountermodel.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.333,
+      "log": "results/minimum-linear-boundary/DensityCountermodel.log",
+      "log_sha256": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+      "olean_sha256": "27e04775bc0bfe33bb3901ed4a036a6c6a67092334fffcc8fe113613728547e7"
+    },
+    {
+      "source": "lean/MinimumTailRigidity.lean",
+      "source_sha256": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/MinimumTailRigidity.olean",
+        "lean/MinimumTailRigidity.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.358,
+      "log": "results/minimum-linear-boundary/MinimumTailRigidity.log",
+      "log_sha256": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+      "olean_sha256": "f67fa2c3dc6a05771a8f7bb07a866b4dc8db9999f97be7d4609779a79d944f83"
+    },
+    {
+      "source": "lean/MinimumCapTransport.lean",
+      "source_sha256": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/MinimumCapTransport.olean",
+        "lean/MinimumCapTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.434,
+      "log": "results/minimum-linear-boundary/MinimumCapTransport.log",
+      "log_sha256": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+      "olean_sha256": "1e0569299ffa3d80265b4cbae993b9163dc59cb3865263c6bbfdcd2426f484e9"
+    },
+    {
+      "source": "lean/CensoredProgressionTransport.lean",
+      "source_sha256": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/CensoredProgressionTransport.olean",
+        "lean/CensoredProgressionTransport.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.627,
+      "log": "results/minimum-linear-boundary/CensoredProgressionTransport.log",
+      "log_sha256": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+      "olean_sha256": "f82025cdb323275e7f9d49e1d1525cb8f99c44258e822c76dbb9c12f6ea2205c"
+    },
+    {
+      "source": "lean/CutoffDescent.lean",
+      "source_sha256": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/CutoffDescent.olean",
+        "lean/CutoffDescent.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 0.767,
+      "log": "results/minimum-linear-boundary/CutoffDescent.log",
+      "log_sha256": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+      "olean_sha256": "12594a4bbb7188bee9b41bd90538fae7aad5acee56e34c4f749d27db21afa1de"
+    },
+    {
+      "source": "lean/MinimumLinearBoundary.lean",
+      "source_sha256": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/MinimumLinearBoundary.olean",
+        "lean/MinimumLinearBoundary.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 1.712,
+      "log": "results/minimum-linear-boundary/MinimumLinearBoundary.log",
+      "log_sha256": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+      "olean_sha256": "2706e13e35107916726c98bd5ebf9e4a7e7acd60bc51be2b7292ac21ecc339f1"
+    },
+    {
+      "source": "lean/MinimumLinearBoundaryFinite.lean",
+      "source_sha256": "5576a41ae1dfa8919033e14613e4ddaa84c42ef08d8bfb06bc29d2ade86378ea",
+      "command": [
+        "lean",
+        "-o",
+        "/var/folders/kz/8g35_9_12b121j0lshj2hhr80000gp/T/collatz-linear-boundary-2a1iby1v/MinimumLinearBoundaryFinite.olean",
+        "lean/MinimumLinearBoundaryFinite.lean"
+      ],
+      "returncode": 0,
+      "fresh_build": true,
+      "native_computation_used": false,
+      "elapsed_seconds": 2.54,
+      "log": "results/minimum-linear-boundary/MinimumLinearBoundaryFinite.log",
+      "log_sha256": "d1f73fc952afc43e08979fd1d37dedc1d848e918320e58cf37cc17b5a8a0dd34",
+      "olean_sha256": "940f80ef20035d9b241ef4a7ad4e51bb34e4a2e8712912941ac5bf4144ad8ff8"
+    }
+  ],
+  "kernel_theorems_audited": 30,
+  "prior_hashes_validated": {
+    "results/minimum-cap-transport/verification.json": 15,
+    "results/cutoff-descent/verification.json": 12,
+    "results/critical-clock-window/verification.json": 17
+  },
+  "finite_replay_counts": {
+    "cutoff_size_and_rank_checks": 66181,
+    "dyadic_potential_upper_checks": 66180,
+    "three_step_rank_and_potential_drift_checks": 66178,
+    "large_dyadic_arithmetic_checks": 645,
+    "literal_certificate_edge_checks": 10971,
+    "independent_closed_witness_steps": 32768,
+    "independent_closed_witness_sources": 256,
+    "short_clock_formula_and_lower_checks": 12288,
+    "exact_leading_coefficient_checks": 257,
+    "exact_leading_profile_rounding_checks": 66045,
+    "parity_word_and_affine_correction_checks": 32767,
+    "rational_word_majorant_checks": 120,
+    "parity_residue_shortcut_steps": 425986,
+    "actual_prefix_population_values": 9451,
+    "actual_prefix_census_ordinary_steps": 2687392,
+    "clock_tree_active_states": 9724,
+    "clock_tree_terminal_states": 3145,
+    "actual_normalized_prefix_majorant_checks": 637,
+    "independent_clocked_tree_comparisons": 78,
+    "longer_arithmetic_cutoff_tree_checks": 8,
+    "ideal_exact_tilted_state_checks": 20743
+  },
+  "kernel_scope": "Three-step binary-rank drift and a rational occupation potential; exact clock-stopped unrolling and size balance; a linear terminal lower bound for actual prefix-minimum means at every clock; literal edge certificates for sources 1..256, their all-later-clock floor bound, and the resulting necessary negative signed residual occupation.",
+  "written_scope": [
+    "Almost-sure auxiliary cutoff absorption follows from the finite occupation bound, but its linear terminal size is not uniformly integrable.",
+    "The ideal size change of measure reverses logarithmic drift; rounded cutoffs instead give a substochastic size-weighted kernel.",
+    "Uniformly in finite clock, the boundary is [3/7+(-3/4)^T/14]*N with absolute error at most H+1+6*bits(N).",
+    "An elementary finite-parity majorant with rational contraction 29/30 proves F_T(N)/N -> 0 for every clock function T(N) -> infinity, and therefore the signed occupation divided by N tends to -3/7 at a fixed floor.",
+    "The same elementary estimate gives sublinearity for the actual global-minimum mean, so its clockless boundary vanishes without an analytic mixing premise."
+  ],
+  "external_dependency": "None for the new arguments. Elementary finite-parity counting uses the existing exact affine identity, freshly rebuilt here; the population and limit assembly remains written. Earlier analytic mixing is context only.",
+  "finite_scope_limit": "Python uses exact integers and rational probabilities. Large rational outputs have explicitly tagged outward rational enclosures and exact binary digests. The ideal chain is separate. Its largest leaf values and large dyadic drift tests are arithmetic, not orbit censuses. Only the supplied finite literal paths are kernel-certified as a population calculation.",
+  "not_proved": [
+    "A signed residual estimate implying the all-cutoff linear-tail budget.",
+    "Any uniform first-moment tail bound, vanishing nonconvergent mass or full Collatz.",
+    "That a global-minimum boundary remains large; its treatment is explicitly different."
+  ],
+  "sha256": {
+    "CollatzContradiction.lean": "b97518b5656115e65688d1cce8e5e331d913c7df7a254bee552c39c36abc704d",
+    "CollatzAffine.lean": "b8290b329ea59b1d1cd0be7cd26376cfc8d0f2c7f898873ae4e3d3f4c65494f7",
+    "lean/ClockedMinimum.lean": "df3a659cd342b28f10fe34a3ff94e793631efcd623b08825a167fb5f41134e31",
+    "lean/DensityCountermodel.lean": "054d11959bdd35b77a36e061a1441f09a7adc12ee48efe27b89bc0dd5efe743c",
+    "lean/MinimumTailRigidity.lean": "935a817492831808d0fe81b400dcc17fab33f781fdeb8964977eceb5cd8cc748",
+    "lean/MinimumCapTransport.lean": "aaed43d12d1ebcdc763c223f8203bf9be60b4fb5338f3955fcffdededac723e8",
+    "lean/CensoredProgressionTransport.lean": "72dbe84463cadf2094fabf2f855afa6ceb6d9911ae01cd6c93e60af6a960df50",
+    "lean/CutoffDescent.lean": "043e69ad873ee4450ce5c94886e31a1c1a32b97e1c413bd1e307709d327b02cd",
+    "lean/MinimumLinearBoundary.lean": "cb27f49b87b16174f54a09ce388a9eb21c98c4e613506f4e789100d755f025bb",
+    "lean/MinimumLinearBoundaryFinite.lean": "5576a41ae1dfa8919033e14613e4ddaa84c42ef08d8bfb06bc29d2ade86378ea",
+    "verify_minimum_linear_boundary.py": "14e60ffea51554ffbfd9d396a98406230352bdc98f62b892771dcd5ef9fbd7fb",
+    "docs/MINIMUM-LINEAR-BOUNDARY.md": "ad00bf190d080ca9b1d7fe4a859e854dce0aca10679877c08b74261503071e82",
+    "results/minimum-cap-transport/verification.json": "5cbb53bd550e8e82f0b92c53eec0f421f947b0be1b94ab7ee669aec105894550",
+    "results/cutoff-descent/verification.json": "02bc7a3b957d504dea9cbf0a5ac9c9f030800adfb3f874edaae005fc732e6c59",
+    "results/critical-clock-window/verification.json": "0af94e6786e13583edd77c41b27f007bacbf65ec2b7a7b2067393076234a6e04",
+    "results/minimum-linear-boundary/CensoredProgressionTransport.log": "96e9177aa9dc090ef6a76e6d36b76a69c4e76f1d271f22ac9546662d087b4611",
+    "results/minimum-linear-boundary/ClockedMinimum.log": "e49b6cf6ebb6aaa36ee3b6227278cedcec25394c26debbb0072195c98e736333",
+    "results/minimum-linear-boundary/CollatzAffine.log": "7588dc2d3011747eeb2574f78b2f45fb796899ac2e011eaa20703c2da42ebf4c",
+    "results/minimum-linear-boundary/CollatzContradiction.log": "00ddd2da2ab709ea027bc20a538feeb4c959be758b8ce8c32f8e1324cbad2340",
+    "results/minimum-linear-boundary/CutoffDescent.log": "05c1b804ab9d36fc8315ea5da447214ef5805dfc29e2bfbda5ade1955701d344",
+    "results/minimum-linear-boundary/DensityCountermodel.log": "8590adf4594cea85411e565fc8d84364c68fbe16636a663a60be08cd34712b83",
+    "results/minimum-linear-boundary/MinimumCapTransport.log": "2f596ffa50e49cb86f2a5bce1cac34b265ffa6232c2f18c40703ae7a65fb136e",
+    "results/minimum-linear-boundary/MinimumLinearBoundary.log": "f4b8256b6eb1854e47920f9b629c9b6a1dadffac85cbeff7c705ef561ee6b9eb",
+    "results/minimum-linear-boundary/MinimumLinearBoundaryFinite.log": "d1f73fc952afc43e08979fd1d37dedc1d848e918320e58cf37cc17b5a8a0dd34",
+    "results/minimum-linear-boundary/MinimumTailRigidity.log": "5ed0a239f4ec926104b1ec66ba1717111a35750d05401210af8bbedc4b8a690d",
+    "results/minimum-linear-boundary/replay.json": "81e63516fda4ca5d3af410ebaa0e30a0788b8449e582e150274c5fd7900fb5de"
+  },
+  "documentation_review": {
+    "reviewed_at_utc": "2026-10-14T19:21:12.484508+00:00",
+    "document": "docs/MINIMUM-LINEAR-BOUNDARY.md",
+    "previous_sha256": "806679858924b9d10a7b7e187c6bb17be5a36fec429e8ccb6378ce7ac3214085",
+    "reviewed_sha256": "ad00bf190d080ca9b1d7fe4a859e854dce0aca10679877c08b74261503071e82",
+    "scope": "Sharpened the displayed choice to N>=2^k, giving 2q^k+(3/4)^k, and recorded final counts. The tested general finite bound already covers this specialization. No tested source, verifier, log or replay changed."
+  }
+}
