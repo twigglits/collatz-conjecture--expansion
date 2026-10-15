@@ -2506,6 +2506,67 @@ The equality cases coincide with the displayed arithmetic conditions
 on this finite interval; no universal converse is asserted. A useful
 later visit or longer inverse word remains unforced, and Collatz is open.
 
+The [return-ladder analysis](docs/MINIMUM-RETURN-LADDER.md) now treats
+all inverse words under a prescribed even-step budget. For odd R>=3,
+the source `n_R=8^R-5` follows R growing O O E shortcut blocks, with
+ordinary prefix minimum n_R. Its exact visits to 20 modulo 27 before
+clock5R occur at `5i+2`, for `1<=i<R`, with targets
+`b_i=(3*(9^i*8^(R-i)-5)+1)/2`.
+
+For `0<=r<=i`, the kernel proves that the smallest predecessor of b_i
+using at most r even shortcut inputs is exactly
+`9^(i-r)*8^(R-i+r)-5`. This minimum is n_R when r=i and is strictly
+larger when r<i. An inductive inverse-word relation covers every legal
+branch; a negative arithmetic companion bounds the number of inverse
+odd operations and controls the additive correction. The attaining
+word has r even and 2r+1 odd inputs, at ordinary clock5r+2.
+
+Consequently, at any fixed budget r there are arbitrarily long windows
+of consecutive target visits whose best bounded-budget predecessors
+are all above the original source. At r=1 this covers all visits after
+the first, which recovers the source. For r>=2, the earlier visits
+i<r are outside the theorem, as are all larger budgets r>i. The source
+varies with the window; no single orbit is proved to grow forever.
+
+All 31 new roots passed 28 fresh sequential builds. Independent forward
+and inverse censuses match 327,680 minima for every target through 65,536
+and budgets 0 through 4. A separate complete inverse-branch replay checks
+the companion invariant; actual family prefixes include 3,075-bit sources.
+Four finite sources, including 507 and 32,763, are kernel checked to reach
+one. Later visits alone therefore do not supply the missing useful
+predecessor theorem, and the full Collatz conjecture remains unresolved.
+
+The [inverse-escape analysis](docs/MINIMUM-INVERSE-ESCAPE.md) crosses
+that earlier budget boundary. For odd n and `3^j*q=8n+3`, the kernel
+constructs `p=2^j*q-1` with `C^(2j+5)(p)=C^2(n)`, using three even
+and j+1 odd shortcut steps. For j>=6 this p is positive and smaller
+than n. Therefore a least counterexample cannot equal 273 modulo729.
+
+For the return ladder, `8n_R+3=8^(R+1)-37` is divisible by729 whenever
+`R=162h+85`. The kernel gives a smaller predecessor at every b_i with
+exactly i+3 even inverse steps and ordinary clock5i+17. It excludes
+these n_R as least counterexamples without claiming that every member
+converges. The R=85 source and its smaller predecessor both have255bits;
+their arrivals at one at clocks2119 and2134 are separately kernel checked.
+
+A new kernel companion theorem applies to arbitrary even counts until
+the odd count reaches2i+1. Every smaller predecessor must pass that
+boundary. At the boundary, a potential bounds the negative magnitude
+by46 when at most i+3 even steps are allowed. A written exhaustive
+negative-orbit table and cycle/count argument classify all possible
+escapes: the exact minima at budgets i,i+1,i+2 are n_R; at i+3 the
+minimum is `min(n_R,2^j*(8^(R+1)-37)/3^j-1)`, where
+`j=v3(8^(R+1)-37)`. It is strictly smaller exactly when R=85mod162.
+This sharpness assembly is written; it is not included among the
+27 kernel roots. The construction supplying the upper bound is kernel.
+
+All27 roots passed29 fresh sequential Lean builds. Independent checks
+match7292 inverse minima, traverse76304 complete inverse-tree nodes,
+and replay the actual progression family through8031 source bits.
+One or two extra even steps therefore cannot help this family, while
+three sometimes do. Larger budgets, a useful detour for every possible
+least source, the cap/residual bounds, and full Collatz remain open.
+
 ## Reproduction
 
 ```sh
@@ -2628,6 +2689,8 @@ python3 verify_minimum_root_spine.py
 python3 verify_minimum_root_predecessors.py
 python3 verify_minimum_mixed_ancestry.py
 python3 verify_minimum_first_target.py
+python3 verify_minimum_return_ladder.py
+python3 verify_minimum_inverse_escape.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

@@ -1,14 +1,97 @@
 # Collatz project memory
 
-Last updated: 2026-10-15 local time, after completing the interrupted
-first-target work. Twenty-three new kernel roots constrain odd-block
+Last updated: 2026-10-15 local time, after the exact return-ladder proof.
+Thirty-one new kernel roots determine bounded-even inverse minima at
+repeated actual visits to 20 modulo 27, and prove arbitrarily long finite
+windows where every fixed inverse budget is ineffective. The broader
+ancestry, cap/residual and cycle gaps remain. Full Collatz is unresolved.
+
+The latest note is docs/MINIMUM-RETURN-LADDER.md, with
+lean/MinimumReturnLadder.lean, verify_minimum_return_ladder.py, and
+results/minimum-return-ladder/.
+
+ACTUAL RETURN PREFIXES, KERNEL:
+For odd R>=3, n_R=8^R-5, x_i=9^i*8^(R-i)-5 for 0<=i<=R,
+b_i=(3x_i+1)/2=3^(2i+1)*2^(3(R-i)-1)-7 for 0<=i<R.
+The shortcut word (OOE)^R gives C^(5i)(n_R)=x_i and prefixMinimum
+at clock 5R equal to n_R. Every clock t<5R has residue 20 modulo 27
+iff t=5i+2 with 1<=i<R. There are R-1 visits at 7,12,17,...,5R-3.
+The underlying block has affine fixed point -5; finite positive lifts
+do not give an ordinary positive realization of the infinite word.
+
+EXACT INVERSE MINIMUM, KERNEL:
+Backtrack(e,o,b,p) is the inductive relation of all legal inverse
+shortcut words, with e even and o odd operations. Kernel ordinary
+semantics: C^(e+2o)(p)=b. For 0<=r<=i<R and odd R:
+min_{e<=r,o,Backtrack(e,o,b_i,p)} p = x_(i-r).
+The universal lower bound and attaining path are both kernel, with
+no unformalized finite-word optimization hidden in the statement.
+The attaining word has r even, 2r+1 odd inputs; ordinary clock 5r+2.
+This minimum equals n_R iff r=i; it exceeds n_R if r<i. Any inverse
+path to p<=n_R requires at least i even inputs, regardless of its budget.
+For every fixed r,L,B, the kernel chooses odd R=2(r+L+B+3)+1 and n_R>B,
+so visits i=r+1..r+L have every r-budget predecessor strictly above n_R.
+At r=1, the first visit recovers n_R; all remaining visits are above it.
+For r>=2, earlier i<r visits are outside this theorem. Budgets r>i remain
+unproved; do not interpret these statements as unrestricted ancestry.
+
+COMPANION MECHANISM, KERNEL:
+Start inverse positive p=b_i with negative magnitude m=7. Even inverse
+doubles p,m; odd inverse changes p to (2p-1)/3, m to (2m+1)/3. For e<=i:
+5<=m<=7*2^e, o<=2e+1, d=2e+1-o,
+2^d(m-1)<=4*3^d and 3^o(p+m)=2^(e+o)(b_i+7).
+The ternary factor forces companion integrality until o=2i+1. At that
+boundary, e=i,m=5,p=n_R; n_R divisible by 3 blocks another odd inverse.
+After cancellation, 2^d(p+m)=3^d(x_(i-e)+5).
+If d=0, m=5 gives exact equality. Otherwise 3^d/2^d>=3/2 and the kernel
+buffer 14*2^e<=8^(e+1)+10 controls the possible negative offset.
+The companion uses Nat arithmetic on magnitudes; no negative orbit premise.
+
+AXIOM-FREE EXAMPLES:
+R=3: n=507,x1=571,x2=643,b1=857,b2=965; first visits at clocks 7 and 12,
+prefix minimum at 15 is 507. At b2, budgets 0,1,2 give minima 643,571,507.
+R=5: n=32763,hit4=78725. Arrivals at 1 from 507,857,965,32763 are
+35,28,23,160; first-arrival minimality is separately Python checked.
+No convergence theorem for every odd R is proved.
+
+VERIFICATION 2026-10-14T22:41:48.423658Z:
+28 fresh sequential Lean 4.33.1 builds, 15.927 seconds, 31 roots, 60 hashes;
+all 58 prior first-target hashes authenticated. No native finite axiom.
+Independent complete sources/targets 1..65536, budgets 0..4:
+327680 minima comparisons, 589710 shortcut / 917276 ordinary steps,
+1568932 forward minimum visits. Strict improvements by budgets 1,2,3,4:
+10922,3033,1130,918. Forward paths stop before the fifth even input;
+these are bounded-word minima, not global minima or a convergence interval.
+35 actual family prefixes: all odd R=3..65 plus 129,257,1025;
+12495 ordinary steps, 7497 shortcut steps, 12530 residue checks,
+2534 block endpoints, 2464 target visits, 4928 coordinate checks.
+8796 inverse minima; attaining paths use 187032 ordinary / 110460 shortcut steps.
+All inverse budgets r<=i for R<=17; larger queries are scoped samples.
+Complete companion DFS for all odd R=3..17, all i, all r<=i: 516 queries,
+141333 nodes. Four kernel arrival witnesses replayed over 246 ordinary steps.
+
+WRITTEN / NEXT:
+The formulas give v3(b_i+7)=2i+1 and v3(4b_i+1)=3. These are written
+valuation observations, separately replayed; they explain the boundary of
+an external Sodelin valuation-13 ancestor selector, reviewed but not adopted.
+GettysburgResearch's catalog was also reviewed only for finite-prefix scope.
+No external proof or finite convergence bound enters the new kernel chain.
+Next: investigate r>i or quantify useful inverse complexity along an unknown
+least orbit; visiting 20 modulo 27 alone with fixed effort is not enough.
+All sources vary with R; no divergent source or cycle has been found.
+The goal remains active, without an external blocker. No agents or installs.
+The user committed preceding work during this turn; preserve HEAD/index.
+
+The preceding first-target milestone (2026-10-15):
+
+Twenty-three new kernel roots constrain odd-block
 exits near a least counterexample and prove an exact first-target
 obstruction family. A written generalization shows that a hypothetical
 least counterexample's first visit to 20 modulo 27 has itself as the
 smallest zero/one-even predecessor. A useful later visit is unproved.
 The positive-integer Collatz conjecture remains unresolved.
 
-The latest note is docs/MINIMUM-FIRST-TARGET.md, with
+The preceding note is docs/MINIMUM-FIRST-TARGET.md, with
 lean/MinimumFirstTarget.lean, verify_minimum_first_target.py, and
 results/minimum-first-target/.
 
@@ -11078,3 +11161,66 @@ The index SHA256 is unchanged at
 cedad64e614f84baaa0cb348e8d639558020d1ad7fefa40cb42e98301c3321e8;
 the staged diff is empty. The unbounded goal remains active, without an
 external blocker.
+
+## 2026-10-15 — Exact inverse cost at repeated residue-20 visits
+
+Previous goal turn: progress; it completed the interrupted first-target
+milestone. Current turn: progress. The new 31-root return-ladder module
+extends the analysis from one inverse even step to every prescribed
+finite budget, with a kernel universal inverse relation and exact minima.
+
+Initial exploration of later visits showed that source 27 does not
+obtain a smaller one-even predecessor until its tenth visit; source
+7527 needed fourteen in the finite census through 16384. This changed
+the next question from a small visit bound to an unbounded construction.
+The OOEO block first supplied long windows, but the simpler OOE block
+gave the exact family n_R=8^R-5 and a useful negative-five companion.
+The abandoned OOEO prototype was not added as a new result.
+
+The decisive step is the companion invariant, including its integrality
+at every inverse guard and its terminal ternary boundary. It bounds
+the odd inverse count by 2e+1 and proves the exact minimum x_(i-r)
+for r<=i. All words in the budget are covered; this is stronger in
+formal scope than the preceding written zero/one-even optimization.
+The kernel also constructs the attaining word and proves every actual
+ordinary target visit in the long positive prefix. No fixed budget can
+keep pace with arbitrarily long late windows in this varying-source family.
+
+The full verification passed at 2026-10-14T22:41:48.423658Z:
+28 fresh sequential Lean builds, 15.927 seconds, 31 roots, 60 hashes,
+with all 58 prerequisite entries authenticated. Independent complete
+forward and inverse censuses agree on 327680 minima through 65536 for
+budgets 0..4. Full companion-tree replay covers 141333 nodes in 516
+queries; larger actual family prefixes extend through R=1025.
+Four axiom-free kernel arrival witnesses are independently replayed.
+Documentation-only review at 22:45:12.588539Z updated the note hash,
+preserving all tested sources, logs and replay. All 60 hashes, local
+note links and new-file whitespace checked; git diff --check passed.
+
+The important open boundary is r>i. Preliminary exploration, outside
+the final verifier manifest, found no smaller ancestors for the twelve
+targets at R=3,5,7 in a complete ascending forward cache through 2097147
+sources (4553804 newly visited ordinary edges). Further bounded inverse
+queries through budget24 also found no smaller source at selected
+R=3,5,7,9,11,21 targets. These are exploratory Python observations,
+not a theorem for all R or unrestricted ancestry. If pursuing that
+boundary, reproduce the relevant observation rather than promote it.
+At odd-count depth 2i+1 with more than i even steps, the negative
+companion can cease to share the positive inverse guard; that is the
+specific point the present proof does not control.
+
+The two external pages cited in the note were read for scope only:
+Sodelin's refined residue-20 ancestor selector and GettysburgResearch's
+result catalog. No external theorem, external finite range, or claimed
+proof was imported. The actual family has v3(4b_i+1)=3, while the other
+coordinate v3(b_i+7)=2i+1 grows. These valuation observations are written
+and separately checked, not additional unnamed kernel roots.
+
+README, ATTEMPT, reproduction commands and the top memory are current.
+The user committed preceding work during the turn: last observed HEAD
+9daca496bba4d1ba2172cf338a8ceaf9463097f7 and index SHA256
+4db425a7440cea411ba44230cbbeb2a6d674a3868ef0350deef245d412ba5572.
+The staged diff is empty; no assistant staging or commits occurred.
+All jobs are terminal. No agents, installations or credentials were used.
+The goal remains active with no external blocker. Collatz, including
+nontrivial cycles and divergence, remains unresolved.

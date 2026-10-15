@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "counts": {
+    "forward_minimum_visits": 1568932,
+    "forward_ordinary_steps": 917276,
+    "forward_shortcut_steps": 589710,
+    "forward_sources": 65536,
+    "census_inverse_states": 660193,
+    "independent_forward_inverse_comparisons": 327680,
+    "census_inverse_even_edges": 573755,
+    "census_inverse_odd_edges": 382239,
+    "family_sources": 35,
+    "family_ordinary_steps": 12495,
+    "family_shortcut_steps": 7497,
+    "family_prefix_residue_checks": 12530,
+    "block_endpoints": 2534,
+    "target_visits": 2464,
+    "ternary_coordinate_checks": 4928,
+    "family_inverse_states": 194153,
+    "family_inverse_odd_edges": 130003,
+    "family_inverse_minima": 8796,
+    "attaining_ordinary_steps": 187032,
+    "attaining_shortcut_steps": 110460,
+    "family_inverse_even_edges": 198551,
+    "companion_inverse_nodes": 141333,
+    "complete_companion_queries": 516,
+    "kernel_arrival_witnesses": 4,
+    "kernel_arrival_ordinary_steps": 246
+  },
+  "bounded_word_census": {
+    "complete_source_and_target_interval": [
+      1,
+      65536
+    ],
+    "complete_even_budget_interval": [
+      0,
+      4
+    ],
+    "strict_improvements_over_previous_budget": {
+      "1": 10922,
+      "2": 3033,
+      "3": 1130,
+      "4": 918
+    },
+    "distinct_inverse_states": 660193,
+    "scope": "Complete bounded-word minima. Each forward source stops before its fifth even input; no convergence interval or global orbit minimum is inferred."
+  },
+  "return_family": {
+    "complete_small_odd_R_interval": [
+      3,
+      65
+    ],
+    "additional_R": [
+      129,
+      257,
+      1025
+    ],
+    "rows": [
+      {
+        "R": 3,
+        "source_bits": 9,
+        "ordinary_prefix": 15,
+        "exact_number_of_target_visits": 2,
+        "inverse_budgets": "all 0..i",
+        "inverse_target_indices": "all 1..R-1"
+      },
+      {
+        "R": 5,
+        "source_bits": 15,
+        "ordinary_prefix": 25,
+        "exact_number_of_target_visits": 4,
+        "inverse_budgets": "all 0..i",
+        "inverse_target_indices": "all 1..R-1"
+      },
+      {
+        "R": 7,
+        "source_bits": 21,
+        "ordinary_prefix": 35,
+        "exact_number_of_target_visits": 6,
+        "inverse_budgets": "all 0..i",
+        "inverse_target_indices": "all 1..R-1"
+      },
+      {
+        "R": 17,
+        "source_bits": 51,
+        "ordinary_prefix": 85,
+        "exact_number_of_target_visits": 16,
+        "inverse_budgets": "all 0..i",
+        "inverse_target_indices": "all 1..R-1"
+      },
+      {
+        "R": 65,
+        "source_bits": 195,
+        "ordinary_prefix": 325,
+        "exact_number_of_target_visits": 64,
+        "inverse_budgets": "0..min(i,8)",
+        "inverse_target_indices": "all 1..R-1"
+      },
+      {
+        "R": 129,
+        "source_bits": 387,
+        "ordinary_prefix": 645,
+        "exact_number_of_target_visits": 128,
+        "inverse_budgets": "0..min(i,8)",
+        "inverse_target_indices": [
+          1,
+          2,
+          8,
+          64,
+          128
+        ]
+      },
+      {
+        "R": 257,
+        "source_bits": 771,
+        "ordinary_prefix": 1285,
+        "exact_number_of_target_visits": 256,
+        "inverse_budgets": "0..min(i,8)",
+        "inverse_target_indices": [
+          1,
+          2,
+          8,
+          128,
+          256
+        ]
+      },
+      {
+        "R": 1025,
+        "source_bits": 3075,
+        "ordinary_prefix": 5125,
+        "exact_number_of_target_visits": 1024,
+        "inverse_budgets": "0..min(i,8)",
+        "inverse_target_indices": [
+          1,
+          2,
+          8,
+          512,
+          1024
+        ]
+      }
+    ],
+    "scope": "Actual finite prefixes for every listed source. Full target visitation is checked; larger inverse queries are sampled as explicitly listed. No convergence theorem for the family is assumed."
+  },
+  "companion_branches": {
+    "complete_R_values": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17
+    ],
+    "for_each_R": "all i=1..R-1 and all r=0..i",
+    "scope": "Every inverse word within each finite budget is traversed, including nonminimal branches. The negative magnitude is arithmetic bookkeeping and is never used as a positive Collatz trajectory."
+  },
+  "kernel_arrivals": {
+    "rows": [
+      {
+        "source": 507,
+        "first_arrival": 35
+      },
+      {
+        "source": 857,
+        "first_arrival": 28
+      },
+      {
+        "source": 965,
+        "first_arrival": 23
+      },
+      {
+        "source": 32763,
+        "first_arrival": 160
+      }
+    ],
+    "scope": "Arrival existence is kernel checked; first-arrival minimality is independently checked here."
+  }
+}

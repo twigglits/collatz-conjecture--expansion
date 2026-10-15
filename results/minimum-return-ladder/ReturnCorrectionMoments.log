@@ -1,0 +1,12 @@
+'ReturnCorrectionMoments.numerator_snoc' depends on axioms: [propext, Quot.sound]
+'ReturnCorrectionMoments.numerator_lift' depends on axioms: [propext, Quot.sound]
+'ReturnCorrectionMoments.numerator_children' depends on axioms: [propext, Quot.sound]
+'ReturnCorrectionMoments.four_pow' depends on axioms: [propext]
+'ReturnCorrectionMoments.stopped_correction_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnCorrectionMoments.clock_numerator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnCorrectionMoments.stopped_slope_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReturnCorrectionMoments.boundary_clock_budget' depends on axioms: [propext, Quot.sound]
+'ReturnCorrectionMoments.quarter_root_constants' does not depend on any axioms
+'ReturnCorrectionMoments.quarter_drift_constants' does not depend on any axioms
+'ReturnCorrectionMoments.prescribed_attempt_constants' does not depend on any axioms
+'ReturnCorrectionMoments.odd_offset_bit_bound' depends on axioms: [propext, Quot.sound]

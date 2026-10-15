@@ -1,0 +1,1541 @@
+{
+  "status": "passed",
+  "counts": {
+    "generic_inverse_edges": 9408,
+    "generic_detours": 672,
+    "generic_ordinary_steps": 18144,
+    "generic_strict_detours": 480,
+    "residue_class_detours": 2049,
+    "residue_class_ordinary_steps": 38931,
+    "modular_period_residues": 162,
+    "modular_family_indices": 1025,
+    "family_sources": 17,
+    "family_ordinary_prefix_steps": 117385,
+    "family_target_visits": 23460,
+    "family_inverse_edges": 106573,
+    "family_attaining_paths": 85,
+    "family_attaining_ordinary_steps": 177650,
+    "maximal_valuation_detours": 17,
+    "maximal_valuation_ordinary_steps": 307,
+    "negative_table_states": 42,
+    "negative_table_steps": 316,
+    "minimum_inverse_states": 241114,
+    "minimum_odd_edges": 157072,
+    "extended_inverse_minima": 7292,
+    "minimum_even_edges": 245836,
+    "extended_sources": 257,
+    "extended_strict_minima": 21,
+    "complete_inverse_nodes": 76304,
+    "truncated_companion_nodes": 75917,
+    "frontier_nodes": 668,
+    "complete_companion_queries": 70,
+    "kernel_arrival_witnesses": 4,
+    "kernel_arrival_ordinary_steps": 4434
+  },
+  "generic_detour": {
+    "j_interval": [
+      0,
+      20
+    ],
+    "q_interval": [
+      1,
+      512
+    ],
+    "filter": "3^j*q = 11 mod16, giving a positive odd n=(3^j*q-3)/8",
+    "residue_class": "n=729*t+273 for every even t from 0 through 4096",
+    "scope": "Actual integer paths; no hypothetical least counterexample is numerically instantiated."
+  },
+  "escape_family": {
+    "complete_h_interval": [
+      0,
+      16
+    ],
+    "modular_h_interval": [
+      0,
+      1024
+    ],
+    "residues_R_mod162": [
+      85
+    ],
+    "rows": [
+      {
+        "h": 0,
+        "R": 85,
+        "source_bits": 255,
+        "fixed_j6_predecessor_bits": 255,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 255,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          42,
+          84
+        ]
+      },
+      {
+        "h": 1,
+        "R": 247,
+        "source_bits": 741,
+        "fixed_j6_predecessor_bits": 741,
+        "v3_8n_plus_3": 7,
+        "maximal_valuation_predecessor_bits": 740,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          123,
+          246
+        ]
+      },
+      {
+        "h": 2,
+        "R": 409,
+        "source_bits": 1227,
+        "fixed_j6_predecessor_bits": 1227,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 1227,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          204,
+          408
+        ]
+      },
+      {
+        "h": 3,
+        "R": 571,
+        "source_bits": 1713,
+        "fixed_j6_predecessor_bits": 1713,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 1713,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          285,
+          570
+        ]
+      },
+      {
+        "h": 4,
+        "R": 733,
+        "source_bits": 2199,
+        "fixed_j6_predecessor_bits": 2199,
+        "v3_8n_plus_3": 9,
+        "maximal_valuation_predecessor_bits": 2197,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          366,
+          732
+        ]
+      },
+      {
+        "h": 5,
+        "R": 895,
+        "source_bits": 2685,
+        "fixed_j6_predecessor_bits": 2685,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 2685,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          447,
+          894
+        ]
+      },
+      {
+        "h": 6,
+        "R": 1057,
+        "source_bits": 3171,
+        "fixed_j6_predecessor_bits": 3171,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 3171,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          528,
+          1056
+        ]
+      },
+      {
+        "h": 7,
+        "R": 1219,
+        "source_bits": 3657,
+        "fixed_j6_predecessor_bits": 3657,
+        "v3_8n_plus_3": 7,
+        "maximal_valuation_predecessor_bits": 3656,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          609,
+          1218
+        ]
+      },
+      {
+        "h": 8,
+        "R": 1381,
+        "source_bits": 4143,
+        "fixed_j6_predecessor_bits": 4143,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 4143,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          690,
+          1380
+        ]
+      },
+      {
+        "h": 9,
+        "R": 1543,
+        "source_bits": 4629,
+        "fixed_j6_predecessor_bits": 4629,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 4629,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          771,
+          1542
+        ]
+      },
+      {
+        "h": 10,
+        "R": 1705,
+        "source_bits": 5115,
+        "fixed_j6_predecessor_bits": 5115,
+        "v3_8n_plus_3": 7,
+        "maximal_valuation_predecessor_bits": 5114,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          852,
+          1704
+        ]
+      },
+      {
+        "h": 11,
+        "R": 1867,
+        "source_bits": 5601,
+        "fixed_j6_predecessor_bits": 5601,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 5601,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          933,
+          1866
+        ]
+      },
+      {
+        "h": 12,
+        "R": 2029,
+        "source_bits": 6087,
+        "fixed_j6_predecessor_bits": 6087,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 6087,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          1014,
+          2028
+        ]
+      },
+      {
+        "h": 13,
+        "R": 2191,
+        "source_bits": 6573,
+        "fixed_j6_predecessor_bits": 6573,
+        "v3_8n_plus_3": 8,
+        "maximal_valuation_predecessor_bits": 6572,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          1095,
+          2190
+        ]
+      },
+      {
+        "h": 14,
+        "R": 2353,
+        "source_bits": 7059,
+        "fixed_j6_predecessor_bits": 7059,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 7059,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          1176,
+          2352
+        ]
+      },
+      {
+        "h": 15,
+        "R": 2515,
+        "source_bits": 7545,
+        "fixed_j6_predecessor_bits": 7545,
+        "v3_8n_plus_3": 6,
+        "maximal_valuation_predecessor_bits": 7545,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          1257,
+          2514
+        ]
+      },
+      {
+        "h": 16,
+        "R": 2677,
+        "source_bits": 8031,
+        "fixed_j6_predecessor_bits": 8031,
+        "v3_8n_plus_3": 7,
+        "maximal_valuation_predecessor_bits": 8030,
+        "sampled_target_indices": [
+          0,
+          1,
+          2,
+          1338,
+          2676
+        ]
+      }
+    ],
+    "scope": "Every ordinary prefix and visit is checked for listed sources; five inverse words per source are replayed. The kernel fixed-j=6 family is distinguished from the maximal-valuation predecessor."
+  },
+  "negative_frontier_table": {
+    "complete_m_interval": [
+      5,
+      46
+    ],
+    "rows": [
+      {
+        "m": 5,
+        "first_path": [
+          5,
+          7
+        ],
+        "outcome": "0",
+        "even_steps": 0,
+        "odd_steps": 1
+      },
+      {
+        "m": 6,
+        "first_path": [
+          6,
+          3,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 3,
+        "odd_steps": 2
+      },
+      {
+        "m": 7,
+        "first_path": [
+          7
+        ],
+        "outcome": "1",
+        "even_steps": 0,
+        "odd_steps": 0
+      },
+      {
+        "m": 8,
+        "first_path": [
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 3,
+        "odd_steps": 1
+      },
+      {
+        "m": 9,
+        "first_path": [
+          9,
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "2",
+        "even_steps": 2,
+        "odd_steps": 3
+      },
+      {
+        "m": 10,
+        "first_path": [
+          10,
+          5,
+          7
+        ],
+        "outcome": "2",
+        "even_steps": 1,
+        "odd_steps": 1
+      },
+      {
+        "m": 11,
+        "first_path": [
+          11,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 4,
+        "odd_steps": 2
+      },
+      {
+        "m": 12,
+        "first_path": [
+          12,
+          6,
+          3,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 4,
+        "odd_steps": 2
+      },
+      {
+        "m": 13,
+        "first_path": [
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "3",
+        "even_steps": 2,
+        "odd_steps": 2
+      },
+      {
+        "m": 14,
+        "first_path": [
+          14,
+          7
+        ],
+        "outcome": "3",
+        "even_steps": 1,
+        "odd_steps": 0
+      },
+      {
+        "m": 15,
+        "first_path": [
+          15,
+          22,
+          11,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 5,
+        "odd_steps": 3
+      },
+      {
+        "m": 16,
+        "first_path": [
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 4,
+        "odd_steps": 1
+      },
+      {
+        "m": 17,
+        "first_path": [
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 7
+      },
+      {
+        "m": 18,
+        "first_path": [
+          18,
+          9,
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "4",
+        "even_steps": 3,
+        "odd_steps": 3
+      },
+      {
+        "m": 19,
+        "first_path": [
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "4",
+        "even_steps": 2,
+        "odd_steps": 1
+      },
+      {
+        "m": 20,
+        "first_path": [
+          20,
+          10,
+          5,
+          7
+        ],
+        "outcome": "4",
+        "even_steps": 2,
+        "odd_steps": 1
+      },
+      {
+        "m": 21,
+        "first_path": [
+          21,
+          31,
+          46,
+          23,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 5,
+        "odd_steps": 10
+      },
+      {
+        "m": 22,
+        "first_path": [
+          22,
+          11,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 5,
+        "odd_steps": 2
+      },
+      {
+        "m": 23,
+        "first_path": [
+          23,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 8
+      },
+      {
+        "m": 24,
+        "first_path": [
+          24,
+          12,
+          6,
+          3,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 5,
+        "odd_steps": 2
+      },
+      {
+        "m": 25,
+        "first_path": [
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17,
+          25
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 7
+      },
+      {
+        "m": 26,
+        "first_path": [
+          26,
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "5",
+        "even_steps": 3,
+        "odd_steps": 2
+      },
+      {
+        "m": 27,
+        "first_path": [
+          27,
+          40,
+          20,
+          10,
+          5,
+          7
+        ],
+        "outcome": "5",
+        "even_steps": 3,
+        "odd_steps": 2
+      },
+      {
+        "m": 28,
+        "first_path": [
+          28,
+          14,
+          7
+        ],
+        "outcome": "5",
+        "even_steps": 2,
+        "odd_steps": 0
+      },
+      {
+        "m": 29,
+        "first_path": [
+          29,
+          43,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 6,
+        "odd_steps": 3
+      },
+      {
+        "m": 30,
+        "first_path": [
+          30,
+          15,
+          22,
+          11,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 6,
+        "odd_steps": 3
+      },
+      {
+        "m": 31,
+        "first_path": [
+          31,
+          46,
+          23,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 5,
+        "odd_steps": 9
+      },
+      {
+        "m": 32,
+        "first_path": [
+          32,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 5,
+        "odd_steps": 1
+      },
+      {
+        "m": 33,
+        "first_path": [
+          33,
+          49,
+          73,
+          109,
+          163,
+          244,
+          122,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61
+        ],
+        "outcome": "cycle17",
+        "even_steps": 6,
+        "odd_steps": 12
+      },
+      {
+        "m": 34,
+        "first_path": [
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 7
+      },
+      {
+        "m": 35,
+        "first_path": [
+          35,
+          52,
+          26,
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "6",
+        "even_steps": 4,
+        "odd_steps": 3
+      },
+      {
+        "m": 36,
+        "first_path": [
+          36,
+          18,
+          9,
+          13,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "6",
+        "even_steps": 4,
+        "odd_steps": 3
+      },
+      {
+        "m": 37,
+        "first_path": [
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17,
+          25,
+          37
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 7
+      },
+      {
+        "m": 38,
+        "first_path": [
+          38,
+          19,
+          28,
+          14,
+          7
+        ],
+        "outcome": "6",
+        "even_steps": 3,
+        "odd_steps": 1
+      },
+      {
+        "m": 39,
+        "first_path": [
+          39,
+          58,
+          29,
+          43,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 7,
+        "odd_steps": 4
+      },
+      {
+        "m": 40,
+        "first_path": [
+          40,
+          20,
+          10,
+          5,
+          7
+        ],
+        "outcome": "6",
+        "even_steps": 3,
+        "odd_steps": 1
+      },
+      {
+        "m": 41,
+        "first_path": [
+          41,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41
+        ],
+        "outcome": "cycle17",
+        "even_steps": 4,
+        "odd_steps": 7
+      },
+      {
+        "m": 42,
+        "first_path": [
+          42,
+          21,
+          31,
+          46,
+          23,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 6,
+        "odd_steps": 10
+      },
+      {
+        "m": 43,
+        "first_path": [
+          43,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 6,
+        "odd_steps": 2
+      },
+      {
+        "m": 44,
+        "first_path": [
+          44,
+          22,
+          11,
+          16,
+          8,
+          4,
+          2,
+          1,
+          1
+        ],
+        "outcome": "cycle1",
+        "even_steps": 6,
+        "odd_steps": 2
+      },
+      {
+        "m": 45,
+        "first_path": [
+          45,
+          67,
+          100,
+          50,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34,
+          17,
+          25
+        ],
+        "outcome": "cycle17",
+        "even_steps": 6,
+        "odd_steps": 9
+      },
+      {
+        "m": 46,
+        "first_path": [
+          46,
+          23,
+          34,
+          17,
+          25,
+          37,
+          55,
+          82,
+          41,
+          61,
+          91,
+          136,
+          68,
+          34
+        ],
+        "outcome": "cycle17",
+        "even_steps": 5,
+        "odd_steps": 8
+      }
+    ],
+    "groups": {
+      "0": [
+        5
+      ],
+      "cycle1": [
+        6,
+        8,
+        11,
+        12,
+        15,
+        16,
+        22,
+        24,
+        29,
+        30,
+        32,
+        39,
+        43,
+        44
+      ],
+      "1": [
+        7
+      ],
+      "2": [
+        9,
+        10
+      ],
+      "3": [
+        13,
+        14
+      ],
+      "cycle17": [
+        17,
+        21,
+        23,
+        25,
+        31,
+        33,
+        34,
+        37,
+        41,
+        42,
+        45,
+        46
+      ],
+      "4": [
+        18,
+        19,
+        20
+      ],
+      "5": [
+        26,
+        27,
+        28
+      ],
+      "6": [
+        35,
+        36,
+        38,
+        40
+      ]
+    },
+    "frontier_candidates": [
+      {
+        "f": 0,
+        "m_upper_bound": 5,
+        "candidate_m": [
+          5
+        ]
+      },
+      {
+        "f": 1,
+        "m_upper_bound": 10,
+        "candidate_m": [
+          9,
+          10
+        ]
+      },
+      {
+        "f": 2,
+        "m_upper_bound": 21,
+        "candidate_m": [
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "f": 3,
+        "m_upper_bound": 46,
+        "candidate_m": [
+          35,
+          36,
+          38,
+          40
+        ]
+      }
+    ],
+    "scope": "Finite forward enumeration checks the table. Its extension to arbitrary inverse lengths uses the written cycle/count argument; the exact minimum classification is not a new kernel root."
+  },
+  "extended_minima": {
+    "complete_odd_R_interval": [
+      3,
+      513
+    ],
+    "additional_R": [
+      1025
+    ],
+    "indices_for_R_through17": "all i=0..R-1",
+    "indices_for_larger_R": "all i=0..6",
+    "extra_budget_interval": [
+      0,
+      3
+    ],
+    "strict_improvement_sources": [
+      {
+        "R": 85,
+        "valuation": 6,
+        "source_bits": 255,
+        "minimum_bits": 255
+      },
+      {
+        "R": 247,
+        "valuation": 7,
+        "source_bits": 741,
+        "minimum_bits": 740
+      },
+      {
+        "R": 409,
+        "valuation": 6,
+        "source_bits": 1227,
+        "minimum_bits": 1227
+      }
+    ],
+    "scope": "Complete inverse optimization for each explicitly listed query; finite evidence for the written general classification, not a substitute for its proof."
+  },
+  "companion_branches": {
+    "queries": [
+      {
+        "R": 3,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 3,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 3,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 5,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 5,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 5,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 5,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 5,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 7,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 7,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 7,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 7,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 7,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 7,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 7,
+        "i": 6,
+        "budget": 9
+      },
+      {
+        "R": 9,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 9,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 9,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 9,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 9,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 9,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 9,
+        "i": 6,
+        "budget": 9
+      },
+      {
+        "R": 9,
+        "i": 7,
+        "budget": 10
+      },
+      {
+        "R": 9,
+        "i": 8,
+        "budget": 11
+      },
+      {
+        "R": 11,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 11,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 11,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 11,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 11,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 11,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 11,
+        "i": 6,
+        "budget": 9
+      },
+      {
+        "R": 11,
+        "i": 7,
+        "budget": 10
+      },
+      {
+        "R": 11,
+        "i": 8,
+        "budget": 11
+      },
+      {
+        "R": 11,
+        "i": 9,
+        "budget": 12
+      },
+      {
+        "R": 11,
+        "i": 10,
+        "budget": 13
+      },
+      {
+        "R": 13,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 13,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 13,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 13,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 13,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 13,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 13,
+        "i": 6,
+        "budget": 9
+      },
+      {
+        "R": 13,
+        "i": 7,
+        "budget": 10
+      },
+      {
+        "R": 13,
+        "i": 8,
+        "budget": 11
+      },
+      {
+        "R": 13,
+        "i": 9,
+        "budget": 12
+      },
+      {
+        "R": 13,
+        "i": 10,
+        "budget": 13
+      },
+      {
+        "R": 13,
+        "i": 11,
+        "budget": 14
+      },
+      {
+        "R": 13,
+        "i": 12,
+        "budget": 15
+      },
+      {
+        "R": 15,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 15,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 15,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 15,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 15,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 15,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 15,
+        "i": 6,
+        "budget": 9
+      },
+      {
+        "R": 15,
+        "i": 7,
+        "budget": 10
+      },
+      {
+        "R": 15,
+        "i": 8,
+        "budget": 11
+      },
+      {
+        "R": 15,
+        "i": 9,
+        "budget": 12
+      },
+      {
+        "R": 15,
+        "i": 10,
+        "budget": 13
+      },
+      {
+        "R": 15,
+        "i": 11,
+        "budget": 14
+      },
+      {
+        "R": 15,
+        "i": 12,
+        "budget": 15
+      },
+      {
+        "R": 15,
+        "i": 13,
+        "budget": 16
+      },
+      {
+        "R": 15,
+        "i": 14,
+        "budget": 17
+      },
+      {
+        "R": 85,
+        "i": 0,
+        "budget": 3
+      },
+      {
+        "R": 85,
+        "i": 1,
+        "budget": 4
+      },
+      {
+        "R": 85,
+        "i": 2,
+        "budget": 5
+      },
+      {
+        "R": 85,
+        "i": 3,
+        "budget": 6
+      },
+      {
+        "R": 85,
+        "i": 4,
+        "budget": 7
+      },
+      {
+        "R": 85,
+        "i": 5,
+        "budget": 8
+      },
+      {
+        "R": 85,
+        "i": 6,
+        "budget": 9
+      }
+    ],
+    "first_escape_cases_f_m": {
+      "3,38": 70,
+      "2,18": 62,
+      "3,35": 62
+    },
+    "scope": "Every inverse branch through the stated budget, including after the companion ceases to be integral. No unrestricted ancestor minimum is inferred."
+  },
+  "kernel_arrivals": {
+    "rows": [
+      {
+        "source": 7563,
+        "source_bits": 13,
+        "first_arrival": 83
+      },
+      {
+        "source": 5311,
+        "source_bits": 13,
+        "first_arrival": 98
+      },
+      {
+        "source": 57896044618658097711785492504343953926634992332820282019728792003956564819963,
+        "source_bits": 255,
+        "first_arrival": 2119
+      },
+      {
+        "source": 40662242585394987693325339042831418944358183915506151432237505495234240312511,
+        "source_bits": 255,
+        "first_arrival": 2134
+      }
+    ],
+    "scope": "Arrival existence is axiom-free kernel computation. First-arrival minimality is independently checked here. No universal family convergence is claimed."
+  }
+}
