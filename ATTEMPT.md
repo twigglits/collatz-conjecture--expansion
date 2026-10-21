@@ -2567,6 +2567,35 @@ One or two extra even steps therefore cannot help this family, while
 three sometimes do. Larger budgets, a useful detour for every possible
 least source, the cap/residual bounds, and full Collatz remain open.
 
+The [negative-cycle detour](docs/MINIMUM-NEGATIVE-CYCLE.md) now covers
+a different infinite progression. Lifting the negative magnitude-17 cycle
+gives positive paths from `2048^k*q-17` to `2187^k*q-17`. If n is odd
+and `2187^k*q=3n+18`, one additional even inverse gives a coalescing
+predecessor at ordinary clocks `18k+1` and 2. The kernel proves that it
+is smaller for k>=17, and larger for k<17 within this particular pattern.
+It does not assert optimality among all inverse paths.
+
+Consequently a least counterexample cannot have `3^118 | n+6`.
+For `R=3^116*(2h+1)`, parameterized ternary lifting proves that
+`N=8^R-5` has such a smaller predecessor at every return-ladder target,
+using i+69 even and 2i+119 odd inverse operations and ordinary clock
+5i+307. These sources are unbounded. The preceding written classification
+still gives minimum N at budget i+3 for this progression; the new strict
+improvement at i+69 is kernel. The optimal intermediate budget is open.
+
+The kernel also gives arbitrarily large smaller-source improvement factors
+as the source and divisibility condition vary: at k=17(a+1), the predecessor
+P satisfies `3^a*(P+17)<=n+6` and `3^a*P<n`. Two concrete residue-class
+examples, `3^118-6` and `2^187-17`, are kernel checked to reach one.
+They are distinct from the enormous return-ladder progression, whose
+smallest source already has `3^117` bits and is treated symbolically.
+
+The new module has 26 audited kernel roots. Independent replay includes
+1,024 single-block lifts, 2,063 complete positive detours, and modular
+progression checks without materializing those enormous sources.
+Universal family convergence, a useful detour on every possible least
+orbit, the cap/residual bounds, and full Collatz remain unresolved.
+
 ## Reproduction
 
 ```sh
@@ -2691,6 +2720,7 @@ python3 verify_minimum_mixed_ancestry.py
 python3 verify_minimum_first_target.py
 python3 verify_minimum_return_ladder.py
 python3 verify_minimum_inverse_escape.py
+python3 verify_minimum_negative_cycle.py
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

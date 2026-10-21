@@ -1,0 +1,14 @@
+'DensityCountermodel.even_step' depends on axioms: [propext]
+'DensityCountermodel.cycle_one' does not depend on any axioms
+'DensityCountermodel.cycle_four' does not depend on any axioms
+'DensityCountermodel.cycle_two' does not depend on any axioms
+'DensityCountermodel.spine_lower' depends on axioms: [propext, Quot.sound]
+'DensityCountermodel.spine_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.spine_two_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.iterate_add' depends on axioms: [propext, Quot.sound]
+'DensityCountermodel.iterate_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.iterate_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.spine_never_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.exponent_lower' depends on axioms: [propext, Quot.sound]
+'DensityCountermodel.spine_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DensityCountermodel.differs_from_collatz' does not depend on any axioms

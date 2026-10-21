@@ -1,6 +1,109 @@
 # Collatz project memory
 
-Last updated: 2026-10-15 local time, after the exact return-ladder proof.
+Last updated: 2026-10-21 local time, after the negative-cycle detour proof.
+
+RESEARCH PAUSED AT THE USER'S REQUEST AFTER THIS RUN. The user asked to
+finish the current results and then stop. Verification and the handoff are
+complete; continue research only on a subsequent resumption request.
+The positive-integer Collatz conjecture remains unresolved.
+
+The latest note is docs/MINIMUM-NEGATIVE-CYCLE.md, with
+lean/MinimumNegativeCycle.lean, verify_minimum_negative_cycle.py, and
+results/minimum-negative-cycle/. There are 26 new audited kernel roots,
+including three axiom-free finite roots. No native reduction axiom or
+external mathematical premise is used.
+
+POSITIVE CYCLE LIFTS, KERNEL:
+The existing negative magnitude-17 cycle has forward shortcut word
+OOOOEOOOEEE, with four even and seven odd inputs. Its inverse word is
+W=EEEOOOEOOOO. For q>0, kernel composition gives
+Backtrack(4k,7k,2187^k*q-17,2048^k*q-17), with ordinary clock18k.
+Positivity of the displayed source is asserted for k>=1; the k=0
+relation uses natural subtraction and need not have positive endpoints.
+No negative-cycle assertion is interpreted as a positive counterexample.
+
+SMALLER COALESCING SOURCES, KERNEL:
+For odd n and positive q with2187^k*q=3n+18, prefixing E gives
+Backtrack(4k+1,7k,C^2(n),P), P=2048^k*q-17, and
+C^(18k+1)(P)=C^2(n). For k>=17,0<P<n. For k<17, this specified
+pattern gives P>n. The threshold17 is NOT optimality over all words.
+Thus a least counterexample cannot have3^118 dividing n+6.
+For k=17(a+1), kernel3^a*(P+17)<=n+6 and3^a*P<n give arbitrarily
+large improvement factors across changing sources and divisibility
+conditions. They do not give arbitrarily small parents of one fixed n.
+
+RETURN-LADDER APPLICATION, KERNEL:
+Elementary cube and odd-power induction prove3^(s+2)|8^(3^s)+1
+and the odd-multiple extension. For R=3^116*(2h+1), N=8^R-5,
+3^118|N+6. There exists one p with0<p<N andC^307(p)=C^2(N),
+and for every0<=i<R:
+Backtrack(i+69,2i+119,b_i,p), C^(5i+307)(p)=b_i.
+The kernel proves h<N and excludes N as a least counterexample.
+The actual residue-20 visits remain1<=i<R; b0 is not a residue-20 visit.
+R is divisible3, so this progression is disjoint from the preceding
+R=85mod162 escape family. Its sources are723mod729, not273mod729.
+The previous WRITTEN sharpness result gives M_(i+3)(b_i)=N here;
+the new strict upper bound M_(i+69)(b_i)<N is kernel. The optimal
+budget between them is unknown. No universal family convergence follows.
+
+ENORMOUS SYMBOLIC SOURCES / CONCRETE WITNESSES:
+The smallest new return-ladder source has3^117 binary digits, over10^55
+bits. None was materialized or numerically iterated. Python checks its
+divisibility via modular exponentiation; the complete paths are symbolic
+kernel theorems. Separately, the general residue-class example
+n=3^118-6 (188bits), p=2^187-17 (187bits) has kernel coalescence at307
+and2, and kernel arrivals at1 at1247 and1552. Python independently
+checks first-arrival minimality. These examples are NOT members of the
+enormous return-ladder progression.
+
+VERIFICATION2026-10-21T10:38:44.159616Z:
+30 fresh sequential Lean4.33.1 builds,59.974sec;26 audited roots;
+64 current hashes authenticated, with all62 preceding inverse-escape
+hashes authenticated before building. Compiler Linux x86_64, commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All checks terminal.
+Independent replay:1024 single-block positive lifts (18432 ordinary
+steps);2048 full detours for k1..64 and odd q1..63 (1204224 ordinary
+steps),1536 smaller;15 larger detours through k272 (28503 ordinary
+steps),all smaller. There are762878 inverse edges over all these paths.
+Threshold checks cover1..17;129 repeated-gain and387 shifted/factor
+comparisons are arithmetic. Ten ternary lifts s0..9 are materialized;
+257 s0..256 lifts and1025 progression h0..1024 checks are modular.
+Ninety small odd-multiple congruences and2799 arrival steps also pass.
+No full inverse-tree optimization or continuous convergence interval
+is claimed. Finite replay remains separate from kernel verification.
+
+CONTINUITY / ENVIRONMENT:
+The old top memory lagged the committed inverse-escape milestone.
+docs/MINIMUM-INVERSE-ESCAPE.md and its62-hash manifest were authoritative:
+27 roots already proved the three-extra-even escape atR=85mod162 and
+excluded273mod729; the full sharpness classification remained written.
+All those source files and historical results were preserved.
+The current workspace is Linux, bash, at
+/home/jeannaude/Documents/collatz-conjecture--expansion.
+Lean4.33.1 was absent; with approved network access its official archive
+was downloaded and extracted to/tmp/lean-4.33.1-linux. Use the verifier's
+--lean /tmp/lean-4.33.1-linux/bin/lean option while that temporary compiler
+exists. The repository pin is unchanged; no credentials were accessed.
+Initial prototype slowdowns were unnecessary omega processing of a huge
+congruence together with parity. Direct arithmetic identities fixed them.
+The final proofs keep enormous exponents and symbolic iterates unexpanded
+during elaboration; finite witness reduction still runs in the kernel.
+
+ON RESUMPTION:
+The current construction does not settle whether a fixed extra inverse
+budget suffices for every return-ladder source. Potential next questions
+are useful detours at intermediate budgets, or quantitative occurrence
+on a hypothetical least-source orbit. The cap/residual and cycle gaps
+remain. Do not infer a universal inverse-budget theorem from the negative
+seventeen cycle or from finite searches. No complete proof or counterexample.
+
+No agents, staging, or commits were used. HEAD remains0dad331; index
+SHA256 remains9c66aaab2c3dd5a0a92853aa8d98fcb985ea5c1c4b6e9cd1df18b105bf11aae7.
+The pre-existing untracked Period2Certs.lean and Period3Certs.lean were
+left untouched. ATTEMPT and README link the new result and reproduction.
+
+The preceding return-ladder handoff (2026-10-15):
+
 Thirty-one new kernel roots determine bounded-even inverse minima at
 repeated actual visits to 20 modulo 27, and prove arbitrarily long finite
 windows where every fixed inverse budget is ineffective. The broader
@@ -1460,11 +1563,11 @@ inferring that a proof is imminent from the user's encouragement.
 - The user stages and commits during ongoing work. HEAD and the index can
   change between commands. Inspect status, preserve their work, and leave
   staging/committing to them unless they explicitly request otherwise.
-- Current workspace: `/Users/jean/Personal/collatz-conjecture--expansion`,
-  macOS, zsh, timezone Africa/Johannesburg. Earlier Linux paths and hardware
-  descriptions in dated entries are historical. Allow longer Rust/Lean
-  runs and avoid concurrent heavy compiles. A short tool timeout is not
-  a mathematical or build failure.
+- Current workspace (2026-10-21):
+  `/home/jeannaude/Documents/collatz-conjecture--expansion`, Linux, bash,
+  timezone Africa/Johannesburg. Earlier macOS descriptions in dated
+  entries are historical. Allow longer Rust/Lean runs and avoid concurrent
+  heavy compiles. A short tool timeout is not a mathematical or build failure.
 - The user has cloned `/Users/jean/Personal/collatz-two-coordinate-obstruction`.
   Prefer this local source for further review. On 2026-10-13 its clean HEAD
   was `a7275d5a73814d3d9a400c6fe6577de9542b03a3`. The local review and
@@ -1472,8 +1575,11 @@ inferring that a proof is imminent from the user's encouragement.
 - [lean-toolchain](lean-toolchain) pins `leanprover/lean4:v4.33.1`.
   The last verified compiler commit is
   `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`.
-  The current local executable is `/opt/homebrew/bin/lean`.
-  Recheck the Rust version if needed.
+  The latest verified executable is `/tmp/lean-4.33.1-linux/bin/lean` on
+  Linux; this temporary path may need restoration in a later session.
+  The installed elan directories had4.33.0 and4.31.0, and `lean` was not
+  on PATH. The new verifier accepts `--lean /path/to/lean` and enforces
+  version4.33.1 and the recorded commit. Recheck Rust if needed.
 - The research Lean modules use standalone Lean without Mathlib or a Lake
   project. Build imported `.olean` files into a temporary directory and
   supply that directory through `LEAN_PATH`.

@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "counts": {
+    "negative_shortcut_steps": 11,
+    "negative_ordinary_steps": 18,
+    "positive_inverse_edges": 762878,
+    "single_block_positive_lifts": 1024,
+    "single_block_ordinary_steps": 18432,
+    "rectangle_paths": 2048,
+    "rectangle_ordinary_steps": 1204224,
+    "rectangle_smaller_paths": 1536,
+    "large_paths": 15,
+    "large_ordinary_steps": 28503,
+    "large_smaller_paths": 15,
+    "threshold_lower_checks": 16,
+    "threshold_upper_checks": 1,
+    "improvement_arithmetic_checks": 387,
+    "repeated_gain_arithmetic_checks": 129,
+    "small_odd_multiple_checks": 90,
+    "materialized_ternary_lifts": 10,
+    "modular_ternary_lifts": 257,
+    "modular_ladder_progression_checks": 1025,
+    "kernel_arrival_witnesses": 2,
+    "arrival_ordinary_steps": 2799
+  },
+  "cycle_lifts": {
+    "negative_shortcut_path": [
+      -17,
+      -25,
+      -37,
+      -55,
+      -82,
+      -41,
+      -61,
+      -91,
+      -136,
+      -68,
+      -34,
+      -17
+    ],
+    "forward_word": "OOOOEOOOEEE",
+    "inverse_word": "EEEOOOEOOOO",
+    "q_interval": [
+      1,
+      1024
+    ],
+    "scope": "The negative cycle motivates a word; each listed positive lift is separately replayed with positive values and legal inverse guards."
+  },
+  "positive_detours": {
+    "complete_k_interval": [
+      1,
+      64
+    ],
+    "complete_odd_q_interval": [
+      1,
+      63
+    ],
+    "larger_path_rows": [
+      {
+        "k": 17,
+        "q": 1,
+        "source_bits": 188,
+        "predecessor_bits": 187,
+        "ordinary_clock": 307
+      },
+      {
+        "k": 17,
+        "q": 3,
+        "source_bits": 189,
+        "predecessor_bits": 189,
+        "ordinary_clock": 307
+      },
+      {
+        "k": 17,
+        "q": 17,
+        "source_bits": 192,
+        "predecessor_bits": 192,
+        "ordinary_clock": 307
+      },
+      {
+        "k": 34,
+        "q": 1,
+        "source_bits": 376,
+        "predecessor_bits": 374,
+        "ordinary_clock": 613
+      },
+      {
+        "k": 34,
+        "q": 3,
+        "source_bits": 378,
+        "predecessor_bits": 376,
+        "ordinary_clock": 613
+      },
+      {
+        "k": 34,
+        "q": 17,
+        "source_bits": 380,
+        "predecessor_bits": 379,
+        "ordinary_clock": 613
+      },
+      {
+        "k": 68,
+        "q": 1,
+        "source_bits": 753,
+        "predecessor_bits": 748,
+        "ordinary_clock": 1225
+      },
+      {
+        "k": 68,
+        "q": 3,
+        "source_bits": 755,
+        "predecessor_bits": 750,
+        "ordinary_clock": 1225
+      },
+      {
+        "k": 68,
+        "q": 17,
+        "source_bits": 757,
+        "predecessor_bits": 753,
+        "ordinary_clock": 1225
+      },
+      {
+        "k": 136,
+        "q": 1,
+        "source_bits": 1508,
+        "predecessor_bits": 1496,
+        "ordinary_clock": 2449
+      },
+      {
+        "k": 136,
+        "q": 3,
+        "source_bits": 1509,
+        "predecessor_bits": 1498,
+        "ordinary_clock": 2449
+      },
+      {
+        "k": 136,
+        "q": 17,
+        "source_bits": 1512,
+        "predecessor_bits": 1501,
+        "ordinary_clock": 2449
+      },
+      {
+        "k": 272,
+        "q": 1,
+        "source_bits": 3017,
+        "predecessor_bits": 2992,
+        "ordinary_clock": 4897
+      },
+      {
+        "k": 272,
+        "q": 3,
+        "source_bits": 3018,
+        "predecessor_bits": 2994,
+        "ordinary_clock": 4897
+      },
+      {
+        "k": 272,
+        "q": 17,
+        "source_bits": 3021,
+        "predecessor_bits": 2997,
+        "ordinary_clock": 4897
+      }
+    ],
+    "gain_h_interval": [
+      0,
+      128
+    ],
+    "threshold_scope": "Seventeen repetitions are sharp for this specific E-plus-cycle word, not for all legal inverse words.",
+    "gain_scope": "Large-h improvement checks are arithmetic; only the rectangle and listed larger rows replay full positive paths."
+  },
+  "ternary_lifts": {
+    "materialized_s_interval": [
+      0,
+      9
+    ],
+    "modular_s_interval": [
+      0,
+      256
+    ],
+    "modular_progression_h_interval": [
+      0,
+      1024
+    ],
+    "minimum_R": 22185312344622607535965183080365494317672538611578408721,
+    "minimum_ladder_source_bit_length": 66555937033867822607895549241096482953017615834735226163,
+    "scope": "No positive source 8**R-5 from the new progression is materialized or numerically iterated. Its paths for every visit are parameterized kernel theorems. Modular arithmetic checks only the stated divisibility and disjointness from the old progression."
+  },
+  "kernel_arrivals": {
+    "rows": [
+      {
+        "source": 199667811101603467823686647723289448859052847504205678483,
+        "bits": 188,
+        "first_arrival": 1247,
+        "peak_bits": 190
+      },
+      {
+        "source": 196159429230833773869868419475239575503198607639501078511,
+        "bits": 187,
+        "first_arrival": 1552,
+        "peak_bits": 193
+      }
+    ],
+    "scope": "Arrival existence is separately kernel checked. First-arrival minimality and peak sizes are Python checks. These are general residue-class examples, not members of the enormous return-ladder progression."
+  }
+}
