@@ -1,0 +1,8 @@
+'ReversalPersistence.reciprocal_retention' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.shifted_retention' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.half_value_arithmetic' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.retained_half' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.family_horizon' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.family_persistent_half' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.family_child_ceiling' depends on axioms: [propext, Quot.sound]
+'ReversalPersistence.family_reversal_persists' depends on axioms: [propext, Quot.sound]

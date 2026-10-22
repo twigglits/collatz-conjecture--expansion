@@ -1,0 +1,898 @@
+{
+  "status": "passed",
+  "counts": {
+    "inverse_edges": 84604,
+    "shortcut_edges": 200454,
+    "generic_profile_queries": 3081,
+    "generic_ordinary_steps": 54431,
+    "residue_exponents": 4096,
+    "ladder_residue_checks": 158870,
+    "complete_N_ordinary_steps": 159497,
+    "complete_P_ordinary_steps": 127761,
+    "complete_coalescing_pairs": 72,
+    "large_short_ordinary_steps": 30,
+    "large_coordinate_cases": 2,
+    "modular_delayed_escape_cases": 4128
+  },
+  "generic_profiles": {
+    "small_u_interval": [
+      0,
+      1023
+    ],
+    "larger_u": [
+      "2**32+1",
+      "3**64+7",
+      "2**512+19"
+    ],
+    "scope": "All three affine path pairs, both shortcut words, and every inverse guard are replayed. These are finite checks of separate universal kernel profiles."
+  },
+  "periods": {
+    "R_interval": [
+      0,
+      4095
+    ],
+    "excluded_small_case": {
+      "R": 1,
+      "P": 7,
+      "N": 3
+    },
+    "scope": "The finite period certificate and the three modular consequences are checked independently. R=1 meets a residue condition but fails the smaller-source inequality."
+  },
+  "complete_paths": {
+    "covered_odd_R_interval": [
+      3,
+      257
+    ],
+    "larger_R": [
+      511,
+      513,
+      523,
+      1023,
+      2047,
+      4095
+    ],
+    "rows": [
+      {
+        "R": 7,
+        "source_bits": 21,
+        "predecessor_bits": 15,
+        "N_clock": 43,
+        "P_clock": 37,
+        "inverse_even": 5,
+        "inverse_odd": 16,
+        "first_forward_descent_through_meeting": 37,
+        "minimum_through_meeting_is_N": false
+      },
+      {
+        "R": 11,
+        "source_bits": 33,
+        "predecessor_bits": 21,
+        "N_clock": 64,
+        "P_clock": 52,
+        "inverse_even": 4,
+        "inverse_odd": 24,
+        "first_forward_descent_through_meeting": 57,
+        "minimum_through_meeting_is_N": false
+      },
+      {
+        "R": 15,
+        "source_bits": 45,
+        "predecessor_bits": 31,
+        "N_clock": 83,
+        "P_clock": 69,
+        "inverse_even": 5,
+        "inverse_odd": 32,
+        "first_forward_descent_through_meeting": 81,
+        "minimum_through_meeting_is_N": false
+      },
+      {
+        "R": 17,
+        "source_bits": 51,
+        "predecessor_bits": 35,
+        "N_clock": 95,
+        "P_clock": 79,
+        "inverse_even": 5,
+        "inverse_odd": 37,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 23,
+        "source_bits": 69,
+        "predecessor_bits": 47,
+        "N_clock": 123,
+        "P_clock": 101,
+        "inverse_even": 5,
+        "inverse_odd": 48,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 27,
+        "source_bits": 81,
+        "predecessor_bits": 53,
+        "N_clock": 144,
+        "P_clock": 116,
+        "inverse_even": 4,
+        "inverse_odd": 56,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 31,
+        "source_bits": 93,
+        "predecessor_bits": 63,
+        "N_clock": 163,
+        "P_clock": 133,
+        "inverse_even": 5,
+        "inverse_odd": 64,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 33,
+        "source_bits": 99,
+        "predecessor_bits": 67,
+        "N_clock": 175,
+        "P_clock": 143,
+        "inverse_even": 5,
+        "inverse_odd": 69,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 39,
+        "source_bits": 117,
+        "predecessor_bits": 79,
+        "N_clock": 203,
+        "P_clock": 165,
+        "inverse_even": 5,
+        "inverse_odd": 80,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 43,
+        "source_bits": 129,
+        "predecessor_bits": 85,
+        "N_clock": 224,
+        "P_clock": 180,
+        "inverse_even": 4,
+        "inverse_odd": 88,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 47,
+        "source_bits": 141,
+        "predecessor_bits": 95,
+        "N_clock": 243,
+        "P_clock": 197,
+        "inverse_even": 5,
+        "inverse_odd": 96,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 49,
+        "source_bits": 147,
+        "predecessor_bits": 99,
+        "N_clock": 255,
+        "P_clock": 207,
+        "inverse_even": 5,
+        "inverse_odd": 101,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 55,
+        "source_bits": 165,
+        "predecessor_bits": 111,
+        "N_clock": 283,
+        "P_clock": 229,
+        "inverse_even": 5,
+        "inverse_odd": 112,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 59,
+        "source_bits": 177,
+        "predecessor_bits": 117,
+        "N_clock": 304,
+        "P_clock": 244,
+        "inverse_even": 4,
+        "inverse_odd": 120,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 63,
+        "source_bits": 189,
+        "predecessor_bits": 127,
+        "N_clock": 323,
+        "P_clock": 261,
+        "inverse_even": 5,
+        "inverse_odd": 128,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 65,
+        "source_bits": 195,
+        "predecessor_bits": 131,
+        "N_clock": 335,
+        "P_clock": 271,
+        "inverse_even": 5,
+        "inverse_odd": 133,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 71,
+        "source_bits": 213,
+        "predecessor_bits": 143,
+        "N_clock": 363,
+        "P_clock": 293,
+        "inverse_even": 5,
+        "inverse_odd": 144,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 75,
+        "source_bits": 225,
+        "predecessor_bits": 149,
+        "N_clock": 384,
+        "P_clock": 308,
+        "inverse_even": 4,
+        "inverse_odd": 152,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 79,
+        "source_bits": 237,
+        "predecessor_bits": 159,
+        "N_clock": 403,
+        "P_clock": 325,
+        "inverse_even": 5,
+        "inverse_odd": 160,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 81,
+        "source_bits": 243,
+        "predecessor_bits": 163,
+        "N_clock": 415,
+        "P_clock": 335,
+        "inverse_even": 5,
+        "inverse_odd": 165,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 87,
+        "source_bits": 261,
+        "predecessor_bits": 175,
+        "N_clock": 443,
+        "P_clock": 357,
+        "inverse_even": 5,
+        "inverse_odd": 176,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 91,
+        "source_bits": 273,
+        "predecessor_bits": 181,
+        "N_clock": 464,
+        "P_clock": 372,
+        "inverse_even": 4,
+        "inverse_odd": 184,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 95,
+        "source_bits": 285,
+        "predecessor_bits": 191,
+        "N_clock": 483,
+        "P_clock": 389,
+        "inverse_even": 5,
+        "inverse_odd": 192,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 97,
+        "source_bits": 291,
+        "predecessor_bits": 195,
+        "N_clock": 495,
+        "P_clock": 399,
+        "inverse_even": 5,
+        "inverse_odd": 197,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 103,
+        "source_bits": 309,
+        "predecessor_bits": 207,
+        "N_clock": 523,
+        "P_clock": 421,
+        "inverse_even": 5,
+        "inverse_odd": 208,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 107,
+        "source_bits": 321,
+        "predecessor_bits": 213,
+        "N_clock": 544,
+        "P_clock": 436,
+        "inverse_even": 4,
+        "inverse_odd": 216,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 111,
+        "source_bits": 333,
+        "predecessor_bits": 223,
+        "N_clock": 563,
+        "P_clock": 453,
+        "inverse_even": 5,
+        "inverse_odd": 224,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 113,
+        "source_bits": 339,
+        "predecessor_bits": 227,
+        "N_clock": 575,
+        "P_clock": 463,
+        "inverse_even": 5,
+        "inverse_odd": 229,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 119,
+        "source_bits": 357,
+        "predecessor_bits": 239,
+        "N_clock": 603,
+        "P_clock": 485,
+        "inverse_even": 5,
+        "inverse_odd": 240,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 123,
+        "source_bits": 369,
+        "predecessor_bits": 245,
+        "N_clock": 624,
+        "P_clock": 500,
+        "inverse_even": 4,
+        "inverse_odd": 248,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 127,
+        "source_bits": 381,
+        "predecessor_bits": 255,
+        "N_clock": 643,
+        "P_clock": 517,
+        "inverse_even": 5,
+        "inverse_odd": 256,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 129,
+        "source_bits": 387,
+        "predecessor_bits": 259,
+        "N_clock": 655,
+        "P_clock": 527,
+        "inverse_even": 5,
+        "inverse_odd": 261,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 135,
+        "source_bits": 405,
+        "predecessor_bits": 271,
+        "N_clock": 683,
+        "P_clock": 549,
+        "inverse_even": 5,
+        "inverse_odd": 272,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 139,
+        "source_bits": 417,
+        "predecessor_bits": 277,
+        "N_clock": 704,
+        "P_clock": 564,
+        "inverse_even": 4,
+        "inverse_odd": 280,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 143,
+        "source_bits": 429,
+        "predecessor_bits": 287,
+        "N_clock": 723,
+        "P_clock": 581,
+        "inverse_even": 5,
+        "inverse_odd": 288,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 145,
+        "source_bits": 435,
+        "predecessor_bits": 291,
+        "N_clock": 735,
+        "P_clock": 591,
+        "inverse_even": 5,
+        "inverse_odd": 293,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 151,
+        "source_bits": 453,
+        "predecessor_bits": 303,
+        "N_clock": 763,
+        "P_clock": 613,
+        "inverse_even": 5,
+        "inverse_odd": 304,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 155,
+        "source_bits": 465,
+        "predecessor_bits": 309,
+        "N_clock": 784,
+        "P_clock": 628,
+        "inverse_even": 4,
+        "inverse_odd": 312,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 159,
+        "source_bits": 477,
+        "predecessor_bits": 319,
+        "N_clock": 803,
+        "P_clock": 645,
+        "inverse_even": 5,
+        "inverse_odd": 320,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 161,
+        "source_bits": 483,
+        "predecessor_bits": 323,
+        "N_clock": 815,
+        "P_clock": 655,
+        "inverse_even": 5,
+        "inverse_odd": 325,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 167,
+        "source_bits": 501,
+        "predecessor_bits": 335,
+        "N_clock": 843,
+        "P_clock": 677,
+        "inverse_even": 5,
+        "inverse_odd": 336,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 171,
+        "source_bits": 513,
+        "predecessor_bits": 341,
+        "N_clock": 864,
+        "P_clock": 692,
+        "inverse_even": 4,
+        "inverse_odd": 344,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 175,
+        "source_bits": 525,
+        "predecessor_bits": 351,
+        "N_clock": 883,
+        "P_clock": 709,
+        "inverse_even": 5,
+        "inverse_odd": 352,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 177,
+        "source_bits": 531,
+        "predecessor_bits": 355,
+        "N_clock": 895,
+        "P_clock": 719,
+        "inverse_even": 5,
+        "inverse_odd": 357,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 183,
+        "source_bits": 549,
+        "predecessor_bits": 367,
+        "N_clock": 923,
+        "P_clock": 741,
+        "inverse_even": 5,
+        "inverse_odd": 368,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 187,
+        "source_bits": 561,
+        "predecessor_bits": 373,
+        "N_clock": 944,
+        "P_clock": 756,
+        "inverse_even": 4,
+        "inverse_odd": 376,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 191,
+        "source_bits": 573,
+        "predecessor_bits": 383,
+        "N_clock": 963,
+        "P_clock": 773,
+        "inverse_even": 5,
+        "inverse_odd": 384,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 193,
+        "source_bits": 579,
+        "predecessor_bits": 387,
+        "N_clock": 975,
+        "P_clock": 783,
+        "inverse_even": 5,
+        "inverse_odd": 389,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 199,
+        "source_bits": 597,
+        "predecessor_bits": 399,
+        "N_clock": 1003,
+        "P_clock": 805,
+        "inverse_even": 5,
+        "inverse_odd": 400,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 203,
+        "source_bits": 609,
+        "predecessor_bits": 405,
+        "N_clock": 1024,
+        "P_clock": 820,
+        "inverse_even": 4,
+        "inverse_odd": 408,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 207,
+        "source_bits": 621,
+        "predecessor_bits": 415,
+        "N_clock": 1043,
+        "P_clock": 837,
+        "inverse_even": 5,
+        "inverse_odd": 416,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 209,
+        "source_bits": 627,
+        "predecessor_bits": 419,
+        "N_clock": 1055,
+        "P_clock": 847,
+        "inverse_even": 5,
+        "inverse_odd": 421,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 215,
+        "source_bits": 645,
+        "predecessor_bits": 431,
+        "N_clock": 1083,
+        "P_clock": 869,
+        "inverse_even": 5,
+        "inverse_odd": 432,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 219,
+        "source_bits": 657,
+        "predecessor_bits": 437,
+        "N_clock": 1104,
+        "P_clock": 884,
+        "inverse_even": 4,
+        "inverse_odd": 440,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 223,
+        "source_bits": 669,
+        "predecessor_bits": 447,
+        "N_clock": 1123,
+        "P_clock": 901,
+        "inverse_even": 5,
+        "inverse_odd": 448,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 225,
+        "source_bits": 675,
+        "predecessor_bits": 451,
+        "N_clock": 1135,
+        "P_clock": 911,
+        "inverse_even": 5,
+        "inverse_odd": 453,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 231,
+        "source_bits": 693,
+        "predecessor_bits": 463,
+        "N_clock": 1163,
+        "P_clock": 933,
+        "inverse_even": 5,
+        "inverse_odd": 464,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 235,
+        "source_bits": 705,
+        "predecessor_bits": 469,
+        "N_clock": 1184,
+        "P_clock": 948,
+        "inverse_even": 4,
+        "inverse_odd": 472,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 239,
+        "source_bits": 717,
+        "predecessor_bits": 479,
+        "N_clock": 1203,
+        "P_clock": 965,
+        "inverse_even": 5,
+        "inverse_odd": 480,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 241,
+        "source_bits": 723,
+        "predecessor_bits": 483,
+        "N_clock": 1215,
+        "P_clock": 975,
+        "inverse_even": 5,
+        "inverse_odd": 485,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 247,
+        "source_bits": 741,
+        "predecessor_bits": 495,
+        "N_clock": 1243,
+        "P_clock": 997,
+        "inverse_even": 5,
+        "inverse_odd": 496,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 251,
+        "source_bits": 753,
+        "predecessor_bits": 501,
+        "N_clock": 1264,
+        "P_clock": 1012,
+        "inverse_even": 4,
+        "inverse_odd": 504,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 255,
+        "source_bits": 765,
+        "predecessor_bits": 511,
+        "N_clock": 1283,
+        "P_clock": 1029,
+        "inverse_even": 5,
+        "inverse_odd": 512,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 257,
+        "source_bits": 771,
+        "predecessor_bits": 515,
+        "N_clock": 1295,
+        "P_clock": 1039,
+        "inverse_even": 5,
+        "inverse_odd": 517,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 511,
+        "source_bits": 1533,
+        "predecessor_bits": 1023,
+        "N_clock": 2563,
+        "P_clock": 2053,
+        "inverse_even": 5,
+        "inverse_odd": 1024,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 513,
+        "source_bits": 1539,
+        "predecessor_bits": 1027,
+        "N_clock": 2575,
+        "P_clock": 2063,
+        "inverse_even": 5,
+        "inverse_odd": 1029,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 523,
+        "source_bits": 1569,
+        "predecessor_bits": 1045,
+        "N_clock": 2624,
+        "P_clock": 2100,
+        "inverse_even": 4,
+        "inverse_odd": 1048,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 1023,
+        "source_bits": 3069,
+        "predecessor_bits": 2047,
+        "N_clock": 5123,
+        "P_clock": 4101,
+        "inverse_even": 5,
+        "inverse_odd": 2048,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 2047,
+        "source_bits": 6141,
+        "predecessor_bits": 4095,
+        "N_clock": 10243,
+        "P_clock": 8197,
+        "inverse_even": 5,
+        "inverse_odd": 4096,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      },
+      {
+        "R": 4095,
+        "source_bits": 12285,
+        "predecessor_bits": 8191,
+        "N_clock": 20483,
+        "P_clock": 16389,
+        "inverse_even": 5,
+        "inverse_odd": 8192,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true
+      }
+    ],
+    "whole_window_rows": [
+      {
+        "R": 4375,
+        "source_bits": 13125,
+        "predecessor_bits": 8751,
+        "N_clock": 21883,
+        "P_clock": 17509,
+        "inverse_even": 5,
+        "inverse_odd": 8752,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true,
+        "s": 0,
+        "a": 0,
+        "h": 2,
+        "K": 6
+      },
+      {
+        "R": 10207,
+        "source_bits": 30621,
+        "predecessor_bits": 20415,
+        "N_clock": 51043,
+        "P_clock": 40837,
+        "inverse_even": 5,
+        "inverse_odd": 20416,
+        "first_forward_descent_through_meeting": null,
+        "minimum_through_meeting_is_N": true,
+        "s": 0,
+        "a": 1,
+        "h": 6,
+        "K": 6
+      }
+    ],
+    "scope": "Each listed N is actually iterated from its start through its full growing prefix and short tail. Each P is independently iterated to the same meeting, and every inverse guard and shortcut parity is replayed. Prefix minima and residue-20 positions are checked. No later convergence or optimal inverse minimum is claimed."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "s": 1,
+        "a": 0,
+        "K": 8,
+        "R": 39367,
+        "source_bits": 118101,
+        "predecessor_bits": 78735,
+        "N_clock_formula": 196843,
+        "P_clock_formula": 157477,
+        "full_paths_replayed": false
+      },
+      {
+        "s": 2,
+        "a": 0,
+        "K": 10,
+        "R": 354295,
+        "source_bits": 1062885,
+        "predecessor_bits": 708591,
+        "N_clock_formula": 1771483,
+        "P_clock_formula": 1417189,
+        "full_paths_replayed": false
+      }
+    ],
+    "scope": "These integers are materialized, but only algebraic coordinates, the cubic size identities, and the short tails are independently replayed. The full ladder and pure odd blocks rely on the separate parameterized kernel theorems."
+  },
+  "modular_families": {
+    "s_interval": [
+      0,
+      128
+    ],
+    "a_interval": [
+      0,
+      31
+    ],
+    "scope": "Only exponents and congruences are computed in this section. No huge source is constructed here; the two complete and two coordinate-only family examples are identified separately."
+  }
+}

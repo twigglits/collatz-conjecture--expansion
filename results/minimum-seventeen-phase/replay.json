@@ -1,0 +1,903 @@
+{
+  "status": "passed",
+  "counts": {
+    "finite_phase_states": 64,
+    "window_states_replayed": 458151,
+    "windows_with_actual_value_sets": 1120,
+    "separated_triples": 1156,
+    "window_ordinary_steps": 454683,
+    "primary_phase_states": 301908,
+    "primary_actual_value_pairs": 1119,
+    "primary_phase_pairs": 1152,
+    "primary_phase_steps": 299604,
+    "secondary_phase_states": 116820,
+    "secondary_actual_value_pairs": 779,
+    "secondary_phase_pairs": 790,
+    "secondary_phase_steps": 115240,
+    "generic_primary_secondary_pairs": 272,
+    "odd_inverse_checks": 4585,
+    "ordinary_checkpoints": 3904,
+    "full_source_steps": 3868284,
+    "shortcut_edges": 2407929,
+    "inverse_edges": 2407929,
+    "complete_primary_cases": 458,
+    "complete_secondary_cases": 513,
+    "secondary_cases_with_primary_separation": 413,
+    "complete_N_steps": 94986,
+    "complete_S_steps": 78604,
+    "old_partner_prefix_steps": 151172,
+    "meeting_cases_with_old_separation": 4,
+    "complete_four_source_cases": 4,
+    "delayed_merger_cases": 4,
+    "modular_secondary_pure_lifts": 206,
+    "convergent_witness_steps": 11720,
+    "larger_transition_steps": 2732,
+    "larger_secondary_steps": 1372
+  },
+  "generic_checks": {
+    "primary_phase_tables": [
+      [
+        [
+          225,
+          0
+        ],
+        [
+          666,
+          0
+        ],
+        [
+          333,
+          1
+        ],
+        [
+          990,
+          1
+        ],
+        [
+          495,
+          2
+        ],
+        [
+          1476,
+          2
+        ],
+        [
+          738,
+          3
+        ],
+        [
+          369,
+          4
+        ],
+        [
+          1098,
+          4
+        ],
+        [
+          549,
+          5
+        ],
+        [
+          1638,
+          5
+        ],
+        [
+          819,
+          6
+        ],
+        [
+          2448,
+          6
+        ],
+        [
+          1224,
+          7
+        ],
+        [
+          612,
+          8
+        ],
+        [
+          306,
+          9
+        ],
+        [
+          153,
+          10
+        ],
+        [
+          450,
+          10
+        ]
+      ],
+      [
+        [
+          201,
+          0
+        ],
+        [
+          594,
+          0
+        ],
+        [
+          297,
+          1
+        ],
+        [
+          882,
+          1
+        ],
+        [
+          441,
+          2
+        ],
+        [
+          1314,
+          2
+        ],
+        [
+          657,
+          3
+        ],
+        [
+          1962,
+          3
+        ],
+        [
+          981,
+          4
+        ],
+        [
+          2934,
+          4
+        ],
+        [
+          1467,
+          5
+        ],
+        [
+          4392,
+          5
+        ],
+        [
+          2196,
+          6
+        ],
+        [
+          1098,
+          7
+        ],
+        [
+          549,
+          8
+        ],
+        [
+          1638,
+          8
+        ],
+        [
+          819,
+          9
+        ],
+        [
+          2448,
+          9
+        ],
+        [
+          1224,
+          10
+        ],
+        [
+          612,
+          0
+        ],
+        [
+          306,
+          1
+        ],
+        [
+          153,
+          2
+        ],
+        [
+          450,
+          2
+        ],
+        [
+          225,
+          3
+        ],
+        [
+          666,
+          3
+        ],
+        [
+          333,
+          4
+        ],
+        [
+          990,
+          4
+        ],
+        [
+          495,
+          5
+        ],
+        [
+          1476,
+          5
+        ],
+        [
+          738,
+          6
+        ],
+        [
+          369,
+          7
+        ]
+      ]
+    ],
+    "secondary_phase_tables": [
+      [
+        [
+          13,
+          0
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          56,
+          1
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          14,
+          0
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          5,
+          0
+        ]
+      ]
+    ],
+    "cycle_start_indices": [
+      0,
+      13,
+      5,
+      0
+    ],
+    "cycle_halving_periods": [
+      11,
+      11,
+      3,
+      3
+    ],
+    "generic_H_interval": [
+      0,
+      64
+    ],
+    "additional_H": [
+      128,
+      512,
+      4096
+    ],
+    "offsets": [
+      0,
+      1,
+      2,
+      17
+    ],
+    "inverse_k_interval": [
+      0,
+      128
+    ],
+    "additional_inverse_k": [
+      512,
+      1024
+    ],
+    "scope": "Finite phase closure and nonresonance checks, actual scalar windows, and binary inverses independently supplement universal kernel proofs."
+  },
+  "complete_paths": {
+    "primary_cases": 458,
+    "secondary_cases": 513,
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "H": 16384,
+      "weight_bits": 45381,
+      "N_bits": 49579,
+      "S_bits": 45422,
+      "a_bits": 52357,
+      "N_clock": 82173,
+      "S_clock": 73995,
+      "primary_horizon": 45052,
+      "j": 4096,
+      "b_bits": 52106
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 5,
+        "j": null,
+        "H": 512,
+        "weight_bits": 637,
+        "N_bits": 681,
+        "S_bits": 678,
+        "a_bits": 677,
+        "b_bits": null,
+        "N_clock": 251,
+        "S_clock": 246,
+        "primary_horizon": 512
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": null,
+        "H": 1024,
+        "weight_bits": 1148,
+        "N_bits": 1192,
+        "S_bits": 1189,
+        "a_bits": 1189,
+        "b_bits": null,
+        "N_clock": 251,
+        "S_clock": 246,
+        "primary_horizon": 1024
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": null,
+        "H": 4096,
+        "weight_bits": 4221,
+        "N_bits": 4265,
+        "S_bits": 4262,
+        "a_bits": 4261,
+        "b_bits": null,
+        "N_clock": 251,
+        "S_clock": 246,
+        "primary_horizon": 4096
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": null,
+        "H": 16384,
+        "weight_bits": 16509,
+        "N_bits": 16553,
+        "S_bits": 16550,
+        "a_bits": 16549,
+        "b_bits": null,
+        "N_clock": 251,
+        "S_clock": 246,
+        "primary_horizon": 16384
+      },
+      {
+        "R": 14,
+        "r": 9,
+        "j": null,
+        "H": 512,
+        "weight_bits": 680,
+        "N_bits": 724,
+        "S_bits": 721,
+        "a_bits": 720,
+        "b_bits": null,
+        "N_clock": 323,
+        "S_clock": 318,
+        "primary_horizon": 512
+      },
+      {
+        "R": 14,
+        "r": 9,
+        "j": null,
+        "H": 1024,
+        "weight_bits": 1193,
+        "N_bits": 1237,
+        "S_bits": 1234,
+        "a_bits": 1233,
+        "b_bits": null,
+        "N_clock": 323,
+        "S_clock": 318,
+        "primary_horizon": 1024
+      },
+      {
+        "R": 14,
+        "r": 9,
+        "j": null,
+        "H": 4096,
+        "weight_bits": 4265,
+        "N_bits": 4309,
+        "S_bits": 4306,
+        "a_bits": 4306,
+        "b_bits": null,
+        "N_clock": 323,
+        "S_clock": 318,
+        "primary_horizon": 4096
+      },
+      {
+        "R": 14,
+        "r": 9,
+        "j": null,
+        "H": 16384,
+        "weight_bits": 16553,
+        "N_bits": 16597,
+        "S_bits": 16594,
+        "a_bits": 16594,
+        "b_bits": null,
+        "N_clock": 323,
+        "S_clock": 318,
+        "primary_horizon": 16384
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": null,
+        "H": 32,
+        "weight_bits": 5734,
+        "N_bits": 5778,
+        "S_bits": 5775,
+        "a_bits": 5822,
+        "b_bits": null,
+        "N_clock": 9377,
+        "S_clock": 9372,
+        "primary_horizon": 32
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": null,
+        "H": 256,
+        "weight_bits": 5958,
+        "N_bits": 6002,
+        "S_bits": 5999,
+        "a_bits": 6047,
+        "b_bits": null,
+        "N_clock": 9377,
+        "S_clock": 9372,
+        "primary_horizon": 256
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": null,
+        "H": 32,
+        "weight_bits": 45158,
+        "N_bits": 45202,
+        "S_bits": 45199,
+        "a_bits": 45586,
+        "b_bits": null,
+        "N_clock": 73889,
+        "S_clock": 73884,
+        "primary_horizon": 32
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": null,
+        "H": 256,
+        "weight_bits": 45381,
+        "N_bits": 45425,
+        "S_bits": 45422,
+        "a_bits": 45809,
+        "b_bits": null,
+        "N_clock": 73889,
+        "S_clock": 73884,
+        "primary_horizon": 256
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": null,
+        "H": 32,
+        "weight_bits": 154,
+        "N_bits": 49308,
+        "S_bits": 32935,
+        "a_bits": 52086,
+        "b_bits": null,
+        "N_clock": 82101,
+        "S_clock": 65726,
+        "primary_horizon": 32
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": null,
+        "H": 256,
+        "weight_bits": 381,
+        "N_bits": 49535,
+        "S_bits": 33162,
+        "a_bits": 52313,
+        "b_bits": null,
+        "N_clock": 82101,
+        "S_clock": 65726,
+        "primary_horizon": 256
+      },
+      {
+        "R": 16384,
+        "r": 9,
+        "j": null,
+        "H": 32,
+        "weight_bits": 201,
+        "N_bits": 49355,
+        "S_bits": 32982,
+        "a_bits": 52133,
+        "b_bits": null,
+        "N_clock": 82173,
+        "S_clock": 65798,
+        "primary_horizon": 32
+      },
+      {
+        "R": 16384,
+        "r": 9,
+        "j": null,
+        "H": 256,
+        "weight_bits": 425,
+        "N_bits": 49579,
+        "S_bits": 33206,
+        "a_bits": 52357,
+        "b_bits": null,
+        "N_clock": 82173,
+        "S_clock": 65798,
+        "primary_horizon": 256
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "H": 512,
+        "weight_bits": 647,
+        "N_bits": 691,
+        "S_bits": 688,
+        "a_bits": 687,
+        "b_bits": 691,
+        "N_clock": 285,
+        "S_clock": 285,
+        "primary_horizon": 7
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "H": 4096,
+        "weight_bits": 4234,
+        "N_bits": 4278,
+        "S_bits": 4275,
+        "a_bits": 4274,
+        "b_bits": 4278,
+        "N_clock": 285,
+        "S_clock": 285,
+        "primary_horizon": 7
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "H": 16384,
+        "weight_bits": 16520,
+        "N_bits": 16564,
+        "S_bits": 16561,
+        "a_bits": 16560,
+        "b_bits": 16564,
+        "N_clock": 285,
+        "S_clock": 285,
+        "primary_horizon": 7
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 512,
+        "H": 32,
+        "weight_bits": 5790,
+        "N_bits": 5834,
+        "S_bits": 5831,
+        "a_bits": 5831,
+        "b_bits": 5883,
+        "N_clock": 9483,
+        "S_clock": 9483,
+        "primary_horizon": 5628
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 4096,
+        "H": 32,
+        "weight_bits": 45215,
+        "N_bits": 45259,
+        "S_bits": 45256,
+        "a_bits": 45255,
+        "b_bits": 45647,
+        "N_clock": 73995,
+        "S_clock": 73995,
+        "primary_horizon": 45052
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 1,
+        "H": 32,
+        "weight_bits": 5746,
+        "N_bits": 5790,
+        "S_bits": 5787,
+        "a_bits": 5834,
+        "b_bits": 5838,
+        "N_clock": 9411,
+        "S_clock": 9411,
+        "primary_horizon": 7
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 1,
+        "H": 32,
+        "weight_bits": 45170,
+        "N_bits": 45214,
+        "S_bits": 45211,
+        "a_bits": 45597,
+        "b_bits": 45601,
+        "N_clock": 73923,
+        "S_clock": 73923,
+        "primary_horizon": 7
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 1,
+        "H": 32,
+        "weight_bits": 170,
+        "N_bits": 49324,
+        "S_bits": 32951,
+        "a_bits": 52102,
+        "b_bits": 52106,
+        "N_clock": 82135,
+        "S_clock": 65765,
+        "primary_horizon": 7
+      }
+    ],
+    "scope": "All four full source paths are replayed by ordinary, shortcut and inverse operations. Secondary cases continue N,S to their secondary endpoints and verify q odd. Both types check all pairs of window times by disjoint exact phase signatures. Small windows also compare actual value sets."
+  },
+  "delayed_checks": {
+    "rows": [
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "weight_bits": 138,
+        "N_bits": 182,
+        "S_bits": 179,
+        "a_bits": 178,
+        "b_bits": 182,
+        "N_clock": 296,
+        "S_clock": 293,
+        "old_separated_horizon": 8,
+        "all_four_primary_horizon": 7
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 128,
+        "weight_bits": 1535,
+        "N_bits": 1579,
+        "S_bits": 1576,
+        "a_bits": 1576,
+        "b_bits": 1591,
+        "N_clock": 2582,
+        "S_clock": 2579,
+        "old_separated_horizon": 1405,
+        "all_four_primary_horizon": 1404
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 16,
+        "weight_bits": 5880,
+        "N_bits": 5924,
+        "S_bits": 5921,
+        "a_bits": 5968,
+        "b_bits": 5974,
+        "N_clock": 9692,
+        "S_clock": 9689,
+        "old_separated_horizon": 173,
+        "all_four_primary_horizon": 172
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 16,
+        "weight_bits": 302,
+        "N_bits": 49456,
+        "S_bits": 33083,
+        "a_bits": 52234,
+        "b_bits": 52239,
+        "N_clock": 82416,
+        "S_clock": 66043,
+        "old_separated_horizon": 173,
+        "all_four_primary_horizon": 172
+      }
+    ],
+    "scope": "Full N,S meetings and old-partner prefixes are independently replayed, while all three partners have primary exit windows disjoint from the main window. These examples refute an interpretation of window separation as eventual noncoalescence."
+  },
+  "modular_checks": {
+    "regular_r_interval": [
+      5,
+      8
+    ],
+    "regular_j_interval": [
+      0,
+      4
+    ],
+    "regular_H": [
+      0,
+      1,
+      8,
+      32,
+      128
+    ],
+    "additional_coordinates": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        512,
+        1,
+        0
+      ],
+      [
+        5,
+        512,
+        4096
+      ]
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "j": 128,
+        "H": 128,
+        "R_bits": 3017,
+        "B_bits": 0
+      },
+      {
+        "r": 128,
+        "j": 128,
+        "H": 128,
+        "R_bits": 3430,
+        "B_bits": 417
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "H": 0,
+        "R_bits": 5716,
+        "B_bits": 0
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "H": 0,
+        "R_bits": 6258,
+        "B_bits": 546
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "H": 4096,
+        "R_bits": 9856,
+        "B_bits": 0
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "H": 4096,
+        "R_bits": 14498,
+        "B_bits": 4646
+      }
+    ],
+    "scope": "Pure exponent coordinates and normalized secondary units are checked using modular powers. Enormous pure sources and complete trajectories are not materialized."
+  },
+  "witness_checks": {
+    "R": 14,
+    "r": 5,
+    "j": 1,
+    "H": 128,
+    "weight": "16768443090418316695505142264862585407984927798814999280451083865077921806854985",
+    "unit": "73880250460211930691604536083959457230601810907118436165527",
+    "q": "176366572999724355306485026645287596444635785045530339819442798453538989821683684113499",
+    "source_bits": [
+      308,
+      297,
+      307,
+      305
+    ],
+    "first_arrival_clocks": [
+      2683,
+      3675,
+      2682,
+      2680
+    ],
+    "scope": "The kernel certifies positive coordinates, odd exit, secondary separation condition and all four arrivals at one. Python also checks first-arrival minimality and both separated windows."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 1,
+        "H": 32,
+        "N_bits": 196779,
+        "S_bits": 131254,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 16,
+        "H": 128,
+        "N_bits": 197038,
+        "S_bits": 131513,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 1,
+        "H": 32,
+        "N_bits": 3145900,
+        "S_bits": 2097335,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 16,
+        "H": 128,
+        "N_bits": 3146161,
+        "S_bits": 2097596,
+        "full_growing_prefixes_replayed": false
+      }
+    ],
+    "scope": "Exact weighted coordinates, four transition tails, two secondary tails and both separated windows are checked. Full growing prefixes are not iterated."
+  }
+}

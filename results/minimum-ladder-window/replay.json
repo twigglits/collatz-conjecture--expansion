@@ -1,0 +1,265 @@
+{
+  "status": "passed",
+  "counts": {
+    "complete_shadow_states": 113014,
+    "attaining_shadow_inverse_steps": 70785,
+    "attaining_shadow_forward_steps": 70785,
+    "attaining_shadow_paths": 1089,
+    "small_certificate_tuples": 672,
+    "small_ordinary_steps": 56,
+    "nonvacuous_small_certificate_tuples": 12,
+    "reference_complete_trees": 20096,
+    "reference_tree_states": 100008,
+    "frontier_forward_steps": 69789,
+    "frontier_lifted_trees": 498,
+    "frontier_lifted_states": 8028,
+    "word_split_checks": 5458,
+    "split_inverse_words": 1855,
+    "actual_prefix_residue_checks": 678045,
+    "actual_tree_forward_steps": 309256,
+    "actual_complete_inverse_queries": 51,
+    "actual_inverse_states": 15407,
+    "actual_ordinary_prefix_steps": 678045,
+    "actual_shortcut_prefix_steps": 406827,
+    "actual_target_visits": 135603,
+    "actual_full_prefixes": 4,
+    "actual_partial_prefixes": 2,
+    "modular_window_checks": 4128
+  },
+  "shadows": {
+    "complete_even_budget": 22,
+    "maximum_odd_count": 45,
+    "attainment_i_interval": [
+      0,
+      32
+    ],
+    "attainment_f_interval": [
+      0,
+      32
+    ],
+    "scope": "The complete finite negative companion tree checks the sharper bound at every state. Attaining paths are independently reversed under the deterministic magnitude map. No negative orbit conjecture is assumed."
+  },
+  "small_certificate": {
+    "positive_source_interval": [
+      1,
+      6
+    ],
+    "zero_source_also_checked": true,
+    "nonvacuous_rows": [
+      {
+        "p": 3,
+        "t": 0,
+        "x": 3,
+        "f": 0,
+        "o": 0
+      },
+      {
+        "p": 3,
+        "t": 1,
+        "x": 10,
+        "f": 1,
+        "o": 0
+      },
+      {
+        "p": 3,
+        "t": 3,
+        "x": 16,
+        "f": 2,
+        "o": 0
+      },
+      {
+        "p": 3,
+        "t": 3,
+        "x": 16,
+        "f": 2,
+        "o": 1
+      },
+      {
+        "p": 5,
+        "t": 1,
+        "x": 16,
+        "f": 2,
+        "o": 0
+      },
+      {
+        "p": 6,
+        "t": 0,
+        "x": 6,
+        "f": 1,
+        "o": 0
+      },
+      {
+        "p": 6,
+        "t": 1,
+        "x": 3,
+        "f": 0,
+        "o": 0
+      },
+      {
+        "p": 6,
+        "t": 2,
+        "x": 10,
+        "f": 1,
+        "o": 0
+      },
+      {
+        "p": 6,
+        "t": 2,
+        "x": 10,
+        "f": 1,
+        "o": 1
+      },
+      {
+        "p": 6,
+        "t": 4,
+        "x": 16,
+        "f": 2,
+        "o": 0
+      },
+      {
+        "p": 6,
+        "t": 4,
+        "x": 16,
+        "f": 2,
+        "o": 1
+      },
+      {
+        "p": 6,
+        "t": 4,
+        "x": 16,
+        "f": 2,
+        "o": 2
+      }
+    ],
+    "excluded_case": {
+      "f": 1,
+      "m": 8,
+      "reference_target": 8,
+      "predecessor": 3,
+      "even": 0,
+      "odd": 2
+    },
+    "scope": "All tuples of the axiom-free kernel certificate are replayed. Magnitude 8 is impossible in the negative companion tree; allowing it would invalidate the reference multiplier inequality."
+  },
+  "reference_and_lift": {
+    "extra_budget_interval": [
+      0,
+      10
+    ],
+    "reference_box": "Every f=0..s and m=5..5*2^f except m=8; even budget s-f.",
+    "lifted_q_values": [
+      1,
+      5,
+      17
+    ],
+    "scope": "The reference inequality is checked over its entire stated finite box, including magnitudes not known to be negative companions. Lifted trees at selected magnitudes are complete, with forward replay of every state. Generic X=8+3^K*q here need not be a pure power of eight."
+  },
+  "word_splits": {
+    "target_interval": [
+      1,
+      64
+    ],
+    "even_budget": 5,
+    "scope": "Every finite inverse word in this range is split at every possible odd count. Both ordinary path segments are replayed independently."
+  },
+  "actual_ladders": {
+    "rows": [
+      {
+        "s": 0,
+        "h": 0,
+        "K": 6,
+        "R": 1459,
+        "source_bits": 4377,
+        "prefix_clock": 7295,
+        "target_visits": 1458,
+        "complete_growing_prefix": true,
+        "complete_inverse_i_interval": [
+          0,
+          12
+        ]
+      },
+      {
+        "s": 0,
+        "h": 1,
+        "K": 6,
+        "R": 2917,
+        "source_bits": 8751,
+        "prefix_clock": 14585,
+        "target_visits": 2916,
+        "complete_growing_prefix": true,
+        "complete_inverse_i_interval": [
+          0,
+          12
+        ]
+      },
+      {
+        "s": 1,
+        "h": 0,
+        "K": 8,
+        "R": 13123,
+        "source_bits": 39369,
+        "prefix_clock": 65615,
+        "target_visits": 13122,
+        "complete_growing_prefix": true,
+        "complete_inverse_i_interval": [
+          0,
+          10
+        ]
+      },
+      {
+        "s": 2,
+        "h": 0,
+        "K": 10,
+        "R": 118099,
+        "source_bits": 354297,
+        "prefix_clock": 590495,
+        "target_visits": 118098,
+        "complete_growing_prefix": true,
+        "complete_inverse_i_interval": [
+          0,
+          6
+        ]
+      },
+      {
+        "s": 3,
+        "h": 0,
+        "K": 12,
+        "R": 1062883,
+        "source_bits": 3188649,
+        "prefix_clock": 40,
+        "target_visits": 7,
+        "complete_growing_prefix": false,
+        "complete_inverse_i_interval": [
+          0,
+          4
+        ]
+      },
+      {
+        "s": 4,
+        "h": 0,
+        "K": 14,
+        "R": 9565939,
+        "source_bits": 28697817,
+        "prefix_clock": 15,
+        "target_visits": 2,
+        "complete_growing_prefix": false,
+        "complete_inverse_i_interval": [
+          0,
+          1
+        ]
+      }
+    ],
+    "scope": "Every state of each listed ordinary prefix is replayed. The first four examples cover the entire growing ladder; the last two cover only the stated initial blocks. Complete inverse optimization is restricted to the explicitly listed early indices; the theorem for all visits is a separate kernel proof. No eventual convergence of these sources is inferred."
+  },
+  "modular_families": {
+    "s_interval": [
+      0,
+      128
+    ],
+    "h_interval": [
+      0,
+      31
+    ],
+    "scope": "Only exponents and congruences are computed here. Except for the six separately listed streamed examples, no source 8**R-5 is materialized in this section."
+  }
+}

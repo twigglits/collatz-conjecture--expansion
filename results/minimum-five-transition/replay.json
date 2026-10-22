@@ -1,0 +1,504 @@
+{
+  "status": "passed",
+  "counts": {
+    "shortcut_edges": 2137158,
+    "inverse_edges": 2137158,
+    "generic_bridge_paths": 260,
+    "generic_bridge_steps": 1690,
+    "generic_local_meetings": 1024,
+    "generic_local_steps": 12288,
+    "generic_third_profile_steps": 165955,
+    "generic_third_profile_pairs": 335,
+    "generic_third_meeting_steps": 135980,
+    "generic_third_meetings": 268,
+    "secondary_phase_states": 156756,
+    "secondary_actual_value_pairs": 998,
+    "secondary_phase_pairs": 1098,
+    "secondary_phase_steps": 154560,
+    "finite_five_units": 8,
+    "ordinary_checkpoints": 5580,
+    "full_N_steps": 1086604,
+    "full_S_steps": 1012038,
+    "older_partner_prefix_steps": 1418420,
+    "complete_four_source_cases": 930,
+    "complete_cases_with_secondary_separation": 830,
+    "window_states_replayed": 371559,
+    "windows_with_actual_value_sets": 737,
+    "separated_triples": 754,
+    "window_ordinary_steps": 369297,
+    "primary_phase_states": 247706,
+    "primary_actual_value_pairs": 737,
+    "primary_phase_pairs": 754,
+    "primary_phase_steps": 246198,
+    "complete_cases_with_primary_separation": 750,
+    "complete_cases_with_both_windows": 670,
+    "modular_pure_lifts": 366,
+    "larger_transition_steps": 2732,
+    "larger_secondary_steps": 1372,
+    "larger_third_steps": 2980
+  },
+  "generic_checks": {
+    "bridge_q_interval": [
+      1,
+      128
+    ],
+    "additional_q": [
+      "2**128+1",
+      "3**128+7"
+    ],
+    "local_t_interval": [
+      0,
+      1023
+    ],
+    "k_interval": [
+      0,
+      64
+    ],
+    "additional_k": [
+      128,
+      1024
+    ],
+    "profile_units": [
+      1,
+      2,
+      3,
+      5,
+      17
+    ],
+    "meeting_unit_offsets": [
+      0,
+      1,
+      2,
+      17
+    ],
+    "words": {
+      "N_bridge": "OOEEOE",
+      "S_bridge": "EOE",
+      "cycle": "OOE",
+      "N_local": "EOEE",
+      "S_local": "OEEEO"
+    },
+    "scope": "Finite generic bridges, arbitrary-unit third profiles, conditional meetings and secondary separated windows supplement the universal kernel identities. Full shortcut meetings add one shared halving to the kernel clocks."
+  },
+  "complete_paths": {
+    "distinct_cases": 930,
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "j": 4096,
+      "k": 4096,
+      "weight_bits": 45232,
+      "N_bits": 49507,
+      "S_bits": 45273,
+      "a_bits": 52285,
+      "b_bits": 52290,
+      "d_bits": 52292,
+      "N_clock": 82499,
+      "S_clock": 74086,
+      "secondary_horizon": 12286,
+      "primary_horizon": 45052
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 512,
+        "weight_bits": 1676,
+        "N_bits": 1720,
+        "S_bits": 1717,
+        "a_bits": 1716,
+        "b_bits": 1720,
+        "d_bits": 1806,
+        "N_clock": 2859,
+        "S_clock": 2856,
+        "primary_horizon": 7,
+        "secondary_horizon": 1534
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 4096,
+        "weight_bits": 12428,
+        "N_bits": 12472,
+        "S_bits": 12469,
+        "a_bits": 12468,
+        "b_bits": 12472,
+        "d_bits": 13167,
+        "N_clock": 20779,
+        "S_clock": 20776,
+        "primary_horizon": 7,
+        "secondary_horizon": 12286
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 16,
+        "k": 512,
+        "weight_bits": 1840,
+        "N_bits": 1884,
+        "S_bits": 1881,
+        "a_bits": 1880,
+        "b_bits": 1885,
+        "d_bits": 1971,
+        "N_clock": 3129,
+        "S_clock": 3126,
+        "primary_horizon": 172,
+        "secondary_horizon": 1534
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 16,
+        "k": 4096,
+        "weight_bits": 12592,
+        "N_bits": 12636,
+        "S_bits": 12633,
+        "a_bits": 12632,
+        "b_bits": 12638,
+        "d_bits": 13333,
+        "N_clock": 21049,
+        "S_clock": 21046,
+        "primary_horizon": 172,
+        "secondary_horizon": 12286
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 512,
+        "k": 1,
+        "weight_bits": 5764,
+        "N_bits": 5808,
+        "S_bits": 5805,
+        "a_bits": 5804,
+        "b_bits": 5856,
+        "d_bits": 5855,
+        "N_clock": 9502,
+        "S_clock": 9499,
+        "primary_horizon": 5628,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 512,
+        "k": 16,
+        "weight_bits": 5806,
+        "N_bits": 5850,
+        "S_bits": 5847,
+        "a_bits": 5846,
+        "b_bits": 5898,
+        "d_bits": 5900,
+        "N_clock": 9577,
+        "S_clock": 9574,
+        "primary_horizon": 5628,
+        "secondary_horizon": 46
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 4096,
+        "k": 1,
+        "weight_bits": 45188,
+        "N_bits": 45232,
+        "S_bits": 45229,
+        "a_bits": 45228,
+        "b_bits": 45620,
+        "d_bits": 45619,
+        "N_clock": 74014,
+        "S_clock": 74011,
+        "primary_horizon": 45052,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 4096,
+        "k": 16,
+        "weight_bits": 45232,
+        "N_bits": 45276,
+        "S_bits": 45273,
+        "a_bits": 45272,
+        "b_bits": 45664,
+        "d_bits": 45666,
+        "N_clock": 74089,
+        "S_clock": 74086,
+        "primary_horizon": 45052,
+        "secondary_horizon": 46
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 1,
+        "k": 1,
+        "weight_bits": 5719,
+        "N_bits": 5763,
+        "S_bits": 5760,
+        "a_bits": 5808,
+        "b_bits": 5811,
+        "d_bits": 5811,
+        "N_clock": 9430,
+        "S_clock": 9427,
+        "primary_horizon": 7,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 1,
+        "k": 16,
+        "weight_bits": 5764,
+        "N_bits": 5808,
+        "S_bits": 5805,
+        "a_bits": 5853,
+        "b_bits": 5856,
+        "d_bits": 5858,
+        "N_clock": 9505,
+        "S_clock": 9502,
+        "primary_horizon": 7,
+        "secondary_horizon": 46
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 1,
+        "k": 1,
+        "weight_bits": 45143,
+        "N_bits": 45187,
+        "S_bits": 45184,
+        "a_bits": 45570,
+        "b_bits": 45574,
+        "d_bits": 45574,
+        "N_clock": 73942,
+        "S_clock": 73939,
+        "primary_horizon": 7,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 1,
+        "k": 16,
+        "weight_bits": 45189,
+        "N_bits": 45233,
+        "S_bits": 45230,
+        "a_bits": 45617,
+        "b_bits": 45621,
+        "d_bits": 45623,
+        "N_clock": 74017,
+        "S_clock": 74014,
+        "primary_horizon": 7,
+        "secondary_horizon": 46
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 1,
+        "k": 1,
+        "weight_bits": 141,
+        "N_bits": 49295,
+        "S_bits": 32922,
+        "a_bits": 52072,
+        "b_bits": 52076,
+        "d_bits": 52075,
+        "N_clock": 82154,
+        "S_clock": 65781,
+        "primary_horizon": 7,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 1,
+        "k": 16,
+        "weight_bits": 188,
+        "N_bits": 49342,
+        "S_bits": 32969,
+        "a_bits": 52120,
+        "b_bits": 52124,
+        "d_bits": 52126,
+        "N_clock": 82229,
+        "S_clock": 65856,
+        "primary_horizon": 7,
+        "secondary_horizon": 46
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 16,
+        "k": 1,
+        "weight_bits": 308,
+        "N_bits": 49462,
+        "S_bits": 33089,
+        "a_bits": 52240,
+        "b_bits": 52245,
+        "d_bits": 52245,
+        "N_clock": 82424,
+        "S_clock": 66051,
+        "primary_horizon": 172,
+        "secondary_horizon": 1
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 16,
+        "k": 16,
+        "weight_bits": 353,
+        "N_bits": 49507,
+        "S_bits": 33134,
+        "a_bits": 52285,
+        "b_bits": 52290,
+        "d_bits": 52292,
+        "N_clock": 82499,
+        "S_clock": 66126,
+        "primary_horizon": 172,
+        "secondary_horizon": 46
+      }
+    ],
+    "regular_R_interval": [
+      14,
+      18
+    ],
+    "regular_r_interval": [
+      5,
+      8
+    ],
+    "regular_j_interval": [
+      0,
+      4
+    ],
+    "regular_k_interval": [
+      0,
+      8
+    ],
+    "additional_R": [
+      128,
+      1024,
+      16384
+    ],
+    "additional_r_j_k": [
+      128,
+      512,
+      4096
+    ],
+    "scope": "N,S are replayed completely to a common value, with checkpoints at all three block boundaries. P,Q have full transition-prefix replays. Positive odd u,q,v and source inequalities are checked. For j,k positive both prior separated windows are checked. No earliest-meeting claim is made."
+  },
+  "modular_checks": {
+    "regular_r_interval": [
+      5,
+      8
+    ],
+    "regular_j_interval": [
+      0,
+      4
+    ],
+    "regular_k_interval": [
+      0,
+      8
+    ],
+    "additional_coordinates": [
+      [
+        128,
+        128,
+        128
+      ],
+      [
+        512,
+        1,
+        1
+      ],
+      [
+        5,
+        512,
+        4096
+      ]
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "j": 128,
+        "k": 128,
+        "R_bits": 3275,
+        "B_bits": 0
+      },
+      {
+        "r": 128,
+        "j": 128,
+        "k": 128,
+        "R_bits": 3688,
+        "B_bits": 417
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "k": 1,
+        "R_bits": 5721,
+        "B_bits": 0
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "k": 1,
+        "R_bits": 6264,
+        "B_bits": 547
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "k": 4096,
+        "R_bits": 18050,
+        "B_bits": 0
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "k": 4096,
+        "R_bits": 22692,
+        "B_bits": 4646
+      }
+    ],
+    "scope": "Pure exponent coordinates, all three odd units and the last exit residue are checked with modular powers. Enormous pure starting values and trajectories are not materialized."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 1,
+        "k": 16,
+        "N_bits": 196798,
+        "S_bits": 131273,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 16,
+        "k": 128,
+        "N_bits": 197299,
+        "S_bits": 131774,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 1,
+        "k": 16,
+        "N_bits": 3145918,
+        "S_bits": 2097353,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 16,
+        "k": 128,
+        "N_bits": 3146419,
+        "S_bits": 2097854,
+        "full_growing_prefixes_replayed": false
+      }
+    ],
+    "scope": "Exact weighted coordinates, all transition and later-merger tails and both separated windows are checked. Full initial growing prefixes are not replayed."
+  }
+}

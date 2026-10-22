@@ -1,0 +1,22 @@
+'ClockedMinimum.minimum_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.minimum_by_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.minimum_by_mono' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.finite_population_minimum_clock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.first_odd_below_record' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.minimum_after_record' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.record_minimum_at' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.record_minimum_by' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.record_minimum_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.first_minimum_unique' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.record_first_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.record_first_minimum_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.coupled_first_minimum_clocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.coupled_record_minimum_by' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.coupled_first_odd_below_minimum_by' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ClockedMinimum.minimum_by_of_hit_one' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.minimum_by_iff_hit_one' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.target_before_or_after' depends on axioms: [propext, Quot.sound]
+'ClockedMinimum.geometric_chernoff_comparison' does not depend on any axioms
+'ClockedMinimum.log_two_partial_sum_comparison' does not depend on any axioms
+'ClockedMinimum.clock_coefficient_comparison' does not depend on any axioms
+'ClockedMinimum.ordinary_clock_budget' depends on axioms: [propext, Quot.sound]

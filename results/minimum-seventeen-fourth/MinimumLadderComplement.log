@@ -1,0 +1,23 @@
+'MinimumLadderComplement.weighted_step' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.weighted_ladder' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.smaller_source_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.complementary_bridge' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.complementary_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.complementary_coordinates' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.complementary_escape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.complementary_not_least' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.finite_residue_injection' does not depend on any axioms
+'MinimumLadderComplement.least_exponent_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.outside_nine_not_least' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.complementary_first_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.all_long_blocks_have_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.old_progression_resolved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.remaining_progression' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.remaining_profile' depends on axioms: [propext, Quot.sound]
+'MinimumLadderComplement.remaining_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.remaining_merge_suffices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.half_period_flip' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.unbounded_complementary_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinimumLadderComplement.unbounded_complementary_first_targets' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

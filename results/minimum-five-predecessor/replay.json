@@ -1,0 +1,845 @@
+{
+  "status": "passed",
+  "counts": {
+    "size_comparison_pairs": 3060,
+    "shortcut_edges": 384403,
+    "inverse_edges": 384403,
+    "generic_immediate_predecessors": 1224,
+    "even_units_outside_merger_hypothesis": 72,
+    "reference_certificate_states": 683,
+    "inverse_forward_steps": 627800,
+    "inverse_complete_trees": 43,
+    "inverse_tree_states": 29369,
+    "ordinary_checkpoints": 3708,
+    "complete_N_steps": 626635,
+    "complete_U_steps": 1854,
+    "complete_smaller_candidates": 784,
+    "complete_d_three_mod_four": 460,
+    "complete_candidate_pairs": 927,
+    "complete_odd_exit_residue_1": 223,
+    "complete_odd_exit_residue_3": 244,
+    "complete_larger_candidates": 143,
+    "modular_pure_lifts": 150,
+    "larger_primary_tail_steps": 724,
+    "larger_secondary_tail_steps": 676,
+    "larger_third_tail_steps": 1376,
+    "larger_U_steps": 4
+  },
+  "generic_checks": {
+    "size_s_interval": [
+      5,
+      64
+    ],
+    "size_t_interval": [
+      14,
+      64
+    ],
+    "inside_pairs": [
+      [
+        5,
+        14
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        5,
+        18
+      ],
+      [
+        5,
+        19
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        6,
+        16
+      ],
+      [
+        6,
+        17
+      ],
+      [
+        6,
+        18
+      ],
+      [
+        6,
+        19
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        7,
+        16
+      ],
+      [
+        7,
+        17
+      ],
+      [
+        7,
+        18
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        8,
+        18
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        9,
+        17
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        10,
+        16
+      ],
+      [
+        10,
+        17
+      ],
+      [
+        11,
+        14
+      ],
+      [
+        11,
+        15
+      ],
+      [
+        11,
+        16
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        15,
+        14
+      ]
+    ],
+    "generic_k_interval": [
+      0,
+      32
+    ],
+    "additional_k": [
+      128,
+      1024,
+      4096
+    ],
+    "odd_v_interval": [
+      1,
+      63
+    ],
+    "additional_odd_v": [
+      "2**128+1",
+      "3**128+2"
+    ],
+    "scope": "Finite arithmetic supplements the universal size boundary. Odd units have the immediate merger; even units are deliberately outside its hypothesis."
+  },
+  "certificate_checks": {
+    "reference_states": 683,
+    "even_budget": 14,
+    "reference_precision": 14,
+    "max_odd_edges": 13,
+    "max_reference_offset": 32768,
+    "rows": [
+      {
+        "K": 14,
+        "unit_bits": 1,
+        "target_bits": 23,
+        "states": 683
+      },
+      {
+        "K": 14,
+        "unit_bits": 2,
+        "target_bits": 24,
+        "states": 683
+      },
+      {
+        "K": 14,
+        "unit_bits": 2,
+        "target_bits": 24,
+        "states": 683
+      },
+      {
+        "K": 14,
+        "unit_bits": 5,
+        "target_bits": 27,
+        "states": 683
+      },
+      {
+        "K": 14,
+        "unit_bits": 129,
+        "target_bits": 151,
+        "states": 683
+      },
+      {
+        "K": 16,
+        "unit_bits": 1,
+        "target_bits": 26,
+        "states": 683
+      },
+      {
+        "K": 16,
+        "unit_bits": 2,
+        "target_bits": 27,
+        "states": 683
+      },
+      {
+        "K": 16,
+        "unit_bits": 2,
+        "target_bits": 27,
+        "states": 683
+      },
+      {
+        "K": 16,
+        "unit_bits": 5,
+        "target_bits": 30,
+        "states": 683
+      },
+      {
+        "K": 16,
+        "unit_bits": 129,
+        "target_bits": 154,
+        "states": 683
+      },
+      {
+        "K": 32,
+        "unit_bits": 1,
+        "target_bits": 51,
+        "states": 683
+      },
+      {
+        "K": 32,
+        "unit_bits": 2,
+        "target_bits": 52,
+        "states": 683
+      },
+      {
+        "K": 32,
+        "unit_bits": 2,
+        "target_bits": 53,
+        "states": 683
+      },
+      {
+        "K": 32,
+        "unit_bits": 5,
+        "target_bits": 55,
+        "states": 683
+      },
+      {
+        "K": 32,
+        "unit_bits": 129,
+        "target_bits": 179,
+        "states": 683
+      },
+      {
+        "K": 128,
+        "unit_bits": 1,
+        "target_bits": 203,
+        "states": 683
+      },
+      {
+        "K": 128,
+        "unit_bits": 2,
+        "target_bits": 204,
+        "states": 683
+      },
+      {
+        "K": 128,
+        "unit_bits": 2,
+        "target_bits": 205,
+        "states": 683
+      },
+      {
+        "K": 128,
+        "unit_bits": 5,
+        "target_bits": 207,
+        "states": 683
+      },
+      {
+        "K": 128,
+        "unit_bits": 129,
+        "target_bits": 331,
+        "states": 683
+      },
+      {
+        "K": 4096,
+        "unit_bits": 1,
+        "target_bits": 6493,
+        "states": 683
+      },
+      {
+        "K": 4096,
+        "unit_bits": 2,
+        "target_bits": 6494,
+        "states": 683
+      },
+      {
+        "K": 4096,
+        "unit_bits": 2,
+        "target_bits": 6494,
+        "states": 683
+      },
+      {
+        "K": 4096,
+        "unit_bits": 5,
+        "target_bits": 6497,
+        "states": 683
+      },
+      {
+        "K": 4096,
+        "unit_bits": 129,
+        "target_bits": 6621,
+        "states": 683
+      },
+      {
+        "K": 14,
+        "unit_bits": 165,
+        "target_bits": 187,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 166,
+        "target_bits": 214,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 0,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 166,
+        "target_bits": 372,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 0,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 14,
+        "unit_bits": 177,
+        "target_bits": 199,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 176,
+        "target_bits": 224,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 177,
+        "target_bits": 383,
+        "states": 683,
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 14,
+        "unit_bits": 234,
+        "target_bits": 257,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 235,
+        "target_bits": 282,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 235,
+        "target_bits": 441,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 14,
+        "unit_bits": 246,
+        "target_bits": 268,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 247,
+        "target_bits": 295,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 1,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 246,
+        "target_bits": 452,
+        "states": 683,
+        "R": 36,
+        "r": 5,
+        "j": 1,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 14,
+        "unit_bits": 524,
+        "target_bits": 546,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 526,
+        "target_bits": 573,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 0,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 527,
+        "target_bits": 733,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 0,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 14,
+        "unit_bits": 538,
+        "target_bits": 560,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 30,
+        "unit_bits": 538,
+        "target_bits": 586,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 1,
+        "k": 14,
+        "source_comparison": "N<U<=every_predecessor"
+      },
+      {
+        "K": 130,
+        "unit_bits": 533,
+        "target_bits": 739,
+        "states": 683,
+        "R": 128,
+        "r": 5,
+        "j": 1,
+        "k": 64,
+        "source_comparison": "N<U<=every_predecessor"
+      }
+    ],
+    "scope": "Complete inverse trees have no imposed odd-edge or total-depth cap. Every state is compared with the reference formula and replayed forward. These concern predecessors of U=d-2, not every predecessor of the later N endpoint or every coalescing source."
+  },
+  "complete_paths": {
+    "distinct_cases": 927,
+    "inside_parameter_quadruples": 392,
+    "inside_weight_offsets": [
+      0,
+      1
+    ],
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "j": 4096,
+      "k": 4096,
+      "weight_bits": 45200,
+      "N_bits": 49308,
+      "U_bits": 52090,
+      "v_bits": 52068,
+      "N_clock_with_shared_halving": 82175
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 128,
+        "weight_bits": 519,
+        "N_bits": 563,
+        "U_bits": 584,
+        "v_bits": 175,
+        "N_clock_with_shared_halving": 935,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 512,
+        "weight_bits": 1673,
+        "N_bits": 1717,
+        "U_bits": 1803,
+        "v_bits": 177,
+        "N_clock_with_shared_halving": 2855,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1,
+        "k": 4096,
+        "weight_bits": 12425,
+        "N_bits": 12469,
+        "U_bits": 13164,
+        "v_bits": 177,
+        "N_clock_with_shared_halving": 20775,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 128,
+        "k": 6,
+        "weight_bits": 1550,
+        "N_bits": 1594,
+        "U_bits": 1606,
+        "v_bits": 1584,
+        "N_clock_with_shared_halving": 2611,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 512,
+        "k": 6,
+        "weight_bits": 5776,
+        "N_bits": 5820,
+        "U_bits": 5869,
+        "v_bits": 5847,
+        "N_clock_with_shared_halving": 9523,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 4096,
+        "k": 6,
+        "weight_bits": 45200,
+        "N_bits": 45244,
+        "U_bits": 45632,
+        "v_bits": 45610,
+        "N_clock_with_shared_halving": 74035,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 128,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 1507,
+        "N_bits": 1551,
+        "U_bits": 1562,
+        "v_bits": 1540,
+        "N_clock_with_shared_halving": 2539,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 5732,
+        "N_bits": 5776,
+        "U_bits": 5824,
+        "v_bits": 5802,
+        "N_clock_with_shared_halving": 9451,
+        "candidate_smaller": false
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 45156,
+        "N_bits": 45200,
+        "U_bits": 45588,
+        "v_bits": 45566,
+        "N_clock_with_shared_halving": 73963,
+        "candidate_smaller": false
+      },
+      {
+        "R": 128,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 155,
+        "N_bits": 541,
+        "U_bits": 560,
+        "v_bits": 538,
+        "N_clock_with_shared_halving": 895,
+        "candidate_smaller": false
+      },
+      {
+        "R": 1024,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 153,
+        "N_bits": 3227,
+        "U_bits": 3398,
+        "v_bits": 3376,
+        "N_clock_with_shared_halving": 5375,
+        "candidate_smaller": false
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "weight_bits": 154,
+        "N_bits": 49308,
+        "U_bits": 52090,
+        "v_bits": 52068,
+        "N_clock_with_shared_halving": 82175,
+        "candidate_smaller": false
+      }
+    ],
+    "scope": "Full N paths and immediate U predecessors are replayed to a common value after one shared halving. All 392 parameter quadruples in the smaller-candidate region have two weights, while boundary and large cases check strict reverse inequalities. No earliest-meeting claim."
+  },
+  "modular_checks": {
+    "regular_r": [
+      5,
+      6
+    ],
+    "regular_j_interval": [
+      0,
+      3
+    ],
+    "regular_k_interval": [
+      0,
+      8
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "j": 128,
+        "k": 128,
+        "R_bits": 3272,
+        "B_bits": 0
+      },
+      {
+        "r": 128,
+        "j": 128,
+        "k": 128,
+        "R_bits": 3685,
+        "B_bits": 417
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "k": 6,
+        "R_bits": 5733,
+        "B_bits": 0
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "k": 6,
+        "R_bits": 6281,
+        "B_bits": 552
+      },
+      {
+        "r": 5,
+        "j": 128,
+        "k": 1024,
+        "R_bits": 4607,
+        "B_bits": 0
+      },
+      {
+        "r": 5,
+        "j": 128,
+        "k": 1024,
+        "R_bits": 5793,
+        "B_bits": 1190
+      }
+    ],
+    "maxima": {
+      "exponent_bits": 6281
+    },
+    "scope": "Pure coordinates and odd units are checked modulo powers of two. All exponents exceed the proved lower bound36. Pure starting values, trajectories and candidate sizes are not materialized; their universal size comparison is a kernel theorem."
+  },
+  "larger_tails": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "N_bits": 196765,
+        "U_bits": 207899,
+        "full_initial_prefix_replayed": false,
+        "large_inverse_tree_enumerated": false
+      },
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 16,
+        "k": 128,
+        "N_bits": 197296,
+        "U_bits": 208453,
+        "full_initial_prefix_replayed": false,
+        "large_inverse_tree_enumerated": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 1,
+        "k": 6,
+        "N_bits": 3145885,
+        "U_bits": 3324062,
+        "full_initial_prefix_replayed": false,
+        "large_inverse_tree_enumerated": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 16,
+        "k": 128,
+        "N_bits": 3146416,
+        "U_bits": 3324615,
+        "full_initial_prefix_replayed": false,
+        "large_inverse_tree_enumerated": false
+      }
+    ],
+    "scope": "Only the three N transition tails and the one-step U merger are replayed. Exact large source comparisons are checked, but full initial prefixes and large inverse trees are not enumerated."
+  }
+}

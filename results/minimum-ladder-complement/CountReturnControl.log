@@ -1,0 +1,12 @@
+'CountReturnControl.absolute_pair_restart' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.raw_children' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.raw_mass_recurrence' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.holding_coefficient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountReturnControl.balanced_even_transition' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.balanced_odd_departure' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.positive_even_hold' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.positive_odd_return' depends on axioms: [propext, Quot.sound]
+'CountReturnControl.odd_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountReturnControl.even_return_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CountReturnControl.fractional_constant_checks' does not depend on any axioms
+'CountReturnControl.return_budget_constants' does not depend on any axioms

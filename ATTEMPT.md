@@ -2596,6 +2596,375 @@ progression checks without materializing those enormous sources.
 Universal family convergence, a useful detour on every possible least
 orbit, the cap/residual bounds, and full Collatz remain unresolved.
 
+The [inverse-locality analysis](docs/MINIMUM-INVERSE-LOCALITY.md) proves
+that no fixed inverse budget suffices at every first residue-20 visit,
+even after discarding any finite collection of sources. For r>=1, set
+`K=2*(r+10)`, `n=507+16*3^(K-3)*q`, and `b=857+3^K*q`. The first
+visit is b at ordinary clock seven, the prefix minimum is n, and the
+minimum over **all** inverse words with at most r even inputs is n.
+There is no imposed odd-count cutoff.
+
+The kernel proof first bounds the odd count by `o<2*(e+d)` whenever
+`b+1<=2^d`. It then transfers the complete bounded inverse tree between
+b and `b+3^K*q` for `K>=2*(r+d)`, preserving every guard and the exact
+affine displacement. An axiom-free finite avoidance certificate proves
+that the only positive predecessor of 857 at most 507 is 507, at clock
+seven. The resulting minimum inverse multiplier 16/27 makes this anchor
+stable under the transfer. The anchor itself reaches one at clock35.
+
+For the existing return ladder, the same kernel obstruction holds for
+`R=3+2*3^K*h`, at the first target b_1. The sources are unbounded.
+Thus for every fixed extra budget s and bound B, some odd R has
+`N=8^R-5>B` and `M_(1+s)(b_1)=N`. A budget that succeeds at some
+suitably chosen **later** visit for each source remains possible; the
+new theorem does not exclude that different quantifier.
+
+The module has 26 audited kernel roots. Independent Python checks
+complete inverse trees at both ends of the congruence transfer and
+actual seven-step prefixes. Enormous return-ladder sources are handled
+symbolically in Lean and only modularly in Python. The verifier supports
+multiple Lean threads per process while preserving dependency order.
+No universal convergence, cap/residual bound, or exclusion of all
+nontrivial cycles or divergent orbits has been obtained.
+
+The [whole-window analysis](docs/MINIMUM-LADDER-WINDOW.md) strengthens
+that obstruction to **every target in the same growing return-ladder
+prefix**. For each fixed extra budget s, put `K=2*(s+3)` and
+`R=1+2*3^K*(h+1)`. The kernel proves
+`M_(i+s)(b_i)=N=8^R-5` for every `0<=i<R`. The allowed inverse
+budget therefore grows with i, yet none of the R-1 actual residue-20
+visits before clock5R gives a smaller predecessor within that budget.
+Both the source and the number of these visits are unbounded.
+
+A sharper negative-companion invariant gives `m<=5*2^f` at the
+odd-count frontier, where f counts extra even operations already spent.
+It is attained exactly by a displayed word for every i,f. Every possible
+remaining inverse suffix transfers to a positive reference
+`a=2^(f+3)-m`. A finite kernel certificate on starts1..6 proves that
+its predecessor is at least3 and its multiplier at least`2^(-f)`.
+The one arithmetic exception, m=8, cannot occur in the companion tree.
+This proves the lower bound for all words, with no search cutoff on
+odd operations or visit indices.
+
+The module has16 audited kernel roots, including an axiom-free finite
+certificate. Independent replay separates complete companion and inverse
+trees, actual positive prefixes, and modular-only checks of larger
+exponents. The result rules out a fixed extra budget succeeding at some
+target **within this growing prefix**, even after arbitrarily many visits.
+It leaves visits after clock5R and source-dependent extra budgets open.
+No single source is shown to have infinitely many obstructed visits,
+and universal convergence, both counterexample exclusions, and full
+Collatz remain unresolved.
+
+The [ladder-exit analysis](docs/MINIMUM-LADDER-EXIT.md) now supplies
+smaller coalescing sources after that growing prefix for four of the
+eight odd exponent classes modulo 16. If R>=3 and R=7 mod8, then
+`P=2^(2R+1)-1<N=8^R-5` and `C^(4R+9)(P)=C^(5R+8)(N)`.
+For R=11 mod16 the source is `2^(2R-1)-1`, meeting at clocks
+4R+8 and 5R+9; for R=1 mod16 it is `2^(2R+1)-1`, meeting at
+4R+11 and 5R+10. All three identities and the resulting exclusions
+of N as a least counterexample are kernel proofs.
+
+The inverse paths use only four or five even operations at the later
+meeting, with odd counts growing with R. Exact cubic identities show
+that P has about two thirds as many binary digits as N. These meetings
+are outside residue 20 modulo 27; the argument uses ordinary coalescence
+directly. Universal convergence of these N or P is not asserted.
+
+In the whole-window family, choosing h=4a+2 forces R=7 mod8. Thus for
+every fixed extra budget s, every visit-count bound and every source
+bound, one source has the entire earlier prefix obstruction and also
+a smaller predecessor joining eight ordinary steps after its end.
+This is a kernel simultaneous statement about the same source. It shows
+why the long prefix obstruction does not extend to its whole orbit.
+
+The module has 21 audited kernel roots, including an axiom-free period
+certificate. Independent checks distinguish complete positive paths,
+larger algebraic coordinates with short tails, and modular-only cases.
+The remaining exponent classes, a useful coalescence theorem for every
+possible least counterexample, cap/residual estimates and full Collatz
+remain unresolved.
+
+The [variable block-exit analysis](docs/MINIMUM-LADDER-BLOCK-EXIT.md)
+extends those paths to arbitrary post-ladder odd-block lengths. Write
+`3*9^R+5=2^(k+4)*q`, with q positive and odd. If `3^k*q=3 mod4`,
+then `P=2^(2R+1)-1<N` joins N at ordinary clocks 4R+2k+9 and
+5R+2k+8, using exactly five even inverse operations. For k>=2, this
+meeting is the **first residue-20 visit after clock 5R**; the kernel
+excludes every intervening ordinary clock. Binary lifting constructs
+arbitrarily large sources for every k, so the exact delay 2k+8 of this
+first later return is unbounded. No optimal coalescence clock is claimed.
+
+A separate kernel path joins `8^R-5` to `8^(R-1)-5` whenever
+R=3 mod16, with `N=8P+35`. Combined with earlier cases and the
+basic even-exponent restriction, a possible least source in this
+family must have R=1 mod4, k>0, and `3^k*q=1 mod4`. The infinite
+progression R=512h+5 satisfies those necessary conditions at k=6.
+This is arithmetic compatibility, not evidence of a counterexample;
+the R=5 member is already kernel checked to converge.
+
+The module has 25 audited kernel roots, including an axiom-free period
+certificate. Complete positive path replays, larger short-tail checks,
+and modular-only lift families have separate ranges. A universal useful
+return theorem, an intersection theorem for every preceding whole-window
+progression, convergence of the infinite families, cap/residual bounds,
+and full Collatz remain unresolved.
+
+The [complementary exit](docs/MINIMUM-LADDER-COMPLEMENT.md) now resolves
+the preceding R=512h+5 progression as possible least counterexamples.
+For odd R>=3, k>=2, and `3^k*q=1 mod4` in the same factorization,
+the smaller source `P=6*8^(R-1)-5` joins N at ordinary clocks
+5R+2k+4 and 5R+2k+7. The kernel proves `4(P+5)=3(N+5)` and inverse
+counts `(R+4,2R+k)`. This even-inverse cost grows with R.
+
+For k>=3, this is the first residue-20 visit after clock 5R. Thus both
+exit cases now have useful first later targets whenever k>=3, with
+exact delays 2k+7 or 2k+8. A kernel half-period flip constructs
+arbitrarily large complementary sources for every k. For R=512h+5,
+the new first target is at clock 5R+19.
+
+Combining the complementary path with the earlier exclusions forces
+a possible least source `8^R-5`, R>=3, to have **R=9 mod16**, k=1,
+and q=3 mod4. Seven of the eight odd exponent classes are therefore
+excluded as least counterexamples. This does not prove convergence
+of the entire family. For the remaining class, the kernel gives
+`C^(5R+9)(N)=b=(9*9^R-17)/128` and `C^(5R+4)(P)=4b-1`, with
+b=14 mod27. A merger of these endpoints would exclude N, but that
+merger remains an explicit unproved hypothesis. The R=9 member's
+309-step convergence is an independent Python check only.
+
+The module has 21 audited kernel roots. Fresh builds and independent
+replays distinguish complete positive paths, larger short tails,
+modular-only examples, and conditional implications. A useful return
+for arbitrary least-counterexample orbits, the cap/residual estimates,
+and the full Collatz conjecture remain unresolved.
+
+The [three-source cover](docs/MINIMUM-LADDER-COVER.md) closes the remaining
+pure-ladder exponent class. For **every positive R**, the kernel now proves
+that `8^R-5` cannot be a least positive counterexample. This is a universal
+exclusion for that family, not a proof that every member converges.
+
+The new construction also works for `N=8^R*q-5`, R>=3, q>0, whenever
+`9^R*q=73 mod128`. At clock 5R+9, N reaches
+`b=(9^(R+1)*q-17)/128`. Three positive sources smaller than N reach
+`2b+1`, `b-1`, and `a=(b-5)/9`: respectively
+`2^(2R-1)*q-1`, `8^(R-1)*q-5`, and `2*8^(R-2)*q-5`.
+The scalar kernel theorem proves that one of those three partners
+always coalesces with b. The proof splits on parity and, for odd b,
+the two possible exits of its entire odd block; the block length is
+unrestricted. No universal merger of b with the older partner 4b-1
+is assumed or proved.
+
+For pure q=1, the preceding least-exponent restriction forces the new
+residue condition, eliminating every R>=3. Kernel convergence certificates
+`C^7(3)=1` and `C^32(59)=1` supply the two smaller positive exponents.
+The module has 17 audited kernel roots. Independent replays distinguish
+complete positive paths, arbitrary-block examples, larger short tails,
+and modular-only weights.
+
+An arbitrary least counterexample has not been forced into these
+classes. Convergence of all smaller sources, removal of the weighted
+residue condition, the shorter initial-block cases, cap/residual estimates,
+and the full positive-integer Collatz conjecture remain unresolved.
+
+The [doubled-ladder extension](docs/MINIMUM-DOUBLE-LADDER.md) now excludes
+additional sources `N=2*8^R-5`. Odd R are excluded modulo 3. For even R,
+write `R=2^k*s` with k>0 and s positive odd. If `3^k*s=1 mod4`, the kernel
+proves that `P=8^R-5` is positive, smaller than N, and satisfies
+`C^(5R+2k+7)(P)=C^(5R+2k+8)(N)`. The secondary block length k is unrestricted.
+
+The proof includes the exact identity `9^(2^k*s)=1+2^(k+3)*u`, with
+`u=s mod4` and u positive for s>0. The weighted construction applies to
+`N=2*8^R*w-5`, `P=8^R*w-5` whenever R,w,k,u are positive,
+`9^R*w=1+2^(k+3)*u`, and `3^k*u=1 mod4`. The growing prefixes and two
+affine bridges reach adjacent endpoints b and b-1; their existing
+variable-length merger gives the exact complete clocks.
+
+All twelve new roots are kernel proofs. Independent verification separates
+complete ordinary/shortcut/inverse paths, finite opposite-exit nonmeetings
+at the specified clocks, larger coordinate-only tails, and modular-only
+exponent checks. A hypothetical least doubled source must still satisfy
+`R=2^k*s`, k>0, s positive odd, and `3^k*s=3 mod4`. That remaining exit,
+the quadrupled phase `4*8^R-5`, universal family convergence, and full
+Collatz remain unresolved.
+
+The [two-partner phase cover](docs/MINIMUM-PHASE-COVER.md) now handles
+every scalar endpoint `b=3a+2`: one of a and `2b+1` coalesces with b.
+For odd b, a reaches b-1 in one step, so the earlier arbitrary-length
+odd-block cover applies. The two even residues have explicit short
+meetings. The larger scalar partner is supplied by a smaller original
+source in the following two weighted constructions.
+
+For R>=2, w>0, and `X=9^R*w=17 mod256`, the source `N=2*8^R*w-5`
+reaches `b=(81X-97)/256` at clock 5R+13. Smaller sources
+`2^(2R+1)*w-1` and `3*8^(R-1)*w-5` reach `2b+1` and `(b-2)/3`
+at clocks 4R+12 and 5R+7. For `X=473 mod512`, the source
+`N=4*8^R*w-5` reaches `b=(243X-251)/512` at clock 5R+16;
+`2*8^R*w-5` and `2*8^(R-1)*w-5` reach the two partners at clocks
+5R+14 and 5R+11. Both weighted classes are excluded as least.
+
+With w=1, this excludes the doubled exponent class R=26 mod32 and the
+quadrupled class R=35 mod64. The former lies in the previously remaining
+doubled exit; the latter is the first new exclusion in the quadrupled
+phase. Nineteen kernel roots and independent complete paths support
+these claims. The verification record distinguishes one fresh module
+build from 37 dependency objects reused after exact source, log, and
+object-hash authentication. Other exponents, unrestricted weights,
+universal family convergence, and the full Collatz conjecture remain open.
+
+The [negative-seventeen transition](docs/MINIMUM-SEVENTEEN-TRANSITION.md)
+now carries a quadrupled source through an arbitrary number r of later
+negative-seventeen blocks. For R>=14 and positive w,u with
+`9^R*w+7=2^(57+11r)*u`, put `a=3^(33+7r)*u`. The source
+`N=4*8^R*w-5` reaches `72a-17` at ordinary clock `5R+91+18r`.
+Two strictly smaller positive Mersenne sources, `2^(2R+5)*w-1` and
+`2^(2R+15)*w-1`, reach `81a-17` and `64a-17`, both at clock
+`4R+99+18r`. Three new affine bridges supply this relation.
+
+If a is 13 or 61 modulo 64, one of those sources coalesces with N,
+excluding N as least. The second residue uses the existing odd-block
+cover at any subsequent block length and either exit. The kernel also
+constructs, for every r and every bound B, pure exponents R>B satisfying
+either covered exit. Thus exclusions persist through arbitrarily many
+negative-seventeen blocks. The nineteen audited roots use only standard
+logical axioms; no native reduction or external mathematical premise is
+used. Complete weighted replays, larger short tails, and modular-only
+pure exponents have separate verification scopes. Other scalar exits,
+family convergence, arbitrary least sources, and full Collatz remain open.
+
+The [exit-window separation theorem](docs/MINIMUM-SEVENTEEN-SEPARATION.md)
+rules out extending that two-partner construction by merely increasing
+a fixed exit-clock bound. For every H and positive a with
+`2^(H+12)` dividing `9a+1`, neither `81a-17` nor `64a-17` meets
+`72a-17` at any pair of additional ordinary clocks s,t<=H. Such a
+is 7 modulo 64. Three closed sets of constants modulo 4096 give
+the kernel separation proof.
+
+For every r, H and exponent bound, pure exponents satisfying the
+transition and separation conditions exist. For every fixed R>=14 and r,
+weights beyond any prescribed bound also satisfy them, with both
+partners still positive and smaller than N. Fourteen new roots prove
+these statements and certify a concrete separated triple that reaches
+one. The theorem does not exclude earlier or later coalescence and
+does not supply a divergent orbit. This route requires unbounded later
+clocks or additional partners; the full Collatz objective remains open.
+
+The [fourth-source construction](docs/MINIMUM-SEVENTEEN-FOURTH.md)
+now supplies new exclusions beyond those separated windows. For r>=5,
+the smaller source `S=2^(2R+13)*w-1` reaches `48a-17` at ordinary
+clock `4R+100+18r`, and `72a-25` two steps later. If
+`9a+1=2^(9+11j)*q`, put `b=3^(6+7j)*q`. The main and fourth
+endpoints then reach `4b-17` and `3b-17` after respectively
+`16+18j` and `21+18j` further steps. At `b=23 mod64` they merge,
+with full N,S clocks `5R+117+18r+18j` and `4R+128+18r+18j`.
+Thus N cannot be a least counterexample.
+
+For j>0, the earlier P,Q windows still stay disjoint from N's window
+through every pair of additional clocks at most `11j-3`. Eighteen
+kernel roots prove the new identities, exclusion and simultaneous
+realizations. For every r>=5 and horizon H, suitable pure exponents
+exist beyond every bound; at each fixed R>=14, suitable weights also
+exist beyond every bound. They meet the fourth source while retaining
+the old separation through H. The audit uses 16 Lean threads and
+authenticates forty reused dependency objects before a fresh build.
+Independent full weighted paths, larger transition tails and modular
+pure lifts are recorded separately. The other secondary exit residues,
+full family convergence and the full Collatz conjecture remain open.
+
+The [exact halving-phase argument](docs/MINIMUM-SEVENTEEN-PHASE.md)
+now proves that adding this fourth source still cannot give a uniform
+finite exit window. If `2^(H+13)` divides `9a+1`, all three partners
+`81a-17`, `64a-17`, and `48a-17` have windows disjoint from
+`72a-17` for every pair of additional clocks at most H. The main and
+fourth reference patterns share the negative-seventeen cycle, but
+their halving phases differ by three modulo eleven where equality
+would require a difference of one. Exact binary exponents distinguish
+them even when their ordinary reference residues coincide.
+
+There is also a second obstruction after the next block. For b>=6,
+`2^(H+6)` dividing `b-1` separates the windows from `4b-17` and
+`3b-17` through H. Their shared negative-five reference cycle has
+three halvings; the initial binary exponents differ by two. For every
+fixed r>=5 and j, arbitrarily large pure exponents realize this
+secondary separation with q positive odd. Weights beyond every bound
+also realize it at any fixed R>=14. Thus the delay persists after
+the quotient has already been normalized to be odd.
+
+Twenty-two kernel roots establish these phase invariants, binary
+inverses, source realizations and fixed-window obstructions. Separate
+roots retain arbitrarily long primary separation alongside a later
+successful fourth-source merger. A concrete secondary example has
+four sources of 297 to 308 bits, all kernel-certified to reach one,
+while its secondary windows remain separated through 128 steps.
+Independent complete paths and finite windows are distinguished from
+modular-only pure lifts and larger tail-only cases. This is no proof
+of eventual noncoalescence or divergence. A cover with source-dependent
+later clocks, arbitrary least-source exclusion, and full Collatz remain open.
+
+The [negative-five transition](docs/MINIMUM-FIVE-TRANSITION.md) now gives
+a later merger inside the normalized secondary obstruction. If
+`b=1+2^(3k+4)*v` with v>0, put `d=9^(k+1)*v`. The endpoints
+`4b-17` and `3b-17` reach `3d-5` and `2d-5` at ordinary clocks
+`9+5k` and `4+5k`. At `d=5 mod16` those endpoints merge. The
+full N,S clocks are `5R+120+18r+18j+5k` and
+`4R+131+18r+18j+5k`, so the positive smaller S excludes N as least.
+
+Nineteen kernel roots prove these identities and construct suitable
+pure exponents beyond every bound for every r,j,k; weights beyond
+every bound exist at each fixed initial R. The source exclusion uses
+R>=14 and r>=5. All three quotients u,q,v are odd. The new class
+has b=1 mod16, disjoint from the earlier successful b=23 mod64 exit.
+For k>0 its secondary windows remain separated through `3k-2`;
+for j>0 its primary windows remain separated through `11j-4`.
+Choosing j=k=H+1 therefore gives both kinds of separation through
+any H together with the later merger, at unbounded pure exponents
+and fixed-prefix weights.
+
+The fresh kernel audit and independent full weighted paths distinguish
+this universal variable-block statement from the finite replay cases,
+larger short tails and modular-only pure lifts. The last residue
+condition d=5 mod16 is not a cover of all exits. Full family convergence,
+arbitrary least-counterexample exclusion, and full Collatz remain open.
+
+The [variable odd-block exit](docs/MINIMUM-FIVE-ODD-EXIT.md) extends
+that final merger. If `d=1+2^(l+1)*z`, l>=1, z>0 and
+`3^(l+1)*z=1 mod4`, the third endpoints merge at local clocks
+`2l+3` for N and `2l+5` for S. The full clocks are
+`5R+119+18r+18j+5k+2l` and `4R+130+18r+18j+5k+2l`.
+Since S is positive and smaller, N is excluded as least.
+Twenty kernel roots prove the profiles, the source comparison,
+unbounded realizations and both earlier separated windows.
+
+Both final residues 1 and 3 occur at arbitrarily large pure exponents
+and at unbounded weights for each fixed initial R. The opposite exit
+has a merger with `3d-4`, but that companion is provably larger than
+N throughout the stated family. Writing `3^l*z=4h+1`, the original
+third endpoints instead reach `9h+2` and `h` at the same local clock
+`2l+4`. This precisely identifies a remaining pair; it does not prove
+that pair merges. Exact factorization covers d>1 with d=1 mod4,
+and any least source there must take the opposite residue. The
+d=3 mod4 case and unrestricted Collatz remain open.
+
+The [immediate predecessor](docs/MINIMUM-FIVE-PREDECESSOR.md) removes
+the final odd-block condition from one route: for every positive odd v,
+`U=d-2` is positive and `C(U)=3d-5`, the third N endpoint.
+Twenty-one kernel roots prove an exact comparison with N. Put s=r+j,
+t=R+k. The candidate is smaller exactly in the staircase with maximal
+t values 19,18,17,16,15,14 at s ranges 5..6,7..8,9..10,11,12..13,14..15.
+These 39 pairs represent 392 parameter quadruples, each admitting
+unbounded weights and the least-source exclusion. Both earlier final
+residues and d=3 mod4 are allowed. Outside this region, N<U strictly.
+
+Every pure source in these coordinates has R>=36, so this candidate
+does not provide a smaller pure source. A separate 683-state kernel
+certificate proves that all inverse paths into U with at most fourteen
+even-input shortcut steps have predecessor at least U when k>=6.
+The actual paths have no assumed odd-count or total-depth bound; the
+certificate proves the needed odd-count bound. This obstruction applies
+to U, not every inverse branch into 3d-5 or every coalescing source.
+Larger inverse budgets, alternative smaller sources and full Collatz
+remain open.
+
 ## Reproduction
 
 ```sh
@@ -2721,6 +3090,23 @@ python3 verify_minimum_first_target.py
 python3 verify_minimum_return_ladder.py
 python3 verify_minimum_inverse_escape.py
 python3 verify_minimum_negative_cycle.py
+python3 verify_minimum_inverse_locality.py --threads 16
+python3 verify_minimum_ladder_window.py --threads 16
+python3 verify_minimum_ladder_exit.py --threads 16
+python3 verify_minimum_ladder_block_exit.py --threads 16
+python3 verify_minimum_ladder_complement.py --threads 16
+python3 verify_minimum_ladder_cover.py --threads 16
+python3 verify_minimum_double_ladder.py --threads 16
+python3 verify_minimum_phase_cover.py --threads 16
+python3 verify_minimum_seventeen_transition.py --threads 16
+python3 verify_minimum_seventeen_separation.py --threads 16
+python3 verify_minimum_seventeen_fourth.py --threads 16
+python3 verify_minimum_seventeen_phase.py --threads 16
+python3 verify_minimum_five_transition.py --threads 16
+python3 verify_minimum_five_odd_exit.py --threads 16
+python3 verify_minimum_five_predecessor.py --threads 16
+# Optional: add --cache /tmp/collatz-locality-dev to authenticate and reuse
+# dependency objects from the preceding verification record.
 # The subset decoder imports the exact mask-arithmetic module:
 mkdir -p /tmp/collatz-mask-lean
 lean -o /tmp/collatz-mask-lean/MechanicalMaskArithmetic.olean lean/MechanicalMaskArithmetic.lean

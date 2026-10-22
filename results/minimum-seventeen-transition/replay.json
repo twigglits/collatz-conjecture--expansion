@@ -1,0 +1,697 @@
+{
+  "status": "passed",
+  "counts": {
+    "shortcut_edges": 1997953,
+    "inverse_edges": 1997953,
+    "bridge_paths": 774,
+    "bridge_ordinary_steps": 31734,
+    "local_pairs": 4732,
+    "local_ordinary_steps": 289600,
+    "odd_target_permutations": 64,
+    "powered_unit_examples": 680,
+    "complete_N_ordinary_steps": 1245882,
+    "complete_P_ordinary_steps": 1134246,
+    "other_source_ordinary_steps": 1049378,
+    "complete_pairs": 632,
+    "modular_pure_exponents": 408,
+    "small_exact_lifts": 10,
+    "larger_transition_tail_steps": 2724
+  },
+  "generic_checks": {
+    "bridge_q_interval": [
+      1,
+      256
+    ],
+    "additional_q": [
+      "2**128+1",
+      "3**128+7"
+    ],
+    "bridge_words": [
+      "OOOOOEEOOEEE",
+      "EOEEOEOEOEEOEEOOOEOOOEEE",
+      "EOEOOOEOOEOEOEEEEEEOEEOEEEOEEEOEEEOEEOOEEOEOEEEEEOE"
+    ],
+    "cycle_word": "OOOOEOOOEEE",
+    "scalar_v_interval": [
+      0,
+      2047
+    ],
+    "scalar_branches": {
+      "even": 2048,
+      "double_odd": 1025,
+      "adjacent_odd": 1023
+    },
+    "scope": "Finite bridge and exit replays, odd multiplier permutations, and exact power identities supplement separate universal kernel proofs."
+  },
+  "complete_paths": {
+    "distinct_pairs": 632,
+    "branches": {
+      "even": 206,
+      "adjacent_odd": 218,
+      "double_odd": 208
+    },
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "N_bits": 49570,
+      "P_bits": 45166,
+      "weight_bits": 45119,
+      "late_odd_block": 4096
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 575,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 619,
+        "P_bits": 608,
+        "late_odd_block": 512,
+        "N_clock": 1200,
+        "P_clock": 1189
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 576,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 620,
+        "P_bits": 619,
+        "late_odd_block": 512,
+        "N_clock": 1199,
+        "P_clock": 1198
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 1082,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 1126,
+        "P_bits": 1125,
+        "late_odd_block": 1024,
+        "N_clock": 2223,
+        "P_clock": 2222
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 1088,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 1132,
+        "P_bits": 1121,
+        "late_odd_block": 1024,
+        "N_clock": 2224,
+        "P_clock": 2213
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 4158,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 4202,
+        "P_bits": 4201,
+        "late_odd_block": 4096,
+        "N_clock": 8367,
+        "P_clock": 8366
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "weight_bits": 4160,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 4204,
+        "P_bits": 4193,
+        "late_odd_block": 4096,
+        "N_clock": 8368,
+        "P_clock": 8357
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 608,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 652,
+        "P_bits": 651,
+        "late_odd_block": 512,
+        "N_clock": 1253,
+        "P_clock": 1252
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 609,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 653,
+        "P_bits": 642,
+        "late_odd_block": 512,
+        "N_clock": 1254,
+        "P_clock": 1243
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 1115,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 1159,
+        "P_bits": 1158,
+        "late_odd_block": 1024,
+        "N_clock": 2277,
+        "P_clock": 2276
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 1121,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 1165,
+        "P_bits": 1154,
+        "late_odd_block": 1024,
+        "N_clock": 2278,
+        "P_clock": 2267
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 4192,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 4236,
+        "P_bits": 4235,
+        "late_odd_block": 4096,
+        "N_clock": 8421,
+        "P_clock": 8420
+      },
+      {
+        "R": 14,
+        "r": 3,
+        "weight_bits": 4193,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 4237,
+        "P_bits": 4226,
+        "late_odd_block": 4096,
+        "N_clock": 8422,
+        "P_clock": 8411
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 927,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 971,
+        "P_bits": 970,
+        "late_odd_block": 512,
+        "N_clock": 1775,
+        "P_clock": 1774
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 928,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 972,
+        "P_bits": 961,
+        "late_odd_block": 512,
+        "N_clock": 1776,
+        "P_clock": 1765
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 1438,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 1482,
+        "P_bits": 1481,
+        "late_odd_block": 1024,
+        "N_clock": 2799,
+        "P_clock": 2798
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 1440,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 1484,
+        "P_bits": 1473,
+        "late_odd_block": 1024,
+        "N_clock": 2800,
+        "P_clock": 2789
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 4511,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 4555,
+        "P_bits": 4544,
+        "late_odd_block": 4096,
+        "N_clock": 8944,
+        "P_clock": 8933
+      },
+      {
+        "R": 14,
+        "r": 32,
+        "weight_bits": 4512,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 4556,
+        "P_bits": 4555,
+        "late_odd_block": 4096,
+        "N_clock": 8943,
+        "P_clock": 8942
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "weight_bits": 5694,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 5738,
+        "P_bits": 5727,
+        "late_odd_block": 0,
+        "N_clock": 9390,
+        "P_clock": 9379
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "weight_bits": 5695,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 5739,
+        "P_bits": 5738,
+        "late_odd_block": 1,
+        "N_clock": 9393,
+        "P_clock": 9392
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "weight_bits": 11327,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 11371,
+        "P_bits": 11360,
+        "late_odd_block": 0,
+        "N_clock": 18606,
+        "P_clock": 18595
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "weight_bits": 11327,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 11371,
+        "P_bits": 11360,
+        "late_odd_block": 1,
+        "N_clock": 18610,
+        "P_clock": 18599
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "weight_bits": 45119,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 45163,
+        "P_bits": 45152,
+        "late_odd_block": 0,
+        "N_clock": 73902,
+        "P_clock": 73891
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "weight_bits": 45119,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 45163,
+        "P_bits": 45162,
+        "late_odd_block": 1,
+        "N_clock": 73905,
+        "P_clock": 73904
+      },
+      {
+        "R": 17,
+        "r": 512,
+        "weight_bits": 5693,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 5746,
+        "P_bits": 5732,
+        "late_odd_block": 1,
+        "N_clock": 9409,
+        "P_clock": 9395
+      },
+      {
+        "R": 17,
+        "r": 512,
+        "weight_bits": 5695,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 5748,
+        "P_bits": 5734,
+        "late_odd_block": 0,
+        "N_clock": 9405,
+        "P_clock": 9391
+      },
+      {
+        "R": 17,
+        "r": 1024,
+        "weight_bits": 11326,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 11379,
+        "P_bits": 11365,
+        "late_odd_block": 0,
+        "N_clock": 18621,
+        "P_clock": 18607
+      },
+      {
+        "R": 17,
+        "r": 1024,
+        "weight_bits": 11327,
+        "exit_residue": 61,
+        "branch": "double_odd",
+        "N_bits": 11380,
+        "P_bits": 11366,
+        "late_odd_block": 1,
+        "N_clock": 18625,
+        "P_clock": 18611
+      },
+      {
+        "R": 17,
+        "r": 4096,
+        "weight_bits": 45117,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 45170,
+        "P_bits": 45166,
+        "late_odd_block": 3,
+        "N_clock": 73924,
+        "P_clock": 73920
+      },
+      {
+        "R": 17,
+        "r": 4096,
+        "weight_bits": 45119,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 45172,
+        "P_bits": 45158,
+        "late_odd_block": 0,
+        "N_clock": 73917,
+        "P_clock": 73903
+      },
+      {
+        "R": 16384,
+        "r": 0,
+        "weight_bits": 64,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 49218,
+        "P_bits": 32837,
+        "late_odd_block": 0,
+        "N_clock": 82024,
+        "P_clock": 65643
+      },
+      {
+        "R": 16384,
+        "r": 0,
+        "weight_bits": 64,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 49218,
+        "P_bits": 32847,
+        "late_odd_block": 3,
+        "N_clock": 82031,
+        "P_clock": 65660
+      },
+      {
+        "R": 16384,
+        "r": 7,
+        "weight_bits": 141,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 49295,
+        "P_bits": 32924,
+        "late_odd_block": 5,
+        "N_clock": 82161,
+        "P_clock": 65790
+      },
+      {
+        "R": 16384,
+        "r": 7,
+        "weight_bits": 141,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 49295,
+        "P_bits": 32914,
+        "late_odd_block": 0,
+        "N_clock": 82150,
+        "P_clock": 65769
+      },
+      {
+        "R": 16384,
+        "r": 32,
+        "weight_bits": 416,
+        "exit_residue": 13,
+        "branch": "even",
+        "N_bits": 49570,
+        "P_bits": 33189,
+        "late_odd_block": 0,
+        "N_clock": 82600,
+        "P_clock": 66219
+      },
+      {
+        "R": 16384,
+        "r": 32,
+        "weight_bits": 416,
+        "exit_residue": 61,
+        "branch": "adjacent_odd",
+        "N_bits": 49570,
+        "P_bits": 33199,
+        "late_odd_block": 1,
+        "N_clock": 82603,
+        "P_clock": 66232
+      }
+    ],
+    "regular_R_interval": [
+      14,
+      24
+    ],
+    "regular_r_interval": [
+      0,
+      16
+    ],
+    "additional_R": [
+      128,
+      1024,
+      16384
+    ],
+    "additional_r": [
+      64,
+      128,
+      512,
+      1024,
+      4096
+    ],
+    "long_odd_r": [
+      0,
+      3,
+      32
+    ],
+    "long_odd_k_interval": [
+      1,
+      32
+    ],
+    "additional_long_k": [
+      64,
+      128,
+      512,
+      1024,
+      4096
+    ],
+    "scope": "Both complete meeting paths and the full third source path are independently replayed by ordinary steps, shortcut steps, and inverse guards. These are weighted sources, not huge pure exponent materializations."
+  },
+  "modular_checks": {
+    "r_interval": [
+      0,
+      64
+    ],
+    "additional_r": [
+      128,
+      256,
+      1024
+    ],
+    "bounds": [
+      "0",
+      "2**r+17",
+      "2**(r+128)"
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "e": 13,
+        "B_bits": 0,
+        "R_bits": 1472
+      },
+      {
+        "r": 128,
+        "e": 13,
+        "B_bits": 129,
+        "R_bits": 1597
+      },
+      {
+        "r": 128,
+        "e": 13,
+        "B_bits": 257,
+        "R_bits": 1725
+      },
+      {
+        "r": 128,
+        "e": 61,
+        "B_bits": 0,
+        "R_bits": 1472
+      },
+      {
+        "r": 128,
+        "e": 61,
+        "B_bits": 129,
+        "R_bits": 1597
+      },
+      {
+        "r": 128,
+        "e": 61,
+        "B_bits": 257,
+        "R_bits": 1725
+      },
+      {
+        "r": 256,
+        "e": 13,
+        "B_bits": 0,
+        "R_bits": 2880
+      },
+      {
+        "r": 256,
+        "e": 13,
+        "B_bits": 257,
+        "R_bits": 3133
+      },
+      {
+        "r": 256,
+        "e": 13,
+        "B_bits": 385,
+        "R_bits": 3261
+      },
+      {
+        "r": 256,
+        "e": 61,
+        "B_bits": 0,
+        "R_bits": 2880
+      },
+      {
+        "r": 256,
+        "e": 61,
+        "B_bits": 257,
+        "R_bits": 3133
+      },
+      {
+        "r": 256,
+        "e": 61,
+        "B_bits": 385,
+        "R_bits": 3261
+      },
+      {
+        "r": 1024,
+        "e": 13,
+        "B_bits": 0,
+        "R_bits": 11328
+      },
+      {
+        "r": 1024,
+        "e": 13,
+        "B_bits": 1025,
+        "R_bits": 12349
+      },
+      {
+        "r": 1024,
+        "e": 13,
+        "B_bits": 1153,
+        "R_bits": 12477
+      },
+      {
+        "r": 1024,
+        "e": 61,
+        "B_bits": 0,
+        "R_bits": 11328
+      },
+      {
+        "r": 1024,
+        "e": 61,
+        "B_bits": 1025,
+        "R_bits": 12349
+      },
+      {
+        "r": 1024,
+        "e": 61,
+        "B_bits": 1153,
+        "R_bits": 12477
+      }
+    ],
+    "scope": "Pure exponents and their congruences are checked with modular powers only. Their enormous 9**R, positive starting values, quotients, and full trajectories are not materialized. Existence and exclusion for every r and bound are separate kernel theorems."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 0,
+        "N_bits": 196672,
+        "P_bits": 131139,
+        "branch": "even",
+        "full_prefixes_replayed": false
+      },
+      {
+        "R": 65536,
+        "r": 16,
+        "N_bits": 196846,
+        "P_bits": 131313,
+        "branch": "double_odd",
+        "full_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 0,
+        "N_bits": 3145793,
+        "P_bits": 2097220,
+        "branch": "even",
+        "full_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 16,
+        "N_bits": 3145968,
+        "P_bits": 2097395,
+        "branch": "double_odd",
+        "full_prefixes_replayed": false
+      }
+    ],
+    "scope": "Exact weighted source and endpoint coordinates are materialized; only the transition and exit tails are replayed. Full growing prefixes are not iterated."
+  }
+}

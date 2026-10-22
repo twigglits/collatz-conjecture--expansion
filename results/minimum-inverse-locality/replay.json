@@ -1,0 +1,522 @@
+{
+  "status": "passed",
+  "counts": {
+    "anchor_small_sources": 506,
+    "anchor_small_ordinary_steps": 26666,
+    "anchor_source_steps": 35,
+    "anchor_complete_trees": 21,
+    "anchor_tree_states": 88733,
+    "general_reference_trees": 896,
+    "general_forward_replay_steps": 226832,
+    "general_lifted_trees": 1792,
+    "general_lifted_states": 30882,
+    "family_tree_forward_steps": 1716424,
+    "family_complete_trees": 64,
+    "family_tree_states": 70076,
+    "family_first_target_prefixes": 2048,
+    "family_first_target_steps": 14336,
+    "materialized_period_identity_checks": 30,
+    "materialized_ladder_prefix_steps": 210,
+    "modular_ladder_family_checks": 4160
+  },
+  "anchor": {
+    "positive_source_interval": [
+      1,
+      506
+    ],
+    "largest_first_arrival": {
+      "source": 327,
+      "clock": 143
+    },
+    "anchor_first_arrival": 35,
+    "unique_857_clock": 7,
+    "inverse_tree_rows": [
+      {
+        "even_budget": 0,
+        "states": 2,
+        "maximum_odd_count": 1
+      },
+      {
+        "even_budget": 1,
+        "states": 6,
+        "maximum_odd_count": 3
+      },
+      {
+        "even_budget": 2,
+        "states": 13,
+        "maximum_odd_count": 3
+      },
+      {
+        "even_budget": 3,
+        "states": 23,
+        "maximum_odd_count": 4
+      },
+      {
+        "even_budget": 4,
+        "states": 39,
+        "maximum_odd_count": 5
+      },
+      {
+        "even_budget": 5,
+        "states": 61,
+        "maximum_odd_count": 5
+      },
+      {
+        "even_budget": 6,
+        "states": 96,
+        "maximum_odd_count": 7
+      },
+      {
+        "even_budget": 7,
+        "states": 148,
+        "maximum_odd_count": 7
+      },
+      {
+        "even_budget": 8,
+        "states": 226,
+        "maximum_odd_count": 9
+      },
+      {
+        "even_budget": 9,
+        "states": 343,
+        "maximum_odd_count": 10
+      },
+      {
+        "even_budget": 10,
+        "states": 517,
+        "maximum_odd_count": 12
+      },
+      {
+        "even_budget": 11,
+        "states": 776,
+        "maximum_odd_count": 12
+      },
+      {
+        "even_budget": 12,
+        "states": 1159,
+        "maximum_odd_count": 14
+      },
+      {
+        "even_budget": 13,
+        "states": 1733,
+        "maximum_odd_count": 15
+      },
+      {
+        "even_budget": 14,
+        "states": 2605,
+        "maximum_odd_count": 16
+      },
+      {
+        "even_budget": 15,
+        "states": 3913,
+        "maximum_odd_count": 16
+      },
+      {
+        "even_budget": 16,
+        "states": 5861,
+        "maximum_odd_count": 20
+      },
+      {
+        "even_budget": 17,
+        "states": 8762,
+        "maximum_odd_count": 22
+      },
+      {
+        "even_budget": 18,
+        "states": 13137,
+        "maximum_odd_count": 22
+      },
+      {
+        "even_budget": 19,
+        "states": 19719,
+        "maximum_odd_count": 23
+      },
+      {
+        "even_budget": 20,
+        "states": 29594,
+        "maximum_odd_count": 25
+      }
+    ],
+    "scope": "All smaller positive sources reach the closed 1,4,2 cycle without visiting 857. This finite all-time avoidance also has an axiom-free kernel certificate and a kernel soundness theorem. Tree samples do not replace the universal anchor theorem."
+  },
+  "general_locality": {
+    "reference_target_interval": [
+      1,
+      128
+    ],
+    "even_budgets": [
+      0,
+      6
+    ],
+    "q_values": [
+      1,
+      7
+    ],
+    "precision": "K=2*(r+d), d=(b+1).bit_length()",
+    "scope": "Complete finite inverse trees are independently enumerated at both endpoints and compared as state sets. All lifted states are forward replayed at their ordinary clocks; no odd-count truncation is imposed."
+  },
+  "first_target_family": {
+    "complete_tree_r_interval": [
+      1,
+      16
+    ],
+    "tree_q_values": [
+      0,
+      1,
+      2,
+      17
+    ],
+    "prefix_r_interval": [
+      1,
+      64
+    ],
+    "prefix_q_interval": [
+      0,
+      31
+    ],
+    "source_size_rows": [
+      {
+        "r": 1,
+        "precision": 22,
+        "q_1_source_bits": 35
+      },
+      {
+        "r": 2,
+        "precision": 24,
+        "q_1_source_bits": 38
+      },
+      {
+        "r": 3,
+        "precision": 26,
+        "q_1_source_bits": 41
+      },
+      {
+        "r": 4,
+        "precision": 28,
+        "q_1_source_bits": 44
+      },
+      {
+        "r": 5,
+        "precision": 30,
+        "q_1_source_bits": 47
+      },
+      {
+        "r": 6,
+        "precision": 32,
+        "q_1_source_bits": 50
+      },
+      {
+        "r": 7,
+        "precision": 34,
+        "q_1_source_bits": 54
+      },
+      {
+        "r": 8,
+        "precision": 36,
+        "q_1_source_bits": 57
+      },
+      {
+        "r": 9,
+        "precision": 38,
+        "q_1_source_bits": 60
+      },
+      {
+        "r": 10,
+        "precision": 40,
+        "q_1_source_bits": 63
+      },
+      {
+        "r": 11,
+        "precision": 42,
+        "q_1_source_bits": 66
+      },
+      {
+        "r": 12,
+        "precision": 44,
+        "q_1_source_bits": 69
+      },
+      {
+        "r": 13,
+        "precision": 46,
+        "q_1_source_bits": 73
+      },
+      {
+        "r": 14,
+        "precision": 48,
+        "q_1_source_bits": 76
+      },
+      {
+        "r": 15,
+        "precision": 50,
+        "q_1_source_bits": 79
+      },
+      {
+        "r": 16,
+        "precision": 52,
+        "q_1_source_bits": 82
+      },
+      {
+        "r": 17,
+        "precision": 54,
+        "q_1_source_bits": 85
+      },
+      {
+        "r": 18,
+        "precision": 56,
+        "q_1_source_bits": 89
+      },
+      {
+        "r": 19,
+        "precision": 58,
+        "q_1_source_bits": 92
+      },
+      {
+        "r": 20,
+        "precision": 60,
+        "q_1_source_bits": 95
+      },
+      {
+        "r": 21,
+        "precision": 62,
+        "q_1_source_bits": 98
+      },
+      {
+        "r": 22,
+        "precision": 64,
+        "q_1_source_bits": 101
+      },
+      {
+        "r": 23,
+        "precision": 66,
+        "q_1_source_bits": 104
+      },
+      {
+        "r": 24,
+        "precision": 68,
+        "q_1_source_bits": 108
+      },
+      {
+        "r": 25,
+        "precision": 70,
+        "q_1_source_bits": 111
+      },
+      {
+        "r": 26,
+        "precision": 72,
+        "q_1_source_bits": 114
+      },
+      {
+        "r": 27,
+        "precision": 74,
+        "q_1_source_bits": 117
+      },
+      {
+        "r": 28,
+        "precision": 76,
+        "q_1_source_bits": 120
+      },
+      {
+        "r": 29,
+        "precision": 78,
+        "q_1_source_bits": 123
+      },
+      {
+        "r": 30,
+        "precision": 80,
+        "q_1_source_bits": 127
+      },
+      {
+        "r": 31,
+        "precision": 82,
+        "q_1_source_bits": 130
+      },
+      {
+        "r": 32,
+        "precision": 84,
+        "q_1_source_bits": 133
+      },
+      {
+        "r": 33,
+        "precision": 86,
+        "q_1_source_bits": 136
+      },
+      {
+        "r": 34,
+        "precision": 88,
+        "q_1_source_bits": 139
+      },
+      {
+        "r": 35,
+        "precision": 90,
+        "q_1_source_bits": 142
+      },
+      {
+        "r": 36,
+        "precision": 92,
+        "q_1_source_bits": 146
+      },
+      {
+        "r": 37,
+        "precision": 94,
+        "q_1_source_bits": 149
+      },
+      {
+        "r": 38,
+        "precision": 96,
+        "q_1_source_bits": 152
+      },
+      {
+        "r": 39,
+        "precision": 98,
+        "q_1_source_bits": 155
+      },
+      {
+        "r": 40,
+        "precision": 100,
+        "q_1_source_bits": 158
+      },
+      {
+        "r": 41,
+        "precision": 102,
+        "q_1_source_bits": 161
+      },
+      {
+        "r": 42,
+        "precision": 104,
+        "q_1_source_bits": 165
+      },
+      {
+        "r": 43,
+        "precision": 106,
+        "q_1_source_bits": 168
+      },
+      {
+        "r": 44,
+        "precision": 108,
+        "q_1_source_bits": 171
+      },
+      {
+        "r": 45,
+        "precision": 110,
+        "q_1_source_bits": 174
+      },
+      {
+        "r": 46,
+        "precision": 112,
+        "q_1_source_bits": 177
+      },
+      {
+        "r": 47,
+        "precision": 114,
+        "q_1_source_bits": 180
+      },
+      {
+        "r": 48,
+        "precision": 116,
+        "q_1_source_bits": 184
+      },
+      {
+        "r": 49,
+        "precision": 118,
+        "q_1_source_bits": 187
+      },
+      {
+        "r": 50,
+        "precision": 120,
+        "q_1_source_bits": 190
+      },
+      {
+        "r": 51,
+        "precision": 122,
+        "q_1_source_bits": 193
+      },
+      {
+        "r": 52,
+        "precision": 124,
+        "q_1_source_bits": 196
+      },
+      {
+        "r": 53,
+        "precision": 126,
+        "q_1_source_bits": 199
+      },
+      {
+        "r": 54,
+        "precision": 128,
+        "q_1_source_bits": 203
+      },
+      {
+        "r": 55,
+        "precision": 130,
+        "q_1_source_bits": 206
+      },
+      {
+        "r": 56,
+        "precision": 132,
+        "q_1_source_bits": 209
+      },
+      {
+        "r": 57,
+        "precision": 134,
+        "q_1_source_bits": 212
+      },
+      {
+        "r": 58,
+        "precision": 136,
+        "q_1_source_bits": 215
+      },
+      {
+        "r": 59,
+        "precision": 138,
+        "q_1_source_bits": 218
+      },
+      {
+        "r": 60,
+        "precision": 140,
+        "q_1_source_bits": 222
+      },
+      {
+        "r": 61,
+        "precision": 142,
+        "q_1_source_bits": 225
+      },
+      {
+        "r": 62,
+        "precision": 144,
+        "q_1_source_bits": 228
+      },
+      {
+        "r": 63,
+        "precision": 146,
+        "q_1_source_bits": 231
+      },
+      {
+        "r": 64,
+        "precision": 148,
+        "q_1_source_bits": 234
+      }
+    ],
+    "scope": "Exact inverse minima and actual seven-step prefixes are checked separately. These are not computations of global forward minima, nor convergence checks for the infinite families."
+  },
+  "return_ladder": {
+    "materialized_K_interval": [
+      0,
+      5
+    ],
+    "materialized_h_interval": [
+      0,
+      4
+    ],
+    "modular_r_interval": [
+      1,
+      64
+    ],
+    "modular_h_interval": [
+      0,
+      64
+    ],
+    "first_nonanchor_R_at_r_1": 62762119221,
+    "first_nonanchor_source_bits_at_r_1": 188286357663,
+    "scope": "The materialized cases check the general period identity and first-target coordinates. Apart from h=0, the actual precision-dependent ladder family is tested only modulo explicit integers, not materialized or numerically traversed. Its all-parameter path and minimum statements are kernel theorems."
+  }
+}

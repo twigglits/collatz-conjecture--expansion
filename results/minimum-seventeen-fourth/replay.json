@@ -1,0 +1,420 @@
+{
+  "status": "passed",
+  "counts": {
+    "shortcut_edges": 2023034,
+    "inverse_edges": 2023034,
+    "generic_bridge_paths": 260,
+    "generic_bridge_ordinary_steps": 23400,
+    "generic_scalar_meetings": 1024,
+    "generic_scalar_ordinary_steps": 19456,
+    "generic_secondary_steps": 99496,
+    "generic_secondary_pairs": 136,
+    "odd_exit_units": 32,
+    "ordinary_checkpoints": 3390,
+    "complete_N_steps": 1059590,
+    "complete_S_steps": 984988,
+    "old_partner_prefix_steps": 1410536,
+    "complete_four_source_cases": 678,
+    "window_states_replayed": 472992,
+    "windows_with_actual_value_sets": 588,
+    "separated_triples": 610,
+    "window_ordinary_steps": 471162,
+    "meeting_cases_with_old_separation": 606,
+    "modular_pure_lifts": 278,
+    "larger_transition_steps": 2732,
+    "larger_meeting_steps": 1448
+  },
+  "generic_checks": {
+    "bridge_q_interval": [
+      1,
+      128
+    ],
+    "additional_q": [
+      "2**128+1",
+      "3**128+7"
+    ],
+    "new_bridge_words": [
+      "EOEEOOEOOEOOEEEOOOEOOOOEEEEOOOEEOEEEEOEEOOEOEOOOOOEOEEEOOEEOOOOEOOEOOOOEOEEEEEEOOOOOEEEEOEOEOEEOEEOOOEOOOEEE",
+      "OOOEOOOEEE"
+    ],
+    "scalar_v_interval": [
+      0,
+      1023
+    ],
+    "secondary_j_interval": [
+      0,
+      32
+    ],
+    "additional_secondary_j": [
+      128
+    ],
+    "secondary_q_offsets": [
+      0,
+      18,
+      36,
+      54
+    ],
+    "scope": "Finite generic bridge, secondary-block and local merger checks supplement the universal kernel proofs. The local replay adds one shared halving to the kernel clocks7 and10."
+  },
+  "complete_paths": {
+    "distinct_cases": 678,
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "j": 4096,
+      "weight_bits": 45304,
+      "N_bits": 49502,
+      "S_bits": 45345,
+      "a_bits": 52280,
+      "b_bits": 52285,
+      "N_clock": 82488,
+      "S_clock": 74201,
+      "old_separated_horizon": 45053
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 5,
+        "j": 512,
+        "weight_bits": 5759,
+        "N_bits": 5803,
+        "S_bits": 5800,
+        "a_bits": 5799,
+        "b_bits": 5851,
+        "N_clock": 9494,
+        "S_clock": 9491,
+        "old_separated_horizon": 5629
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 1024,
+        "weight_bits": 11391,
+        "N_bits": 11435,
+        "S_bits": 11432,
+        "a_bits": 11431,
+        "b_bits": 11531,
+        "N_clock": 18710,
+        "S_clock": 18707,
+        "old_separated_horizon": 11261
+      },
+      {
+        "R": 14,
+        "r": 5,
+        "j": 4096,
+        "weight_bits": 45182,
+        "N_bits": 45226,
+        "S_bits": 45223,
+        "a_bits": 45223,
+        "b_bits": 45614,
+        "N_clock": 74006,
+        "S_clock": 74003,
+        "old_separated_horizon": 45053
+      },
+      {
+        "R": 14,
+        "r": 16,
+        "j": 512,
+        "weight_bits": 5880,
+        "N_bits": 5924,
+        "S_bits": 5921,
+        "a_bits": 5922,
+        "b_bits": 5974,
+        "N_clock": 9692,
+        "S_clock": 9689,
+        "old_separated_horizon": 5629
+      },
+      {
+        "R": 14,
+        "r": 16,
+        "j": 1024,
+        "weight_bits": 11512,
+        "N_bits": 11556,
+        "S_bits": 11553,
+        "a_bits": 11553,
+        "b_bits": 11654,
+        "N_clock": 18908,
+        "S_clock": 18905,
+        "old_separated_horizon": 11261
+      },
+      {
+        "R": 14,
+        "r": 16,
+        "j": 4096,
+        "weight_bits": 45304,
+        "N_bits": 45348,
+        "S_bits": 45345,
+        "a_bits": 45345,
+        "b_bits": 45737,
+        "N_clock": 74204,
+        "S_clock": 74201,
+        "old_separated_horizon": 45053
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 1,
+        "weight_bits": 5715,
+        "N_bits": 5759,
+        "S_bits": 5756,
+        "a_bits": 5804,
+        "b_bits": 5807,
+        "N_clock": 9422,
+        "S_clock": 9419,
+        "old_separated_horizon": 8
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "j": 16,
+        "weight_bits": 5880,
+        "N_bits": 5924,
+        "S_bits": 5921,
+        "a_bits": 5968,
+        "b_bits": 5974,
+        "N_clock": 9692,
+        "S_clock": 9689,
+        "old_separated_horizon": 173
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "j": 1,
+        "weight_bits": 11346,
+        "N_bits": 11390,
+        "S_bits": 11387,
+        "a_bits": 11483,
+        "b_bits": 11487,
+        "N_clock": 18638,
+        "S_clock": 18635,
+        "old_separated_horizon": 8
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "j": 16,
+        "weight_bits": 11509,
+        "N_bits": 11553,
+        "S_bits": 11550,
+        "a_bits": 11646,
+        "b_bits": 11651,
+        "N_clock": 18908,
+        "S_clock": 18905,
+        "old_separated_horizon": 173
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 1,
+        "weight_bits": 45136,
+        "N_bits": 45180,
+        "S_bits": 45177,
+        "a_bits": 45563,
+        "b_bits": 45567,
+        "N_clock": 73934,
+        "S_clock": 73931,
+        "old_separated_horizon": 8
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "j": 16,
+        "weight_bits": 45303,
+        "N_bits": 45347,
+        "S_bits": 45344,
+        "a_bits": 45731,
+        "b_bits": 45736,
+        "N_clock": 74204,
+        "S_clock": 74201,
+        "old_separated_horizon": 173
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 1,
+        "weight_bits": 139,
+        "N_bits": 49293,
+        "S_bits": 32920,
+        "a_bits": 52071,
+        "b_bits": 52075,
+        "N_clock": 82146,
+        "S_clock": 65773,
+        "old_separated_horizon": 8
+      },
+      {
+        "R": 16384,
+        "r": 5,
+        "j": 16,
+        "weight_bits": 304,
+        "N_bits": 49458,
+        "S_bits": 33085,
+        "a_bits": 52236,
+        "b_bits": 52241,
+        "N_clock": 82416,
+        "S_clock": 66043,
+        "old_separated_horizon": 173
+      },
+      {
+        "R": 16384,
+        "r": 9,
+        "j": 1,
+        "weight_bits": 183,
+        "N_bits": 49337,
+        "S_bits": 32964,
+        "a_bits": 52116,
+        "b_bits": 52119,
+        "N_clock": 82218,
+        "S_clock": 65845,
+        "old_separated_horizon": 8
+      },
+      {
+        "R": 16384,
+        "r": 9,
+        "j": 16,
+        "weight_bits": 348,
+        "N_bits": 49502,
+        "S_bits": 33129,
+        "a_bits": 52280,
+        "b_bits": 52285,
+        "N_clock": 82488,
+        "S_clock": 66115,
+        "old_separated_horizon": 173
+      }
+    ],
+    "regular_R_interval": [
+      14,
+      22
+    ],
+    "regular_r_interval": [
+      5,
+      12
+    ],
+    "regular_j_interval": [
+      0,
+      8
+    ],
+    "additional_R": [
+      128,
+      1024,
+      16384
+    ],
+    "additional_r": [
+      128,
+      512,
+      1024,
+      4096
+    ],
+    "additional_j": [
+      64,
+      128,
+      512,
+      1024,
+      4096
+    ],
+    "scope": "The main and fourth sources have full ordinary, shortcut and inverse replays of their meeting, with checkpoints at both block boundaries. Both older partners have their full prefixes replayed. For j>0 their separated exit windows are also replayed independently. No earliest-meeting claim is made."
+  },
+  "modular_checks": {
+    "regular_r_interval": [
+      5,
+      12
+    ],
+    "regular_j_interval": [
+      0,
+      16
+    ],
+    "additional_pairs": [
+      [
+        128,
+        128
+      ],
+      [
+        512,
+        1
+      ],
+      [
+        5,
+        512
+      ]
+    ],
+    "bounds": [
+      "0",
+      "2**(r+j+32)"
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "j": 128,
+        "R_bits": 2889,
+        "B_bits": 0
+      },
+      {
+        "r": 128,
+        "j": 128,
+        "R_bits": 3174,
+        "B_bits": 289
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "R_bits": 5716,
+        "B_bits": 0
+      },
+      {
+        "r": 512,
+        "j": 1,
+        "R_bits": 6258,
+        "B_bits": 546
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "R_bits": 5760,
+        "B_bits": 0
+      },
+      {
+        "r": 5,
+        "j": 512,
+        "R_bits": 6306,
+        "B_bits": 550
+      }
+    ],
+    "scope": "Pure exponent coordinates and required residues are checked by modular powers. No enormous pure starting value or full trajectory is materialized. Universal existence and least-source exclusion are separate kernel proofs."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 1,
+        "N_bits": 196747,
+        "S_bits": 131222,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 65536,
+        "r": 5,
+        "j": 16,
+        "N_bits": 196911,
+        "S_bits": 131386,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 1,
+        "N_bits": 3145867,
+        "S_bits": 2097302,
+        "full_growing_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 5,
+        "j": 16,
+        "N_bits": 3146033,
+        "S_bits": 2097468,
+        "full_growing_prefixes_replayed": false
+      }
+    ],
+    "scope": "Exact weighted source coordinates, four transition tails, the later merger and older separated windows are checked. The full initial growing prefixes are not iterated."
+  }
+}

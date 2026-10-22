@@ -1,11 +1,2229 @@
 # Collatz project memory
 
-Last updated: 2026-10-21 local time, after the negative-cycle detour proof.
+Last updated: 2026-10-22 local time, after the immediate-predecessor size boundary.
 
-RESEARCH PAUSED AT THE USER'S REQUEST AFTER THIS RUN. The user asked to
-finish the current results and then stop. Verification and the handoff are
-complete; continue research only on a subsequent resumption request.
+Research remains active with no external blocker. Previous goal turn:
+progress (20 variable odd-exit roots). Current turn: progress (21 kernel
+roots for an immediate predecessor, its exact size boundary, unbounded
+weighted exclusions, the pure-source obstruction and a bounded inverse
+certificate). The positive-integer Collatz conjecture remains unresolved.
+Continue with 16 Lean threads per process, sequential heavy checks and
+authenticated dependency reuse. No new permission or external-state
+change is needed to continue the mathematics.
+
+LATEST ARTIFACTS:
+lean/MinimumFivePredecessor.lean, docs/MINIMUM-FIVE-PREDECESSOR.md,
+verify_minimum_five_predecessor.py, results/minimum-five-predecessor/.
+All 21 roots passed fresh kernel dependency audits. finite_size_boundary
+is axiom-free. The other 20 roots use only standard logical axioms.
+finite_inverse_certificate uses propext and Quot.sound. No native
+reduction, new mathematical axiom or external mathematical premise.
+
+KEY SIMPLIFICATION, KERNEL:
+The previous lead U=d-2 does not need a final odd-block condition.
+For every k>=0 and positive odd v, d=9^(k+1)*v is odd and >=9,
+so U=d-2 is positive and C(U)=3d-5. This is one ordinary odd step.
+Keep the three earlier coordinates:
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u,
+  9a+1=2^(9+11j)*q, b=3^(6+7j)*q,
+  b=1+2^(3k+4)*v, d=9^(k+1)*v.
+N=4*8^R*w-5 reaches 3d-5 at ordinary clock
+  5R+116+18r+18j+5k.
+Therefore U and N coalesce regardless of d=1 or3 mod4 and regardless
+of the later odd-block residue. The merger requires v odd; the size
+comparison below and inverse minimum do not require this parity.
+
+EXACT SIZE BOUNDARY, KERNEL:
+For R>=14,r>=5,w>0 and the coordinate equations, set s=r+j,t=R+k.
+U<N if and only if SmallRegion(s,t), the following staircase:
+  s=5 or6: 14<=t<=19;
+  s=7 or8: 14<=t<=18;
+  s=9 or10:14<=t<=17;
+  s=11:   14<=t<=16;
+  s=12 or13:14<=t<=15;
+  s=14 or15:t=14.
+Outside this region, N<U strictly. No equality case. The 39 (s,t)
+pairs correspond to 392 admissible (R,r,j,k) quadruples.
+This is uniform over every admissible positive weight, not a finite
+sample claim. Positive odd v inside the region excludes N as least.
+For each fixed quadruple in the region, weights beyond every bound
+realize this exclusion. CandidateEscape bundles the positive quotients,
+three equations, v odd, positive smaller U, exclusion and meeting.
+weighted_candidate_escape uses pure_residue_lift with v=1mod2,
+then w=9^(L-R) for a pure exponent L>R+B+1.
+
+PURE SOURCES CANNOT USE THIS U, KERNEL:
+If w=1,r>=5,u>0, the first equation implies
+9^R+7>=2^112. Since 9^35+7<2^112, R>=36.
+Thus every pure source in this coordinate family is outside the size
+region and U>N. Do not try to obtain pure-source exclusions from this
+immediate candidate alone. Other coalescing sources remain possible.
+
+EXACT ALGEBRA BEHIND THE BOUNDARY:
+D=2^(57+11r), E=2^(9+11j), T=2^(3k+4),
+L=denominator(r,j,k)=DET=2^(70+11(r+j)+3k),
+M=multiplier(r,j,k)=3^(43+7(r+j)+2k),
+P=padding(r,j,k)=7M+9^(k+1)*D*(3^(6+7j)-E).
+The scaled_coordinates root proves L*d=M*X+P.
+For r>=5, D<=3*3^(35+7r) and P<=10M.
+Normalize M*9^R=A(s,t)=3^(43+7s+2t) and
+L*(4*8^R)=B(s,t)=2^(72+11s+3t).
+The axiom-free finite root checks 1000A<=993B inside the region,
+B<=A outside on Fin16 x Fin20, and outside boundary points(16,14),(5,20).
+Multiplication by 2^11<=3^7 and 2^3<=3^2 transports the outside
+bound to arbitrary s,t. Inside, X>=10000 gives1000P<=M*X,
+so1000d<=3976*8^R*w. With8^R*w>=512 this absorbs the source offsets.
+Outside, L*d>=M*X>=L*(4*8^R*w), giving d>=4*8^R*w and N<U.
+
+INVERSE CERTIFICATE, KERNEL:
+Backtrack e o B p uses e EVEN-INPUT SHORTCUT edges and o odd-input
+shortcut edges. Its ordinary clock is e+2o. The compulsory halving
+inside each odd shortcut is not counted in e.
+For B=3^K*v-2, the reference states (e,o,m) start at(0,0,2), with
+  even inverse: (e+1,o,2m),
+  odd inverse: (e,o+1,(2m+1)/3), if3 divides2m+1.
+The 683-entry inverseStates list is kernel checked to be closed for
+e<=14, with o<14,m>=2 and
+  m+3^14 <= 2+2^(e+o)*3^(14-o).
+No odd-count or total-depth bound is assumed on actual inverse paths.
+The generic certificate_lift theorem proves, for every K>=14,
+  p+m=2^(e+o)*3^(K-o)*v
+for all actual paths with e<=14. certificate_lower multiplies the
+reference inequality by3^(K-14)*v>=1 to prove B<=p.
+The empty path attains B, so this is an exact minimum at that budget.
+
+For U=d-2 set K=2(k+1). If k>=6, every inverse predecessor of U
+with e<=14 is >=U. Since R+k>=20, U>N, and all these predecessors
+are strictly larger than N. This does NOT cover other branches into
+3d-5, all later targets, all coalescing sources or larger inverse budgets.
+The earlier successful final exit can still merge N with smaller S
+while this inverse obstruction holds at U. No nonconvergence claim.
+
+VERIFICATION 2026-10-22T04:09:43.102255+00:00:
+Fresh Lean 4.33.1 build, 28.725 seconds, 16 threads; 44 authenticated
+objects reused. Compiler commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 99 prior hashes and 102 current hashes authenticated. All 45 cached
+.olean objects, including the new development object, match the manifest.
+Verifier session 65653 exited 0; final development session 76525 exited 0.
+All jobs are terminal. Reuse authenticates compiler/source/log/object,
+copies imports into an isolated directory and retains nested provenance.
+The new module is always fresh. Without --cache all 45 builds run sequentially.
+
+INDEPENDENT FINITE SCOPE:
+3,060 coefficient comparisons on s5..64,t14..64; exactly39 inside.
+1,224 generic odd-unit immediate predecessors;72 even-unit checks
+confirm those units are outside the one-step merger hypothesis.
+The 683 reference states are reconstructed and compared with the Lean
+list, closure, bounds and affine inequalities.
+43 complete actual inverse trees,29,369 states,627,800 forward ordinary
+steps. Each complete tree matches the affine reference set, has exact
+minimum equal to its target and has maximum13 odd edges. The enumeration
+has no imposed odd-count or total-depth cap. Generic K=14,16,32,128,4096
+use v=1,2,3,17,2^128+1. Eighteen additional trees use actual weighted
+coordinates R14,36,128, r5, j0 or1, k6,14,64. Maximum target6621 bits,
+maximum unit538 bits, in possibly different cases.
+
+927 complete N/U weighted pairs:784 smaller candidates (all 392 inside
+quadruples with offsets0 and1),143 larger candidates. Complete N ordinary
+steps626,635 and U steps1,854, total628,489. There are3,708 checkpoints
+(three for each N, one for each U). Shortcut and inverse edge totals are
+384,403 each, including generic checks. These full shortcuts add one
+shared halving to the kernel merger: Nclock5R+117+18r+18j+5k, Uclock2,
+common value(3d-5)/2. The kernel meeting itself uses Nclock one less and
+Uclock1. Among all 927 cases:460 have d=3mod4;223 have later residue1;
+244 have later residue3. No earliest-meeting claim.
+Complete maxima occur separately: R16384,r4096,j4096,k4096;
+weight45,200 bits,N49,308,U52,090,v52,068;
+Nclock including shared halving82,175.
+150 pure modular-only lifts, allr>=5,R>=36; maximum exponent6281 bits.
+No pure starting value, trajectory or actual U is materialized.
+Four larger cases R65536,1048576,r5,(j,k)=(1,6) or(16,128):
+maximum N3,146,416 bits,U3,324,615 bits. Only N's three tails and U's
+one-step merger replay:724 primary,676 secondary,1376 third and4 U
+steps. Full initial growing prefixes and these huge inverse trees
+are NOT replayed/enumerated.
+
+ADDITIONAL SCRATCH EVIDENCE, NOT IN THE MANIFEST:
+A Python reconstruction of the negative-two reference tree through
+30 even edges has 433,148 states,max 34 odd edges. Its minimum affine
+slope2^(e+o)/3^o is 1, attained at(0,0,2). This is finite Python evidence,
+not a kernel extension of the14-edge certificate or an all-budget theorem.
+Do NOT assume o<=e: the state(e,o,m)=(23,24,1029) refutes that proposed
+invariant. An earlier partial traversal found(27,28,3345) as another.
+A separate finite replay of every start1..59,047 to1 (maximum 339 steps)
+found that targets3^K-2 for K=2,4,6,8,10 were first reached from those
+targets themselves, not a smaller start. This too is scratch-only;
+there is no universal backward-minimality theorem for that family.
+
+NEXT LEADS, NOT FORMALIZED:
+Investigate other inverse branches into3d-5 or the residual pair9h+2,h,
+rather than treating the immediate U as a universal escape. The proved
+pure comparison prevents that. The inverse certificate only concerns U
+and a fixed budget; its30-edge scratch extension also found no contracting
+reference slope, so simply increasing the fixed budget has limited evidence.
+
+The actual coordinates impose more ternary information than the generic
+K=2k+2 inverse certificate uses. Write f=9^(k+1),T=2^(3k+4),c=3^(6+7j).
+Since b=cq=1+Tv and U=fv-2,
+  T*(U+2)+f = f*c*q = 3^(2k+8+7j)*q.
+Also q is not divisible by3, from9a+1=2^(9+11j)q. Thus the last
+ternary valuation is exact. This written identity may support a scaled
+reference certificate that uses j as well as k. It is not a new theorem
+in the current module. For a general scaled reference M*B+c0=3^K*v,
+the inverse offset rules would be c0->2c0 and c0->(2c0+M)/3 when
+integral. Any such application needs its own proof and size comparison.
+
+Another written candidate is W=3*8^(k+1)*v-5, which reaches3d-5 by
+the existing weighted-ladder theorem. In terms of b it is (3b-13)/2,
+independent of how its negative-five block is split. This observation
+has not been turned into a smaller-original-source result; do not assume
+its size helps. The known S has secondary endpoint3b-17, whose first
+halving is W-2, linking this lead back to the current residual pair.
+
+Full family convergence, unrestricted least-source exclusion, cap/residual
+estimates, nontrivial cycles, divergence and full Collatz remain open.
+The full goal is active. ATTEMPT, README and reproduction commands include
+the new note. No installations, credentials, agents, staging, commits or
+Git writes occurred. HEAD 8dcff74; index SHA256
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing user changes are preserved.
+
+The preceding variable odd-block exit handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the variable odd-block exit.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (19 negative-five transition roots). Current turn: progress
+(20 kernel roots extending the final merger through arbitrary odd-block
+lengths, realizing both exits, bounding the complementary companion,
+and identifying the residual pair). The positive-integer Collatz
+conjecture remains unresolved. Continue with 16 Lean threads per
+process, sequential heavy checks and authenticated dependency reuse.
+The user has explicitly authorized increased Lean threading. Current
+runners pass both -j 16 and LEAN_NUM_THREADS=16. No new permission
+or external-state change is needed to continue the mathematics.
+
+LATEST ARTIFACTS:
+lean/MinimumFiveOddExit.lean, docs/MINIMUM-FIVE-ODD-EXIT.md,
+verify_minimum_five_odd_exit.py, results/minimum-five-odd-exit/.
+Twenty roots passed fresh kernel audits. All use only standard logical
+axioms; none is axiom-free. exit_growth_bound uses propext only;
+adjacent_bridges, binary_target, companion_above_source, exit_units_odd
+and realization_windows use propext and Quot.sound. No native
+reduction, new mathematical axiom, unproved merger or external premise.
+
+VARIABLE FINAL ODD BLOCK, KERNEL:
+Keep R>=14,r>=5,w,u,q,v>0 and prior coordinates:
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u,
+  9a+1=2^(9+11j)*q, b=3^(6+7j)*q,
+  b=1+2^(3k+4)*v, d=thirdScalar(k,v)=9^(k+1)*v.
+N=4*8^R*w-5 and S=2^(2R+13)*w-1 have third endpoints
+  C^(5R+116+18r+18j+5k)N=3d-5,
+  C^(4R+125+18r+18j+5k)S=2d-5.
+
+For l>=1,z>0,d=1+2^(l+1)*z and 3^(l+1)*z=1mod4:
+  C^(2l+5)(2d-5)=C^(2l+3)(3d-5).
+Let A=2^l*(3z)-1. C(3d-5)=A and C^3(2d-5)=A-1.
+MinimumLadderCover.adjacent_odd_block l (3z) supplies the merger.
+Full clocks:
+  C^(4R+130+18r+18j+5k+2l)S
+    =C^(5R+119+18r+18j+5k+2l)N.
+Since 0<S<N, N is not a least counterexample. No earliest meeting
+or whole-family convergence is claimed. l=1 recovers d=5 mod16,
+with one extra shared halving versus the previous kernel equation.
+Final shortcut words N:E O^l EE; S:OEE O^(l-1) EO.
+Common value (3^(l+1)*z-1)/4. No extra halving in this verifier.
+
+OPPOSITE EXIT, KERNEL:
+If instead 3^(l+1)*z=3mod4, T=3d-4=2A+1 merges with the
+N endpoint at equal local clocks2l+4:
+  C^(2l+4)T=C^(2l+4)(3d-5)
+    =C^(5R+120+18r+18j+5k+2l)N.
+But T>N throughout the coordinate family with R>=14,r>=5.
+The growth lemma proves, for s,t>=0,
+  5*2^(167+11s+3t)<=3^(107+7s+2t).
+Use 5*2^167<=3^107,2048<=2187,8<=9, then set
+s=r-5+j,t=R-14+k. Coordinate cancellation gives
+5*8^R*w<=3d and thus N<3d-4. This rules out using THIS
+companion as a smaller source, not all other possible predecessors.
+
+More precisely, if 3^l*z=4h+1, then
+  C^(2l+4)(3d-5)=9h+2,
+  C^(2l+4)(2d-5)=h.
+This is a residual pair, not a merger. S's full clock here is
+4R+129+18r+18j+5k+2l. Words:
+  N:E O^l EO, S:OEE O^(l-1) EE, T:O^(l+1) EE.
+Exact odd factorization gives the two exit alternatives for every
+d>1,d=1 mod4. A hypothetical least N there must take residue 3.
+The d=3 mod4 branch is outside this dichotomy.
+
+Written consequences of the residual formula (not extra audited roots):
+h>0,h=2mod3, so9h+2=20 mod27, returning to the earlier critical
+first-target class. Also4*(9h+2)+1=3^(l+2)*z. In actual third
+coordinates,9 dividesd and d=1+2^(l+1)*z, so3 does not dividez;
+the last ternary valuation is exactlyl+2. The note records the
+20 mod27 consequence as written arithmetic, not a new kernel theorem.
+
+BOTH RESIDUES HAVE UNBOUNDED REALIZATIONS, KERNEL:
+For every r,j,k,l,B and g=1 or3, there exist R>B,R>=14 and
+positive u,q,v,z with all four coordinate equations, zodd and
+3^(l+1)*z=gmod4. At each fixed initialR, weights w>B also exist.
+The lifts allow any r; fourth-source exclusion needsr>=5,R>=14.
+The equations forceu,q,vodd. Thus all four exact binary valuations
+are57+11r,9+11j,3k+4,l+1 forX+7,9a+1,b-1,d-1.
+
+The reusable pure_residue_lift realizes any 0<eps<2^(h+1) as
+v modulo2^(h+1), including even eps. Set
+D=2^(57+11r),E=2^(9+11j),T0=2^(3k+4),V=2^(h+1),
+A0=3^(35+7r),c=3^(6+7j),F=7cA0+D(c-E)+(V-eps)DET0.
+An affine lift at index(57+11r)+(9+11j)+3k+h+2 gives
+cA0*9^R+F=VDET0*Q. Putv=V(Q-1)+eps and cancel padding,
+then cancel odd coefficients moduloD andE as in the prior proof.
+For the final exit chooseV=2^(l+3),z0odd<4 with3^(l+1)z0=gmod4,
+and odd eps<V with 9^(k+1)eps=1+2^(l+1)z0modV.
+binary_target obtains such residues from odd_binary_inverse.
+Thenz=4*(d/V)+z0. Fixed-R weights use w=9^(L-R),L>R+B+1.
+
+BOTH EARLIER WINDOWS:
+ExitRealization bundles the coordinates, positives,zodd and final g.
+realization_windows preserves FourSeparated and SecondarySeparated
+for either g when H+13<=9+11j and H+6<=3k+4.
+OddEscape bundles successful g1, least exclusion, both windows and
+explicit full merger. pure_odd_escape and weighted_odd_escape allow
+arbitrary l>=1. Choosingj=k=H+1 works for every H and l. These windows
+are cross-time inequalities inside named clock intervals, not all-time
+separation or claims about clocks before those intervals.
+
+VERIFICATION 2026-10-22T03:41:01.051928+00:00:
+One fresh Lean 4.33.1 build, 2.978 seconds, 16 threads; 43 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 96 prior hashes and all 99 current hashes authenticated.
+All 44 cached .olean objects, including the new development object,
+match the manifest. Verifier session 5288 exited 0; final development
+session 42252 exited 0. All milestone jobs are terminal. Reuse checks
+compiler/source/log/object, copies objects into isolated imports,
+retains nested provenance and always rebuilds the new module.
+Without --cache all 44 modules build sequentially.
+
+INDEPENDENT FINITE SCOPE:
+896 complete four-source cases, 448 per final residue. N,S paths are
+complete to the stated common value or residual pair. P,Q prefixes
+are complete; opposite larger companions also replay to N's endpoint.
+Complete ordinary steps 2,838,448, comprising N 885,160, S 845,496,
+P/Q 1,092,000 and companions 15,792. There are 5,376 ordinary
+checkpoints at three boundaries for each N,S case. Total shortcut
+and inverse edges 2,096,368 each, including generic/tail checks.
+Primary and secondary windows each hold in 608 complete cases;
+both in 416 complete cases, including both final residues.
+
+Generic 335 bridge pairs, 1,340 ordinary steps; 2,054 successful and
+2,054 opposite local pairs. Local N 322,602 steps,S 326,710,
+companions 162,328. There are 10,270 comparisons of complete ordinary
+and paired paths, plus 341 binary target residue cases.
+Primary phase checks 612 pairs, 230,628 states, 229,404 steps, 602 actual sets.
+Old three-source checks 612 triples, 345,942 states, 344,106 steps.
+Secondary phase checks 612 pairs, 64,200 states, 62,976 steps, 602 actual sets.
+The primary main window repeats in old and new checks; summing counts
+does not count distinct visits. Exact phase signatures cover all
+cross-time comparisons without enumerating every clock pair.
+
+Complete maxima occur separately:R16384,r4096,j4096,k4096,l4096;
+primaryH45,052,secondaryH12,286;N49,312bits,S45,244,
+weight45,203,a52,090,b52,094,d52,093,z52,076;
+Nclock82,185,Sclock74,041. Pure modular-only checks 880, covering
+both g residues andr0,5,6, plus larger tuples including
+(r,j,k,l)=(5,512,4096,1024) and(5,1,1,8192).
+Largest pure exponent 24,739 bits; modulus 19,073 bits. These pure
+starting values and complete trajectories are NOT materialized.
+Four larger casesR65536,1048576 use(j,k,l,g)=(1,16,128,1)
+or(16,128,512,3). Largest N 3,146,930 bits. Tail-only counts:
+primary 2,732 steps, secondary 1,372, third 2,932, exit 5,152,
+companion 2,056. Full initial growing prefixes are NOT replayed.
+
+NEXT LEAD, WRITTEN AND SCRATCH ONLY:
+In the opposite branch there is another, smaller local predecessor
+U=d-2=2^(l+1)*z-1. The earlier half_source_meeting lemma at
+(k,q,t)=(l+1,z,3h), where3^(l+1)z=12h+3, gives
+  C^(2l+5)(d-2)=9h+2=C^(2l+4)(3d-5).
+Its shortcut word is O^(l+1) EO. This specific corollary is NOT in
+MinimumFiveOddExit or its manifest. An independent scratch replay
+checked 1,024 qualifying pairs,l1..32,oddz1..127, with ordinary,
+shortcut and inverse operations. Actual weighted sample coordinates
+r5,j0,k0,l1,g3 gaveU<N forR14..19 andU>N forR20..24.
+These size comparisons are FINITE samples, not universal bounds.
+Investigate whether this U or another inverse construction supplies
+smaller original sources more broadly. Do not confuse T>N with an
+exclusion of U or all other predecessors.
+
+The residual pair9h+2,h and its return to20 mod27 also suggest
+reusing the earlier mixed-ancestry/first-target analysis. The known
+small S reaches h; no general argument transfers its convergence to
+9h+2. Both final residues have unbounded realizations, so residue
+incompatibility alone cannot eliminate the opposite branch.
+
+Full family convergence, arbitrary least-counterexample exclusion,
+cap/residual estimates, nontrivial cycles, divergence and full Collatz
+remain open. The full goal is active.
+ATTEMPT, README and reproduction commands include the new note.
+Whitespace, note links, hashes and cached objects passed checks.
+No installations, credentials, agents, staging, commits or Git writes
+occurred. HEAD 8dcff74; index SHA256
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing user changes are preserved.
+
+The preceding negative-five transition handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the negative-five transition.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (22 exact phase-obstruction roots). Current turn: progress
+(19 kernel roots giving later mergers through an arbitrary negative-five
+block, unbounded pure/weighted realizations and simultaneous separated
+windows). The positive-integer Collatz conjecture remains unresolved.
+Continue with 16 Lean threads per process, sequential heavy checks
+and authenticated dependency reuse. No new permission or external-state
+change is required to continue the mathematics.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-FIVE-TRANSITION.md, lean/MinimumFiveTransition.lean,
+verify_minimum_five_transition.py, results/minimum-five-transition/.
+All 19 roots passed fresh kernel dependency audits. All use only standard
+logical axioms; none is axiom-free. finite_five_units uses propext and
+Quot.sound; secondary_scale_bound uses propext. No native reduction,
+new mathematical axiom, unproved merger or external premise.
+
+NEW THIRD BLOCK, KERNEL:
+Keep the previous coordinates R>=14,r>=5,w,u,q>0:
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u,
+  9a+1=2^(9+11j)*q, b=3^(6+7j)*q.
+The main N=4*8^R*w-5 and fourth S=2^(2R+13)*w-1 have
+secondary endpoints 4b-17 and 3b-17 at base clocks
+  N:5R+107+18r+18j, S:4R+121+18r+18j.
+Now assume k>=0,v>0 and
+  b=1+2^(3k+4)*v, d=thirdScalar(k,v)=9^(k+1)*v.
+Then
+  C^(9+5k)(4b-17)=3d-5,
+  C^(4+5k)(3b-17)=2d-5.
+Both identities hold at every k with no fixed clock bound.
+
+Two new bridges are C^9(64x-13)=27x-5 and
+C^4(48x-14)=18x-5 for x>0, with shortcut words OOEEOE and EOE.
+Substitute x=8^k*v, then use the existing weighted-ladder identity
+C^(5k)(8^k*z-5)=9^k*z-5 for z>0. The negative-five cycle has
+shortcut word OOE and five ordinary steps. All actual paths are
+positive. The negative reference is only a parity pattern.
+Use the cycle at offset -5: a proposed full cycle at offset -14
+can need an extra parity bit and must not be applied blindly.
+
+FINAL EXIT AND LEAST EXCLUSION, KERNEL:
+If d=5mod16, write d=16t+5. Then
+  C^4(48t+10)=18t+4=C^6(32t+5).
+Consequently
+  C^(13+5k)(4b-17)=C^(10+5k)(3b-17),
+and the full source clocks are
+  C^(5R+120+18r+18j+5k)(N)
+    =C^(4R+131+18r+18j+5k)(S).
+Since 0<S<N, N cannot be a least counterexample. No full convergence
+of the S family is needed, and no earliest meeting is claimed.
+The finite full-shortcut replay adds one shared halving, ending
+at 9t+2 and using full clocks one greater than the kernel equation.
+
+All three units u,q,v are odd under these conditions. Thus the
+exact binary valuations are 57+11r,9+11j,3k+4 respectively for
+X+7,9a+1,b-1. This new family has b=1mod16, disjoint from the
+previous successful b=23mod64 family. The final d=5mod16 guard
+is still restricted and does NOT cover every secondary unit.
+
+UNBOUNDED PURE AND WEIGHTED REALIZATIONS, KERNEL:
+For EVERY r,j,k and exponent bound B, there exist R>B,R>=14
+and positive u,q,v satisfying all three coordinate equations
+and the final guard with w=1. The lift itself allows any r;
+the actual fourth-source merger and exclusion require r>=5.
+At any fixed initial R, weights w>B also satisfy the same equations.
+R>=14 supplies the source bound needed for exclusion.
+
+Set m=57+11r,K=9+11j,D=2^m,E=2^K,T=2^(3k+4),
+A=3^(35+7r),c=3^(6+7j),f=9^(k+1).
+The kernel scale bound E<=c uses 512<=729 and 2048<=2187.
+A finite kernel lemma gives odd 0<eps<16 with f*eps=5mod16.
+Set F=7cA+D(c-E)+(16-eps)*D*E*T. Since cA is odd and
+cA+F is divisible by eight, the unbounded affine exponent lift
+at index m+K+3k+5 gives
+  cA*9^R+F=16*D*E*T*Q, Q>0.
+For v=16(Q-1)+eps, cancel padding:
+  cA*(9^R+7)+D(c-E)=D*E*T*v.
+Cancel odd cA modulo D to obtain u>0. Add D*E and cancel D:
+  c*(A*u+1)=E*(1+T*v).
+Cancel odd c modulo E, obtaining q>0 with A*u+1=E*q; cancel E
+to obtain c*q=1+T*v. Since A*u=9a, these are the requested
+second and third equations. The residue of v gives the final guard.
+Fixed-prefix weights come from a larger pure exponent L with
+w=9^(L-R), L>R+B+1.
+
+BOTH SEPARATED WINDOWS WITH LATER SUCCESS, KERNEL:
+If H+6<=3k+4, the previous phase theorem still separates the
+secondary N,S windows through H. In particular k>0 gives H=3k-2.
+For j>0 the four primary windows remain separated through 11j-4.
+These are all cross-time inequalities inside the named windows,
+not separation before the base clocks or for all later time.
+The specified later local N-clock 13+5k exceeds 3k-2.
+
+ThirdEscape bundles the three coordinate equations, positive odd
+units, least exclusion, secondary window separation and the explicit
+later meeting. For every r>=5,j,k,H,B with H+6<=3k+4,
+pure exponents and fixed-prefix weights realize ThirdEscape
+beyond any bound. Taking j=k=H+1 additionally gives FourSeparated
+through H. The pure_both_windows and weighted_both_windows roots
+prove these simultaneous claims. This is a positive escape inside
+both obstructions, not a contradiction of either obstruction.
+
+VERIFICATION 2026-10-22T03:17:59.873490+00:00:
+One fresh Lean 4.33.1 build, 3.532 seconds, 16 threads; 42 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 93 prior hashes and
+all 96 current hashes authenticated. All 43 cached .olean objects,
+including the new development object, match the current manifest.
+Final verifier session 6529 exited 0. All milestone jobs are terminal.
+Reuse authenticates compiler/source/log/object, copies into an isolated
+import directory and retains nested provenance. The new module is
+always fresh; without --cache all 43 modules build sequentially.
+Historical manifests, source files and notes were not rewritten.
+
+INDEPENDENT FINITE SCOPE:
+930 complete four-source cases. N,S replay completely to their
+common value, P,Q completely to their primary endpoints, with ordinary,
+shortcut and inverse operations. Total complete ordinary steps:
+3,517,062 (N 1,086,604; S 1,012,038; P,Q 1,418,420).
+There are 5,580 ordinary checkpoints across the three N,S block
+boundaries. Total shortcut and inverse edges, including generic
+checks, are 2,137,158 each. Primary separation is checked in 750
+complete cases; secondary separation in 830; both in 670.
+
+Generic checks: 260 short bridge paths (1,690 steps), 1,024 local
+meetings (12,288 steps), 335 third-profile pairs (165,955 steps),
+268 conditional third meetings (135,980 steps), 8 finite odd units.
+Primary phase checks total 754 pairs, 247,706 states, 246,198 steps,
+with 737 actual-value set comparisons. Old three-source checks total
+754 triples, 371,559 states, 369,297 steps. Secondary phase checks
+total 1,098 pairs, 156,756 states, 154,560 steps, with 998 actual-set
+comparisons. Main primary windows are replayed in both old and new
+checks, so adding these counts does not count distinct visits.
+Disjoint exact signatures prove all cross-time inequalities without
+quadratic enumeration of clock pairs.
+
+Complete maxima R=16384,r=4096,j=4096,k=4096 occur in different
+examples. Maximum primary horizon 45,052; secondary 12,286.
+Maximum N has 49,507 bits; S 45,273; weight 45,232; a 52,285;
+b 52,290; d 52,292. Maximum full N,S clocks (including the extra
+shared halving) are 82,499 and 74,086.
+Pure lifts have 366 modular-only checks, including
+(r,j,k)=(128,128,128),(512,1,1),(5,512,4096).
+Largest exponent has 22,692 bits. These enormous pure starting
+values and complete trajectories are NOT materialized.
+
+Four larger cases use R=65536 or1048576,r=5,
+(j,k)=(1,16) or(16,128). Maximum N has 3,146,419 bits.
+Only four primary tails, two secondary tails, the later third merger
+and their windows are replayed: 2,732 primary-transition steps,
+1,372 secondary steps and 2,980 third-merger steps. Full initial
+growing prefixes are NOT iterated.
+
+NEXT LEAD, EXPLORATORY AND NOT YET FORMALIZED:
+The final pair 3d-5,2d-5 has a broader variable odd-block merger.
+If l>=1,z>0 is odd, d=1+2^(l+1)*z and
+3^(l+1)*z=1mod4, the derived clocks are
+  C^(2l+3)(3d-5)=C^(2l+5)(2d-5).
+Derivation: let a=3*2^l*z-1. The first source reaches a after
+one halving; the second reaches a-1 in three ordinary steps.
+Apply existing MinimumLadderCover.adjacent_odd_block with
+block length l and quotient 3z. This is currently a written/scratch
+deduction, NOT in the new Lean module or its manifest. A scratch
+integer replay checked 1,024 qualifying pairs with l=1..32,
+odd z=1..127. No claim of universal final exit coverage.
+The present d=5mod16 case corresponds to l=1 with z=1mod4.
+
+This may replace the fixed final guard with another unbounded block.
+The opposite odd-block exit needs another route: the existing odd
+two-partner cover uses 2a+1=3d-4 in that branch. No smaller original
+source reaching that companion has been constructed. The neighboring
+Mersenne shift c=14 is not an obvious new partner: the scratch
+negative-reference counts for c=13 and 14 both have combined ternary
+exponent 69 and 108 shortcut edges, suggesting the same primary scalar
+endpoint with a one-step clock shift. That has not been formalized
+here. Do not promote these leads to proved exclusions.
+
+Full family convergence, arbitrary least-counterexample exclusion,
+cap/residual estimates, nontrivial cycles, divergence and full Collatz
+remain open. The full goal is active.
+
+ATTEMPT, README and reproduction commands include the new note.
+Whitespace, note links, hashes and cached objects passed checks.
+No installation, credential access, agents, staging, commits or Git
+writes occurred. HEAD remains 8dcff74; index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing user changes are preserved.
+
+The preceding exact halving-phase handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the exact halving-phase obstruction.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (18 fourth-source merger roots). Current turn: progress
+(22 kernel roots for exact binary phases, all-four primary separation,
+normalized secondary separation, unbounded realizations and a convergent
+witness). The positive-integer Collatz conjecture remains unresolved.
+Continue with 16 Lean threads per process, sequential heavy checks
+and authenticated dependency reuse. No user permission or external-state
+change is needed to continue the mathematics.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-SEVENTEEN-PHASE.md, lean/MinimumSeventeenPhase.lean,
+verify_minimum_seventeen_phase.py, results/minimum-seventeen-phase/.
+All 22 roots passed fresh kernel dependency audits. All use only standard
+logical axioms; none is axiom-free. finite_phase_sets uses propext and
+Quot.sound; finite_secondary_convergent_witness uses propext. No native
+reduction, new mathematical axiom, unproved merger or external premise.
+
+GENERIC PHASE MECHANISM, KERNEL:
+For odd scale M and c>=M define D_M(c)=3c-M when c odd, c/2 otherwise.
+If M*n+c=2^e*u with e>0,u odd, then n,c have the same parity.
+An odd ordinary step multiplies this scaled sum by three and preserves
+e; an even step halves it and reduces e by one. Binary exponents in
+such factorizations are unique. The phase_track induction preserves
+e+h=E+h_initial, where h counts halvings, and membership in a finite
+table of (c,h mod L). If all c<2^B and at least B binary digits remain,
+equal actual iterates force equal c and equal e. Incompatible halving
+phases then separate all pairs of clocks, even with overlapping shadows.
+The generic roots are binary_exponent_unique, exact_phase_step,
+phase_track, phase_separation, exact_binary_from_divisibility.
+The extra odd_binary_inverse root constructs inverses of every odd c
+modulo every 2^(k+1), with a positive odd representative.
+
+ALL FOUR PRIMARY WINDOWS, KERNEL:
+For a>0 and 2^(H+13) dividing 9a+1, every s,t<=H satisfies
+  C^s(81a-17) != C^t(72a-17),
+  C^s(64a-17) != C^t(72a-17),
+  C^s(48a-17) != C^t(72a-17).
+The first two use the earlier disjoint shadow sets. The fourth partner
+requires exact phases: 9(72a-17)+225=72(9a+1), and
+9(48a-17)+201=48(9a+1). If v2(9a+1)=K, these sums begin with
+exponents K+3 and K+4. Use M=9,L=11,B=13. The main phase table
+has 18 states; the fourth has 31, entering the same cycle after 13.
+At their first common constant 1098 the main has 4 halvings, the fourth 7.
+The halving difference remains 3 modulo 11 on all shared cycle constants,
+but equal positive iterates would require 1 modulo 11. The tables contain
+the same 18 cycle constants, so residue-set disjointness alone fails.
+All constants lie in [9,4392], below 8192. The cycle has 18 ordinary
+steps, 11 halvings, 7 odd operations.
+
+The preceding source coordinates remain
+  N=4*8^R*w-5, P=2^(2R+5)*w-1, Q=2^(2R+15)*w-1,
+  S=2^(2R+13)*w-1,
+  9^R*w+7=2^(57+11r)*u, a=3^(33+7r)*u.
+For R>=14,r>=5,w,u>0, all three partners are positive and<N.
+Their primary base clocks are N:5R+91+18r, P,Q:4R+99+18r,
+S:4R+100+18r. FourSeparated names the three partner-versus-main
+inequalities after these bases. It does NOT assert disjointness among
+partners, separation before the bases, or separation beyond H.
+
+For every r>=5,H,B, pure exponents R>B,R>=14 realize FourSeparated.
+For every fixed R>=14,r>=5 and any H,B, weights w>B realize it.
+Apply the previous pure/weighted shadow lift at horizon H+1.
+No uniform four-partner scalar exit bound exists even at any fixed r.
+
+NORMALIZED SECONDARY EXIT, KERNEL:
+For b>=6 and 2^(H+6) dividing b-1,
+  C^s(3b-17) != C^t(4b-17), for every s,t<=H.
+Use M=1,L=3,B=6, since
+  (4b-17)+13=4(b-1), (3b-17)+14=3(b-1).
+The reference tables are
+  13,38,19,56,28,14,7,20,10,5;
+  14,7,20,10,5.
+They have 10 and 5 states, with cycle starts 5 and 0. The shared negative-five
+cycle has 3 halvings in 5 ordinary steps. The initial path from 13 to 14
+also has 3 halvings. Equal constants therefore have equal halving phases
+mod3, but the initial binary exponents differ by 2. All c<64.
+
+If 9a+1=2^(9+11j)*q and b=3^(6+7j)*q, the earlier profiles
+reach 4b-17 and 3b-17 at full base clocks
+  N:5R+107+18r+18j,
+  S:4R+121+18r+18j.
+The new secondary_source_separation applies to these two windows.
+
+For EVERY fixed r>=5,j and arbitrary H,B, pure exponents R>B
+realize this secondary separation with q POSITIVE ODD. At every fixed
+R>=14, weights w>B also realize it. Thus v2(9a+1)=9+11j exactly:
+the secondary delay is not an unremoved binary factor in q. A fixed
+secondary exit bound fails even for odd q at every fixed j. No failure
+of eventual coalescence, divergence or universal negative behavior follows.
+
+SECONDARY UNIT LIFT, KERNEL:
+Let m=57+11r,K=9+11j,D=2^m,E=2^K,V=2^(H+6),
+A=3^(35+7r),c=3^(6+7j). The binary inverse lemma supplies odd
+0<eps<V with c*eps=1+V*z. Set F=7A+D+(V-eps)*D*E.
+The existing unbounded affine lift at index m+K+H+3 gives
+  A*9^R+F=V*D*E*Q, Q>0.
+With q=V*(Q-1)+eps, cancel padding to get
+  A*(9^R+7)+D=D*E*q.
+Cancel odd A modulo D and then D to obtain u>0 and
+9a+1=E*q. Also c*q=1+V*(c*(Q-1)+z), so V divides b-1,
+and q is odd. The lift works for every r,j,H,B; r>=5 is needed
+when applying the fourth-source profile. Weights use w=9^(T-R)
+at a pure exponent T>R+B+1.
+
+DELAYED SUCCESS ALSO PERSISTS, KERNEL:
+The previous successful b=23mod64 exit is separate from b=1mod2^(H+6).
+Using pure_nested_lift/weighted_nested_lift with j=H+1 gives BOTH
+FourSeparated through H and a later fourth-source merger, hence N
+not least. Full kernel clocks remain
+  N:5R+117+18r+18j, S:4R+128+18r+18j.
+Pure exponents and fixed-prefix weights are unbounded in these
+simultaneous statements. No earliest-meeting claim.
+
+CONVERGENT SECONDARY WITNESS, KERNEL AND PYTHON:
+R=14,r=5,j=1,H=128, named phaseWitnessWeight, phaseWitnessUnit,
+phaseWitnessExit. Source sizes (N,P,Q,S)=(308,297,307,305) bits;
+ordinary arrivals at 1 = (2683,3675,2682,2680). Lean certifies positivity,
+both coordinate identities, q odd, 2^134 dividing b-1, and arrivals.
+Python additionally checks first-arrival minimality over 11,720 steps.
+All three primary partner windows are separated through 7; the N,S
+secondary windows are separated through 128. This directly prevents
+interpreting the new finite-window obstruction as nonconvergence.
+
+VERIFICATION 2026-10-22T02:52:11.959404+00:00:
+One fresh Lean 4.33.1 build, 3.375 seconds, 16 threads; 41 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 90 prior hashes and
+all 93 current hashes authenticated. All 42 cached .olean objects,
+including the new development object, match the current manifest.
+Final verifier session 76674 exited 0. All milestone jobs are terminal.
+Reuse authenticates compiler/source/log/object, copies to an isolated
+import directory and retains nested provenance; the new module is
+always freshly built. Without --cache all 42 modules build sequentially.
+Historical manifests, sources and notes were not rewritten.
+
+INDEPENDENT FINITE SCOPE:
+458 complete primary cases and 513 complete secondary cases replay
+all four source prefixes by ordinary, shortcut and inverse operations.
+The secondary cases continue N,S to their secondary endpoints and
+check q odd; 413 also check primary separation. Four additional cases
+replay the full later merger. Total full-source ordinary steps are
+4,193,046, including 324,762 in these four delayed-merger cases.
+Shortcut and inverse edges: 2,407,929 each. Ordinary checkpoints: 3,904.
+
+Finite tables contain 64 phase states. There are 272 generic pairs of
+primary/secondary scalar checks and 4,585 binary-inverse checks.
+Primary phase pairs: 1,152, with 301,908 states and 299,604 steps;
+1,119 also compare actual integer-value sets. Secondary phase pairs:
+790, with 116,820 states and 115,240 steps; 779 compare actual sets.
+The older three-source checks have 1,156 windows, 458,151 states,
+454,683 steps and 1,120 actual-set comparisons. The main primary
+window is replayed in both the old and new checks: adding those
+counts does NOT count distinct visits. Exact disjoint phase signatures
+or residue sets prove every cross-time inequality without quadratic
+enumeration of clock pairs.
+
+Primary/secondary complete maxima R=16384,r=4096,j=4096,H=16384
+occur in different examples; largest primary horizon 45052. Maximum
+N has 49,579 bits; S 45,422; weight 45,381; a 52,357. The maximum
+secondary b in these cases has 52,106 bits (52,239 including delayed
+merger examples). Largest full N clock including delayed cases 82,416;
+largest full S clock 73,995. Pure secondary lifts have 206 modular-only
+checks, including (r,j,H)=(128,128,128),(512,1,0),(5,512,4096).
+Largest exponent 14,498 bits; enormous pure sources and trajectories
+are NOT materialized.
+
+Four larger cases use R=65536 or1048576,r=5,(j,H)=(1,32) or(16,128).
+Maximum N has 3,146,161 bits. Only four transition tails, two secondary
+tails and their windows are replayed: 2,732 transition steps and 1,372
+secondary steps. Full growing prefixes are NOT iterated.
+
+NEXT RESEARCH:
+A successful cover must allow source-dependent later clocks or add
+partners with compatible phases. Merely increasing a fixed window,
+even after an odd quotient exit and at fixed R,r,j, cannot work.
+The new generic phase proof is reusable when ordinary shadow sets
+overlap. A ternary-phase version could test candidates whose binary
+phases match; it is not formalized here. The secondary near-b=1
+reference follows the negative-five cycle, suggesting different later
+partners or block arguments rather than more negative-seventeen copies.
+Neither obstruction rules out unrestricted later coalescence.
+Full family convergence, arbitrary least-source exclusion, cap/residual
+estimates, nontrivial cycles, divergence and full Collatz remain open.
+
+ATTEMPT, README and reproduction commands include the new note.
+Whitespace, note links, hashes and cache checks passed. No installation,
+credential access, agents, staging, commits or Git writes occurred.
+HEAD remains 8dcff74; index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing user changes are preserved. The full Collatz goal remains active.
+
+The preceding fourth-source merger handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the fourth-source merger.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (14 exit-window separation roots). Current turn: progress
+(18 kernel roots adding a fourth smaller source and a merger through
+an arbitrary second negative-seventeen block). The positive-integer
+Collatz conjecture remains unresolved. Continue with 16 Lean threads
+per process on this 16-CPU machine, sequential heavy checks and
+authenticated dependency reuse. The user explicitly permits increased
+Lean threading for speed. No permission or external-state change is
+needed to continue the mathematics.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-SEVENTEEN-FOURTH.md, lean/MinimumSeventeenFourth.lean,
+verify_minimum_seventeen_fourth.py, results/minimum-seventeen-fourth/.
+All 18 roots passed fresh kernel dependency audits. All use only
+standard logical axioms; none is axiom-free. The finite_exit_units
+root uses propext and Quot.sound. No native reduction, new mathematical
+axiom, unproved merger or external mathematical premise is used.
+
+FOURTH SOURCE, KERNEL:
+Assume R>=14, r>=5, w,u>0 and
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u.
+The new source S=2^(2R+13)*w-1 is positive and smaller than
+N=4*8^R*w-5. Its profiles are
+  C^(4R+100+18r)(S)=48a-17,
+  C^(4R+102+18r)(S)=72a-25=(72a-17)-8.
+This formalizes the previous handoff's speculative fourth source.
+The older partners remain P=2^(2R+5)*w-1 and Q=2^(2R+15)*w-1,
+with base clocks N:5R+91+18r, P,Q:4R+99+18r and endpoints
+72a-17,81a-17,64a-17. Python checks 0<P<S<Q<N; the new kernel
+bound asserts 0<S<N, which is the comparison needed for exclusion.
+
+New bridge: C^164(2^108*q-11160262)=3^56*q-17 for q>0,
+where 11160262=7*3^13+1. Its Backtrack counts are 52 extra even
+and 56 odd operations: 108 shortcut edges, 164 ordinary steps.
+S's all-odd prefix has clock 4R+26 and reaches 3^13*X-1.
+After the bridge there are r-5 old eighteen-step cycle copies.
+All asserted source trajectories are positive. Negative reference
+orbits only determine auxiliary parity patterns.
+
+SECOND VARIABLE BLOCK, KERNEL:
+For j>=0, q>0 with 9a+1=2^(9+11j)*q, put b=3^(6+7j)*q.
+Then
+  C^(16+18j)(72a-17)=4b-17,
+  C^(21+18j)(48a-17)=3b-17.
+The first uses the new rotated bridge
+  C^16(4096q-25)=2916q-17,
+with shortcut word OOOEOOOEEE. The second takes two steps to
+72a-25, the old nineteen-step bridge from 4096v-33, then j cycles.
+The cycle word remains OOOOEOOOEEE. There is no bound on j.
+
+LOCAL EXIT AND FULL MERGER, KERNEL:
+If b=23 modulo 64, write b=64v+23. The paths satisfy
+  C^10(256v+75)=54v+16=C^7(192v+52).
+Thus
+  C^(5R+117+18r+18j)(N)=C^(4R+128+18r+18j)(S).
+Since 0<S<N, N cannot be a least positive counterexample. This
+does NOT prove convergence of every member of either family or
+claim an earliest meeting. Python adds one shared halving to finish
+the shortcut words, giving clocks one greater and target 27v+8.
+
+SIMULTANEOUS OLD SEPARATION, KERNEL:
+For j>0, put H0=11j-3. Since H0+12=9+11j, the earlier theorem
+still separates both P,Q exit windows from the N exit window for
+ALL pairs of additional ordinary clocks s,t<=H0. The new specified
+meeting uses additional N-clock 26+18j, beyond H0. No separation
+before the transition clocks or beyond the stated windows is claimed.
+The fourth source is outside the two-partner separation theorem.
+
+UNBOUNDED PURE AND WEIGHTED REALIZATIONS, KERNEL:
+For every r,j,B, there exist R>B,R>=14,u,q>0 satisfying both
+coordinate equations and b=23mod64 with w=1. The lift itself does
+not require r>=5; the new merger and least exclusion do require it.
+For every fixed R,r,j and weight bound B, weights w>B also exist.
+
+Lift construction: m=57+11r, K=9+11j, D=2^m, E=2^K,
+A=3^(35+7r), c=3^(6+7j). Choose odd 0<eps<64 with c*eps=23mod64.
+Set F=7A+D+(64-eps)*D*E. The existing unbounded affine lift at
+precision index m+K+3 gives A*9^R+F=64*D*E*Q, with Q>0.
+For q=64(Q-1)+eps, padding cancellation gives
+  A*(9^R+7)+D=D*E*q.
+Odd-factor cancellation gives D | 9^R+7; its positive quotient u
+satisfies A*u+1=E*q, hence 9a+1=E*q and the required exit unit.
+For a fixed initial exponent, choose a larger pure exponent T and
+set w=9^(T-R); T>R+B+1 ensures w>B.
+
+Taking j=H+1 proves: for EVERY r>=5 and horizon H, suitable pure
+exponents exist beyond every bound, satisfying the new least exclusion
+while both old windows stay separated through H. At every fixed
+R>=14, weights beyond every bound satisfy the same conclusions.
+This is a restricted secondary exit, NOT a cover of every a=7mod64.
+
+VERIFICATION 2026-10-22T02:20:54.099914+00:00:
+One fresh Lean 4.33.1 build, 6.930 seconds, 16 threads; 40 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 87 prior hashes and
+all 90 current hashes authenticated. All 41 cached .olean objects,
+including the new development object, match the current manifest.
+Final verifier session 15483 exited 0. All milestone jobs are terminal.
+Cache reuse authenticates compiler/source/log/object, copies objects
+to an isolated import directory, and always freshly builds the new
+module. Nested prior reuse provenance is retained. Without --cache,
+all 41 modules build sequentially. Historical manifests were unchanged.
+
+INDEPENDENT FINITE SCOPE:
+678 complete four-source cases: N,S fully replayed to their shared
+meeting, P,Q fully replayed to their transition endpoints. Ordinary,
+shortcut and inverse checks agree. Total full-source ordinary steps
+are 3,455,114: N 1,059,590; S 984,988; P,Q 1,410,536. There are
+3,390 intermediate ordinary checkpoints. Total shortcut and inverse
+edges are 2,023,034 each, including generic bridge checks.
+
+Generic checks: 260 bridge paths (23,400 ordinary steps), 1,024 local
+meetings (19,456 steps), 136 second-block pairs (99,496 steps), and
+32 odd exit multipliers. Of the 678 complete cases, 606 have j>0
+and replay the older separated windows. Including four larger tails,
+610 separated triples contain 472,992 states and 471,162 steps.
+All use exact congruences and disjoint residue sets; 588 windows also
+compare actual integer-value sets. No quadratic pair enumeration.
+
+Complete maxima R=16384, r=4096 and j=4096 occur in different cases;
+largest old horizon 45053. Maximum N is 49,502 bits; S 45,345;
+weight 45,304; a 52,280; b 52,285. Largest recorded full N,S clocks
+are 82,488 and 74,201 (including the shared extra halving).
+The 278 pure checks use modular powers only, including (r,j) pairs
+(128,128),(512,1),(5,512). The largest exponent has 6,306 bits;
+its enormous source and trajectory are NOT materialized.
+
+Four larger coordinate cases use R=65536 or1048576, r=5, j=1 or16.
+Maximum N has 3,146,033 bits. Only four transition tails, the later
+merger and old windows are replayed there: 2,732 transition steps
+and 1,448 merger steps, plus window steps counted above. Their full
+initial growing prefixes are NOT iterated.
+
+NEXT RESEARCH:
+The remaining secondary exit units of 4b-17 and 3b-17 need new
+mergers or additional partners. The successful b=23mod64 condition
+cannot be substituted for all b. The new construction establishes
+that the old fixed-window barrier can coexist with later useful
+mergers; it does not remove that barrier for the original P,Q pair.
+Arbitrary least-source exclusion, full family convergence, cap/residual
+estimates, nontrivial cycles, divergence and full Collatz remain open.
+
+ATTEMPT, README and reproduction commands include the new note.
+Whitespace and note-link checks passed. No installation, credential
+access, agents, staging, commits or Git writes occurred. HEAD remains
+8dcff74; index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing user changes are preserved. The full Collatz goal remains active.
+
+The preceding exit-window separation handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the transition exit-window separation.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (19 negative-seventeen transition roots). Current turn: progress
+(14 kernel roots proving that no fixed exit window covers those two
+partners, with pure and fixed-prefix weighted realizations). The full
+positive-integer Collatz conjecture remains unresolved. Continue with
+16 Lean threads per process, sequential heavy builds and authenticated
+dependency reuse. No user permission or external-state change is needed
+to continue the mathematics.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-SEVENTEEN-SEPARATION.md, lean/MinimumSeventeenSeparation.lean,
+verify_minimum_seventeen_separation.py, results/minimum-seventeen-separation/.
+All 14 roots passed fresh kernel dependency audits. All use only standard
+logical axioms; none is axiom-free. finite_shadow_sets uses propext and
+Quot.sound; finite_convergent_witness uses propext. No native reduction,
+new mathematical axiom, unproved merger or external theorem is used.
+
+NEW SCALAR SEPARATION, KERNEL:
+For every H and a>0 with 2^(H+12) dividing 9a+1, and every s,t<=H,
+  C^s(81a-17) != C^t(72a-17),
+  C^s(64a-17) != C^t(72a-17).
+This is across ALL PAIRS of clocks in the windows, not just equal clocks.
+Such a is 7 modulo 64, disjoint from the earlier successful exits 13/61.
+No failure of eventual coalescence is proved. No uniform finite scalar
+meeting-clock bound exists even at any fixed r for a=3^(33+7r)*u.
+
+PROOF MECHANISM, KERNEL:
+Use natural constants c with D(c)=3c-9 for odd c, c/2 for even c.
+If c>=9 and 2d divides 9n+c, then d divides 9C(n)+D(c).
+The initial constants for (72a-17,81a-17,64a-17) are (225,234,217),
+since adding them to nine times the sources gives respectively
+72(9a+1),81(9a+1),64(9a+1). Three finite D-orbits have lengths
+18,11,21 and cycle-start indices 0,6,19. Their values lie in [9,2448].
+The first set is disjoint from each partner set. Induction retains
+divisibility modulo 4096 throughout every t<=H; the disjoint residues
+of nine times the positive iterates prove the claimed separation.
+
+At the formal pole a=-1/9, the scalar values are -25,-26,-217/9.
+Their auxiliary patterns lead to the negative 17,5,1 cycles. The third
+reference is rational. The actual proof stays in Nat, using the scaled
+constants; it does NOT apply the ordinary integer map to a noninteger.
+No actual positive orbit is asserted to remain on a negative cycle.
+
+PURE AND FIXED-PREFIX REALIZATIONS, KERNEL:
+For every r,H,B there exist R>B,R>=14,u>0 with
+  9^R+7=2^(57+11r)*u,
+  2^(H+12) dividing 9*3^(33+7r)*u+1.
+The previous three-source theorem therefore separates the original
+source windows with ordinary clocks
+  N: 5R+91+18r+t,
+  P,Q: 4R+99+18r+s, for every s,t<=H.
+This does NOT exclude meetings before these windows or after them.
+
+For every FIXED R>=14 and r, every H and weight bound B, there also
+exist w>B,u>0 satisfying the weighted transition and the same separation.
+Both partners 2^(2R+5)*w-1 and 2^(2R+15)*w-1 remain positive and
+strictly smaller than N=4*8^R*w-5. Thus increasing initial R or r is
+not necessary to obtain arbitrarily long separated exit windows.
+
+Lift proof: m=57+11r,D=2^m,A=3^(35+7r). The generic odd affine
+exponent lift, now with an unbounded-exponent wrapper, makes
+A*9^R+(7A+D) divisible by D*2^(H+12). The base condition holds
+because A+(7A+D)=8A+D is divisible by 8. Cancelling the odd A
+gives D | 9^R+7. Its positive quotient u then satisfies
+A*u+1=2^(H+12)*q. The new odd_power_cancel root proves cancellation
+by induction on the binary exponent. For fixed weighted R, take a
+larger pure exponent S and set w=9^(S-R), proving w>B separately.
+
+CONVERGENT WITNESS, KERNEL AND PYTHON:
+R=14,r=0,H=128, with named witnessWeight and witnessUnit in Lean.
+The source sizes (N,P,Q) are (239,228,238) bits. Their ordinary
+arrival clocks at 1 are (1795,1978,2660). Lean certifies the coordinate
+conditions, shadow divisibility and arrivals. Python additionally proves
+first-arrival minimality by replaying all 6,433 operations. These
+convergent sources still have the separated 129-state exit windows.
+
+VERIFICATION 2026-10-22T01:50:30.738627+00:00:
+One fresh Lean 4.33.1 build, 1.991 seconds, 16 threads; 39 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 84 prior hashes and
+all 87 current hashes authenticated. All 40 cached .olean objects,
+including the new development object, match the current manifest.
+Final verifier session 13718 exited 0. All milestone jobs are terminal.
+The cache procedure retains prior reused-build provenance, authenticates
+compiler/source/log/object, copies to an isolated import directory, and
+always freshly builds the new module. Without --cache all 40 modules
+are built sequentially. Historical manifests were not rewritten.
+
+INDEPENDENT FINITE SCOPE:
+600 complete weighted triples, with all 1,800 source prefixes checked
+by ordinary, shortcut and inverse operations. Ordinary prefix steps:
+1,968,997; shortcut and inverse edges: 1,132,081 each. Including
+260 generic scalar triples, the explicit witness and two larger tails,
+863 separated windows contain 254,871 replayed states and 252,282
+ordinary steps. Exact residue sets prove separation across all pairs
+of window times; 851 small windows also compare actual value sets.
+No quadratic enumeration of every pair is claimed.
+
+Maximum complete parameters R=16384,r=4096,H=16384 occur in different
+examples. Maximum N has 49,365 bits; P 45,284; Q 45,294; weight
+45,251; scalar a 52,143. Pure lifts have 312 modular-only checks,
+including (r,H)=(128,128),(512,0),(0,4096). Their largest exponent
+has 8,291 bits, but their full sources and trajectories are NOT
+materialized. Larger weighted coordinates use R=65536 and 1048576,
+r=0,H=32, with N up to 3,145,831 bits. Only 498 transition-tail
+steps and the exit windows are replayed there, not the growing prefixes.
+
+NEXT RESEARCH AND EXPLORATORY EVIDENCE:
+Do not seek a complete two-partner proof by merely enlarging a fixed
+post-transition clock window: the new theorem rules that out. A cover
+allowing unbounded later clocks remains possible, as do more partners.
+The earlier 13/61 exclusions remain valid and are not contradicted.
+
+A broader SCRATCH search /tmp/collatz_seventeen_multi.py examines
+Mersenne shifts c<=96 and c<=1024 whose negative reference reaches17.
+At binary depth14 it matched 2552/8192 and2553/8192 odd scalar classes,
+respectively; no complete cover. These are exploratory pattern matches,
+not kernel exclusions. Session27388 is terminal, exit0. Adding more
+large shifts barely changed this finite search, motivating the separation
+argument. Failure of a search itself is not an impossibility result.
+
+PROMISING FOURTH SOURCE, NOT YET FORMALIZED:
+For the preceding transition with r>=5, let S=2^(2R+13)*w-1.
+The negative reference 7*3^13+1 reaches17 after 56 odd operations
+and108 halvings, ordinary clock164. Algebra predicts
+  C^(4R+100+18r)(S)=48a-17,
+  C^(4R+102+18r)(S)=72a-25=(72a-17)-8.
+S lies between the existing smaller partners, so R>=14 suffices for
+positivity and S<N. Its proposed extra seventeen-cycle count is r-5.
+Four independent scratch replays at R14,r=5,6,16,64,H32 confirmed
+the two displayed clocks. This formula is NOT in the kernel module,
+note theorem list or verification manifest; do not report it as proved.
+At a=-1/9 its reference -67/3 reaches -33 and then the negative17
+cycle, so this fourth source does not share the three disjoint shadow
+sets used in the new two-partner barrier. It is a concrete next lead.
+
+ATTEMPT, README and reproduction commands include the new note. No
+installation, credential access, agents, staging, commits or Git writes
+occurred. HEAD remains 8dcff74; index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+All existing user changes are preserved. The full Collatz goal remains
+active. Arbitrary least-source exclusion, family convergence, the cap/
+residual estimates, nontrivial cycles and divergence remain unresolved.
+
+The preceding negative-seventeen transition handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the negative-seventeen transition.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (19 phase-cover roots). Current turn: progress (19 kernel roots,
+variable negative-seventeen blocks and unbounded pure exponent exclusions).
+The positive-integer Collatz conjecture remains unresolved. Use 16 Lean
+threads per process on this 16-CPU machine; keep heavy checks sequential
+and reuse authenticated verified objects. The user explicitly permits
+increasing Lean thread counts for speed.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-SEVENTEEN-TRANSITION.md, lean/MinimumSeventeenTransition.lean,
+verify_minimum_seventeen_transition.py, results/minimum-seventeen-transition/.
+All 19 roots passed a fresh kernel dependency audit. All use only standard
+logical axioms. In particular finite_odd_targets is NOT axiom-free: it
+uses propext and Quot.sound despite being proved by decide +kernel.
+There is no native reduction, new mathematical axiom, unproved merger,
+or external mathematical premise in the new module.
+
+VARIABLE THREE-SOURCE TRANSITION, KERNEL:
+Let R>=14,w,u>0,r>=0, X=9^R*w, X+7=2^(57+11r)*u,
+and a=3^(33+7r)*u. Define
+  N=4*8^R*w-5,
+  P=2^(2R+5)*w-1,
+  Q=2^(2R+15)*w-1.
+Then 0<P<N and 0<Q<N, and the ordinary clocks are
+  C^(5R+91+18r)(N)=72a-17,
+  C^(4R+99+18r)(P)=81a-17,
+  C^(4R+99+18r)(Q)=64a-17.
+The three initial prefixes reach 4X-5,243X-1,14348907X-1
+at clocks 5R,4R+10,4R+30. The three new bridges are
+  C^19(2^12*q-33)=3^7*q-17,
+  C^35(2^24*q-1702)=3^11*q-17,
+  C^69(2^51*q-100442350)=3^18*q-17, q>0.
+Their Backtrack counts (extra even,odd) are (5,7),(13,11),(33,18).
+The latter offsets are 7*3^5+1 and 7*3^15+1. Following the bridges,
+N,P,Q traverse respectively r+4,r+3,r negative-seventeen blocks.
+Each block has shortcut word OOOOEOOOEEE and ordinary length18.
+All actual sources and iterates here are positive; the negative orbit
+is an auxiliary parity pattern, not a positive counterexample.
+
+SCALAR EXITS AND LEAST EXCLUSIONS, KERNEL:
+For a=64v+13,
+  C^10(72a-17)=972v+194=b,
+  C^4(81a-17)=1944v+389=2b+1, with b=2mod4.
+Hence C^7(81a-17)=C^12(72a-17). Full clocks (P,N) are
+4R+106+18r,5R+103+18r. Python adds one common halving to complete
+both shortcut words, using clocks one larger.
+
+For a=64v+61,
+  C^12(72a-17)=1458v+1385=b,
+  C^6(81a-17)=2916v+2771=2b+1,
+  C^17(64a-17)=1458v+1384=b-1.
+Write b+1=2^k*q with k>0,q positive odd. Either exit is covered:
+  3^k*q=3mod4: P,N clocks 4R+109+18r+2k,5R+106+18r+2k;
+  3^k*q=1mod4: Q,N clocks 4R+118+18r+2k,5R+105+18r+2k.
+There is no bound on k. Thus a=13 or61mod64 excludes N as least.
+These conditional scalar exits do NOT cover all scalar units. No
+convergence of all family members or all partners is established.
+
+UNBOUNDED PURE EXPONENTS, KERNEL:
+For EVERY r,B and e in {13,61}, there exist R>B,R>=14,u>0 with
+  9^R+7=2^(57+11r)*u, 3^(33+7r)*u=e mod64,
+  not LeastCounterexample(4*8^R-5).
+This is an existence result at every block length and exponent bound,
+not exclusion of every pure exponent. Written modular consequence:
+9^R=1+8R mod64, so these classes lie at R=7mod8, distinct from
+the previous pure R=35mod64 phase exclusion.
+
+Construction: m=57+11r,D=2^m,T=2^(m-3), A=liftExponent(m+3).
+Existing lifts give 9^A+7=64D*t, 9^T=1+D*v with v odd.
+New induction: (1+64d*v)^h=1+64d*U with U=h*v mod64.
+Since 9^A=57mod64, choose h0<64 with
+57*3^(33+7r)*v*h0=e mod64. The finite odd-multiplier target lemma
+provides this. Set h=h0+64*(B+14), R=A+T*h,
+u=64*t+9^A*U. The exact identity, target residue and bounds follow.
+Do NOT materialize 9^R or the pure source even for r=0: these R
+are already enormous. Use modular powers and the kernel theorem.
+
+VERIFICATION 2026-10-22T01:18:28.186070+00:00:
+One fresh Lean 4.33.1 build, 7.028 seconds, 16 threads; 38 authenticated
+dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 82 prior hashes and
+all 84 current hashes authenticated. All 39 cached .olean objects,
+including the new development object, match the current manifest.
+The final verifier session 59327 exited 0; all milestone jobs terminal.
+
+CACHE CONTINUITY: The new verifier supports a prior record already
+marked as reused. Use previous.get('command',
+previous.get('prior_compile_command')) rather than previous['command'].
+It retains the prior build record and original elapsed-time provenance,
+copies exact authenticated objects into an isolated import directory,
+and rebuilds mismatches. The new module is always fresh. Without
+--cache all 39 modules are rebuilt sequentially. Do not rewrite old
+manifests or claim the reused dependencies were recompiled this turn.
+
+Independent full weighted meetings: 632 pairs, 206 even exits,
+208 double-odd and 218 adjacent-odd. Complete ordinary N steps: 1,245,882;
+chosen P/Q steps: 1,134,246; full unselected third-source steps: 1,049,378.
+All three complete source paths have shortcut and inverse checks.
+Including bridge examples, shortcut and inverse edges are 1,997,953 each.
+Maximum complete R=16384, r=4096, late odd-block length=4096; maximum N
+49,570 bits, chosen partner 45,166 bits, weight 45,119 bits. These maxima
+need not occur in the same example. No new general prefix minimum
+or optimal inverse budget theorem is claimed.
+
+Generic bridge tests: 774 paths, 31,734 ordinary steps. Scalar tests
+use v=0..2047 at both residues, plus selected full/larger local tails;
+total 4,732 local pairs and 289,600 steps. There are 64 odd-target
+permutation checks and 680 powered-unit examples. Modular pure
+exponents: 408 cases, r=0..64,128,256,1024, three bounds at both exits;
+largest exponent has 12,477 bits, but its source is NOT materialized.
+Ten small exponent lifts also receive exact-power checks.
+
+Larger weighted coordinates use R=65536 and 1048576, at (r,e)=(0,13)
+and (16,61). Maximum source has 3,145,968 bits. Only 2,724 transition
+tail steps plus local exits were replayed; full growing prefixes were
+NOT iterated for these four large examples.
+
+NEXT RESEARCH:
+Extend the scalar relation among 72a-17,81a-17,64a-17 beyond a=13/61
+mod64, or find a construction that handles arbitrary least sources.
+An unrestricted merger for this triple is not proved. The current
+result supplies the previously missing positive coalescence across
+the negative-five to negative-seventeen transition, but only at the
+specified exits. Full convergence, nontrivial cycles, divergence and
+the quantitative cap/residual gap remain open.
+
+Exploratory search (not verification): fixed-parity affine searches
+around X=-7 with preceding smooth weighted sources found no direct
+match through chosen precisions 128 bits and depth 32. Failure is not
+an impossibility theorem. Negative-shadow Mersenne shifts 5 and 15
+then yielded the adjacent derivative grades 8 and 6 around the target
+grade 7; matching extra seventeen cycles gave the 72,81,64 triple.
+A finite scalar search found the two formalized residues and some
+deeper subclasses; no full scalar cover was found or inferred. Its final
+modulo-65536 diagnostic reports 14,185 matched and 51,351 unmatched
+classes. This is scratch search output, not a kernel exclusion or
+impossibility result. Scratch /tmp/collatz_seventeen_triple.py session
+88822 is terminal with exit 0.
+
+ATTEMPT, README and reproduction commands include the new note.
+No installation, credential access, agents, staging, commits or Git
+writes occurred. Existing user changes were preserved. HEAD 8dcff74;
+index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+The unbounded Collatz goal remains active, without an external blocker.
+
+The preceding two-partner phase-cover handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the two-partner phase cover.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (12 doubled-ladder roots). Current turn: progress (19 new
+kernel roots and new doubled/quadrupled weighted exclusions). The
+positive-integer Collatz conjecture remains unresolved. Keep 16 Lean
+threads per process and sequential heavy builds. Reuse authenticated
+completed verification where possible; see the cache procedure below.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-PHASE-COVER.md, lean/MinimumPhaseCover.lean,
+verify_minimum_phase_cover.py, results/minimum-phase-cover/.
+All 19 roots passed a fresh kernel audit. finite_phase_periods is
+axiom-free; the other roots use only standard logical axioms. No
+native reduction, added premise, or unproved merger is used.
+
+NEW SCALAR COVER, KERNEL:
+For EVERY b=3a+2, either Merges(2b+1,b) or Merges(a,b).
+This extends the endpoint class beyond the earlier b=9a+5 cover.
+The local ordinary clocks (partner first, then b) are:
+  b=0 mod4: partner a, (3,2).
+  b=2 mod4: partner 2b+1, (3,2).
+  b odd, b+1=2^k*q with q odd:
+    3^k*q=1 mod4: partner a, (2k+3,2k+2).
+    3^k*q=3 mod4: partner 2b+1, (2k+4,2k+3).
+For odd b, a is odd and C(a)=b-1. That supplies the adjacent
+partner for the prior arbitrary-block cover. For b divisible by
+four, write a=4v+2; the meeting is 3v+2. The verifier appends one
+common halving in the double-even case, using clocks (4,3), so
+both full shortcut words finish their forced odd-step halvings.
+The larger scalar partner is NOT a descent; its original source
+must separately be proved smaller than the original N.
+
+NEW DOUBLED WEIGHTED CLASS, KERNEL:
+Let R>=2,w>0,X=9^R*w, with X=17 mod256. Define
+  N=2*8^R*w-5,
+  P=2^(2R+1)*w-1,
+  Q=3*8^(R-1)*w-5,
+  b=(81X-97)/256, a=(b-2)/3.
+Then 0<P<N, 0<Q<N, 3(N+5)=16(Q+5), and
+  C^(5R+13)(N)=b,
+  C^(4R+12)(P)=2b+1,
+  C^(5R+7)(Q)=a.
+Coordinates: X=768u+273, X/3=256u+91,
+b=243u+86, a=81u+28. At least one of P,Q coalesces with N,
+so N cannot be least. For pure w=1 this covers R=26 mod32,
+which lies in the previously unresolved doubled exit k=1,
+s=1 mod4, 3^k*s=3 mod4. Do not continue treating that entire
+exit as untouched; other exponents in it remain unresolved.
+
+NEW QUADRUPLED WEIGHTED CLASS, KERNEL:
+Let R>=2,w>0,X=9^R*w, with X=473 mod512. Define
+  N=4*8^R*w-5,
+  P=2*8^R*w-5,
+  Q=2*8^(R-1)*w-5,
+  b=(243X-251)/512, a=(b-2)/3.
+Then 0<P<N, 0<Q<N, N+5=2(P+5)=16(Q+5), and
+  C^(5R+16)(N)=b,
+  C^(5R+14)(P)=2b+1,
+  C^(5R+11)(Q)=a.
+Coordinates: X=4608u+3033, X/9=512u+337,
+b=2187u+1439, a=729u+479. These b are 8 mod9, outside
+the older b=9a+5 scalar cover. The two-source construction
+excludes N as least. For pure w=1 it covers R=35 mod64.
+Neither whole-family convergence nor all-exponent exclusion is proved.
+
+SIX BRIDGES, KERNEL:
+  C^13(1536u+541)=243u+86,
+  C^10(2304u+818)=486u+173,
+  C^12(256u+86)=81u+28,
+  C^16(18432u+12127)=2187u+1439,
+  C^14(9216u+6061)=4374u+2879,
+  C^16(1024u+669)=729u+479.
+Their shortcut words are respectively
+OEEOOEOEE, EOEOOEE, EOOEOEOE,
+OOOOOEEEEEE, OEEOEOEOO, OEEOOEOOEO.
+
+VERIFICATION 2026-10-22T00:41:38.517236+00:00:
+One fresh Lean 4.33.1 module build, 5.711 seconds, 16 threads;
+37 previously verified dependency objects reused. Compiler commit
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. All 80 prior manifest
+hashes and all 82 new hashes authenticated. All 19 theorem roots
+audited. Final verifier session 21715 exited 0; all jobs terminal.
+
+CACHE PROCEDURE: Every dependency object in /tmp/collatz-locality-dev
+matched the preceding manifest's olean SHA256 exactly. The new
+verifier's optional --cache authenticates source, prior log, compiler
+version and object bytes, copies the authenticated object into a
+fresh isolated import directory, and freshly builds missing or
+mismatched objects. The new module is always fresh. The manifest
+marks fresh_build=false and reused_verified_build=true for reused
+dependencies and retains their prior provenance. They were NOT
+recompiled in this run. Without --cache, all 38 modules build afresh.
+The cache now also contains the development MinimumPhaseCover.olean;
+authenticate its hash against the new manifest before future reuse.
+
+Independent full meetings: 702 distinct pairs, 351 per phase.
+Doubled branch counts: 54 double-even, 54 third-even, 124 double-odd,
+119 third-odd. Quadrupled: 54 double-even, 54 third-even, 119 double-odd,
+124 third-odd. Actual N steps 550,493; actual chosen partner steps
+526,710; shortcut and inverse edges 626,796 each. All three source
+bridges add 28,431 independent ordinary steps. The 926,558 growing
+prefix lower checks are finite observations, not a new uniform
+weighted-prefix minimum theorem. Maximum complete R=16,419,
+N has 49,259 bits and the selected partner 49,258 bits. Constructed
+post-bridge odd blocks reach k=4096 at both exits, at weighted R=2.
+
+Generic checks: a=0..8191, all four scalar branches; 262 additional
+long-block examples. Including selected full-pair local tails there
+are 9,156 local pairs and 325,932 local steps. Six bridge profiles
+have 3,084 paths and 41,634 steps. There are 2,064 modular-only
+weighted examples and 258 modular-only pure exponents; huge sources
+are not materialized in that section.
+
+Larger coordinate-only examples: doubled R=32,794 and 524,314;
+quadrupled R=65,571 and 1,048,611. Maximum source bit length is
+3,145,835. Only 222 bridge/local tail steps were replayed; the full
+growing prefixes were NOT numerically iterated at those exponents.
+
+NEXT RESEARCH / EXPLORATORY EVIDENCE:
+Remove further endpoint restrictions, especially by a general block
+relation. An arbitrary least source has not been placed in any
+covered family. The opposite doubled exit and most quadrupled
+exponents remain open. The pure family 8^R-5 is already excluded
+as least for every R>0; its universal convergence remains unproved.
+
+The successful new ingredient was replacing the three-partner cover
+by the two-partner cover for b=3a+2. A source reaching (b-2)/3
+also reaches b-1 when b is odd, and covers b=0 mod4 directly.
+Earlier searches that required a separate fixed path to b-1 missed
+this. A scratch symbolic search found two more potential quadrupled
+classes using offset-seven sources. They are NOT yet in the kernel
+or manifest:
+
+  X=329 mod512 (pure R=9 mod64):
+    N=4*8^R-5 -> b=(729X-737)/512 at 5R+17,
+    P=3*8^R-5 -> 2b+1 at 5R+13,
+    Q=8^R-7 -> (b-2)/3 at 5R+14.
+  X=185 mod1024 (pure R=15 mod128):
+    N=4*8^R-5 -> b=(729X-721)/1024 at 5R+18,
+    P=2*8^R-5 -> 2b+1 at 5R+16,
+    Q=2*8^R-7 -> b-1 at 5R+17,
+    D=3*8^(R-1)-5 -> (b-5)/9 at 5R+10.
+The first suggests the new two-partner cover; the second suggests
+the existing three-partner cover. Both need a rotated negative-five
+prefix, conjectured/elementary OEO form
+C^(5R)(8^R*w-7)=9^R*w-7 with positivity restrictions. That prefix
+has NOT been formalized here. Do not turn scratch matches into
+reported theorems. The scratch search used fixed-parity affine tails,
+smooth weights through six preceding blocks, Mersenne shifts -12..24,
+and exponent periods through 256; failures prove no impossibility.
+
+A broader observation worth investigating, not a proved construction:
+quadrupled exponents can lift 9^R toward -7 in the binary sense,
+using the prior liftExponent machinery. The terminal value then
+shadows -33, whose negative orbit joins the magnitude-17 cycle.
+That suggests arbitrarily long later negative-seventeen blocks,
+already available as cycle_repeated/cycle_clock in MinimumNegativeCycle.
+A positive-source coalescence argument for this transition is missing.
+
+Reproduce with --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16
+--cache /tmp/collatz-locality-dev. ATTEMPT and README link the new
+note and reproduction command. No installation, credential access,
+agents, staging, commits or Git writes occurred. HEAD remains 8dcff74;
+index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Universal convergence, the cap/residual estimates, nontrivial cycles,
+divergence and the full Collatz goal remain open, with no external blocker.
+
+The preceding doubled-ladder handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the doubled-ladder extension.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (17 three-source cover roots). Current turn: progress (12 new
+kernel roots for doubled weighted sources and exact exponent units).
+The positive-integer Collatz conjecture remains unresolved. Continue
+using the user's authorized 16 Lean threads per process, with heavy
+dependent builds sequential. The machine reports 16 CPUs.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-DOUBLE-LADDER.md, lean/MinimumDoubleLadder.lean,
+verify_minimum_double_ladder.py, results/minimum-double-ladder/.
+All twelve new theorem roots passed fresh kernel audits, with only
+standard logical axioms. No native reduction, new axiom, unproved
+merger hypothesis or external mathematical premise enters the results.
+
+NEW PURE DOUBLED EXCLUSION, KERNEL:
+For N=2*8^R-5, every odd R is excluded as a least counterexample.
+For R=2^k*s with k,s>0 and 3^k*s=1 mod4, let P=8^R-5. Then
+  0<P<N, N+5=2(P+5),
+  C^(5R+2k+7)(P)=C^(5R+2k+8)(N).
+Thus these even exponents are also excluded as least sources.
+There is no bound on k. In particular, the exclusions include
+R=2^k for positive even k, and R=3*2^k for positive odd k.
+No convergence of every family member is proved.
+
+REMAINING DOUBLED CONDITION, KERNEL:
+If LeastCounterexample(2*8^R-5), R>0, then there exist k,s with
+  k>0, s>0 odd, R=2^k*s, and 3^k*s=3 mod4.
+Equivalently the remaining parity classes are k odd, s=1 mod4,
+or k even, s=3 mod4. These are remaining conditions, not actual
+counterexamples. The new construction does not handle that exit.
+
+EXACT UNIT LIFT, KERNEL:
+For EVERY natural k,s, there is a natural u with
+  9^(2^k*s)=1+2^(k+3)*u, u=s mod4.
+For s>0, u>0. For odd s, u is odd, so the power of two dividing
+9^(2^k*s)-1 is exactly 2^(k+3). The base quotient for 9^s is
+proved by induction. Doubling the exponent replaces u by
+u+2^(k+2)*u^2, preserving its residue modulo 4.
+This strengthens the earlier top-bit lemma without external LTE.
+
+WEIGHTED CONSTRUCTION, KERNEL:
+For R,w,k,u>0, assume
+  X=9^R*w=1+2^(k+3)*u, and 3^k*u=1 mod4.
+Put N=2*8^R*w-5, P=8^R*w-5, a=2^k*u, b=9a-1.
+The growing prefixes have ordinary clock 5R, and
+  C^(5R+6)(N)=b,
+  C^(5R+5)(P)=b-1.
+The two bridges are C^6(32v+29)=18v+17 and
+C^5(16v+12)=18v+16. Since b+1=2^k*(9u) and its exit is
+1 mod4, the earlier adjacent_odd_block theorem joins b-1 and b
+after 2k+2 ordinary steps each. This yields the same full meeting
+clocks as above and excludes the weighted N as least.
+The common endpoint is (9*3^k*u-1)/4. Complete shortcut words:
+  N: (OOE)^R OEEO O^k EE,
+  P: (OOE)^R EE O^(k+1) EO.
+No earliest meeting, optimal inverse cost, or uniform budget is claimed.
+
+VERIFICATION 2026-10-22T00:16:16.994000+00:00:
+37 fresh Lean 4.33.1 builds, sequential dependency order, 73.799 seconds,
+16 threads per process; the new module took 1.297 seconds. All twelve
+roots audited. Compiler commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 78 preceding manifest hashes and all 80 new manifest hashes were
+authenticated. Final verifier session 34180 exited 0; all jobs terminal.
+
+Independent complete paths: 1,167 distinct pairs, from 133 pure and
+1,038 weighted pairs with four overlaps counted once. Actual N steps
+405,658; actual P steps 404,491; independently checked shortcut edges
+479,931 and inverse edges 479,931. Local tails add 89,592 ordinary
+steps. The 707,720 prefix lower checks are finite observations; no
+new general weighted-prefix minimum theorem was added. Maximum
+complete R=16,384; source bit lengths 49,153 (N), 49,152 (P).
+Weighted secondary blocks reach k=4096, at R=1 and R=3.
+The complete path replay streams large ordinary paths to save memory.
+
+Additional finite checks: 2,052 bridge paths, 11,286 steps; 297 exact
+unit examples at k=0..8,s=0..32; 256 odd-exponent smaller predecessors
+with 512 steps; 256 opposite-exit nonmeetings at the specified clocks,
+9,728 steps. Those nonmeetings say nothing about eventual coalescence.
+There are 8,224 modular-only unit checks at k=0..256,s=1..63 odd;
+their huge sources are not materialized.
+
+Larger coordinate-only pure cases have R=65,536 and 1,048,576, with
+k=16 and 20. Source bit lengths are 196,609 and 3,145,729. Only the
+174 ordinary tail steps after the growing prefixes were replayed;
+the full prefixes were NOT numerically iterated at these exponents.
+
+NEXT RESEARCH:
+Handle the opposite doubled exit 3^k*s=3 mod4, and the quadrupled
+phase N=4*8^R-5. The whole pure family 8^R-5 is already excluded
+as least by MinimumLadderCover; do not reopen its old R=9 mod16 gap.
+
+Useful UNFORMALIZED endpoint candidates for the remaining doubled
+case: R even, X=9^R, a=(X-1)/8, b=9a-1. The new pure partner
+8^R-5 reaches b-1 at clock 5R+5. Other smaller sources reach:
+  2*8^(R-1)-5 -> a-2 at clock 5R+1,
+  6*8^(R-1)-5 -> 3a-2 at clock 5R+1,
+  2^(2R-1)-1 -> a at clock 4R+2,
+  2^(2R+1)-1 -> 9a+1=b+2 at clock 4R+6.
+These identities were only exploratory algebra this turn; they have
+not been added to the new kernel module or verification manifest.
+The generic odd cover supplies a merger with 2b+1 at the remaining
+exit, but no smaller original source reaching that partner is known.
+
+For the quadrupled phase, the basic mod3 restriction leaves R odd.
+Then a=(9^R-1)/8 is odd and its growing endpoint is 32a-1, with
+an exact initial odd block of length five. No new quadrupled-family
+exclusion was established this turn.
+
+A limited scratch affine search refined exponents modulo 2,4,8,16,32,
+using smooth weighted coefficients through eight preceding blocks,
+Mersenne shifts -16..3, and negative-cycle offsets 5,7,10. It found
+no additional full cover of the opposite doubled exit or quadrupled
+phase. It stops when parity ceases to be fixed. Its failures are not
+impossibility results; it is not a verification artifact. Prefer a
+general new block relation over an expanding finite residue catalog.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 to reproduce.
+ATTEMPT and README link the new module and note. No installations,
+credential access, agents, staging, commits or other Git writes occurred.
+Existing user changes were preserved. HEAD remains 8dcff74; index SHA256
+remains ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Universal family convergence, arbitrary least-source exclusion, the
+cap/residual estimates, nontrivial cycles, divergence and full Collatz
+remain open. This is mathematical progress, not an external blocker.
+
+The preceding three-source cover handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the three-source ladder cover.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (21 complementary-exit roots). Current turn: progress
+(17 new kernel roots, closing all positive pure-ladder exponents as
+least-counterexample candidates). The positive-integer Collatz conjecture
+remains unresolved. Use 16 Lean threads per process, heavy builds sequential.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-LADDER-COVER.md, lean/MinimumLadderCover.lean,
+verify_minimum_ladder_cover.py, results/minimum-ladder-cover/.
+All 17 theorem roots passed fresh kernel audits. finite_small_ladders
+is axiom-free; the other roots use only standard logical axioms.
+No native reduction axiom, unproved merger hypothesis or external
+mathematical premise enters the new exclusion.
+
+THE WHOLE PURE LADDER IS NOW EXCLUDED AS LEAST, KERNEL:
+For EVERY R>0, not LeastCounterexample(8^R-5).
+The old least-exponent restriction forces R=9 mod16 for R>=3;
+the new three-source construction excludes that last class.
+The two small cases are kernel convergence certificates:
+C^7(3)=1 and C^32(59)=1.
+Do not continue treating R=9 mod16 as an unresolved LEAST-source
+case for this family. Convergence of every family member remains
+unproved, since the smaller partners need not lie in the pure family.
+No theorem forces an arbitrary least counterexample to be a pure ladder.
+
+STRONGER WEIGHTED CONSTRUCTION, KERNEL:
+For R>=3, q>0, N=8^R*q-5, X=9^R*q, assume X=73 mod128.
+Let b=(9X-17)/128, with b=14 mod27, and a=(b-5)/9.
+There are three positive sources strictly smaller than N:
+  M=2^(2R-1)*q-1,
+  P=8^(R-1)*q-5,
+  D=2*8^(R-2)*q-5.
+Their exact ordinary endpoints are
+  C^(5R+9)(N)=b,
+  C^(4R+7)(M)=2b+1,
+  C^(5R+6)(P)=b-1,
+  C^(5R+2)(D)=a, with b=9a+5.
+The kernel also proves N+5=8(P+5)=32(D+5).
+At least one of these three smaller sources coalesces with N.
+Thus the entire weighted residue class is excluded as least sources.
+
+UNIVERSAL SCALAR COVER, KERNEL:
+For any natural a,b with b=9a+5, one of 2b+1, b-1, a coalesces
+with b. The complete cases and LOCAL ordinary clocks are:
+  b=2 mod4: partner 2b+1, clocks (3,2).
+  b=0 mod4: partner a, clocks (4,2).
+  b odd: factor b+1=2^k*v with k>=1 and v>0 odd.
+    If 3^k*v=3 mod4: partner 2b+1, clocks (2k+4,2k+3).
+    If 3^k*v=1 mod4: partner b-1, clocks (2k+2,2k+2).
+Each pair lists the partner's clock first, then b's clock. The proof
+uses odd factorization and the half-source meeting theorem at arbitrary
+k. It is not a bounded search or extrapolation. Adding the source
+prefix clocks gives the complete meetings. No earliest meeting,
+optimal inverse cost, or new uniform inverse budget is claimed.
+
+The key new source was the MINUS Mersenne path to 2b+1; the earlier
+plus Mersenne path only reached 9b+2. The older proposed universal
+merger between b and 4b-1 remains unproved and is NOT used. The
+new cover does not assert that every positive b merges with a smaller
+number: 2b+1 is larger than b, while its original source M is smaller
+than N. This distinction is important for the full conjecture.
+
+BRIDGE IDENTITIES, KERNEL:
+  C^9(384u+196)=27u+14,
+  C^9(128u+66)=54u+29,
+  C^11(128u+60)=81u+40,
+  C^12(256u+237)=81u+76.
+The source prefixes use the existing weighted OOE and all-odd paths.
+Condition X=73 mod128 gives X/3=67, X/9=65 and X/81=121 mod128.
+The resulting b coordinates are 27u+14, 81v+41, and 729w+689.
+For pure q=1 and R=9 mod16, the condition follows from the already
+kernel-certified period of powers of nine. This closes the pure case.
+
+VERIFICATION 2026-10-21T23:53:08.724317+00:00:
+36 fresh Lean 4.33.1 builds, dependency order, 69.622 seconds,
+16 threads per process; the new module took 3.666 seconds.
+All 17 roots audited; one axiom-free. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Authenticated all 76
+preceding hashes and all 78 current hashes. Historical files preserved.
+Final verifier session 88039 exited 0; all jobs are terminal.
+
+Independent generic checks: 4,096 three-partner pairs (38,909 ordinary
+steps), 2,048 arbitrary-odd-block examples (277,504 steps), and 2,056
+bridge paths (21,074 steps). The two small convergence replays have
+39 ordinary steps total and agree with the new kernel certificates.
+There are 4,128 modular-only weighted examples at R=2^j+3, j=0..128,
+and h=0..31, with weight r+128h and r the appropriate odd residue.
+Their enormous sources are NOT materialized. There are 262 independently
+constructed secondary-block weights: k=1..128,512,1024,4096, both exits.
+
+Complete positive coalescences: 627 distinct (R,q) pairs. Branch counts:
+91 ninth-even, 92 double-even, 221 double-odd, 223 adjacent-odd.
+There are 877,341 actual N steps and 810,017 actual partner steps,
+917,887 independently replayed shortcut edges, 425,125 inverse-prefix
+edges, and 115,981 independent local-tail steps. The 814,582 weighted
+growing-prefix lower checks are finite observations; this module does
+not add a general weighted-prefix minimum theorem. Reused source pairs
+are counted once. Ranges: R=3..32 with eight weights in each residue
+class; pure R=16h+9 for h=0..128,512,1024; both long-block exits at
+k=1..128,512,1024,4096, constructed with fixed R=3.
+Largest complete R=16393; largest complete source has 49,179 bits.
+No convergence after these meetings is claimed.
+
+Larger coordinate-only cases have R=65545 and R=1048585, both in the
+adjacent-odd branch at k=3. Their source bit lengths are 196,635 and
+3,145,755; partner bit lengths are 196,632 and 3,145,752. Only exact
+coordinates and 72 short ordinary tail steps were independently
+replayed; the full growing prefixes were NOT numerically iterated.
+
+NEXT RESEARCH:
+Extend beyond the weighted terminal condition 9^R*q=73 mod128 and
+handle fewer initial growing blocks. The first natural missing phases
+are q=2 and q=4, hence pure powers 2^L-5 with L not divisible by three.
+The current weighted theorem cannot cover even q. An unformalized
+bridge for q=2 is C^6(2*9^R-5)=(9^(R+1)-17)/8 for R>=1; it follows
+from C^6(16u+13)=9u+8. This suggests the next endpoint to inspect,
+but no new coalescence theorem for that phase was established here.
+
+A limited symbolic diagnostic at weighted R=3, weights modulo 128,
+found matches in 47 classes (including the new cover) and no match in
+81, including q=2 and q=4. It tried smooth weighted coefficients
+2^a*3^b<8^d for d=1..3 and Mersenne shifts -5..2, stopping when
+parity ceased to be fixed. This diagnostic is not in the verification
+manifest and its failures prove no impossibility. Prefer general
+block relations and a justified covering argument over a growing list
+of finite residue cases. Universal family convergence, arbitrary
+least-counterexample exclusion, cap/residual estimates, nontrivial
+cycles, divergence and the full Collatz objective remain open.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for reproduction.
+No installations, credentials, agents, staging, commits or other Git
+writes occurred. User changes were preserved. HEAD remains 8dcff74;
+index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+ATTEMPT and README now link the new note and reproduction command.
+
+The preceding complementary-exit handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the complementary ladder exit.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (25 variable block-exit roots and verified handoff). Current
+turn: progress (21 complementary-exit kernel roots). The full
+positive-integer Collatz conjecture remains unresolved. Continue with
+16 Lean threads per process and sequential heavy dependent builds.
+
+LATEST ARTIFACTS:
+docs/MINIMUM-LADDER-COMPLEMENT.md, lean/MinimumLadderComplement.lean,
+verify_minimum_ladder_complement.py, results/minimum-ladder-complement/.
+All 21 roots passed fresh kernel audits. finite_residue_injection is
+axiom-free; the other roots use only standard logical axioms. No native
+reduction axiom, added premise, or external mathematical result enters
+the unconditional exclusions. remaining_merge_suffices explicitly has
+an unproved merger hypothesis; do not erase that hypothesis in reports.
+
+THE PREVIOUS R=512h+5 GAP IS NOW HANDLED, KERNEL:
+For odd R>=3, N=8^R-5, write 3*9^R+5=2^(k+4)*q with q>0.
+If k>=2 and 3^k*q=1 mod4, choose P=6*8^(R-1)-5. Then
+0<P<N, 4(P+5)=3(N+5), and
+  C^(5R+2k+4)(P)=C^(5R+2k+7)(N)=b,
+  4b+1=3^k*q,
+  Backtrack(R+4,2R+k,b,P).
+The new inverse even count GROWS with R. It is not the earlier fixed
+five-even Mersenne construction and has no claimed optimality.
+
+The weighted prefix identity is
+Backtrack(r,2r,9^r*q-5,8^r*q-5) for natural q>0, using Nat subtraction;
+all new positive paths use q=6. The shortcut word is (OOE)^r.
+For odd R, write 9^R=48u+9 and 6*9^(R-1)=32u+6. The bridges are
+C^5(48u+4)=9u+1 and C^8(32u+1)=27u+2. With 2^k*q=9u+2,
+the second bridge ends at 3d-1, d=2^k*q-1. Two halvings give
+2^(k-2)*(3q)-1; its odd block and EO exit join N's odd block and EE
+exit. The complete forward shortcut words are
+  N: (OOE)^R EEOE O^k EE,
+  P: (OOE)^(R-1) OEOEO EE O^(k-2) EO.
+
+FIRST LATER TARGETS AND UNBOUNDEDNESS, KERNEL:
+For k>=3, b=20 mod27 and no ordinary clock t with
+5R<=t<5R+2k+7 has residue 20. The bridge and odd-block avoidance
+lemmas are reused; the last residues are 26,13,20. Combining both
+exit cases gives a useful FIRST later residue-20 target for every odd
+factorization with k>=3. The delays are exactly 2k+7 or 2k+8 and the
+source constructions have different sizes and costs.
+
+Adding 2^(k+2) to a previously successful exponent flips its quotient:
+9^(2^(k+2))=1+2^(k+5)*a for odd a, and
+Q=q+2*(3*9^R*a). The exit product changes from 3 to 1 mod4.
+This constructs arbitrarily large complementary exponents for every k.
+For every k>=3 and source bound, a kernel existential root supplies
+a larger source with the first useful later target at exact delay 2k+7.
+Small complementary seeds for k=2..10 are
+29,21,101,197,5,901,1157,645,5765, with period 2^(k+3).
+Existence is kernel; no all-k uniqueness theorem is claimed.
+
+Every R=512h+5 has k=6 and the complementary condition, so the kernel
+now excludes this whole progression as least counterexamples. Its first
+later target is at clock 5R+19; P joins at clock 5R+16.
+
+WHAT REMAINS, KERNEL RESTRICTION AND CONDITIONAL ROUTE:
+The preceding least-source condition had R=1 mod4, k>0 and the failed
+exit. The new path forces k=1, q=3 mod4, 9^R=73 mod128, hence
+R=9 mod16. All R>=3 outside that class are now excluded as least
+counterexample exponents for N=8^R-5. This does NOT prove convergence
+of the infinite family, and is not a density statement for all integers.
+
+For R=16h+9 the necessary factorization holds arithmetically. This is
+compatibility with the post-ladder condition alone; other project
+restrictions may exclude subfamilies. The kernel identifies
+  b=(9*9^R-17)/128, b=14 mod27,
+  C^(5R+9)(N)=b,
+  C^(5R+4)(P)=4b-1.
+A later merger of these particular endpoints would exclude N. That
+merger for every R=9 mod16 remains UNPROVED. The R=9 member
+N=134217723 reaches 1 at ordinary clock 309 in independent Python;
+this is not a new Lean convergence certificate.
+
+VERIFICATION 2026-10-21T23:25:28.434493+00:00:
+35 fresh Lean 4.33.1 builds in dependency order, 66.440 seconds,
+16 threads per process; new module 4.503 seconds. All 21 roots
+audited, one axiom-free. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Authenticated all 73
+preceding hashes and all 76 new hashes. Historical artifacts preserved.
+
+Independent replay: 1,600 positive weighted ladders, 96,000 ordinary
+steps; 3,078 generic affine paths, 26,676 steps; 890 complementary
+profile paths, 37,340 steps. Checked 16 residue-injection cases,
+1,023 exponent classifications, 4,064 modular complementary examples,
+127 modular half-period flips, seven exact flips (k=2..8), and 17,387
+lifting bit checks. Both old and remaining progressions have 257
+modular checks each. Parameterized kernel claims do not rest on these
+finite checks.
+
+Complete new coalescences: 51 distinct pairs, with 508,948 actual N
+steps and 508,795 actual P steps; 508,155 growing-prefix residue
+checks; 35 exact first later residue-20 checks. Includes all qualifying
+odd R in 3..513, R=512h+5 for h=0..16, and one lifted case for each
+k=2..10. Reused duplicates are counted once. Largest complete case
+R=13957 has 41,871-bit sources. All shortcut parities and inverse
+guards are independently replayed.
+
+Nineteen complete REMAINING pairs reach different endpoints b and
+4b-1, with 37,506 N steps and 37,411 P steps. They are not certified
+coalescences. Their R values are 16h+9 for h=0..16,64,256.
+Across all replay sections: 734,219 shortcut edges, 423,749 inverse
+edges. The separate R=9 convergence replay has 309 steps.
+
+Larger coordinate-only pairs: k=12,R=65157 (195,471-bit sources),
+k=16,R=663173 (1,989,519-bit sources). Only their exact algebraic
+coordinates and 144 short ordinary tail steps were independently
+replayed; their full growing prefixes were NOT numerically replayed.
+The final verifier session 19946 exited 0. All jobs are terminal.
+
+NEXT RESEARCH:
+Try a scalable merger or different smaller source for R=9 mod16,
+using the explicit pair b=14 mod27 and 4b-1. Do not assume that such
+a merger is universal. A small exploratory affine search found a
+candidate for R=25 mod64 with Q=2*8^(R-2)-5: setting
+Y=9^(R-2)=512u+505 gives C^10(81Y-5)=C^15(2Y-5)=1458u+1438.
+This symbolic Python candidate has not been formalized or included
+in the new verification manifest; a general extension is preferable
+to treating a growing list of finite residue cases as closure.
+Useful later targets for arbitrary least-counterexample orbits,
+universal family convergence, cap/residual estimates, nontrivial
+cycles and divergence remain open. No general binary/ternary family
+intersection theorem was added. The full goal remains active.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for reproduction.
+No installations, credential access, agents, staging, commits or other
+Git writes occurred. The user's existing changes were preserved.
+HEAD remains 8dcff74; index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+ATTEMPT and README link the new note; reproduction command added.
+
+The preceding variable block-exit handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the variable block-exit proof.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (21 ladder-exit kernel roots). Current turn: progress
+(25 variable block-exit kernel roots). The positive-integer Collatz
+conjecture remains unresolved. Keep 16 Lean threads per process as
+authorized by the user, with heavy dependent builds sequential.
+
+The latest note is docs/MINIMUM-LADDER-BLOCK-EXIT.md, with
+lean/MinimumLadderBlockExit.lean, verify_minimum_ladder_block_exit.py,
+and results/minimum-ladder-block-exit/. All 25 roots passed fresh
+kernel audits. finite_surviving_period is axiom-free; the other roots
+use only standard logical axioms. No native reduction axiom or
+external mathematical premise enters this chain.
+
+VARIABLE POST-LADDER COALESCENCE, KERNEL:
+For odd R>=3, N=8^R-5, X=9^R, the orbit reaches X-5 at clock 5R,
+then d=(3X-11)/16 five steps later. Write
+3X+5=2^(k+4)*q with q positive and odd, so d=2^k*q-1.
+If 3^k*q=3 mod4, its k odd shortcut steps end at 2mod4.
+The kernel constructs P=2^(2R+1)-1, with 0<P<N and
+C^(4R+2k+9)(P)=C^(5R+2k+8)(N)=b,
+Backtrack(5,2R+k+2,b,P). The inverse word is
+EE O^k EEOE O^(2R+1). It reuses the existing half_source_meeting
+theorem rather than assuming a new universal coalescence premise.
+The cubic size identity from the preceding module still applies.
+The old R=7 mod8 and R=1 mod16 paths are k=0 and k=1, respectively;
+the old R=11 mod16 path is a separate construction.
+
+EXACT FIRST LATER RESIDUE-20 TARGET, KERNEL:
+For k>=2, b=20 mod27, and every clock t with
+5R<=t<5R+2k+8 avoids residue20. Thus this is the FIRST residue-20
+visit after the growing prefix, with a smaller predecessor using only
+five even inverse operations. The bridge residues are 22,11,19,4,2,1.
+During the odd block the shortcut endpoint residues stay in
+{1,2,17,26}; intervening ordinary odd steps also avoid 20. The final
+three steps give the first later target. This all-k result is kernel.
+It does not assert earliest coalescence by any method, absence of
+earlier forward descent, or optimal inverse cost.
+
+UNBOUNDED BINARY LIFTS, KERNEL:
+For odd A with A+C=0 mod8 and every j, some r<2^j has
+2^(j+3) dividing A*9^r+C. The proof uses the existing exact top-bit
+identity for 9^(2^j). Applied here, for every k it gives a seed
+r<2^(k+3) with 3*9^r+5=2^(k+4)*eps mod2^(k+6), where eps is 3
+for even k and 1 for odd k. Adding multiples of 2^(k+3) preserves
+the successful exit condition. Arbitrarily large odd R>=3 and N
+follow. For every k>=2 and source bound, a kernel existential root
+gives the first useful later target with exact delay 2k+8 after 5R.
+This is an arbitrarily long FIRST-return delay, not just a deliberately
+late chosen meeting. Seed examples k=0..6 are 7,1,13,53,37,69,261,
+with periods 8,16,32,64,128,256,512. R>=3 remains required.
+
+PRECEDING LADDER AND REMAINING CONDITION, KERNEL:
+For R>=3 and R=3 mod16, P=8^(R-1)-5 satisfies 0<P<N, N=8P+35,
+and C^(5R+5)(P)=C^(5R+8)(N). The lower exponent is even; the
+growing-block endpoint identity works for even exponents too.
+Together with earlier cases, every R=3 mod4 is excluded as a least
+source. Even exponents are excluded by the basic source residue mod3.
+Therefore a least source N=8^R-5, R>=3, would require R=1 mod4,
+k>0, q odd, and 3^k*q=1 mod4 in the factorization above. Its post
+odd block would end at a multiple of four, outside the new criterion.
+
+These necessary conditions remain compatible with the unbounded
+progression R=512h+5: the kernel proves k=6 and q=1 mod4 there.
+No member is asserted to be a counterexample or to resist every other
+method. R=5 is already kernel checked to converge in the older ladder
+module. Neither coalescence with a smaller family member nor these
+least-source exclusions prove convergence of an entire infinite family.
+
+VERIFICATION 2026-10-21T23:02:05.077766+00:00:
+34 fresh Lean 4.33.1 builds in dependency order, 61.149 seconds;
+16 threads per process, 25 audited roots, one axiom-free root.
+The new module took 5.424 seconds. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 71 preceding ladder-exit hashes and all 73 current hashes were
+authenticated. Historical sources, notes and records are preserved.
+
+Independent Python: 4,104 generic affine paths with 28,728 ordinary
+steps; 38 bridge residue profiles; 1,236 qualifying odd blocks at
+k=0..32,q=1..256, with 39,548 ordinary steps. There are 704 exact
+small affine lifts and 12,285 bit checks across all lifting sections.
+Eleven finite uniqueness censuses at k=0..10 cover 16,376 exponent
+residues; uniqueness is finite evidence, while existence for every k
+is kernel. Modular lifted families cover 4,128 cases at k=0..128,
+h=0..31 without constructing huge sources.
+
+Complete positive paths: 70 variable-block pairs and 19 preceding-ladder
+pairs, with 177,367 actual N steps, 147,654 actual P steps, and 176,435
+growing-prefix residue checks. Twenty-two complete paths verify the
+exact first later residue-20 visit. Repeated small cases are reused.
+The full path range reaches R=9861 (29,583 source bits), and includes
+one lifted case at each k=0..10. Across all sections there are 80,955
+inverse edges and 183,335 independently replayed shortcut edges.
+
+Larger coordinate-only cases are k=12,R=48773 and k=16,R=925317,
+with 146,319-bit and 2,775,951-bit sources. Only their algebraic
+coordinates and 142 short ordinary tail steps are independently
+replayed; their full ladder and pure odd paths are NOT numerically
+replayed. The compatible progression has 129 modular cases, three
+materialized factorizations, and a 160-step independent convergence
+replay of its already kernel-certified R=5 member. All jobs are terminal.
+
+CONTINUITY AND NEXT:
+The next concrete gap is the multiple-of-four exit in the surviving
+condition, starting with R=512h+5 and k=6. A further affine meeting,
+a different smaller source, or genuinely new descent control is needed.
+The new first-later-target families have NOT been proved to intersect
+every ternary whole-window obstruction progression; a general such
+intersection would require additional work. Do not silently combine
+the two parameter constructions. A useful later target for every
+possible least-counterexample orbit, universal family convergence,
+cap/residual estimates, nontrivial cycles and divergence remain open.
+The full Collatz goal stays active.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for reproduction.
+No installations, credentials, agents, staging, commits or other Git
+writes occurred. Existing uncommitted work was preserved. HEAD remains
+8dcff74 and the index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+ATTEMPT and README link the new note and reproduction command.
+
+The preceding ladder-exit handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the ladder-exit proof.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (16 whole-window kernel roots). Current turn: progress
+(21 ladder-exit kernel roots). The positive-integer Collatz conjecture
+remains unresolved. Keep the user's authorized 16 Lean threads per
+process, with heavy dependent builds sequential.
+
+The latest note is docs/MINIMUM-LADDER-EXIT.md, with
+lean/MinimumLadderExit.lean, verify_minimum_ladder_exit.py, and
+results/minimum-ladder-exit/. All 21 roots passed fresh kernel audits.
+finite_exit_periods is axiom-free; all other printed dependencies are
+standard logical axioms. No native reduction axiom or external
+mathematical premise is used.
+
+SMALLER SOURCES AFTER THE LADDER, KERNEL:
+Write N=8^R-5 and X=9^R. The ordinary orbit reaches X-5 at clock 5R.
+For R>=3, three residue conditions yield positive P<N and coalescence:
+
+- R=7 mod8: P=2^(2R+1)-1, C^(4R+9)(P)=C^(5R+8)(N),
+  meeting value (9X-1)/64, inverse counts (5,2R+2).
+- R=11 mod16: P=2^(2R-1)-1, C^(4R+8)(P)=C^(5R+9)(N),
+  meeting value (9X+31)/128, inverse counts (4,2R+2).
+- R=1 mod16: P=2^(2R+1)-1, C^(4R+11)(P)=C^(5R+10)(N),
+  meeting value (27X+13)/128, inverse counts (5,2R+3).
+
+The kernel therefore excludes N as a least counterexample in four
+of the eight ODD EXPONENT classes modulo 16. This is not a density
+claim about arbitrary positive integers. Universal convergence of
+these N or their Mersenne predecessors P remains unproved.
+
+The proof combines C^(2j)(2^j-1)=3^j-1 with three short affine paths.
+The inverse words before the pure odd block are EEEEOE, EEOOEOE,
+and EEOEEOE. Exact cubic size identities give
+(P+1)^3=8*(N+5)^2 in the first/third cases, and
+8*(P+1)^3=(N+5)^2 in the second. Thus P has asymptotically two
+thirds as many binary digits as N. No optimal inverse cost is claimed.
+The meeting values are NOT residue-20 targets: their residues are
+8mod9, 11mod27, and 2mod27, respectively. Ordinary coalescence alone
+suffices for the least-counterexample contradiction.
+
+AN ARBITRARILY LONG OBSTRUCTION FOLLOWED BY ESCAPE, KERNEL:
+In the preceding family K=2*(s+3), R=1+2*3^K*(h+1), restrict
+h=4a+2. Then R=7 mod8, so the first new coalescence applies.
+Every target b_i with i<R still has exact inverse minimum N at
+even budget i+s, and the prefix minimum through clock 5R is N.
+Nevertheless, eight ordinary steps after that prefix a smaller P
+joins with only FIVE even inverse operations (and 2R+2 odd ones).
+For every s, visit-count bound L, and source bound B, the kernel
+constructs one such source with R-1>L and N>B. The prefix obstruction
+and the later escape hold simultaneously for the same source.
+The root unbounded_delayed_escape also concludes N is not least.
+No escape for every h in the preceding family has been proved.
+
+VERIFICATION 2026-10-21T22:29:19.052857+00:00:
+33 fresh Lean 4.33.1 builds in dependency order, 59.917 seconds;
+16 threads per process, 21 audited roots, one axiom-free root.
+The new module took 2.118 seconds. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 69 preceding whole-window hashes and all 71 current hashes
+were authenticated. Historical sources, notes and records are preserved.
+
+Independent Python: 3,081 generic affine path-pair queries at u=0..1023
+and three larger u values, with 54,431 ordinary steps. All 4,096 residue
+exponents R=0..4095 passed; the size failure at R=1 is explicitly checked.
+There are 72 complete positive coalescing pairs: all covered odd R in
+3..257, six larger exponents, and two whole-window examples. These use
+159,497 actual N steps, 127,761 actual P steps, and 158,870 checks of
+the growing prefix's residue-20 positions. Across all sections there
+are 84,604 inverse edges and 200,454 shortcut edges, including the
+two larger short-tail checks below.
+
+The complete whole-window examples have R=4375 and R=10207, with
+13,125-bit and 30,621-bit sources. Their P values have 8,751 and
+20,415 bits, meeting at clocks (N,P)=(21883,17509) and (51043,40837).
+In these two FINITE examples, and at R=17, no forward state falls
+below N before the meeting. That extra prefix-minimum observation
+is Python evidence, not a new universal kernel theorem.
+Two larger examples R=39367 and R=354295 are materialized only for
+algebraic coordinates and 30 short ordinary tail steps; their entire
+paths are NOT numerically replayed. Source sizes are 118,101 and
+1,062,885 bits. A separate 4,128-case modular census covers s=0..128,
+a=0..31 without constructing the huge sources. All jobs are terminal.
+
+CONTINUITY AND NEXT:
+The remaining odd exponent classes in this new modulo-16 cover are
+3,5,9,13. A bounded exploratory search of dyadic affine constants
+found additional candidate Mersenne paths in subsets of those classes,
+but no universal cover. Its failures at the imposed search depth are
+not impossibility results. A useful next direction is to generalize
+the short affine meetings or prove a coalescence/descent criterion
+covering the remaining exponents and eventually arbitrary least
+counterexamples. The result already shows that whole-prefix inverse
+obstructions need not persist beyond the prefix.
+Universal family convergence, a useful later residue-20 theorem for
+every possible least source, cap/residual estimates, nontrivial cycles
+and divergence remain open. The full Collatz goal remains active.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for reproduction.
+No installations, credentials, agents, staging, commits or other Git
+writes occurred. The existing uncommitted work was preserved. HEAD
+remained 8dcff74 and the index SHA256 remained
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+ATTEMPT and README link the new note and reproduction command.
+
+The preceding whole-window handoff (2026-10-22):
+
+Last updated: 2026-10-22 local time, after the whole-ladder-window proof.
+
+Research remains active, with no external blocker. Previous goal turn:
+progress (26 inverse-locality kernel roots). Current turn: progress
+(16 whole-window kernel roots). The positive-integer Collatz conjecture
+remains unresolved. The user authorized increasing Lean threads for
+speed; use 16 threads per process, with heavy dependent builds sequential.
+
+The latest note is docs/MINIMUM-LADDER-WINDOW.md, with
+lean/MinimumLadderWindow.lean, verify_minimum_ladder_window.py, and
+results/minimum-ladder-window/. All 16 roots passed fresh kernel audits;
+finite_small_paths is axiom-free. The other roots use only standard
+logical axioms. No native reduction axiom or external mathematical
+premise enters this chain.
+
+SIMULTANEOUS WHOLE-PREFIX OBSTRUCTION, KERNEL:
+For any fixed extra even budget s, let K=2*(s+3),
+R=1+2*3^K*(h+1), N=8^R-5, and h>=0. For every 0<=i<R,
+x_i=9^i*8^(R-i)-5 and b_i=(3*x_i+1)/2 have exact inverse minimum
+M_(i+s)(b_i)=N. The attaining path has i even and 2i+1 odd inverse
+operations, with ordinary clock 5i+2. The lower bound covers every
+legal inverse word at that even budget, without an odd-count cutoff.
+The kernel also proves the prefix minimum is N through clock 5R,
+with exactly the b_i for 1<=i<R as residue-20 visits before that clock.
+The index-zero target is included in the inverse theorem but is not
+a residue-20 visit. For every s, visit-count bound L and source bound B,
+one R satisfies R-1>L and N>B with all these bounds simultaneously.
+Thus a fixed extra budget can fail at every visit in one arbitrarily
+long growing prefix, even though the allowed total budget grows with i.
+
+SHARP COMPANION AND POSITIVE REFERENCE, KERNEL:
+For Shadow(e,o,m), m>=5, o<=2e+1, and
+m<=(7 if o even, 5 if o odd)*2^(e-floor(o/2)). At the odd-count
+frontier e=i+f,o=2i+1 this gives 5<=m<=5*2^f, with equality attained
+by O(EOO)^i E^f. Shadow cannot have m=8. For
+a=2^(f+3)-m, every inverse predecessor p has p>=3 and
+3^o<=2^(f+e+o). A hypothetical smaller multiplier forces p<=6;
+those positive orbits enter {1,2,4} by clock eight. The remaining
+small possibilities are covered by an axiom-free finite certificate.
+Excluding m=8 is essential: f=1,m=8,a=8 admits p=3 with scaled
+multiplier 8/9, but that companion is impossible.
+
+Every inverse word splits at any specified odd count. Splitting at
+2i+1 gives x+m=2^f*8^R, with f<=s. From 8^R=8+3^K*q,
+x=a+3^K*(2^f*q). The preceding locality theorem transfers the entire
+remaining suffix to a because 2*((s-f)+(f+3))=2*(s+3)<=K.
+The reference multiplier bound then gives P>=3+3^K*q=N. Words
+not passing that odd-count frontier were already bounded below by N.
+The general theorem applies whenever the displayed congruence holds;
+the explicit family follows from the preceding kernel period theorem.
+
+VERIFICATION 2026-10-21T22:07:30.843749+00:00:
+32 fresh Lean 4.33.1 builds in dependency order, 56.137 seconds;
+16 threads per process, 16 audited roots, one axiom-free root.
+The new module took 2.383 seconds. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+All 66 preceding inverse-locality hashes and all 69 current hashes
+were authenticated. The helper verifier is explicitly included in the
+new manifest; preceding sources, notes and records remain unchanged.
+
+Independent Python: 113,014 complete companion states at even budget 22,
+maximum odd count 45; 1,089 attaining words at i,f=0..32, with 70,785
+inverse and 70,785 independent forward steps. All 672 finite-certificate
+tuples passed, 12 nonvacuous, plus 56 ordinary steps. Complete positive
+reference box s=0..10: 20,096 trees, 100,008 states. Selected lifted trees:
+498 trees, 8,028 states, 69,789 ordinary replay steps. Word splitting:
+1,855 complete inverse words for targets 1..64 at even budget 5,
+5,458 splits, with both segments independently replayed.
+
+Four actual full prefixes have R=1459,2917,13123,118099; the last
+uses a 354,297-bit source and 590,495 ordinary steps. Two larger sources
+with R=1062883 and R=9565939 were materialized but only their first 8
+and 3 blocks were replayed. Combined: 678,045 ordinary steps/residue
+checks, 406,827 shortcut steps, 135,603 residue-20 visits. Complete inverse
+optimization is only at the listed early indices: 51 queries, 15,407
+states, 309,256 ordinary forward steps. Universal all-visit optimization
+is kernel proved, not inferred from those finite queries. A separate
+4,128-case modular census covers s=0..128,h=0..31 without constructing
+those sources. No eventual convergence of the materialized sources
+or of the whole family is claimed. All jobs are terminal.
+
+CONTINUITY AND NEXT:
+The next mathematical step must address visits AFTER clock 5R or an
+extra budget that grows with the source or visit. The proposal that
+a fixed extra budget succeeds somewhere WITHIN the growing ladder
+prefix is now disproved, even with arbitrarily many available visits.
+A fixed extra budget succeeding at a suitable later visit in the
+entire orbit is still open. No single source is shown to have infinitely
+many obstructed visits. Useful least-counterexample occurrence,
+cap/residual estimates, nontrivial cycles and divergence remain open.
+
+Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for reproduction.
+The verifier defaults to min(16, available CPUs); --threads is configurable.
+No installations, credentials, agents, staging, commits or other Git
+writes occurred in this continuation. HEAD remained 8dcff74, and index
+SHA256 remained ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+Existing uncommitted work was preserved. ATTEMPT and README link the
+new note and reproduction command. The Collatz goal remains active.
+
+The preceding inverse-locality handoff (2026-10-21):
+
+Last updated: 2026-10-21 local time, after the inverse-locality proof.
+
+The user resumed the active goal. Research is active, with no external
+blocker. Previous goal turn: progress (the negative-cycle detour and its
+verification). Current turn: progress (26 new audited kernel roots).
 The positive-integer Collatz conjecture remains unresolved.
+
+The latest note is docs/MINIMUM-INVERSE-LOCALITY.md, with
+lean/MinimumInverseLocality.lean, verify_minimum_inverse_locality.py,
+and results/minimum-inverse-locality/. No native reduction axiom or
+external mathematical premise enters the new chain. The finite anchor
+is axiom-free; the remaining roots use only standard logical axioms.
+
+GENERAL INVERSE LOCALITY, KERNEL:
+For Backtrack(e,o,b,p), b>0, the kernel proves p>0 and
+3^o*(p+1)<=2^(e+o)*(b+1). If b+1<=2^d, then o<2*(e+d).
+For K>=2*(r+d), every path with e<=r from B=b+3^K*q transfers
+to a path from b with the same counts and
+P=p+2^(e+o)*3^(K-o)*q, o<K. The induction derives the reference
+odd-count bound before each new guard; it does not assume an odd-count
+cutoff for B. Conversely, every reference path with o<=K lifts.
+Thus the full bounded inverse tree is preserved, not just a selected word.
+The transfer assumes b>0 and q>=0, and applies to a finite even budget.
+
+UNRESTRICTED ANCHOR, KERNEL:
+The only positive ordinary predecessor of 857 at most 507 is 507,
+at clock 7. The finite certificate checks avoidance through 200 steps
+and entry into the closed cycle {1,2,4} for sources 1..506, and for
+C^8(507). Clocks 0..7 for 507 are checked separately. A kernel checker
+soundness theorem extends avoidance to all times. Every inverse word
+to 857 therefore has p>=507 and multiplier 2^(e+o)/3^o>=16/27.
+The word OEOO attains 507 with one even and three odd operations.
+This is a predecessor minimum at 857, not a global forward minimum:
+507 reaches one at clock 35 and is not an exceptional source.
+
+UNBOUNDED FIRST-TARGET OBSTRUCTION, KERNEL:
+For r>=1, K=2*(r+10), n=507+16*3^(K-3)*q, b=857+3^K*q,
+the exact minimum over ALL inverse words with e<=r is n. The first
+ordinary visit to 20mod27 is b at clock 7, with prefix minimum n.
+The source is unbounded as q varies. Each larger budget has its own
+progression; no single unbounded source is shown to resist every budget.
+
+RETURN-LADDER CONSEQUENCE, KERNEL:
+For R=3+2*3^K*h, N=8^R-5, the first target b_1 is in the same
+progression: 8^(2*3^K*h)=1+3^K*z gives q=864*z. The kernel
+proves R>=3, R odd, h<N, C^7(N)=b_1, and M_r(b_1)=N.
+In particular, for every extra budget s and source bound B there is
+an odd R with N>B and M_(1+s)(b_1)=N. Hence a uniform extra budget
+cannot work at EVERY target or uniformly at the FIRST target even
+after excluding finitely many sources. This does NOT rule out a fixed
+extra budget succeeding at SOME LATER visit for each source. That
+quantifier, useful least-orbit occurrence, cap/residual control, and
+both nontrivial cycles and divergence remain open.
+
+VERIFICATION 2026-10-21T21:38:40.089008Z:
+31 fresh Lean 4.33.1 builds in dependency order, 55.557 seconds;
+26 audited roots, one axiom-free root, 66 current hashes authenticated.
+All 64 preceding negative-cycle hashes authenticated before building.
+The user explicitly authorized more Lean threads for speed during
+this turn. The final verifier used 16 threads per process on 16 CPUs;
+dependent module builds remained sequential. The new module took
+13.897 seconds. Compiler commit unchanged:
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+
+Independent Python: 506 smaller anchor starts, 26666 ordinary steps,
+plus 35 steps from 507. The longest smaller first arrival is 143 at
+327. Complete anchor trees at budgets 0..20 contain 88733 counted
+states across queries. General locality: 896 reference trees at
+targets 1..128, budgets 0..6; 1792 lifted trees, 30882 states and
+226832 ordinary forward replay steps. Family optimization: 64 complete
+trees at r1..16 and q0,1,2,17, 70076 states and 1716424 forward steps.
+Actual first-target prefixes: 2048 at r1..64,q0..31, 14336 steps.
+Thirty materialized period/coordinate checks use 210 prefix steps;
+4160 actual ladder-family checks (r1..64,h0..64) are modular only.
+Apart from h=0, the enormous ladder sources were not materialized.
+At r1,h1, R=62762119221 and N has188286357663 binary digits.
+No continuous convergence interval or universal family convergence
+is claimed. All checks are terminal.
+
+CONTINUITY AND NEXT:
+The worktree initially had clean HEAD8dcff74. The prior negative-cycle
+manifest and its source files were authoritative and remained unchanged.
+Exploratory complete forward caches at R1,3,5,7 confirmed no source
+below N reaches any listed ladder target. Only the R3 first target857
+was incorporated into the new kernel anchor; the larger caches remain
+exploratory observations and are not extra formal theorems.
+The mathematical next step must address a useful later visit or
+source-dependent inverse complexity, rather than another fixed-budget
+first-target assertion. No complete proof or counterexample was found.
+
+Lean 4.33.1 was again absent from /tmp and restored from its official
+release using the existing network authorization; no credentials were
+read. Use --lean /tmp/lean-4.33.1-linux/bin/lean --threads 16 for the
+new verifier. Its default thread count is min(16, available CPUs),
+and --threads remains configurable. No agents, staging, commits, or
+other Git writes occurred. Index SHA256 remains
+ba48d1a9910830b85695359bdd886167848b039191aa8278e056c223369be3ad.
+ATTEMPT and README link the new note and reproduction command.
+
+The preceding negative-cycle handoff (2026-10-21):
+
+That run ended with a requested pause; the user resumed research in
+the current turn. The positive-integer Collatz conjecture remains unresolved.
 
 The latest note is docs/MINIMUM-NEGATIVE-CYCLE.md, with
 lean/MinimumNegativeCycle.lean, verify_minimum_negative_cycle.py, and
@@ -1566,8 +3784,10 @@ inferring that a proof is imminent from the user's encouragement.
 - Current workspace (2026-10-21):
   `/home/jeannaude/Documents/collatz-conjecture--expansion`, Linux, bash,
   timezone Africa/Johannesburg. Earlier macOS descriptions in dated
-  entries are historical. Allow longer Rust/Lean runs and avoid concurrent
-  heavy compiles. A short tool timeout is not a mathematical or build failure.
+  entries are historical. Allow longer Rust/Lean runs. On 2026-10-21
+  the user explicitly authorized increasing Lean threads for speed;
+  the latest verifier uses16 threads per process, with dependent builds
+  in sequence. A short tool timeout is not a mathematical or build failure.
 - The user has cloned `/Users/jean/Personal/collatz-two-coordinate-obstruction`.
   Prefer this local source for further review. On 2026-10-13 its clean HEAD
   was `a7275d5a73814d3d9a400c6fe6577de9542b03a3`. The local review and

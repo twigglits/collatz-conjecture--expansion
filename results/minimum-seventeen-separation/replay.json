@@ -1,0 +1,411 @@
+{
+  "status": "passed",
+  "counts": {
+    "finite_shadow_states": 50,
+    "window_states_replayed": 254871,
+    "windows_with_actual_value_sets": 851,
+    "separated_triples": 863,
+    "window_ordinary_steps": 252282,
+    "generic_scalar_triples": 260,
+    "complete_prefix_ordinary_steps": 1968997,
+    "shortcut_edges": 1132081,
+    "inverse_edges": 1132081,
+    "complete_source_prefixes": 1800,
+    "complete_weighted_triples": 600,
+    "modular_pure_lifts": 312,
+    "convergent_witness_ordinary_steps": 6433,
+    "larger_transition_tail_steps": 498
+  },
+  "generic_checks": {
+    "shadows": [
+      [
+        225,
+        666,
+        333,
+        990,
+        495,
+        1476,
+        738,
+        369,
+        1098,
+        549,
+        1638,
+        819,
+        2448,
+        1224,
+        612,
+        306,
+        153,
+        450
+      ],
+      [
+        234,
+        117,
+        342,
+        171,
+        504,
+        252,
+        126,
+        63,
+        180,
+        90,
+        45
+      ],
+      [
+        217,
+        642,
+        321,
+        954,
+        477,
+        1422,
+        711,
+        2124,
+        1062,
+        531,
+        1584,
+        792,
+        396,
+        198,
+        99,
+        288,
+        144,
+        72,
+        36,
+        18,
+        9
+      ]
+    ],
+    "cycle_start_indices": [
+      0,
+      6,
+      19
+    ],
+    "H_interval": [
+      0,
+      64
+    ],
+    "lift_offsets": [
+      0,
+      1,
+      2,
+      17
+    ],
+    "scope": "Finite closure and disjointness tables, plus positive scalar windows. All cross-time nonmeetings in a window follow from disjoint residue sets; small windows also compare sets of the exact integer states."
+  },
+  "complete_paths": {
+    "distinct_triples": 600,
+    "maxima": {
+      "R": 16384,
+      "r": 4096,
+      "H": 16384,
+      "weight_bits": 45251,
+      "N_bits": 49365,
+      "P_bits": 45284,
+      "Q_bits": 45294,
+      "scalar_bits": 52143
+    },
+    "large_rows": [
+      {
+        "R": 14,
+        "r": 0,
+        "H": 4096,
+        "weight_bits": 4165,
+        "N_bits": 4209,
+        "P_bits": 4198,
+        "Q_bits": 4208,
+        "scalar_bits": 4205
+      },
+      {
+        "R": 14,
+        "r": 0,
+        "H": 16384,
+        "weight_bits": 16451,
+        "N_bits": 16495,
+        "P_bits": 16484,
+        "Q_bits": 16494,
+        "scalar_bits": 16491
+      },
+      {
+        "R": 14,
+        "r": 16,
+        "H": 4096,
+        "weight_bits": 4340,
+        "N_bits": 4384,
+        "P_bits": 4373,
+        "Q_bits": 4383,
+        "scalar_bits": 4382
+      },
+      {
+        "R": 14,
+        "r": 16,
+        "H": 16384,
+        "weight_bits": 16629,
+        "N_bits": 16673,
+        "P_bits": 16662,
+        "Q_bits": 16672,
+        "scalar_bits": 16670
+      },
+      {
+        "R": 14,
+        "r": 64,
+        "H": 4096,
+        "weight_bits": 4868,
+        "N_bits": 4912,
+        "P_bits": 4901,
+        "Q_bits": 4911,
+        "scalar_bits": 4914
+      },
+      {
+        "R": 14,
+        "r": 64,
+        "H": 16384,
+        "weight_bits": 17156,
+        "N_bits": 17200,
+        "P_bits": 17189,
+        "Q_bits": 17199,
+        "scalar_bits": 17201
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "H": 32,
+        "weight_bits": 5733,
+        "N_bits": 5777,
+        "P_bits": 5766,
+        "Q_bits": 5776,
+        "scalar_bits": 5821
+      },
+      {
+        "R": 14,
+        "r": 512,
+        "H": 128,
+        "weight_bits": 5829,
+        "N_bits": 5873,
+        "P_bits": 5862,
+        "Q_bits": 5872,
+        "scalar_bits": 5917
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "H": 32,
+        "weight_bits": 11363,
+        "N_bits": 11407,
+        "P_bits": 11396,
+        "Q_bits": 11406,
+        "scalar_bits": 11500
+      },
+      {
+        "R": 14,
+        "r": 1024,
+        "H": 128,
+        "weight_bits": 11460,
+        "N_bits": 11504,
+        "P_bits": 11493,
+        "Q_bits": 11503,
+        "scalar_bits": 11597
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "H": 32,
+        "weight_bits": 45157,
+        "N_bits": 45201,
+        "P_bits": 45190,
+        "Q_bits": 45200,
+        "scalar_bits": 45585
+      },
+      {
+        "R": 14,
+        "r": 4096,
+        "H": 128,
+        "weight_bits": 45251,
+        "N_bits": 45295,
+        "P_bits": 45284,
+        "Q_bits": 45294,
+        "scalar_bits": 45679
+      },
+      {
+        "R": 16384,
+        "r": 0,
+        "H": 16,
+        "weight_bits": 86,
+        "N_bits": 49240,
+        "P_bits": 32859,
+        "Q_bits": 32869,
+        "scalar_bits": 52017
+      },
+      {
+        "R": 16384,
+        "r": 0,
+        "H": 64,
+        "weight_bits": 134,
+        "N_bits": 49288,
+        "P_bits": 32907,
+        "Q_bits": 32917,
+        "scalar_bits": 52066
+      },
+      {
+        "R": 16384,
+        "r": 7,
+        "H": 16,
+        "weight_bits": 163,
+        "N_bits": 49317,
+        "P_bits": 32936,
+        "Q_bits": 32946,
+        "scalar_bits": 52095
+      },
+      {
+        "R": 16384,
+        "r": 7,
+        "H": 64,
+        "weight_bits": 211,
+        "N_bits": 49365,
+        "P_bits": 32984,
+        "Q_bits": 32994,
+        "scalar_bits": 52143
+      }
+    ],
+    "regular_R_interval": [
+      14,
+      20
+    ],
+    "regular_r_interval": [
+      0,
+      8
+    ],
+    "regular_H": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "additional_R": [
+      128,
+      1024,
+      16384
+    ],
+    "additional_r": [
+      512,
+      1024,
+      4096
+    ],
+    "additional_H": [
+      128,
+      512,
+      1024,
+      4096,
+      16384
+    ],
+    "scope": "All three complete original-source prefixes are replayed by ordinary, shortcut, and inverse operations. Every following window is replayed by two independent ordinary-step implementations, with exact shadow congruences. This establishes no meeting in either pair of exit windows, not absence of earlier or later coalescence."
+  },
+  "modular_checks": {
+    "r_interval": [
+      0,
+      8
+    ],
+    "H_interval": [
+      0,
+      16
+    ],
+    "additional_pairs": [
+      [
+        128,
+        128
+      ],
+      [
+        512,
+        0
+      ],
+      [
+        0,
+        4096
+      ]
+    ],
+    "bounds": [
+      "0",
+      "2**(r+H+32)"
+    ],
+    "large_rows": [
+      {
+        "r": 128,
+        "H": 128,
+        "R_bits": 1606,
+        "B_bits": 0
+      },
+      {
+        "r": 128,
+        "H": 128,
+        "R_bits": 1891,
+        "B_bits": 289
+      },
+      {
+        "r": 512,
+        "H": 0,
+        "R_bits": 5702,
+        "B_bits": 0
+      },
+      {
+        "r": 512,
+        "H": 0,
+        "R_bits": 6243,
+        "B_bits": 545
+      },
+      {
+        "r": 0,
+        "H": 4096,
+        "R_bits": 4166,
+        "B_bits": 0
+      },
+      {
+        "r": 0,
+        "H": 4096,
+        "R_bits": 8291,
+        "B_bits": 4129
+      }
+    ],
+    "scope": "Only exponent coordinates and modular powers are computed for pure sources. Their huge starting integers, quotients, and full trajectories are not materialized. The all-horizon existence and separation statements are kernel theorems."
+  },
+  "witness_checks": {
+    "R": 14,
+    "r": 0,
+    "H": 128,
+    "weight": "40485997700533351330544314970746016563530061325119216724809",
+    "unit": "6426732526204138646359478836023285044640257771279812973",
+    "sources": [
+      "712237203741581089677172402905404775885356727108654936613645872523116539",
+      "347772072139443891443931837356154675725271839408522918268381773692927",
+      "356118601870790544838586201452702387942678363554327468306822936261558271"
+    ],
+    "first_arrival_clocks": [
+      1795,
+      1978,
+      2660
+    ],
+    "scope": "Lean certifies arrivals at one and the separating coordinate conditions for this explicit triple. Python also checks first-arrival minimality and the separated 129-state exit windows."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "R": 65536,
+        "r": 0,
+        "H": 32,
+        "N_bits": 196711,
+        "full_prefixes_replayed": false
+      },
+      {
+        "R": 1048576,
+        "r": 0,
+        "H": 32,
+        "N_bits": 3145831,
+        "full_prefixes_replayed": false
+      }
+    ],
+    "scope": "Exact weighted source coordinates, short transition tails, and exit windows are checked. The full initial growing prefixes are not iterated."
+  }
+}

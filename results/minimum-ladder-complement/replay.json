@@ -1,0 +1,992 @@
+{
+  "status": "passed",
+  "counts": {
+    "weighted_ladder_paths": 1600,
+    "weighted_ladder_ordinary_steps": 96000,
+    "shortcut_edges": 734219,
+    "inverse_edges": 423749,
+    "generic_affine_paths": 3078,
+    "generic_affine_ordinary_steps": 26676,
+    "generic_complementary_paths": 890,
+    "generic_complementary_ordinary_steps": 37340,
+    "finite_residue_injection_cases": 16,
+    "lift_bit_checks": 17387,
+    "modular_half_period_flips": 127,
+    "exact_half_period_flips": 7,
+    "modular_complementary_examples": 4064,
+    "finite_exponent_classification_cases": 1023,
+    "old_progression_modular_cases": 257,
+    "remaining_progression_modular_cases": 257,
+    "complete_growing_prefix_residue_checks": 508155,
+    "complete_first_late_target_checks": 35,
+    "complete_complementary_pairs": 51,
+    "complete_N_steps": 508948,
+    "complete_P_steps": 508795,
+    "complete_remaining_pairs": 19,
+    "complete_remaining_N_steps": 37506,
+    "complete_remaining_P_steps": 37411,
+    "remaining_member_convergence_steps": 309,
+    "large_coordinate_pairs": 2,
+    "large_short_tail_steps": 144
+  },
+  "generic_paths": {
+    "weighted_r_interval": [
+      0,
+      24
+    ],
+    "weighted_q_interval": [
+      6,
+      69
+    ],
+    "affine_u_interval": [
+      0,
+      1023
+    ],
+    "extra_u": [
+      "2**256+1",
+      "3**128+7"
+    ],
+    "profile_k_interval": [
+      2,
+      32
+    ],
+    "profile_odd_q_interval": [
+      1,
+      511
+    ],
+    "profile_filter": "2**k*q=2 mod9 and 3**k*q=1 mod4",
+    "scope": "Every path in these finite ranges is independently replayed with ordinary steps, paired steps, and applicable shortcut and inverse words."
+  },
+  "modular_checks": {
+    "complementary_seed_k_interval": [
+      2,
+      128
+    ],
+    "seed_rows": [
+      {
+        "k": 2,
+        "r": 29,
+        "period": 32
+      },
+      {
+        "k": 3,
+        "r": 21,
+        "period": 64
+      },
+      {
+        "k": 4,
+        "r": 101,
+        "period": 128
+      },
+      {
+        "k": 5,
+        "r": 197,
+        "period": 256
+      },
+      {
+        "k": 6,
+        "r": 5,
+        "period": 512
+      },
+      {
+        "k": 7,
+        "r": 901,
+        "period": 1024
+      },
+      {
+        "k": 8,
+        "r": 1157,
+        "period": 2048
+      },
+      {
+        "k": 9,
+        "r": 645,
+        "period": 4096
+      },
+      {
+        "k": 10,
+        "r": 5765,
+        "period": 8192
+      }
+    ],
+    "modular_h_interval": [
+      0,
+      31
+    ],
+    "classification_R_interval": [
+      3,
+      1025
+    ],
+    "classification_counts": {
+      "earlier_odd_exclusions": 256,
+      "even_source_restriction": 511,
+      "new_complementary_exit": 64,
+      "remaining_nine_mod_sixteen": 64,
+      "earlier_block_exit": 128
+    },
+    "progression_h_interval": [
+      0,
+      256
+    ],
+    "scope": "The large lifted exponents are checked modulo powers of two only. Half-period flips are materialized exactly for k=2..8. Existence of arbitrarily large complementary exponents for every k is separately kernel proved. No universal uniqueness claim is made. The classification census is finite; the necessary exponent restriction is separately kernel proved."
+  },
+  "complete_paths": {
+    "small_odd_R_interval": [
+      3,
+      513
+    ],
+    "old_progression_h_interval": [
+      0,
+      16
+    ],
+    "lifted_cases": [
+      {
+        "k": 2,
+        "r": 29,
+        "R": 61
+      },
+      {
+        "k": 3,
+        "r": 21,
+        "R": 85
+      },
+      {
+        "k": 4,
+        "r": 101,
+        "R": 229
+      },
+      {
+        "k": 5,
+        "r": 197,
+        "R": 453
+      },
+      {
+        "k": 6,
+        "r": 5,
+        "R": 517
+      },
+      {
+        "k": 7,
+        "r": 901,
+        "R": 1925
+      },
+      {
+        "k": 8,
+        "r": 1157,
+        "R": 3205
+      },
+      {
+        "k": 9,
+        "r": 645,
+        "R": 4741
+      },
+      {
+        "k": 10,
+        "r": 5765,
+        "R": 13957
+      }
+    ],
+    "rows": [
+      {
+        "R": 5,
+        "k": 6,
+        "N_bits": 15,
+        "P_bits": 15,
+        "N_clock": 44,
+        "P_clock": 41,
+        "even_inverse_count": 9,
+        "odd_inverse_count": 16,
+        "first_late_residue20_through_meeting": 44,
+        "first_forward_descent_through_meeting": 26
+      },
+      {
+        "R": 21,
+        "k": 3,
+        "N_bits": 63,
+        "P_bits": 63,
+        "N_clock": 118,
+        "P_clock": 115,
+        "even_inverse_count": 25,
+        "odd_inverse_count": 45,
+        "first_late_residue20_through_meeting": 118,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 29,
+        "k": 2,
+        "N_bits": 87,
+        "P_bits": 87,
+        "N_clock": 156,
+        "P_clock": 153,
+        "even_inverse_count": 33,
+        "odd_inverse_count": 60,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 61,
+        "k": 2,
+        "N_bits": 183,
+        "P_bits": 183,
+        "N_clock": 316,
+        "P_clock": 313,
+        "even_inverse_count": 65,
+        "odd_inverse_count": 124,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 85,
+        "k": 3,
+        "N_bits": 255,
+        "P_bits": 255,
+        "N_clock": 438,
+        "P_clock": 435,
+        "even_inverse_count": 89,
+        "odd_inverse_count": 173,
+        "first_late_residue20_through_meeting": 438,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 93,
+        "k": 2,
+        "N_bits": 279,
+        "P_bits": 279,
+        "N_clock": 476,
+        "P_clock": 473,
+        "even_inverse_count": 97,
+        "odd_inverse_count": 188,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 101,
+        "k": 4,
+        "N_bits": 303,
+        "P_bits": 303,
+        "N_clock": 520,
+        "P_clock": 517,
+        "even_inverse_count": 105,
+        "odd_inverse_count": 206,
+        "first_late_residue20_through_meeting": 520,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 125,
+        "k": 2,
+        "N_bits": 375,
+        "P_bits": 375,
+        "N_clock": 636,
+        "P_clock": 633,
+        "even_inverse_count": 129,
+        "odd_inverse_count": 252,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 149,
+        "k": 3,
+        "N_bits": 447,
+        "P_bits": 447,
+        "N_clock": 758,
+        "P_clock": 755,
+        "even_inverse_count": 153,
+        "odd_inverse_count": 301,
+        "first_late_residue20_through_meeting": 758,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 157,
+        "k": 2,
+        "N_bits": 471,
+        "P_bits": 471,
+        "N_clock": 796,
+        "P_clock": 793,
+        "even_inverse_count": 161,
+        "odd_inverse_count": 316,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 189,
+        "k": 2,
+        "N_bits": 567,
+        "P_bits": 567,
+        "N_clock": 956,
+        "P_clock": 953,
+        "even_inverse_count": 193,
+        "odd_inverse_count": 380,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 197,
+        "k": 5,
+        "N_bits": 591,
+        "P_bits": 591,
+        "N_clock": 1002,
+        "P_clock": 999,
+        "even_inverse_count": 201,
+        "odd_inverse_count": 399,
+        "first_late_residue20_through_meeting": 1002,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 213,
+        "k": 3,
+        "N_bits": 639,
+        "P_bits": 639,
+        "N_clock": 1078,
+        "P_clock": 1075,
+        "even_inverse_count": 217,
+        "odd_inverse_count": 429,
+        "first_late_residue20_through_meeting": 1078,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 221,
+        "k": 2,
+        "N_bits": 663,
+        "P_bits": 663,
+        "N_clock": 1116,
+        "P_clock": 1113,
+        "even_inverse_count": 225,
+        "odd_inverse_count": 444,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 229,
+        "k": 4,
+        "N_bits": 687,
+        "P_bits": 687,
+        "N_clock": 1160,
+        "P_clock": 1157,
+        "even_inverse_count": 233,
+        "odd_inverse_count": 462,
+        "first_late_residue20_through_meeting": 1160,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 253,
+        "k": 2,
+        "N_bits": 759,
+        "P_bits": 759,
+        "N_clock": 1276,
+        "P_clock": 1273,
+        "even_inverse_count": 257,
+        "odd_inverse_count": 508,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 277,
+        "k": 3,
+        "N_bits": 831,
+        "P_bits": 831,
+        "N_clock": 1398,
+        "P_clock": 1395,
+        "even_inverse_count": 281,
+        "odd_inverse_count": 557,
+        "first_late_residue20_through_meeting": 1398,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 285,
+        "k": 2,
+        "N_bits": 855,
+        "P_bits": 855,
+        "N_clock": 1436,
+        "P_clock": 1433,
+        "even_inverse_count": 289,
+        "odd_inverse_count": 572,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 317,
+        "k": 2,
+        "N_bits": 951,
+        "P_bits": 951,
+        "N_clock": 1596,
+        "P_clock": 1593,
+        "even_inverse_count": 321,
+        "odd_inverse_count": 636,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 341,
+        "k": 3,
+        "N_bits": 1023,
+        "P_bits": 1023,
+        "N_clock": 1718,
+        "P_clock": 1715,
+        "even_inverse_count": 345,
+        "odd_inverse_count": 685,
+        "first_late_residue20_through_meeting": 1718,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 349,
+        "k": 2,
+        "N_bits": 1047,
+        "P_bits": 1047,
+        "N_clock": 1756,
+        "P_clock": 1753,
+        "even_inverse_count": 353,
+        "odd_inverse_count": 700,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 357,
+        "k": 4,
+        "N_bits": 1071,
+        "P_bits": 1071,
+        "N_clock": 1800,
+        "P_clock": 1797,
+        "even_inverse_count": 361,
+        "odd_inverse_count": 718,
+        "first_late_residue20_through_meeting": 1800,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 381,
+        "k": 2,
+        "N_bits": 1143,
+        "P_bits": 1143,
+        "N_clock": 1916,
+        "P_clock": 1913,
+        "even_inverse_count": 385,
+        "odd_inverse_count": 764,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 405,
+        "k": 3,
+        "N_bits": 1215,
+        "P_bits": 1215,
+        "N_clock": 2038,
+        "P_clock": 2035,
+        "even_inverse_count": 409,
+        "odd_inverse_count": 813,
+        "first_late_residue20_through_meeting": 2038,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 413,
+        "k": 2,
+        "N_bits": 1239,
+        "P_bits": 1239,
+        "N_clock": 2076,
+        "P_clock": 2073,
+        "even_inverse_count": 417,
+        "odd_inverse_count": 828,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 445,
+        "k": 2,
+        "N_bits": 1335,
+        "P_bits": 1335,
+        "N_clock": 2236,
+        "P_clock": 2233,
+        "even_inverse_count": 449,
+        "odd_inverse_count": 892,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 453,
+        "k": 5,
+        "N_bits": 1359,
+        "P_bits": 1359,
+        "N_clock": 2282,
+        "P_clock": 2279,
+        "even_inverse_count": 457,
+        "odd_inverse_count": 911,
+        "first_late_residue20_through_meeting": 2282,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 469,
+        "k": 3,
+        "N_bits": 1407,
+        "P_bits": 1407,
+        "N_clock": 2358,
+        "P_clock": 2355,
+        "even_inverse_count": 473,
+        "odd_inverse_count": 941,
+        "first_late_residue20_through_meeting": 2358,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 477,
+        "k": 2,
+        "N_bits": 1431,
+        "P_bits": 1431,
+        "N_clock": 2396,
+        "P_clock": 2393,
+        "even_inverse_count": 481,
+        "odd_inverse_count": 956,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 485,
+        "k": 4,
+        "N_bits": 1455,
+        "P_bits": 1455,
+        "N_clock": 2440,
+        "P_clock": 2437,
+        "even_inverse_count": 489,
+        "odd_inverse_count": 974,
+        "first_late_residue20_through_meeting": 2440,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 509,
+        "k": 2,
+        "N_bits": 1527,
+        "P_bits": 1527,
+        "N_clock": 2556,
+        "P_clock": 2553,
+        "even_inverse_count": 513,
+        "odd_inverse_count": 1020,
+        "first_late_residue20_through_meeting": null,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 517,
+        "k": 6,
+        "N_bits": 1551,
+        "P_bits": 1551,
+        "N_clock": 2604,
+        "P_clock": 2601,
+        "even_inverse_count": 521,
+        "odd_inverse_count": 1040,
+        "first_late_residue20_through_meeting": 2604,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 1029,
+        "k": 6,
+        "N_bits": 3087,
+        "P_bits": 3087,
+        "N_clock": 5164,
+        "P_clock": 5161,
+        "even_inverse_count": 1033,
+        "odd_inverse_count": 2064,
+        "first_late_residue20_through_meeting": 5164,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 1541,
+        "k": 6,
+        "N_bits": 4623,
+        "P_bits": 4623,
+        "N_clock": 7724,
+        "P_clock": 7721,
+        "even_inverse_count": 1545,
+        "odd_inverse_count": 3088,
+        "first_late_residue20_through_meeting": 7724,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 2053,
+        "k": 6,
+        "N_bits": 6159,
+        "P_bits": 6159,
+        "N_clock": 10284,
+        "P_clock": 10281,
+        "even_inverse_count": 2057,
+        "odd_inverse_count": 4112,
+        "first_late_residue20_through_meeting": 10284,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 2565,
+        "k": 6,
+        "N_bits": 7695,
+        "P_bits": 7695,
+        "N_clock": 12844,
+        "P_clock": 12841,
+        "even_inverse_count": 2569,
+        "odd_inverse_count": 5136,
+        "first_late_residue20_through_meeting": 12844,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 3077,
+        "k": 6,
+        "N_bits": 9231,
+        "P_bits": 9231,
+        "N_clock": 15404,
+        "P_clock": 15401,
+        "even_inverse_count": 3081,
+        "odd_inverse_count": 6160,
+        "first_late_residue20_through_meeting": 15404,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 3589,
+        "k": 6,
+        "N_bits": 10767,
+        "P_bits": 10767,
+        "N_clock": 17964,
+        "P_clock": 17961,
+        "even_inverse_count": 3593,
+        "odd_inverse_count": 7184,
+        "first_late_residue20_through_meeting": 17964,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 4101,
+        "k": 6,
+        "N_bits": 12303,
+        "P_bits": 12303,
+        "N_clock": 20524,
+        "P_clock": 20521,
+        "even_inverse_count": 4105,
+        "odd_inverse_count": 8208,
+        "first_late_residue20_through_meeting": 20524,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 4613,
+        "k": 6,
+        "N_bits": 13839,
+        "P_bits": 13839,
+        "N_clock": 23084,
+        "P_clock": 23081,
+        "even_inverse_count": 4617,
+        "odd_inverse_count": 9232,
+        "first_late_residue20_through_meeting": 23084,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 5125,
+        "k": 6,
+        "N_bits": 15375,
+        "P_bits": 15375,
+        "N_clock": 25644,
+        "P_clock": 25641,
+        "even_inverse_count": 5129,
+        "odd_inverse_count": 10256,
+        "first_late_residue20_through_meeting": 25644,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 5637,
+        "k": 6,
+        "N_bits": 16911,
+        "P_bits": 16911,
+        "N_clock": 28204,
+        "P_clock": 28201,
+        "even_inverse_count": 5641,
+        "odd_inverse_count": 11280,
+        "first_late_residue20_through_meeting": 28204,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 6149,
+        "k": 6,
+        "N_bits": 18447,
+        "P_bits": 18447,
+        "N_clock": 30764,
+        "P_clock": 30761,
+        "even_inverse_count": 6153,
+        "odd_inverse_count": 12304,
+        "first_late_residue20_through_meeting": 30764,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 6661,
+        "k": 6,
+        "N_bits": 19983,
+        "P_bits": 19983,
+        "N_clock": 33324,
+        "P_clock": 33321,
+        "even_inverse_count": 6665,
+        "odd_inverse_count": 13328,
+        "first_late_residue20_through_meeting": 33324,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 7173,
+        "k": 6,
+        "N_bits": 21519,
+        "P_bits": 21519,
+        "N_clock": 35884,
+        "P_clock": 35881,
+        "even_inverse_count": 7177,
+        "odd_inverse_count": 14352,
+        "first_late_residue20_through_meeting": 35884,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 7685,
+        "k": 6,
+        "N_bits": 23055,
+        "P_bits": 23055,
+        "N_clock": 38444,
+        "P_clock": 38441,
+        "even_inverse_count": 7689,
+        "odd_inverse_count": 15376,
+        "first_late_residue20_through_meeting": 38444,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 8197,
+        "k": 6,
+        "N_bits": 24591,
+        "P_bits": 24591,
+        "N_clock": 41004,
+        "P_clock": 41001,
+        "even_inverse_count": 8201,
+        "odd_inverse_count": 16400,
+        "first_late_residue20_through_meeting": 41004,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 1925,
+        "k": 7,
+        "N_bits": 5775,
+        "P_bits": 5775,
+        "N_clock": 9646,
+        "P_clock": 9643,
+        "even_inverse_count": 1929,
+        "odd_inverse_count": 3857,
+        "first_late_residue20_through_meeting": 9646,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 3205,
+        "k": 8,
+        "N_bits": 9615,
+        "P_bits": 9615,
+        "N_clock": 16048,
+        "P_clock": 16045,
+        "even_inverse_count": 3209,
+        "odd_inverse_count": 6418,
+        "first_late_residue20_through_meeting": 16048,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 4741,
+        "k": 9,
+        "N_bits": 14223,
+        "P_bits": 14223,
+        "N_clock": 23730,
+        "P_clock": 23727,
+        "even_inverse_count": 4745,
+        "odd_inverse_count": 9491,
+        "first_late_residue20_through_meeting": 23730,
+        "first_forward_descent_through_meeting": null
+      },
+      {
+        "R": 13957,
+        "k": 10,
+        "N_bits": 41871,
+        "P_bits": 41871,
+        "N_clock": 69812,
+        "P_clock": 69809,
+        "even_inverse_count": 13961,
+        "odd_inverse_count": 27924,
+        "first_late_residue20_through_meeting": 69812,
+        "first_forward_descent_through_meeting": null
+      }
+    ],
+    "scope": "Both positive paths are fully iterated from their starts. Every shortcut parity and inverse guard is checked independently. For k>=3 every ordinary clock after the ladder endpoint is checked for the first residue-20 visit. Repeated cases are reused. No convergence beyond the meeting or optimal inverse cost is inferred."
+  },
+  "remaining_paths": {
+    "rows": [
+      {
+        "h": 0,
+        "R": 9,
+        "N_bits": 27,
+        "N_clock": 54,
+        "P_clock": 49,
+        "same_endpoint": false
+      },
+      {
+        "h": 1,
+        "R": 25,
+        "N_bits": 75,
+        "N_clock": 134,
+        "P_clock": 129,
+        "same_endpoint": false
+      },
+      {
+        "h": 2,
+        "R": 41,
+        "N_bits": 123,
+        "N_clock": 214,
+        "P_clock": 209,
+        "same_endpoint": false
+      },
+      {
+        "h": 3,
+        "R": 57,
+        "N_bits": 171,
+        "N_clock": 294,
+        "P_clock": 289,
+        "same_endpoint": false
+      },
+      {
+        "h": 4,
+        "R": 73,
+        "N_bits": 219,
+        "N_clock": 374,
+        "P_clock": 369,
+        "same_endpoint": false
+      },
+      {
+        "h": 5,
+        "R": 89,
+        "N_bits": 267,
+        "N_clock": 454,
+        "P_clock": 449,
+        "same_endpoint": false
+      },
+      {
+        "h": 6,
+        "R": 105,
+        "N_bits": 315,
+        "N_clock": 534,
+        "P_clock": 529,
+        "same_endpoint": false
+      },
+      {
+        "h": 7,
+        "R": 121,
+        "N_bits": 363,
+        "N_clock": 614,
+        "P_clock": 609,
+        "same_endpoint": false
+      },
+      {
+        "h": 8,
+        "R": 137,
+        "N_bits": 411,
+        "N_clock": 694,
+        "P_clock": 689,
+        "same_endpoint": false
+      },
+      {
+        "h": 9,
+        "R": 153,
+        "N_bits": 459,
+        "N_clock": 774,
+        "P_clock": 769,
+        "same_endpoint": false
+      },
+      {
+        "h": 10,
+        "R": 169,
+        "N_bits": 507,
+        "N_clock": 854,
+        "P_clock": 849,
+        "same_endpoint": false
+      },
+      {
+        "h": 11,
+        "R": 185,
+        "N_bits": 555,
+        "N_clock": 934,
+        "P_clock": 929,
+        "same_endpoint": false
+      },
+      {
+        "h": 12,
+        "R": 201,
+        "N_bits": 603,
+        "N_clock": 1014,
+        "P_clock": 1009,
+        "same_endpoint": false
+      },
+      {
+        "h": 13,
+        "R": 217,
+        "N_bits": 651,
+        "N_clock": 1094,
+        "P_clock": 1089,
+        "same_endpoint": false
+      },
+      {
+        "h": 14,
+        "R": 233,
+        "N_bits": 699,
+        "N_clock": 1174,
+        "P_clock": 1169,
+        "same_endpoint": false
+      },
+      {
+        "h": 15,
+        "R": 249,
+        "N_bits": 747,
+        "N_clock": 1254,
+        "P_clock": 1249,
+        "same_endpoint": false
+      },
+      {
+        "h": 16,
+        "R": 265,
+        "N_bits": 795,
+        "N_clock": 1334,
+        "P_clock": 1329,
+        "same_endpoint": false
+      },
+      {
+        "h": 64,
+        "R": 1033,
+        "N_bits": 3099,
+        "N_clock": 5174,
+        "P_clock": 5169,
+        "same_endpoint": false
+      },
+      {
+        "h": 256,
+        "R": 4105,
+        "N_bits": 12315,
+        "N_clock": 20534,
+        "P_clock": 20529,
+        "same_endpoint": false
+      }
+    ],
+    "convergent_member": {
+      "R": 9,
+      "N": 134217723,
+      "first_arrival": 309
+    },
+    "scope": "These complete paths reach the different endpoints b and 4*b-1. A universal merger of these endpoints has not been proved. Convergence of the single R=9 member is an independent Python check only, not a new kernel convergence certificate."
+  },
+  "larger_coordinates": {
+    "rows": [
+      {
+        "k": 12,
+        "r": 32389,
+        "R": 65157,
+        "N_bits": 195471,
+        "P_bits": 195471,
+        "N_tail_steps": 31,
+        "P_tail_steps": 33,
+        "full_paths_replayed": false
+      },
+      {
+        "k": 16,
+        "r": 138885,
+        "R": 663173,
+        "N_bits": 1989519,
+        "P_bits": 1989519,
+        "N_tail_steps": 39,
+        "P_tail_steps": 41,
+        "full_paths_replayed": false
+      }
+    ],
+    "scope": "The exact source and endpoint coordinates are materialized. Only the two short tails are independently replayed; the full weighted and unweighted growing prefixes rely on the kernel theorems."
+  }
+}
