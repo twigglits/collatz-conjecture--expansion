@@ -1,0 +1,2448 @@
+{
+  "status": "passed",
+  "counts": {
+    "reference_states": 228252,
+    "inverse_states_replayed": 116842,
+    "inverse_forward_ordinary_steps": 3314934,
+    "complete_inverse_trees": 159,
+    "exact_five_minima": 79,
+    "complete_half_endpoint_trees": 33,
+    "complete_weighted_sources": 50,
+    "weighted_source_ordinary_steps": 73102,
+    "weighted_endpoint_trees": 50,
+    "weighted_trees_at_full_k_budget": 36,
+    "precision_boundary_witnesses": 1,
+    "doubled_coefficient_comparisons": 2340
+  },
+  "reference_checks": {
+    "rows": [
+      {
+        "offset": 2,
+        "even_budget": 24,
+        "states": 37967,
+        "max_odd_count": 26
+      },
+      {
+        "offset": 5,
+        "even_budget": 24,
+        "states": 190285,
+        "max_odd_count": 48
+      }
+    ],
+    "scope": "Complete finite reference graphs, with no odd or depth cap."
+  },
+  "exact_trees": {
+    "rows": [
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 1,
+        "v_bits": 1,
+        "target_bits": 1,
+        "states": 1,
+        "minimum_bits": 1
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 1,
+        "v_bits": 2,
+        "target_bits": 3,
+        "states": 1,
+        "minimum_bits": 3
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 1,
+        "v_bits": 2,
+        "target_bits": 3,
+        "states": 1,
+        "minimum_bits": 3
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 1,
+        "v_bits": 5,
+        "target_bits": 6,
+        "states": 1,
+        "minimum_bits": 6
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 1,
+        "v_bits": 129,
+        "target_bits": 130,
+        "states": 1,
+        "minimum_bits": 130
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 2,
+        "v_bits": 1,
+        "target_bits": 3,
+        "states": 1,
+        "minimum_bits": 3
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 19,
+        "v_bits": 2,
+        "target_bits": 32,
+        "states": 1,
+        "minimum_bits": 32
+      },
+      {
+        "offset": 2,
+        "B": 0,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 1,
+        "minimum_bits": 6621
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 3,
+        "v_bits": 1,
+        "target_bits": 5,
+        "states": 3,
+        "minimum_bits": 5
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 3,
+        "v_bits": 2,
+        "target_bits": 6,
+        "states": 3,
+        "minimum_bits": 6
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 3,
+        "v_bits": 2,
+        "target_bits": 7,
+        "states": 3,
+        "minimum_bits": 7
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 3,
+        "v_bits": 5,
+        "target_bits": 9,
+        "states": 3,
+        "minimum_bits": 9
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 3,
+        "v_bits": 129,
+        "target_bits": 133,
+        "states": 3,
+        "minimum_bits": 133
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 4,
+        "v_bits": 1,
+        "target_bits": 7,
+        "states": 3,
+        "minimum_bits": 7
+      },
+      {
+        "offset": 2,
+        "B": 1,
+        "K": 21,
+        "v_bits": 2,
+        "target_bits": 35,
+        "states": 3,
+        "minimum_bits": 35
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 5,
+        "v_bits": 1,
+        "target_bits": 8,
+        "states": 5,
+        "minimum_bits": 8
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 5,
+        "v_bits": 2,
+        "target_bits": 9,
+        "states": 5,
+        "minimum_bits": 9
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 5,
+        "v_bits": 2,
+        "target_bits": 10,
+        "states": 5,
+        "minimum_bits": 10
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 5,
+        "v_bits": 5,
+        "target_bits": 13,
+        "states": 5,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 5,
+        "v_bits": 129,
+        "target_bits": 136,
+        "states": 5,
+        "minimum_bits": 136
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 6,
+        "v_bits": 1,
+        "target_bits": 10,
+        "states": 5,
+        "minimum_bits": 10
+      },
+      {
+        "offset": 2,
+        "B": 2,
+        "K": 23,
+        "v_bits": 2,
+        "target_bits": 39,
+        "states": 5,
+        "minimum_bits": 39
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 7,
+        "v_bits": 1,
+        "target_bits": 12,
+        "states": 8,
+        "minimum_bits": 12
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 7,
+        "v_bits": 2,
+        "target_bits": 13,
+        "states": 8,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 7,
+        "v_bits": 2,
+        "target_bits": 13,
+        "states": 8,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 7,
+        "v_bits": 5,
+        "target_bits": 16,
+        "states": 8,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 7,
+        "v_bits": 129,
+        "target_bits": 140,
+        "states": 8,
+        "minimum_bits": 140
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 8,
+        "v_bits": 1,
+        "target_bits": 13,
+        "states": 8,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 2,
+        "B": 3,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 42,
+        "states": 8,
+        "minimum_bits": 42
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 9,
+        "v_bits": 1,
+        "target_bits": 15,
+        "states": 12,
+        "minimum_bits": 15
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 9,
+        "v_bits": 2,
+        "target_bits": 16,
+        "states": 12,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 9,
+        "v_bits": 2,
+        "target_bits": 16,
+        "states": 12,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 9,
+        "v_bits": 5,
+        "target_bits": 19,
+        "states": 12,
+        "minimum_bits": 19
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 9,
+        "v_bits": 129,
+        "target_bits": 143,
+        "states": 12,
+        "minimum_bits": 143
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 10,
+        "v_bits": 1,
+        "target_bits": 16,
+        "states": 12,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 2,
+        "B": 4,
+        "K": 27,
+        "v_bits": 2,
+        "target_bits": 45,
+        "states": 12,
+        "minimum_bits": 45
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 11,
+        "v_bits": 1,
+        "target_bits": 18,
+        "states": 18,
+        "minimum_bits": 18
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 11,
+        "v_bits": 2,
+        "target_bits": 19,
+        "states": 18,
+        "minimum_bits": 19
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 11,
+        "v_bits": 2,
+        "target_bits": 20,
+        "states": 18,
+        "minimum_bits": 20
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 11,
+        "v_bits": 5,
+        "target_bits": 22,
+        "states": 18,
+        "minimum_bits": 22
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 11,
+        "v_bits": 129,
+        "target_bits": 146,
+        "states": 18,
+        "minimum_bits": 146
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 12,
+        "v_bits": 1,
+        "target_bits": 20,
+        "states": 18,
+        "minimum_bits": 20
+      },
+      {
+        "offset": 2,
+        "B": 5,
+        "K": 29,
+        "v_bits": 2,
+        "target_bits": 48,
+        "states": 18,
+        "minimum_bits": 48
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 13,
+        "v_bits": 1,
+        "target_bits": 21,
+        "states": 26,
+        "minimum_bits": 21
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 13,
+        "v_bits": 2,
+        "target_bits": 22,
+        "states": 26,
+        "minimum_bits": 22
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 13,
+        "v_bits": 2,
+        "target_bits": 23,
+        "states": 26,
+        "minimum_bits": 23
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 13,
+        "v_bits": 5,
+        "target_bits": 25,
+        "states": 26,
+        "minimum_bits": 25
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 13,
+        "v_bits": 129,
+        "target_bits": 149,
+        "states": 26,
+        "minimum_bits": 149
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 14,
+        "v_bits": 1,
+        "target_bits": 23,
+        "states": 26,
+        "minimum_bits": 23
+      },
+      {
+        "offset": 2,
+        "B": 6,
+        "K": 31,
+        "v_bits": 2,
+        "target_bits": 51,
+        "states": 26,
+        "minimum_bits": 51
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 15,
+        "v_bits": 1,
+        "target_bits": 24,
+        "states": 39,
+        "minimum_bits": 24
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 15,
+        "v_bits": 2,
+        "target_bits": 25,
+        "states": 39,
+        "minimum_bits": 25
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 15,
+        "v_bits": 2,
+        "target_bits": 26,
+        "states": 39,
+        "minimum_bits": 26
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 15,
+        "v_bits": 5,
+        "target_bits": 28,
+        "states": 39,
+        "minimum_bits": 28
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 15,
+        "v_bits": 129,
+        "target_bits": 152,
+        "states": 39,
+        "minimum_bits": 152
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 16,
+        "v_bits": 1,
+        "target_bits": 26,
+        "states": 39,
+        "minimum_bits": 26
+      },
+      {
+        "offset": 2,
+        "B": 7,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 39,
+        "minimum_bits": 54
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 17,
+        "v_bits": 1,
+        "target_bits": 27,
+        "states": 59,
+        "minimum_bits": 27
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 17,
+        "v_bits": 2,
+        "target_bits": 28,
+        "states": 59,
+        "minimum_bits": 28
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 17,
+        "v_bits": 2,
+        "target_bits": 29,
+        "states": 59,
+        "minimum_bits": 29
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 17,
+        "v_bits": 5,
+        "target_bits": 32,
+        "states": 59,
+        "minimum_bits": 32
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 17,
+        "v_bits": 129,
+        "target_bits": 155,
+        "states": 59,
+        "minimum_bits": 155
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 18,
+        "v_bits": 1,
+        "target_bits": 29,
+        "states": 59,
+        "minimum_bits": 29
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 35,
+        "v_bits": 2,
+        "target_bits": 58,
+        "states": 59,
+        "minimum_bits": 58
+      },
+      {
+        "offset": 2,
+        "B": 8,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 59,
+        "minimum_bits": 6621
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 25,
+        "v_bits": 1,
+        "target_bits": 40,
+        "states": 301,
+        "minimum_bits": 40
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 41,
+        "states": 301,
+        "minimum_bits": 41
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 42,
+        "states": 301,
+        "minimum_bits": 42
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 25,
+        "v_bits": 5,
+        "target_bits": 44,
+        "states": 301,
+        "minimum_bits": 44
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 25,
+        "v_bits": 129,
+        "target_bits": 168,
+        "states": 301,
+        "minimum_bits": 168
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 26,
+        "v_bits": 1,
+        "target_bits": 42,
+        "states": 301,
+        "minimum_bits": 42
+      },
+      {
+        "offset": 2,
+        "B": 12,
+        "K": 43,
+        "v_bits": 2,
+        "target_bits": 70,
+        "states": 301,
+        "minimum_bits": 70
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 33,
+        "v_bits": 1,
+        "target_bits": 53,
+        "states": 1503,
+        "minimum_bits": 53
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 1503,
+        "minimum_bits": 54
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 1503,
+        "minimum_bits": 54
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 33,
+        "v_bits": 5,
+        "target_bits": 57,
+        "states": 1503,
+        "minimum_bits": 57
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 33,
+        "v_bits": 129,
+        "target_bits": 181,
+        "states": 1503,
+        "minimum_bits": 181
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 34,
+        "v_bits": 1,
+        "target_bits": 54,
+        "states": 1503,
+        "minimum_bits": 54
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 51,
+        "v_bits": 2,
+        "target_bits": 83,
+        "states": 1503,
+        "minimum_bits": 83
+      },
+      {
+        "offset": 2,
+        "B": 16,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 1503,
+        "minimum_bits": 6621
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 1,
+        "v_bits": 2,
+        "target_bits": 1,
+        "states": 1,
+        "minimum_bits": 1
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 1,
+        "v_bits": 2,
+        "target_bits": 3,
+        "states": 1,
+        "minimum_bits": 3
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 1,
+        "v_bits": 5,
+        "target_bits": 6,
+        "states": 1,
+        "minimum_bits": 6
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 1,
+        "v_bits": 129,
+        "target_bits": 130,
+        "states": 1,
+        "minimum_bits": 130
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 2,
+        "v_bits": 1,
+        "target_bits": 3,
+        "states": 1,
+        "minimum_bits": 3
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 19,
+        "v_bits": 2,
+        "target_bits": 32,
+        "states": 1,
+        "minimum_bits": 32
+      },
+      {
+        "offset": 5,
+        "B": 0,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 1,
+        "minimum_bits": 6621
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 3,
+        "v_bits": 1,
+        "target_bits": 5,
+        "states": 4,
+        "minimum_bits": 5
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 3,
+        "v_bits": 2,
+        "target_bits": 6,
+        "states": 4,
+        "minimum_bits": 6
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 3,
+        "v_bits": 2,
+        "target_bits": 7,
+        "states": 4,
+        "minimum_bits": 7
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 3,
+        "v_bits": 5,
+        "target_bits": 9,
+        "states": 4,
+        "minimum_bits": 9
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 3,
+        "v_bits": 129,
+        "target_bits": 133,
+        "states": 4,
+        "minimum_bits": 133
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 4,
+        "v_bits": 1,
+        "target_bits": 7,
+        "states": 4,
+        "minimum_bits": 7
+      },
+      {
+        "offset": 5,
+        "B": 1,
+        "K": 21,
+        "v_bits": 2,
+        "target_bits": 35,
+        "states": 4,
+        "minimum_bits": 35
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 5,
+        "v_bits": 1,
+        "target_bits": 8,
+        "states": 9,
+        "minimum_bits": 8
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 5,
+        "v_bits": 2,
+        "target_bits": 9,
+        "states": 9,
+        "minimum_bits": 9
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 5,
+        "v_bits": 2,
+        "target_bits": 10,
+        "states": 9,
+        "minimum_bits": 10
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 5,
+        "v_bits": 5,
+        "target_bits": 13,
+        "states": 9,
+        "minimum_bits": 12
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 5,
+        "v_bits": 129,
+        "target_bits": 136,
+        "states": 9,
+        "minimum_bits": 136
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 6,
+        "v_bits": 1,
+        "target_bits": 10,
+        "states": 9,
+        "minimum_bits": 10
+      },
+      {
+        "offset": 5,
+        "B": 2,
+        "K": 23,
+        "v_bits": 2,
+        "target_bits": 39,
+        "states": 9,
+        "minimum_bits": 38
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 7,
+        "v_bits": 1,
+        "target_bits": 12,
+        "states": 20,
+        "minimum_bits": 11
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 7,
+        "v_bits": 2,
+        "target_bits": 13,
+        "states": 20,
+        "minimum_bits": 12
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 7,
+        "v_bits": 2,
+        "target_bits": 13,
+        "states": 20,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 7,
+        "v_bits": 5,
+        "target_bits": 16,
+        "states": 20,
+        "minimum_bits": 15
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 7,
+        "v_bits": 129,
+        "target_bits": 140,
+        "states": 20,
+        "minimum_bits": 139
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 8,
+        "v_bits": 1,
+        "target_bits": 13,
+        "states": 20,
+        "minimum_bits": 13
+      },
+      {
+        "offset": 5,
+        "B": 3,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 42,
+        "states": 20,
+        "minimum_bits": 41
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 9,
+        "v_bits": 1,
+        "target_bits": 15,
+        "states": 37,
+        "minimum_bits": 14
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 9,
+        "v_bits": 2,
+        "target_bits": 16,
+        "states": 37,
+        "minimum_bits": 15
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 9,
+        "v_bits": 2,
+        "target_bits": 16,
+        "states": 37,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 9,
+        "v_bits": 5,
+        "target_bits": 19,
+        "states": 37,
+        "minimum_bits": 18
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 9,
+        "v_bits": 129,
+        "target_bits": 143,
+        "states": 37,
+        "minimum_bits": 142
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 10,
+        "v_bits": 1,
+        "target_bits": 16,
+        "states": 37,
+        "minimum_bits": 16
+      },
+      {
+        "offset": 5,
+        "B": 4,
+        "K": 27,
+        "v_bits": 2,
+        "target_bits": 45,
+        "states": 37,
+        "minimum_bits": 44
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 11,
+        "v_bits": 1,
+        "target_bits": 18,
+        "states": 64,
+        "minimum_bits": 17
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 11,
+        "v_bits": 2,
+        "target_bits": 19,
+        "states": 64,
+        "minimum_bits": 18
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 11,
+        "v_bits": 2,
+        "target_bits": 20,
+        "states": 64,
+        "minimum_bits": 19
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 11,
+        "v_bits": 5,
+        "target_bits": 22,
+        "states": 64,
+        "minimum_bits": 21
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 11,
+        "v_bits": 129,
+        "target_bits": 146,
+        "states": 64,
+        "minimum_bits": 145
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 12,
+        "v_bits": 1,
+        "target_bits": 20,
+        "states": 64,
+        "minimum_bits": 19
+      },
+      {
+        "offset": 5,
+        "B": 5,
+        "K": 29,
+        "v_bits": 2,
+        "target_bits": 48,
+        "states": 64,
+        "minimum_bits": 47
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 13,
+        "v_bits": 1,
+        "target_bits": 21,
+        "states": 103,
+        "minimum_bits": 20
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 13,
+        "v_bits": 2,
+        "target_bits": 22,
+        "states": 103,
+        "minimum_bits": 21
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 13,
+        "v_bits": 2,
+        "target_bits": 23,
+        "states": 103,
+        "minimum_bits": 22
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 13,
+        "v_bits": 5,
+        "target_bits": 25,
+        "states": 103,
+        "minimum_bits": 24
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 13,
+        "v_bits": 129,
+        "target_bits": 149,
+        "states": 103,
+        "minimum_bits": 148
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 14,
+        "v_bits": 1,
+        "target_bits": 23,
+        "states": 103,
+        "minimum_bits": 22
+      },
+      {
+        "offset": 5,
+        "B": 6,
+        "K": 31,
+        "v_bits": 2,
+        "target_bits": 51,
+        "states": 103,
+        "minimum_bits": 50
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 15,
+        "v_bits": 1,
+        "target_bits": 24,
+        "states": 162,
+        "minimum_bits": 23
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 15,
+        "v_bits": 2,
+        "target_bits": 25,
+        "states": 162,
+        "minimum_bits": 24
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 15,
+        "v_bits": 2,
+        "target_bits": 26,
+        "states": 162,
+        "minimum_bits": 25
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 15,
+        "v_bits": 5,
+        "target_bits": 28,
+        "states": 162,
+        "minimum_bits": 27
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 15,
+        "v_bits": 129,
+        "target_bits": 152,
+        "states": 162,
+        "minimum_bits": 151
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 16,
+        "v_bits": 1,
+        "target_bits": 26,
+        "states": 162,
+        "minimum_bits": 25
+      },
+      {
+        "offset": 5,
+        "B": 7,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 162,
+        "minimum_bits": 53
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 17,
+        "v_bits": 1,
+        "target_bits": 27,
+        "states": 251,
+        "minimum_bits": 26
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 17,
+        "v_bits": 2,
+        "target_bits": 28,
+        "states": 251,
+        "minimum_bits": 27
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 17,
+        "v_bits": 2,
+        "target_bits": 29,
+        "states": 251,
+        "minimum_bits": 28
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 17,
+        "v_bits": 5,
+        "target_bits": 32,
+        "states": 251,
+        "minimum_bits": 30
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 17,
+        "v_bits": 129,
+        "target_bits": 155,
+        "states": 251,
+        "minimum_bits": 154
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 18,
+        "v_bits": 1,
+        "target_bits": 29,
+        "states": 251,
+        "minimum_bits": 28
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 35,
+        "v_bits": 2,
+        "target_bits": 58,
+        "states": 251,
+        "minimum_bits": 56
+      },
+      {
+        "offset": 5,
+        "B": 8,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 251,
+        "minimum_bits": 6619
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 25,
+        "v_bits": 1,
+        "target_bits": 40,
+        "states": 1377,
+        "minimum_bits": 38
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 41,
+        "states": 1377,
+        "minimum_bits": 39
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 25,
+        "v_bits": 2,
+        "target_bits": 42,
+        "states": 1377,
+        "minimum_bits": 40
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 25,
+        "v_bits": 5,
+        "target_bits": 44,
+        "states": 1377,
+        "minimum_bits": 42
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 25,
+        "v_bits": 129,
+        "target_bits": 168,
+        "states": 1377,
+        "minimum_bits": 166
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 26,
+        "v_bits": 1,
+        "target_bits": 42,
+        "states": 1377,
+        "minimum_bits": 40
+      },
+      {
+        "offset": 5,
+        "B": 12,
+        "K": 43,
+        "v_bits": 2,
+        "target_bits": 70,
+        "states": 1377,
+        "minimum_bits": 68
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 33,
+        "v_bits": 1,
+        "target_bits": 53,
+        "states": 7285,
+        "minimum_bits": 50
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 7285,
+        "minimum_bits": 51
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 33,
+        "v_bits": 2,
+        "target_bits": 54,
+        "states": 7285,
+        "minimum_bits": 52
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 33,
+        "v_bits": 5,
+        "target_bits": 57,
+        "states": 7285,
+        "minimum_bits": 54
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 33,
+        "v_bits": 129,
+        "target_bits": 181,
+        "states": 7285,
+        "minimum_bits": 178
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 34,
+        "v_bits": 1,
+        "target_bits": 54,
+        "states": 7285,
+        "minimum_bits": 52
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 51,
+        "v_bits": 2,
+        "target_bits": 83,
+        "states": 7285,
+        "minimum_bits": 80
+      },
+      {
+        "offset": 5,
+        "B": 16,
+        "K": 4096,
+        "v_bits": 129,
+        "target_bits": 6621,
+        "states": 7285,
+        "minimum_bits": 6618
+      }
+    ],
+    "scope": "Every state in each complete positive inverse tree is compared with the reference formula and replayed by two ordinary implementations."
+  },
+  "endpoint_trees": {
+    "rows": [
+      {
+        "k": 0,
+        "v": 1,
+        "states": 2,
+        "minimum": 7
+      },
+      {
+        "k": 0,
+        "v": 3,
+        "states": 2,
+        "minimum": 25
+      },
+      {
+        "k": 0,
+        "v": 17,
+        "states": 2,
+        "minimum": 151
+      },
+      {
+        "k": 1,
+        "v": 1,
+        "states": 5,
+        "minimum": 79
+      },
+      {
+        "k": 1,
+        "v": 3,
+        "states": 5,
+        "minimum": 241
+      },
+      {
+        "k": 1,
+        "v": 17,
+        "states": 5,
+        "minimum": 1375
+      },
+      {
+        "k": 2,
+        "v": 1,
+        "states": 10,
+        "minimum": 727
+      },
+      {
+        "k": 2,
+        "v": 3,
+        "states": 10,
+        "minimum": 2185
+      },
+      {
+        "k": 2,
+        "v": 17,
+        "states": 10,
+        "minimum": 12391
+      },
+      {
+        "k": 3,
+        "v": 1,
+        "states": 18,
+        "minimum": 6559
+      },
+      {
+        "k": 3,
+        "v": 3,
+        "states": 18,
+        "minimum": 19681
+      },
+      {
+        "k": 3,
+        "v": 17,
+        "states": 18,
+        "minimum": 111535
+      },
+      {
+        "k": 4,
+        "v": 1,
+        "states": 33,
+        "minimum": 59047
+      },
+      {
+        "k": 4,
+        "v": 3,
+        "states": 33,
+        "minimum": 177145
+      },
+      {
+        "k": 4,
+        "v": 17,
+        "states": 33,
+        "minimum": 1003831
+      },
+      {
+        "k": 5,
+        "v": 1,
+        "states": 56,
+        "minimum": 531439
+      },
+      {
+        "k": 5,
+        "v": 3,
+        "states": 56,
+        "minimum": 1594321
+      },
+      {
+        "k": 5,
+        "v": 17,
+        "states": 56,
+        "minimum": 9034495
+      },
+      {
+        "k": 6,
+        "v": 1,
+        "states": 91,
+        "minimum": 4782967
+      },
+      {
+        "k": 6,
+        "v": 3,
+        "states": 91,
+        "minimum": 14348905
+      },
+      {
+        "k": 6,
+        "v": 17,
+        "states": 91,
+        "minimum": 81310471
+      },
+      {
+        "k": 7,
+        "v": 1,
+        "states": 143,
+        "minimum": 43046719
+      },
+      {
+        "k": 7,
+        "v": 3,
+        "states": 143,
+        "minimum": 129140161
+      },
+      {
+        "k": 7,
+        "v": 17,
+        "states": 143,
+        "minimum": 731794255
+      },
+      {
+        "k": 8,
+        "v": 1,
+        "states": 222,
+        "minimum": 387420487
+      },
+      {
+        "k": 8,
+        "v": 3,
+        "states": 222,
+        "minimum": 1162261465
+      },
+      {
+        "k": 8,
+        "v": 17,
+        "states": 222,
+        "minimum": 6586148311
+      },
+      {
+        "k": 12,
+        "v": 1,
+        "states": 1202,
+        "minimum": 2087354105851
+      },
+      {
+        "k": 12,
+        "v": 3,
+        "states": 1202,
+        "minimum": 6262062317563
+      },
+      {
+        "k": 12,
+        "v": 17,
+        "states": 1202,
+        "minimum": 35485019799547
+      },
+      {
+        "k": 16,
+        "v": 1,
+        "states": 6332,
+        "minimum": 8549802417586171
+      },
+      {
+        "k": 16,
+        "v": 3,
+        "states": 6332,
+        "minimum": 25649407252758523
+      },
+      {
+        "k": 16,
+        "v": 17,
+        "states": 6332,
+        "minimum": 145346641098964987
+      }
+    ],
+    "scope": "Complete half-endpoint trees through the full even budget k, including both possible first inverse edges."
+  },
+  "weighted_paths": {
+    "rows": [
+      {
+        "R": 26,
+        "r": 5,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 125,
+        "N_bits": 205,
+        "H_bits": 206,
+        "v_bits": 203,
+        "N_clock": 337,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 129,
+        "N_bits": 209,
+        "H_bits": 211,
+        "v_bits": 204,
+        "N_clock": 342,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 143,
+        "N_bits": 223,
+        "H_bits": 226,
+        "v_bits": 203,
+        "N_clock": 367,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 173,
+        "N_bits": 253,
+        "H_bits": 257,
+        "v_bits": 203,
+        "N_clock": 417,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 147,
+        "N_bits": 227,
+        "H_bits": 228,
+        "v_bits": 225,
+        "N_clock": 373,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 151,
+        "N_bits": 231,
+        "H_bits": 233,
+        "v_bits": 227,
+        "N_clock": 378,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 162,
+        "N_bits": 242,
+        "H_bits": 245,
+        "v_bits": 222,
+        "N_clock": 403,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 5,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 195,
+        "N_bits": 275,
+        "H_bits": 280,
+        "v_bits": 225,
+        "N_clock": 453,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 159,
+        "N_bits": 239,
+        "H_bits": 241,
+        "v_bits": 238,
+        "N_clock": 391,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 158,
+        "N_bits": 238,
+        "H_bits": 240,
+        "v_bits": 234,
+        "N_clock": 396,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 176,
+        "N_bits": 256,
+        "H_bits": 259,
+        "v_bits": 236,
+        "N_clock": 421,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 206,
+        "N_bits": 286,
+        "H_bits": 290,
+        "v_bits": 236,
+        "N_clock": 471,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 172,
+        "N_bits": 252,
+        "H_bits": 255,
+        "v_bits": 251,
+        "N_clock": 427,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 184,
+        "N_bits": 264,
+        "H_bits": 266,
+        "v_bits": 259,
+        "N_clock": 432,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 199,
+        "N_bits": 279,
+        "H_bits": 282,
+        "v_bits": 259,
+        "N_clock": 457,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 26,
+        "r": 8,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 227,
+        "N_bits": 307,
+        "H_bits": 311,
+        "v_bits": 257,
+        "N_clock": 507,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 126,
+        "N_bits": 236,
+        "H_bits": 239,
+        "v_bits": 235,
+        "N_clock": 387,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 129,
+        "N_bits": 239,
+        "H_bits": 242,
+        "v_bits": 235,
+        "N_clock": 392,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 143,
+        "N_bits": 253,
+        "H_bits": 257,
+        "v_bits": 234,
+        "N_clock": 417,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 173,
+        "N_bits": 283,
+        "H_bits": 289,
+        "v_bits": 234,
+        "N_clock": 467,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 145,
+        "N_bits": 255,
+        "H_bits": 258,
+        "v_bits": 254,
+        "N_clock": 423,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 149,
+        "N_bits": 259,
+        "H_bits": 263,
+        "v_bits": 256,
+        "N_clock": 428,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 161,
+        "N_bits": 271,
+        "H_bits": 275,
+        "v_bits": 252,
+        "N_clock": 453,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 5,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 195,
+        "N_bits": 305,
+        "H_bits": 312,
+        "v_bits": 257,
+        "N_clock": 503,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 158,
+        "N_bits": 268,
+        "H_bits": 272,
+        "v_bits": 268,
+        "N_clock": 441,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 160,
+        "N_bits": 270,
+        "H_bits": 274,
+        "v_bits": 267,
+        "N_clock": 446,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 177,
+        "N_bits": 287,
+        "H_bits": 292,
+        "v_bits": 269,
+        "N_clock": 471,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 207,
+        "N_bits": 317,
+        "H_bits": 324,
+        "v_bits": 269,
+        "N_clock": 521,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 177,
+        "N_bits": 287,
+        "H_bits": 291,
+        "v_bits": 287,
+        "N_clock": 477,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 184,
+        "N_bits": 294,
+        "H_bits": 298,
+        "v_bits": 291,
+        "N_clock": 482,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 199,
+        "N_bits": 309,
+        "H_bits": 314,
+        "v_bits": 291,
+        "N_clock": 507,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 36,
+        "r": 8,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 229,
+        "N_bits": 339,
+        "H_bits": 345,
+        "v_bits": 291,
+        "N_clock": 557,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 121,
+        "N_bits": 315,
+        "H_bits": 323,
+        "v_bits": 319,
+        "N_clock": 527,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 127,
+        "N_bits": 321,
+        "H_bits": 329,
+        "v_bits": 322,
+        "N_clock": 532,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 144,
+        "N_bits": 338,
+        "H_bits": 347,
+        "v_bits": 324,
+        "N_clock": 557,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 174,
+        "N_bits": 368,
+        "H_bits": 379,
+        "v_bits": 325,
+        "N_clock": 607,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 148,
+        "N_bits": 342,
+        "H_bits": 351,
+        "v_bits": 347,
+        "N_clock": 563,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 149,
+        "N_bits": 343,
+        "H_bits": 352,
+        "v_bits": 345,
+        "N_clock": 568,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 160,
+        "N_bits": 354,
+        "H_bits": 363,
+        "v_bits": 340,
+        "N_clock": 593,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 5,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 196,
+        "N_bits": 390,
+        "H_bits": 401,
+        "v_bits": 346,
+        "N_clock": 643,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 0,
+        "k": 0,
+        "weight_bits": 159,
+        "N_bits": 353,
+        "H_bits": 361,
+        "v_bits": 357,
+        "N_clock": 581,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 0,
+        "k": 1,
+        "weight_bits": 162,
+        "N_bits": 356,
+        "H_bits": 364,
+        "v_bits": 357,
+        "N_clock": 586,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 0,
+        "k": 6,
+        "weight_bits": 177,
+        "N_bits": 371,
+        "H_bits": 380,
+        "v_bits": 357,
+        "N_clock": 611,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 0,
+        "k": 16,
+        "weight_bits": 205,
+        "N_bits": 399,
+        "H_bits": 410,
+        "v_bits": 356,
+        "N_clock": 661,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 2,
+        "k": 0,
+        "weight_bits": 181,
+        "N_bits": 375,
+        "H_bits": 384,
+        "v_bits": 380,
+        "N_clock": 617,
+        "inverse_budget": 0,
+        "inverse_states": 2,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 2,
+        "k": 1,
+        "weight_bits": 180,
+        "N_bits": 374,
+        "H_bits": 383,
+        "v_bits": 376,
+        "N_clock": 622,
+        "inverse_budget": 1,
+        "inverse_states": 5,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 2,
+        "k": 6,
+        "weight_bits": 198,
+        "N_bits": 392,
+        "H_bits": 401,
+        "v_bits": 379,
+        "N_clock": 647,
+        "inverse_budget": 6,
+        "inverse_states": 91,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": true
+      },
+      {
+        "R": 64,
+        "r": 8,
+        "j": 2,
+        "k": 16,
+        "weight_bits": 229,
+        "N_bits": 423,
+        "H_bits": 435,
+        "v_bits": 380,
+        "N_clock": 697,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 512,
+        "r": 32,
+        "j": 16,
+        "k": 64,
+        "weight_bits": 791,
+        "N_bits": 2329,
+        "H_bits": 2428,
+        "v_bits": 2221,
+        "N_clock": 3861,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      },
+      {
+        "R": 4096,
+        "r": 128,
+        "j": 128,
+        "k": 4096,
+        "weight_bits": 15175,
+        "N_bits": 27465,
+        "H_bits": 28878,
+        "v_bits": 15890,
+        "N_clock": 45685,
+        "inverse_budget": 8,
+        "inverse_states": 222,
+        "full_initial_prefix_replayed": true,
+        "full_k_inverse_budget": false
+      }
+    ],
+    "scope": "Complete N, U and W paths. Every weighted inverse tree is complete at its recorded budget, which is min(k,8), not always the full k. No enormous pure trajectory is materialized."
+  },
+  "boundary_checks": {
+    "s": [
+      5,
+      64
+    ],
+    "t": [
+      26,
+      64
+    ],
+    "precision_boundary": {
+      "B": 2,
+      "K": 4,
+      "v": 1,
+      "target": 76,
+      "predecessor": 39,
+      "e": 2,
+      "o": 5
+    },
+    "scope": "Finite coefficient checks supplement the universal kernel growth transport. The actual 39-to-76 path shows that allowing K=2B invalidates the odd-count bound and the proposed exact minimum."
+  }
+}

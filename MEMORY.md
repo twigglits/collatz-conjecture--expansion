@@ -1,5 +1,148 @@
 # Collatz project memory
 
+Last updated: 2026-10-26 local time, after the parameter-dependent inverse bounds.
+
+Research remains active with no external blocker. Previous goal turn:
+progress (the immediate predecessor and fixed fourteen-even certificate).
+Current turn: progress (20 kernel roots giving algebraic inverse bounds,
+an exact negative-five minimum, a precision-boundary witness, and a
+both-branch obstruction throughout the pure coordinate family).
+The positive-integer Collatz conjecture remains unresolved.
+
+LATEST ARTIFACTS:
+lean/MinimumFiveInverseCone.lean, docs/MINIMUM-FIVE-INVERSE-CONE.md,
+verify_minimum_five_inverse_cone.py, results/minimum-five-inverse-cone/.
+All 20 roots passed fresh kernel dependency audits. None is axiom-free;
+all use only propext, Quot.sound and, where needed, Classical.choice.
+No native reduction, new mathematical axiom or external mathematical premise.
+
+REFERENCE PATHS, KERNEL:
+Reference c e o m starts at (0,0,c) and follows
+  E inverse: (e,o,m) -> (e+1,o,2m),
+  O inverse: (e,o,m) -> (e,o+1,(2m+1)/3), when integral.
+For c=2: m>=2,o<=2e, 2^(2e-o)*(m-1)<=2*3^(2e-o).
+The only states with m<5 are (0,0,2),(1,0,4),(1,1,3).
+For c=5: m>=5,o<=2e, 2^(2e-o)*(m-1)<=4*3^(2e-o).
+These are universal induction proofs, not finite graph certificates.
+
+ACTUAL INVERSE LIFT AND MINIMA, KERNEL:
+For b+c=3^K*v, e<=B and 2B<K, every Backtrack e o b p has
+  p+m=2^(e+o)*3^(K-o)*v
+with a reference offset m. No actual odd-count or total-depth bound
+is assumed. The invariants supply o<=2e<K at each lifting step.
+For c=2: 8^B*3^(K-2B)*v<=p+3 (a lower bound, not an exact minimum).
+For c=5 and v>0: the exact minimum is 8^B*3^(K-2B)*v-5.
+B inverse EOO blocks attain it, with e=B,o=2B and ordinary clock5B.
+The compulsory halving in O is not included in e.
+
+The strict precision condition cannot generally be weakened to 2B<=K.
+precision_boundary_witness proves Backtrack 2 5 76 39, with
+76+5=3^4 and39<8^2-5=59. Its forward shortcut word is OOOEOOE,
+ordinary clock12. It violates both o<=2e and the proposed minimum
+at B=2,K=4,v=1. This is a kernel witness, not just scratch evidence.
+
+THIRD ENDPOINT AND BOTH BRANCHES, KERNEL:
+Keep the existing coordinates
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u,
+  9a+1=2^(9+11j)*q, b=3^(6+7j)*q,
+  b=1+2^(3k+4)*v, d=9^(k+1)*v, N=4*8^R*w-5.
+At target3d-5 the exact inverse minimum with e<=k+1 is
+  W=3*8^(k+1)*v-5,
+attained with e=k+1,o=2(k+1). The rewriting2W+13=3b is
+written arithmetic and independently checked, not a separate kernel root.
+
+For H defined by2H+5=3d, all inverse paths with e<=k obey
+  9*8^k*v<=p+3.
+backtrack_first proves the complete first-edge decomposition:
+empty path, inverse O to U=d-2, or inverse E to3d-5.
+The U branch uses the c=2 bound. The E branch uses the stronger
+p+5>=27*8^k*v. Thus the conclusion covers both branches at H,
+not merely inverse paths into U. These are complete shortcut paths.
+
+half_third_profile proves that N reaches H at ordinary clock
+  5R+117+18r+18j+5k.
+This is one shared halving beyond the earlier immediate merger.
+An integral H forces d odd. The inverse minimum at H is NOT determined.
+
+PURE-SOURCE OBSTRUCTION, KERNEL:
+For R>=26,r>=5,w>0 and all three coordinate equations,
+  N+3 < 9*8^k*v.
+Set z=8^k*v and rewrite the third coordinate with k=0, unit z.
+The old scaled identity and the new universal comparison
+  2*2^(72+11s+3t)<=3^(43+7s+2t) for s>=5,t>=26
+imply8*(8^R*w)<=9z. The base coefficient check is (s,t)=(5,26),
+then transport by2^11<=3^7 and2^3<=3^2.
+Consequently every inverse predecessor of H with e<=k is strictly
+larger than N. Every pure source hasR>=36, so this covers the entire
+pure coordinate family with r>=5 and positive quotients.
+The budget k is unbounded ACROSS instances, bounded WITHIN each instance.
+This is an obstruction to a particular smaller-source search, not a
+nonconvergence statement. Later mergers with the earlier small S remain
+compatible. Budgets e>k, later targets and all-time coalescence stay open.
+
+VERIFICATION 2026-10-26T21:21:55.023886+00:00:
+All 102 prior manifest hashes authenticated; all 105 new hashes pass.
+The old /tmp compiler and object cache were absent. Restored the public
+Lean4.33.1 release using the existing authorized download command, with
+no credentials accessed. Compiler commit remains
+819816b2e0a3bf405af45ae5c7af2491d8f5bee6.
+Rebuilt all45 dependencies sequentially with16 threads,158.851 seconds
+in total. Every rebuilt object exactly matched its prior manifest hash.
+The verifier then authenticated and reused those45 objects and freshly
+built the new module in3.057 seconds. All46 cached objects now match
+the new manifest. Reuse keeps source/log/object/compiler provenance and
+copies imports into an isolated directory. Without --cache all46 builds
+run sequentially. Do not rerun prior finite replays without a new reason.
+Verifier session19000 and final development session47595 exited0.
+Dependency rebuild99374, extraction63042 and download93187 also exited0.
+All milestone jobs are terminal.
+
+INDEPENDENT FINITE SCOPE:
+Reference graphs through e<=24 have228,252 states:37,967 at c=2
+(max o26),190,285 at c=5 (max o48). No odd-count or depth cap.
+159 complete actual inverse trees match the affine reference formula;
+79 certify exact offset-five minima independently. Budgets0..8,12,16,
+precision2B+1,2B+2,2B+19 and selectedK4096; units1,2,3,17,2^128+1
+as recorded. Largest generic target6621 bits.
+33 additional complete half-endpoint trees cover the FULL budget k,
+k0..8,12,16 andv1,3,17, including both inverse branches.
+50 weighted N/U/W cases replay complete paths including N's growing
+prefix. Weighted inverse trees are complete only at min(k,8);36 cases
+use the full k budget. Their largest parameters occur in one large case
+R4096,r128,j128,k4096, with weight15,175bits,N27,465,H28,878,
+v15,890 and Nclock45,685. No enormous pure trajectory is materialized.
+Total inverse states replayed116,842, ordinary forward steps3,314,934;
+weighted N ordinary steps73,102 are counted separately. The inverse-state
+count includes U/W witnesses and the precision-boundary witness.
+There are2,340 additional finite coefficient comparisons.
+
+NEXT LEADS, NOT FORMALIZED:
+The new proof removes the need merely to increase the old fixed14-edge
+certificate. Investigate later endpoints/residual pair9h+2,h, or actual
+coordinate information when ternary precision is consumed. The relation
+from the earlier handoff remains available:
+  T*(U+2)+f=3^(2k+8+7j)*q,
+whereT=2^(3k+4),f=9^(k+1), and3 does not divideq.
+Also b=1+Tv is divisible by3, so3 does not dividev; v=2mod3 for
+k even andv=1mod3 for k odd. These latter observations are written
+arithmetic here, not new roots in the current module.
+
+A modest sharpening is visible in two_reference: a nonempty reference
+path cannot have o=2e, since then m<=3 and the three exceptional states
+leave only the empty path at that equality. This could extend the
+c=2 lift to the equality precision in some cases; the c=5 boundary
+witness does not transfer automatically to c=2. No such strengthened
+actual-path theorem has been compiled or claimed. Increasing a budget
+by a constant still would not cover unrestricted ancestors or later merger.
+
+Full family convergence, arbitrary least-source exclusion, nontrivial
+cycles, divergence and the full Collatz objective remain open. The goal
+is active. ATTEMPT and README include the new result and reproduction.
+No agents, staging, commits or Git writes occurred. The index SHA256
+remains13d988c0249cc78dd544ef4874e45f6835d3ac269a252b8ed98a609780ead6e0.
+
+The preceding immediate-predecessor handoff (2026-10-22):
+
 Last updated: 2026-10-22 local time, after the immediate-predecessor size boundary.
 
 Research remains active with no external blocker. Previous goal turn:

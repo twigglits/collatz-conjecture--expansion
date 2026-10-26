@@ -2965,6 +2965,27 @@ to U, not every inverse branch into 3d-5 or every coalescing source.
 Larger inverse budgets, alternative smaller sources and full Collatz
 remain open.
 
+The [parameter-dependent inverse bound](docs/MINIMUM-FIVE-INVERSE-CONE.md)
+now covers both first inverse branches at `H=(3d-5)/2`. Twenty kernel
+roots replace finite enumeration with reference-path invariants for
+offsets 2 and 5. If `b+c=3^K*v`, `e<=B` and `2B<K`, every inverse
+path lifts to an offset satisfying `o<=2e`. For c=2 this gives
+`p+3>=8^B*3^(K-2B)*v`; for c=5 the exact inverse minimum is
+`8^B*3^(K-2B)*v-5`, attained by B inverse EOO blocks. The strict
+precision condition cannot generally be relaxed: 39 reaches 76 with
+e=2,o=5, below the proposed minimum 59 at B=2,K=4,v=1.
+
+At `3d-5`, the exact minimum with even budget k+1 is
+`W=3*8^(k+1)*v-5`. At H, both first branches and the empty path
+give `p+3>=9*8^k*v` whenever e<=k. The coordinate equations imply
+`N+3<9*8^k*v` for R>=26,r>=5 and positive weights, hence every
+such predecessor is strictly larger than N. Every pure source has
+R>=36, so this obstruction covers the entire pure coordinate family.
+H is reached by N at ordinary clock `5R+117+18r+18j+5k`.
+The even budget grows without bound across the family, but remains
+bounded for each instance. Paths with e>k, later targets, the residual
+pair `9h+2,h`, and full Collatz remain unresolved.
+
 ## Reproduction
 
 ```sh
@@ -3105,6 +3126,7 @@ python3 verify_minimum_seventeen_phase.py --threads 16
 python3 verify_minimum_five_transition.py --threads 16
 python3 verify_minimum_five_odd_exit.py --threads 16
 python3 verify_minimum_five_predecessor.py --threads 16
+python3 verify_minimum_five_inverse_cone.py --threads 16
 # Optional: add --cache /tmp/collatz-locality-dev to authenticate and reuse
 # dependency objects from the preceding verification record.
 # The subset decoder imports the exact mask-arithmetic module:
