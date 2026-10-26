@@ -377,6 +377,56 @@ theorem pure_later_escape (r j k t l B : Nat) (hr : 5 ≤ r) (ht : 0 < t) (hl : 
   obtain ⟨H, hp, hi⟩ := realized_inverse_obstruction R 1 r j k t l 1 (by omega) hr (by decide) hE.1
   exact ⟨R, H, hR, hR36, hE, hp, hi⟩
 
+theorem even_valuation_profiles (t q d u : Nat) (hu : 0 < u)
+    (hd : d = 3 + 4 ^ (t + 1) * q) (huq : 2 * u = 1 + 3 ^ (t + 1) * q) :
+    iterate (3 * t + 3) (3 * d - 5) = u ∧
+    iterate (3 * t + 7) (2 * d - 5) = 9 * u - 1 := by
+  have hd' : d = 3 + 2 * 4 ^ t * (2 * q) := by rw [hd, Nat.pow_succ]; grind
+  have hb := even_bridges t (2 * q) d hd'
+  have hprod : 3 ^ (t + 1) * (2 * q) = 2 * (3 ^ (t + 1) * q) := by ac_rfl
+  have ha : 2 + 3 ^ (t + 1) * (2 * q) = 4 * u := by rw [hprod]; omega
+  have hs : 1 + 3 ^ (t + 1) * (2 * q) = 4 * u - 1 := by omega
+  have n0 : C (4 * u) = 2 * u := by unfold C; split <;> omega
+  have n1 : C (2 * u) = u := by unfold C; split <;> omega
+  have hn : iterate 2 (4 * u) = u := by simp only [iterate, n0, n1]
+  have ho := (MinimumClockBarrier.odd_block 2 0 u hu).1
+  change iterate 4 (4 * u - 1) = 9 * u - 1 at ho
+  constructor
+  · rw [show 3 * t + 3 = (1 + 3 * t) + 2 by omega, iterate_add (1 + 3 * t), hb.1, ha, hn]
+  · rw [show 3 * t + 7 = (3 + 3 * t) + 4 by omega, iterate_add (3 + 3 * t), hb.2, hs, ho]
+
+theorem three_mod_four_split (d : Nat) (hd : 3 < d) (hr : d % 4 = 3) :
+    (∃ t z, 0 < t ∧ 0 < z ∧ z % 2 = 1 ∧ d = 3 + 2 * 4 ^ t * z) ∨
+    (∃ t q, 0 < q ∧ q % 2 = 1 ∧ d = 3 + 4 ^ (t + 1) * q) := by
+  obtain ⟨K, z, hz, hzo, he⟩ := MinimumLadderBlockExit.odd_factorization (d - 3) (by omega)
+  have hK : 2 ≤ K := by
+    by_cases h : 2 ≤ K
+    · exact h
+    · have hcases : K = 0 ∨ K = 1 := by omega
+      rcases hcases with h0 | h1
+      · rw [h0] at he; simp only [Nat.pow_zero, Nat.one_mul] at he; omega
+      · rw [h1] at he; simp only [Nat.pow_one] at he; omega
+  by_cases hodd : K % 2 = 1
+  · have hk : K = 2 * (K / 2) + 1 := by omega
+    have hp : 2 ^ K = 2 * 4 ^ (K / 2) := by
+      calc
+        _ = 2 ^ (2 * (K / 2) + 1) := congrArg (2 ^ ·) hk
+        _ = _ := by
+          rw [Nat.pow_succ 2, Nat.pow_mul 2]
+          change 4 ^ (K / 2) * 2 = 2 * 4 ^ (K / 2)
+          omega
+    refine Or.inl ⟨K / 2, z, by omega, hz, hzo, ?_⟩
+    rw [hp] at he
+    omega
+  · have hk : K = 2 * (K / 2 - 1 + 1) := by omega
+    have hp : 2 ^ K = 4 ^ (K / 2 - 1 + 1) := by
+      calc
+        _ = 2 ^ (2 * (K / 2 - 1 + 1)) := congrArg (2 ^ ·) hk
+        _ = _ := by rw [Nat.pow_mul 2]
+    refine Or.inr ⟨K / 2 - 1, z, hz, hzo, ?_⟩
+    rw [hp] at he
+    omega
+
 #print axioms adjacent_even_step
 #print axioms adjacent_even_blocks
 #print axioms even_bridges
@@ -397,5 +447,7 @@ theorem pure_later_escape (r j k t l B : Nat) (hr : 5 ≤ r) (ht : 0 < t) (hl : 
 #print axioms even_exit_dichotomy
 #print axioms full_even_opposite_profiles
 #print axioms pure_later_escape
+#print axioms even_valuation_profiles
+#print axioms three_mod_four_split
 
 end MinimumFiveEvenExit

@@ -1,5 +1,170 @@
 # Collatz project memory
 
+Last updated: 2026-10-26 local time, at the user's explicit request to stop
+for now and save memory, after the later even-exit milestone.
+
+STATUS: PAUSED BY USER. update_goal returned status "paused".
+The objective remains "solve the collatz conjecture ." It has not been
+completed or narrowed. Resume mathematical work only when the user asks.
+There is no external research blocker. The positive-integer Collatz
+conjecture remains unresolved in this project.
+Previous goal turn: progress (20 inverse-cone roots). This turn before
+pausing: progress (22 kernel roots for a contracting adjacent pair,
+unbounded later mergers in the d=3mod4 branch, and both residual forms).
+All processes are terminal; no running job needs observation on resumption.
+
+LATEST ARTIFACTS:
+lean/MinimumFiveEvenExit.lean, docs/MINIMUM-FIVE-EVEN-EXIT.md,
+verify_minimum_five_even_exit.py, results/minimum-five-even-exit/.
+All22 theorem roots passed fresh kernel dependency audits. None is
+axiom-free. Only propext, Quot.sound and, where needed, Classical.choice
+occur. No native reduction, new mathematical axiom or external mathematical
+premise. ATTEMPT and README include the new result and reproduction command.
+
+CONTRACTING ADJACENT PAIR, KERNEL:
+For all t,q>=0,
+  C^(3t)(4^t*q+2)=3^t*q+2,
+  C^(3t)(4^t*q+1)=3^t*q+1.
+The three-step blocks are4q+2 ->2q+1 ->6q+4 ->3q+2 and
+4q+1 ->12q+4 ->6q+2 ->3q+1. Shortcut words EO and OE respectively.
+The q=0 and t=0 cases are included.
+
+NEW THIRD-ENDPOINT FAMILY, KERNEL:
+Retain the preceding source coordinates
+  X=9^R*w, X+7=2^(57+11r)*u, a=3^(33+7r)*u,
+  9a+1=2^(9+11j)*q, b=3^(6+7j)*q,
+  b=1+2^(3k+4)*v, d=9^(k+1)*v,
+  N=4*8^R*w-5, S=2^(2R+13)*w-1.
+Here r is the earlier seventeen-block parameter; t is NEW and distinct.
+Require t>=1,z positive odd, l>=1,y positive odd, and
+  d=3+2*4^t*z,
+  1+3^t*z=2^l*y.
+Then d=3mod8, disjoint from the older d=1mod4 odd-exit family.
+The local profiles are
+  C^(1+3t)(3d-5)=2+3^(t+1)*z=2^l*(3y)-1,
+  C^(3+3t)(2d-5)=1+3^(t+1)*z=2^l*(3y)-2.
+
+If g=3^(l+1)*y mod4=1, the adjacent odd-block theorem gives
+  C^(3t+2l+5)(2d-5)=C^(3t+2l+3)(3d-5).
+The independent replay computes common value(3^(l+1)*y-1)/4;
+the new kernel root asserts the merger rather than that endpoint formula.
+For R>=14,r>=5 and positive coordinates,0<S<N and the full merger is
+  C^(4R+130+18r+18j+5k+3t+2l)(S)
+    =C^(5R+119+18r+18j+5k+3t+2l)(N).
+Thus N is not a least counterexample. This does not prove whole-family
+convergence, earliest meeting, or that S occurs on N's own forward path.
+
+For g=3, write3^l*y=4h+1. The local endpoints at equal ordinary
+clock3t+2l+4 are9h+2 from3d-5 andh from2d-5.
+Full Nclock5R+120+18r+18j+5k+3t+2l;
+full Sclock4R+129+18r+18j+5k+3t+2l.
+These are kernel identities, NOT a merger. Written arithmetic gives
+h>0,h=2mod3, hence9h+2=20mod27. Exact odd factorization of
+1+3^t*z gives this dichotomy for every positive oddz andt>=1.
+
+BOTH EXITS HAVE UNBOUNDED REALIZATIONS, KERNEL:
+For every r,j,k,B and prescribed t,l>=1, either g=1 or3 has a pure
+R>B,R>=14 with positiveu,q,v,z,y, z,yodd and all five coordinate
+equations. At every fixed initialR there are also weightsw>B.
+The lifts allow anyr; least-source exclusion requiresr>=5,R>=14.
+The two earlier windows hold for eitherg whenever
+H+13<=9+11j andH+6<=3k+4. Choosej=k=H+1 for any desiredH.
+These are the specified earlier clock windows, not all-time separation.
+
+Residue construction: choose oddy0<4 with3^(l+1)y0=gmod4.
+LetV=2^(l+2), choose positive oddz0<V with
+  3^t*z0=2^l*y0-1modV.
+SetA=2*4^t, M=A*V=2^(2t+l+3), target=3+A*z0<M.
+Invert9^(k+1) moduloM and apply pure_residue_lift to obtain d=targetmodM.
+Recoverz=V*(d/M)+z0 andy=4*((1+3^t*z)/V)+y0 using integer quotients.
+Fixed-R weights usew=9^(L-R) for a sufficiently larger pure exponentL.
+The exact binary valuations are57+11r,9+11j,3k+4,2t+1,l for
+X+7,9a+1,b-1,d-3,1+3^t*z. The first three unit parities follow
+from the equations; the last two are explicit in the realization root.
+
+EARLIER OBSTRUCTION AND LATER ESCAPE SIMULTANEOUSLY, KERNEL:
+H0=(3d-5)/2=2+3*4^t*z, reached byN at clock
+5R+117+18r+18j+5k. ForR>=26, every Backtrack e o H0 p with e<=k
+hasp>N, by the previous inverse-cone result. pure_later_escape proves
+that beyond every exponent bound there is a pureR>=36 with this
+obstruction AND the favorable later merger withS<N. This makes clear
+why failure at an earlier target is not a barrier to later coalescence.
+No unrestricted inverse minimum or path fromS toH0 is asserted.
+
+THE OTHER BINARY VALUATION, KERNEL:
+three_mod_four_split proves everyd>3,d=3mod4 is in one of
+  d=3+2*4^t*z, t>=1,z positiveodd (odd valuation ofd-3), or
+  d=3+4^(t+1)*q, t>=0,q positiveodd (even valuation).
+The first form is handled above. For the second put2u=1+3^(t+1)*q.
+Aftert paired contractions the adjacent values are4u and4u-1.
+even_valuation_profiles proves
+  C^(3t+3)(3d-5)=u,
+  C^(3t+7)(2d-5)=9u-1.
+This is another residual pair, not a merger. Its orientation matters:
+N's endpoint is u, while the known smaller S reaches9u-1.
+The q,u here are LOCAL parameters, not the earlier coordinate q,u.
+
+VERIFICATION 2026-10-26T21:46:01.495019+00:00:
+Verifier session96137 exited0. All105 prior hashes authenticated,
+all108 current hashes authenticated, and all47 cached objects match
+the new manifest. The final development/cache build session9293 exited0.
+One fresh Lean4.33.1 build,3.263seconds,16threads;46 dependency objects
+reused with source/log/object/compiler authentication and isolated imports.
+Compiler commit819816b2e0a3bf405af45ae5c7af2491d8f5bee6 unchanged.
+Without --cache all47 modules build sequentially. Current tools:
+/tmp/lean-4.33.1-linux/bin/lean and /tmp/collatz-locality-dev.
+No installation or credential access was needed this turn.
+Do not rerun completed heavy checks without new changes or another reason.
+
+INDEPENDENT FINITE SCOPE:
+4,095 d=3mod4 decompositions,d7..16383;2,730 even-valuation pairs,
+32,736 ordinary steps.350 adjacent-block paths,50,400 ordinary steps.
+1,560 complete local pairs:775 favorable,785 opposite; localN177,039
+steps,localS178,589. Prescribed shortcut parities and inverse replay agree.
+306 complete weighted N/S pairs:153 per exit. N250,209 steps and
+S237,301, total487,510. Initial growing prefixes are included.
+There are5,568 checkpoints and3,732 paired-path comparisons, including
+local and full paths. Shortcut and inverse edges513,984 each.
+Earlier primary windows162 cases; secondary windows162;both90.
+The primary phase and old three-source window checks overlap, so their
+counts are not distinct visits. Secondary phase51,552states/51,228steps;
+primary phase8,180states/7,856steps; old windows12,270states/11,784steps.
+162 weighted inverse trees atH0 are complete atmin(k,8);158 usefullk.
+2,150 inverse states,21,914 ordinary replay steps. Larger k cases do NOT
+enumerate the full k budget, although the universal kernel result covers it.
+340 pure modular-only lifts checkbothg and allfive binary valuations.
+No enormous pure start or pure trajectory is materialized.
+Weighted maxima occur separately:R4096,r128,j128,k4096,t4096,l4096;
+weight12,439bits,N12,816,S12,524,d13,509,z13,252,y13,326;
+Nclock21,353,Sclock20,882. Pure exponent maximum16,863bits;
+modulus maximum12,588bits. Exact tuples and counts are in replay.json.
+
+RESUME LEADS, NOT ADDITIONAL PROVED RESULTS:
+Investigate the residual pairs9h+2,h andu,9u-1, or new smaller
+sources reaching their components. The favorable new family is genuinely
+unbounded, but the opposite residue also has unbounded realizations;
+residue incompatibility alone cannot remove it. Do not report the
+exhaustive binary split as a convergence proof.
+
+A written arithmetic lead for the even-valuation residual: actual9|d
+andd=3+4^(t+1)*q implyq=6mod9. Thusq=3a witha=2mod3,
+2u-1=3^(t+2)*a andu=5mod9. The odd shortcut predecessor
+(2u-1)/3=3^t*q reachesu, but no useful comparison with the original
+N has been established here. These observations are not new audited
+roots and were not added to the replay manifest. Avoid confusing this
+local smaller-than-u predecessor with a smaller-than-N result.
+
+Full family convergence, arbitrary least-source exclusion, nontrivial
+cycles, divergence and the full Collatz conjecture remain open.
+The user explicitly requested stopping; the goal is now paused.
+No agents, staging, commits or Git writes were performed by the assistant.
+The user committed while research was ongoing; observed HEAD93b56e3
+("inverse cone setup added"). The current index SHA256 is
+21812c19fd878d708187ca1ce116f1d9aedecf79c7c7ee85e0c6d6d60cb6ade4.
+Preserve the user's index and remaining changes on resumption.
+
+The preceding inverse-cone handoff (2026-10-26):
+
 Last updated: 2026-10-26 local time, after the parameter-dependent inverse bounds.
 
 Research remains active with no external blocker. Previous goal turn:

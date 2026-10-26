@@ -2986,6 +2986,31 @@ The even budget grows without bound across the family, but remains
 bounded for each instance. Paths with e>k, later targets, the residual
 pair `9h+2,h`, and full Collatz remain unresolved.
 
+The [later even exit](docs/MINIMUM-FIVE-EVEN-EXIT.md) now gives new
+unbounded pure and weighted exclusions in the d=3 mod4 branch.
+Twenty-two kernel roots prove the paired contractions
+`C^(3t)(4^t*z+2)=3^t*z+2` and
+`C^(3t)(4^t*z+1)=3^t*z+1`. For
+`d=3+2*4^t*z`, t>=1 and positive odd z, factor
+`1+3^t*z=2^l*y` with l>=1 and y odd. The favorable condition
+`3^(l+1)*y=1 mod4` merges the known smaller S with N at ordinary
+clocks `4R+130+18r+18j+5k+3t+2l` and
+`5R+119+18r+18j+5k+3t+2l`, respectively. It therefore excludes
+N as a least counterexample. These sources have d=3 mod8, separate
+from the previous d=1 mod4 odd-exit family.
+
+Both final residues have arbitrarily large pure exponents and
+unbounded weights for each fixed R, with arbitrary prescribed
+positive t,l. Both earlier windows remain available. A combined
+theorem supplies arbitrarily large pure sources with the earlier
+inverse obstruction at H and this later smaller-source merger.
+The opposite exit gives the residual pair `9h+2,h`. The remaining
+even valuation `d=3+4^(t+1)*q`, q positive odd, gives the pair
+`u,9u-1`, where `2u=1+3^(t+1)*q`. Odd factorization proves that
+these two valuation forms exhaust d>3,d=3 mod4. The residual pairs
+remain unresolved; no complete family convergence or full Collatz
+proof is claimed.
+
 ## Reproduction
 
 ```sh
@@ -3127,6 +3152,7 @@ python3 verify_minimum_five_transition.py --threads 16
 python3 verify_minimum_five_odd_exit.py --threads 16
 python3 verify_minimum_five_predecessor.py --threads 16
 python3 verify_minimum_five_inverse_cone.py --threads 16
+python3 verify_minimum_five_even_exit.py --threads 16
 # Optional: add --cache /tmp/collatz-locality-dev to authenticate and reuse
 # dependency objects from the preceding verification record.
 # The subset decoder imports the exact mask-arithmetic module:
